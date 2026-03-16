@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Categories — Cooking at Livingstone</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+
+</head>
+<body><nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-brand">Cooking at <em>Livingstone</em></a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="browse.html" class="nav-link">Recipes</a></li>
+    <li><a href="authors.html" class="nav-link">Authors</a></li>
+    <li><a href="categories.html" class="nav-link is-active">Categories</a></li>
+    <li><a href="ingredient-index.html" class="nav-link">Ingredient Index</a></li>
+  </ul>
+</nav>
+<main>
+  <section class="subpage-hero">
+    <div class="hero-eyebrow">Browse by type</div>
+    <h1>Recipe <em>Categories</em></h1>
+    <div class="subpage-meta"><span>20 categories · 149 recipes</span></div>
+    <div class="hero-rule"></div>
+  </section>
+  <div class="page-body">
+    <div class="cats-grid" id="cats-grid"></div>
+  </div>
+</main>
+<footer><div class="footer-inner"><div><div class="footer-eyebrow">Kitchen Notes</div><div class="footer-title">Cook well, share often, <em>eat together</em></div></div><div class="footer-note">If you have any recipes to add, just ask.</div></div></footer><script src="data.js"></script>
+<script>
+const counts = RECIPES.reduce((a,r)=>{a[r.category]=(a[r.category]||0)+1;return a;},{});
+document.getElementById('cats-grid').innerHTML = Object.entries(counts)
+  .sort((a,b)=>b[1]-a[1])
+  .map(([name,count]) => {
+    const m=CAT_META[name]||{icon:'🍽️',bg:'rgba(192,90,44,0.08)'};
+    return `<a href="category.html?name=${encodeURIComponent(name)}" class="cat-dir-card">
+      <div class="cat-dir-img" style="background:${m.bg}"><span class="cat-dir-icon">${m.icon}</span></div>
+      <div class="cat-dir-body">
+        <div class="cat-dir-name">${escHtml(name)}</div>
+        <div class="cat-dir-count">${count} recipe${count!==1?'s':''}</div>
+      </div></a>`;
+  }).join('');
+</script>
+<script>document.getElementById("nav-toggle").addEventListener("click",function(){document.getElementById("nav-links").classList.toggle("is-open");});</script></body></html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingredient Index — Cooking at Livingstone</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+
+</head>
+<body><nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-brand">Cooking at <em>Livingstone</em></a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="browse.html" class="nav-link">Recipes</a></li>
+    <li><a href="authors.html" class="nav-link">Authors</a></li>
+    <li><a href="categories.html" class="nav-link">Categories</a></li>
+    <li><a href="ingredient-index.html" class="nav-link is-active">Ingredient Index</a></li>
+  </ul>
+</nav>
+<main>
+  <section class="subpage-hero">
+    <div class="hero-eyebrow">A–Z reference</div>
+    <h1>Ingredient <em>Index</em></h1>
+    <div class="subpage-meta"><span id="ing-count">—</span> unique ingredients across all recipes</div>
+    <div class="hero-rule"></div>
+  </section>
+  <div class="page-body">
+    <div style="margin-bottom:28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+      <div style="position:relative;flex:0 0 260px;">
+        <svg style="position:absolute;left:10px;top:50%;transform:translateY(-50%);opacity:.4;" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="ing-search" placeholder="Filter ingredients…" style="width:100%;padding:9px 12px 9px 34px;border:1px solid var(--border);border-radius:8px;background:white;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;">
+      </div>
+      <span id="filter-count" style="font-size:12px;color:var(--muted);"></span>
+    </div>
+    <div id="index-grid" class="full-index"></div>
+  </div>
+</main>
+<footer><div class="footer-inner"><div><div class="footer-eyebrow">Kitchen Notes</div><div class="footer-title">Cook well, share often, <em>eat together</em></div></div><div class="footer-note">If you have any recipes to add, just ask.</div></div></footer><script src="data.js"></script>
+<script>
+document.getElementById('ing-count').textContent = ALL_INGREDIENTS.length;
+
+function renderIndex(filter='') {
+  const ings = filter ? ALL_INGREDIENTS.filter(i=>i.includes(filter.toLowerCase())) : ALL_INGREDIENTS;
+  const groups = groupByLetter(ings);
+  document.getElementById('index-grid').innerHTML = Object.keys(groups).sort().map(l=>`
+    <div class="fi-group"><div class="fi-letter">${l}</div>
+    ${groups[l].map(ing=>`<a href="browse.html?ing=${encodeURIComponent(ing)}" class="fi-ing" style="text-decoration:none;">
+      <span>${escHtml(INDEX[ing].display)}</span>
+      <span class="fi-count">${INDEX[ing].recipes.length} recipe${INDEX[ing].recipes.length>1?'s':''}</span>
+    </a>`).join('')}</div>`).join('');
+  document.getElementById('filter-count').textContent = filter ? `${ings.length} matching` : '';
+}
+
+document.getElementById('ing-search').addEventListener('input', e=>renderIndex(e.target.value));
+document.getElementById('ing-search').addEventListener('focus', e=>{e.target.style.borderColor='var(--rust)';});
+document.getElementById('ing-search').addEventListener('blur', e=>{e.target.style.borderColor='var(--border)';});
+renderIndex();
+</script>
+<script>document.getElementById("nav-toggle").addEventListener("click",function(){document.getElementById("nav-links").classList.toggle("is-open");});</script></body></html>

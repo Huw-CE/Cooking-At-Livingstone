@@ -1,0 +1,5281 @@
+const RECIPES = [
+  {
+    id: 1,
+    title: "Sorta Salmon Niçoise",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "18 mins",
+    category: "Seafood",
+    ingredients: [
+      "2 x 120g salmon fillets, skin on, scaled, pin-boned",
+      "300g green beans",
+      "2 large eggs",
+      "8 black olives (stone in)",
+      "2 heaped tablespoons Greek yoghurt"
+    ],
+    method: `Place the salmon skin side down in a colander over a pan of boiling salted water, covered, to steam for 8 minutes. Line up the beans, trim off just the stalk end, then boil in the water under the salmon for 6 minutes, or until just cooked but not squeaky. Gently lower in the eggs to cook for exactly 5 1/2 minutes, alongside. Meanwhile, squash the olives and remove the stones, then finely chop the flesh. Mix half of the olives through the yoghurt with a splash of red wine vinegar, taste and season to perfection with sea salt and black pepper.
+
+Remove the salmon to a board, then drain the eggs and beans in the colander. Toss the beans in the dressing and divide between your plates. Refresh the eggs under cold water until cool enough to handle, then peel and cut into quarters. Flake over the salmon, discarding the skin, arrange the eggs on top and dot over the remaining chopped olives. Finish with 1 teaspoon of extra virgin olive oil and a good pinch of pepper, from a height.`
+  },
+  {
+    id: 2,
+    title: "Broad Bean Salad",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "15 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "200g fresh podded or frozen broad beans",
+      "30g whole almonds",
+      "1 x 480g jar of roasted red peppers in brine",
+      "1/2 a bunch of fresh flat-leaf parsley (15g)",
+      "30g Manchego cheese"
+    ],
+    method: `Boil the beans in a pan of boiling salted water for 3 minutes, then drain and pinch the skins off any larger beans. Toast the almonds in a dry griddle pan on a medium heat until lightly golden, tossing regularly, then remove and finely slice.
+
+Drain the peppers and open out flat, then char on the hot griddle until bar-marked on one side only. Remove and slice 1cm thick. Finely slice the parsley stalks, pick the leaves, then toss with the broad beans, peppers, 1 1/2 tablespoons of extra virgin olive oil and 1 tablespoon each of red wine vinegar and brine from the pepper jar. Taste, season to perfection with sea salt and black pepper, and divide between your plates.
+
+Finely shave over the cheese with a speed-peeler, drizzle with 1 teaspoon of extra virgin olive oil, scatter over the almonds, and serve.`
+  },
+  {
+    id: 3,
+    title: "Cherry Chard Wild Rice",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "28 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "150g mixed wild rice",
+      "200g mixed-colour chard",
+      "60g dried sour cherries",
+      "20g shelled unsalted walnut halves",
+      "40g feta cheese"
+    ],
+    method: `Cook the rice in a pan of boiling salted water according to the packet instructions. Trim the chard stalks, cut them off and pop into a colander with the leaves on top, cover and steam above the rice for 3 minutes, then remove. Meanwhile, finely chop the cherries and, in a large bowl, mix with 1 tablespoon each of red wine vinegar and rice cooking water, then 1 tablespoon of extra virgin olive oil. Finely slice the walnuts, then the chard stalks, shred the leaves.
+
+Drain the rice well, add to the cherry dressing bowl with all the chard and crumble in the feta. Toss well, then taste and season to perfection with sea salt and black pepper. Dish up, and sprinkle over the walnuts.`
+  },
+  {
+    id: 4,
+    title: "Prosciutto Celeriac Salad",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "10 mins",
+    category: "Salads",
+    ingredients: [
+      "200g celeriac",
+      "2 teaspoons wholegrain mustard",
+      "2 heaped tablespoons Greek yoghurt",
+      "1/2 a bunch of fresh tarragon (15g)",
+      "4 slices of prosciutto"
+    ],
+    method: `Peel the celeriac, then finely slice into matchsticks with good knife skills, using the julienne cutter on a mandolin (use the guard!), or a coarse box grater.
+
+In a bowl, dress the celeriac with the mustard, yoghurt and 1 tablespoon each of extra virgin olive oil and red wine vinegar. Scrunch and massage together. Pick in the tarragon leaves, mix well, then taste and season to perfection with sea salt and black pepper. Divide between two plates, then wrap the prosciutto in waves around the outside. Drizzle with 1 teaspoon of extra virgin olive oil and sprinkle from a height with a pinch of pepper.`
+  },
+  {
+    id: 5,
+    title: "Super Green Spaghetti",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "13 mins",
+    category: "Pasta",
+    ingredients: [
+      "150g dried spaghetti",
+      "4 cloves of garlic",
+      "200g cavolo nero",
+      "30g Parmesan cheese",
+      "30g ricotta cheese"
+    ],
+    method: `Cook the pasta in a pan of boiling salted water according to the packet instructions. Meanwhile, peel the garlic. Tear the stems out of the cavolo and discard, adding the leaves and the garlic to the pasta pan for 5 minutes. Pour 1 1/2 tablespoons of extra virgin olive oil into a blender, then finely grate in the Parmesan. Use tongs to carefully transfer the cavolo leaves and garlic straight into the blender and blitz for a few minutes until super-smooth. Taste and season to perfection with sea salt and black pepper.
+
+Drain the pasta, reserving a mugful of cooking water. Return it to the pan and toss with the vibrant green sauce, loosening with a splash of reserved cooking water, if needed, then divide between your plates. Dot over the ricotta, drizzle with a tiny bit of extra virgin olive oil, and tuck right in.`
+  },
+  {
+    id: 6,
+    title: "Lemony Courgette Linguine",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "15 mins",
+    category: "Pasta",
+    ingredients: [
+      "150g dried linguine",
+      "2 mixed-colour courgettes",
+      "1/2 a bunch of fresh mint (15g)",
+      "30g Parmesan cheese",
+      "1 lemon"
+    ],
+    method: `Cook the pasta in a pan of boiling salted water according to the packet instructions, then drain, reserving a mugful of cooking water. Meanwhile, slice the courgettes lengthways, then again into long matchsticks with good knife skills or using the julienne cutter on a mandolin (use the guard!). Place a large non-stick frying pan on a medium-high heat with 1 tablespoon of olive oil, then add the courgettes. Cook for 4 minutes, tossing regularly, while you finely slice the mint leaves, then stir them into the pan.
+
+Toss the drained pasta into the courgette pan with a splash of reserved cooking water. Finely grate in most of the Parmesan and a little lemon zest, squeeze in all the juice, toss well, then taste and season to perfection with sea salt and black pepper. Dish up, finely grate over the remaining Parmesan and drizzle with 1 teaspoon of extra virgin olive oil before tucking in.`
+  },
+  {
+    id: 7,
+    title: "Hot-Smoked Salmon Frittata",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "13 mins",
+    category: "Seafood",
+    ingredients: [
+      "125g hot-smoked salmon, skin off",
+      "1 bunch of spring onions",
+      "4 large eggs",
+      "2 heaped tablespoons half-fat crème fraîche",
+      "40g Red Leicester cheese"
+    ],
+    method: `Preheat the grill to high. Place a 26cm non-stick ovenproof frying pan on a medium-high heat. Put the salmon into the pan, breaking it up as it starts to sizzle. Trim, finely slice and add the spring onions, along with a pinch of black pepper. Stir occasionally for 5 minutes while, in a large bowl, you vigorously whisk the eggs until they've doubled in size.
+
+Reduce the heat to low, stir in the creme fraiche and grate in the cheese. Pour the contents of the pan into the egg bowl, mix well, then pour back into the pan, swirling it around and up the sides. Grill for 5 minutes, or until golden, set and just cooked through - keep an eye on it. Loosen the edges with a spatula, then slide on to a board, slice, and serve.`
+  },
+  {
+    id: 8,
+    title: "Roast Tikka Chicken",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "4",
+    time: "1 hr 10 mins",
+    category: "Poultry",
+    ingredients: [
+      "800g potatoes",
+      "1 small head of cauliflower (600g)",
+      "1 x 1.2kg whole chicken",
+      "1 bunch of fresh coriander (30g)",
+      "2 tablespoons tikka curry paste"
+    ],
+    method: `Preheat the oven to 180C/350F/gas 4. Wash the potatoes and chop into 3cm chunks. Trim the cauli stalk, remove any tough outer leaves, then chop the cauli and nice leaves the same size as the spuds. Finely slice the coriander stalks (reserving the leaves in a bowl of cold water). In a 30cm x 40cm roasting tray toss the veg and coriander stalks with a pinch of sea salt and black pepper, and 1 tablespoon each of olive oil and red wine vinegar.
+
+Sit the chicken in the tray and rub all over with the tikka paste, getting into all the nooks and crannies. Place the chicken directly on the bars of the oven, scrunch everything in the tray and place exactly underneath the chicken to catch the tasty juices. Roast for 1 hour, or until everything is golden and cooked through, turning the veg halfway. Sit the chicken on top of the veg to rest for 5 minutes, then sprinkle over the drained coriander leaves and serve, tossing the veg in all the tasty juices before dishing up.`
+  },
+  {
+    id: 9,
+    title: "Harissa Chicken Traybake",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "4",
+    time: "59 mins",
+    category: "Poultry",
+    ingredients: [
+      "4 mixed-colour peppers",
+      "2 red onions",
+      "1 x 1.2kg whole chicken",
+      "4 heaped teaspoons rose harissa",
+      "4 sprigs of fresh mint"
+    ],
+    method: `Preheat the oven to 180C/350F/gas 4. Deseed the peppers and tear into big chunks, peel and quarter the onions and break apart into petals, then place it all in a 30cm x 40cm roasting tray. Use a large sharp knife to carefully cut down the back of the chicken, so you can open it out flat, then score the legs. Add to the tray with the harissa, and a little sea salt, black pepper and red wine vinegar. Toss well, making sure you get into all the nooks and crannies of the chicken.
+
+Sit the chicken flat on top of the veg, skin side up, and roast it all for 50 minutes, or until gnarly and cooked through. Pick over the mint leaves before dishing up.`
+  },
+  {
+    id: 10,
+    title: "So Easy Fish Curry",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "4",
+    time: "14 mins",
+    category: "Seafood",
+    ingredients: [
+      "500g ripe mixed-colour cherry tomatoes",
+      "500g white fish fillets, such as haddock, skin off, pin-boned",
+      "1 heaped tablespoon korma curry paste",
+      "1 tablespoon lime pickle",
+      "1 x 400ml tin of light coconut milk"
+    ],
+    method: `Place 1 tablespoon of olive oil in a large shallow casserole pan on a high heat. Halve the tomatoes, adding them to the pan skin side down. Blister for 2 minutes without moving them while you chop the haddock into 4cm chunks.
+
+Stir the haddock, korma paste, lime pickle and coconut milk into the pan. Bring to the boil, then simmer for 6 minutes, taking care not to break up the fish. Taste, season to perfection with sea salt and black pepper, then dish up. Joy.`
+  },
+  {
+    id: 11,
+    title: "Asian Tuna Steak Salad",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "10 mins",
+    category: "Seafood",
+    ingredients: [
+      "200g radishes, ideally with leaves",
+      "2 heaped teaspoons pickled ginger",
+      "2 teaspoons low-salt soy sauce",
+      "250g frozen soya beans",
+      "2 x 150g tuna steaks (ideally 2cm thick)"
+    ],
+    method: `Finely chop 2 radishes with the pickled ginger, then dress with the soy, 1 tablespoon of extra virgin olive oil and 2 teaspoons of water and put aside. Very finely slice the remaining radishes with their leaves.
+
+Place the beans in a non-stick frying pan on a high heat, cover with boiling kettle water, boil for 2 minutes, then drain. Return the pan to a medium-high heat. Rub the tuna with 1 teaspoon of olive oil and a pinch of sea salt and black pepper, then sear for 1 1/2 minutes on each side, so it's blushing in the middle.
+
+Divide the beans and radishes between your plates, half-tear the tuna and place proudly on top, then spoon over the pickled ginger mixture, drizzling all the juices around the plate. Finish with 1 teaspoon of extra virgin olive oil.`
+  },
+  {
+    id: 12,
+    title: "Sticky Mango Prawns",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "20 mins",
+    category: "Seafood",
+    ingredients: [
+      "300g large raw shell-on king prawns",
+      "6 cloves of garlic",
+      "1 teaspoon curry powder",
+      "1 heaped tablespoon mango chutney",
+      "1 lime"
+    ],
+    method: `Quickly pull the legs and tails off the prawns and peel off the shells, leaving the heads on for bonus flavour. Run the tip of your knife down their backs and pull out the vein. Put a large non-stick frying pan on a medium heat. Peel and very finely slice the garlic, fry with 1 tablespoon of olive oil until crisp, then scoop out and put aside, leaving the garlicky oil behind.
+
+Stir the curry powder into the oil, then add the prawns. Fry for 4 minutes, or until the prawns are cooked through, tossing regularly. Stir in the mango chutney for 30 seconds, taste, season to perfection with sea salt and black pepper, then dish up. Scatter over the crispy garlic, finely grate over half the lime zest and serve with lime wedges, for squeezing over.`
+  },
+  {
+    id: 13,
+    title: "Meltin' Mustardy Beef",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "6",
+    time: "4 hrs 8 mins",
+    category: "Beef",
+    ingredients: [
+      "900g shin of beef, bone out",
+      "500g carrots",
+      "2 onions",
+      "120ml Worcestershire sauce",
+      "2 heaped teaspoons wholegrain mustard"
+    ],
+    method: `Preheat the oven to 160C/325F/gas 3. Place a large shallow casserole pan on a high heat, with a large non-stick frying pan on a high heat alongside. Dice the beef into 5cm chunks and toss with a generous amount of black pepper and a pinch of sea salt, then dry fry in the hot frying pan with the bone for 8 minutes.
+
+Meanwhile, wash and trim the carrots, chop into 5cm chunks, and place in the casserole pan with 1 tablespoon of olive oil. Peel and quarter the onions and break apart into petals, straight into the pan, stirring regularly. When the meat is nicely coloured, tip it into the casserole pan, then stir in the Worcestershire sauce and mustard, and cover with 800ml of boiling kettle water.
+
+Cover, then cook in the oven for 4 hours, or until the beef is meltingly tender. Loosen with a splash of water, if needed. Taste, season to perfection, and serve.`
+  },
+  {
+    id: 14,
+    title: "Chickpea Chard Pork",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "4",
+    time: "29 mins",
+    category: "Pork",
+    ingredients: [
+      "400g piece of pork fillet",
+      "1 x 480g jar of roasted peeled peppers in brine",
+      "300g rainbow chard",
+      "1 heaped teaspoon fennel seeds",
+      "1 x 660g jar of chickpeas"
+    ],
+    method: `Put a large shallow casserole pan on a high heat. Season the pork with sea salt and black pepper, then place in the pan with 1 tablespoon of olive oil and sear for 5 minutes, turning halfway. Meanwhile, drain the peppers and quickly dice into 1cm chunks, then trim and finely slice the chard, stalks and all.
+
+Remove the pork to a plate, then add the fennel seeds, peppers and all the chard to the pork fat left behind in the pan. Stir and fry for 2 minutes, then pour in the chickpeas and their juice, stir, and bring to the boil. Sit the pork back in so it's touching the base of the pan, pour over any resting juices, cover, and simmer gently on a medium heat for 12 minutes, or until the pork is just cooked through and it all smells incredible, turning the pork occasionally.
+
+Rest for 2 minutes, slice the pork, season the chickpeas to perfection, adding a splash of red wine vinegar, drizzle with extra virgin olive oil, and serve.`
+  },
+  {
+    id: 15,
+    title: "Comforting Sausage Bake",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "4",
+    time: "55 mins",
+    category: "Pork",
+    ingredients: [
+      "600g ripe mixed-colour cherry tomatoes",
+      "4 cloves of garlic",
+      "200g rosemary focaccia",
+      "1 x 660g jar of white beans",
+      "12 chipolatas"
+    ],
+    method: `Preheat the oven to 180C/350F/gas 4. Halve the cherry tomatoes, peel and finely slice the garlic, and tear the bread into bite-sized chunks. Place it all in a 30cm x 35cm roasting tray, pour in the beans and their juice, drizzle with 1 tablespoon each of olive oil and red wine vinegar, add a splash of water, and mix it all together. Quickly pinch and twist each chipolata in the middle to make it into two mini ones, then randomly dot them around your bake, lightly pressing them into the beans and tomatoes.
+
+Roast for 45 minutes, or until everything is golden, bubbling and delicious.`
+  },
+  {
+    id: 16,
+    title: "Aromatic Lamb Curry",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "4",
+    time: "1 hr 10 mins",
+    category: "Lamb",
+    ingredients: [
+      "400g lamb shoulder, bone out",
+      "2 large onions",
+      "2 large aubergines (800g total)",
+      "2 tablespoons rogan josh curry paste",
+      "200g natural yoghurt"
+    ],
+    method: `Preheat the oven to 180C/350F/gas 4. Put a large shallow casserole pan on a high heat. Dice the lamb into 3cm chunks and place in the pan fat side down. Peel the onions, dice with the aubergines to the same size as the lamb, then stir into the pan. Season with sea salt and black pepper, stir in the curry paste and 1 tablespoon of red wine vinegar, then transfer to the oven for 1 hour, or until tender, stirring halfway and loosening with a splash of water, if needed.
+
+Taste the curry, season to perfection, ripple through the yoghurt, drizzle over 1/2 a tablespoon of extra virgin olive oil, hit it with lots of black pepper, and serve.`
+  },
+  {
+    id: 17,
+    title: "Cherry Chocolate Mousse",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "6",
+    time: "30 mins",
+    category: "Dessert",
+    ingredients: [
+      "200g dark chocolate (70%)",
+      "1 x 400g tin of black pitted cherries in syrup",
+      "200ml double cream",
+      "4 large eggs",
+      "2 tablespoons golden caster sugar"
+    ],
+    method: `Melt the chocolate in a heatproof bowl over a pan of gently simmering water, then remove to cool for 10 minutes. Meanwhile, simmer the cherries and their syrup in a non-stick frying pan on a medium heat until thick, then remove.
+
+Whip the cream to very soft peaks. Separate the eggs, add the yolks to the cream with the sugar, and whisk to combine. Add a pinch of sea salt to the whites and, with a clean whisk, beat until super-stiff. Fold the cooled chocolate into the cream, then very gently fold that through the egg whites with a spatula.
+
+Divvy up the mousse between six glasses or bowls, interspersing the cherries and syrup throughout, and finishing with a few nice cherries on top.`
+  },
+  {
+    id: 18,
+    title: "Buddy's Flapjack Biscuits",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "16 biscuits",
+    time: "29 mins",
+    category: "Baking",
+    ingredients: [
+      "100g unsalted butter (at room temperature)",
+      "100g mixed dried fruit and nuts",
+      "100g porridge oats",
+      "100g self-raising flour",
+      "100g golden syrup"
+    ],
+    method: `Preheat the oven to 180C/350F/gas 4. Line a deep 20cm square baking tin with greaseproof paper and rub with olive oil. Pulse the butter, dried fruit and nuts, oats and flour in a food processor until the mix comes together and away from the sides, then pulse in the syrup until fully combined.
+
+Transfer to the lined tin, flattening to the edges. Bake for 15 to 20 minutes, or until golden. Remove from the oven, slice into 16 squares ready to cut, and leave to cool in the tin for 5 minutes. Use the paper to lift out on to a wire rack, and leave to cool completely. Simple, easy, delicious - spread the word!`
+  },
+  {
+    id: 19,
+    title: "Walnut-Whip Affogato",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "4",
+    time: "9 mins",
+    category: "Dessert",
+    ingredients: [
+      "50g dark chocolate (70%)",
+      "20g unsalted butter",
+      "50g shelled unsalted walnut halves",
+      "4 large scoops of vanilla ice cream",
+      "4 long shots of espresso"
+    ],
+    method: `Melt the chocolate and butter with a pinch of sea salt in a heatproof bowl over a pan of gently simmering water, then remove. Reserving 4 perfect walnut halves for decoration, slice or crumble up the rest.
+
+Roll your ice cream into nice round scoops and divide between four teacups. Scatter over the sliced or crumbled walnuts, pour a shot of hot espresso into each cup, stick a walnut proudly on top, then drizzle over the melted chocolate.`
+  },
+  {
+    id: 20,
+    title: "Berry Meringue Ripple",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "8 mins",
+    category: "Dessert",
+    ingredients: [
+      "2 large scoops of vanilla ice cream",
+      "200g blueberries",
+      "2 shop-bought meringues",
+      "100g raspberries",
+      "Dark chocolate (70%), to serve"
+    ],
+    method: `Get your ice cream out of the freezer. Put the blueberries into a non-stick frying pan with a splash of water and place on a high heat for 2 minutes, or until they all start to burst and get jammy, then remove from the heat.
+
+Layering up as you like, crumble the meringues between glasses or bowls, halve and add the raspberries and a nice round scoop of ice cream to each, then spoon over the jammy blueberries and their juices. Shave or grate over a little chocolate and tuck in, rippling it all together in a wonderful collision of flavours.`
+  },
+  {
+    id: 21,
+    title: "Beef, Beets & Horseradish",
+    author: "Jamie Oliver",
+    book: "5 Ingredients",
+    serves: "2",
+    time: "14 mins",
+    category: "Beef",
+    ingredients: [
+      "160g raw mixed-colour baby beets",
+      "3 heaped teaspoons creamed horseradish",
+      "3 heaped teaspoons half-fat crème fraîche",
+      "50g watercress",
+      "40g finely sliced bresaola"
+    ],
+    method: `Scrub the beets clean, reserving any nice leaves, then finely slice into matchsticks with good knife skills or using the julienne cutter on a mandolin (use the guard!). Dress with 1/2 a tablespoon each of extra virgin olive oil and red wine vinegar, the horseradish and creme fraiche, then season to perfection with sea salt and black pepper. Delicately toss with the watercress and any reserved beet leaves.
+
+Divide up the bresaola between your plates, followed by the beet salad, then drizzle with 1 teaspoon of extra virgin olive oil, and serve.`
+  },
+  {
+    id: 22,
+    title: "Cauliflower Pickles",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "1 litre",
+    time: "5 hrs 10 mins plus cooling",
+    category: "Pickles & Chutneys",
+    ingredients: [
+      "500 g cauliflower, cut into florets",
+      "2 tablespoons table salt",
+      "3 tablespoons vegetable oil",
+      "5 garlic cloves, finely sliced",
+      "2 tablespoons finely shredded ginger",
+      "10 small red chillies, thinly sliced",
+      "2 teaspoons black mustard seeds",
+      "1 teaspoon cumin seeds",
+      "1 teaspoon ground turmeric",
+      "1/2 teaspoon Kashmiri chilli powder",
+      "2 cups (500 ml) apple cider vinegar"
+    ],
+    method: `Place the cauliflower in a colander, sprinkle with 1 teaspoon salt, cover with a lid and set aside at room temperature for 5 hours. This allows the cauliflower to soften slightly. Tip the cauliflower onto a dry cloth and rub off any excess liquid or salt. Don't rinse the cauliflower in water. Set aside.
+
+Heat the oil in a wide-based pot over medium heat. Add the garlic, ginger and chilli and cook for 45 seconds or until softened but not coloured. Add the spices, stir to combine and cook for a further 30 seconds or until fragrant. Add the vinegar with the remaining salt, bring to the boil and simmer for 3 minutes. Remove from heat, add the cauliflower and stir to combine. Spoon into a 1 litre sterilised glass jar, making sure the cauliflower is covered with the liquid, and seal with a tight-fitting lid. Allow to cool before storing in the refrigerator until ready to serve. Enjoy these pickles within 2 weeks of making.`
+  },
+  {
+    id: 23,
+    title: "Chilli Mango Pickle",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "500 g",
+    time: "40 mins plus cooling",
+    category: "Pickles & Chutneys",
+    ingredients: [
+      "2 tablespoons vegetable oil",
+      "1 red onion, minced",
+      "2 garlic cloves, crushed",
+      "1 teaspoon garam masala",
+      "4 green cardamom pods, cracked",
+      "2 small red chillies, minced",
+      "1 tablespoon fresh curry leaves, finely sliced",
+      "1 Granny Smith apple, peeled, cored and finely diced",
+      "3 green or under-ripe mangoes, peeled and cubed",
+      "330 g sugar"
+    ],
+    method: `Heat the oil in a large frying pan over medium heat. Add the onion, garlic, garam masala, cardamom, chilli and curry leaves and cook, stirring regularly, for 5 minutes or until softened. Add the apple and mangoes and cook for 5 minutes or until softened. Add the sugar and reduce heat to low and simmer for 30 minutes or until most of the liquid has evaporated.
+
+Pour the hot pickle into hot sterilised glass jars and seal with tight-fitting lids. Keep for up to 1 year. Refrigerate after opening.`
+  },
+  {
+    id: 24,
+    title: "Tomato Kasundi",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "600 g",
+    time: "1 hr plus cooling",
+    category: "Pickles & Chutneys",
+    ingredients: [
+      "1 tablespoon brown mustard seeds",
+      "160 ml malt vinegar",
+      "1 tablespoon chopped fresh ginger",
+      "6 garlic cloves",
+      "8 small red chillies, minced",
+      "1 tablespoon mustard oil",
+      "1 tablespoon cumin seeds, toasted and ground",
+      "1/2 teaspoon ground cloves",
+      "2 teaspoons ground turmeric",
+      "1 kg ripe tomatoes, peeled and roughly chopped",
+      "1 tablespoon sea salt flakes"
+    ],
+    method: `Heat a frying pan over low heat. Add the mustard seeds and vinegar and cook for 5 minutes, taking care not to evaporate the vinegar. Set aside to cool.
+
+Place the mustard seed vinegar, ginger, garlic and chilli in a food processor and blend until a smooth paste forms.
+
+Heat the oil in a heavy-based frying pan over medium-low heat. Add the ground spices and cook for 15 seconds or until just fragrant. Add the mustard-cardamom paste and tomato, stir to combine and cook, stirring regularly, for 45 minutes or until the tomato has broken down. Add the sugar and salt, stir to combine and cook for a further 5 minutes. Taste and adjust seasoning, if necessary. Transfer to a food processor and pulse briefly to form a coarse paste. Pour into sterilised glass jars and seal with tight-fitting lids. Store in the pantry for up to 1 month. Refrigerate once opened.`
+  },
+  {
+    id: 25,
+    title: "Pork Vindaloo",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "6",
+    time: "2 hrs 10 mins",
+    category: "Pork",
+    ingredients: [
+      "1.2 kg pork neck",
+      "2 teaspoons ground chilli",
+      "2 teaspoons ground cumin",
+      "1/2 teaspoon ground cloves",
+      "1 tablespoon freshly ground black pepper",
+      "1 teaspoon ground cinnamon",
+      "1 teaspoon ground turmeric",
+      "1/2 teaspoon ground cardamom",
+      "6 garlic cloves, minced",
+      "2 small red chillies, minced",
+      "2 teaspoons minced ginger",
+      "75 ml coconut vinegar, plus extra 2 tablespoons",
+      "75 ml malt vinegar",
+      "1/4 cup (60 ml) vegetable oil",
+      "3 onions, thinly sliced",
+      "100 ml tamarind liquid",
+      "1 litre white chicken stock",
+      "3 ripe tomatoes, roughly chopped",
+      "1 tablespoon jaggery, shaved",
+      "2 teaspoons sea salt flakes",
+      "2 tablespoons fried garlic slices"
+    ],
+    method: `Cut the pork neck in half lengthwise then cut each piece into 4 cm-thick slices.
+
+Place the ground spices, garlic, chilli, ginger and both vinegars in a bowl and stir to combine. Add the pork and set aside to marinate for 30 minutes.
+
+Preheat oven to 160C. Heat the oil in a baking dish over medium heat and saute the onions for 3 minutes or until softened and starting to colour. Add the pork with the marinade and cook for 4-5 minutes on both sides. Add the tamarind liquid, stock, tomato and jaggery, cover with a lid and transfer to oven. Roast for 90 minutes or until the pork is tender.
+
+Remove dish from oven and remove pork from the sauce. Set the pork aside in a warm place. Put the sauce in a saucepan over high heat and bring to the boil. Cook until reduced by half or until slightly thickened. Season the sauce with the extra coconut vinegar and salt, taste and adjust seasoning, if necessary.
+
+Slice the meat into 2 cm-thick slices, arrange on plates and spoon over the sauce. Sprinkle with fried garlic and serve with steamed basmati rice.`
+  },
+  {
+    id: 26,
+    title: "Black Pepper Chicken and Onion Curry",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "4",
+    time: "2 hrs 30 mins",
+    category: "Poultry",
+    ingredients: [
+      "1 tablespoon ginger garlic paste, see recipe page 436",
+      "1 teaspoon sea salt flakes",
+      "2 tablespoons lemon juice",
+      "2 teaspoons ground turmeric",
+      "2 teaspoons ground coriander",
+      "1 teaspoon chilli powder",
+      "1 tablespoon freshly ground black pepper",
+      "4 x 180 g chicken marylands, cut into thigh and leg joints",
+      "100 ml vegetable oil",
+      "2 brown onions, sliced lengthwise",
+      "1/2 cup onion puree (blend 1 white onion with 2 tablespoons vegetable oil)",
+      "2 tablespoons finely shredded ginger",
+      "4 tablespoons coriander leaves, roughly chopped",
+      "2 tablespoons fried shallot slices, see Glossary"
+    ],
+    method: `Place the ginger garlic paste, salt, lemon juice, turmeric, coriander, chilli and half the pepper in a bowl and mix to combine. Rub into the chicken. Place in the fridge to marinate for 2 hours.
+
+Heat the oil in a large frying pan over medium heat. Add the remaining black pepper and the onion and cook, stirring, for 5 minutes or until softened and starting to colour. Reduce heat slightly, stir in the onion puree and cook for a further 10 minutes or until onion is browned. Increase heat to medium-high, add the chicken with its marinade and cook for 5 minutes to remove any excess liquid. Add 1 cup (250 ml) water and simmer, turning the chicken halfway through, for 15 minutes or until chicken is just cooked through. Check seasoning and add a little extra salt, if necessary. Transfer to a serving dish and garnish with shredded ginger, coriander leaves and fried shallots.`
+  },
+  {
+    id: 27,
+    title: "Eggplant Pickle",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "800 g",
+    time: "45 mins plus cooling",
+    category: "Pickles & Chutneys",
+    ingredients: [
+      "4 x 300 g purple eggplants, peeled and diced into 2 cm cubes",
+      "1 teaspoon table salt",
+      "2 cups (500 ml) vegetable oil",
+      "1/2 cup (125 ml) mustard oil",
+      "1 tablespoon mustard seeds",
+      "1 tablespoon fennel seeds",
+      "1 tablespoon cumin seeds",
+      "1/2 cup fresh curry leaves",
+      "1 teaspoon Kashmiri chilli powder",
+      "1 tablespoon ground turmeric",
+      "160 ml white vinegar",
+      "3 tablespoons tamarind puree",
+      "2 tablespoons sea salt flakes"
+    ],
+    method: `Sprinkle the eggplant with table salt and set aside to drain in a colander for 10 minutes. Squeeze out excess moisture and pat dry with a cloth. Don't use water to wash the eggplant, as the flesh will become mushy.
+
+Heat the vegetable oil in a deep-fryer or large saucepan until temperature reaches 180C. Add eggplant in small batches and fry for 4 minutes or until golden. Set aside to drain on paper towel.
+
+Heat the mustard oil in a large frying pan over medium heat. Add the mustard, fennel and cumin seeds with the curry leaves and cook, being careful not to burn, for 30 seconds or until fragrant. Add the ginger garlic paste and cook for 2 minutes. Add the ground spices and cook for 30 seconds. Stir through the vinegar, tamarind, sugar and salt and cook for 5 minutes. Add the fried eggplant, reduce heat to medium-low and cook for a further 5 minutes or until flavoursome and slightly sticky. Pour into sterilised glass jars and seal with tight-fitting lids. Store in the refrigerator for up to 1 month.`
+  },
+  {
+    id: 28,
+    title: "Tomato Duck Curry",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "4",
+    time: "1 hr 20 mins",
+    category: "Poultry",
+    ingredients: [
+      "100 ml vegetable oil",
+      "1/2 teaspoon cumin seeds",
+      "1 teaspoon black mustard seeds",
+      "1 cinnamon stick",
+      "4 green cardamom pods",
+      "3 white onions, finely sliced",
+      "1 tablespoon ginger garlic paste, see recipe page 436",
+      "1 teaspoon chilli powder",
+      "1 teaspoon ground turmeric",
+      "2 teaspoons ground cumin",
+      "4 duck marylands, cut into thigh and leg joints",
+      "2 ripe tomatoes, chopped",
+      "1 tablespoon tomato paste",
+      "1 cup (250 ml) freshly squeezed orange or mandarin juice",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons chopped coriander leaves"
+    ],
+    method: `Heat 2 teaspoons of oil in a wide-based frying pan over medium-low heat. Add the spices and cook until they start to pop, stirring occasionally and taking care not to burn, for 10 minutes or until just starting to brown. Add the chilli and ginger garlic paste and cook for 2 minutes or until fragrant. Stir through the ground cumin and cook for a further 1 minute. Add the duck pieces and mix thoroughly with the onion, using tongs to roll the pieces in the pan to coat. Cook for 2-3 minutes before adding the tomato, tomato paste, salt, orange juice and 1/2 cup (125 ml) water. Bring to the boil and reduce heat to low and simmer, turning the duck halfway through cooking, for 45 minutes or until duck is tender. Add a little extra water if the sauce dries out too much. The sauce should cling to the duck when finished, not be too wet. Remove the cinnamon stick. Season with salt and sprinkle with the garam masala. Top with the coriander leaves and serve with chapati.`
+  },
+  {
+    id: 29,
+    title: "Konkan Fish and Eggplant Curry",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "8",
+    time: "1 hr 10 mins",
+    category: "Seafood",
+    ingredients: [
+      "1 dried kokum, see Glossary",
+      "1/2 cup (90 g) rice flour",
+      "2 teaspoons sea salt flakes",
+      "1 kg white fish fillets, trimmed, skin removed and cut into 5 cm pieces",
+      "1 litre vegetable oil, for deep-frying",
+      "2 x 250 g purple eggplants, cut into 4 cm pieces",
+      "2 tablespoons coconut oil",
+      "1 teaspoon brown mustard seeds",
+      "3 tablespoons fennel seeds",
+      "20 fresh curry leaves",
+      "1/4 teaspoon dried chilli flakes",
+      "1 red onion, finely sliced lengthwise",
+      "1 1/2 tablespoons ginger garlic paste, see recipe page 436",
+      "3 small red chillies, minced",
+      "1 teaspoon ground turmeric",
+      "1 teaspoon ground cumin",
+      "1 teaspoon Kashmiri chilli powder",
+      "1 tablespoon freshly ground black pepper",
+      "100 ml tamarind puree",
+      "1/2 cup (125 ml) fresh tomato puree (blend 2 ripe tomatoes)",
+      "1 1/2 cups (375 ml) coconut cream",
+      "1 long red chilli, halved, deseeded and sliced diagonally",
+      "1 long green chilli, halved, deseeded and sliced diagonally",
+      "1/2 cup coriander leaves",
+      "1/4 cup fried shallot slices, see Glossary",
+      "1/4 cup fried curry leaves"
+    ],
+    method: `Soak the kokum in 100 ml water for 30 minutes. Discard kokum and reserve water.
+
+Season the rice flour with a little salt and pepper and dust the fish in the flour to lightly coat, shaking off any excess. Heat the oil in a deep-fryer or large saucepan to 180C. Fry the fish in batches, 2 pieces at a time, taking care not to break it. Remove and drain on paper towel. In the same oil, fry the eggplant for 3-4 minutes or until golden. Drain and set aside.
+
+To make the curry gravy, heat the coconut oil in a wide-based pan over low heat. Add the mustard and fennel seeds and cook for 30 seconds or until they start to pop. Add the curry leaves and chilli flakes and cook for 30 seconds. Add the onion and cook until softened, around 2 minutes. Stir through the ginger garlic paste and cook, stirring frequently, for 2 minutes or until softened.
+
+Mix together the ground spices and salt in a small bowl. Add to the onion, stir to combine and cook for a further 1 minute or until fragrant. Add the reserved kokum water, tamarind, tomato puree and coconut cream and bring to a simmer. Reduce heat to low and simmer for 5 minutes. Add the red and green chilli, fried fish and eggplant and stir to combine. Cook for a further 5 minutes before removing from heat. Stir through the coriander and garnish with fried shallots and curry leaves. Serve with steamed rice and pappadams.`
+  },
+  {
+    id: 30,
+    title: "Yoghurt Baked Duck",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "4",
+    time: "1 hr 25 mins",
+    category: "Poultry",
+    ingredients: [
+      "4 x 180 g duck marylands",
+      "170 ml mustard oil",
+      "2 teaspoons freshly minced garlic",
+      "1 red onion, finely diced",
+      "1 tablespoon white vinegar",
+      "2 tablespoons freshly chopped coriander leaves",
+      "1 teaspoon freshly minced green chilli",
+      "2 tablespoons mustard oil",
+      "1 tablespoon Kashmiri chilli powder",
+      "1 tablespoon ground coriander",
+      "2 teaspoons ground turmeric",
+      "2 teaspoons sea salt flakes",
+      "2 tablespoons ginger garlic paste, see recipe page 436",
+      "225 g thick plain yoghurt",
+      "75 ml buttermilk"
+    ],
+    method: `To make the yoghurt marinade, place all the ingredients together in a bowl and mix to combine. Massage the marinade into the duck until thoroughly coated. Set aside for 30 minutes.
+
+Heat the mustard oil in a large, deep saucepan over medium heat. Add the garlic and onion and cook, stirring, for 3 minutes or until softened and starting to colour. Add the duck with the marinade and 100 ml water and stir to combine. Cover with a lid, reduce heat to low and simmer for 25 minutes. Turn the duck pieces over in the gravy and cook for a further 25 minutes or until cooked. You may need to add a little extra water if the gravy dries out too much. Remove lid, add the vinegar and cook for 2-3 minutes. Remove from heat and stir through the coriander and chilli. Serve with chapati or roti.`
+  },
+  {
+    id: 31,
+    title: "Fried Turmeric Fish with Coconut Beetroot Salad",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "4",
+    time: "35 mins",
+    category: "Seafood",
+    ingredients: [
+      "1/2 teaspoon chilli powder",
+      "1 teaspoon ground turmeric",
+      "1 teaspoon freshly ground black pepper",
+      "1 tablespoon minced ginger",
+      "3 garlic cloves, minced",
+      "2 teaspoons minced fresh turmeric",
+      "2 teaspoons sea salt flakes",
+      "1 tablespoon coconut vinegar",
+      "4 x 150 g wild barramundi portions, cut from centre of the fillet for even thickness",
+      "1/4 cup (60 ml) vegetable oil",
+      "4 tablespoons coconut beetroot salad, to serve, see Salads page 81",
+      "1 punnet Swiss chard cress, snipped",
+      "1 punnet mustard cress, snipped",
+      "2 tablespoons fried curry leaves"
+    ],
+    method: `Place the ground spices, ginger, garlic, turmeric, salt and coconut vinegar in a large bowl and mix to combine. Add the fish and toss gently to coat. Cover and set aside to marinate for 20 minutes.
+
+Heat a frying pan over medium heat. Add the oil and fry the fish, skin-side down, for 4 minutes or until skin is crisp. Add a splash of water, making sure the paste doesn't burn, reduce the heat slightly, if necessary. Turn the fish and cook on the other side for a further 3-4 minutes, depending on the thickness of the fish, or until cooked through.
+
+Divide fish between plates and spoon over the coconut beetroot salad. Scatter with the Swiss chard and mustard cress and fried curry leaves to serve.`
+  },
+  {
+    id: 32,
+    title: "Black Pepper Prawns",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "4",
+    time: "30 mins",
+    category: "Seafood",
+    ingredients: [
+      "1/2 cup grated fresh coconut",
+      "1 tablespoon vegetable oil",
+      "1 teaspoon brown mustard seed",
+      "3 small garlic cloves, crushed",
+      "20 fresh curry leaves",
+      "1 brown onion, finely diced",
+      "2 small green chillies",
+      "1 tablespoon minced ginger",
+      "2 tomatoes, chopped",
+      "1 teaspoon freshly ground black pepper",
+      "1/4 teaspoon ground turmeric",
+      "2 teaspoons ground coriander seed",
+      "1 teaspoon ground cumin",
+      "1 teaspoon sea salt flakes",
+      "12 x 120 g raw jumbo king prawns",
+      "1 teaspoon lime juice",
+      "1 tablespoon shredded coriander leaves"
+    ],
+    method: `Preheat oven to 160C. Scatter the coconut on a baking tray and roast for 5-6 minutes or until lightly coloured. Use a mortar and pestle to grind to a paste and set aside. Increase oven temperature to 200C.
+
+Heat the oil in a deep frying pan over medium heat. Add the mustard seeds, garlic and curry leaves and cook for 1 minute or until fragrant. Add the onion and cook for 2 minutes or until softened. Stir in the green chilli and ginger and cook for 1 minute. Add the tomato and cook for 5 minutes or until softened. Add the ground spices and salt and cook for a further 1 minute. Add 3 tablespoons water, stir to combine and cook for 3 minutes or until sauce is thickened. Stir through the roasted coconut paste and remove from heat. Set aside.
+
+Without removing the shells, butterfly the prawns by making a split down the centre of the prawn underside from head-to-tail, ensuring prawns stay in one piece. Spoon half the sauce onto a baking tray and top with the prawns, shell-side down, in a single layer. Spoon over the remaining sauce and bake for 6-8 minutes or until cooked through. Drizzle with lime juice and sprinkle with shredded coriander to serve.`
+  },
+  {
+    id: 33,
+    title: "Tamarind Prawns",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "6",
+    time: "25 mins",
+    category: "Seafood",
+    ingredients: [
+      "1 teaspoon ground turmeric",
+      "1 teaspoon Kashmiri chilli powder",
+      "2 teaspoons roasted ground coriander",
+      "1 teaspoon sea salt flakes",
+      "1/3 cup (80 ml) vegetable oil",
+      "500 g raw king prawn meat, peeled (weight after shells removed), deveined and butterflied",
+      "6 oven-roasted cherry tomatoes, halved",
+      "3 tablespoons freshly chopped coriander leaves",
+      "4 tablespoons fried curry leaves",
+      "3 tablespoons sunflower oil",
+      "1 teaspoon brown mustard seeds",
+      "1 teaspoon fenugreek seeds",
+      "6 red shallots, finely diced",
+      "2 small green chillies, minced",
+      "1 tablespoon ginger garlic paste, see recipe page 436",
+      "12 fresh curry leaves",
+      "2 ripe tomatoes, seeded and chopped",
+      "1 teaspoon Kashmiri chilli powder",
+      "1/2 teaspoon ground turmeric",
+      "1 teaspoon roasted ground coriander",
+      "2 teaspoons sea salt flakes",
+      "1 tablespoon tamarind puree",
+      "1 tablespoon caster sugar"
+    ],
+    method: `Place the turmeric, chilli powder, ground coriander, salt and vegetable oil in a bowl and mix to make a paste. Add the prawns and toss to coat well. Set aside.
+
+To make the tamarind sauce, heat the oil in a frying pan over medium heat. Add the mustard seeds and fenugreek seeds and cook for 30 seconds or until they start to pop, taking care not to let them burn. Add the shallot and green chilli and cook for 2 minutes or until softened but not coloured. Stir in the ginger garlic paste and curry leaves and cook for 1 minute. Add the tomato and cook for 2 minutes or until softened. Add the ground spices, salt, tamarind and sugar and bring to a simmer. Cook for 5 minutes or until the sauce thickens. Remove from heat and set aside. If you want to make the sauce ahead of time, you'll need to reheat it in a frying pan or saucepan. Make sure it's hot when the prawns are being cooked, so you can do the final assembly.
+
+To cook the prawns, heat a frying pan over high heat. Add the prawns and cook for 3 minutes or until half-cooked and starting to colour. Add the tamarind sauce to the prawns with the roasted cherry tomato and stir to combine. Cook for 1 minute only, just enough to warm through, remove from heat and stir through the chopped coriander. Top with fried curry leaves to serve.`
+  },
+  {
+    id: 34,
+    title: "Chicken Pepper Fry",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "4",
+    time: "40 mins",
+    category: "Poultry",
+    ingredients: [
+      "2 tablespoons vegetable oil",
+      "1 cinnamon stick",
+      "2 green cardamom pods, cracked",
+      "2 white onions, finely diced",
+      "2 tablespoons ginger garlic paste, see recipe page 436",
+      "1 tablespoon curry leaves",
+      "2 tomatoes, seeded and diced",
+      "2 teaspoons sea salt flakes",
+      "1 kg chicken wings, wing tips removed",
+      "2 tablespoons fried curry leaves",
+      "2 tablespoons coriander seeds",
+      "1 1/2 teaspoons cumin seeds",
+      "2 teaspoons black peppercorns",
+      "2 small dried chillies"
+    ],
+    method: `To make the black pepper masala, place all the ingredients in a frying pan over low heat and dry roast for 1 minute or until fragrant. Allow to cool before grinding to a fine powder in a spice grinder.
+
+Heat the oil in a heavy-based frying pan over medium heat. Add the cinnamon and cardamom and cook for 20 seconds. Add the onions and cook for 4 minutes or until softened and starting to colour. Stir in the black pepper masala and cook for 1 minute or until fragrant. Add the ginger garlic paste, curry leaves, tomato and salt and cook, stirring, for 2 minutes. Add the chicken and cook for 2 minutes, stirring to coat the chicken in the spice mix. Add 100 ml water (the water is to stop the masala base from burning, not to make a sauce), cover pan with a lid, reduce heat to low and cook for 6 minutes. Turn the chicken and cook for a further 6 minutes or until tender. The chicken should be nicely coated with the cooked masala paste. Stir through the lime juice and discard the cinnamon stick. Top with fried curry leaves and serve with appams or steamed rice.`
+  },
+  {
+    id: 35,
+    title: "Roadside Chickpea Salad",
+    author: "Christine Mansfield",
+    book: "Indian Cooking Masterclass",
+    serves: "6",
+    time: "20 mins",
+    category: "Salads",
+    ingredients: [
+      "100 g sprouted mung bean sprouts (or mixed grains)",
+      "300 g cooked chickpeas (canned is fine)",
+      "75 g cooked freekeh (green wheat)",
+      "2 tablespoons pomegranate seeds",
+      "2 tablespoons sultanas",
+      "150 g cooked potato, cut into 5 mm dice",
+      "2 ripe tomatoes, seeded and diced",
+      "1 small red onion, finely diced",
+      "2 tablespoons shredded coriander leaves",
+      "2 tablespoons pumpkin seeds",
+      "1 tablespoon toasted white sesame seeds",
+      "1 tablespoon pistachios, roughly chopped",
+      "1 teaspoon sea salt flakes",
+      "1 tablespoon lime juice",
+      "1/4 cup (60 ml) grapeseed oil",
+      "2 teaspoons green mango chutney, see Relishes page 361",
+      "3 pappadams, cut into thin strips and deep-fried"
+    ],
+    method: `Place the mung bean sprouts, chickpeas, freekeh, pomegranate seeds, sultanas, potato, tomato, onion and coriander in a bowl and stir to combine. Set aside.
+
+Place the pumpkin seeds in a frying pan over low heat and cook until toasted, taking care not to burn. Add to the salad with the sesame seeds, pistachios and grapeseed oil and stir through the salad. Add the chutney and stir thoroughly to combine. Top with the fried pappadam strips and serve immediately.`
+  },
+  {
+    id: 36,
+    title: "Spaghetti carbonara",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "2",
+    time: "50 mins",
+    category: "Pasta",
+    ingredients: [
+      "75 g guanciale",
+      "about 500 ml chicken stock",
+      "parmesan rinds, if you have any saved up",
+      "2 egg yolks",
+      "3 tablespoons finely grated pecorino (pepato or romano), plus extra to serve",
+      "225 g quality dried spaghetti",
+      "freshly ground pepper"
+    ],
+    method: `Remove the skin from the guanciale (reserving it for the stock), then cut the guanciale into 5 mm (1/4 inch) dice.
+
+Bring 400 ml (14 fl oz) of the chicken stock to the boil and add the reserved guanciale skin, along with any parmesan rinds you may have, then simmer gently for 30 minutes. You don't want the stock to reduce too much, so cook it over very low heat. You should end up with about 250 ml (1 cup) - make up this amount with more stock, if needed.
+
+Put the diced guanciale into a frying pan over very low heat and cook slowly until all the fat is rendered and it becomes very crispy - this could take up to 15 minutes.
+
+In the meantime, use a whisk or stick blender to mix the egg yolks and pecorino into the warm stock mixture until emulsified.
+
+Once the guanciale is done, use a slotted spoon to remove the crisp guanciale and set aside. Strain the rendered fat into the egg yolk mixture and whisk or blend again, then pour back into the frying pan and keep warm.
+
+Cook the spaghetti in plenty of boiling salted water until al dente, according to the instructions on the package.
+
+Drain the pasta and add to the frying pan, then toss until the sauce thickens and coats the pasta. Grind in a generous amount of pepper, add the crisp guanciale and toss another couple of times - you may need to adjust the consistency with a little more stock.
+
+Divide between warmed bowls and serve with more grated pecorino.`
+  },
+  {
+    id: 37,
+    title: "Stracciatella with pickled raisins, radicchio & saffron",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "4",
+    time: "1 hr 15 mins",
+    category: "Salads",
+    ingredients: [
+      "50 g sorghum - optional",
+      "200 g stracciatella",
+      "1/2 head of radicchio, really thinly sliced",
+      "sea salt",
+      "75 g raisins",
+      "25 ml white wine vinegar",
+      "1 tablespoon caster (superfine) sugar",
+      "0.25 g (3/4 teaspoon) saffron threads",
+      "80 ml white wine vinegar",
+      "50 ml vegetable oil",
+      "50 ml olive oil"
+    ],
+    method: `For the pickled raisins, put the raisins into a heatproof bowl. In a small non-aluminium pan, bring the vinegar, sugar and 50 ml (1 1/2 fl oz) of water to the boil, then pour it over the raisins and let them soak, covered, for about an hour. Transfer the raisins, with their soaking liquid, to a food processor and blend into a puree.
+
+For the saffron dressing, put the saffron and vinegar into a small non-aluminium pan with 125 ml (1/2 cup) of water and a pinch of salt. Bring to the boil, then simmer until reduced by two-thirds - you should be left with about 2 1/2 tablespoons. Let the saffron reduction cool to room temperature, then slowly drizzle in the oils, while blending with a stick blender or hand whisk to emulsify.
+
+If using sorghum, cook it in a pan of lightly boiling salted water until tender, about an hour, then drain well.
+
+To serve, put the stracciatella into a bowl and generously dress with most of the saffron dressing, then spoon the raisins and sorghum over the top. Dress the radicchio with the remaining saffron dressing and a pinch of salt, then use to cover the stracciatella.`
+  },
+  {
+    id: 38,
+    title: "Fermented mushroom risotto",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "4",
+    time: "6 days",
+    category: "Risotto",
+    ingredients: [
+      "2 large shallots, finely chopped",
+      "2 tablespoons olive oil",
+      "320 g Vialone Nano rice",
+      "80 ml white vermouth, such as Cocci Americano, or white wine",
+      "100 g cold unsalted butter, diced",
+      "125 g finely grated parmesan",
+      "sea salt",
+      "500 g field mushrooms, coarsely chopped",
+      "2 large shallots, coarsely chopped",
+      "2 teaspoons thyme leaves",
+      "2 litres chicken or vegetable stock"
+    ],
+    method: `For the stock, lightly sprinkle the mushrooms with salt and leave in a warm place in the kitchen for a few hours, preferably overnight. This draws out the juices from the mushrooms and helps to oxidise them, intensifying their flavour.
+
+Put the mushrooms, shallot and thyme into a stockpot or large saucepan, then pour in the stock. Bring to a simmer and cook over low heat for 1 1/2 hours, then take off the heat, cover and let it rest for 30 minutes. Strain the stock through a colander and squeeze the mushrooms to extract as much liquid as possible - you should have about 1-1.5 litres (4-6 cups). Store your stock in the fridge, where it will last well for up to a week, or freeze for longer storage. Keep the mushrooms aside for fermenting.
+
+To lacto-ferment the mushrooms, you will need to weigh them, then make a brine using 2 per cent of the mushrooms' weight in salt - so, if the mushrooms weigh 300 g (10 1/2 oz), you'll need to dissolve 6 g (1/8 oz) of sea salt in 1 litre (4 cups) of filtered or bottled water. Pack the mushrooms into a sterilised 500 ml (2 cup) jar, then pour in enough of the brine to completely cover the mushrooms. Put the lid on the jar and leave at room temperature, away from sunlight, for 4-7 days, briefly opening the lid each day to allow any gases to escape. (If you have a vacuum sealer, you can use that to ferment the mushrooms instead: just seal the mushrooms in a bag with 2 per cent of their weight in salt - you will see that it's working once the bag starts filling up with air.)
+
+After 4 days, taste a little of the ferment each day to check on its progress, resealing and leaving for longer, if needed. When it has reached the desired strength of flavour, strain off the liquid, transfer the fermented mushrooms to a blender or food processor and pulse to a coarsely chopped paste. (If you're not using it right away, the paste can be kept in the fridge for up to 6 months.)
+
+When you're ready to make the risotto, bring your mushroom stock to the boil and keep warm. Place a wide pan over medium-low heat and saute the shallot in the olive oil until translucent. Add the rice and lightly toast for 2 minutes, then pour in the vermouth or wine and let it evaporate completely. Continue to cook the rice, adding the stock one ladle at a time and stirring every couple of minutes.
+
+When almost all of the stock has been absorbed, about 15 minutes in, the rice should be 90 per cent cooked. If not, add some more stock or water and cook it for a little longer - you want the rice to have a good bite without being crunchy.
+
+Now proceed with the 'mantecatura' (to make the risotto creamy), stirring in the cold butter one piece at a time. Once that's done, stir in 2 tablespoons of your fermented mushroom paste, then add the parmesan a handful at a time and keep stirring until the risotto is creamy and smooth. If it seems dry, add a little more stock or water. Check for seasoning, but you shouldn't need any as the fermented mushrooms are quite salty.
+
+Serve the risotto in warmed shallow bowls.`
+  },
+  {
+    id: 39,
+    title: "Spaghetti with cured rainbow trout, mussels & tomato butter",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "2",
+    time: "1 hr 15 mins",
+    category: "Seafood",
+    ingredients: [
+      "225 g quality dried spaghetti - or 1/2 quantity master pasta dough",
+      "30 cm piece of rainbow trout, cut into strips 30 cm long and 2 mm wide",
+      "50 g fine salt",
+      "25 g white sugar",
+      "2 rainbow trout fillets, skinned and pin-boned",
+      "1 tablespoon olive oil",
+      "1 clove of garlic",
+      "1 sprig of thyme",
+      "500 g mussels, scrubbed and de-bearded",
+      "50 ml dry white wine",
+      "60 g unsalted butter",
+      "3 anchovy fillets",
+      "1/2 teaspoon fennel seeds",
+      "250 g ripe Black Russian tomatoes, grated on a box grater",
+      "1 clove of garlic, finely chopped",
+      "1/2 teaspoon fennel seeds",
+      "1/2 teaspoon chilli flakes",
+      "olive oil",
+      "squeeze of lemon juice",
+      "sea salt",
+      "sea herbs, such as purslane, samphire or seablite, if available"
+    ],
+    method: `To cure the rainbow trout, first make a brine by bringing 500 ml (2 cups) of water, the salt and sugar to the boil and stirring until dissolved. Put the brine in the fridge until completely cold, then submerge the trout in it for 45 minutes, drain and pat dry.
+
+To steam the mussels, place a large saucepan over medium-high heat. Add the olive oil, garlic, thyme, mussels and wine all at once, covering with a lid straightaway to create steam. Cook until the mussels are just open, 2-3 minutes. Pick the mussels out of their shells, then strain the juices through a fine sieve and reserve for the tomato butter.
+
+For the tomato butter, melt the butter with the anchovies and fennel seeds in a saucepan over low heat. Once the anchovies start to break down, add the grated tomatoes and reserved mussel juices. Bring to a simmer, cover with a lid and cook for 45 minutes over the lowest possible heat, stirring occasionally to make sure it doesn't catch on the bottom. Let it cool for 10 minutes, then blend with a stick blender until smooth. Pass through a sieve and set aside.
+
+To finish, place a large frying pan over medium-low heat. Saute the garlic, fennel seeds and chilli flakes in a little olive oil until the garlic is translucent. Add the mussels and tomato butter and bring to a simmer.
+
+Preheat the oven to 70C (158F) fan-forced. Generously dress the trout fillets with olive oil and heat in the oven for 5-6 minutes until just warm.
+
+In the meantime, cook the spaghetti in boiling salted water until al dente, according to the instructions on the package for dried, or 3-4 minutes for fresh.
+
+Drain the pasta and add to the frying pan, toss together for 1 minute, then add the lemon juice and taste for salt.
+
+Divide the spaghetti between warmed bowls, placing a trout fillet on top of each one. Finish with some local sea herbs, if you have them.`
+  },
+  {
+    id: 40,
+    title: "Fusilli al ferretto with puttanesca sauce",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "4",
+    time: "1 hr 40 mins",
+    category: "Pasta",
+    ingredients: [
+      "300 g '00' flour",
+      "100 g wholemeal flour",
+      "1 teaspoon sea salt",
+      "1 tablespoon olive oil",
+      "1 teaspoon chilli flakes",
+      "2 teaspoons fennel seeds",
+      "1/2 teaspoon coriander seeds",
+      "100 g anchovy fillets",
+      "150 ml olive oil",
+      "2 cloves of garlic, thinly sliced",
+      "2 x 400 g tins of peeled tomatoes, preferably Italian",
+      "40 g capers",
+      "60 g mixed olive cheeks",
+      "4 tablespoons finely grated pecorino"
+    ],
+    method: `However, this dough is also easy to mix by hand. In a large bowl, combine both flours and the salt. Make a well in the centre and pour in 200 g (7 oz) of water. With a fork, slowly mix the water with the flour until it has a crumble-like consistency. Add the olive oil, then transfer the dough to a clean work surface and knead with your palms, pushing forward and folding, until the dough is elastic and smooth but not too soft, about 10 minutes.
+
+Wrap the dough really tightly in plastic film or reusable food wrap and set aside at room temperature for at least 30 minutes. I find it better to use this dough on the same day it's made.
+
+To shape the fusilli, on a lightly floured workbench or wooden board, cut off a piece of dough and roll it into a long, skinny log about 5 mm (1/4 inch) thick, then cut 4-5 cm (1 1/2-2 inches) long strips off the log. Place your ferretto (or knitting needle or skewer) at a 45-degree angle on one of the long sides of the strip and slowly roll forward, lightly pressing evenly on both sides of the ferretto. When the spiral is complete, gently pull it away from the ferretto and place on a flour-dusted surface. Repeat until all the fusilli are shaped, then leave to dry for 1-2 hours.
+
+For the puttanesca sauce, place a heavy-based saucepan over medium-low heat and toast the chilli flakes, fennel seeds and coriander seeds for 3-4 minutes, watching them carefully as they can quickly burn. Add the anchovies and their oil, together with the olive oil and garlic, and cook over the lowest possible heat until the anchovies break down, then add the tomatoes and cook, still over the lowest possible heat, for 1 hour. Pass the sauce through a fine sieve and discard all the seeds - you should have an intense, oily sauce.
+
+Cook the fusilli in plenty of boiling salted water until al dente, about 3-4 minutes, depending on how long the pasta has been drying for.
+
+In the meantime, to finish, place a large frying pan over medium-low heat and warm the capers and olive cheeks for 2-3 minutes. Add the sauce and bring to a simmer.
+
+Drain the pasta and add to the frying pan, then toss thoroughly, making sure the fusilli are well coated with the sauce. Stir in the pecorino and taste for salt.
+
+Serve in warmed bowls.`
+  },
+  {
+    id: 41,
+    title: "Casarecce with pork sausage & radicchio",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "2",
+    time: "20 mins",
+    category: "Pork",
+    ingredients: [
+      "200 g sausage meat (see page 220) or Italian-style pork and fennel sausages, casings removed",
+      "2 cloves of garlic, finely chopped",
+      "1/2 long red chilli, finely chopped",
+      "1 teaspoon finely chopped sage leaves",
+      "50 ml dry white wine",
+      "75 g quality radicchio (about a small head), washed and torn into large chunks",
+      "2 tablespoons finely grated parmesan",
+      "1 tablespoon finely chopped flat-leaf parsley leaves",
+      "olive oil",
+      "sea salt and freshly ground pepper"
+    ],
+    method: `To cook the sausage, place a large frying pan over medium-high heat and add 2 tablespoons of olive oil. When the oil is hot, add the sausage meat in large pieces and fry for about 4-5 minutes, or until golden all over.
+
+Reduce the heat to low, add the garlic, chilli and sage and cook for 1-2 minutes, making sure the garlic doesn't get too dark. Pour in the wine, scraping to deglaze the pan, and simmer until it has almost completely evaporated.
+
+In the meantime, cook the casarecce in plenty of boiling salted water until al dente, according to the instructions on the package.
+
+To finish, pour a ladle of the boiling pasta water over the sausage mixture, then add the radicchio and cook for 1 minute, just to soften it a little.
+
+Drain the pasta, reserving some of the pasta water, and add to the sausage mixture and radicchio, along with the parmesan and parsley. Toss everything together thoroughly, then taste for salt, toss again and add some of the reserved pasta water, if needed.
+
+Serve in warmed bowls, with a drizzle of olive oil and a heap of freshly ground pepper.`
+  },
+  {
+    id: 42,
+    title: "Gnocchi with duck & porcini ragu",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "2",
+    time: "2 hrs 30 mins",
+    category: "Poultry",
+    ingredients: [
+      "6 duck legs, preferably corn-fed",
+      "1 carrot, diced",
+      "1 brown onion, diced",
+      "2 large cloves of garlic, finely chopped",
+      "1/4 cup porcini, soaked in 250 ml warm water for about 15 minutes",
+      "100 g tomato paste (concentrated puree)",
+      "125 ml dry white wine",
+      "750 ml chicken stock",
+      "2 sprigs of sage",
+      "1 sprig of thyme",
+      "1 bay leaf",
+      "sea salt",
+      "1.5 kg Sebago or Muscat Burbank potatoes",
+      "300 g '00' flour",
+      "50 g finely grated parmesan",
+      "2 teaspoons sea salt",
+      "20 g egg (from 1 egg), pinch of freshly grated nutmeg, olive oil",
+      "50 g unsalted butter",
+      "handful of chopped flat-leaf parsley leaves",
+      "35 g finely grated parmesan",
+      "40 g thinly shaved pecorino pepato"
+    ],
+    method: `For the duck ragu, take the duck legs out of the fridge about an hour beforehand, season with salt and allow to come to room temperature.
+
+Preheat the oven to 150C (300F) fan-forced.
+
+Place a large heavy-based saucepan over medium heat. When it is hot, add the duck legs, skin side down, to render the fat, and cook until golden brown, about 5-6 minutes. Turn the legs over and cook on the other side for 2 minutes, then transfer to an ovenproof braising pan.
+
+Next add the carrot, onion and garlic to the saucepan and cook over medium-low heat until soft, about 3-4 minutes.
+
+Using a slotted spoon, gently lift out the soaked porcini, disturbing the liquid as little as possible - if any dirt has been dislodged from the mushrooms by the soaking liquid, you want it to fall to the bottom (reserve the liquid for later). Coarsely chop the porcini and add to the pan. Cook for 3 minutes, then add the tomato paste and let it caramelise for 2 minutes. Pour in the wine, stirring to deglaze, then simmer until reduced to a thick paste. Carefully add three-quarters of the mushroom liquid, leaving behind any grit or dirt, then add the stock and herbs, bring to the boil and season with salt.
+
+Pour the contents of the frying pan over the duck legs, cover really tightly with a lid or foil and cook in the oven for 1 1/2 hours, or until the meat falls off the bone.
+
+Meanwhile, for the gnocchi, wash the potatoes and put them into a pan of cold salted water. Bring to the boil, then simmer until tender (about 40 minutes), and drain. When the potatoes are cool enough to handle, peel off the skins and discard. Pass the peeled potatoes through a drum sieve, cover with a clean tea towel and leave to cool completely.
+
+Weigh out 1 kg (2 lb 4 oz) of the potato and mix with the other gnocchi ingredients until you have a smooth dough. Take care not to overwork. Divide the dough into six balls. Working with one ball at a time, roll on a lightly floured surface to form a log 1.5 cm (5/8 inch) wide, then cut into pieces 1.5 cm (5/8 inch) long. Repeat with the remaining dough.
+
+Cook a third of the gnocchi in plenty of boiling salted water until they rise to the surface, about 2 minutes. Using a slotted spoon, transfer the gnocchi to a bowl of iced water to stop the cooking, then drain and lightly oil them, so they don't stick together. (The rest of the gnocchi - if left uncooked - can be kept in the freezer for up to a month and cooked from frozen.)
+
+Remove the ragu from the oven, uncover, and leave to rest for 15 minutes. Take the duck legs out of the liquid and, when cool enough to handle, pick the meat off the bones in big chunks, discarding the skin, bones and herb stalks. Return the meat to the ragu and stir well.
+
+To finish, put a third of the ragu into a large frying pan and bring to a simmer before stirring through the butter and parsley.
+
+Re-heat the gnocchi in boiling water until they float, then drain and add to the frying pan. Toss them with the ragu for 30 seconds, then add the parmesan and toss for another 30 seconds until the ragu has emulsified.
+
+Serve in warmed bowls, with the thinly shaved pecorino pepato.`
+  },
+  {
+    id: 43,
+    title: "Tagliatelle with rabbit, olives & oregano",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "2",
+    time: "2 hrs 10 mins",
+    category: "Game",
+    ingredients: [
+      "225 g dried tagliatelle - or 240 g master pasta dough, rolled out to 3 mm thickness, then cut into strips 30 cm long and 1.5 cm wide, lightly dusted with semolina flour",
+      "farmed rabbit, 1.5-2 kg, cut into 6-8 large pieces",
+      "plain flour, for dusting",
+      "100 ml olive oil",
+      "1 brown onion, diced",
+      "2 cloves of garlic, crushed",
+      "75 g mixed olives, pitted and chopped",
+      "100 g tomato paste (concentrated puree)",
+      "125 ml dry white wine",
+      "1 litre chicken stock",
+      "2 teaspoons dried oregano, ideally Sicilian",
+      "sea salt",
+      "50 g unsalted butter",
+      "handful of flat-leaf parsley leaves, finely chopped",
+      "50 g finely grated parmesan",
+      "cracked black pepper"
+    ],
+    method: `Preheat the oven to 150-160C (300-315F) fan-forced.
+
+For the rabbit ragu, season the rabbit with salt and dust lightly in flour. Place a heavy-based saucepan over medium heat and saute the rabbit pieces in the olive oil. Cook until golden brown on all sides, then transfer to an ovenproof braising pan.
+
+Next add the onion, carrot and garlic to the saucepan and cook for 4-5 minutes until the onion is soft and translucent, then add the olives and tomato paste and cook over low heat for 2 minutes. Pour in the wine and stir to deglaze, then simmer until reduced by half. Add the stock and oregano, bring to a simmer and season with salt.
+
+Pour the contents of the saucepan over the rabbit, cover really tightly with foil and cook in the oven for 1-1 1/2 hours, or until the meat of the back legs is falling off the bone.
+
+Let the rabbit cool down in the ragu, then lift out and pull the meat off the bones, being careful to remove all the small bones. Return the rabbit meat to the ragu and let it rest for at least 30 more minutes.
+
+Cook the tagliatelle in plenty of boiling salted water until al dente, according to the instructions on the package for dried, or about 3-4 minutes for fresh.
+
+To finish, put a third of the ragu into a large frying pan and bring to a simmer, then stir in the butter.
+
+Drain the pasta and toss with the ragu in the frying pan for 1 minute, adding the parsley and most of the parmesan. Taste for salt and toss again until the ragu thickens and coats the pasta.
+
+Serve in warmed bowls, finishing with the remaining parmesan and some cracked pepper.`
+  },
+  {
+    id: 44,
+    title: "Cannelloni with smoked eggplant & ricotta",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "4",
+    time: "1 hr 10 mins",
+    category: "Pasta",
+    ingredients: [
+      "1 quantity master pasta dough, rolled into sheets 2-3 mm thick",
+      "1 quantity basic tomato sauce (see page 219)",
+      "225 g eggplants (aubergines)",
+      "125 g fresh ricotta",
+      "50 g finely grated parmesan",
+      "finely grated zest of 1 lemon",
+      "1 tablespoon olive oil",
+      "sea salt and freshly ground pepper",
+      "4 tablespoons smoked ricotta salata, or grated parmesan, or olive oil, or fresh basil leaves"
+    ],
+    method: `For the cannelloni, lay out the pasta sheets on a lightly floured workbench or wooden board and cut a 9 cm (3 1/4 inch) square, using a ruler if you roll it around your rolling pin the edges should naturally overlap by 3-4 cm (depending on how much you adjust the size of the square, based on the thickness of your rolling pin). Once you get the size right, cut the pasta sheets into squares.
+
+Lightly brush the front edge of a pasta square with water and wrap it around the rolling pin, pressing down firmly where the two edges meet. Gently pull the cannelloni off the rolling pin and place it upright on the work surface so it holds its shape. Repeat until all the cannelloni are made, then leave to dry for several hours, preferably overnight.
+
+For the filling, preheat the barbecue or grill to medium-high. Cook the eggplants whole, turning every 5 minutes, until the skin is burned and the flesh is cooked all the way through - this should take around 30 minutes, depending on their size. When the eggplants are cool enough to handle, scoop out the flesh, discarding the burned skins and stems. Strain off any excess moisture. You should have 175 g (about 3/4 cup) eggplant flesh. Put this in a mixing bowl and mix well with the ricotta, parmesan, lemon zest, olive oil, salt and pepper.
+
+Preheat the oven to 190C (375F) fan-forced.
+
+The easiest way to fill the cannelloni is with a piping bag, but you can use a teaspoon. Only fill them about 90 per cent full, or the filling will come out of the pasta in the oven.
+
+Pour two-thirds of the tomato sauce into a baking dish that just holds your filled cannelloni snugly spreading it out evenly. Place the cannelloni on top, arranging them side by side, then pour the rest of the sauce over. Sprinkle with the parmesan, cover with foil and cook in the oven for 15 minutes. Uncover and continue cooking for another 10-15 minutes until golden brown. Finish with the ricotta salata and a drizzle of basil oil.`
+  },
+  {
+    id: 45,
+    title: "Linguine with vongole & smoked cherry tomatoes",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "2",
+    time: "3 hrs",
+    category: "Seafood",
+    ingredients: [
+      "500 g clams",
+      "5 cloves of garlic, finely chopped",
+      "1/2 long red chilli, finely chopped",
+      "2 tablespoons olive oil",
+      "125 ml dry white wine",
+      "6 basil leaves, torn",
+      "225 g quality dried linguine - or 1/2 quantity master pasta dough, cut into strips 30 cm long and 3 mm wide",
+      "200 g ripe cherry tomatoes",
+      "100 ml olive oil",
+      "2 tablespoons smoking chips",
+      "2 tablespoons finely chopped flat-leaf parsley leaves",
+      "olive oil",
+      "sea salt"
+    ],
+    method: `To purge the clams of sand and silt, leave them to soak in a bowl of lightly salted cold water for 2 hours.
+
+In the meantime, for the smoked cherry tomatoes, preheat the oven to 90C (194F) fan-forced. Remove the skins of the tomatoes by blanching them in water kept at a rolling boil for 20 seconds, then use your fingers or a small knife to peel off the skins. Put the peeled tomatoes into a small baking dish, pour in the olive oil and season with salt, then cook in the oven for 1 1/2 hours - during this time, the tomatoes should shrink to half their size, get darker and become more concentrated in flavour.
+
+Remove the tomatoes from the oven to smoke them. If you have a smoking gun, inject smoke from the smoking chips directly into the dish of tomatoes, cover with foil and leave the tomatoes to absorb the smoke for 20 minutes, then repeat one more time. If you don't have a smoking gun, light half of the smoking chips in a small metal container and, as soon as the flame subsides and the chips start smoking, carefully put the metal container into the dish with the tomatoes, cover and leave to smoke for 20 minutes, then repeat with the other half of the smoking chips.
+
+To cook the clams, place a large frying pan over medium heat and fry the garlic and chilli in the olive oil until the garlic is translucent, about 1 minute. Add the clams and wine, cover with a lid and cook for 2-3 minutes or until the clams are just open. Add the tomatoes and half the basil and cook for 3 more minutes, then season with salt to taste.
+
+Cook the linguine in plenty of boiling salted water until al dente, according to the instructions on the package for dried, or about 3-4 minutes for fresh.
+
+Drain the pasta (reserving some of the pasta water) and add to the frying pan, then toss for 1 minute before adding the parsley and the remaining basil. Taste for salt, then toss again until the sauce thickens and coats the pasta, adding some of the reserved pasta water, if needed.
+
+Serve in warmed bowls.`
+  },
+  {
+    id: 46,
+    title: "Spaghetti with king prawns & cavolo nero",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "2",
+    time: "30 mins",
+    category: "Seafood",
+    ingredients: [
+      "4 large or extra-large king prawns, 200-250 g in total",
+      "150 g cavolo nero (Tuscan kale)",
+      "225 g quality dried spaghetti - or 1/2 quantity master pasta dough, cut into strips 30 cm long and 2 mm wide",
+      "50 ml olive oil",
+      "1 sprig of thyme",
+      "30 g Napoli tomato sauce (see page 219)",
+      "1 clove of garlic, finely chopped",
+      "1/2 long red chilli, finely chopped, or more to taste",
+      "100 ml dry white wine",
+      "squeeze of lemon juice",
+      "fennel fronds, to garnish - optional"
+    ],
+    method: `To prepare the prawns, take the head off the body, remove the liver parts under cold running water and reserve the head for the sauce. Peel the shell off the body, leaving only the tail segment, then remove the dark digestive tract that runs the length of the body. Reserve the shells for the sauce as well.
+
+For the sauce, place a saucepan over medium heat, add half the olive oil and the reserved prawn heads and shells and cook really well for 5-6 minutes, stirring so they colour evenly. Add the herbs and Napoli tomato sauce and bring to a slow simmer. Add the remaining olive oil, cover the pan with a lid and cook the sauce over the lowest possible heat for 45 minutes, stirring occasionally to make sure it doesn't catch on the bottom. Pass through a colander with large holes, pushing with the back of a ladle to squeeze the juices out of the prawn heads.
+
+Strip the leaves of the cavolo nero from the stalks and discard the stalks. Wash the leaves and coarsely chop into large pieces, then blanch in boiling salted water for 2 minutes. Drain well and set aside.
+
+To cook the prawns, place a frying pan over medium-low heat. Season the prawns with salt, drizzle with olive oil and cook for 1 minute on each side until just cooked. Remove from the pan and keep warm.
+
+To finish, in the same frying pan, briefly saute the garlic and chilli in olive oil. Deglaze with the wine and simmer until reduced by half, then add the sauce and cavolo nero and bring to a simmer. Season with salt and cook for 2 minutes.
+
+In the meantime, cook the spaghetti in plenty of boiling salted water until al dente, according to the instructions on the package for dried, or 3-4 minutes for fresh.
+
+Drain the spaghetti (reserving some of the pasta water) and add to the sauce. Remove from the heat and toss for 1 minute to coat the pasta. Add the lemon juice and season with salt, if needed, then add just enough of the reserved pasta water to achieve the perfect sauce consistency and toss again. Divide the spaghetti and sauce between warmed bowls. Briefly return the prawns to the frying pan, just to warm them through in the residual heat and coat them with the pan juices. Serve on top of the spaghetti and garnish with fennel fronds, if you like.`
+  },
+  {
+    id: 47,
+    title: "Master pasta dough",
+    author: "Andreas Papadakis",
+    book: "Tipo 00",
+    serves: "4-6",
+    time: "1 hr plus resting",
+    category: "Basics",
+    ingredients: [
+      "350 g '00' flour",
+      "150 g durum wheat semolina flour",
+      "1 teaspoon sea salt",
+      "65 g egg yolk (from about 3-4 eggs)",
+      "190 g whole egg (about 4 eggs)"
+    ],
+    method: `If using an electric mixer, place both flours and the salt in the bowl of a mixer fitted with the dough hook attachment. Make a well in the centre and add the egg yolk and whole egg. (I find it easiest to weigh the egg yolks in a clean bowl first and then add the whole eggs to the same bowl up to the total amount of eggs, which is 255 g (9 oz) for this recipe. The total amount of egg is the important part.) Mix on slow speed for 8-10 minutes, until you start seeing large crumbs forming and the dough starts coming together. Transfer the dough to a clean benchtop and knead by hand until it comes together. Don't expect it to be really smooth, as this is a drier dough - it will come together more and get smoother in the rolling process.
+
+To make the dough by hand, combine both flours and the salt in a mixing bowl. Make a well in the centre and add the egg yolk and whole egg. Mix with a fork until just combined, then transfer to a clean benchtop and knead by hand for 6-8 minutes until the dough comes together.
+
+If the dough seems too dry and won't come together, you can spray it a couple of times with your spray bottle of water - just be careful not to overdo it and make the dough too wet, since it will become more hydrated and softer as it rests.
+
+I like to shape the dough into a roughly rectangular block, rather than a ball, as I find it easier to feed through the pasta machine later. Wrap your dough really well in plastic film, making it as airtight as possible (at the restaurant we use a vacuum sealer).
+
+If you are planning to make your pasta straight away, let the dough rest for at least an hour at room temperature - but ideally refrigerate it overnight, then take it out a couple of hours before rolling and cutting to let it come back to room temperature.
+
+To make the rolling more manageable, it's best to work with a relatively small amount of dough, so divide it in two before you start. (If you are not using all the dough at once, you can refrigerate the rest of it, tightly wrapped, for up to 3 days.)
+
+Set up the pasta machine on a solid benchtop. Using your hands or a rolling pin, flatten the dough enough that it will go through the widest setting on the pasta machine, then pass it through the rollers two or three times, going down one notch each time.
+
+Bring both sides of the dough to the centre, so they meet in the middle, then fold in half to create four layers of dough.
+
+Roll the dough through the widest setting again, then repeat the folding and rolling process one more time - but this time bring one third of the dough into the centre, laying it over the middle third, then cover with the last third to create three layers.
+
+Flatten the dough again, so that it will go through the widest setting on your machine, then pass it through the rollers, going down one notch at a time; it should be smooth by now and starting to become elastic. Keep going until the pasta sheets are the thickness you need: for filled pasta, you want a 1-1.5 mm (1/16 inch) thickness, and for long and short shapes, 2-3 mm (1/8 inch). (4)
+
+For long pasta (such as spaghetti and tagliatelle), the sheets are cut into strips using the cutter attachment on your pasta machine (if it has one) or a sharp knife.
+
+For shaped pasta (such as sarganelli), the sheets are cut into squares with a pasta wheel and then formed into shapes.
+
+For filled pasta (such as tortelloni and ravioli), the sheets are also cut into squares or circles before being filled and sealed.
+
+And for more rustic kinds of pasta (such as fusilli al ferretto and orecchiette), the dough is not machine-rolled into sheets at all, but simply shaped by hand.`
+  },
+  {
+    id: 48,
+    title: "Hunter's Stew",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "12",
+    time: "2 days plus reheating",
+    category: "Pork",
+    ingredients: [
+      "1 kg smoked pork hock",
+      "1 bay leaf",
+      "5 allspice berries",
+      "5 juniper berries",
+      "300 g pork neck",
+      "10 g dried porcini mushrooms",
+      "50 g pitted prunes",
+      "1/4 white cabbage, finely shredded",
+      "1 kg sauerkraut",
+      "250 g kaiserfleisch or smoked pork belly, cut into 1 cm dice",
+      "250 g Polish smoked ring sausage (wiejska kielbasa), sliced into quarters lengthwise, then into 5 mm slices",
+      "500 g brown onions, halved and sliced",
+      "4 garlic cloves, finely chopped",
+      "2 bay leaves",
+      "2 thyme sprigs",
+      "1/2 teaspoon dried marjoram",
+      "5 allspice berries",
+      "5 whole black peppercorns",
+      "1/2 teaspoon caraway seeds (optional)"
+    ],
+    method: `Day 1 method: Preheat the oven to 210C (415F/Gas 6-7).
+
+Put the hock into a large saucepan or stockpot and cover with 3 litres (102 fl oz) cold water. Bring to a simmer over medium heat. Skim off any scum that rises to the surface at this point but leave the fat (this recipe will never receive the Heart Foundation tick of approval, so don't go acting like it will.)
+
+Add the bay leaf, allspice and juniper berries and simmer, uncovered, for 3 hours, or until the meat is falling from the bone. Remove the hock from the stock, reserving the stock, and allow to cool. Put the stock into the refrigerator to thoroughly chill. Use your fingers to remove all the meat from the hock (this is easier if it is still a bit warm), separating and reserving any sinew or fat in the refrigerator for later use.
+
+Meanwhile, place the pork neck in a roasting tin and cook in the oven for 15 minutes. Turn it over and cook for 10 minutes - it should be nicely browned. Reduce the oven temperature to 180C (350F/Gas 4) and cook for a further 10 minutes. Remove from the oven, allow to cool, then cover and refrigerate for later use.
+
+Day 2 method: Put the porcini and prunes in a bowl and just cover with boiling water. Leave to soak until needed.
+
+Blanch the cabbage in a saucepan of boiling water for 1 minute, then drain well, squeezing out and reserving the excess liquid - this will reduce any sulphurous smells during cooking. Coarsely chop the sauerkraut.
+
+Cook the kaiserfleisch in a frying pan over medium-high heat, turning often, until it is well browned, about 10 minutes. Remove to a plate, leaving the rendered fat in the pan. Cook the Polish ring sausage until it is well browned. Remove the sausage and any fat to a plate with the kaiserfleisch.
+
+Pick the meat from the pork neck and chop it into 1 cm (1/2 inch) dice. Cut the reserved hock meat into 1 cm (1/2 inch) dice.
+
+Using a large metal spoon, remove the fat from the top of the chilled hock stock. Melt this in a large heavy-based saucepan over medium heat. Add the onion and half of the garlic and cook slowly until the onion is soft and translucent. Add the sauerkraut, cabbage, bay leaves, thyme, marjoram, allspice, peppercorns, caraway seeds, if using, hock stock, and all of the meats and their reserved fat. Cook it all over low heat for at least 3 hours, stirring often to prevent it from sticking to the base of the pan.
+
+During the last 15 minutes of cooking, add the remaining garlic. Season with salt, black pepper and some of the reserved cabbage cooking liquid, to taste - the final result should be sweet, salty, fatty and sour in balance.`
+  },
+  {
+    id: 49,
+    title: "Phil's Veal Goulash",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "4",
+    time: "3 hrs",
+    category: "Beef",
+    ingredients: [
+      "1 tablespoon plain flour",
+      "2 teaspoons sweet paprika",
+      "1 teaspoon hot paprika",
+      "1 teaspoon salt",
+      "600 g diced veal, shin or blade",
+      "1 tablespoon vegetable oil",
+      "1 litre Polish soup stock or water",
+      "1 onion, cut into 1 cm dice",
+      "1/2 large carrot, peeled and cut into 1 cm dice",
+      "1/2 celery stick, cut into 1 cm dice",
+      "1 garlic clove, sliced",
+      "1 bay leaf",
+      "1 teaspoon dried marjoram"
+    ],
+    method: `Preheat the oven to 130C (250F/Gas 1). In a bowl, mix together the flour, sweet and hot paprikas and the salt. Add the veal, tossing well to evenly coat the meat.
+
+Heat half of the oil in a large saucepan over medium-high heat. Add the veal and cook, turning occasionally, until it is well browned, about 10 minutes. Transfer the veal to a casserole dish and set aside.
+
+Add 60 ml (2 fl oz/1/4 cup) of the stock to the pan to deglaze, using a wooden spoon to remove any bits stuck to the base of the pan. Add more stock if necessary, then pour over the veal in the dish.
+
+Add the remaining oil to the pan and cook the onion, carrot and celery until they are soft and the onion begins to colour. Repeat the deglazing procedure with more stock and add to the casserole along with the remaining ingredients. Cover and cook in the oven for 2 1/2-3 hours, or until the meat is very tender. Check it each hour for the first 2 hours, then every half hour - if it is sticking or burning, give it a stir and reduce the heat as required.
+
+Of all the side dishes that go with this goulash, surely the least healthy and the most delicious are the potato blintzes - go ahead, doing what feels good right now is what Borsch is all about.`
+  },
+  {
+    id: 50,
+    title: "Borsch's Beef Goulash",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "4",
+    time: "2 hrs 30 mins",
+    category: "Beef",
+    ingredients: [
+      "1 garlic clove",
+      "1 1/2 tablespoons coriander (cilantro) leaves",
+      "1 teaspoon green peppercorns",
+      "1 teaspoon salt",
+      "1 tablespoon vegetable oil",
+      "600 g gravy beef (boneless shin), diced",
+      "1 onion, finely diced",
+      "1 teaspoon potato starch, cornflour or arrowroot",
+      "sweet paprika, for garnish"
+    ],
+    method: `Use a mortar and pestle to grind the garlic, coriander, peppercorns and salt into a paste.
+
+Heat the oil in a heavy-based casserole dish over high heat. Brown the meat evenly all over for about 5 minutes, turning a few times. Remove to a plate.
+
+Reduce the heat to medium, add the onion to the dish and cook, stirring frequently, until it is softened, but not browned. Add the peppercorn paste and cook, stirring, for a further few minutes, then add enough water to just cover the meat. Bring to a simmer, then reduce the heat to low, cover, and cook for 2 1/2 hours, or until the meat is tender. You will need to stir the meat occasionally to prevent it sticking to the base of the dish.
+
+When the meat is tender, mix the potato starch with 1 tablespoon of water until it is smooth. Pour into the goulash and stir to thicken. Sprinkle with a little sweet paprika, to serve.
+
+At Borsch, we also serve goulash with a red capsicum relish (the kind where the peppers are cut into little dice) which is available prepared from Continental grocery stores and is probably labelled 'paprika relish'.`
+  },
+  {
+    id: 51,
+    title: "Uzbekistani Lamb Croquettes",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "8 croquettes",
+    time: "1 hr plus chilling",
+    category: "Lamb",
+    ingredients: [
+      "a pinch of saffron threads",
+      "2 tablespoons dry white wine",
+      "65 g butter, softened",
+      "500 g lean minced lamb",
+      "15 g dried breadcrumbs",
+      "1 teaspoon ground turmeric",
+      "1/4 teaspoon ground coriander seeds",
+      "1 garlic clove, crushed",
+      "2 teaspoons mild paprika",
+      "1 egg, plus 1 extra for crumbing",
+      "1 teaspoon tomato sauce (ketchup) (optional)",
+      "plain flour, for crumbing",
+      "panko, for coating",
+      "vegetable oil, for deep-frying",
+      "lemon wedges, to serve"
+    ],
+    method: `Heat a small saucepan over medium heat, add the saffron threads and dry-toast, stirring constantly, for 10 seconds. Add the wine and simmer until the liquid reduces to 1 tablespoon. Remove from the heat and allow to cool.
+
+Beat the butter and the saffron reduction until well combined. Wrap in plastic wrap and refrigerate until firm.
+
+In a large bowl, mix together the lamb, breadcrumbs, turmeric, coriander, garlic, paprika, 1 egg and tomato sauce, if using. Remove the chilled saffron butter from the refrigerator and cut it into 8 batons.
+
+Spread about 2 tablespoons of the lamb mixture on a clean work surface. Place a portion of butter in the centre and roll the lamb mixture up to enclose the butter and form a cylinder. Repeat with the remaining butter and lamb to make 8 croquettes in total.
+
+Put the flour, extra egg and panko into separate bowls. Gently roll the croquettes first in the flour, then dip in the egg, and roll in the panko to coat.
+
+Heat the oil in a deep-fryer or large heavy-based saucepan to 180C (350F), or until a cube of bread dropped into the oil browns in 15 seconds. Deep-fry the croquettes, in batches, for 3-5 minutes, or until crisp. Make sure the oil is not too hot, or they will become golden without cooking all the way through. Serve with lemon wedges on the side.`
+  },
+  {
+    id: 52,
+    title: "Cabbage Rolls",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "4",
+    time: "2 hrs",
+    category: "Beef",
+    ingredients: [
+      "4-5 dried porcini mushrooms, soaked in 60 ml cold water for 30 minutes",
+      "1 teaspoon butter, plus 1 tablespoon extra",
+      "1 teaspoon plain flour",
+      "375 ml beef or veal stock",
+      "125 ml good-quality Italian tomato passata",
+      "165 g medium-grain rice",
+      "1-2 kg white cabbage, outer leaves and core removed",
+      "1 onion, finely chopped",
+      "300 g minced beef",
+      "salt and freshly ground black pepper"
+    ],
+    method: `Preheat the oven to 180C (350F/Gas 4). Drain the mushrooms and reserve the soaking liquid. Squeeze the mushrooms of excess liquid, and finely chop. Set aside.
+
+Melt the teaspoon of butter in a small saucepan over medium heat, then add the flour and stir for 2 minutes until it is thoroughly incorporated and bubbling a little bit. Slowly add the stock, a little at a time, and stir until it is well combined and starts to bubble again. When all of the stock has been used, stir in the tomato passata and the reserved porcini soaking liquid. Leave to simmer for a further 5 minutes, then remove from the heat.
+
+Bring a medium-sized saucepan and a large saucepan of water to the boil.
+
+Add the rice to the medium pan and stir it in. Bring back to the boil and cook until tender, about 15 minutes. Strain and refresh in cold running water, then drain well.
+
+Put the whole cabbage carefully into the large saucepan of boiling water and cook for 5 minutes. Strain carefully (it can splash) and allow to cool for a further 5 minutes. Carefully remove the leaves, being sure not to break them. When you have eight good, unbroken leaves and a couple of spares, put the core of the cabbage away - you can shred it and heat it in butter with caraway seeds later. Using a sharp knife, carefully trim the protruding ribs on the back of each cabbage leaf so that it is flush with the rest of the leaf.
+
+Melt the extra butter in a saucepan over medium heat. Add the onion and saute until it softens. Add to a bowl with the cooked rice, mushroom and beef. Season with salt and pepper and use your hands to mix together very well, squeezing the filling through your fingers.
+
+Divide the filling into eight equal portions and form each into a fat cylinder. Place a cylinder at the bottom of each cabbage leaf, roll it up halfway, then fold in the sides and continue wrapping to make a neat roll. Place all the rolls in a roasting tin or baking dish so they fit snugly. Pour over the tomato sauce, cover the rolls with the extra cabbage leaves, and cook in the oven for about 1 hour, or until the filling inside them feels firm to the touch. Check the rolls after 50 minutes - you may need to place a sheet of foil over the rolls to prevent them from burning during cooking. Serve the rolls with the sauce.`
+  },
+  {
+    id: 53,
+    title: "Chicken Stroganoff",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "4",
+    time: "30 mins",
+    category: "Poultry",
+    ingredients: [
+      "500 g skinless chicken thigh fillets",
+      "2 tablespoons plain flour",
+      "1/4 teaspoon sweet paprika",
+      "1/2 teaspoon dried marjoram",
+      "1/2 teaspoon black pepper",
+      "1 1/2 teaspoons salt",
+      "2 tablespoons vegetable oil",
+      "250 ml beef stock",
+      "1 brown onion, diced",
+      "200 g button mushrooms, sliced",
+      "250 g sour cream"
+    ],
+    method: `Trim any excess fat from the chicken thighs and cut them into 1 cm (1/2 inch) dice. Place in a large bowl with the flour, paprika, marjoram, pepper and 1 teaspoon of the salt. Toss well to thoroughly coat the chicken on all sides.
+
+Heat 1 tablespoon of the oil in a large heavy-based saucepan over medium-high heat. Add the chicken and cook for about 5 minutes, stirring often and scraping the base of the pan to make sure it doesn't catch, until the chicken is cooked through and lightly browned. Remove the chicken to a bowl.
+
+Return the pan to the heat and when any bits stuck to the base of the pan are sizzling, add the stock and use a wooden spoon to loosen them. When it is all thoroughly detached, pour the stock over the chicken.
+
+Heat the remaining oil in a clean pan over medium heat. Add the onion and mushroom, and sprinkle in the remaining salt - this helps the vegetables to break down. Stir constantly over medium heat until the onions are soft and translucent, about 5 minutes. Return the chicken and stock to the pan with the sour cream, stirring well to incorporate. Bring the mixture to a simmer and let it cook for a further 10 minutes, stirring constantly to prevent it from sticking. Serve hot.`
+  },
+  {
+    id: 54,
+    title: "Duck Liver Pate with Green Walnut Vodka",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "15-20 canape or 4 lunch",
+    time: "2 hrs 30 mins",
+    category: "Poultry",
+    ingredients: [
+      "500 g duck or chicken livers",
+      "2 tablespoons butter",
+      "2 French shallots, peeled and sliced",
+      "a pinch of dried marjoram",
+      "1 thyme stalk",
+      "60 ml Orzechowa (green walnut vodka)",
+      "1 teaspoon red wine vinegar",
+      "125 ml pouring cream, chilled",
+      "200 g clarified butter or ghee"
+    ],
+    method: `Carefully remove the connective tissue from the livers with a very sharp knife.
+
+Melt the butter in a frying pan over high heat until the foam subsides, then add the shallots and saute for 30 seconds, or until they just start to soften. Add the liver, marjoram and thyme and season with salt and pepper. Continue to saute until the liver colours on the outside and just turns pink in the middle, about 90 seconds.
+
+Add the Orzechowa to the pan and toss a few more times, then remove to a bowl and refrigerate to cool. Remove the thyme and add the vinegar.
+
+When the liver is cool, transfer to a food processor and process to a puree. Slowly pour in the cream and stir until the mixture is smooth. Adjust the seasoning. Transfer to four 125 ml (4 fl oz/1/2 cup) ramekins.
+
+Melt the clarified butter, allow to cool, then pour over the top of each pate and refrigerate for at least 2 hours, or until the butter has set.
+
+Serve with pickles, buttered toast triangles and a shot of Orzechowa. Store in the refrigerator for up to 5 days.`
+  },
+  {
+    id: 55,
+    title: "Pickled Mushrooms",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "600 g",
+    time: "45 mins plus cooling",
+    category: "Pickles & Chutneys",
+    ingredients: [
+      "4 large French shallots, peeled and sliced lengthwise",
+      "1 carrot, peeled and sliced into rounds",
+      "2 bay leaves",
+      "1 teaspoon brown mustard seeds",
+      "1 teaspoon allspice berries",
+      "1 teaspoon black peppercorns",
+      "500 ml white vinegar",
+      "1 1/2 teaspoons salt",
+      "2 teaspoons white sugar",
+      "500 g button mushrooms"
+    ],
+    method: `Place all of the ingredients, except the mushrooms, in a medium saucepan with 250 ml (9 fl oz/1 cup) water. Bring to a boil, then reduce the heat and allow to simmer for 2 minutes. Add the mushrooms and bring back to the boil, stirring occasionally. Reduce the heat to low and simmer for a further 8 minutes, or until the mushrooms are just cooked through.
+
+If you want to store the mushrooms as preserves, strain and reserve the liquid, then pack the mushrooms and vegetables into sterilised airtight jars - you will need the jars to have a combined volume of 1 litre (35 fl oz/4 cups). Pour the hot liquid over the mushrooms to fill each jar and screw the lids on tight. They should keep this way for a year or more.
+
+If using straight away, allow the mushrooms to cool in the liquid, and transfer everything to a non-reactive bowl. Cover with plastic wrap and put in the refrigerator for 30 minutes. The mushrooms can be stored in the refrigerator for up to 3 months.`
+  },
+  {
+    id: 56,
+    title: "Eggs Baked in Caper Paste",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "4",
+    time: "20 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "1 garlic clove",
+      "2 tablespoons small salted capers, soaked in water for 20 minutes and drained well",
+      "30 g unsalted butter, plus 10 g extra",
+      "20 g panko",
+      "2 tablespoons finely grated parmesan cheese",
+      "1 tablespoon finely chopped flat-leaf parsley",
+      "4 eggs"
+    ],
+    method: `Put the garlic in a mortar and use a pestle to pound it to a paste (if using capers in vinegar you can aid the grinding by adding a pinch of salt).
+
+Add the capers and the 30 g butter and continue to pound into a paste. Alternatively you can place it all into a bowl and process with a stick blender, scraping down the sides, until a paste is formed.
+
+Melt the remaining butter and add the panko, parmesan and parsley, making sure the butter gets evenly distributed early before it can soak into the panko. Try not to break up the panko too much.
+
+Preheat the oven to 200C (400F). Divide the caper paste (about 1 large teaspoon per portion) between four 125 ml (4 fl oz/1/2 cup) ramekins, oven-safe tea cups or even the holes of a muffin tray. Press the paste out with your fingers so that it covers the bottom of each ramekin and comes about 1 cm (1/2 inch) up the sides.
+
+Crack an egg into each ramekin, then sprinkle the crumb mixture evenly over each egg, being careful not to break the eggs. Bake in the oven for 6-8 minutes, depending on how firm you like the yolks.`
+  },
+  {
+    id: 57,
+    title: "Honey Vodka Prawns",
+    author: "Benny Roff",
+    book: "Borscht, Vodka & Tears",
+    serves: "4",
+    time: "35 mins plus marinating",
+    category: "Seafood",
+    ingredients: [
+      "1/2 bunch fresh coriander (cilantro), leaves picked",
+      "2 cm piece of fresh ginger, peeled and grated",
+      "1/2 birdseye or serrano chilli, seeds left in, thinly sliced",
+      "1/2 teaspoon finely chopped garlic",
+      "330 ml sweet chilli sauce",
+      "60 ml Krupnik or Medos honey vodka",
+      "500 g raw prawns (shrimp), peeled and deveined, heads removed and tails left intact"
+    ],
+    method: `Put all of the ingredients, except the prawns, into a food processor and process until a fairly smooth sauce is formed. Transfer to a bowl.
+
+Toss the prawns in the sauce and leave to marinate for at least 30 minutes. The prawns can be stored for up to 1 day in the refrigerator at this stage.
+
+When you are ready to start cooking, pour the prawns and the sauce into a frying pan and cook over medium-high heat, for about 5 minutes, stirring frequently once the sauce starts to bubble, until the prawns are just cooked through. Serve with steamed rice and a Flu Shot.`
+  },
+  {
+    id: 58,
+    title: "Chocolate peanut butter slice",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "24",
+    time: "5 hrs plus chilling",
+    category: "Dessert",
+    ingredients: [
+      "1/2 cup (120g) almonds",
+      "1/2 cup (40g) desiccated coconut",
+      "6 fresh dates, pitted",
+      "1/4 cup (60g) coconut oil, melted",
+      "3/4 cup (210g) smooth peanut butter",
+      "8 fresh dates, pitted",
+      "1/2 cup (125ml) rice malt syrup",
+      "1/3 cup (35g) raw cacao powder",
+      "1/4 cup (60g) coconut oil, melted",
+      "1/2 cup (125ml) rice malt syrup"
+    ],
+    method: `Lightly grease a 20cm x 30cm slice tin and line with non-stick baking paper. Place the almonds in a food processor and process until finely chopped. Add the coconut, dates and oil and process until well combined. Press the mixture into the base of the prepared tin and refrigerate for 30 minutes or until firm.
+
+To make the peanut butter filling, place the peanut butter, dates and rice malt syrup in a food processor and process until smooth. Spread over the base and refrigerate for 1 hour or until firm.
+
+To make the cacao topping, place the cacao, oil and rice malt syrup in a heatproof bowl over a saucepan of simmering water and stir until smooth. Remove from the heat and spoon over the peanut butter filling. Refrigerate for 3-4 hours or until set. Remove from the tin and slice to serve. Store slice in an airtight container in the refrigerator for up to 1 week.`
+  },
+  {
+    id: 59,
+    title: "Banana and berry tray cake",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "15",
+    time: "1 hr",
+    category: "Dessert",
+    ingredients: [
+      "1 1/2 cups (390g) mashed banana (about 4 bananas)",
+      "1/3 cup (40g) oat bran",
+      "1/4 cup (60ml) milk",
+      "1/2 cup (125ml) maple syrup, plus extra for brushing",
+      "1 cup (250ml) vegetable or coconut oil",
+      "2 eggs",
+      "1 teaspoon vanilla extract",
+      "1 teaspoon ground cinnamon",
+      "1 cup (160g) buckwheat flour",
+      "1 cup (130g) white spelt flour",
+      "3 teaspoons baking powder",
+      "1 cup (150g) blueberries, raspberries or blackberries"
+    ],
+    method: `Preheat oven to 160C (320F). Lightly grease a 20cm x 30cm slice tin, line with non-stick baking paper and set aside.
+
+Place the banana, oat bran, milk, maple syrup, oil, eggs, vanilla and cinnamon in a large bowl, mix to combine and allow to stand for 15 minutes.
+
+Sift in both the flours and the baking powder and mix to combine. Pour into the prepared tin and sprinkle with the blueberries. Bake for 45 minutes or until just cooked when tested with a skewer. Turn out onto a serving plate and, while the cake is still hot, brush with extra maple syrup. Slice and serve warm.`
+  },
+  {
+    id: 60,
+    title: "Orange and chia seed syrup cake",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "12",
+    time: "1 hr 25 mins",
+    category: "Dessert",
+    ingredients: [
+      "1/4 cup (50g) black chia seeds",
+      "1/2 cup (125ml) milk",
+      "125g unsalted butter, chopped",
+      "1 tablespoon finely grated orange rind",
+      "1 cup (220g) raw sugar",
+      "4 eggs",
+      "2 cups (240g) almond meal (ground almonds)",
+      "1 cup (130g) white spelt flour",
+      "1 1/2 teaspoons baking powder",
+      "1/2 cup (125ml) rice malt syrup",
+      "2 tablespoons orange zest",
+      "1/2 cup (125ml) orange juice"
+    ],
+    method: `Preheat oven to 160C (320F). Lightly grease a 20cm round cake tin, line with non-stick baking paper and set aside. Place the chia seeds and milk in a bowl and set aside to soak for 10 minutes.
+
+Place the butter, orange rind and sugar in the bowl of an electric mixer and beat for 8 minutes or until light and creamy. Add the eggs and beat until well combined. Add the chia mixture, almond meal, flour and baking powder and fold to combine. Spoon the mixture into the prepared tin and bake for 1 hour-1 hour 10 minutes or until cooked when tested with a skewer.
+
+While the cake is baking, make the orange syrup. Place the rice malt syrup, orange rind and juice in a small saucepan over medium heat. Simmer for 12 minutes or until the syrup is reduced by half and thickened.
+
+Invert the cake onto a cake stand and, while still hot, top with the syrup. Slice and serve warm.`
+  },
+  {
+    id: 61,
+    title: "Lemon delicious chia puddings",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4-6",
+    time: "30 mins plus soaking",
+    category: "Breakfast",
+    ingredients: [
+      "1/2 cup (100g) white chia seeds",
+      "1/4 cup (60ml) lemon juice",
+      "2 cups (500ml) milk",
+      "1/2 cup (125ml) coconut cream",
+      "1/3 cup (80ml) rice malt syrup",
+      "1/2 cup (140g) coconut yoghurt, plus extra to serve",
+      "toasted shredded coconut and finely grated lemon rind, to serve"
+    ],
+    method: `Place the chia seeds, lemon juice, milk and coconut cream in a bowl and whisk to combine. Set aside to soak for 20-30 minutes.
+
+Add the rice malt syrup and yoghurt and stir to combine. Divide between glasses and top the puddings with extra yoghurt, toasted coconut and lemon rind to serve.`
+  },
+  {
+    id: 62,
+    title: "Apple ice-cream sandwiches",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "20",
+    time: "6 hrs plus freezing",
+    category: "Dessert",
+    ingredients: [
+      "2 cups (560g) plain Greek-style (thick) yoghurt",
+      "3/4 cup (180g) honey",
+      "1/4 cup (60ml) rice malt syrup",
+      "1 cup (260g) mashed banana (about 3 bananas)",
+      "1 cup (250ml) coconut cream",
+      "3 apples, nectarines or peaches, very thinly sliced"
+    ],
+    method: `Place the yoghurt, honey, rice malt syrup, banana and coconut cream in a large snap-lock plastic bag. Seal, shake to combine and freeze for 3-4 hours or until solid.
+
+Line a metal container with non-stick baking paper. Break up the ice-cream by bending and tapping the bag on a hard surface. Place the ice-cream in a food processor and process until smooth. Pour into the prepared tin and freeze for 2 hours or until firm.
+
+Press scoops of the banana coconut ice-cream between slices of apple to make sandwiches. Place on trays lined with non-stick baking paper and freeze for 30 minutes or until firm.`
+  },
+  {
+    id: 63,
+    title: "Kale and cashew dip",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "2 cups",
+    time: "1 hr 15 mins plus chilling",
+    category: "Snacks",
+    ingredients: [
+      "1 cup (160g) cashews",
+      "3 cups (750ml) warm water",
+      "2 cups (60g) shredded kale leaves",
+      "1 litre boiling water",
+      "1/4 cup (60ml) extra virgin olive oil, plus extra to serve",
+      "1/2 clove garlic, chopped",
+      "2 tablespoons lemon juice",
+      "1 cup (80ml) cold water",
+      "sea salt and cracked black pepper",
+      "baby (micro) parsley leaves (optional), to serve",
+      "seeded crackers (see recipe, right), or vegetable chips, to serve"
+    ],
+    method: `Place the cashews in a large bowl, cover with the warm water and allow to soak for 1 hour. Drain and set aside.
+
+Place the kale in a bowl, cover with the boiling water and allow to stand for 1-2 minutes. Drain and pat dry with paper towel. Place the cashews and kale in a food processor and process until finely chopped. Add the oil, garlic, lemon juice, tahini, cold water, salt and pepper and process until smooth. Refrigerate until chilled.
+
+Drizzle the dip with extra oil, top with baby parsley and serve with crackers or vegetable chips.`
+  },
+  {
+    id: 64,
+    title: "Seeded crackers",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "6-8",
+    time: "30 mins",
+    category: "Snacks",
+    ingredients: [
+      "1/2 cup (80g) sunflower seeds",
+      "1/4 cup (45g) linseeds (flaxseeds)",
+      "1/4 cup (40g) sesame seeds",
+      "2 tablespoons chia seeds",
+      "1 teaspoon sea salt flakes, plus extra for sprinkling",
+      "1 cup (130g) white spelt flour",
+      "1/2 cup (125ml) water",
+      "1/4 cup (80ml) extra virgin olive oil"
+    ],
+    method: `Preheat oven to 180C (350F). Place all the seeds, the salt and flour in a large bowl and stir to combine. Add the water and oil and mix to form a dough. Divide the dough in half and roll each piece between 2 sheets of non-stick baking paper to 3mm thick. Transfer to baking trays and remove the top sheets of paper. Sprinkle with extra salt, pressing lightly to secure, and bake for 15-20 minutes or until golden and crisp. Allow to cool on wire racks and break into large pieces to serve. Store in an airtight container for up to 2 weeks.`
+  },
+  {
+    id: 65,
+    title: "Matcha yoghurt pops",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "10",
+    time: "10 mins plus freezing",
+    category: "Dessert",
+    ingredients: [
+      "1 1/4 cups (350g) plain Greek-style (thick) yoghurt",
+      "1 cup (250ml) coconut milk",
+      "1/3 cup (120g) honey",
+      "1 tablespoon matcha green tea powder",
+      "finely chopped pistachios, to serve"
+    ],
+    method: `Place the yoghurt, coconut milk, honey and matcha in a blender and blend until smooth. Divide between 10 x 1/3-cup-capacity popsicle moulds, insert popsicle sticks and freeze for 4-5 hours or until firm. Remove from the moulds and dip each pop in pistachios to serve.`
+  },
+  {
+    id: 66,
+    title: "Cacao, banana, date and cashew bars",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "12",
+    time: "50 mins plus cooling",
+    category: "Snacks",
+    ingredients: [
+      "1/2 cup (35g) raw cacao powder",
+      "3/4 cup (180g) firmly packed chopped pitted fresh dates (about 10 dates)",
+      "1/4 cup (60ml) vegetable, nut or coconut oil",
+      "1 1/2 cups (240g) cashews",
+      "1 1/2 teaspoons vanilla extract",
+      "3/4 cup (200g) mashed banana (about 3 bananas)",
+      "coconut flakes, for sprinkling"
+    ],
+    method: `Preheat oven to 160C (320F). Line a 20cm square cake tin with non-stick baking paper and set aside.
+
+Place the cacao, date, oil, cashews, vanilla and banana in a food processor and process until smooth. Spoon the mixture into the prepared tin, spread evenly and sprinkle with coconut. Bake for 40 minutes or until firm to touch. Allow to cool in the tin before slicing into bars to serve. Store bars in an airtight container in the refrigerator for up to 1 week.`
+  },
+  {
+    id: 67,
+    title: "Cacao date truffles",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "50",
+    time: "30 mins plus chilling",
+    category: "Snacks",
+    ingredients: [
+      "1/2 cup (80g) almonds",
+      "1 cup (250ml) warm water",
+      "24 fresh dates, pitted",
+      "1/4 cup (25g) raw cacao powder",
+      "2 tablespoons coconut oil",
+      "toasted shredded coconut, almond meal or extra raw cacao powder, to coat"
+    ],
+    method: `Place the almonds in a bowl, cover with the water and allow to soak for 20 minutes. Drain and place in a food processor. Add the dates, cacao and oil and process until smooth. Divide and shape the mixture into 2-teaspoon balls and toss in the coconut to coat. Refrigerate for 2-3 hours or until firm before serving. Store truffles in an airtight container in the refrigerator for 10-14 days.`
+  },
+  {
+    id: 68,
+    title: "Sriracha spiced chickpeas and almonds",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4 cups",
+    time: "45 mins",
+    category: "Snacks",
+    ingredients: [
+      "1 x 400g can chickpeas (garbanzo beans), rinsed and drained",
+      "1 cup (160g) almonds",
+      "2 tablespoons black chia seeds",
+      "1/2 cup (125ml) Sriracha chilli sauce",
+      "2 tablespoons honey"
+    ],
+    method: `Preheat oven to 160C (320F). Place the chickpeas on layers of paper towel and dry well. Transfer to a bowl and add the chia seeds. Place the Sriracha and honey in a small bowl and mix to combine. Add to the chickpea mixture and toss to coat. Divide between 2 baking trays lined with non-stick baking paper. Roast, turning occasionally, for 30-35 minutes or until golden. Allow to cool on trays before serving. Store the mixture in an airtight container for up to 1 week.`
+  },
+  {
+    id: 69,
+    title: "Beetroot and horseradish cured salmon",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "3 hrs 20 mins",
+    category: "Seafood",
+    ingredients: [
+      "1/3 cup (100g) coarse rock salt",
+      "2 tablespoons caster (superfine) sugar",
+      "2 tablespoons finely chopped dill",
+      "1 x 500g salmon fillet, skin and bones removed",
+      "1 tablespoon finely grated fresh horseradish",
+      "1 large beetroot (200g), coarsely grated",
+      "1/4 cup each baby parsley and basil leaves (optional), to serve",
+      "2 teaspoons finely grated fresh horseradish",
+      "1/4 teaspoon rice wine vinegar",
+      "2 tablespoons extra virgin olive oil",
+      "sea salt and cracked black pepper",
+      "4 small fennel bulbs (800g), trimmed and thinly sliced"
+    ],
+    method: `Place the salt, sugar and dill in a bowl and stir to combine. Sprinkle both sides of the salmon with the horseradish. Place half the salt mixture in the base of a glass or ceramic dish large enough to snugly fit the salmon. Top with half the beetroot and the salmon. Layer with the remaining beetroot and salt mixture. Cover with plastic wrap, weigh down with cans of beans or tomatoes and refrigerate for 3 hours.
+
+While the salmon is curing, make the fennel salad. Place the horseradish, vinegar, oil, salt and pepper in a large bowl and whisk to combine. Add the fennel and toss to combine.
+
+Remove the salmon from the salt and beetroot and slice thinly. Divide between serving plates and top with the salad and baby herbs to serve.`
+  },
+  {
+    id: 70,
+    title: "Whole-wheat ramen with miso-glazed chicken and kale",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "25 mins",
+    category: "Poultry",
+    ingredients: [
+      "3 x 200g chicken breast fillets, trimmed",
+      "1 tablespoon vegetable oil",
+      "2 tablespoons finely grated ginger",
+      "2 tablespoons white miso paste",
+      "1.5 litres chicken stock",
+      "250g whole-wheat Japanese noodles",
+      "2 cups (60g) torn kale leaves",
+      "2 soft-boiled eggs, halved",
+      "4 strips toasted nori",
+      "baby (micro) coriander (cilantro) (optional), to serve",
+      "shichimi togarashi and chilli oil, to serve",
+      "2 tablespoons vegetable oil",
+      "2 tablespoons white miso paste",
+      "2 tablespoons mirin (Japanese rice wine)"
+    ],
+    method: `To make the miso glaze, place the oil, miso and mirin in a bowl and whisk until well combined.
+
+Brush the miso glaze over the chicken. Heat the oil in a large non-stick frying pan over medium heat. Cook the chicken for 5 minutes each side or until golden and cooked through. Set aside and keep warm.
+
+Place the ginger, miso paste and stock in a medium saucepan over medium heat. Stir to combine and bring to the boil. Reduce the heat to low and simmer for 5 minutes.
+
+Cook the noodles in a large saucepan of salted boiling water for 4-6 minutes or until just tender. Drain and divide between serving bowls. Slice the chicken and place on top of the noodles. Top with the kale and ladle over the miso broth. Top each with half an egg, a strip of nori and baby coriander. Serve with togarashi and chilli oil.`
+  },
+  {
+    id: 71,
+    title: "Baked fish cakes with chilli lime dressing",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "20 mins",
+    category: "Seafood",
+    ingredients: [
+      "450g firm white fish fillets, chopped",
+      "1 cup (160g) cooked quinoa",
+      "1 jalapeno chilli, finely chopped",
+      "2 cloves garlic, crushed",
+      "4 kaffir lime leaves, finely shredded",
+      "1/2 cup each mint and coriander (cilantro) leaves, shredded",
+      "2 green onions (scallions), shredded",
+      "1 egg white",
+      "sea salt and cracked black pepper",
+      "vegetable oil, for brushing",
+      "1/2 cup (40g) shredded cabbage",
+      "1 cup coriander (cilantro) leaves, extra baby (micro) coriander (cilantro) leaves (optional), to serve",
+      "iceberg lettuce leaves, to serve",
+      "lime wedges, to serve",
+      "2 tablespoons mirin (Japanese rice wine)",
+      "2 tablespoons lime juice",
+      "1 long green chilli, sliced"
+    ],
+    method: `To make the chilli lime dressing, place the mirin, lime juice and chilli in a bowl and whisk to combine. Set aside.
+
+Preheat oven to 220C (425F). Place the fish in a food processor and process until finely chopped. Transfer to a large bowl and add the quinoa, chilli, garlic, lime leaf, mint, coriander, onion, eggwhite, salt and pepper. Mix until well combined. Divide and shape the mixture into 1/3-cup (80ml) patties, place on a baking tray lined with non-stick baking paper and brush both sides with oil. Bake for 8 minutes. Turn and cook for a further 8 minutes or until golden and crisp.
+
+Place the cabbage and extra coriander in a bowl, toss to combine and top with baby coriander. Serve the fish cakes with the lettuce cups, cabbage salad, dressing and lime wedges.`
+  },
+  {
+    id: 72,
+    title: "Moroccan chicken and carrot salad with whole-wheat couscous",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "25 mins",
+    category: "Poultry",
+    ingredients: [
+      "2 tablespoons extra virgin olive oil",
+      "1 teaspoon ras el hanout",
+      "1 tablespoon chopped preserved lemon rind",
+      "1 teaspoon coriander seeds, crushed",
+      "3 x 200g chicken breast fillets, trimmed",
+      "1 1/2 cups (240g) dried whole-wheat couscous",
+      "1 1/2 cups (375ml) boiling water",
+      "sea salt flakes",
+      "3 carrots, peeled and shredded",
+      "1 cup (160g) smoked almonds, chopped",
+      "1/2 cup (80g) dried currants",
+      "2 tablespoons poppyseeds",
+      "3 cups coriander (cilantro) leaves",
+      "2 tablespoons extra virgin olive oil",
+      "1/4 cup (60ml) orange juice",
+      "2 tablespoons white wine vinegar",
+      "1 clove garlic, crushed",
+      "1 teaspoon Dijon mustard"
+    ],
+    method: `To make the orange dressing, place the oil, orange juice, vinegar, garlic and mustard in a bowl. Whisk to combine and set aside.
+
+Preheat oven to 220C (425F). Place the oil, ras el hanout, lemon rind and coriander seeds in a small bowl and mix to combine. Place the chicken on a baking tray lined with non-stick baking paper and brush with the ras el hanout mixture. Roast for 12-15 minutes or until golden and cooked through. Allow to cool slightly before slicing into strips.
+
+While the chicken is roasting, place the couscous, water and a pinch of salt in a large bowl and cover with plastic wrap. Set aside for 5 minutes or until the water is absorbed. Fluff the couscous with a fork and add the carrot, almonds, currants, poppyseeds, coriander and the chicken. Top with the orange dressing, toss to combine and divide between bowls to serve.`
+  },
+  {
+    id: 73,
+    title: "Watercress, broccoli and roasted garlic pesto",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "3 cups",
+    time: "35 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "1 head garlic",
+      "1 1/2 tablespoons extra virgin olive oil, for drizzling",
+      "6 cups (360g) broccoli florets",
+      "2 cups (30g) watercress sprigs, plus extra to serve",
+      "1/2 cup (80g) roasted almonds",
+      "2 teaspoons finely grated lemon rind",
+      "2 tablespoons lemon juice",
+      "1/2 cup (40g) finely grated parmesan",
+      "1/2 cup (180ml) extra virgin olive oil, extra",
+      "char-grilled bread and lemon wedges, to serve"
+    ],
+    method: `Preheat oven to 180C (350F). Place the garlic on a sheet of aluminium foil, drizzle with the oil and wrap to enclose. Roast for 30 minutes or until golden and soft. Allow to cool and squeeze the cloves from their skin into a food processor.
+
+Add the broccoli, watercress, almonds, lemon rind, juice, parmesan and extra oil and process to a coarse paste. Serve with bread, lemon wedges and extra watercress.`
+  },
+  {
+    id: 74,
+    title: "Green vegetable salad",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "20 mins",
+    category: "Salads",
+    ingredients: [
+      "200g Brussels sprouts, blanched and sliced",
+      "1 bunch asparagus (150g), blanched and sliced",
+      "150g green beans, trimmed, blanched and shredded",
+      "1 small fennel bulb (180g), trimmed and thinly sliced",
+      "150g ricotta salata, shaved",
+      "1/2 cup chervil sprigs",
+      "1/3 cup (45g) roasted hazelnuts, skins removed and chopped",
+      "1/4 cup (70g) plain Greek-style (thick) yoghurt",
+      "1/4 cup (60ml) buttermilk",
+      "2 tablespoons each chopped tarragon and chopped chives",
+      "2 tablespoons lemon juice",
+      "1 clove garlic, crushed",
+      "2 anchovies, finely chopped",
+      "sea salt and cracked black pepper"
+    ],
+    method: `To make the green dressing, place all the ingredients in a jug and, using a hand-held stick blender, blend until smooth.
+
+Place the vegetables in a large bowl and toss to combine. Divide between serving plates and top with the ricotta salata. Divide the dressing and top with the chervil and hazelnuts to serve.`
+  },
+  {
+    id: 75,
+    title: "Kale and spinach omelette",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "2",
+    time: "15 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "2 stalks kale, trimmed and chopped",
+      "250g frozen spinach, thawed and drained",
+      "4 eggs, separated",
+      "1/2 cup (80ml) milk",
+      "salt and cracked black pepper",
+      "1/4 cup (20g) finely grated parmesan, plus extra to serve",
+      "1/4 cup (30g) grated cheddar",
+      "1/4 cup (60g) soft goat's cheese",
+      "1/2 cup (120g) fresh ricotta",
+      "1 tablespoon chopped chives",
+      "20g unsalted butter",
+      "frozen peas, cooked and crushed, to serve"
+    ],
+    method: `Place the kale and spinach in a food processor and process until finely chopped. Place the egg yolks, milk, salt and pepper in a large bowl and whisk to combine. Add the kale mixture, parmesan and cheddar and mix to combine. Place the eggwhites in a bowl and whisk until stiff peaks form. Add to the yolk mixture and gently fold to combine. Place the goat's cheese, ricotta and chives in a small bowl and mix to combine.
+
+Melt half the butter in a 20cm non-stick frying pan over medium heat. Add half the egg mixture and cool for 5-6 minutes or until just set. Spoon half the goat's cheese mixture onto one side of the omelette and, using a spatula, carefully fold to enclose. Cook for a further 1 minute, remove from the pan, set aside and keep warm. Repeat with the remaining butter, egg mixture and goat's cheese mixture. Place the omelettes on serving plates, top with the peas and sprinkle with extra parmesan to serve.`
+  },
+  {
+    id: 76,
+    title: "Coconut and chai chia",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4-6",
+    time: "25 mins plus chilling",
+    category: "Breakfast",
+    ingredients: [
+      "3 tablespoons chai tea",
+      "1 1/2 cups (375ml) coconut milk",
+      "1 1/2 cups (375ml) milk or nut milk",
+      "3 tablespoons raw honey, plus extra to serve",
+      "1/2 cup (100g) white chia seeds",
+      "coconut yoghurt, chopped pistachios and pomegranate seeds, to serve"
+    ],
+    method: `Place the tea and coconut milk in a saucepan over medium heat. Bring to a gentle simmer and cook for 2 minutes. Strain the mixture into a medium bowl, discarding the solids. Add the milk, honey and chia seeds, mix to combine and refrigerate for 20 minutes or until the liquid is absorbed and the chia is soft.
+
+Divide the chia between glasses and top with yoghurt, pistachio, pomegranate and extra honey to serve.`
+  },
+  {
+    id: 77,
+    title: "Power seed bircher with maple vanilla yoghurt",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "4 hrs plus chilling",
+    category: "Breakfast",
+    ingredients: [
+      "1/3 cup (55g) sunflower seeds",
+      "1/3 cup (55g) pepitas (pumpkin seeds)",
+      "1/3 cup (60g) linseeds (flaxseeds)",
+      "1/2 cup (60g) rolled spelt oats",
+      "1 1/2 cups (375ml) milk or nut milk",
+      "1/2 teaspoon ground cinnamon",
+      "1 tablespoon honey",
+      "1 firm pear, grated",
+      "raspberries, to serve",
+      "1 cup (280g) plain Greek-style (thick) yoghurt",
+      "2 tablespoons maple syrup",
+      "1 teaspoon vanilla bean paste"
+    ],
+    method: `Place the sunflower seeds, pepitas, linseeds and oats in a large bowl. Add the milk, cinnamon and honey and mix to combine. Refrigerate for 4 hours or overnight.
+
+To make the maple vanilla yoghurt, place the yoghurt, maple syrup and vanilla in a bowl and mix to combine.
+
+Add the pear to the bircher and stir to combine. Spoon the bircher into serving bowls or jars and top with the yoghurt and raspberries to serve.`
+  },
+  {
+    id: 78,
+    title: "No-knead seeded morning bread",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "1 loaf",
+    time: "9 hrs plus resting",
+    category: "Baking",
+    ingredients: [
+      "3 1/3 cups (830ml) water",
+      "1 teaspoon dry yeast",
+      "1 tablespoon maple syrup",
+      "3 teaspoons sea salt flakes",
+      "6 cups (780g) white spelt flour, plus extra for dusting",
+      "1/2 cup (90g) linseeds (flaxseeds)",
+      "1/2 cup (80g) sunflower seeds",
+      "butter, to serve"
+    ],
+    method: `Place the water, yeast, maple syrup and salt in a large bowl and mix to combine. Add the flour, linseeds and sunflower seeds and mix until a sticky dough forms. Turn out the dough onto a surface dusted with flour and fold over the edges to form a rough round loaf. Place the dough in a clean bowl dusted with flour. Dust the top of the dough with flour and cover with a clean tea towel. Allow to stand for 8 hours or overnight.
+
+Preheat oven to 250C (480F). Heat a large heavy-based cast-iron saucepan in the oven for 30 minutes or until very hot. Carefully remove the pan from the oven and dust with flour. Slide the dough into the hot pan. Using a small sharp knife, score the top of the dough with a cross pattern. Cover with a tight-fitting lid and bake for 40-45 minutes. Reduce the oven temperature to 220C (425F), remove the lid and bake, uncovered, for a further 20 minutes or until the bread sounds hollow when tapped. Slice the bread and serve warm with butter.`
+  },
+  {
+    id: 79,
+    title: "Espresso granola",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "1 hr",
+    category: "Breakfast",
+    ingredients: [
+      "4 x 30ml shots espresso or strong brewed coffee",
+      "1/2 cup (125ml) hot water",
+      "2 cups (240g) rolled oats",
+      "2/3 cup (100g) raisins",
+      "1/3 cup (80ml) maple syrup, plus extra to serve",
+      "2/3 cup (100g) sunflower seeds",
+      "2/3 cup (50g) flaked almonds",
+      "milk or nut milk, to serve",
+      "figs, halved, to serve"
+    ],
+    method: `Preheat oven to 120C (250F). Place the espresso and water in a medium bowl and stir to combine. Add the oats and raisins, mix to combine and allow to stand for 20 minutes or until the liquid is absorbed. Add the maple syrup, sunflower seeds and almonds and mix to combine. Spread the mixture onto 2 baking trays lined with non-stick baking paper and bake, tossing occasionally, for 45 minutes or until the oats are crisp. Allow to cool on trays. Store granola in an airtight container for up to 2 weeks. To serve, divide between bowls and top with milk, fig and extra maple syrup.`
+  },
+  {
+    id: 80,
+    title: "Banana buckwheat pancakes",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "20 mins",
+    category: "Breakfast",
+    ingredients: [
+      "3/4 cup (120g) buckwheat flour",
+      "3/4 cup (95g) white spelt flour",
+      "3 teaspoons baking powder",
+      "1 teaspoon ground cinnamon",
+      "3/4 cup (200g) mashed banana (about 3 bananas)",
+      "1 egg",
+      "1/4 cup (60ml) maple syrup, plus extra to serve",
+      "3/4 cup (180ml) milk",
+      "unsalted butter, to grease the pan",
+      "store-bought vanilla bean yoghurt, to serve",
+      "extra banana, sliced, to serve"
+    ],
+    method: `Place both the flours, the baking powder and cinnamon in a large bowl and mix to combine. Add the banana, egg, maple syrup and milk and whisk until smooth.
+
+Heat a little of the butter in a non-stick frying pan over medium heat. Add 1/3 cup (80ml) of the batter to the pan and cook for 2-3 minutes each side or until golden. Set aside and keep warm. Repeat with the butter and remaining batter. Divide pancakes between serving plates and top with yoghurt and extra banana. Drizzle with extra maple syrup to serve.`
+  },
+  {
+    id: 81,
+    title: "Amaranth oats with cashews",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "15 mins",
+    category: "Breakfast",
+    ingredients: [
+      "1 1/2 cups (180g) rolled oats",
+      "1/2 teaspoon sea salt flakes",
+      "2 cups (500ml) milk, plus extra to serve",
+      "1 cup (250ml) water",
+      "1/2 cup (60g) amaranth flakes",
+      "1 tablespoon honey, plus extra to serve",
+      "1/2 teaspoon ground cinnamon",
+      "1 apple, cored and cut into matchsticks, to serve",
+      "toasted cashews, to serve"
+    ],
+    method: `Place the oats, salt, milk and water in a saucepan over medium heat. Cook, stirring occasionally, for 10 minutes or until the oats are beginning to soften. Add the amaranth and cook, stirring, for a further 2-3 minutes or until soft. Add the honey and cinnamon and stir to combine. Spoon the oats into serving bowls and top with extra milk and honey. Sprinkle with the apple and cashews to serve.`
+  },
+  {
+    id: 82,
+    title: "Green minestrone",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "20 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "2 tablespoons extra virgin olive oil",
+      "3 cloves garlic, thinly sliced",
+      "1 white onion, finely chopped",
+      "1 leek, white part only, finely chopped",
+      "1.5 litres chicken or vegetable stock",
+      "1 small fennel bulb (180g), trimmed and thinly sliced",
+      "2 stalks celery, sliced",
+      "2 cups (240g) frozen peas",
+      "1 cup (150g) peeled broad beans",
+      "4 cups (100g) baby spinach leaves",
+      "sea salt and cracked black pepper",
+      "3/4 cup (195g) store-bought kale or basil pesto",
+      "finely grated parmesan, to serve"
+    ],
+    method: `Heat the oil in a large saucepan over high heat. Add the garlic, onion and leek and cook, stirring, for 5-7 minutes or until softened. Add the stock and bring to the boil. Add the fennel, celery, peas and broad beans and cook for a further 5 minutes or until the vegetables are tender. Add the spinach, salt and pepper and stir to combine. Divide between serving bowls and top with the pesto and parmesan to serve.`
+  },
+  {
+    id: 83,
+    title: "Kale, pea and ricotta fritters",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "16 fritters",
+    time: "30 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "1 cup (120g) frozen peas, thawed and crushed",
+      "3 cups (150g) finely shredded kale leaves",
+      "1 cup (240g) fresh ricotta",
+      "3 eggs",
+      "1/4 cup (50g) chia seeds",
+      "1 tablespoon finely grated lemon rind",
+      "2 tablespoons chopped mint leaves",
+      "sea salt and cracked black pepper",
+      "2 tablespoons extra virgin olive oil",
+      "baba ganoush, watercress sprigs and lemon wedges, to serve"
+    ],
+    method: `Place the peas, kale, ricotta, eggs, chia seeds, lemon rind, mint, salt and pepper in a bowl, mix to combine and allow to stand for 20 minutes.
+
+Heat a little of the oil in a large non-stick frying pan over medium heat. Shape the mixture into 2-tablespoon patties and flatten slightly. Cook, in batches, for 2-3 minutes each side or until golden, adding more oil as necessary. Divide between serving plates and top with baba ganoush. Serve with watercress and lemon wedges.`
+  },
+  {
+    id: 84,
+    title: "Chicken caesar salad with crispy kale",
+    author: "Donna Hay",
+    book: "Balanced",
+    serves: "4",
+    time: "30 mins",
+    category: "Poultry",
+    ingredients: [
+      "4 x 200g chicken breast fillets, trimmed",
+      "extra virgin olive oil, for brushing",
+      "sea salt and cracked black pepper",
+      "1 cup (200g) shredded Brussels sprouts",
+      "2 baby cos (romaine) lettuces (360g), trimmed and leaves separated",
+      "3 cups (75g) baby spinach leaves",
+      "1/2 cup (80g) pine nuts",
+      "8 stalks kale, trimmed",
+      "2 tablespoons extra virgin olive oil",
+      "1/3 cup (25g) finely grated parmesan",
+      "sea salt and cracked black pepper",
+      "3 egg yolks",
+      "3 cloves garlic, crushed",
+      "1 tablespoon Dijon mustard",
+      "1/4 cup (60ml) extra virgin olive oil",
+      "1 tablespoon apple cider vinegar"
+    ],
+    method: `To make the dressing, place the egg yolks, garlic and mustard in a bowl and whisk until thick and creamy. Gradually add half the oil, whisking continuously until combined. Gradually add the vinegar and the remaining oil, whisking to combine. Set aside.
+
+To make the crispy kale, preheat oven to 150C (300F). Place the kale, oil, parmesan, salt and pepper in a bowl and toss to coat. Place in a single layer on baking trays lined with non-stick baking paper. Bake for 15-20 minutes or until crisp, and set aside.
+
+Brush the chicken with oil and sprinkle with salt and pepper. Heat a char-grill pan or barbecue over high heat. Cook the chicken for 2-3 minutes each side or until cooked through. Slice the chicken and place in a large bowl. Add the Brussels sprout, lettuce, spinach and pine nuts and toss to combine. Divide between serving plates and top with crispy kale and the dressing to serve.`
+  },
+  {
+    id: 85,
+    title: "Monkey bread",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Baking",
+    serves: "Makes 1 loaf",
+    time: "",
+    ingredients: [
+      "240 ml (8 fl oz) lukewarm full-cream milk",
+      "30 g (1 oz) caster (superfine) sugar",
+      "9 g (3/8 oz) instant dried yeast",
+      "400 g (14 oz) plain (all-purpose) flour, plus extra for dusting",
+      "1 teaspoon salt",
+      "1 egg",
+      "50 g (1 3/4 oz) unsalted butter, softened",
+      "Oil spray or melted butter, for greasing",
+      "100 g (3 1/2 oz) light brown sugar",
+      "100 g (3 1/2 oz) caster (superfine) sugar",
+      "1 teaspoon ground cinnamon",
+      "200 g (7 oz) unsalted butter, melted",
+      "150 g (5 1/2 oz) sour cream",
+      "40 g (1 1/2 oz) icing (confectioners') sugar",
+      "2 teaspoons vanilla bean paste"
+    ],
+    method: `Combine 100 ml (3 1/2 fl oz) of the milk with the sugar and yeast in a bowl. Set aside for 5-7 minutes or until the yeast is foaming.
+
+Combine the flour and salt in the bowl of an electric mixer fitted with the dough hook attachment. Add the yeast mixture and the remaining milk and mix on low speed to form a shaggy dough. Add the egg and butter, increase the speed to medium and knead for 5-7 minutes or until the dough is smooth and elastic and pulls away from the side of the bowl.
+
+Cover the bowl of your mixer with plastic wrap and set aside in a warm place for 1-1 1/2 hours or until the dough has doubled in size (see page 334 for my favourite proving options).
+
+Generously spray a 27 cm (10 3/4 inch) bundt tin with oil or brush it with melted butter.
+
+Once the dough has doubled, knock it back by pressing down on the dough to knock out the air that's trapped inside. Turn the dough out onto your lightly floured bench. Cut it into 20 g (3/4 oz) pieces and roll it into rough balls (they don't need to be exactly the same weight, just try to get them as close as possible).
+
+For the cinnamon coating, combine the two sugars and cinnamon in a bowl. Dip one of the dough balls into the melted butter before rolling it in the cinnamon sugar. Place the ball in the bundt tin and repeat with the remaining dough balls, completely filling the tin. Combine the remaining melted butter with the left-over cinnamon sugar and pour it over the dough balls in the tin.
+
+Put the tin in a warm place for 45 minutes or until the dough is puffy and doubled in size. Meanwhile, preheat the oven to 160C (320F).
+
+Bake the monkey bread for 30-35 minutes or until golden (cover the tin with foil if it's browning too quickly). Allow the monkey bread to cool in the tin for 15 minutes before turning it out onto a plate.
+
+For the glaze, whisk the sour cream, icing sugar and vanilla together, adding 3-4 tablespoons water so it reaches a drizzling consistency. Drizzle the glaze over the monkey bread. This is best eaten fresh, so dig in while it's still slightly warm and oozy.`
+  },
+  {
+    id: 86,
+    title: "Custard and apple scrolls",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Baking",
+    serves: "Makes 12",
+    time: "",
+    ingredients: [
+      "1 batch Sweet bread dough (page 336)",
+      "1 batch Creme patissiere (page 385)",
+      "2 large green apples, peeled and cut into 1 cm (1/2 inch) cubes",
+      "100 g (3 1/2 oz) toasted flaked almonds",
+      "300 g (10 1/2 oz) icing (confectioners') sugar",
+      "75 g (2 3/4 oz) unsalted butter, softened",
+      "50 g (1 3/4 oz) copha (white vegetable shortening or coconut oil), melted and cooled",
+      "25 ml (3/4 fl oz) full-cream milk",
+      "2 teaspoons vanilla bean paste",
+      "1/4 teaspoon almond extract"
+    ],
+    method: `Knock back the risen bread dough. Turn the dough out onto your lightly floured bench and roll it into a large rectangle, approximately 30 x 40 cm (12 x 16 inches). I try to roll it out really evenly for the best end result.
+
+Spread the creme patissiere over the dough and scatter the diced apple over the top. Roll it up into a tight log, then cut the log into 2.5 cm (1 inch) scrolls.
+
+Line a baking tray with baking paper or a silicone baking mat and arrange the scrolls on the tray so that they are 2 cm (3/4 inch) apart. Set aside in a warm place for 45-60 minutes or until the scrolls have doubled in size. Meanwhile, preheat the oven to 170C (340F).
+
+Bake the scrolls for 35-40 minutes or until they are golden brown. Allow to cool to room temperature.
+
+For the icing, combine all of the ingredients in the bowl of an electric mixer fitted with the paddle attachment. Mix on medium speed until the icing is smooth, being sure to scrape down the side of the bowl to ensure there are no lumps of butter remaining.
+
+Top the cooled scrolls with the icing and the toasted almond flakes.
+
+Mix it up! Replace the apples in the filling with one of the following options: 2 cubed pears; 2 cubed mangoes; 200 g (7 oz) fresh berries, quartered (frozen berries will release too much liquid); 400 g (14 oz) tin black cherries in syrup, drained and patted dry.`
+  },
+  {
+    id: 87,
+    title: "Sweet bread dough",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Basics",
+    serves: "Makes enough for one batch of buns or scrolls",
+    time: "",
+    ingredients: [
+      "200 ml (7 fl oz) full-cream milk",
+      "20 g (3/4 oz) caster (superfine) sugar",
+      "8 g (1/4 oz) instant dried yeast",
+      "1 teaspoon salt",
+      "1 egg, at room temperature",
+      "370 g (12 3/4 oz) bread flour, plus extra for dusting",
+      "60 g (2 1/4 oz) unsalted butter, softened",
+      "30 g (1 oz) bread flour",
+      "130 ml (4 fl oz) full-cream milk"
+    ],
+    method: `For the tangzhong, combine the flour and milk in a small saucepan and cook over medium heat until a thick paste forms. Don't worry about lumps - it will be kneaded into the bread anyway.
+
+In an electric mixer fitted with the dough hook attachment, combine the tangzhong, milk, sugar and yeast and mix briefly on medium-low speed to cool down the tangzhong. Next, add the salt, egg and flour and increase the speed of your mixer to medium to begin kneading. This is a really wet dough so it will need to be kneaded for a good 10-15 minutes. Don't be tempted to add any extra flour - as the dough is kneaded, it will eventually gather together.
+
+Once the dough comes away from the side of the bowl, add the butter and mix until incorporated. It will look like the dough isn't going to absorb the butter, but just keep kneading with the mixer until it does.
+
+Turn the dough out onto your lightly floured bench, flour your hands and bring the dough together into a ball.
+
+Place the dough in a large, lightly oiled bowl and cover with plastic wrap to create a nice humid environment. Leave the dough in a warm place to rise for 1-1 1/2 hours or until it has doubled in size (see page 334 for my favourite proving options).
+
+Once the dough has doubled, knock it back (the best bit) by pressing down on the dough to knock out all of that beautiful air trapped inside. Turn the dough out onto a very lightly floured bench and gently push out the excess air. At this point, the dough is ready to shape into whatever yeasty bake you are making.`
+  },
+  {
+    id: 88,
+    title: "English muffins",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Baking",
+    serves: "Makes 10",
+    time: "",
+    ingredients: [
+      "9 g (3/8 oz) instant dried yeast",
+      "40 g (1 1/2 oz) caster (superfine) sugar",
+      "170 ml (5 1/2 fl oz) lukewarm full-cream milk",
+      "400 g (14 oz) bread flour, plus extra for dusting",
+      "1 teaspoon salt",
+      "120 ml (4 fl oz) lukewarm water",
+      "50 g (1 3/4 oz) unsalted butter, melted",
+      "1 egg",
+      "Cornmeal or semolina, for dusting"
+    ],
+    method: `Combine the yeast, sugar and warm milk in a bowl and set aside for 4-5 minutes or until the yeast has bubbled up and activated.
+
+Meanwhile, combine the flour and salt in the bowl of an electric mixer fitted with the dough hook attachment. Add the yeast mixture, warm water, butter and egg and mix for 7-10 minutes on medium speed or until the dough pulls away from the side of the bowl.
+
+Turn the dough out onto your lightly floured bench and bring it into a ball. Transfer the dough to a lightly oiled bowl and cover the bowl with plastic wrap. Set aside in a warm place for 1-1 1/2 hours or until the dough has doubled in size (see page 334 for my favourite proving options).
+
+Sprinkle a baking tray with cornmeal or semolina. Lightly flour your bench, gently turn the dough out and lightly press down to spread it out until it's around 2.5 cm (1 inch) thick. Use a 6 cm (2 1/2 inch) ring cutter to cut out 10 muffins. Place the muffins on the baking tray and sprinkle them with more cornmeal or semolina. Set aside in a warm place for around 30 minutes or until the muffins are puffy.
+
+Place a frying pan over low heat and cook the muffins for 4-5 minutes on each side. If they are not quite cooked through, cook them for a further 2 minutes on each side.
+
+Split the muffins and eat them while they're still warm, or toast them. Spread liberally with butter and jam.`
+  },
+  {
+    id: 89,
+    title: "Hazelnut and coffee scrolls",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Baking",
+    serves: "Makes 9",
+    time: "",
+    ingredients: [
+      "1 batch Sweet bread dough (page 336)",
+      "100 g (3 1/2 oz) roasted hazelnuts, lightly crushed",
+      "60 g (2 1/4 oz) light brown sugar",
+      "2 teaspoons ground cinnamon",
+      "65 g (2 1/4 oz) unsalted butter, softened",
+      "100 g (3 1/2 oz) hazelnut meal",
+      "2 teaspoons instant coffee powder",
+      "1 1/2 tablespoons boiling water",
+      "100 g (3 1/2 oz) cream cheese, softened",
+      "80 g (2 3/4 oz) unsalted butter, softened",
+      "90 g (3 1/4 oz) icing (confectioners') sugar",
+      "1 teaspoon vanilla bean paste"
+    ],
+    method: `For the filling, mix the brown sugar, cinnamon and butter together to form a paste. Set aside.
+
+Knock back the risen bread dough. Turn the dough out onto your lightly floured bench and roll it into a large rectangle, approximately 30 x 40 cm (12 x 16 inches). I try to roll it out really evenly for the best end result. Spread the butter mixture over the dough and sprinkle the hazelnut meal over the top. Roll the dough up into a tight log, then cut the log into 2.5 cm (1 inch) scrolls.
+
+Line a baking tray with baking paper or a silicone baking mat and arrange the scrolls on the tray so that they are 2 cm (3/4 inch) apart. Set aside in a warm place for 45-60 minutes or until the scrolls have doubled in size. Meanwhile, preheat the oven to 170C (340F).
+
+Bake the scrolls for 35-40 minutes or until they are golden brown. Allow to cool to room temperature.
+
+For the icing, dissolve the instant coffee powder in the boiling water. Combine the remaining ingredients in the bowl of an electric mixer fitted with the paddle attachment and mix until smooth and creamy, being sure to scrape down the bowl and paddle a few times. Add the coffee and mix to combine.
+
+Generously top each scroll with the coffee icing and sprinkle with the crushed hazelnuts.
+
+Mix it up! If you want to go hard on the hazelnut flavour, leave out the coffee and replace it with 60 g (2 1/4 oz) hazelnut praline paste (page 388).`
+  },
+  {
+    id: 90,
+    title: "Coconut dacquoise",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Dessert",
+    serves: "Makes a 23 cm (9 inch) cake",
+    time: "",
+    ingredients: [
+      "310 g (11 oz) egg whites",
+      "Pinch of salt",
+      "150 g (5 1/2 oz) caster (superfine) sugar",
+      "210 g (7 1/4 oz) almond meal",
+      "250 g (9 oz) icing (confectioners') sugar",
+      "70 g (2 1/2 oz) plain (all-purpose) flour",
+      "350 g (12 oz) desiccated coconut",
+      "390 g (13 3/4 oz) caster (superfine) sugar",
+      "1 lemon, cut into strips",
+      "400 g (14 oz) caster (superfine) sugar",
+      "200 g (7 oz) egg whites",
+      "350 g (12 oz) unsalted butter, softened",
+      "3/4 teaspoon coconut extract",
+      "Vanilla chantilly cream (page 385), to serve",
+      "Fresh berries, mango and passionfruit, to serve"
+    ],
+    method: `Preheat the oven to 180C (350F). Line a 23 cm (9 inch) round cake tin with baking paper.
+
+Using an electric mixer fitted with the whisk attachment, whisk the egg whites and salt until foaming. Slowly add the caster sugar and whisk until a thick meringue has formed.
+
+Combine the almond meal, icing sugar and flour in a separate bowl and whisk well. Add the coconut and mix well. Fold the mixture through the meringue, being careful not to knock the air out of the mixture.
+
+Spread the batter in the cake tin and bake for 35-45 minutes or until the dacquoise is lightly golden brown. Allow to cool completely in the tin.
+
+For the syrup, combine the sugar, lemon rind and 390 ml (13 1/4 fl oz) water in a saucepan. Bring to the boil over medium heat, without stirring, and cook until the sugar has dissolved. Turn off the heat and allow the syrup to cool while you get on with the cake.
+
+Discard the lemon rind from the cooled syrup and evenly pour the syrup over the hot cake. (Syruping rule of thumb: hot cake/cold syrup or cold cake/hot syrup. This ensures that the syrup absorbs well and doesn't pool on the top of the cake, which is what usually happens if both the cake and syrup are cold.) Set the cake aside for 1-2 hours to allow the syrup to penetrate.
+
+For the buttercream, combine the sugar and egg whites in the heatproof bowl of your electric mixer. Sit the bowl over a saucepan of simmering water (don't let the water touch the bowl) and cook, stirring constantly, until the sugar has completely dissolved or the temperature reaches 70C (158F) on a sugar thermometer.
+
+Use the whisk attachment of the mixer to whisk the mixture until a thick meringue forms and the bowl is cool to touch. Switch to the paddle attachment and add the butter and coconut extract. Mix for a good 7-10 minutes or until the buttercream is smooth and silky. (If the buttercream appears split, it's usually because the butter is too cold. It will come together with more mixing, so just keep going!)
+
+Refer to the instructions on pages 100-103 to layer and assemble the cake. Once the cake has been iced with the buttercream, completely cover it with the shredded coconut.
+
+To serve, pile the dacquoise high with the chantilly cream, berries, mango and passionfruit.`
+  },
+  {
+    id: 91,
+    title: "Whisky, orange and chocolate cheesecake",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Dessert",
+    serves: "Makes a 23 cm (9 inch) cake",
+    time: "",
+    ingredients: [
+      "30 Oreo cookies, crushed with their filling",
+      "50 g (1 3/4 oz) unsalted butter, melted",
+      "1 tablespoon dark cocoa powder",
+      "750 g (1 lb 10 oz) cream cheese, softened",
+      "200 g (7 oz) golden caster (superfine) sugar",
+      "50 g (1 3/4 oz) dark cocoa powder",
+      "50 ml (1 3/4 fl oz) whisky",
+      "1 1/4 tablespoons vanilla bean paste or extract",
+      "Grated zest of 1 orange",
+      "300 g (10 1/2 oz) good-quality dark chocolate, melted",
+      "4 eggs, at room temperature",
+      "2 egg yolks, at room temperature",
+      "200 ml (7 fl oz) thickened (whipping) cream",
+      "100 g (3 1/2 oz) good-quality dark chocolate, chopped",
+      "25 ml (3/4 fl oz) whisky",
+      "20 g (3/4 oz) unsalted butter"
+    ],
+    method: `Preheat the oven to 150C (300F). Wrap the outside of a 23 cm (9 inch) spring-form cake tin in foil to ensure no water enters while the cheesecake is baking in the water bath.
+
+For the crust, place the crushed Oreos in a food processor and process to fine crumbs. Add the melted butter and cocoa and process in short bursts until combined. Spoon the crumb mixture into the cake tin and lightly press the mixture into the base (I use the bottom of a glass or mug). Place in the fridge for 30 minutes to set.
+
+For the filling, put the cream cheese, sugar, cocoa, whisky, vanilla and orange zest in the food processor and blend until completely smooth, stopping and scraping down the side of the bowl a few times to remove any lumps. Once smooth, add the melted chocolate, eggs, egg yolks and cream and process until just combined and the mixture is smooth and glossy.
+
+Pour the filling over the chilled crust. Place the tin in a roasting tin and pour in enough boiling water to reach halfway up the side of the cake tin. Bake the cheesecake for 1 1/2 hours - you still want a slight jiggle in the centre to ensure a luscious texture (the cheesecake will set completely as it cools in the fridge).
+
+Remove the cheesecake from the water bath and run a sharp knife around the edge of the tin to loosen the side - this will help prevent it from cracking as it cools and shrinks. Set aside to cool completely in the tin, then transfer to the fridge to set (overnight is best).
+
+Remove the cheesecake from the tin and place it on a serving plate. For the ganache drip, combine the cream, chocolate, whisky and butter in a microwave-safe bowl and microwave on medium for 2-3 minutes or until completely melted. Whisk to emulsify and allow to cool slightly.
+
+Pour the ganache all over the top of the cheesecake - it will set as it hits the cold cheesecake, so it's ready to eat straight away.`
+  },
+  {
+    id: 92,
+    title: "Cream buns (maritozzi)",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Baking",
+    serves: "Makes 10",
+    time: "",
+    ingredients: [
+      "1 batch Sweet bread dough (page 336)",
+      "2 egg yolks",
+      "2 tablespoons milk",
+      "Vanilla chantilly cream (page 385)",
+      "Icing (confectioners') sugar, for dusting"
+    ],
+    method: `Knock back the risen bread dough. Turn the dough out onto your lightly floured bench and divide it into 10 even pieces. To shape the dough into perfect balls, cup your hand around a dough ball and move it in a circular motion until it forms a smooth ball.
+
+Line a baking tray with baking paper or a silicone baking mat and place the balls on the tray, leaving 5 cm (2 inches) between them to allow for rising (you don't want them to be touching each other when baking). Set aside in a warm place for 30 minutes or until puffy and doubled in size. Meanwhile, preheat the oven to 180C (350F).
+
+Whisk the egg yolks with the milk, then brush it over the puffy buns. Bake the buns for 15-20 minutes or until golden brown. Allow to cool completely.
+
+Slice each bun across the top without cutting through to the base. Fill the slits with the chantilly cream and use a spatula to smooth off the excess. Serve the buns dusted with icing sugar.`
+  },
+  {
+    id: 93,
+    title: "Chocolate cupcakes with cherry jam and whipped ganache",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Dessert",
+    serves: "Makes 16",
+    time: "",
+    ingredients: [
+      "100 g (3 1/2 oz) unsalted butter",
+      "50 g (1 3/4 oz) dark chocolate (70%), chopped",
+      "6 eggs",
+      "145 g (5 oz) caster (superfine) sugar",
+      "50 g (1 3/4 oz) cornflour (cornstarch)",
+      "120 g (4 1/4 oz) almond meal",
+      "30 g (1 oz) dark cocoa powder",
+      "1 1/2 teaspoons baking powder",
+      "1 large gelatine leaf (see page 16)",
+      "600 ml (21 fl oz) thickened (whipping) cream",
+      "1 teaspoon vanilla bean paste",
+      "200 g (7 oz) dark chocolate (minimum 54%), chopped",
+      "680 g (1 lb 8 oz) morello cherries in syrup",
+      "150 g (5 1/4 oz) caster (superfine) sugar",
+      "1 vanilla bean"
+    ],
+    method: `For the whipped ganache, add the gelatine to a small bowl of iced water and set aside for 5 minutes to bloom. Once softened, squeeze out any excess water and set aside.
+
+Meanwhile, combine the cream, vanilla and salt in a small saucepan and bring to a simmer. Remove from the heat, add the gelatine and stir until completely melted. Put the chocolate in a bowl and pour in the hot cream. Once the chocolate has melted, whisk until well combined. Place in the fridge overnight or until completely chilled.
+
+Preheat the oven to 160C (320F). Melt the butter and chocolate together, either in the microwave or in a small saucepan over low heat.
+
+Whisk the eggs and sugar in a large bowl until just combined, then add the cornflour, almond meal, cocoa, baking powder and chocolate mixture and whisk until thoroughly combined.
+
+Spoon the batter into a silicone mini muffin tray, filling each of the moulds three-quarters full. Bake the cupcakes for 15-20 minutes or until a skewer inserted into the centre comes out clean. Allow to cool for 5-10 minutes before turning the cakes out to cool completely.
+
+To make the jam, pour the cherries and syrup into a saucepan and sprinkle the sugar over the top. Split the vanilla bean lengthways, scrape the seeds into the pan, add the empty pod and bring to the boil. Reduce the heat and simmer, stirring occasionally to prevent burning, for 45 minutes or until the jam is sticky and reduced.
+
+Remove the vanilla bean. Pour the jam into a jar or container and allow it to cool completely. (It can be stored in the fridge for a couple of weeks and is great on top of Greek-style yoghurt.)
+
+Using an electric mixer fitted with the whisk attachment, whisk the chilled ganache until stiff peaks form. Be careful not to overwhisk it because the ganache can split (especially if you use chocolate with a high percentage of cocoa solids). If the ganache does split, you will need to melt it again and let it chill before whisking.
+
+Transfer the whipped ganache to a piping bag fitted with a round nozzle. Pipe a decent mound onto each cake and use a warm spoon to create an indent in the top. Fill the indent with cherry jam.`
+  },
+  {
+    id: 94,
+    title: "Coconut syrup cake",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Dessert",
+    serves: "Makes a 20 cm (8 inch) two-layer cake",
+    time: "",
+    ingredients: [
+      "5 eggs",
+      "180 g (6 oz) caster (superfine) sugar",
+      "1 teaspoon vanilla bean paste",
+      "1/2 teaspoon coconut extract",
+      "150 ml (6 fl oz) full-cream milk",
+      "150 ml (6 fl oz) neutral-flavoured oil, such as grapeseed oil",
+      "350 g (12 oz) self-raising flour",
+      "1 teaspoon baking powder",
+      "125 g (4 1/2 oz) desiccated coconut",
+      "390 g (13 3/4 oz) caster (superfine) sugar",
+      "1 lemon, cut into strips",
+      "400 g (14 oz) caster (superfine) sugar",
+      "200 g (7 oz) egg whites",
+      "350 g (12 oz) unsalted butter, softened",
+      "3/4 teaspoon coconut extract",
+      "150 g (5 1/2 oz) shredded coconut, to decorate"
+    ],
+    method: `Preheat the oven to 170C (340F). Line two 20 cm (8 inch) cake tins with baking paper.
+
+For the syrup, combine the sugar, lemon rind and 390 ml (13 1/4 fl oz) water in a saucepan. Bring to the boil over medium heat, without stirring, and cook until the sugar has dissolved. Turn off the heat and allow the syrup to cool while you get on with the cake.
+
+Using an electric mixer fitted with the whisk attachment, whisk the eggs, sugar, vanilla and coconut extract until doubled in volume and light in colour. Pour in the milk and oil and mix until just combined.
+
+Sift the flour and baking powder over the egg mixture and gently fold together until just combined. Finally, fold in the desiccated coconut.
+
+Split the batter between the cake tins and bake for 55-65 minutes or until a skewer inserted into the centre of the cakes comes out clean. Use the skewer to poke holes in the hot cakes, right through to the base of the tin.
+
+Discard the lemon rind from the cooled syrup and evenly pour the syrup over the hot cake. (Syruping rule of thumb: hot cake/cold syrup or cold cake/hot syrup. This ensures that the syrup absorbs well and doesn't pool on the top of the cake, which is what usually happens if both the cake and syrup are cold.) Set the cake aside for 1-2 hours to allow the syrup to penetrate.
+
+For the buttercream, combine the sugar and egg whites in the heatproof bowl of your electric mixer. Sit the bowl over a saucepan of simmering water (don't let the water touch the bowl) and cook, stirring constantly, until the sugar has completely dissolved or the temperature reaches 70C (158F) on a sugar thermometer.
+
+Use the whisk attachment of the mixer to whisk the mixture until a thick meringue forms and the bowl is cool to touch. Switch to the paddle attachment and add the butter and coconut extract. Mix for a good 7-10 minutes or until the buttercream is smooth and silky. (If the buttercream appears split, it's usually because the butter is too cold. It will come together with more mixing, so just keep going!)
+
+Refer to the instructions on pages 100-103 to layer and assemble the cake. Once the cake has been iced with the buttercream, completely cover it with the shredded coconut.`
+  },
+  {
+    id: 95,
+    title: "White chocolate and morello cherry brownies",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Dessert",
+    serves: "Makes 16",
+    time: "",
+    ingredients: [
+      "225 g (8 oz) caster (superfine) sugar",
+      "150 g (5 1/2 oz) unsalted butter",
+      "1 tablespoon vanilla bean paste",
+      "225 g (8 oz) good-quality white chocolate, chopped",
+      "2 eggs, whisked",
+      "100 g (3 1/2 oz) spelt flour",
+      "150 g (5 1/2 oz) plain (all-purpose) flour",
+      "1 teaspoon sea salt flakes",
+      "180 g (6 oz) drained morello cherries"
+    ],
+    method: `Preheat the oven to 160C (320F). Line a 23 cm (9 inch) square cake tin with baking paper.
+
+Combine the sugar, butter and vanilla in a large saucepan and cook over medium heat until melted and smooth. Remove from the heat, add the white chocolate and stir until completely melted.
+
+Beat in the eggs, then stir in the flours and half of the sea salt flakes.
+
+Pour the batter into the cake tin and smooth the top. Pat the morello cherries with paper towel to remove any excess moisture. Stud the brownie batter with the cherries and sprinkle with the remaining sea salt flakes.
+
+Bake for 30-35 minutes or until the brownie is golden brown at the edges but still fudgy in the centre. Leave to cool in the tin, then transfer the brownie to the fridge to chill overnight (or for at least 4 hours).
+
+Remove the chilled brownie from the tin and trim the edges. Use a wet knife to cut the brownie into 16 squares (or whatever size you wish). Serve at room temperature.`
+  },
+  {
+    id: 96,
+    title: "Lumberjack cake with caramel coconut topping",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Dessert",
+    serves: "Makes a 23 cm (9 inch) cake",
+    time: "",
+    ingredients: [
+      "2 green apples",
+      "150 g (5 1/2 oz) pitted dates, chopped",
+      "1 1/2 teaspoons bicarbonate of soda (baking soda)",
+      "250 ml (9 fl oz) boiling water",
+      "280 g (10 oz) caster (superfine) sugar",
+      "115 ml (3 3/4 fl oz) neutral-flavoured oil, such as grapeseed oil",
+      "2 eggs",
+      "1 teaspoon vanilla extract",
+      "1/2 teaspoon fine salt",
+      "225 g (8 oz) plain (all-purpose) flour",
+      "1 teaspoon baking powder",
+      "135 g (4 3/4 oz) light brown sugar",
+      "100 ml (3 1/2 fl oz) thickened (whipping) cream",
+      "75 g (2 3/4 oz) unsalted butter",
+      "50 g (1 3/4 oz) honey",
+      "1 teaspoon vanilla extract",
+      "75 g (2 3/4 oz) shredded coconut"
+    ],
+    method: `Preheat the oven to 170C (340F). Line a 23 cm (9 inch) spring-form cake tin with baking paper.
+
+Peel and cut the apples into 2 cm (3/4 inch) dice and put them in a heatproof bowl along with the dates and bicarbonate of soda. Pour in the boiling water. (The bicarbonate of soda may fizz up, so use a bowl large enough to accommodate this.) Give it all a stir and allow it to sit while you get on with the rest of the cake.
+
+Put the caster sugar, oil, eggs, vanilla and salt in a large bowl and whisk until just combined. Lightly fold in the flour and baking powder. Tip in the apple mixture (including the liquid) and gently mix until just incorporated.
+
+Pour the batter into the tin and bake the cake for 60-65 minutes or until a skewer inserted into the centre comes out clean.
+
+Meanwhile, for the topping, combine the brown sugar, cream, butter, honey and vanilla in a saucepan. Stir over medium-high heat until the mixture comes to the boil. Once the sugar has melted and the caramel is boiling, stir in the coconut.
+
+Gently pour the topping over the cake and spread it in an even layer. Return the cake to the oven and bake for a further 15-20 minutes or until golden brown. Leave the cake to cool in the tin for 20 minutes (this will help the caramel set), then remove it from the tin and allow it to cool completely.`
+  },
+  {
+    id: 97,
+    title: "Sour cream blueberry cake with vanilla mascarpone icing",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Dessert",
+    serves: "Makes an 18 cm (7 inch) two-layer cake",
+    time: "",
+    ingredients: [
+      "200 g (7 oz) caster (superfine) sugar",
+      "170 g (5 3/4 oz) unsalted butter, softened",
+      "Grated zest of 3 lemons or 1/2 teaspoon lemon extract",
+      "1 tablespoon vanilla bean paste or extract",
+      "1 1/2 teaspoons baking powder",
+      "1/2 teaspoon bicarbonate of soda (baking soda)",
+      "1/2 teaspoon salt",
+      "3 eggs",
+      "120 g (4 1/4 oz) sour cream",
+      "120 ml (4 fl oz) full-cream milk",
+      "220 g (7 3/4 oz) cake flour (page 97) or store-bought",
+      "200 g (7 oz) fresh or frozen blueberries (not thawed)",
+      "125 g (4 1/2 oz) fresh blueberries, to serve",
+      "Grated zest of 1 lemon, to serve",
+      "250 g (9 oz) chilled mascarpone cheese",
+      "200 ml (7 fl oz) chilled thickened (whipping) cream",
+      "100 g (3 1/2 oz) icing (confectioners') sugar",
+      "1 tablespoon vanilla bean paste"
+    ],
+    method: `Preheat the oven to 160C (320F). Line two 18 cm (7 inch) round cake tins with baking paper.
+
+Using an electric mixer fitted with the paddle attachment, mix the sugar, butter and lemon zest or lemon extract until light, creamy and fluffy. Add the vanilla, baking powder, bicarbonate of soda and salt and mix until thoroughly combined. (I like to add the raising agents at this point to ensure they are evenly dispersed throughout the cake batter, creating an even rise in the final cake.) Add the eggs, one at a time, and beat until combined.
+
+Whisk the sour cream and milk in a small jug or bowl.
+
+Sift the flour over the egg mixture, then gently fold together until just combined. Lightly mix in the sour cream mixture until the batter just comes together.
+
+To prevent all of the blueberries from sinking to the bottom of your cake, first divide a quarter of the batter between the cake tins and smooth the top. Mix the blueberries through the remaining batter and divide it between the tins.
+
+Bake the cakes for 40-45 minutes or until a skewer inserted into the centre of each cake comes out clean. Allow the cakes to cool in the tins for 10 minutes before turning them out onto a wire rack to cool completely.
+
+For the icing, whisk the mascarpone, cream, icing sugar and vanilla in a bowl until thickened. Be careful not to overwhisk the cream as it can easily split.
+
+Use a serrated knife to level the tops of the cakes, if needed. Put one of the cakes on a serving plate and spread it with about a third of the icing. Add the second cake and spread the remaining icing all over the top and side. Garnish the cake with the fresh blueberries and lemon zest.`
+  },
+  {
+    id: 98,
+    title: "Base Cookie Recipe",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Baking",
+    serves: "Makes 40",
+    time: "",
+    ingredients: [
+      "560 g (1 lb 4 oz) plain (all-purpose) flour",
+      "1 teaspoon bicarbonate of soda (baking soda)",
+      "1 teaspoon baking powder",
+      "1 teaspoon sea salt flakes, plus extra for sprinkling",
+      "300 g (10 1/2 oz) unsalted butter, softened",
+      "300 g (10 1/2 oz) light brown sugar",
+      "250 g (9 oz) caster (superfine) sugar",
+      "2 eggs, at room temperature",
+      "1 tablespoon vanilla bean paste",
+      "500 g (1 lb 2 oz) dark chocolate chips"
+    ],
+    method: `Combine the flour, bicarbonate of soda, baking powder and salt in a bowl. Give these dry ingredients a good whisk and set aside.
+
+Using an electric mixer fitted with the paddle attachment, cream the butter, sugars, eggs and vanilla. Reserve some of the chocolate chips to add to the cookies after baking. Add all of the dry ingredients and the remaining chocolate chips to the butter mixture and mix until just combined. Do not overmix the dough once the flour has been added.
+
+Refrigerate the cookie dough for 12-36 hours before baking. The longer you refrigerate the dough, the more flavour development will occur, the less the cookies will spread and the better the overall texture will be.
+
+When you're ready to bake the cookies, preheat the oven to 180C (350F). Line two baking trays with baking paper or silicone baking mats and place six golf ball-sized rounds of dough on the trays, using about 50 g (1 3/4 oz) dough for each one. The cookies will spread, so give them space to do their thing. Sprinkle with extra sea salt flakes.
+
+Bake the cookies in batches for 12-14 minutes or until caramelised around the edges but still soft and blond towards the centre. As soon as the cookies are out of the oven, sprinkle with the remaining chocolate chips. Allow to cool on the trays for 15 minutes, then transfer the cookies to a wire rack.`
+  },
+  {
+    id: 99,
+    title: "Cookie Variations",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Baking",
+    serves: "Makes 40",
+    time: "",
+    ingredients: [],
+    indexIngredients: [
+      "Base cookie dough (omit the dark chocolate chips where noted)",
+      "350 g (12 oz) white chocolate chips",
+      "120 g (4 1/4 oz) dried sour cherries",
+      "120 g (4 1/4 oz) roasted pistachios",
+      "Melted white chocolate, for drizzling",
+      "Chopped pistachios, to finish",
+      "400 g (14 oz) white chocolate chips",
+      "60 g (2 1/4 oz) freeze-dried blueberries",
+      "Grated zest of 2 lemons",
+      "350 g (12 oz) milk chocolate chips",
+      "150 g (5 1/2 oz) roughly chopped roasted hazelnuts",
+      "50 g (1 3/4 oz) crispy dark chocolate pearls",
+      "60 g (2 1/4 oz) freeze-dried raspberries",
+      "350 g (12 oz) white or ruby chocolate chips",
+      "Chocolate hazelnut spread or hazelnut praline paste",
+      "180 g (6 oz) mini marshmallows",
+      "60 g (2 1/4 oz) cornflakes"
+    ],
+    method: `Use the Base Cookie Recipe as your starting point. Leave out the dark chocolate chips and you have a great base recipe for any flavoured drop cookie.
+
+White chocolate, sour cherry and pistachio cookies: add 350 g (12 oz) white chocolate chips, 120 g (4 1/4 oz) dried sour cherries and 120 g (4 1/4 oz) roasted pistachios. Drizzle with a little melted white chocolate and sprinkle with chopped pistachios.
+
+Blueberry, lemon and white chocolate cookies: add 400 g (14 oz) white chocolate chips, 60 g (2 1/4 oz) freeze-dried blueberries and the grated zest of 2 lemons.
+
+Milk chocolate hazelnut crunch cookies: add 350 g (12 oz) milk chocolate chips, 150 g (5 1/2 oz) roughly chopped roasted hazelnuts and 50 g (1 3/4 oz) crispy dark chocolate pearls.
+
+Raspberry and white chocolate cookies: add 60 g (2 1/4 oz) freeze-dried raspberries and 350 g (12 oz) white or ruby chocolate chips.
+
+Hazelnut-stuffed chocolate-chip cookies: refrigerate or freeze a jar of chocolate hazelnut spread or hazelnut praline paste for 30 minutes to firm it up. Flatten each ball of cookie dough into a disc and fill it with a heaped teaspoon of the firm filling. Wrap the dough into a ball and make sure it's completely sealed before baking.
+
+Cereal chocolate-chip cookies: keep the dark chocolate chips in the base dough and add 180 g (6 oz) mini marshmallows and 60 g (2 1/4 oz) cornflakes.`
+  },
+  {
+    id: 105,
+    title: "My go-to chocolate fudge cake with malted buttercream",
+    author: "Emelia Jackson",
+    book: "First Cream the Butter & The Sugar",
+    category: "Dessert",
+    serves: "Makes a 20 cm (8 inch) two-layer cake",
+    time: "",
+    ingredients: [
+      "380 g (13 1/2 oz) light brown sugar",
+      "250 g (9 oz) cake flour (page 97) or store-bought",
+      "100 g (3 1/2 oz) dark cocoa powder",
+      "1 1/2 teaspoons baking powder",
+      "1 teaspoon bicarbonate of soda (baking soda)",
+      "1 teaspoon fine salt",
+      "2 teaspoons instant coffee powder",
+      "200 ml (7 fl oz) boiling water",
+      "100 ml (3 1/2 fl oz) neutral-flavoured oil, such as canola or vegetable oil",
+      "200 g (7 oz) sour cream",
+      "4 eggs",
+      "320 g (11 1/4 oz) unsalted butter, softened",
+      "400 g (14 oz) icing (confectioners') sugar",
+      "300 g (10 1/2 oz) good-quality milk chocolate, melted and cooled",
+      "150 g (5 1/2 oz) malted milk powder",
+      "1 teaspoon vanilla extract or vanilla bean paste",
+      "Chocolate shavings, to garnish (optional)"
+    ],
+    method: `Preheat the oven to 160C (320F). Line two 20 cm (8 inch) round cake tins with baking paper.
+
+Whisk the brown sugar, flour, cocoa, baking powder, bicarbonate of soda and salt to ensure there are no lumps.
+
+Dissolve the coffee in the boiling water in a jug, then add the oil, sour cream and eggs and whisk until thoroughly combined. Make a well in the centre of the dry ingredients and pour in the egg mixture. Fold until just combined, being careful not to overmix so you end up with a tender cake.
+
+Split the batter between the cake tins and bake for 50 minutes or until a skewer inserted into the centre of each cake comes out clean. Allow the cakes to cool for 15 minutes before turning them out onto a wire rack to cool completely.
+
+To make the malted buttercream, first ensure the butter is not too soft. Using an electric mixer fitted with the paddle attachment, cream the butter and icing sugar for 3-4 minutes, scraping down the side of the bowl a couple of times to ensure the mixture is completely smooth. Add the cooled melted chocolate, malted milk powder and vanilla and mix for another 2-3 minutes or until the buttercream is smooth and fluffy.
+
+Fill and cover the cake with the malted buttercream and top it with chocolate shavings, if using.`
+  },
+  {
+    id: 106,
+    title: "Coffee and walnut streusel cake",
+    author: "Emelia Jackson",
+    book: "Cakes, Glorious Cakes",
+    category: "Dessert",
+    serves: "Makes an 18 cm (7 inch) two-layer cake",
+    time: "",
+    ingredients: [
+      "200 g (7 oz) unsalted butter, softened",
+      "125 g (4 1/2 oz) light brown sugar",
+      "100 g (3 1/2 oz) caster (superfine) sugar",
+      "4 eggs",
+      "2 teaspoons baking powder",
+      "1/2 teaspoon bicarbonate of soda (baking soda)",
+      "1/2 teaspoon salt",
+      "20 g (3/4 oz) instant coffee powder, dissolved in 2 tablespoons hot water",
+      "250 g (9 oz) plain (all-purpose) flour or cake flour (page 97) or store-bought",
+      "100 ml (3 1/2 fl oz) full-cream milk",
+      "75 g (2 3/4 oz) finely chopped walnuts",
+      "50 g (1 3/4 oz) unsalted butter, softened",
+      "65 g (2 1/4 oz) plain (all-purpose) flour",
+      "40 g (1 1/2 oz) demerara sugar",
+      "30 g (1 oz) walnuts, roughly chopped",
+      "1/2 teaspoon ground cinnamon",
+      "Pinch of salt",
+      "100 g (3 1/2 oz) egg yolks",
+      "100 g (3 1/2 oz) caster (superfine) sugar",
+      "1 tablespoon instant coffee powder",
+      "1 teaspoon vanilla bean paste",
+      "250 g (9 oz) unsalted butter, softened"
+    ],
+    method: `Preheat the oven to 160C (320F). Line a baking tray with baking paper or silicone baking mats. Line two 18 cm (7 inch) round cake tins with baking paper.
+
+To make the streusel topping, combine the butter, flour and demerara sugar in a bowl and rub together with your fingertips to form coarse crumbs. Add the walnuts, cinnamon and salt and toss to combine. Spread the mixture over the baking tray and bake for 15-18 minutes or until golden brown. Set aside to cool.
+
+Using an electric mixer fitted with the paddle attachment, cream the butter and sugars until pale and creamy. Add the eggs, one at a time, and mix until completely incorporated. The mixture may look slightly curdled, but it will come back together once the dry ingredients are added.
+
+Add the baking powder, bicarbonate of soda, salt and coffee mixture and mix to combine. Stir in the flour, milk and walnuts until just combined, being sure to scrape down the side of the bowl.
+
+Split the batter between the cake tins and bake for 35-40 minutes or until a skewer inserted into the centre of the cakes comes out clean. Allow to cool for 10 minutes before removing the cakes from the tins to cool completely.
+
+For the French coffee buttercream, combine the egg yolks, sugar, coffee powder and vanilla in a heatproof electric mixer bowl. Sit the bowl over a saucepan half-filled with boiling water and cook, stirring constantly, until the sugar has dissolved. Transfer the bowl to the electric mixer fitted with the whisk attachment and whisk until the egg yolk mixture is aerated and thickened, around 6-8 minutes. Once the mixture has cooled, add the butter and whisk until light and creamy.
+
+Place one of the cakes on a serving plate. Pipe rosettes of buttercream around the outside edge of the cake, then fill the hollow with more buttercream and liberally sprinkle with the streusel topping. Add the second cake, pipe more rosettes of buttercream on top and then garnish with the remaining streusel.`
+  },
+  {
+    id: 107,
+    title: "Peanut butter parfait, peanut dacquoise, chocolate ganache, butterscotch sauce",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Dessert",
+    serves: "Serves 10",
+    time: "",
+    ingredients: [
+      "190 g (6 1/2 oz) caster (superfine) sugar",
+      "500 ml (17 fl oz/2 cups) pouring (single/light) cream (35% fat), plus 200 ml (7 fl oz) extra pouring cream, whipped to soft peaks",
+      "135 g (5 oz) liquid glucose",
+      "1 teaspoon vanilla bean paste",
+      "75 g (2 3/4 oz) smooth peanut butter",
+      "50 g (1 3/4 oz) butter, diced",
+      "4 gold-strength gelatine leaves, soaked in cold water until soft",
+      "9 egg yolks",
+      "Coarsely crushed roasted peanuts, to serve",
+      "70 g (2 1/2 oz) peanuts, roasted then crushed",
+      "125 g (4 1/2 oz/1 cup) pure icing (confectioners') sugar, sifted",
+      "40 g (1 1/2 oz) ground almonds",
+      "80 g (2 3/4 oz) egg whites",
+      "50 g (1 3/4 oz) caster (superfine) sugar",
+      "2 egg yolks",
+      "50 g (1 3/4 oz) caster (superfine) sugar",
+      "50 g (1 3/4 oz) powdered glucose",
+      "100 ml (3 1/2 fl oz) milk",
+      "300 ml (10 fl oz) pouring (single/light) cream",
+      "250 g (9 oz) dark chocolate (60-70% cocoa solids)",
+      "115 g (4 oz/1/2 cup) caster (superfine) sugar",
+      "1 teaspoon sea salt",
+      "110 g (4 oz) brown sugar",
+      "75 ml (2 1/2 fl oz) thickened (whipping) cream",
+      "40 g (1 1/2 oz) cold butter, diced"
+    ],
+    method: `To make the peanut dacquoise, preheat the oven to 170C (340F) and line a 30 x 15 cm (12 x 6 in) baking tray with baking paper.
+
+In a bowl, mix together the peanuts, icing sugar and ground almonds.
+
+Whisk the egg whites in an electric mixer until they form soft peaks. While still whisking, gradually sprinkle in the caster sugar and whisk until stiff and glossy. When the whites are ready, transfer them to a large bowl and gently fold the nut mixture through the meringue until combined.
+
+Spread the mixture out on the lined baking tray to a thickness of about 3 mm (1/4 in). Bake for 8 minutes and then turn the tray 180 degrees and return it to the oven for another 8 minutes or until lightly golden. Leave to cool to room temperature.
+
+Line a 30 x 15 x 5 cm (12 x 6 x 2 in) plastic tray with baking paper.
+
+Heat a large saucepan over medium-high heat and scatter 140 g (5 oz) of the sugar over the base. Heat until the sugar melts and starts to colour. Continue to cook, swirling the sugar in the pan occasionally, until you have a light golden caramel, about 2-3 minutes.
+
+Remove the pan from the heat and add 300 ml (10 fl oz) of the cream, half the glucose and the vanilla bean paste. Return to the heat and bring to a simmer, whisking to dissolve any lumps. Add the peanut butter, then the butter and whisk to combine.
+
+Squeeze out any excess water from the softened gelatine leaves, then whisk the gelatine into the hot liquid. Remove the mixture from the heat and strain through a fine sieve into a large bowl.
+
+Put the egg yolks in a stand mixer and whisk until pale and tripled in volume, about 2-3 minutes.
+
+Meanwhile, bring the remaining sugar, glucose and 1 1/2 tablespoons water to the boil in a small saucepan over high heat. Cook until the temperature reaches 117C (243F).
+
+With the mixer running on medium speed, pour the hot sugar syrup into the egg yolks in a steady stream. Continue to whisk the eggs for 3 minutes.
+
+Fold the yolk mixture into the peanut butter mixture and cool to room temperature.
+
+Finally, fold the whipped cream into the peanut mixture and pour it into your prepared tray or individual silicone moulds. Carefully place the dacquoise on top of your parfait, making sure the smooth bottom of the dacquoise is facing up, cover with plastic wrap and freeze overnight. If using individual moulds, cut rings of the meringue the same size as your silicone moulds.
+
+To make the chocolate ganache, in a bowl, whisk together the egg yolks, sugar and powdered glucose.
+
+In a small saucepan, bring the milk and 100 ml (3 1/2 fl oz) of the cream to the boil. Allow this to cool slightly for 5 minutes then pour it into the egg mixture, whisking as you pour, until thoroughly combined. Return the custard to the saucepan and stir over low heat until it starts to thicken, about 4-6 minutes. Remove from the heat and set aside.
+
+Melt the chocolate in a bowl over a saucepan of simmering water. Do not let the water touch the base of the bowl and do not let the temperature of the chocolate rise above 50C (122F). Turn off the heat under the saucepan and mix the custard into the melted chocolate a third at a time.
+
+Whisk the remaining cream to soft peaks and fold it into the chocolate mixture. Transfer to a container with a lid and store in the refrigerator.
+
+To make the butterscotch sauce, heat a saucepan over medium-high heat, scatter the caster sugar over the base and cook until it turns a light golden colour, swirling the pan occasionally to cook evenly. Once the sugar has evenly caramelised to a dark golden colour, reduce the heat and add 50 ml (1 3/4 fl oz) water to the caramel. Next, whisk in the brown sugar and cream together. Once the brown sugar has dissolved, add the butter and whisk until incorporated. Strain the mixture through a fine sieve and set aside to cool to room temperature. Store in the refrigerator until ready to use.
+
+To serve, remove the parfait from the freezer and turn it out onto a chopping board. Leave it to thaw slightly until it is a workable consistency. When soft enough, cut it into 10 even-sized pieces.
+
+Place a portion of parfait on each serving plate. Spoon a tablespoon of butterscotch sauce over each parfait. Top with some crushed peanuts and 1 tablespoon chocolate ganache.`
+  },
+  {
+    id: 108,
+    title: "Pig's head bao with chilli tamarind dressing",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Pork",
+    serves: "Makes 12 buns",
+    time: "",
+    ingredients: [
+      "75 g (2 3/4 oz/1/2 cup) plain (all-purpose) flour",
+      "2 eggs, beaten",
+      "160 g (5 1/2 oz/2 cups) fresh breadcrumbs",
+      "12 buns for steaming",
+      "125 ml (4 fl oz/1/2 cup) grapeseed oil",
+      "24 thin slices cucumber",
+      "1/4 cup picked coriander (cilantro) leaves",
+      "1 teaspoon ground Chinese five-spice",
+      "1 teaspoon salt",
+      "1/2 pig's head or 1 kg (2 lb 3 oz) piece pork belly",
+      "1 red Asian shallot, finely diced",
+      "2 spring onions (scallions), white part only, thinly sliced",
+      "2 tablespoons coriander (cilantro), chopped",
+      "1 1/2 tablespoons lime juice",
+      "1 tablespoon fish sauce",
+      "2 tablespoons sriracha sauce",
+      "2 tablespoons sweet soy sauce",
+      "1 fresh long red chilli",
+      "6 dried long red chillies, soaked and seeded",
+      "1 tablespoon grapeseed oil",
+      "6 red Asian shallots, thinly sliced",
+      "3 garlic cloves, thinly sliced",
+      "3 coriander (cilantro) roots, cleaned of all dirt and roughly chopped",
+      "3 scud or bird's eye chillies, roughly chopped",
+      "2 tablespoons tamarind puree",
+      "1 1/2 tablespoons sugar",
+      "2 tablespoons fish sauce",
+      "1 tablespoon lime juice"
+    ],
+    method: `To make the pressed pig's head, combine the five-spice and salt and sprinkle this mixture over the pig's head. Place on a rack in a baking dish and leave overnight in the refrigerator.
+
+Place a saucepan fitted with a steamer on the stove and bring to a simmer over medium heat. Place the pig's head in the steamer and cook for 3 hours. Remove from the steamer and, when the head is cool enough to handle, remove as much of the meat, skin and fat as possible, apart from the eyes. The head should yield approximately 1 kg (2 lb 3 oz) meat.
+
+Thinly slice the ear. Peel the tongue and roughly chop it along with the rest of the flesh.
+
+In a large bowl, mix the meat well with the remaining ingredients. Taste to check the seasoning.
+
+Line a 20 x 10 cm (8 x 4 in) deep tray with plastic wrap. Press the prepared head meat into the tray. Cover with plastic wrap and cover with another tray the same size. Chill in the refrigerator until very firm. Once set, cut the meat into 2.5 cm (1 in) squares.
+
+To make the chilli tamarind dressing, heat a chargrill pan until hot. Place the fresh chillies on the grill, turning them until nicely charred. Next grill the dried chillies. Seed the fresh chillies and roughly chop them with the dried chillies. Set aside.
+
+In a medium saucepan over medium-low heat, gently warm the grapeseed oil. Add the shallots and garlic and cook for 3-4 minutes until aromatic and wilted. Add the chilli and cook until aromatic. Transfer the shallots and chillies to a blender along with the coriander, scud chillies, tamarind, sugar, fish sauce, 2 tablespoons water and the lime juice. Blend the sauce until completely smooth. Set aside.
+
+Put the flour, egg and breadcrumbs in three separate shallow bowls. Dip the pork squares first in the flour, then in the beaten egg and finally in the breadcrumbs, pressing to adhere.
+
+Prepare the buns, place them in a bamboo steamer basket lined with baking paper and set aside.
+
+Heat the grapeseed oil in a frying pan over medium-low heat. Fry the crumbed pork until golden on all sides.
+
+Bring some water in a saucepan large enough to fit the bamboo steamer to the boil. While the pork is cooking, steam the buns for 4-5 minutes or until soft in the centre.
+
+To finish, open the buns and place 1/2 teaspoon of tamarind dressing onto each one, followed by a piece of fried pork, 2 slices of cucumber, 1/2 teaspoon more of tamarind dressing and some coriander.`
+  },
+  {
+    id: 109,
+    title: "Peanut and sesame cookies",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Dessert",
+    serves: "Makes 20 cookies",
+    time: "",
+    ingredients: [
+      "200 g (7 oz) butter, at room temperature",
+      "120 g (4 1/4 oz) caster (superfine) sugar",
+      "120 g (4 1/4 oz) brown sugar",
+      "200 g (7 oz) smooth peanut butter",
+      "320 g (11 1/2 oz) plain (all-purpose) flour, sifted, plus extra for dusting",
+      "8 g (1/4 oz) baking powder",
+      "40 g (1 1/2 oz/1/4 cup) sesame seeds"
+    ],
+    method: `Preheat the oven to 180C (350F) and line a baking tray with baking paper.
+
+In the bowl of a stand mixer, cream the butter and sugars together. Add the peanut butter and mix well. Finally, add the flour and baking powder, stirring until just combined.
+
+Put the sesame seeds on a plate or a sheet of baking paper.
+
+Turn the cookie mixture out onto a work surface, roll it into a 4 cm (1 1/2 in) diameter log and then roll it in the sesame seeds. Wrap the dough in plastic wrap and place it in the refrigerator to firm up.
+
+Once firm, slice the dough into 5 mm (1/4 in) discs. Place the cookies on the lined baking tray and bake for 12-14 minutes or until golden.`
+  },
+  {
+    id: 110,
+    title: "Whole roast lamb shoulder, coriander and mint paste, Sichuan sauce",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Lamb",
+    serves: "Serves 4",
+    time: "",
+    ingredients: [
+      "2 tablespoons light soy sauce",
+      "2 tablespoons yellow bean paste",
+      "2 tablespoons shaoxing rice wine",
+      "1 tablespoon cumin seeds",
+      "1 tablespoon Korean chilli flakes",
+      "1/2 teaspoon Chinese five-spice",
+      "1/2 teaspoon sugar",
+      "1 x 1.5 kg (3 lb 5 oz) lamb shoulder, on the bone",
+      "2 tablespoons grapeseed oil",
+      "8 store-bought spring onion (scallion) pancakes",
+      "1 tablespoon chilli oil",
+      "1/2 teaspoon toasted and ground Sichuan peppercorns",
+      "Small handful of coriander (cilantro), to serve",
+      "2 shredded spring onions (scallions), to serve",
+      "60 ml (2 fl oz/1/4 cup) grapeseed oil",
+      "4 garlic cloves, finely chopped",
+      "2 tablespoons finely chopped fresh ginger",
+      "1/2 cup fermented chilli bean paste",
+      "2 tablespoons shaoxing rice wine",
+      "225 g (8 oz) tinned chopped tomatoes",
+      "3 tablespoons yellow rock sugar",
+      "3 tablespoons yellow bean paste",
+      "80 ml (2 1/2 fl oz/1/3 cup) oyster sauce",
+      "1 litre (34 fl oz/4 cups) chicken stock or water",
+      "1 tablespoon cornflour (cornstarch)",
+      "1 tablespoon rice wine vinegar",
+      "1/2 avocado",
+      "1 garlic clove, roughly chopped",
+      "1/2 teaspoon cumin seeds, toasted",
+      "1/2 bunch coriander (cilantro), washed",
+      "1/2 cup loosely packed mint leaves",
+      "1 1/2 tablespoons grapeseed oil",
+      "1/2 teaspoon lemon juice",
+      "1/2 teaspoon sea salt flakes"
+    ],
+    method: `To make the Sichuan sauce, in a large stainless steel saucepan, warm the grapeseed oil over medium heat. Add the garlic and ginger, cooking for 3-4 minutes until aromatic. Add the chilli bean paste and cook for 2 minutes. Deglaze the pan with the shaoxing rice wine and reduce by half. Add the tomatoes, sugar, yellow bean paste, oyster sauce and stock and bring to the boil. Reduce the heat and simmer for 30 minutes.
+
+Combine the cornflour and vinegar with 1 tablespoon water and pour it into the sauce, stirring regularly as it thickens. Blend the sauce until it is smooth.
+
+In a bowl, mix together the light soy sauce, yellow bean paste, shaoxing rice wine, cumin, chilli flakes, five-spice and sugar.
+
+Take a heavy, deep roasting tin large enough to fit the lamb shoulder. Rub the marinade all over the meat, put it in the tin, cover with plastic wrap and leave to marinate for a few hours or ideally overnight in the refrigerator.
+
+Preheat the oven to 150C (300F).
+
+Remove the plastic wrap from the lamb and add 250 ml (8 1/2 fl oz/1 cup) water to the roasting tin. Cover the lamb tightly with aluminium foil and roast the lamb in the oven for 2 hours. Reduce the oven temperature to 110C (230F) and cook for a further 4 hours, checking every so often and adding a little more water if the tin becomes dry. Remove the foil for the last hour of roasting to crisp up the skin.
+
+To make the coriander and mint paste, put the avocado, garlic, cumin, coriander and mint in an upright blender. Blend until you have a rough puree. Pour the oil in slowly, blending until the sauce becomes smooth. Season the sauce with the lemon juice and sea salt, adding more if necessary. Set aside.
+
+When ready to serve, heat the grapeseed oil in a large non-stick frying pan over medium heat. Cook the spring onion pancakes for 2 minutes on each side or until golden.
+
+Warm the Sichuan sauce over low heat.
+
+Place the lamb in a deep dish and pour the Sichuan sauce over the top. Finish the dish with the chilli oil, ground Sichuan pepper, coriander and spring onion. Serve with the spring onion pancakes and the coriander and mint paste on the side.`
+  },
+  {
+    id: 111,
+    title: "Fried chicken with sticky sauce",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Poultry",
+    serves: "Serves 2-4",
+    time: "",
+    ingredients: [
+      "4 chicken leg quarters (marylands), each cut into 4 pieces",
+      "Sea salt",
+      "125 ml (4 fl oz/1/2 cup) buttermilk",
+      "2 litres (68 fl oz/8 cups) vegetable oil for deep-frying",
+      "90 g (3 oz/1/2 cup) rice flour",
+      "70 g (2 1/2 oz/1/2 cup) tapioca flour",
+      "90 g (3 oz/1/2 cup) glutinous (sticky) rice flour",
+      "5 coriander (cilantro) sprigs, picked, for garnish (optional)",
+      "2 tablespoons grapeseed oil",
+      "1.5 cm (1/2 in) piece fresh ginger, finely chopped",
+      "8 garlic cloves, finely chopped",
+      "2 tablespoons shaoxing rice wine",
+      "115 g (4 oz/1/3 cup) liquid glucose",
+      "80 ml (2 1/2 fl oz/1/3 cup) light soy sauce",
+      "1/2 long red chilli, thinly sliced",
+      "1 spring onion (scallion), white part only, thinly sliced",
+      "2 tablespoons rice wine vinegar"
+    ],
+    method: `To make the sticky sauce, in a stainless steel saucepan over medium heat, gently warm the grapeseed oil. Add the ginger and garlic and cook for 3-4 minutes until aromatic and wilted. Pour in the shaoxing rice wine and cook until reduced by half. Add the glucose, soy sauce, chilli and spring onion and cook for 5-10 minutes until the sauce resembles a thick syrup. Remove the pan from the heat and stir through the rice wine vinegar. Set aside.
+
+Season the chicken with a generous pinch of salt and place it in a single layer on a plate in the refrigerator for 2 hours.
+
+Pat the chicken dry, put it in a bowl and pour over the buttermilk, stirring to coat the chicken.
+
+Meanwhile, put the vegetable oil in a large, deep, heavy-based saucepan and heat it to 170C (340F).
+
+While the oil is heating, mix all the flours together in a large bowl.
+
+Remove the chicken pieces from the buttermilk and toss them through the flour until well coated.
+
+Fry the chicken in 2 batches for 10-12 minutes each, or until the skin is golden and crisp. Remove the chicken from the oil and transfer to paper towel to drain.
+
+When all the chicken is cooked, place it in a large bowl with the coriander sprigs, if using, and drizzle over 80 ml (2 1/2 fl oz/1/3 cup) of the sticky sauce. Gently mix the chicken through the sauce until well coated. Taste and add more sticky sauce if necessary and serve.`
+  },
+  {
+    id: 112,
+    title: "Lobster roll",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Seafood",
+    serves: "Makes 4 rolls",
+    time: "",
+    ingredients: [
+      "1 lobster tail in its shell",
+      "1 red Asian shallot",
+      "1/2 bunch watercress",
+      "125 g (4 1/2 oz/1/2 cup) kewpie mayonnaise",
+      "2 teaspoons lemon juice",
+      "1 teaspoon white wine vinegar",
+      "1 teaspoon mustard powder",
+      "60 ml (2 fl oz/1/4 cup) olive oil",
+      "4 brioche buns",
+      "40 g (1 1/2 oz) butter, softened"
+    ],
+    method: `Bring a large saucepan of water to the boil over high heat, then reduce the heat to medium until the water is at a constant simmer.
+
+Poach the lobster tail in its shell in the simmering water for about 8-10 minutes. Remove the lobster from the pan and set aside to cool. Place in the refrigerator until chilled.
+
+Shell the lobster and slice the meat into 8 discs. Finely chop any small or discoloured pieces of lobster you may have.
+
+Cut the shallot in half lengthways and thinly slice each half.
+
+Pick the watercress, discarding any bruised or tarnished leaves, then wash and pat dry.
+
+Combine the kewpie mayonnaise, lemon juice, vinegar and mustard powder in a mixing bowl. Slowly add the oil while whisking continuously. Season to taste.
+
+Preheat the oven to 180C (350F).
+
+Cut the brioche buns in half horizontally and lightly butter them. Put the buns on a tray, butter side down, and toast them in the oven for 5 minutes or until golden brown.
+
+Spread 1 teaspoon of the mayonnaise onto each half of the brioche. Place a tablespoon of chopped lobster on the bottom halves and season to taste. Arrange 2 discs of lobster meat on top without overlapping. Place 1/2 teaspoon mayonnaise on each lobster slice and season again to taste. Add a few slices of shallot and a few leaves of watercress, place the brioche lid on the top and serve immediately.`
+  },
+  {
+    id: 113,
+    title: "Sauteed mushrooms, crisp rice cakes, soy dressing",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Vegetarian",
+    serves: "Serves 6",
+    time: "",
+    ingredients: [
+      "1 tablespoon Chinese black vinegar",
+      "2 tablespoons light soy sauce",
+      "60 ml (2 fl oz/1/4 cup) sweet soy sauce",
+      "1 1/2 tablespoons grapeseed oil",
+      "1 kohlrabi, peeled and diced",
+      "1/2 teaspoon sea salt",
+      "2 cups mixed mushrooms such as shimeji, chestnut, oyster, king brown",
+      "80 ml (2 1/2 fl oz/1/3 cup) grapeseed oil",
+      "2 tablespoons finely chopped garlic chives",
+      "60 ml (2 fl oz/1/4 cup) grapeseed oil",
+      "20 g (3/4 oz) chopped fresh ginger",
+      "60 g (2 oz) chopped king brown mushrooms",
+      "500 g (1 lb 2 oz) glutinous (sticky) rice",
+      "650 ml (22 fl oz) water",
+      "75 ml (2 1/2 fl oz) soy sauce",
+      "1/4 teaspoon salt",
+      "25 ml (3/4 fl oz) Chinese black vinegar",
+      "50 ml (1 3/4 fl oz) light soy sauce",
+      "70 ml (2 1/4 fl oz) sweet soy sauce"
+    ],
+    method: `To make the rice cakes, in a large saucepan over medium heat, gently heat 25 ml (3/4 fl oz) of the grapeseed oil. Add the ginger and cook for 3 minutes until soft and slightly caramelised. Add the mushrooms and cook for a further 3 minutes. Once sweated down, add the rice, stirring constantly for 5 minutes. Turn the heat to high and add the remaining ingredients. Stir well and bring to the boil.
+
+Transfer the rice to a 25 x 20 cm (10 x 8 in) roasting tray and spread it out evenly. Place the tray in a steamer at approximately 100C (210F) and let it cook for 25-30 minutes. Remove the rice from the steamer and fluff it with a fork.
+
+Transfer the rice to a similar sized tray lined with plastic wrap. Place another layer of plastic wrap on top and press the cake flat and even. It should be about 2 cm (3/4 in) thick. Transfer to the refrigerator until the rice cake has set. Once set, portion the cake into 3 cm (1 1/4 in) squares.
+
+In a small bowl, whisk the black vinegar, soy sauces and 1 1/2 tablespoons grapeseed oil together until well combined.
+
+Put the kohlrabi in a small saucepan, add the salt and pour in enough water to just cover. Bring to the boil and then turn heat to a simmer, cooking for about 20 minutes or until the kohlrabi offers no resistance to the tip of a sharp knife. Drain well, then mash and pass through a fine sieve. Check the seasoning and keep warm.
+
+Gently warm 2 tablespoons of the grapeseed oil in a non-stick frying pan. Place 8 squares of rice cake into the pan and cook until nicely golden. Turn the cakes and repeat until golden on all sides.
+
+Meanwhile heat the remaining grapeseed oil in another frying pan. Add the mushrooms and saute for 4-5 minutes or until golden. Add the garlic chives and cook for a further minute. Remove the mushrooms from the heat and add 1 tablespoon of the dressing.
+
+Place a generous amount of kohlrabi puree on a serving plate, followed by the rice cakes. Arrange the mushrooms over the top and drizzle with a little more of the dressing.`
+  },
+  {
+    id: 114,
+    title: "Potsticker dumplings",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Dumplings",
+    serves: "Makes about 20 dumplings",
+    time: "",
+    ingredients: [
+      "150 g (5 1/2 oz/2 cups) thinly sliced baby Chinese cabbage (wombok)",
+      "1 tablespoon salt",
+      "1 egg yolk",
+      "15 g (1/2 oz/1/4 cup) thinly sliced spring onions (scallions), white part only",
+      "20 g (3/4 oz/1/3 cup) finely chopped garlic chives",
+      "2 garlic cloves, finely chopped",
+      "1 tablespoon finely chopped fresh ginger",
+      "300 g (10 1/2 oz) minced (ground) pork",
+      "125 ml (4 fl oz/1/2 cup) light soy sauce",
+      "2 tablespoons sesame oil",
+      "1/4 teaspoon freshly ground black pepper",
+      "1 teaspoon sugar",
+      "2 tablespoons potato starch",
+      "60 ml (2 fl oz/1/4 cup) chicken stock",
+      "1/4 teaspoon Chinese five-spice",
+      "1 packet gyoza wrappers",
+      "1 tablespoon plain (all-purpose) flour",
+      "60 ml (2 fl oz/1/4 cup) vegetable oil",
+      "2 tablespoons Chinese black vinegar, to serve"
+    ],
+    method: `Toss the cabbage with the salt and leave it in a colander for 15 minutes to wilt. Squeeze out all excess liquid until dry.
+
+Combine the salted cabbage with the egg yolk, spring onion, garlic chives, garlic, ginger, pork, soy sauce, sesame oil, pepper, sugar, potato starch, stock and five-spice in a bowl and mix well. It's easiest to work the ingredients into the pork by hand.
+
+To form the dumplings, place 1 1/2-2 teaspoons of the filling in the centre of a gyoza wrapper. Lightly wet one edge of the wrapper, fold the dough over and firmly pinch the edges together. Lay the dumplings on a floured tray until ready to cook.
+
+Combine the flour with 200 ml (7 fl oz) water, whisking well.
+
+Heat the oil in a non-stick frying pan with a fitted lid over medium heat. Place 6 dumplings in the pan. Fry for 1 minute then add 60 ml (2 fl oz/1/4 cup) of the flour and water mixture to the pan. Put the lid on and steam for 3 minutes. Remove the lid and cook for a further 5-8 minutes until the dumplings are cooked through and their bottoms are golden. Carefully loosen the dumplings and crust and flip them onto a plate.
+
+Serve with small bowls of Chinese black vinegar for dipping.`
+  },
+  {
+    id: 115,
+    title: "Supernormal ramen",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Soup & Noodles",
+    serves: "Serves 4",
+    time: "",
+    ingredients: [
+      "2 tablespoons grapeseed oil",
+      "2 boneless chicken thighs, skin on",
+      "8 prawn and chicken dumplings (optional)",
+      "500 g (1 lb 2 oz) ramen noodles",
+      "2 spring onions (scallions), green tops only, thinly sliced diagonally",
+      "1 tablespoon shichimi togarashi",
+      "1 tablespoon sesame seeds, toasted and coarsely ground",
+      "2 sheets toasted nori, each cut into 6 squares",
+      "2 tablespoons sake",
+      "2 tablespoons mirin",
+      "4 garlic cloves, thinly sliced",
+      "3 cm (1 1/4 in) piece fresh ginger, thinly sliced",
+      "190 ml (6 1/2 fl oz/3/4 cup) light soy sauce",
+      "2 tablespoons caster (superfine) sugar",
+      "4 eggs",
+      "600 g (1 lb 5 oz) chicken wings",
+      "1/2 carrot",
+      "1 onion",
+      "2 litres (68 fl oz/8 cups) light chicken stock",
+      "10 x 5 cm (4 x 2 in) piece kombu",
+      "1/4 cup white miso paste",
+      "4 dried shiitake mushrooms",
+      "1 celery stalk",
+      "3 cm (1 1/4 in) piece fresh ginger",
+      "2 tomatoes, peeled and roughly chopped",
+      "2 tablespoons light soy sauce"
+    ],
+    method: `This is not a traditional ramen whatsoever. We have taken the basic principles of ramen and created our own version, which we serve at lunchtime. Traditionally, ramen stock is made from pork and can be quite rich. I prefer a lighter-style broth, which is the reason I use a chicken stock here.
+
+To make the soy eggs, in a small saucepan bring all the ingredients, except the eggs, to a simmer. Cook over low heat for 5 minutes. Add 500 ml (17 fl oz/2 cups) cold water, remove the pan from the heat and set aside.
+
+Bring a saucepan of water to the boil. Pierce a small hole in the larger end of each egg using a thin metal skewer.
+
+Carefully put the eggs in the boiling water and cook for exactly 6 minutes, stirring slowly for the first 1 1/2 minutes to distribute the heat evenly.
+
+Meanwhile, fill a large bowl with cold water and ice. When the eggs are done, transfer them straight to the ice bath and leave to cool for 15 minutes.
+
+Once the eggs are cool, peel them in the water. Transfer the eggs to the soy sauce mixture and marinate in the refrigerator for at least 2 and up to 6 hours, making sure they're completely submerged in the liquid by placing a small plate on top of them.
+
+To serve, take the eggs out of the marinade and cut them in half lengthways. The soy sauce mixture can be reserved for another batch of eggs.
+
+To make the ramen broth, preheat the oven to 220C (430F).
+
+Chop the chicken wings into 3 cm (1 1/4 in) pieces with a cleaver. Put them in an ovenproof dish and roast for 30 minutes or until golden brown.
+
+Heat a chargrill pan over high heat. Cook the carrot and onion for 10 minutes on one side until well charred.
+
+Put all the broth ingredients, except the soy sauce, in a large stainless steel stockpot and bring to a simmer. Simmer for 2 hours to develop the flavours. Strain the stock through a fine sieve and add the soy sauce.
+
+In a saucepan over medium heat, bring the strained ramen broth to a simmer. Reduce the heat to low.
+
+Heat the grapeseed oil in a non-stick frying pan over low heat. Place the chicken thighs, skin side down, in the pan and cook gently for 5 minutes, or until golden. Turn the chicken over and cook for a further 2 minutes, or until cooked through. Remove the chicken from the pan and slice each thigh into 8 pieces.
+
+Meanwhile, bring a large saucepan of water to the boil. Carefully drop in the dumplings, if using, and cook for 2 minutes. Drop the noodles into the same pot and cook with the dumplings for a further 3 minutes. Strain through a colander.
+
+Divide the noodles and dumplings between four bowls. Place 1 egg and 4 slices of chicken in each bowl, then divide the hot broth among the bowls. Top with the spring onion greens and sprinkle with a combination of shichimi togarashi and ground sesame seeds. Finally, tuck 3 squares of toasted nori into the side of the bowl and serve.`
+  },
+  {
+    id: 116,
+    title: "Prawn and chicken dumplings with spiced vinegar",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Dumplings",
+    serves: "Makes about 20 dumplings",
+    time: "",
+    ingredients: [
+      "250 g (9 oz) peeled, raw prawns (shrimp), deveined",
+      "1 teaspoon egg white",
+      "1/2 teaspoon salt",
+      "1/2 teaspoon tapioca starch",
+      "1/4 teaspoon bicarbonate of soda (baking soda)",
+      "1 teaspoon grapeseed oil",
+      "250 g (9 oz) minced (ground) chicken",
+      "1 tablespoon finely chopped garlic chives",
+      "1/4 teaspoon sesame oil",
+      "Pinch of sugar",
+      "1/4 teaspoon fish sauce",
+      "1 1/2 teaspoons soy sauce",
+      "Pinch of ground white pepper",
+      "1 packet yellow wonton wrappers",
+      "1 star anise",
+      "1/4 teaspoon coriander seeds",
+      "1/2 cinnamon stick",
+      "2 cloves",
+      "70 ml (2 1/4 fl oz) Chinese black vinegar",
+      "70 ml (2 1/4 fl oz) soy sauce",
+      "1 1/2 tablespoons sugar",
+      "30 g (1 oz/1/2 cup) thinly sliced spring onion (scallion)",
+      "125 ml (4 fl oz/1/2 cup) chilli crisp sauce"
+    ],
+    method: `In a bowl, combine the prawns with the egg white, 1/4 teaspoon of the salt, the tapioca and bicarbonate of soda and place in the refrigerator to marinate for 1 hour.
+
+To make the spiced vinegar, toast the spices in a small, dry frying pan over medium heat until fragrant. Add 200 ml (7 fl oz) water and bring to the boil. Boil until reduced by half. Set aside to cool. When cool, strain and discard the spices. Stir in the remaining ingredients and set aside.
+
+Heat the grapeseed oil in a small saucepan over medium heat and cook the garlic chives for 1 minute then scrape them into a bowl to cool.
+
+Take the prawns from the refrigerator and coarsely dice one-third of them. Finely chop the remainder of the prawns into a mince. Mix the prawn and chicken mince together and combine them by repeatedly throwing the mixture against the inside of the mixing bowl. It will become a sticky, cohesive mass. Finally add the garlic chives, sesame oil, sugar, remaining salt, the fish sauce, soy sauce and white pepper. Thoroughly mix these ingredients through the mince.
+
+To make the dumplings, place a rounded teaspoon of the filling in the centre of a wonton wrapper. Dip your finger in water and moisten the bottom edge of the wrapper. Fold the wrapper in half towards you, to enclose the filling. Press to seal.
+
+Fold the sealed edge of the wonton back on itself then lightly moisten one corner of the folded edge with water. Finally, taking the 2 ends in your fingers, bring them together with a twisting action, and press them firmly to join. Repeat with the remaining filling and wrappers.
+
+Cook the dumplings in batches for 4 minutes in a large saucepan of boiling water. Remove them with a slotted spoon and drain. Serve immediately with some spiced vinegar spooned over the top.`
+  },
+  {
+    id: 117,
+    title: "Drunken arma ebi prawns",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Seafood",
+    serves: "Serves 4",
+    time: "",
+    ingredients: [
+      "1 1/2 tablespoons sugar",
+      "60 ml (2 fl oz/1/4 cup) white soy sauce",
+      "200 ml (7 fl oz) shaoxing rice wine",
+      "3 cm (1 1/4 in) piece fresh ginger, sliced",
+      "1 French shallot, peeled and cut into rings",
+      "300 g (10 1/2 oz) arma ebi prawns (shrimp) or other small prawns"
+    ],
+    method: `Arma Ebi prawns can be found at some fishmongers. If unavailable, small Crystal Bay prawns can be used.
+
+Bring the sugar, soy sauce, shaoxing rice wine, ginger, shallot and 150 ml (5 fl oz) water to a simmer in a saucepan over medium heat. Continue to simmer gently for 5 minutes. Transfer to a container and leave in the refrigerator to cool.
+
+Bring a large saucepan of salted water to a simmer over medium heat. Plunge the prawns into the water and cook for 30 seconds. Remove from the heat and cool in plenty of iced water for no more than a minute. Strain and quickly pat the prawns dry before adding them to the cool wine marinade. Leave to marinate for 30 minutes before serving. Serve with a discard bowl for the shells and a finger bowl for sticky fingers.`
+  },
+  {
+    id: 118,
+    title: "Beef intercostals with Korean chilli dressing",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Beef",
+    serves: "Serves 6",
+    time: "",
+    ingredients: [
+      "1 kg (2 lb 3 oz) beef intercostals",
+      "60 ml (2 fl oz/1/4 cup) sweet soy sauce",
+      "2 tablespoons grapeseed oil",
+      "Toasted sesame seeds or fried shallots, to serve",
+      "2 cm (3/4 in) piece fresh ginger, finely grated",
+      "2 garlic cloves, finely grated",
+      "1 red Asian shallot, thinly sliced",
+      "2 1/2 tablespoons Korean chilli flakes",
+      "2 tablespoons sesame seeds, toasted",
+      "2 tablespoons Korean fish sauce",
+      "2 tablespoons light soy sauce",
+      "2 tablespoons rice wine vinegar",
+      "60 ml (2 fl oz/1/4 cup) grapeseed oil",
+      "3 teaspoons sesame oil"
+    ],
+    method: `Intercostal meat, also known as rib finger, is the meat found between ribs. It's not always readily available so it's a good idea to order it in advance from your butcher.
+
+Trim the beef intercostals of any excess fat and sinew then place the meat in a baking dish just large enough to hold it in a single layer. Mix the sweet soy sauce through the beef and marinate in the refrigerator for 3 hours or overnight.
+
+Preheat the oven to 150C (300F).
+
+Fill the baking dish with the beef in it with just enough water to cover the meat. Cover the dish with foil and cook the beef in the oven for 3-4 hours until the meat is tender but not falling apart. Keep an eye on the water level and top up as necessary. When the meat is tender, allow it to cool in its liquid in the refrigerator.
+
+To make the Korean chilli dressing, in a small bowl, mix all the ingredients together. Leave the sauce at room temperature for an hour before using, to let the flavour develop.
+
+When you're ready to finish the dish, preheat a barbecue or chargrill pan to high.
+
+Drain the beef and discard the liquid. Cut the beef into pieces roughly 6 cm (2 1/2 in) long. When the grill is hot, brush the meat with a little grapeseed oil and cook the meat on the grill for 3 minutes on each side, or until the beef is charred and hot.
+
+Remove the beef from the heat and season with salt. Arrange on a plate with the Korean dressing and a generous sprinkling of sesame seeds or fried shallots.`
+  },
+  {
+    id: 119,
+    title: "Fried rice cakes with Korean sweet chilli sauce",
+    author: "Andrew McConnell",
+    book: "Supernormal",
+    category: "Snacks",
+    serves: "Serves 6",
+    time: "",
+    ingredients: [
+      "500 g (1 lb 2 oz) Korean rice cakes",
+      "100 ml (3 1/2 fl oz) grapeseed oil",
+      "2 teaspoons sesame seeds, toasted and coarsely ground",
+      "4 garlic cloves, finely grated",
+      "60 g (2 oz/1/4 cup) gochujang (Korean chilli paste)",
+      "110 g (4 oz/1/2 cup) sugar",
+      "60 ml (2 fl oz/1/4 cup) mirin"
+    ],
+    method: `We've tested many types of Korean rice cakes at Supernormal. The Chongga brand is the best we've found to date. They have great texture, crisp up nicely in the pan and don't seem to soak up much oil at all.
+
+To make the Korean sweet chilli sauce, combine all the ingredients with 60 ml (2 fl oz/1/4 cup) water in a saucepan. Bring to the boil then reduce the heat to a simmer. Cook gently for 5 minutes or until the liquid has reduced by half and slightly thickened. Remove the pan from the heat and leave to cool for 30 minutes.
+
+Bring a large saucepan of water to the boil and drop in the rice cakes. Boil for 3 minutes or until soft. Drain them and pat dry with paper towel.
+
+In a non-stick frying pan over high heat, heat half the grapeseed oil until hot. Carefully add half the blanched rice cakes and reduce the heat to medium. Saute the rice cakes until crunchy, about 3-4 minutes. Remove the cakes and cook the remaining rice cakes in the same manner.
+
+When all the rice cakes are crunchy, place them in a bowl with the Korean sweet chilli sauce. Toss well with the sauce and serve immediately topped with the ground sesame seeds.`
+  },
+  {
+    id: 120,
+    title: "Tahini 'brandade'",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Seafood",
+    serves: "Serves 4-6",
+    time: "",
+    ingredients: [
+      "500 g (1 lb 2 oz) white fish fillets, such as snapper or trevally",
+      "Salt, to season",
+      "100 g (3 1/2 oz) Taratoor (page 42)",
+      "20 g (3/4 oz) Toum (page 34)",
+      "2 tablespoons extra-virgin olive oil, plus extra for brushing",
+      "1 teaspoon Turkish chilli powder",
+      "1 teaspoon ground sumac",
+      "1 tablespoon toasted flaked almonds (optional)"
+    ],
+    method: `Preheat your oven to 200C (400F).
+
+Line a baking tray with baking paper and brush it with a little olive oil.
+
+Lay the fillets on the tray, skin side down, then sprinkle the flesh with salt. Bake for approximately 6 minutes. The fish will be ready when the flesh flakes easily when pressed. (If you're nervous about undercooked fish you can leave it a little longer as this recipe can handle it.) Set aside to cool. When cool, pull the flesh away from the skin and shred into a bowl. Add the taratoor and toum and mix well.
+
+Arrange on a plate or in a bowl, then drizzle with the olive oil. Sprinkle with the chilli and sumac.
+
+If using the flaked almonds, you could simply sprinkle them on top or get pretty corny and stick them into the brandade to look like fish scales. You could even use pine nuts for eyes.`
+  },
+  {
+    id: 121,
+    title: "Summer: Koussa fattoush",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Salads",
+    serves: "Serves 4-6",
+    time: "",
+    ingredients: [
+      "50 g (1 3/4 oz) dried chickpeas, soaked overnight",
+      "1 teaspoon sea salt, plus extra to taste",
+      "800 g (1 lb 12 oz) white zucchini (courgette)",
+      "80 ml (1/3 cup) extra-virgin olive oil",
+      "1/3 red onion, very finely sliced",
+      "5 cherry tomatoes",
+      "Juice of 1 lemon",
+      "1/2 bunch of flat-leaf parsley leaves, roughly chopped",
+      "100 g (3 1/2 oz) natural yoghurt",
+      "1 tablespoon Toum (page 34), or 2 finely crushed garlic cloves",
+      "2 flatbreads, cut into 3 cm (1 1/4 in) triangles and fried (see page 49)",
+      "Ground sumac, for garnish"
+    ],
+    method: `Drain the chickpeas then place in a saucepan with plenty of cold water. Bring to the boil over a high heat, then reduce the heat to low and simmer for 1 hour, or until tender. Remove from the heat, stir in the salt, then leave to cool in the liquid.
+
+While the chickpeas are cooling, preheat a charcoal barbecue. Cut the zucchini in half lengthways and place in a bowl. Add 2 tablespoons of the olive oil, season with salt and pepper and toss to coat well.
+
+Chargrill the zucchini for 5 minutes on both sides, or until well caramelised, charred and soft in the centre. Transfer to a serving plate that has pictures of koussa painted on it and season with sea salt, then set aside.
+
+Place the onion and tomatoes in a small bowl and gently bash the tomatoes. Their juices will become part of the dressing. Add the drained chickpeas and combine, then add the remaining oil, chickpeas, lemon juice, parsley, combine well, then adjust to taste. It may need a little more lemon, salt or oil.
+
+To serve, season the yoghurt with a pinch of salt and the toum, and spoon over the zucchini. Add the fried bread and spoon the chickpea mixture over the top. Sprinkle with sumac and serve immediately.`
+  },
+  {
+    id: 122,
+    title: "Circassian chicken",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Poultry",
+    serves: "Serves 4-6",
+    time: "",
+    ingredients: [
+      "2 skinless chicken breasts",
+      "500 ml (2 cups) chicken stock, or salted water with 1 quartered onion",
+      "160 g (5 3/4 oz) Muhammara (page 37)",
+      "10 walnut halves, roughly chopped",
+      "2 tablespoons Salca butter (page 28)",
+      "Sprinkle of Turkish chilli powder",
+      "Sprinkle of nigella seeds"
+    ],
+    method: `Place the chicken in a saucepan with the cold chicken stock or salted water (with the onion) and bring to the boil over a high heat. Reduce the heat to low and poach, uncovered, for approximately 15 minutes until just cooked. Remove the chicken from the liquid and let it cool.
+
+When it is cool enough to handle, shred the chicken and place in a bowl. Add the muhammara and mix well. Spread on a plate or place in a bowl and top with one or all of the optional garnishes.`
+  },
+  {
+    id: 123,
+    title: "Broccoli tabbouleh",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Salads",
+    serves: "Serves 8",
+    time: "",
+    ingredients: [
+      "1 large head of broccoli",
+      "2 ripe tomatoes, cut into 5 mm (1/4 in) dice",
+      "1 bunch of flat-leaf parsley, leaves picked then finely chopped",
+      "1/4 bunch of mint, leaves picked then shredded",
+      "75 ml (1/3 cup) lemon juice",
+      "150 ml (5 fl oz) extra-virgin olive oil",
+      "1 teaspoon Lebanese 7 spice",
+      "2 spring onions (scallions), finely sliced",
+      "1/2 teaspoon salt"
+    ],
+    method: `Trim the broccoli of the fibrous end, then chop the tender stem and florets as finely as you can.
+
+Place all the ingredients in a bowl and mix together. Be sure that everything is well coated with the lemon juice and olive oil.
+
+I would suggest leaving it for 5 minutes after mixing then coming back to it with any adjustments to the seasoning. It should be juicy and salty.`
+  },
+  {
+    id: 124,
+    title: "Spring: Broad bean, asparagus and green almond fattoush",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Salads",
+    serves: "Serves 4-6",
+    time: "",
+    ingredients: [
+      "40 g (1/4 cup) peas (podded weight)",
+      "185 g (1 cup) broad beans (podded weight)",
+      "1 tablespoon extra-virgin olive oil",
+      "1 bunch of asparagus, cut into 2 cm (3/4 in) lengths",
+      "1 avocado, peeled and stone removed",
+      "100 g (3 1/2 oz) Taratoor (page 42)",
+      "1/2 bunch of flat-leaf parsley leaves, roughly chopped",
+      "1/4 bunch of watercress, sprigs picked",
+      "10 mint leaves, torn",
+      "10 broad bean leaves, torn",
+      "2 flatbreads, cut into 3 cm (1 1/4 in) triangles and fried (see page 49)",
+      "1 teaspoon ground sumac, plus extra to serve",
+      "50 ml (1 3/4 fl oz) Lemon dressing (page 46)",
+      "3 green almonds, finely sliced"
+    ],
+    method: `Fill two small bowls with cold water and ice and set aside.
+
+Fill a small pot with heavily salted water and bring to the boil over a high heat. Add the peas to the pot and boil for 1 minute before removing with a slotted spoon and placing in the iced water. Drain once cold.
+
+Bring the water back to the boil then add the broad beans. Boil for 3 minutes then remove and place the broad beans in the second bowl of iced water. When cold, drain and remove the loose light-green skins to reveal the vibrant green centre of the broad bean. Discard the skin.
+
+Heat the oil in a pan over a medium heat for about 30 seconds before adding the asparagus and sauteing for about 2 minutes.
+
+Make an avocado dressing by pureeing the avocado and taratoor in a food processor until smooth.
+
+Place all the ingredients in a bowl, adding the dressings last, and mix well. Serve on a serving platter or in a salad bowl. Scatter over the green almonds and sprinkle with a little extra sumac for presentation.`
+  },
+  {
+    id: 125,
+    title: "Tahini chicken",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Poultry",
+    serves: "Serves 4-8",
+    time: "",
+    ingredients: [
+      "1 x free-range chicken",
+      "1 tablespoon vegetable oil",
+      "1 tablespoon salt",
+      "1 teaspoon Baharat (page 24)",
+      "1 x quantity Taratoor (page 42)",
+      "50 g (1 3/4 oz) fried almonds (see page 41)",
+      "1 tablespoon fried pine nuts (see page 41)",
+      "50 g (1 3/4 oz) walnuts, chopped",
+      "1/2 bunch of flat-leaf parsley, shredded",
+      "1 tablespoon ground sumac",
+      "1 teaspoon Turkish chilli powder"
+    ],
+    method: `Remove the chicken from the fridge about 20 minutes before you want to cook it and preheat your oven to 220C (425F).
+
+Rub the vegetable oil all over the chicken then season with the salt and baharat. Place in a roasting tin and cook for approximately 1 hour and 20 minutes. To check that your chicken is cooked, pierce the thigh with a knife - the juices should be clear. Remove from the oven and allow to rest for about 20 minutes before carving. Lower the oven temperature to 180C (350F).
+
+Take the bird apart by removing the legs and cutting them into thighs and drumsticks. Remove the breasts from the bone and cut each breast into two or three pieces. Pick the rest of the meat off the carcass and add to the pile of chicken pieces. Drain the fat and excess juices out of the tray and set aside. Place the cut chicken in the tray and pour the taratoor over it. Return to the oven for 5 minutes. Serve on your platter of choice topped with the mixed nuts, parsley, sumac and Turkish chilli.`
+  },
+  {
+    id: 126,
+    title: "Autumn: Tomato and shanklish fattoush",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Salads",
+    serves: "Serves 4-6",
+    time: "",
+    ingredients: [
+      "2 large tomatoes, cored and cut into 5 cm (2 in) chunks",
+      "1/2 ball of shanklish cheese, crumbled",
+      "1/2 red onion, finely sliced",
+      "1/2 bunch of flat-leaf parsley leaves, roughly chopped",
+      "60 g (1/4 cup) purslane",
+      "5 mint leaves, torn",
+      "2 flatbreads, cut into 3 cm (1 1/4 in) triangles and fried (see page 49)",
+      "1 teaspoon ground sumac, plus extra to serve",
+      "60 ml (1/4 cup) Pomegranate dressing (page 46)"
+    ],
+    method: `Place all the ingredients in a bowl, adding the dressing last, and mix. Serve on a platter or in a salad bowl that has pictures of tomatoes painted on it. Sprinkle with a little extra sumac for presentation.`
+  },
+  {
+    id: 127,
+    title: "Freekeh, feta & pomegranate salad",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Salads",
+    serves: "Serves 6-8",
+    time: "",
+    ingredients: [
+      "250 g (9 oz) cracked freekeh",
+      "2 tablespoons salt",
+      "1 bunch of flat-leaf parsley, roughly chopped",
+      "50 g (1 3/4 oz) Bulgarian feta, lightly crumbled",
+      "100 ml (3 1/2 fl oz) Pomegranate dressing (page 46)",
+      "50 g (1 3/4 oz) fried almond flakes (see page 41), to serve"
+    ],
+    method: `Wash the freekeh two or three times, then drain.
+
+Place in a pot with the salt and 750 ml (3 cups) water and bring to the boil. Once it comes to the boil, simmer over a low heat until tender, then turn it off and let it sit for a further 3 minutes.
+
+Strain the freekeh, then place in a bowl and let it cool to room temperature. Add the parsley, feta and pomegranate dressing and mix lightly but thoroughly. Be careful not to overmix: you don't want the feta to become a fine crumble and get lost in the grains. Garnish with the fried almond flakes.`
+  },
+  {
+    id: 128,
+    title: "Winter: Pumpkin and chickpea fattoush",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Salads",
+    serves: "Serves 4-6",
+    time: "",
+    ingredients: [
+      "50 g (1 3/4 oz) dried chickpeas, soaked overnight",
+      "1 teaspoon salt, plus extra to season the pumpkin",
+      "500 g (1 lb 2 oz) pumpkin (squash), cut into 5 cm (2 in) dice",
+      "1 tablespoon extra-virgin olive oil",
+      "1/2 bunch of flat-leaf parsley leaves, roughly chopped",
+      "1 tablespoon Dukkah (page 25)",
+      "2 flatbreads, cut into 3 cm (1 1/4 in) triangles and fried (see page 49)",
+      "1 teaspoon ground sumac, plus extra to serve",
+      "60 ml (1/4 cup) Taratoor (page 42)",
+      "30 ml (1 fl oz) Lemon dressing (page 46)"
+    ],
+    method: `Drain the chickpeas then place in a saucepan with plenty of cold water. Bring to the boil over a high heat, then reduce the heat to low and simmer for 1 hour, or until tender. Remove from the heat, stir in the salt, then leave to cool in the liquid.
+
+While the chickpeas are cooking, preheat your oven to 220C (425F).
+
+Season the pumpkin with a pinch of salt and the olive oil. Spread on a baking tray and bake for about 20 minutes until cooked through. Alternatively, you could steam the pumpkin for around 10 minutes, then deep-fry it until dark brown.
+
+When the chickpeas and pumpkin have cooled, place in a bowl with the remaining ingredients, adding the taratoor and lemon dressing last, and mix well.
+
+Serve on a serving platter or in a salad bowl. Sprinkle with a little extra sumac for presentation.`
+  },
+  {
+    id: 129,
+    title: "The Albanian chicken livers that René Redzepi loved",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Poultry",
+    serves: "Serves 4",
+    time: "",
+    ingredients: [
+      "200 g (7 oz) chicken livers, connective tissue removed",
+      "1 teaspoon Baharat (page 24)",
+      "1/2 teaspoon salt",
+      "2 tablespoons vegetable oil",
+      "1/4 red onion, very finely sliced",
+      "4 flat-leaf parsley sprigs, leaves picked and finely shredded",
+      "1 teaspoon ground sumac",
+      "Pinch of salt flakes",
+      "Lemon wedges, to serve"
+    ],
+    method: `Marinate the chicken livers with the baharat and salt. Set aside.
+
+Heat the oil in a heavy-based frying pan over a high heat. When the oil begins to smoke, carefully add the chicken livers to the pan, trying not to overcrowd it. Maintain a high heat and cook for 1 minute, then turn and cook for another minute.
+
+Remove from the pan and rest on a plate for 2 minutes.
+
+Mix the onion, parsley and sumac with a pinch of salt flakes.
+
+Place the livers on a plate and top with the onion salad. Serve with lemon wedges on the side.`
+  },
+  {
+    id: 130,
+    title: "Labne-filled dates",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Dessert",
+    serves: "Makes 20",
+    time: "",
+    ingredients: [
+      "20 medjool dates",
+      "160 g (5 3/4 oz) unsalted Labne (page 31)",
+      "20 g (3/4 oz) tahini",
+      "50 g (1 3/4 oz) fig and sesame jam (see Q&A)",
+      "1/2 teaspoon Lebanese coffee powder",
+      "10 g (1/4 oz) toasted sesame seeds (optional)"
+    ],
+    method: `Remove the pits from the dates by making a small incision down the length of the date and carefully pulling out the pit. Make an effort to keep the dates in shape.
+
+Prepare the filling by mixing the labne, tahini, jam and coffee powder together.
+
+To fill the dates, you simply open them up at the slit and use a teaspoon or a piping bag to fill the date with the labne mixture.
+
+If using sesame seeds, dip the top of the stuffed date into the sesame seeds before serving.`
+  },
+  {
+    id: 131,
+    title: "Fried cauliflower with caramelised onion, currants and pine nuts",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Vegetarian",
+    serves: "Serves 6-8",
+    time: "",
+    ingredients: [
+      "100 ml (3 1/2 fl oz) vegetable oil",
+      "2 teaspoons pine nuts",
+      "2 onions, cut into 2 cm (3/4 in) squares",
+      "Salt, to taste",
+      "Small pinch of ground allspice",
+      "1 tablespoon currants",
+      "1 small head of cauliflower",
+      "Oil, for deep-frying (see page 49)",
+      "Plain (all-purpose) flour, for dusting"
+    ],
+    method: `Heat a small frying pan over a low heat and add 2 tablespoons of the vegetable oil and the pine nuts. Fry gently until the pine nuts start to change colour and become golden. At this point, strain through a small sieve and spread them on a plate or tray lined with paper towel. They will continue to colour so be sure to take them off the heat before they get too brown.
+
+Heat the remaining oil in a small saucepan over a high heat until very hot, then add the onion, stirring frequently until it starts to colour. Turn down the heat to low and allow the onion to caramelise slowly. Cook for approximately 30 minutes until completely soft and dark brown. Season with salt and allspice, then add the currants, stirring through the onion until well combined. Remove from the heat.
+
+For the cauliflower, fill a saucepan with heavily salted water and bring to a rolling boil. Cut the cauliflower into florets at least the size of a golf ball and no bigger than a mandarin. Boil in the salted water for 8-10 minutes until soft, then remove from the water with a kitchen spider or strain through a sieve. Spread on a tray lined with paper towel or a tea towel and allow to cool and dry out a little.
+
+When ready to fry, heat the oil in a saucepan or deep-fryer to 180C (350F). Dredge the cauliflower in the flour then shake off any excess in a sieve. Fry until dark brown. Yes - dark!
+
+Remove from the oil and drain on some paper towel. Season with salt and pepper, then arrange on a plate and top with the caramelised onion, currants and pine nuts.`
+  },
+  {
+    id: 132,
+    title: "Turka mi su",
+    author: "Joseph Abboud",
+    book: "Rumi",
+    category: "Dessert",
+    serves: "Serves 12",
+    time: "",
+    ingredients: [
+      "4 eggs, separated",
+      "180 g (6 1/2 oz) caster (superfine) sugar",
+      "1 teaspoon ground cardamom",
+      "250 g (9 oz) mascarpone",
+      "500 ml (2 cups) Lebanese (Turkish) cardamom coffee (see page 166)",
+      "60 ml (1/4 cup) Marsala or coffee liqueur",
+      "500 g (1 lb 2 oz) sponge finger biscuits",
+      "100 g (3 1/2 oz) cocoa powder",
+      "100 g (3/4 cup) finely chopped pistachio kernels"
+    ],
+    method: `To make a sabayon, whisk the egg yolks, sugar and ground cardamom in a mixer on high speed until thick and pale. In a large bowl, sift the mascarpone until smooth and softened. Gradually add the sabayon to the mascarpone.
+
+In a clean bowl, whisk the egg whites until stiff peaks form. Gently fold the stiff egg whites through the mascarpone mixture to make a light custard.
+
+Combine the coffee and liqueur in a separate shallow dish and soak the sponge finger biscuits in the coffee mix. Gently squeeze any excess liquid from the biscuits and place flat on the bottom of a serving dish. Cover the biscuits with a layer of the custard. Repeat these layers twice with a smaller amount of custard on top. Smooth over with a spatula and refrigerate for at least a couple of hours.
+
+Serve dusted generously with the cocoa powder and finish with chopped pistachios.`
+  },
+  {
+    id: 133,
+    title: "Salted Malted Banoffee Trifle",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Dessert",
+    serves: "Serves 8",
+    time: "",
+    ingredients: [
+      "5 large ripe bananas",
+      "3 cups heavy cream",
+      "8 tablespoons (1 stick) unsalted butter",
+      "1/2 cup sour cream",
+      "1/2 cup plus 2 tablespoons packed dark brown sugar",
+      "2 tablespoons red or white miso paste",
+      "1 1/2 teaspoons vanilla extract",
+      "Kosher salt",
+      "1 1/2 cups Grape-Nuts cereal (8 ounces)",
+      "1/3 cup plus 1/4 cup malted milk powder",
+      "2 tablespoons granulated sugar"
+    ],
+    method: `Make the miso-toffee sauce: In a medium saucepan or skillet, combine 1 cup heavy cream, 1/2 cup packed dark brown sugar, 4 tablespoons unsalted butter, and 2 tablespoons miso paste. Place over high heat and whisk to combine. When the mixture begins to boil, reduce the heat as needed to maintain a lively boil and cook, whisking frequently, until the mixture has darkened a few shades and thickened, about 5 minutes. Remove from the heat and stir in 1 1/2 teaspoons vanilla extract and 1/2 teaspoon salt. Transfer to a heatproof bowl and chill in the refrigerator until cold.
+
+Make the Grape-Nut crumbles: In a medium skillet, melt the remaining 4 tablespoons unsalted butter over medium heat. Once the butter is melted, add 1 1/2 cups Grape-Nuts and cook, stirring often, until sizzling and a shade darker, about 2 minutes. Stir in 1/4 cup malted milk powder, 2 tablespoons granulated sugar, and 3/4 teaspoon salt and cook, stirring, for 1 minute to marry the flavors. Let cool.
+
+Whip the cream: Pour the remaining 2 cups heavy cream into the bowl of a stand mixer fitted with the whisk attachment. Beat the cream until lofty but not quite holding peaks. Add the remaining 1/3 cup malted milk powder, 2 tablespoons dark brown sugar, and a large pinch of salt. Continue to beat until soft peaks form. Do not overbeat. Beat in 1/2 cup sour cream just until incorporated.
+
+Scoop out about 1/2 cup of the whipped cream and fold it into the chilled coffee toffee sauce, gently stirring and folding with a spatula to incorporate. This will lighten the sauce a bit.
+
+Assemble: Thinly slice 5 large ripe bananas on a bias. Choose your assembly vessel: either 8 glass cups or ramekins or one larger glass baking dish or bowl. Layer the elements in the following order, making 2 layers: Grape-Nuts crumbles, toffee sauce, bananas, whipped cream, repeat. End with a big dollop of whipped cream, spreading it to cover the bananas. Transfer to the refrigerator and chill for at least 1 hour and up to 1 day before serving.
+
+Serve by the big scoopful if you made one large one, or individually if not.`
+  },
+  {
+    id: 134,
+    title: "Pistachio, Brown Butter & Halva Chocolate Chunk Cookies",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Baking",
+    serves: "Makes 12 large cookies",
+    time: "",
+    ingredients: [
+      "10 tablespoons unsalted butter",
+      "1 large egg",
+      "3/4 cup (90g) raw, shelled pistachios",
+      "4 ounces (112g) dark chocolate (not chips)",
+      "1/2 cup plus 2 tablespoons (120g) packed dark brown sugar",
+      "1/3 cup (66g) granulated sugar",
+      "1 tablespoon vanilla extract",
+      "1 cup (120g) all-purpose flour",
+      "1 teaspoon kosher salt",
+      "1/2 teaspoon baking soda",
+      "3 ounces (85g) halva (preferably pistachio-flavored)",
+      "Flaky sea salt"
+    ],
+    method: `Pulse the pistachios: Place 3/4 cup raw shelled pistachios in the bowl of a food processor and pulse several times until chopped but not yet finely ground. Scoop out and set aside 2 to 3 tablespoons of the chopped nuts for the cookie tops. Continue pulsing the pistachios in long pulses until very finely ground, about 1 minute.
+
+Brown the butter: Cut 10 tablespoons butter into 1-inch pieces. Place in a medium saucepan over medium heat and cook, stirring the pot every minute or so, until the butter has turned very foamy and bubbling but not yet browned, about 6 minutes. Quickly add the finely ground pistachios and cook, stirring constantly, until they smell very nutty and are golden brown and the butter has browned, 2 to 3 minutes more. The nuts should no longer be bright green and the butter around them should be deeply speckled with brown. Using a rubber spatula, scrape the brown butter mixture into a large bowl. Add 1 ice cube to the butter and let the ice cube melt and the butter cool for 10 minutes.
+
+Make the cookie dough: Chop 4 ounces dark chocolate into irregular 1/4-inch to 1/2-inch chunks. To the cooled butter, add 1/2 cup plus 2 tablespoons packed dark brown sugar, 1/3 cup granulated sugar, 1 large egg, and 1 tablespoon vanilla extract. Whisk vigorously until well combined and thickened, about 1 minute. Add 1 cup all-purpose flour, 1 teaspoon kosher salt, and 1/2 teaspoon baking soda, and stir well with a spatula or wooden spoon until combined and a sticky dough forms. Add half of the chopped chocolate along with 2 ounces halva, crumbling it lightly with your fingers as you add it. Gently stir to combine. Cover the top of the dough with plastic wrap and refrigerate at least 3 hours and ideally overnight.
+
+Scoop, top, and bake: Preheat the oven to 375F. Line 2 baking sheets with parchment paper. Using a 2-ounce ice cream scoop or large spoon, scoop out 12 equal portions of dough, rolling them into a rough ball shape. Working one at a time, dip the tops of the dough balls into the reserved chopped pistachios, then place them on the baking sheets about 2 1/2 inches apart. Dot the tops of each cookie with a few more big shards of the reserved chocolate chunks and another crumble or two of halva, pressing lightly with your fingers to encourage the chunks and crumbles to adhere. Bake, rotating the baking sheets from top to bottom and front to back after about 8 minutes, until the cookies are browned at the edges and no longer wet on top, 12 to 14 minutes total.
+
+While still warm, sprinkle the cookies with flaky sea salt. Once cool enough to handle, transfer to a wire rack to finish cooling. Store the cookies in an airtight container to make them last longer.`
+  },
+  {
+    id: 135,
+    title: "Rarebit Mac 'N' Greens",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Vegetarian",
+    serves: "Serves 8",
+    time: "",
+    ingredients: [
+      "10 garlic cloves",
+      "14 ounces leafy greens, such as kale, spinach, collards, and/or mustard greens",
+      "6 tablespoons unsalted butter, plus more for the pan",
+      "1 1/2 pounds mixed cheeses, such as extra-sharp cheddar, Gruyere, Emmenthaler, and/or fontina",
+      "1 1/2 cups heavy cream",
+      "2 cups whole milk",
+      "2 ounces grated Parmigiano Reggiano",
+      "Kosher salt and freshly ground black pepper",
+      "12 ounces curly pasta, such as cavatappi or rotini",
+      "1 (12-ounce) bottle dark beer or stout, such as Guinness",
+      "1/3 cup all-purpose flour",
+      "3 tablespoons Dijon mustard",
+      "3 tablespoons Worcestershire sauce",
+      "1 cup panko bread crumbs"
+    ],
+    method: `Do some prep: Position a rack in the center of the oven. Preheat the oven to 400F. Butter a 9 x 13-inch baking dish. Bring a large pot of salted water to a boil. Lightly smash and peel 10 garlic cloves, then thinly slice them. Grate 1 1/2 pounds mixed cheeses on the large holes of a box grater. Strip the leaves of 14 ounces leafy greens from the stems and tear the leaves into bite-size pieces. When the water boils, stir in 12 ounces curly pasta and cook just short of al dente, 2 minutes shy of the package directions. Drain the pasta. Reserve the pot.
+
+Build the cheese sauce: Crack open 1 bottle dark beer. In the same pot you cooked the pasta in, melt 4 tablespoons unsalted butter over medium-high heat. Add the garlic and cook, stirring constantly, until softened and fragrant, 1 minute. Sprinkle 1/3 cup all-purpose flour over the garlic and cook, whisking, for 1 minute. Gradually whisk in the beer until smooth. Whisking continuously, slowly add 1 1/2 cups heavy cream. Once incorporated, gradually add 2 cups whole milk. Bring to a simmer and cook, whisking, until slightly thickened, 2 minutes. Reduce the heat to low and add the grated cheeses, including 2 ounces grated Parm. Stir until nearly completely melted. Add a few big spoonfuls each of Dijon mustard and Worcestershire sauce, about 3 tablespoons each, but taste and add them as you see fit. Season the sauce with 1 1/2 teaspoons salt and lots and lots of freshly ground black pepper.
+
+Stir the pasta into the cheese sauce, followed by the torn greens, stirring to distribute them evenly. They will cook down further in the oven. Transfer the contents of the pot to the prepared baking dish. Bake until the top is golden and beginning to crisp, 15 to 20 minutes.
+
+Meanwhile, toast the bread crumbs: In a medium skillet, melt the remaining 2 tablespoons unsalted butter over medium-high heat. Add 1 cup panko bread crumbs and toast, stirring often, until deeply golden brown, 4 to 6 minutes. Transfer the bread crumbs to a bowl and season with salt.
+
+Finish the mac: Remove the baking dish from the oven, scatter the bread crumbs evenly over the pasta, and return the dish to the oven. Continue to bake until the top is deeply golden brown and the sauce is thick and bubbling, 12 to 16 minutes. Let cool for 15 minutes before serving.`
+  },
+  {
+    id: 136,
+    title: "Salty Coffee & Peanut Slice Cream",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Dessert",
+    serves: "Serves 8",
+    time: "",
+    ingredients: [
+      "3 cups heavy cream",
+      "3/4 cup whole coffee or espresso beans",
+      "1 1/2 teaspoons kosher salt",
+      "1 cup roasted, salted peanuts",
+      "1 (14-ounce) can sweetened condensed milk",
+      "Flaky sea salt"
+    ],
+    method: `Brew the coffee: Boil 1 cup water. Coarsely grind 3/4 cup whole coffee beans. Place the grounds in a glass measuring cup. Add the boiling water and stir. Let sit for 8 minutes, stirring twice. Strain the coffee through a fine-mesh strainer into a bowl, pressing on the solids lightly with the back of a spoon to extract 1/2 cup coffee. Chill until completely cool, about 30 minutes.
+
+Prep the pan: Line a 9 x 5-inch loaf pan with parchment paper, leaving a 2-inch overhang on both of the long sides. Place the loaf pan in the freezer.
+
+Whip the cream: In the bowl of a stand mixer fitted with the whisk attachment, place 3 cups heavy cream and 1 1/2 teaspoons kosher salt. Beat on medium-high until stiff peaks form.
+
+Combine and freeze: Finely chop 1 cup roasted, salted peanuts. Into a large bowl, pour 1 can sweetened condensed milk. Add the cooled coffee, including any sludgy bits that have accumulated at the bottom, and whisk until smooth. Spoon a big dollop of the whipped cream into the condensed milk mixture and gently whisk to combine. Repeat twice more with 2 more big spoonfuls of the whipped cream. Switch to a rubber spatula and, in one go, add all of the remaining whipped cream and all but a small handful of the chopped peanuts. Gently fold once or twice, just ever so slightly, to incorporate.
+
+Scrape the contents of the bowl into the prepared pan. No need to smooth the top because some irregularity here is good and will make for a nice tall slice. Sprinkle the top with the reserved peanuts. Freeze until frozen, covering the loaf lightly with plastic wrap once it has just set, about 8 hours or overnight.
+
+Serve: When ready to serve, rub your palms around the exterior of the pan to warm the sides. Gently lift the semifreddo out of the pan using the parchment paper flaps and transfer to a serving platter or cutting board. Remove the parchment paper. Cut the loaf into slices and sprinkle with flaky sea salt. Let the slices sit for a minute or two before serving.`
+  },
+  {
+    id: 137,
+    title: "Spiced Lentil Burger with a Very Special Sauce",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Vegetarian",
+    serves: "Makes 4",
+    time: "",
+    ingredients: [
+      "1 large white or yellow onion",
+      "3 garlic cloves",
+      "1 lemon",
+      "2 Persian cucumbers",
+      "4 handfuls of arugula, for serving",
+      "4 ounces feta cheese",
+      "1/2 cup plain whole-milk yogurt (not Greek)",
+      "Kosher salt and freshly ground black pepper",
+      "1/2 cup brown lentils",
+      "1 tablespoon coriander seeds",
+      "Extra-virgin olive oil",
+      "2 teaspoons ground cumin",
+      "Red pepper flakes",
+      "2 tablespoons dried mint",
+      "1 (15.5-ounce) can chickpeas, undrained",
+      "5 tablespoons all-purpose flour, plus more as needed",
+      "2 tablespoons mayonnaise",
+      "4 brioche buns"
+    ],
+    method: `Do some prep: Bring a medium pot of water to a boil over high heat. Salt generously and add 1/2 cup brown lentils. Cook until tender but not falling apart, 8 to 10 minutes. Drain and transfer to a large bowl. Finely chop 1 large onion. Smash and peel 3 garlic cloves. Crush 1 tablespoon coriander seeds. Using a peeler, peel strips of zest from 1 lemon. Thinly slice the strips lengthwise, then slice the strips crosswise to finely mince them.
+
+Make the patties: In a medium skillet, heat a couple glugs of olive oil over medium-high heat. Add the onions, season with salt and freshly ground black pepper, and cook, stirring occasionally, until softened and just beginning to turn golden, 8 to 10 minutes. Finely grate the 3 garlic cloves into the skillet. Continue to cook, stirring, until the garlic is softened and fragrant but not browned, 1 minute. Add the crushed coriander seeds, 2 teaspoons ground cumin, and a couple pinches of red pepper flakes. Add about 1 tablespoon dried mint, crumbling it finely with your fingers as you go. Saute for 1 minute. Transfer the onion mixture to the bowl with the lentils.
+
+Open 1 can chickpeas and pour 1/4 cup of the liquid into the lentils. Drain the rest of the liquid and measure out 1/2 cup of the chickpeas. Add the chickpeas to the bowl with the lentils. Stir in 1 tablespoon olive oil and about half of the minced lemon zest. Mash the mixture with a potato masher until the lentils and chickpeas are lightly smashed. Season to taste with salt and pepper. Add 5 tablespoons flour and stir to incorporate. Squeeze a small handful of the mixture in your hands; it should hold together in a smooshed mass. If it crumbles, add another tablespoon of flour. Crumble 4 ounces feta into the bowl and fold to combine. Form the mixture into four patties. Chill on a small baking sheet for at least 10 minutes, or until ready to cook.
+
+Make the very special sauce: In a medium bowl, combine 1/2 cup yogurt, 2 tablespoons mayonnaise, and the remaining chopped lemon zest. With your fingers, finely crumble in the remaining 1 tablespoon dried mint. Season with salt and pepper to taste.
+
+Prep the burger accompaniments: Split 4 brioche buns in half. Heat a large cast-iron skillet over medium heat. Add a small glug of olive oil and swirl to coat the pan. Toast the buns in the pan until golden and crisp, 1 to 2 minutes. Thinly slice 2 Persian cucumbers lengthwise into planks.
+
+Cook the burgers and build 'em: Raise the heat to medium-high. Add 1 tablespoon olive oil and swirl to coat. Add the burgers and cook, undisturbed, until golden and crisp on the outside, 3 to 4 minutes per side. Repeat with any remaining burgers, adding more oil between batches. Build your burgers on the buns, each with some of the very special sauce, some sliced cucumbers, and a pile of arugula. Squeeze some lemon juice over the arugula. Top and serve.`
+  },
+  {
+    id: 138,
+    title: "Curried Lentil & Sweet Potato Potpie",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Vegetarian",
+    serves: "Serves 6 to 8",
+    time: "",
+    ingredients: [
+      "2 medium white or yellow onions",
+      "1 (5-inch) piece fresh ginger",
+      "6 garlic cloves",
+      "2 medium sweet potatoes (1 1/2 pounds)",
+      "Melted butter, for brushing (optional)",
+      "1 large egg",
+      "1 (15.5-ounce) can lentils",
+      "1/4 cup extra-virgin olive oil",
+      "Kosher salt and freshly ground black pepper",
+      "1 tablespoon plus 1 teaspoon curry powder",
+      "1 1/2 teaspoons ground turmeric",
+      "1 teaspoon ground cinnamon",
+      "1/4 teaspoon red pepper flakes, plus more to taste",
+      "2 (13.5-ounce) cans full-fat coconut milk",
+      "All-purpose flour, for dusting",
+      "Flaky sea salt",
+      "2 (10-ounce) packages frozen chopped spinach, thawed",
+      "1 (14- to 17-ounce) package puff pastry, thawed overnight in the refrigerator"
+    ],
+    method: `Do some prep: Preheat the oven to 400F. Chop 2 medium onions. Finely chop enough fresh ginger to measure 1/4 cup. Finely chop 6 garlic cloves. Peel 2 medium sweet potatoes and cut them into 1/2-inch cubes. Drain and rinse 1 can lentils.
+
+Start the aromatics: Heat a large Dutch oven over medium-high heat. Add several generous glugs of olive oil and the chopped onions and ginger and season generously with kosher salt and freshly ground black pepper. Saute, stirring occasionally, until softened and lightly golden, 8 to 10 minutes. Add the garlic. Stir until fragrant and softened but not browned, about 1 minute.
+
+Toast the spices and build the filling: Push the aromatics to one side and add another glug of olive oil to the empty spot. To the oil, add 1 tablespoon plus 1 teaspoon curry powder, 1 1/2 teaspoons ground turmeric, 1 teaspoon ground cinnamon, and 1/4 teaspoon red pepper flakes. Cook in the oil until fragrant, 1 minute. Stir the spices into the aromatics and continue cooking for another minute. Stir in 2/3 cup cold water. Add the lentils, sweet potatoes, and 2 cans full-fat coconut milk. Bring to a boil, then reduce the heat as needed to maintain a brisk simmer. Cook, stirring occasionally to prevent scorching, until the sweet potatoes are just barely tender, 7 to 9 minutes.
+
+Place 2 packages thawed chopped spinach in a kitchen towel and squeeze firmly to expel as much water as possible. Add the spinach and stir to distribute and warm through. Adjust the seasoning with kosher salt, black pepper, and red pepper flakes. This will need a lot of salt. Transfer the filling to a 9 x 13-inch baking dish.
+
+Top with puff and bake: If your puff pastry comes in 2 sheets, on a lightly floured surface, unfurl one sheet, brush it lightly with melted butter, and place the second right on top, stacking them. Roll the sheets to about 10 x 14 inches, or slightly larger than the size of your baking dish. Lay the puff pastry on top of the filling. The pastry should come just over the sides of the baking dish. Press down on the pastry to allow it to slump into the dish and adhere to the inside edges, then gently fold the corners to crease and make a seal. If using one sheet, simply roll the puff pastry to a 10 x 14-inch rectangle and proceed as stated above. In a small dish, beat 1 egg. Using a pastry brush, lightly coat the top of the pastry with the egg wash. Sprinkle with flaky sea salt and black pepper. With a knife, cut a series of vent slits in the top of the pastry, about 2 inches in length and 2 inches apart. Bake for 15 minutes, then reduce the oven temperature to 350F and continue baking until the pastry is puffed and deeply golden brown, 25 to 30 minutes more. Let rest for 15 minutes before serving.`
+  },
+  {
+    id: 139,
+    title: "Spicy Green Fregola with Salty Yog",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Salads",
+    serves: "Serves 4 to 6",
+    time: "",
+    ingredients: [
+      "1 large bunch dill",
+      "2 serrano chiles, or 1 jalapeno",
+      "5 ounces baby spinach",
+      "1 garlic clove",
+      "1 lemon",
+      "2/3 cup plain whole-milk yogurt (not Greek)",
+      "Kosher salt and freshly ground black pepper",
+      "2 1/2 cups fregola or pearl couscous",
+      "2/3 cup extra-virgin olive oil",
+      "Sesame seeds, for sprinkling"
+    ],
+    method: `Cook the fregola: Bring a large pot of salted water to a boil. Stir in 2 1/2 cups fregola and cook until al dente according to the package directions, tasting as you go. Drain in a fine-mesh strainer and rinse under cold water until cool. Transfer to a large bowl.
+
+Make the spicy green sauce: Coarsely chop 1 large bunch of dill and 2 serrano chiles. To a blender or food processor add the dill, chiles, 5 ounces baby spinach, 1 garlic clove, and a big pinch of salt. Pour in 2/3 cup olive oil, then blend on high until smooth, 1 minute. Taste and add more salt if it needs it.
+
+Make the salty yog and assemble: In a small bowl, season 2/3 cup plain whole-milk yogurt with salt and stir to combine. It should taste salted, but not overly salty. Pour the spicy green sauce over the fregola. Add the juice of 1 lemon and stir well to coat. Taste and adjust the seasoning with more salt or lemon if needed. Make a well in the center of the fregola and spoon the salty yog into the well. Sprinkle the whole platter with sesame seeds and a crack or two of black pepper and serve.`
+  },
+  {
+    id: 140,
+    title: "Red Curry Hot Wings Rolled in Peanuts",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Poultry",
+    serves: "Serves 4 to 6",
+    time: "",
+    ingredients: [
+      "1 1/2 cups packed cilantro leaves and tender stems",
+      "2 limes",
+      "3 pounds chicken wings, drumettes and flats separated",
+      "1 tablespoon kosher salt",
+      "3 tablespoons vegetable oil",
+      "1 (4-ounce) jar or can red curry paste",
+      "1 (13.5-ounce) can full-fat coconut milk",
+      "1 1/2 teaspoons honey or sugar",
+      "Red pepper flakes (optional)",
+      "1/2 cup roasted, salted peanuts"
+    ],
+    method: `Season the wings: Line a rimmed baking sheet with parchment paper. Pat dry 3 pounds chicken wings with a paper towel. Toss the chicken wings with 1 tablespoon salt on the baking sheet until well coated. Leave at room temperature for at least 30 minutes and up to 1 1/2 hours.
+
+Roast the wings: Preheat the oven to 300F. Drizzle the wings generously with vegetable oil and toss to evenly coat. Bake for 25 minutes. Raise the oven temperature to 450F and continue to cook the wings, flipping them with tongs halfway through, until the skin is very crisp and golden brown, 30 to 35 minutes.
+
+While the wings cook, make the coconut glaze: In a medium saucepan with a lid, heat another glug of vegetable oil over medium heat. Add 1 jar red curry paste and immediately cover the pan. Cook, shaking the pan often, until you hear the violent sputtering die down, about 2 minutes, then remove the lid. Continue to cook until the paste is slightly darker and begins to stick to the pan, 2 minutes. Whisk in 1 can full-fat coconut milk and 1 1/2 teaspoons honey. Bring the mixture to a boil. Lower the heat as needed to maintain a simmer and cook, whisking often, until the liquid has reduced substantially and thickened, 10 to 12 minutes. If you like your wings hot, start stirring in red pepper flakes to taste. Cover the pot until the wings are ready.
+
+Prep your garnishes: Finely chop 1/2 cup roasted, salted peanuts so all the pieces are around the size of a lentil. Coarsely chop 1 1/2 cups packed cilantro leaves and tender stems. Cut 2 limes in half.
+
+Toss the wings: Transfer the cooked wings to a large bowl. Pour the hot coconut glaze over them and toss to coat. Add the peanuts and cilantro and toss again. Squeeze the juice of 1 lime over everything and toss once more. Transfer to a serving platter with the remaining lime halves and lots of napkins.`
+  },
+  {
+    id: 141,
+    title: "Chicken Piccata with Sweet Corn, Chiles & Buttermilk",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Poultry",
+    serves: "Serves 4",
+    time: "",
+    ingredients: [
+      "3 large shallots",
+      "6 garlic cloves",
+      "1 red Fresno chile, or 3/4 teaspoon red pepper flakes",
+      "2 ears of corn",
+      "1 small bunch of mint or basil",
+      "2 lemons",
+      "6 tablespoons unsalted butter",
+      "1 1/2 cups buttermilk",
+      "2 pounds boneless, skinless chicken thighs",
+      "Kosher salt and freshly ground black pepper",
+      "3/4 cup all-purpose flour",
+      "Extra-virgin olive oil",
+      "6 oil-packed anchovy fillets"
+    ],
+    method: `Do some prep: Thinly slice 3 large shallots, 6 garlic cloves, and 1 Fresno chile. Shuck and remove the kernels from 2 ears of corn.
+
+Pound and dredge the chicken: Take 2 pounds boneless, skinless chicken thighs and, working with one at a time, place a thigh between 2 pieces of parchment paper. Use a rolling pin or heavy skillet to pound the chicken to a 1/2-inch thickness. Season the thighs with salt and freshly ground black pepper. In a shallow bowl, place 3/4 cup all-purpose flour. Thoroughly dredge each chicken thigh in the flour, shaking off any excess, and place on a large rimmed baking sheet.
+
+Cook the thighs: Heat a large cast-iron skillet over high heat until hot. Add a few big glugs of olive oil and heat until you see wisps of smoke. Gently place 2 thighs in the skillet. Cook the chicken until deeply golden on the bottom, 4 to 5 minutes. Flip and cook for 2 minutes longer. Transfer to a plate, browned-side up, and repeat with the remaining thighs, adding more oil when needed.
+
+Make the pan sauce: Reduce the heat to low and add 2 tablespoons unsalted butter, 6 oil-packed anchovy fillets, the shallots, garlic, chile, and 6 mint sprigs. Season with salt and pepper and saute, stirring, until the aromatics are softened, about 3 minutes. Add the corn and continue cooking for 2 minutes, until just softened. Add 1 1/2 cups buttermilk and adjust the heat as needed to maintain a brisk simmer. Cook, shaking the pan and stirring occasionally, until slightly reduced but still quite saucy, 3 to 4 minutes. The buttermilk will split, and you'll see small curds throughout the pan. Cube the remaining 4 tablespoons butter, add to the pan, and continue cooking, vigorously shaking the pan as you stir, until the butter is incorporated, about 2 minutes.
+
+Cut 2 lemons in half. Divide the chicken among plates, top with the pan sauce, and serve with plenty of fresh mint and the lemon halves alongside for squeezing.`
+  },
+  {
+    id: 142,
+    title: "Stuffed Focaccia with Spicy Greens & Cheese",
+    author: "Molly Baz",
+    book: "Cook This Book",
+    category: "Baking",
+    serves: "Serves 6 to 8",
+    time: "",
+    ingredients: [
+      "1 large white or yellow onion",
+      "7 garlic cloves",
+      "1 lemon",
+      "1 1/2 ounces grated Parmigiano Reggiano",
+      "8 ounces fresh whole-milk mozzarella cheese",
+      "8 ounces fresh whole-milk ricotta cheese",
+      "1 (16-ounce) package frozen chopped spinach or kale, thawed",
+      "3 1/2 cups (420g) all-purpose flour",
+      "3/4 teaspoon active dry yeast",
+      "Kosher salt and freshly ground black pepper",
+      "Extra-virgin olive oil",
+      "4 large oil-packed anchovy fillets",
+      "Red pepper flakes",
+      "1/4 cup sesame seeds",
+      "Flaky sea salt"
+    ],
+    method: `The day before you'd like to eat the focaccia, start the dough: In a large bowl, whisk together 3 1/2 cups all-purpose flour, 3/4 teaspoon active dry yeast, and 1 tablespoon plus 1 teaspoon kosher salt. Fill a measuring cup with 2 cups warm water and add 2 tablespoons olive oil. Gradually add the water mixture to the dry ingredients, stirring with a wooden spoon until a shaggy and very wet dough forms. Scrape down the sides of the bowl with a rubber spatula, cover with plastic wrap, and transfer to the refrigerator for at least 12 hours and up to overnight.
+
+Proof the dough: The next day, about 5 hours before you want to eat, remove the dough from the fridge. Set the oven to 350F and let it heat up for 1 to 2 minutes, until just warm. Turn off the oven and place the dough in the bowl, still covered, inside to rise until puffy, bubbling, and doubled in size, about 3 hours.
+
+As the dough rises, do some prep: Chop 1 large onion. Peel 7 garlic cloves. Thinly slice 5 of them and reserve the other 2 for grating later. Drain 1 package chopped spinach in a colander. Squeeze and squeeze with all your might to expel as much water as possible.
+
+Make the filling: In a large skillet, heat 3 tablespoons olive oil over medium-high heat. Add the chopped onion and 4 large oil-packed anchovy fillets, season with kosher salt and freshly ground black pepper, and cook, stirring occasionally, until the onion is softened and just beginning to turn golden brown, about 8 minutes. Add the sliced garlic and a big pinch of red pepper flakes. Continue to cook, stirring, until the garlic is softened, about 2 minutes. Add the spinach and cook, stirring, to marry the flavors and cook off any remaining water, 2 to 3 minutes. Remove from the heat. Stir in 1 1/2 ounces grated Parm, then grate in the remaining 2 garlic cloves and the zest of 1 lemon. Mix to combine and taste and adjust the seasoning with kosher salt, black pepper, and red pepper flakes. Let cool.
+
+Stuff the focaccia: When the dough has finished rising, lightly coat a 9 x 13-inch baking dish with olive oil. Line the baking dish generously with parchment paper and then generously oil the parchment with a few glugs of olive oil. Smear a large rubber spatula with olive oil and, in one confident movement, scrape around the bowl, tipping it over the baking dish to release the dough into the pan. Try not to disturb any bubbles that have formed in the dough. Dip your fingers in the oil that has accumulated in the baking dish and carefully dimple and stretch the dough to meet the outer edges. The dough will naturally relax and spread into the corners on its own, so don't worry if it doesn't reach the edges at this point. Using your fingers, gently pile and scatter the spinach filling over the dough, all the way to the edges. Slice 8 ounces mozzarella as thinly as possible. Distribute the mozzarella over the filling. With the oiled fingers of both hands, and working from the short end of the baking dish, confidently creep your fingers under one-half of the dough, taking hold of the underside. Lift the dough, folding it over into the center. Re-oil your fingers and repeat on the other short side, being sure to bring this second half to the middle of the dish to meet the other half of the dough, edge to edge. Pinch, seal, and poke any rogue filling back into the center or into the openings on the sides.
+
+Cover the baking dish with plastic wrap and let rise on your countertop for 30 minutes, until the dough is a bit more puffed and the indentation from an oiled fingertip springs back ever so slightly. In the meantime, preheat the oven to 450F.
+
+Top and bake: Drizzle the top of the dough generously with olive oil, sprinkle with 1/4 cup sesame seeds, dollop with 8 ounces ricotta cheese, and season with flaky sea salt. Transfer to the oven and bake, rotating it halfway through, until the focaccia is deeply golden on the top and bottom, 50 to 60 minutes. Let cool for 10 minutes. Run a metal spatula around the edges and under the focaccia to free it from the dish. Transfer to a wire rack, slide the parchment paper out from under it, and let the focaccia sit until just cool enough to handle. Slice into wedges, squares, or strips, and eat.`
+  },
+  {
+    id: 143,
+    title: "Malaysian Red-Sauce Chicken",
+    author: "Adam Liaw",
+    book: "Tonight's Dinner",
+    category: "Poultry",
+    serves: "Serves 6",
+    time: "Preparation time 20 minutes; Marinating time 30 minutes; Cooking time 1 hour",
+    ingredients: [
+      "6 chicken marylands (leg quarters)",
+      "2 teaspoons turmeric",
+      "1 teaspoon salt, plus extra to season",
+      "1/2 cup vegetable oil",
+      "1 piece cassia or cinnamon stick",
+      "2 star anise",
+      "2 lemongrass stems, bruised",
+      "700 ml tomato passata",
+      "1/4 cup tomato sauce (ketchup)",
+      "2 tomatoes, cut into wedges",
+      "1 large brown onion, cut into 1 cm rings",
+      "1 teaspoon sugar, or to taste",
+      "1 tablespoon kecap manis",
+      "Lime wedges, to serve",
+      "10 dried chillies, soaked in hot water and drained",
+      "1 brown onion, roughly chopped",
+      "8 garlic cloves, peeled",
+      "4 cm piece fresh ginger, peeled and roughly chopped"
+    ],
+    method: `Cut the chicken through the joints to separate the thighs and drumsticks. In a large bowl, sprinkle the chicken with the turmeric and salt and rub all over to coat. Refrigerate for 30 minutes, or up to a few hours if you can.
+
+Heat a large flameproof casserole dish over a medium heat and add the oil. Fry the chicken, a few pieces at a time, until browned but not yet cooked through. Remove all the chicken from the pot and set aside.
+
+To make the rempah, combine the soaked dried chillies, chopped onion, garlic and ginger in a blender or food processor and blend to a smooth paste. Put the same casserole dish that you used to cook the chicken over a medium-low heat and fry the paste for about 10 minutes until fragrant and the oil starts to separate.
+
+Add the cassia or cinnamon, star anise and lemongrass and fry for 1-2 minutes, then add the passata and tomato sauce. Bring to a simmer and cook for 5 minutes, partially covered, then add the chicken pieces and keep simmering for a further 25 minutes, partially covered. Stir through the tomato, onion, sugar and kecap manis. Cook for a further 10-15 minutes until the tomato and onions have softened. Taste and adjust the seasoning. Serve with lime wedges.`
+  },
+  {
+    id: 144,
+    title: "Tomato and Barramundi Noodles",
+    author: "Adam Liaw",
+    book: "Tonight's Dinner",
+    category: "Soup & Noodles",
+    serves: "Serves 4",
+    time: "Preparation time 10 minutes; Cooking time 15 minutes",
+    ingredients: [
+      "250 g dried rice vermicelli",
+      "300 g skinless barramundi fillets",
+      "1 large red chilli, seeded and roughly chopped",
+      "3 coriander plants, stalks and stems finely chopped, leaves reserved",
+      "2 lemongrass stems, finely sliced",
+      "3 garlic cloves",
+      "1 tablespoon shrimp paste or 2-3 tablespoons fish sauce",
+      "2 tablespoons vegetable oil",
+      "1 teaspoon ground turmeric",
+      "400 ml coconut cream",
+      "1 tablespoon white sugar",
+      "3 tablespoons fish sauce",
+      "3 ripe tomatoes, cut into wedges",
+      "Salt and black pepper, to season",
+      "Lime wedges, to serve",
+      "2 small bird's eye chillies, sliced, to serve (optional)"
+    ],
+    method: `Pour boiling water over the rice vermicelli, allow to stand for 1 minute then drain.
+
+Bring 6 cups water to a simmer in a deep pan and add the barramundi. Poach for 6-8 minutes until completely cooked through, then remove the fish and flake with a fork, reserving the poaching water.
+
+Pound the chilli, coriander stalk and stem, lemongrass, garlic and shrimp paste to a coarse paste, or blend with a small food processor. Heat a large saucepan over a medium heat, then add the oil and fry the paste for about 2 minutes until very fragrant. Stir in the turmeric to combine. Pour in the poaching water and bring to a simmer. Add the coconut cream, sugar, fish sauce and tomato and simmer for 5 minutes until the tomato is softened. Add the flaked fish to the liquid and stir through. Taste and adjust the seasoning as needed.
+
+Place the noodles in a serving bowl and ladle over the soup. Serve with the coriander leaves, lime wedges and a little chilli if you like.`
+  },
+  {
+    id: 145,
+    title: "Lamb Rendang",
+    author: "Adam Liaw",
+    book: "Tonight's Dinner",
+    category: "Lamb",
+    serves: "Serves 10",
+    time: "Preparation time 30 minutes; Cooking time 4 hours",
+    ingredients: [
+      "1/4 cup vegetable oil",
+      "1 cinnamon stick",
+      "2 star anise",
+      "3 lemongrass stems, trimmed to around 12 cm in length and bruised",
+      "5 makrut lime leaves",
+      "2 kg boneless lamb leg or shoulder, cut into 5 cm pieces with a bit of fat on it",
+      "1 teaspoon salt",
+      "2 tablespoons sugar",
+      "400 ml coconut cream",
+      "1/2 cup desiccated coconut",
+      "Cooked rice, to serve",
+      "2 large brown onions, roughly chopped",
+      "2 large red chillies, seeds removed (optional)",
+      "5 cm piece fresh galangal, peeled",
+      "5 cm piece fresh ginger, peeled",
+      "4 cm piece fresh turmeric, peeled",
+      "8 garlic cloves",
+      "1 teaspoon belacan (shrimp paste) or 2 tablespoons fish sauce"
+    ],
+    method: `To make the fragrant rempah, combine the onion, chilli, galangal, ginger, turmeric, garlic and belacan in a blender and process into a smooth paste. You can add a bit of water to the blender if you need to help the blades catch.
+
+Heat a flameproof casserole dish over a medium heat and add the oil and rempah. Cover the pot to stop it spitting but leave it open a crack to allow steam to escape. Fry the spice paste for about 10-15 minutes, stirring frequently, until the paste is dry and starting to brown.
+
+Add the cinnamon, star anise, lemongrass and 3 of the lime leaves and mix well. Add the lamb and mix well. Add the salt, sugar and coconut cream and about 1 cup water to cover the lamb by about three-quarters and bring to a simmer. Cook, partially covered, for 2 1/2 hours, stirring occasionally.
+
+While the rendang is cooking, toast the coconut in a small dry saucepan over a medium heat, stirring constantly, until it is hazelnut brown. Watch it carefully as it can burn easily. Set aside until ready to use.
+
+After the rendang has cooked for 2 1/2 hours, remove the lid and stir through the caramelised coconut, then return to a simmer and cook for a further 45 minutes until the mixture is oily and a little dry and the lamb is very tender. Taste and adjust the seasoning as required. Finely shred the remaining lime leaves and scatter them over the rendang. Serve with cooked rice.`
+  },
+  {
+    id: 146,
+    title: "Quick Barramundi Curry with Pol Sambol",
+    author: "Adam Liaw",
+    book: "Tonight's Dinner",
+    category: "Seafood",
+    serves: "Serves 4",
+    time: "Preparation time 20 minutes; Cooking time 20 minutes",
+    ingredients: [
+      "1/4 cup vegetable oil",
+      "1 tablespoon yellow mustard seeds",
+      "1 teaspoon fennel seeds",
+      "1 star anise",
+      "6 cardamom pods",
+      "1 cinnamon stick",
+      "15-20 fresh curry leaves",
+      "2 large green chillies, thickly sliced",
+      "4 garlic cloves, roughly chopped",
+      "2 cm ginger, finely chopped",
+      "1 brown onion, thinly sliced",
+      "2 teaspoons each ground turmeric and ground coriander",
+      "1 teaspoon each ground cumin, ground black pepper and chilli powder",
+      "150 ml coconut cream",
+      "600 g barramundi fillets or any firm white-fleshed fish, cut into 5 cm thick pieces",
+      "1 teaspoon salt",
+      "2 tomatoes, diced",
+      "Juice of 2 limes, plus lime to serve",
+      "Steamed rice, to serve",
+      "1 French shallot or 1/2 brown onion, finely minced",
+      "1 teaspoon sugar",
+      "1 tablespoon coconut cream",
+      "1 cup fine desiccated coconut",
+      "2 teaspoons chilli powder",
+      "Juice of 1 lime",
+      "Salt, to season"
+    ],
+    method: `To make the pol sambol, put the minced shallot or onion, sugar, 1 tablespoon coconut cream, desiccated coconut, 2 teaspoons chilli powder, juice of 1 lime and salt in a mortar and use a pestle to grind to a coarse but moist mixture.
+
+Heat a large saucepan over a medium heat and add the vegetable oil, mustard seeds, fennel seeds, star anise, cardamom pods and cinnamon. Fry for about 1 minute until the seeds start to pop, then add the curry leaves and allow them to crackle. Add the chilli, garlic, ginger and onion and fry for about 4 minutes until fragrant and the onion just starts to brown.
+
+Add the turmeric, coriander, cumin, pepper and chilli powder and stir well. Next, pour in the coconut cream and about 2 cups water. Bring to a simmer and continue to cook for about 5 minutes. Add the barramundi, salt and tomato and simmer for a further 5 minutes until the barramundi is cooked through. Stir through the juice of 2 limes.
+
+Serve with rice, the pol sambol and extra lime.`
+  },
+  {
+    id: 147,
+    title: "Cyprian Slow-Cooked Calamari Stifado",
+    author: "Nino Zoccali",
+    book: "Venetian Republic",
+    category: "Seafood",
+    serves: "Serves 4",
+    time: "Prep Time 10 minutes; Cooking Time 1 hour 10 minutes",
+    ingredients: [
+      "250 ml extra virgin olive oil, plus extra for drizzling",
+      "1 onion, finely diced",
+      "4 garlic cloves, crushed",
+      "250 ml Xynisteri white wine (or any quality dry white wine)",
+      "1.6 kg chopped tomatoes",
+      "2 tablespoons tomato paste",
+      "2 bay leaves",
+      "1/2 tablespoon Greek oregano",
+      "1 kg small whole calamari, cleaned",
+      "8 baby potatoes, cut in half",
+      "2 tablespoons chopped parsley (optional)",
+      "Sea salt and freshly ground black pepper"
+    ],
+    method: `Place the olive oil and onion in a large saucepan over low heat and cook until the onion is translucent.
+
+Add the garlic and cook for 1 minute. Add the white wine and cook for 2 minutes. Add the tomatoes, tomato paste, bay leaves, oregano and 500 ml water and bring to a simmer.
+
+Add the calamari and potatoes and cook over low heat for 30-60 minutes, or until tender. Season with salt and pepper and, if you like, garnish with chopped parsley. Finish with a drizzle of extra virgin olive oil.`
+  },
+  {
+    id: 148,
+    title: "Croatian Blackberry Crumble",
+    author: "Nino Zoccali",
+    book: "Venetian Republic",
+    category: "Dessert",
+    serves: "Serves 8",
+    time: "Prep Time 15 minutes; Cooking Time 50 minutes",
+    ingredients: [
+      "150 g plain flour",
+      "1/3 teaspoon baking powder",
+      "170 g cold butter, diced",
+      "110 g caster sugar",
+      "2 egg yolks",
+      "2 egg whites",
+      "110 g caster sugar",
+      "500 g blackberries",
+      "Seeds from 1/2 vanilla pod",
+      "1 teaspoon lemon zest",
+      "1 tablespoon icing sugar"
+    ],
+    method: `Preheat the oven to 180C (350F).
+
+To make the pastry, mix the flour, baking powder, butter, sugar and egg yolks in a food processor until a dough ball forms. Turn out of the processor and set aside one-third of the dough to make the topping.
+
+Grease a 20 cm pie dish and firmly press the dough into the base and side of the dish to form a crust.
+
+For the blackberry filling, whisk the egg whites and sugar into soft peaks. Fold in the berries, vanilla seeds and lemon zest and pour into the pie dish.
+
+Crumble the reserved pastry dough over the top of the blackberry filling.
+
+Bake the crumble in the oven for about 50 minutes, or until golden.
+
+Allow to cool a little, then dust with icing sugar. This is beautiful with vanilla bean gelato or cream.`
+  },
+  {
+    id: 149,
+    title: "Braised Pag Lamb Shoulder with Olive Oil Mashed Potatoes and Grilled Baby Leeks",
+    author: "Nino Zoccali",
+    book: "Venetian Republic",
+    category: "Lamb",
+    serves: "Serves 4",
+    time: "Prep Time 10 minutes; Cooking Time 4 hours 15 minutes",
+    ingredients: [
+      "1.2 kg whole shankless lamb shoulder",
+      "2 tablespoons olive oil",
+      "120 g whole French shallots",
+      "5 garlic cloves, crushed",
+      "1 bottle Plavac Mali red wine (or Zinfandel, Primitivo or any medium/full-bodied red wine)",
+      "125 ml red wine vinegar",
+      "1 sprig thyme",
+      "1 sprig rosemary",
+      "2 bay leaves",
+      "Sea salt and freshly ground black pepper",
+      "800 g potatoes, whole and unpeeled",
+      "200 ml olive oil",
+      "20 baby leeks",
+      "3 tablespoons extra virgin olive oil"
+    ],
+    method: `Preheat the oven to 160C (315F).
+
+Season the lamb shoulder well with salt and pepper.
+
+Heat the olive oil in a large, deep flameproof casserole dish over high heat for 2 minutes. Carefully add the lamb shoulder and brown all over. Remove the lamb and set aside.
+
+Turn the heat to low, add the shallots and garlic and cook until softened.
+
+Return the lamb to the dish and cover with the red wine and vinegar. Add the thyme, rosemary and bay leaves. Cover the casserole and cook in the oven for 3 1/2 hours or until the lamb is very tender.
+
+Remove the lamb and cover with foil in a warm place. Strain the liquid through a sieve and return the cooking juices to a saucepan over low heat. Simmer the liquid until it reduces to a sauce consistency, then keep warm.
+
+Meanwhile, to make the olive oil mashed potatoes, place the potatoes in a large deep pan of cold water and boil until cooked through. While still hot, peel the potatoes and puree in a food mill or mouli. Beat in the oil and season with salt.
+
+To make the grilled baby leeks, trim the roots of the leeks, brush with olive oil and season with salt. Place on a hot grill and cook for 1 minute on each side.
+
+Serve the lamb on a platter with the sauce, olive oil potato mash and baby leeks.`
+  },
+  {
+    id: 150,
+    title: "Rab Island Almond and Maraschino Liqueur Cake",
+    author: "Nino Zoccali",
+    book: "Venetian Republic",
+    category: "Dessert",
+    serves: "Serves 8",
+    time: "Prep Time 30 minutes, plus 1 hour for resting the dough; Cooking Time 50 minutes",
+    ingredients: [
+      "130 g 00 flour",
+      "1 egg, beaten",
+      "20 g unsalted butter, softened",
+      "1 tablespoon caster sugar",
+      "1 pinch sea salt",
+      "200 g ground almonds",
+      "200 g icing sugar, plus extra for dusting",
+      "1 egg",
+      "1 tablespoon maraschino cherry liqueur",
+      "Zest of 1 orange",
+      "Zest of 1 lemon",
+      "6 almonds"
+    ],
+    method: `To make the dough, mix together the flour, egg and butter in a large bowl. Add 2 1/2 tablespoons water, the sugar and salt and knead for 12 minutes to form a smooth, silky dough.
+
+Divide the dough in half, cover with plastic wrap and leave to rest for 1 hour.
+
+Preheat the oven to 120C (235F).
+
+To make the filling, beat together the ground almonds, icing sugar, egg, liqueur, orange zest and lemon zest in a large bowl with a spatula.
+
+Place half the dough on a floured work surface and, using a rolling pin, roll out to a 25 x 30 cm rectangle. Place on a tray lined with baking paper.
+
+Using a pastry wheel, cut the dough into a tight spiral snake, 5 cm wide, then top the pastry spiral with the filling to cover all the pastry.
+
+Roll out the other half of the pastry dough to the same thickness as the base, and cut into 2 cm wide ribbons. Attach the ribbons of dough all the way around the edges of the spiral, pinching the dough together to seal.
+
+Score the top of the cake filling with a fork to decorate, then press whole almonds into the top.
+
+Bake for 50 minutes, or until the outside crust is firm. Just before serving, dust with icing sugar.`
+  },
+  {
+    id: 151,
+    title: "Osteria Alle Testiere Pistachio Cake with Pistachio Gelato",
+    author: "Nino Zoccali",
+    book: "Venetian Republic",
+    category: "Dessert",
+    serves: "Serves 8",
+    time: "Prep Time 15 minutes, plus overnight gelato cooling, churning and freezing; Cooking Time 1 hour 30 minutes",
+    ingredients: [
+      "300 g pistachio nuts, skin on",
+      "6 eggs",
+      "250 g caster sugar",
+      "150 g butter, softened",
+      "100 g potato flour starch",
+      "1 teaspoon baking powder",
+      "Icing sugar, for dusting",
+      "500 ml milk",
+      "5 egg yolks",
+      "50 g honey",
+      "150 g caster sugar",
+      "100 g pistachio nuts, peeled",
+      "150 ml single cream",
+      "2 tablespoons pure pistachio paste"
+    ],
+    method: `To make the pistachio gelato, bring the milk to a simmer in a pan over low heat. Whisk the egg yolks, honey and sugar until thick and creamy in a heatproof bowl. Pour the milk over the egg mixture and stir until combined.
+
+Place the heatproof bowl over a pan of simmering water and, stirring regularly, bring to 85C on a pastry thermometer. This should take 15-20 minutes. The mixture should coat the back of a spoon. Strain the mixture through a fine sieve into a clean container and chill overnight in the fridge.
+
+Process the pistachios in a food processor to make a fine meal. Lightly whip the cream and fold in the pistachios and pistachio paste.
+
+Place the chilled mixture in a gelato machine and churn until just set, then add the cream and pistachio mix and churn again for 2 minutes. Transfer the gelato into a plastic or metal container and store in the freezer until ready to use.
+
+Preheat the oven to 160C (315F).
+
+To make the pistachio cake, grind the pistachios in a food processor to make a fine meal.
+
+Beat the eggs with the sugar. Beat in the butter. Sift the potato flour starch with the baking powder and add to the mixture gently. Finally, stir in the pistachio meal a little at a time.
+
+Pour the mixture into a greased and lined 26 cm round cake tin and bake for 55-60 minutes, or until fully cooked. Test by inserting a skewer into the centre of the cake: if it comes out clean, the cake is cooked. Allow the cake to cool, then remove from the tin.
+
+Once completely cool, dust the cake with icing sugar, slice and serve with a scoop of the gelato.`
+  },
+  {
+    id: 152,
+    title: "Carrot, Hazelnut and Spelt Cake with Hazelnut Gelato",
+    author: "Nino Zoccali",
+    book: "Venetian Republic",
+    category: "Dessert",
+    serves: "Serves 8",
+    time: "Prep Time 20 minutes, plus resting the icing, and churning and freezing the gelato; Cooking Time 45 minutes",
+    ingredients: [
+      "670 ml milk",
+      "145 g caster sugar",
+      "30 g skim milk powder",
+      "50 g dextrose",
+      "100 g hazelnut paste",
+      "200 g 70% dark chocolate",
+      "200 ml thick cream",
+      "5 eggs, separated",
+      "1 pinch salt",
+      "220 g caster sugar",
+      "3 tablespoons hot water",
+      "410 g grated carrot",
+      "295 g ground hazelnuts",
+      "60 g spelt flour",
+      "1/2 teaspoon baking powder",
+      "1/2 teaspoon ground cinnamon",
+      "1 tablespoon rum",
+      "1 teaspoon vanilla bean paste"
+    ],
+    method: `To make the hazelnut gelato, half fill the base pan of a double boiler with water and bring to a simmer. Place the milk in the double boiler over medium heat.
+
+Measuring with a pastry thermometer, when the milk reaches 40C, add the combined dry ingredients to the milk and raise the heat to 65C. Continue cooking for 30 minutes at 65C, stirring regularly. Blend the mixture with a stick blender, then churn in an ice cream machine.
+
+Meanwhile, make the chocolate icing. Place the chocolate in a heatproof bowl. Bring the cream to a simmer in a pan over low heat. Pour the cream over the chocolate and leave to stand for 30 seconds, then stir through. Cover with plastic wrap and leave at room temperature for 2 hours.
+
+Preheat the oven to 160C (315F).
+
+Whisk the egg whites and salt in a stainless steel bowl until light and fluffy soft peaks form. Slowly add 75 g of the sugar, increasing the speed to high until stiff peaks form.
+
+In another bowl, with an electric mixer, beat the egg yolks and hot water on medium speed until light and foamy. Slowly add the remaining sugar and then beat on high speed for 3 minutes until pale and thick.
+
+In another bowl, combine the carrot, ground hazelnuts, spelt flour, baking powder, ground cinnamon, rum and vanilla bean paste.
+
+Fold the egg whites into the whipped egg yolks until combined, then fold into the carrot mixture in two batches.
+
+Grease a 25 cm springform cake tin and pour in the batter. Bake for 50 minutes.
+
+Remove from the cake tin and cool on a cake rack. Using a spatula, spread the chocolate icing evenly over the cake. Serve with the hazelnut gelato.`
+  },
+  {
+    id: 153,
+    title: "Venetian Carnival Fritters",
+    author: "Nino Zoccali",
+    book: "Venetian Republic",
+    category: "Dessert",
+    serves: "Serves 8",
+    time: "Prep Time 10 minutes, plus 1 hour soaking; Cooking Time 10 minutes",
+    ingredients: [
+      "250 g sultanas",
+      "4 egg yolks",
+      "500 g 00 flour, plus extra for dusting",
+      "2 teaspoons baking powder",
+      "400 g caster sugar",
+      "100 ml rum",
+      "Juice and zest of 1 orange",
+      "Zest of 1 lemon",
+      "175 ml vegetable oil",
+      "175 ml milk",
+      "4 tablespoons egg whites",
+      "2 litres grapeseed oil, for frying"
+    ],
+    method: `Soak the sultanas in warm water for 1 hour, drain and dry on paper towels, then dust with a little flour to absorb any excess moisture.
+
+In a large mixing bowl, mix together the egg yolks, flour, baking powder and half the caster sugar. Add the rum, orange juice and zest, lemon zest, vegetable oil, milk and sultanas and beat until smooth.
+
+Whisk the egg whites until stiff, then fold through the batter.
+
+Heat the grapeseed oil in a deep pan or deep fryer to 180C (350F).
+
+Using a tablespoon, spoon the batter into the hot oil and cook for 2-3 minutes until brown. Turn and cook for 2-3 minutes on the other side.
+
+Remove the fritters from the oil and roll in the remaining caster sugar to serve.`
+  },
+  {
+    id: 154,
+    title: "Roasted Venetian Duck and Prunes with Potato and Zucchini Torta",
+    author: "Nino Zoccali",
+    book: "Venetian Republic",
+    category: "Poultry",
+    serves: "Serves 6",
+    time: "Prep Time 25 minutes, plus 2 hours for prunes to steep; Cooking Time 1 hour 30 minutes",
+    ingredients: [
+      "100 g pistachio nuts",
+      "1 deboned whole duck, skin on but excess fat removed",
+      "180 ml red wine",
+      "3 tablespoons orange juice",
+      "4 tablespoons caster sugar",
+      "2 cloves",
+      "4 black peppercorns",
+      "1 cinnamon quill",
+      "300 g pitted prunes",
+      "500 g pork mince (30% fat)",
+      "3 garlic cloves, chopped",
+      "30 g chopped parsley",
+      "2 tablespoons olive oil",
+      "Sea salt and freshly ground black pepper",
+      "600 g potatoes",
+      "300 g zucchini (courgettes)",
+      "5 tablespoons butter, melted",
+      "200 g grated Parmigiano Reggiano"
+    ],
+    method: `Preheat the oven to 170C (325F). Arrange the pistachio nuts evenly on a baking tray and cook for 6-8 minutes, or until lightly browned. Take the tray out of the oven and remove the nuts from the tray to prevent them from over-colouring. Allow to cool completely.
+
+Place the deboned duck on a baking tray, season both sides and refrigerate.
+
+In a medium-sized saucepan, bring the red wine, orange juice, sugar, cloves, peppercorns and cinnamon to the boil. Turn down the heat and simmer for 15 minutes.
+
+Cut the prunes into quarters and place in a heatproof bowl. Pour the red wine mix over the top and let it steep for at least 2 hours.
+
+Preheat the oven to 180C (350F).
+
+Remove half the prunes from the marinade and combine with the pork mince, pistachio nuts, garlic and parsley. Season with salt and pepper. Roll the stuffing into a thick log, approximately the same length as the duck.
+
+Remove the deboned duck from the refrigerator and place skin-side-down on a work surface, then spread open. Place the stuffing lengthways through the middle of the duck. Fold the sides over to form a cylindrical shape, tuck the ends under and, using butcher's twine, tie at even intervals along the duck.
+
+Brush the duck with olive oil and place on a rack in a roasting tray. Roast for about 1 hour or until golden and crisp, basting every 15 minutes with its own fat.
+
+Meanwhile, to make the potato and zucchini torta, slice the potatoes and zucchini as thinly as possible, then toss with the butter and season. In a medium-sized baking dish, layer the potato and zucchini alternately, sprinkling a little cheese between each layer. Finish with a layer of Parmigiano.
+
+When the duck has been in the oven for 30 minutes, add the torta and bake for 40 minutes or until golden in colour.
+
+Meanwhile, heat the remaining prunes and red wine marinade in a saucepan over low heat.
+
+When cooked, remove the duck from the oven and cover with foil. Rest for about 10 minutes while the torta finishes cooking.
+
+Remove the string from the duck and slice into portions. Serve with the potato and zucchini torta, the remaining prunes and the warm marinade as a sauce.`
+  }
+];
+
+const RECIPE_SUMMARIES = {
+  1: "Steamed salmon with green beans, jammy eggs and olive yoghurt dressing for a bright, elegant, fast Nicoise-style plate.",
+  2: "Broad beans, charred peppers, almonds and Manchego tossed with parsley and vinegar for a fresh, punchy Mediterranean salad.",
+  3: "Wild rice with chard, sour cherries, feta and walnuts creates a tangy, textured, wholesome bowl with vibrant colour.",
+  4: "Crunchy celeriac with mustardy yoghurt and tarragon, wrapped with prosciutto, makes a sharp, creamy, savoury quick salad.",
+  5: "Spaghetti tossed in silky cavolo nero, garlic and Parmesan sauce, finished with ricotta for creamy, vibrant comfort.",
+  6: "Linguine with julienned courgette, mint, lemon and Parmesan delivers a light, zesty pasta full of fresh flavour.",
+  7: "Smoky salmon, spring onions, eggs, creme fraiche and cheese make a quick, creamy frittata with strong savoury character.",
+  8: "Whole chicken roasted over tikka-spiced potatoes and cauliflower, creating a bold, warming tray roast with rich pan juices.",
+  9: "Spatchcocked chicken with peppers, red onions and rose harissa roasts into a smoky, spicy, mint-finished traybake.",
+  10: "Blistered tomatoes, white fish, korma paste and coconut milk make a fast, creamy curry with lively tang.",
+  11: "Seared tuna with radishes, soya beans and pickled ginger dressing makes a fresh, sharp, protein-rich salad plate.",
+  12: "King prawns cooked in curry-garlic oil and mango chutney, finished with lime, for sticky, sweet-hot seafood flavour.",
+  13: "Beef shin slow-cooked with carrots, onions, Worcestershire and mustard until meltingly tender in a rich, comforting casserole.",
+  14: "Pork fillet simmered with chickpeas, peppers, chard and fennel for a hearty one-pan dish with balanced acidity.",
+  15: "Chipolatas baked with tomatoes, garlic, focaccia and white beans create a rustic, bubbling tray of savoury comfort.",
+  16: "Lamb, onions and aubergines roasted with rogan josh, then rippled with yoghurt for a mellow aromatic curry.",
+  17: "Silky dark chocolate mousse layered with syrupy cherries for a rich dessert balanced by fruity sharpness.",
+  18: "Oats, dried fruit, nuts and syrup baked into chewy-crisp flapjack biscuits for an easy, comforting sweet treat.",
+  19: "Vanilla ice cream, espresso, walnuts and warm chocolate combine for a quick, indulgent affogato with hot-cold contrast.",
+  20: "Meringue, raspberries and vanilla ice cream topped with jammy blueberries and chocolate for a fast layered dessert.",
+  21: "Baby beets with horseradish creme fraiche, watercress and bresaola create a sharp, earthy, elegant salad.",
+  22: "Tangy cauliflower pickle with chilli, ginger and mustard, made to keep in jars and serve with grilled meats.",
+  23: "A sweet-hot mango pickle with onion, apple and chilli, cooked down until sticky and intensely fragrant.",
+  24: "A bold tomato kasundi with mustard, chilli and ginger, perfect as a punchy condiment for grilled food.",
+  25: "Fiery pork vindaloo with vinegar, tamarind and tomatoes, slowly cooked until tender in a reduced sauce.",
+  26: "A robust chicken curry driven by black pepper, onions and ginger, finished with coriander and fried shallots.",
+  27: "Soft fried eggplant folded through a sharp, spiced pickle base with tamarind, vinegar and curry leaves.",
+  28: "Duck curry with tomato, citrus and warming spices, simmered until tender and finished with coriander.",
+  29: "Crisp fish and fried eggplant in a coconut-rich Konkan curry with tamarind, chillies and kokum.",
+  30: "Duck braised in a yoghurt marinade with mustard oil, garlic and chilli for a rich, gently tangy dish.",
+  31: "Turmeric-marinated fish served over coconut beetroot salad with cress and fried curry leaves.",
+  32: "Butterflied prawns baked with roasted coconut, black pepper, curry leaves and tomato-spice sauce.",
+  33: "Tamarind prawns in a fast spiced sauce with roasted tomato, coriander and crisp curry leaves.",
+  34: "Chicken wings coated in an assertive black pepper masala, cooked dry and served with fried curry leaves.",
+  35: "A lively chickpea salad with sprouts, freekeh, pomegranate, seeds, chutney and crisp pappadam strips.",
+  36: "Rich carbonara with crisp guanciale, pecorino and yolks, loosened with stock for a glossy, savoury sauce.",
+  37: "Creamy stracciatella topped with pickled raisins, saffron dressing and bitter radicchio for a refined sweet-savoury salad.",
+  38: "Deeply savoury mushroom risotto enriched with fermented mushroom paste, butter and parmesan for layered umami richness.",
+  39: "Spaghetti with warm trout, mussels and silky tomato butter creates a refined seafood pasta with layered depth.",
+  40: "Hand-rolled fusilli in intense puttanesca sauce with anchovy, tomatoes and aromatics for a punchy southern Italian pasta.",
+  41: "Casarecce with sausage, radicchio and parmesan balances rich pork, bitterness and gentle heat in a fast pasta.",
+  42: "Soft gnocchi folded through rich duck and porcini ragu for a deeply comforting bowl with earthy depth.",
+  43: "Tagliatelle with slow-cooked rabbit ragu, olives and oregano offers a robust, savoury pasta with Mediterranean character.",
+  44: "Cannelloni filled with smoky eggplant and ricotta, baked in tomato sauce until golden and bubbling.",
+  45: "Linguine with clams and smoked cherry tomatoes delivers briny sweetness, smoke and basil in a glossy sauce.",
+  46: "Spaghetti with king prawns and cavolo nero uses prawn head sauce for concentrated seafood flavour and freshness.",
+  47: "A versatile master pasta dough for long, filled and shaped pasta, made with eggs and semolina.",
+  48: "A deep, meaty Polish stew of smoked pork, sauerkraut, sausage, prunes and cabbage, built over two days.",
+  49: "Tender veal goulash with paprika, root vegetables and marjoram, slowly baked until rich and comforting.",
+  50: "A simpler beef goulash scented with coriander and green peppercorns, finished with paprika for warmth.",
+  51: "Crisp lamb croquettes hiding saffron butter, warmly spiced and served with lemon for brightness.",
+  52: "Tender cabbage rolls stuffed with beef, rice and porcini, baked in a light tomato sauce.",
+  53: "Chicken thigh stroganoff with mushrooms, sour cream and paprika, rich enough for cold-weather comfort.",
+  54: "Silky duck liver pate lifted with green walnut vodka, cream and thyme for a rich spread.",
+  55: "Tart pickled mushrooms with shallots, carrot and spices, ideal for platters, salads and cold spreads.",
+  56: "Baked eggs set over caper-garlic paste and topped with buttery parmesan crumbs for a sharp starter.",
+  57: "Prawns in sweet chilli, honey vodka, ginger and coriander for a sticky, spicy, quick seafood dish.",
+  58: "A no-bake slice with nutty date base, creamy peanut filling and glossy cacao topping.",
+  59: "A moist banana tray cake studded with berries and brushed with maple syrup while warm.",
+  60: "A tender orange almond cake soaked with citrus syrup and thickened gently with chia seeds.",
+  61: "Creamy lemon chia puddings with coconut, yoghurt and toasted coconut for a bright, spoonable breakfast.",
+  62: "Frozen banana coconut yoghurt pressed between fruit slices for a cool, playful ice-cream sandwich.",
+  63: "A creamy green dip of kale and soaked cashews with lemon and garlic, served chilled.",
+  64: "Crisp seeded crackers baked until golden, sturdy enough for dips and good snack boards.",
+  65: "Creamy matcha yoghurt pops with honey and coconut milk, finished with chopped pistachios.",
+  66: "Soft cacao bars made with banana, dates and cashews, finished with coconut flakes.",
+  67: "Rich cacao date truffles rolled into bite-sized balls for a quick, fridge-friendly snack.",
+  68: "Roasted chickpeas and almonds glazed with Sriracha and honey for a sweet-hot crunchy snack.",
+  69: "Beetroot-cured salmon served with sharp fennel and horseradish for a fresh, elegant plate.",
+  70: "Whole-wheat ramen in miso broth with glazed chicken, kale, eggs and nori for a balanced bowl.",
+  71: "Baked fish cakes with chilli-lime dressing, crisp lettuce cups and a bright herb salad.",
+  72: "Moroccan-spiced chicken with couscous, carrot, currants and almonds in a bright orange dressing.",
+  73: "A vivid broccoli and watercress pesto with roasted garlic, almonds and parmesan for spreading or spooning.",
+  74: "A crisp green salad of sprouts, beans, fennel and ricotta with a herby yoghurt dressing.",
+  75: "A fluffy folded omelette packed with kale, spinach and cheeses, topped with crushed peas.",
+  76: "Chai-infused chia pots with coconut milk, yoghurt, pistachios and pomegranate for a fragrant breakfast.",
+  77: "Seeded bircher with pear and maple vanilla yoghurt, built for an easy make-ahead breakfast.",
+  78: "A crusty no-knead spelt loaf packed with seeds and baked in a hot cast-iron pan.",
+  79: "Espresso granola with oats, raisins, seeds and almonds for a bitter-sweet breakfast crunch.",
+  80: "Soft banana pancakes with buckwheat and cinnamon, served with yoghurt and extra maple syrup.",
+  81: "Creamy oats enriched with amaranth, cinnamon, apple and toasted cashews for a warming bowl.",
+  82: "A green, pesto-topped minestrone with fennel, peas, beans and spinach for a light meal.",
+  83: "Golden ricotta fritters with kale, peas and lemon, served with baba ganoush and greens.",
+  84: "A lighter chicken Caesar with crunchy kale, Brussels sprouts, pine nuts and creamy dressing.",
+  85: "Pull-apart cinnamon monkey bread with vanilla sour cream glaze and a buttery, sugary coating.",
+  86: "Soft sweet scrolls layered with creme patissiere, apple and almond icing.",
+  87: "A soft enriched dough base for buns, scrolls and other sweet bakes.",
+  88: "Yeasted breakfast muffins with a tender crumb, cooked on the stovetop and perfect toasted.",
+  89: "Soft scrolls with hazelnut filling, coffee icing and roasted hazelnuts on top.",
+  90: "Light coconut dacquoise layered simply with chantilly cream and fresh fruit.",
+  91: "Rich baked chocolate cheesecake scented with orange and whisky, finished with glossy ganache.",
+  92: "Soft Italian-style cream buns filled generously with vanilla chantilly and dusted with icing sugar.",
+  93: "Tender chocolate cupcakes topped with whipped ganache and tart morello cherry jam.",
+  94: "Moist coconut cake soaked with lemon syrup and finished with silky coconut buttercream.",
+  95: "Chewy white chocolate brownies studded with tart morello cherries and a little sea salt.",
+  96: "A sticky apple-and-date cake finished with bubbling caramel coconut topping.",
+  97: "Soft blueberry layer cake with lemon, sour cream and a light mascarpone icing.",
+  98: "A deeply flavoured base chocolate-chip cookie with a long chill, crisp edges and a soft chewy centre.",
+  99: "Six mix-and-match cookie ideas built on the base dough, from pistachio-cherry to cereal-studded.",
+  105: "A rich one-bowl chocolate fudge cake paired with fluffy malted buttercream and optional chocolate shavings.",
+  106: "A buttery coffee-walnut layer cake with crisp streusel and French coffee buttercream.",
+  107: "Frozen peanut parfait layered with nutty dacquoise, rich ganache and butterscotch for a full-scale restaurant dessert.",
+  108: "Crisp fried pressed pork tucked into steamed bao with sharp chilli tamarind dressing and cucumber.",
+  109: "Crumbly peanut butter cookies rolled in sesame seeds and baked until golden.",
+  110: "Slow-roasted lamb shoulder served with sticky Sichuan sauce, spring onion pancakes and a bright coriander-mint paste.",
+  111: "Crisp fried chicken tossed in a glossy ginger-garlic sticky sauce with just enough heat.",
+  112: "Chilled lobster in soft toasted brioche with kewpie dressing, shallot and watercress.",
+  113: "Golden rice cakes with sauteed mushrooms, kohlrabi puree and a sweet-salty soy dressing.",
+  114: "Traditional Shanghai-style pork potstickers with a lacy crisp base and black vinegar on the side.",
+  115: "A lighter-style chicken ramen with soy eggs, roasted broth, noodles, dumplings and crisp nori.",
+  116: "Juicy prawn and chicken wonton dumplings served with aromatic spiced vinegar and chilli crisp.",
+  117: "Lightly poached prawns chilled in a sweet soy-shaoxing marinade for a cold, shell-on snack.",
+  118: "Braised then charred beef intercostals with a punchy Korean chilli dressing.",
+  119: "Chewy Korean rice cakes fried until crisp and tossed through sticky sweet chilli sauce.",
+  120: "Baked white fish folded through taratoor and toum for a creamy tahini-style brandade.",
+  121: "Charred zucchini, chickpeas and fried bread layered with lemon, yoghurt and toum in a summer fattoush.",
+  122: "Poached shredded chicken folded through muhammara and finished with warming garnishes.",
+  123: "A raw, juicy broccoli tabbouleh with herbs, tomato, lemon and Lebanese seven spice.",
+  124: "Spring vegetables and herbs tossed with avocado-taratoor dressing, fried bread and green almonds.",
+  125: "Roast chicken smothered in taratoor and finished with nuts, parsley, sumac and chilli.",
+  126: "Soft tomatoes, shanklish, herbs and fried bread in a sharp autumn fattoush.",
+  127: "Tender freekeh mixed with feta, parsley and pomegranate dressing, finished with fried almonds.",
+  128: "Roast pumpkin and chickpeas tossed with taratoor, lemon dressing, dukkah and crisp bread.",
+  129: "Fast-seared chicken livers with sumac onion salad and lemon on the side.",
+  130: "Medjool dates filled with coffee-scented labne, tahini and fig-sesame jam.",
+  131: "Deeply fried cauliflower topped with dark caramelised onion, currants and toasted pine nuts.",
+  132: "A cardamom-spiked tiramisu-style dessert built with coffee-soaked biscuits and chopped pistachios.",
+  133: "A layered banana trifle with malted whipped cream, miso-toffee sauce and crunchy Grape-Nut crumble.",
+  134: "Brown butter pistachio cookies packed with halva and dark chocolate for a deeply nutty sweet-salty finish.",
+  135: "Beer-cheese mac baked with leafy greens and toasted bread crumbs in a full rarebit-inspired casserole.",
+  136: "Salty coffee semifreddo folded with peanuts and condensed milk, sliced from a loaf tin and finished with sea salt.",
+  137: "Spiced lentil-and-chickpea burgers with feta, mint and lemon, served with a creamy special sauce.",
+  138: "Curried lentils, sweet potato, spinach and coconut milk tucked under a puff pastry lid for a rich vegetarian potpie.",
+  139: "Fregola tossed in a vivid dill-spinach chile sauce and finished with a pool of salted yogurt.",
+  140: "Crisp oven-hot wings glazed with red curry coconut sauce, then rolled in peanuts, cilantro and lime.",
+  141: "Chicken piccata reworked with anchovy, corn, chile and buttermilk for a saucy, summery skillet dinner.",
+  142: "An overstuffed sesame focaccia folded around spicy greens, anchovies and three cheeses.",
+  143: "Chicken braised in a spiced tomato-red chilli sauce with lemongrass, star anise and lime for a Malaysian-style dinner.",
+  144: "Rice vermicelli in a fast coconut-tomato barramundi broth, finished with lime, coriander and optional chilli.",
+  145: "A long-cooked lamb rendang with aromatic rempah, coconut cream and toasted coconut cooked down until rich and dry.",
+  146: "A quick Sri Lankan-style barramundi curry served with bright, punchy pol sambol and rice.",
+  147: "Small calamari and potatoes slowly simmered in tomato, wine and oregano until tender in a Cyprian stifado.",
+  148: "A light summer blackberry crumble with a pressed pastry crust, meringue-like berry filling and icing sugar finish.",
+  149: "Wine-braised lamb shoulder served with olive oil mash and quickly grilled baby leeks for a rich Croatian main.",
+  150: "An almond-rich spiral cake scented with citrus and maraschino liqueur, finished with whole almonds and icing sugar.",
+  151: "A simple pistachio cake served with pistachio gelato, built for pure nut flavour and soft, light texture.",
+  152: "Carrot, hazelnut and spelt cake with glossy chocolate icing and a matching hazelnut gelato.",
+  153: "Rum-and-citrus Venetian carnival fritters studded with sultanas and rolled in caster sugar while warm.",
+  154: "Roasted stuffed duck with prunes, pistachios and pork mince, paired with a layered potato-zucchini torta."
+};
+
+// Build ingredient → recipe map
+function normalizeIngredientForIndex(ingredient) {
+  const raw = ingredient.toLowerCase().trim();
+  if (/\bcurry leaves?\b|\bfried curry leaves?\b/.test(raw)) return "curry leaves";
+  const cleaned = raw
+    .replace(/\(.*?\)/g, "")
+    .replace(/^[-–]\s*/, "")
+    .replace(/^plus\s+/, "")
+    .replace(/^\d+\s*[-–]\s*\d+\s+/, "")
+    .replace(/^\d+\s*[x×]\s*/, "")
+    .replace(/^\d+(?:\.\d+)?\s+/, "")
+    .replace(/^\d+\s*\/\s*\d+\s+/, "")
+    .replace(/^\d+(?:\.\d+)?\s*(?:kg|g|mg|ml|l)\s+/, "")
+    .replace(/^\d+(?:\.\d+)?\s*(?:cm|mm|inch|inches|lb|lbs|oz)\s+/, "")
+    .replace(/^(?:g|kg|mg|ml|l)\s+/, "")
+    .replace(/^g\s+/, "")
+    .replace(/^(?:oz|ounces?|lb|lbs|pounds?)\s+/, "")
+    .replace(/^(?:tablespoons?|teaspoons?|tbsp|tsp|cups?|cup)\s+(?:of\s+)?/, "")
+    .replace(/^\d+(?:\.\d+)?\s*(?:heaped\s+)?(?:tablespoons?|teaspoons?|tbsp|tsp|cloves?|sprigs?|slices?|shots?|scoops?|cups?)\s+(?:of\s+)?/, "")
+    .replace(/^\d+(?:\.\d+)?\s*(?:packages?|packets?|cans?|jars?|bottles?)\s+(?:of\s+)?/, "")
+    .replace(/^(?:half|quarter)\s+(?:a\s+)?/, "")
+    .replace(/^1\/2\s+(?:a\s+)?/, "")
+    .replace(/^1\/4\s+(?:a\s+)?/, "")
+    .replace(/^3\/4\s+(?:a\s+)?/, "")
+    .replace(/^\d+\s+(?:large|small|medium)\s+/, "")
+    .replace(/^\d+\s+(?:punnets?|pods?|fillets?|portions?|pieces?|tails?|marylands?|wings?)\s+(?:of\s+)?/, "")
+    .replace(/^\d+\s+(?:a\s+)?bunch(?:es)?\s+(?:of\s+)?/, "")
+    .replace(/^1\/2\s+(?:a\s+)?bunch of\s+/, "")
+    .replace(/^bunch of\s+/, "")
+    .replace(/^(?:can|cans|package|packages|packet|packets|jar|jars|bottle|bottles)\s+(?:of\s+)?/, "")
+    .replace(/^(?:small|medium|large)\s+/, "")
+    .replace(/^baby\s+/, "")
+    .replace(/^(?:sticks?|stalks?)\s+of\s+/, "")
+    .replace(/^(?:head|heads)\s+of\s+/, "")
+    .replace(/^(?:half|quarter)\s+head\s+of\s+/, "")
+    .replace(/^(?:quality|good-quality|italian|polish|french|japanese|plain|skinless|lean|boneless|smoked|active)\s+/, "")
+    .replace(/^piece of\s+/, "")
+    .replace(/^tin of\s+/, "")
+    .replace(/^jar of\s+/, "")
+    .replace(/^extra\s+/, "")
+    .replace(/^dry\s+/, "")
+    .replace(/^whole-?wheat\s+/, "")
+    .replace(/^(?:coarse|finely|thinly|lightly)\s+/, "")
+    .replace(/^ripe\s+/, "")
+    .replace(/^mixed-colour\s+/, "")
+    .replace(/^mixed colour\s+/, "")
+    .replace(/^fresh\s+/, "")
+    .replace(/^dried\s+/, "")
+    .replace(/^raw\s+/, "")
+    .replace(/^cooked\s+/, "")
+    .replace(/^frozen\s+/, "")
+    .replace(/^shelled\s+/, "")
+    .replace(/^unsalted\s+/, "")
+    .replace(/^low-salt\s+/, "")
+    .replace(/^half-fat\s+/, "")
+    .replace(/^natural\s+/, "")
+    .replace(/^whole\s+/, "")
+    .replace(/^self-raising\s+/, "")
+    .replace(/^extra virgin\s+/, "")
+    .replace(/^shop-bought\s+/, "")
+    .replace(/^hot-smoked\s+/, "")
+    .replace(/^freshly squeezed\s+/, "")
+    .replace(/^(?:coarse|finely|thinly|lightly|roughly|softly|firmly)\s+/, "")
+    .replace(/^(?:grated|shredded|chopped|crushed|mashed|ground|flaked|rolled)\s+/, "")
+    .replace(/^(?:peeled|seeded|pitted)\s+/, "")
+    .replace(/^(?:juice|zest)\s+of\s+/, "")
+    .replace(/\s+(?:fillets?|portions?|pieces?|tails?|heads?|cloves?|sprigs?|leaves?|sticks?|stalks?|bulbs?|fronds?|tablespoons?|teaspoons?|tbsp|tsp|cups?|cup|ml|l|g|kg|mg)$/, "")
+    .replace(/\s+(?:flakes?|powder|meal|bran|flours?)$/, "")
+    .replace(/\s+(?:for\s+serving|to\s+serve|for\s+garnish|for\s+dusting|to\s+season|for\s+steaming|optional)$/, "")
+    .replace(/,\s*.*$/, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (!cleaned) return null;
+  if (cleaned === "baking") return null;
+  if (cleaned === "00" || cleaned === "'00'" || cleaned === "all purpose" || cleaned === "all-purpose" || cleaned === "vegetable" || cleaned === "peeled") return null;
+  if (/\bsweetened condensed milk\b/.test(cleaned)) return "sweetened condensed milk";
+  if (/\bwhole milk yoghurt\b/.test(cleaned)) return "yoghurt";
+  if (/\bdark beer\b|\bstout\b|\bbeer\b/.test(cleaned)) return null;
+  if (/\bmalted milk\b/.test(cleaned)) return null;
+  if (/\bdextrose\b/.test(cleaned)) return null;
+  if (/\borzechowa\b/.test(cleaned)) return null;
+  if (/\bdates?\b/.test(cleaned)) return "dates";
+  if (/\bhazelnut spread\b|\bhazelnut praline\b|\bpraline paste\b/.test(cleaned)) return "nuts";
+
+  const spiceOrDetailPatterns = [
+    /\bbaking powder\b/,
+    /\bbicarbonate of soda\b/,
+    /\bbaking soda\b/,
+    /\byeast\b/,
+    /\bcurry powder\b/,
+    /\bcurry paste\b/,
+    /\bcurry\b/,
+    /\bgaram masala\b/,
+    /\bmasala\b/,
+    /\brogan josh\b/,
+    /\bkorma\b/,
+    /\bharissa\b/,
+    /\bturmeric\b/,
+    /\bcumin\b/,
+    /\bcardamom\b/,
+    /\bcinnamon\b/,
+    /\bcloves?\b/,
+    /\bfenugreek\b/,
+    /\bfennel seeds?\b/,
+    /\bblack pepper\b/,
+    /\bpeppercorns?\b/,
+    /\bchilli powder\b/,
+    /\bkashmiri chilli\b/,
+    /\bshichimi togarashi\b/,
+    /\bschichimi togarashi\b/,
+    /\blebanese 7 spice\b/,
+    /\bchinese five[- ]spice\b/,
+    /\bsaffron\b/,
+    /\bginger garlic paste\b/,
+    /\bmustard\b/,
+    /\bsoy sauce\b/,
+    /\bpickle\b/,
+    /\bvinegar\b/,
+    /\boil\b/,
+    /\bbutter\b/,
+    /\bsugar\b/,
+    /\bsyrup\b/,
+    /\bjaggery\b/,
+    /\bchutney\b/,
+    /\bmixed dried fruit\b/,
+    /\bmixed dried fruit & nuts\b/,
+    /\bpapp?adams?\b/,
+    /\bpapads?\b/,
+    /\bappams?\b/,
+    /\bstock\b/,
+    /\bwater\b/,
+    /\brace flour\b/,
+    /\bflour\b/,
+    /\bsalt\b/,
+    /\btamarind\b/,
+    /\bkokum\b/,
+    /\bpaste\b/,
+    /\bpuree\b/,
+    /\bpurée\b/,
+    /\bcream\b/,
+    /\bskim milk\b/,
+    /\bcapers?\b/,
+    /\bsalad\b/,
+    /\bfried curry\b/,
+    /\bfried shallot\b/,
+    /\bfried garlic\b/,
+    /\bvodka\b/,
+    /\bliqueur\b/,
+    /\bpaprika\b/,
+    /\bmarjoram\b/,
+    /\ballspice\b/,
+    /\bjuniper\b/,
+    /\bcaraway\b/,
+    /\bghee\b/,
+    /\bbreadcrumbs?\b/,
+    /\bpanko\b/,
+    /\bpotato starch\b/,
+    /\bcornflour\b/,
+    /\barrowroot\b/,
+    /\bcopha\b/,
+    /\bglucose\b/,
+    /\bkecap manis\b/,
+    /\bkewpie mayonnaise\b/,
+    /\bmuhammara\b/,
+    /\btaratoor\b/,
+    /\bfig and sesame jam\b/,
+    /\bseeded crackers\b/,
+    /\boreo cookies?\b/,
+    /\bsmoking chips\b/,
+    /\bbread\b/,
+    /\bbrioche\b/,
+    /\bbuns?\b/,
+    /\bwrappers?\b/,
+    /\bvanilla (?:bean )?(?:paste|extract)\b/,
+    /\bcookie dough\b/,
+    /\bsweet bread dough\b/,
+    /\bcreme patissiere\b/,
+    /\bchantilly cream\b/
+  ];
+  if (spiceOrDetailPatterns.some((re) => re.test(cleaned))) return null;
+
+  const aliasPatterns = [
+    { re: /\bspaghetti\b|\blinguine\b|\bpasta\b/, value: "pasta" },
+    { re: /\bshin of beef\b|\bbeef\b|\bveal\b/, value: "beef" },
+    { re: /\bporridge oats?\b|\boats?\b/, value: "oats" },
+    { re: /\bbaby beets?\b|\bbeets?\b|\bbeetroot\b/, value: "beetroots" },
+    { re: /\bespresso\b|\bcoffee\b/, value: "coffee" },
+    { re: /\bcoriander\b|\bcilantro\b/, value: "coriander" },
+    { re: /\bparsley\b|\btarragon\b|\bsage\b|\bthyme\b|\bbasil\b/, value: "herbs" },
+    { re: /\bdill\b/, value: "dill" },
+    { re: /\bmint\b/, value: "mint" },
+    { re: /\brosemary\b/, value: "rosemary" },
+    { re: /\boregano\b/, value: "oregano" },
+    { re: /\bcauliflower\b/, value: "cauliflower" },
+    { re: /\bmango(es)?\b/, value: "mango" },
+    { re: /\bapples?\b/, value: "apple" },
+    { re: /\bbananas?\b/, value: "banana" },
+    { re: /\bberries?\b|\bblackberries?\b|\bblueberries?\b|\braspberries?\b|\bstrawberries?\b|\bcranberries?\b|\bmulberries?\b|\bcherries?\b/, value: "berries" },
+    { re: /\bbrovolli\b|\bbrocolli\b|\bbroccoli(?: florets?)?\b/, value: "broccoli" },
+    { re: /\bginger\b/, value: "ginger" },
+    { re: /\bgalangal\b|\bglangal\b/, value: "galangal" },
+    { re: /\bhorseradish\b/, value: "horseradish" },
+    { re: /\bred fresno chil(?:e|i)\b|\bchilli(es)?\b|\bchiles?\b/, value: "chillies" },
+    { re: /\bcurry leaves?\b|\bfried curry leaves?\b/, value: "curry leaves" },
+    { re: /\bolives?\b/, value: "olives" },
+    { re: /\bpeppers?\b/, value: "peppers" },
+    { re: /\bbay(?: leaf)?\b/, value: "bay leaf" },
+    { re: /\bbaba ganoush\b/, value: "eggplant" },
+    { re: /\basparagus\b/, value: "asparagus" },
+    { re: /\bshallots?\b/, value: "shallots" },
+    { re: /\bleeks?\b/, value: "leeks" },
+    { re: /\bonions?\b|spring onions?/, value: "onions" },
+    { re: /\bcelery(?: stick| sticks| stalk| stalks)?\b/, value: "celery" },
+    { re: /\bguanciale\b|\bpork\b|\bsmoked pork belly\b|\bpolish smoked ring sausage\b|\bwiejska kielbasa\b|\bkaiserfleisch\b|\bsausage meat\b/, value: "pork" },
+    { re: /\bduck\b/, value: "duck" },
+    { re: /\bchicken\b/, value: "chicken" },
+    { re: /\blamb\b/, value: "lamb" },
+    { re: /\brabbit\b/, value: "rabbit" },
+    { re: /\btuna\b/, value: "tuna" },
+    { re: /\blobster\b/, value: "lobster" },
+    { re: /\bsalmon fillets?\b|\bsalmon\b/, value: "salmon" },
+    { re: /\brainbow trout\b|\btrout\b|\bwhite fish\b|\bhaddock\b|\bbarramundi\b|\bmahi mahi\b|\bbass groper\b|\bsnapper\b|\bfish\b/, value: "fish" },
+    { re: /\bmussels?\b|\bclams?\b|\bvongole\b/, value: "shellfish" },
+    { re: /\bking prawns?\b|\bprawns?\b|\bshrimp\b/, value: "prawns" },
+    { re: /\bchipolatas?\b|\bsausage(s)?\b/, value: "sausages" },
+    { re: /\bbroad beans?\b|\bsoya beans?\b|\bwhite beans?\b/, value: "beans" },
+    { re: /\blentils?\b/, value: "lentils" },
+    { re: /\bchickpeas?\b/, value: "chickpeas" },
+    { re: /\bmung bean sprouts?\b|\bsprouts?\b/, value: "sprouts" },
+    { re: /\bchia\b|\blinseeds?\b|\bflaxseeds?\b|\bsunflower seeds?\b|\bpepitas\b|\bpumpkin seeds?\b|\bsesame seeds?\b|\bpoppyseeds?\b|\bpoppy seeds?\b|\bpomegranate seeds?\b|\bseeds?\b/, value: "seeds" },
+    { re: /\bcornmeal\b|\bsemolina\b|\bpolenta\b/, value: "polenta" },
+    { re: /\bamaranth\b|\bsorghum\b|\bvialone nano rice\b|\bfreekeh\b|\bmixed wild rice\b|\brice\b|\bcouscous\b|\bquinoa\b|\bgrains?\b/, value: "grains" },
+    { re: /\bwalnuts?\b|\balmonds?\b|\bcashews?\b|\bhazelnuts?\b|\bpistachios?\b|\bpeanuts?\b|\bnuts?\b/, value: "nuts" },
+    { re: /\bcherry tomatoes?\b|\bnapoli tomato sauce\b|\btomato sauce\b|\bpassata\b|\btomatoes?\b/, value: "tomatoes" },
+    { re: /\bradicchio\b/, value: "radicchio" },
+    { re: /\bcourgettes?\b|\bzucchini\b|\bzuchinni\b/, value: "zuchinni" },
+    { re: /\baubergines?\b|\beggplants?\b|\bbrinjal\b/, value: "eggplant" },
+    { re: /\brainbow chard\b|\bchard\b/, value: "chard" },
+    { re: /\bfennel(?: bulb| bulbs| fronds)?\b/, value: "fennel" },
+    { re: /\bcavolo nero\b|\bkale\b|\bleafy greens?\b|\bgreens\b/, value: "greens" },
+    { re: /\bfield mushrooms?\b|\bbutton mushrooms?\b|\bmushrooms?\b|\bporcini\b/, value: "mushrooms" },
+    { re: /\banchov(?:y|ies)\b/, value: "anchovy" },
+    { re: /\bdark chocolate\b|\bchocolate\b/, value: "chocolate" },
+    { re: /\bparmigiano reggiano\b|\bparm\b|\bparmesan\b|\bmanchego\b|\bfeta\b|\bred leicester\b|\bricotta\b|\bpecorino\b|\bstracciatella\b|\bgruy[eè]re\b|\bemmenthaler\b|\bfontina\b|\bmozzarella\b|\bcheddar\b|\bblue cheese\b|\bcheese\b/, value: "cheese" },
+    { re: /\byoghurt\b|creme fraiche|crème fraîche|buttermilk/, value: "yoghurt" },
+    { re: /\blivers?\b/, value: "liver" },
+    { re: /\bspinach\b/, value: "spinach" },
+    { re: /\bice cream\b/, value: "ice cream" },
+    { re: /\bmeringues?\b/, value: "meringue" },
+    { re: /\beggs?\b/, value: "eggs" },
+    { re: /\bgarlic\b/, value: "garlic" },
+    { re: /\bcarrots?\b/, value: "carrot" },
+    { re: /\bcoconut\b/, value: "coconut" },
+    { re: /\bdry white wine\b|\bwhite wine\b|\bvermouth\b|\bwine\b/, value: "wine" },
+    { re: /\bwhole ?wheat japanese noodles\b|\bnoodles\b/, value: "noodles" },
+    { re: /\bpotatoes?\b/, value: "potato" },
+    { re: /\bsauerkraut\b|\bcabbage\b/, value: "cabbage" },
+    { re: /\bwatercress\b|\bcress\b/, value: "watercress" },
+    { re: /\blettuce\b|\bcos lettuce\b|\biceberg lettuce\b/, value: "lettuce" },
+    { re: /\barugula\b|\brocket\b/, value: "rocket" },
+    { re: /\bcucumbers?\b|\bpersian cucumbers?\b/, value: "cucumber" },
+    { re: /\bcorn\b/, value: "corn" },
+    { re: /\bpears?\b/, value: "pear" },
+    { re: /\bgelatine\b|\bgelatin\b/, value: "gelatine" },
+    { re: /\bkombu\b/, value: "kombu" },
+    { re: /\bnori\b/, value: "nori" },
+    { re: /\btapioca(?: starch)?\b/, value: "tapioca" },
+    { re: /\bhalva\b/, value: "halva" },
+    { re: /\bsweetened condensed milk\b/, value: "sweetened condensed milk" },
+    { re: /\blemons?\b/, value: "lemon" },
+    { re: /\blimes?\b/, value: "limes" },
+    { re: /\boranges?\b/, value: "orange" },
+    { re: /\bmandarins?\b/, value: "mandarin" },
+    { re: /\bbresaola\b|\bprosciutto\b/, value: "cured meat" }
+  ];
+
+  for (const alias of aliasPatterns) {
+    if (alias.re.test(cleaned)) return alias.value;
+  }
+
+  return cleaned || raw;
+}
+
+function titleCaseIngredient(value) {
+  return value.replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+function getIndexableIngredients(recipe) {
+  return recipe.indexIngredients || recipe.ingredients;
+}
+
+function buildIndex(recipes) {
+  const map = {};
+  recipes.forEach(r => {
+    getIndexableIngredients(r).forEach(ing => {
+      const key = normalizeIngredientForIndex(ing);
+      if (!key) return;
+      if (!map[key]) map[key] = { display: titleCaseIngredient(key), recipes: [] };
+      map[key].recipes.push(r.id);
+    });
+  });
+  return map;
+}
+
+// Build author → recipes map
+function buildAuthorIndex(recipes) {
+  const map = {};
+  recipes.forEach(r => {
+    const key = r.author;
+    if (!map[key]) map[key] = { books: new Set(), recipes: [] };
+    map[key].recipes.push(r.id);
+    map[key].books.add(r.book);
+  });
+  return map;
+}
+
+const INDEX = buildIndex(RECIPES);
+const AUTHOR_INDEX = buildAuthorIndex(RECIPES);
+
+const ALL_INGREDIENTS = Object.keys(INDEX).sort();
+
+
+// ══════════════════════════════════════════════════════
+//  AUTHOR METADATA
+// ══════════════════════════════════════════════════════
+const AUTHOR_META = {
+  "Jamie Oliver":       { initials:"JO", color:"#C05A2C", bg:"rgba(192,90,44,0.12)",  desc:"Quick, fresh and accessible recipes stripped back to their essentials. Jamie's 5 Ingredients collection proves great cooking doesn't need to be complicated." },
+  "Donna Hay":          { initials:"DH", color:"#7A8C6E", bg:"rgba(122,140,110,0.12)", desc:"Elegant, beautifully balanced recipes from Australia's queen of accessible food styling. Donna's Balanced collection focuses on wholesome, fuss-free everyday cooking." },
+  "Emelia Jackson":     { initials:"EJ", color:"#D4A847", bg:"rgba(212,168,71,0.12)",  desc:"Joyful baking from MasterChef Australia winner Emelia Jackson. Her recipes celebrate the pleasure of making something truly wonderful from scratch." },
+  "Christine Mansfield":{ initials:"CM", color:"#8B4B8B", bg:"rgba(139,75,139,0.12)", desc:"A masterclass in the depth and complexity of Indian cuisine. Christine brings warmth and expertise to spiced dishes, aromatic chutneys and fragrant curries." },
+  "Joseph Abboud":      { initials:"JA", color:"#C05A2C", bg:"rgba(192,90,44,0.12)",  desc:"Modern Middle Eastern cooking from one of Melbourne's finest chefs. Rumi's recipes are bold, generous and deeply rooted in the flavours of the Levant." },
+  "Andrew McConnell":   { initials:"AM", color:"#2C6B8A", bg:"rgba(44,107,138,0.12)",  desc:"Refined, produce-driven cooking from the mind behind Melbourne's Supernormal and Cumulus Inc. Andrew's recipes are relaxed but technically impeccable." },
+  "Andreas Papadakis":  { initials:"AP", color:"#8A2C2C", bg:"rgba(138,44,44,0.12)",   desc:"The soul of an Italian trattoria in Melbourne's Fitzroy. Andreas's Tipo 00 recipes bring handmade pasta and honest Italian cooking to the home kitchen." },
+  "Molly Baz":          { initials:"MB", color:"#2C8A5A", bg:"rgba(44,138,90,0.12)",   desc:"Bold, confident and endlessly useful. Molly's Cook This Book teaches you to think like a cook, with recipes designed to build real kitchen instincts." },
+  "Benny Roff":         { initials:"BR", color:"#6B4C35", bg:"rgba(107,76,53,0.12)",   desc:"The warmth and wit of Eastern European food told through a distinctly Melbourne lens. Benny's Borscht, Vodka & Tears is food with history and heart." },
+  "Nino Zoccali":       { initials:"NZ", color:"#C0882C", bg:"rgba(192,136,44,0.12)",  desc:"Celebrating the food of Venice and the northern Italian kitchen. Nino's Venetian Republic is a love letter to lagoon cooking and the pleasures of the table." },
+  "Adam Liaw":          { initials:"AL", color:"#2C6B6B", bg:"rgba(44,107,107,0.12)",  desc:"Clear-eyed, accessible weeknight cooking from MasterChef Australia winner and food journalist Adam Liaw. Tonight's Dinner is dinner, sorted." }
+};
+
+// ══════════════════════════════════════════════════════
+//  CATEGORY METADATA
+// ══════════════════════════════════════════════════════
+const CAT_META = {
+  "Dessert":            { icon:"🍮", bg:"rgba(192,90,44,0.08)",   grad:"linear-gradient(135deg,#C05A2C,#D4A847)", img:"images/categories/dessert.webp" },
+  "Poultry":            { icon:"🍗", bg:"rgba(212,168,71,0.09)",  grad:"linear-gradient(135deg,#D4A847,#7A8C6E)", img:"images/categories/poultry.webp" },
+  "Vegetarian":         { icon:"🥦", bg:"rgba(122,140,110,0.09)", grad:"linear-gradient(135deg,#7A8C6E,#2C8A5A)", img:"images/categories/vegetarian.png" },
+  "Seafood":            { icon:"🦐", bg:"rgba(44,107,138,0.09)",  grad:"linear-gradient(135deg,#2C6B8A,#7A8C6E)", img:"images/categories/seafood.png" },
+  "Salads":             { icon:"🥗", bg:"rgba(122,140,110,0.09)", grad:"linear-gradient(135deg,#7A8C6E,#D4A847)", img:"images/categories/salads.webp" },
+  "Baking":             { icon:"🎂", bg:"rgba(212,168,71,0.09)",  grad:"linear-gradient(135deg,#D4A847,#C05A2C)", img:"images/categories/baking.webp" },
+  "Breakfast":          { icon:"🍳", bg:"rgba(192,90,44,0.08)",   grad:"linear-gradient(135deg,#C05A2C,#D4A847)", img:"images/categories/breakfast.webp" },
+  "Beef":               { icon:"🥩", bg:"rgba(138,44,44,0.08)",   grad:"linear-gradient(135deg,#8A2C2C,#C05A2C)", img:"images/categories/beef.png" },
+  "Pork":               { icon:"🥓", bg:"rgba(192,90,44,0.08)",   grad:"linear-gradient(135deg,#C05A2C,#8A2C2C)", img:"images/categories/pork.png" },
+  "Snacks":             { icon:"🧆", bg:"rgba(212,168,71,0.08)",  grad:"linear-gradient(135deg,#D4A847,#7A8C6E)", img:"images/categories/snacks.png" },
+  "Lamb":               { icon:"🫕", bg:"rgba(138,92,44,0.08)",   grad:"linear-gradient(135deg,#8A5C2C,#C05A2C)", img:"images/categories/lamb.webp" },
+  "Pasta":              { icon:"🍝", bg:"rgba(192,136,44,0.09)",  grad:"linear-gradient(135deg,#C0882C,#C05A2C)", img:"images/categories/pasta.png" },
+  "Pickles & Chutneys": { icon:"🫙", bg:"rgba(122,140,110,0.09)", grad:"linear-gradient(135deg,#7A8C6E,#D4A847)", img:"images/categories/pickles.png" },
+  "Soup & Noodles":     { icon:"🍜", bg:"rgba(44,107,138,0.09)",  grad:"linear-gradient(135deg,#2C6B8A,#7A8C6E)", img:"images/categories/soup-and-noodles.png" },
+  "Dumplings":          { icon:"🥟", bg:"rgba(192,90,44,0.08)",   grad:"linear-gradient(135deg,#C05A2C,#D4A847)", img:"images/categories/dumplings.webp" },
+  "Basics":             { icon:"🧂", bg:"rgba(107,76,53,0.08)",   grad:"linear-gradient(135deg,#6B4C35,#9C8B7A)", img:"images/categories/basics.png" },
+  "Risotto":            { icon:"🍚", bg:"rgba(192,136,44,0.09)",  grad:"linear-gradient(135deg,#C0882C,#D4A847)", img:"images/categories/risotto.png" },
+  "Game":               { icon:"🦌", bg:"rgba(107,76,53,0.08)",   grad:"linear-gradient(135deg,#6B4C35,#8A2C2C)", img:"images/categories/game.webp" }
+};
+
+// ══════════════════════════════════════════════════════
+//  SHARED UTILITIES
+// ══════════════════════════════════════════════════════
+function groupByLetter(arr) {
+  const g = {};
+  arr.forEach(item => { const l = item[0].toUpperCase(); (g[l]||(g[l]=[])).push(item); });
+  return g;
+}
+
+function normalizeIng(ingredient) {
+  if (!ingredient) return null;
+  return Object.keys(INDEX).find(key =>
+    INDEX[key].display.toLowerCase() === ingredient.toLowerCase() ||
+    ingredient.toLowerCase().includes(INDEX[key].display.toLowerCase())
+  ) || null;
+}
+
+function safeid(str) { return String(str).replace(/[^a-z0-9]/gi,'_'); }
+
+function escHtml(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+
+function loadFavs() {
+  try { return new Set(JSON.parse(localStorage.getItem('lv_favs')||'[]')); } catch { return new Set(); }
+}
+function saveFavs(favIds) {
+  try { localStorage.setItem('lv_favs', JSON.stringify([...favIds])); } catch {}
+}
+
+// ══════════════════════════════════════════════════════
+//  SHARED CARD RENDERER
+// ══════════════════════════════════════════════════════
+function recipeCardHtml(r, favIds) {
+  const summary = RECIPE_SUMMARIES[r.id] || '';
+  const isFav = favIds && favIds.has(r.id);
+  return `
+    <a href="recipe.html?id=${r.id}" class="r-card">
+      <button class="r-fav-btn ${isFav?'is-on':''}" data-fav="${r.id}" aria-label="Favourite">${isFav?'❤️':'♡'}</button>
+      <div class="r-cat">${escHtml(r.category)} · ${escHtml(r.author)}</div>
+      <div class="r-title">${escHtml(r.title)}</div>
+      <div class="r-meta">
+        <span>⏱ ${escHtml(r.time)}</span>
+        <span>👤 Serves ${escHtml(r.serves)}</span>
+        ${r.ingredients.length ? `<span>🥕 ${r.ingredients.length} ingredients</span>` : ''}
+      </div>
+      <p class="r-summary">${summary}</p>
+    </a>`;
+}
+
+function attachFavListeners(container, favIds) {
+  container.querySelectorAll('[data-fav]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault(); e.stopPropagation();
+      const id = parseInt(btn.dataset.fav);
+      if (favIds.has(id)) favIds.delete(id); else favIds.add(id);
+      saveFavs(favIds);
+      btn.textContent = favIds.has(id) ? '❤️' : '♡';
+      btn.classList.toggle('is-on', favIds.has(id));
+    });
+  });
+}

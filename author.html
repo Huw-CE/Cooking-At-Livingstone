@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Author — Cooking at Livingstone</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-brand">Cooking at <em>Livingstone</em></a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="browse.html" class="nav-link">Recipes</a></li>
+    <li><a href="authors.html" class="nav-link is-active">Authors</a></li>
+    <li><a href="categories.html" class="nav-link">Categories</a></li>
+    <li><a href="ingredient-index.html" class="nav-link">Ingredient Index</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- Hero injected by JS -->
+  <div id="page-hero"></div>
+
+  <div class="browse-layout">
+
+    <!-- ════════ SIDEBAR ════════ -->
+    <aside class="sidebar" id="sidebar">
+      <div class="mob-sheet-head">
+        <span class="mob-sheet-label">Filters</span>
+      </div>
+      <div id="sidebar-inner">
+
+        <!-- 1 · Favourites -->
+        <div class="fav-section">
+          <div class="sidebar-title">Quick View</div>
+          <button class="fav-toggle" id="fav-toggle">
+            <span class="fav-toggle-left">
+              <span style="font-size:15px;line-height:1;">❤️</span>
+              <span>My Favourites</span>
+            </span>
+            <span class="fav-count" id="fav-count">0</span>
+          </button>
+        </div>
+
+        <!-- 2 · Authors (navigate between author pages) -->
+        <div class="sidebar-title">Browse by Author</div>
+        <div id="author-filters"
+             style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border);">
+        </div>
+
+        <!-- 3 · Ingredients A–Z (filters within this author) -->
+        <div class="sidebar-title">Ingredients A–Z</div>
+        <div class="ing-search-wrap">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input type="text" id="ing-search" placeholder="Search ingredients…">
+        </div>
+        <div id="ing-list"></div>
+
+      </div>
+    </aside>
+
+    <!-- ════════ MAIN CONTENT ════════ -->
+    <div class="browser-main" id="page-main">
+      <div class="empty"><div class="empty-icon">⏳</div><p>Loading…</p></div>
+    </div>
+
+  </div>
+
+  <div class="mob-backdrop" id="mob-backdrop"></div>
+  <button class="mob-trigger" id="mob-trigger">
+    <span>Filters <span class="mob-summary" id="mob-summary">All recipes</span></span>
+    <span>☰</span>
+  </button>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-eyebrow">Kitchen Notes</div>
+      <div class="footer-title">Cook well, share often, <em>eat together</em></div>
+    </div>
+    <div class="footer-note">If you have any recipes to add, just ask.</div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+
+const favIds     = loadFavs();
+const params     = new URLSearchParams(location.search);
+const authorName = params.get('name') || '';
+
+let activeIng = null;
+let showFavs  = false;
+// Base recipe set for this author page
+const baseRecs = RECIPES.filter(r => r.author === authorName);
+
+// ── GUARD ─────────────────────────────────────────────
+if (!authorName || !baseRecs.length) {
+  document.title = 'Author not found — Cooking at Livingstone';
+  document.getElementById('page-main').innerHTML =
+    '<div class="empty"><div class="empty-icon">🔍</div>' +
+    '<p>Author not found. <a href="authors.html" style="color:var(--rust)">← All Authors</a></p></div>';
+} else {
+
+  const books = [...new Set(baseRecs.map(r => r.book))];
+  const m     = AUTHOR_META[authorName] || { initials: authorName.slice(0,2).toUpperCase(), color:'#C05A2C', bg:'rgba(192,90,44,0.1)', desc:'' };
+  document.title = authorName + ' — Cooking at Livingstone';
+
+  // Render the hero + profile bar above the layout
+  const nameParts = authorName.split(' ');
+  const titleHtml = nameParts.slice(0,-1).join(' ') + (nameParts.length > 1 ? ' ' : '') +
+                    '<em>' + escHtml(nameParts[nameParts.length-1]) + '</em>';
+
+  document.getElementById('page-hero').innerHTML = `
+    <section class="subpage-hero">
+      <a href="authors.html" class="back-btn">← All Authors</a>
+      <h1>${titleHtml}</h1>
+      <div class="subpage-meta">
+        <span>${baseRecs.length} recipes</span>
+        <span class="chip">${books.map(b => escHtml(b)).join(' · ')}</span>
+      </div>
+      <div class="hero-rule"></div>
+    </section>
+    <div class="profile-bar">
+      <div class="profile-avatar" style="background:${m.bg};color:${m.color};">
+        <span>${m.initials}</span>
+      </div>
+      <div>
+        <div class="profile-name">${escHtml(authorName)}</div>
+        <div class="profile-book">${books.join(' · ')}</div>
+        <div class="profile-desc">${escHtml(m.desc)}</div>
+      </div>
+    </div>`;
+
+  // ── FILTER LOGIC ──────────────────────────────────
+  function getFiltered() {
+    return baseRecs.filter(r => {
+      if (showFavs  && !favIds.has(r.id))                                           return false;
+      if (activeIng && !r.ingredients.some(i => normalizeIng(i) === activeIng))    return false;
+      return true;
+    });
+  }
+
+  // ── FAVOURITES ────────────────────────────────────
+  function renderFavToggle() {
+    document.getElementById('fav-toggle').classList.toggle('is-active', showFavs);
+    document.getElementById('fav-count').textContent = favIds.size;
+  }
+
+  document.getElementById('fav-toggle').addEventListener('click', () => {
+    showFavs = !showFavs;
+    renderFavToggle();
+    renderIngList();
+    renderMain();
+    if (window.innerWidth <= 768) { mobSheetOpen = false; syncMob(); }
+  });
+
+  // ── AUTHOR BUTTONS (navigate to other author pages) ─
+  function renderAuthors() {
+    const el     = document.getElementById('author-filters');
+    const counts = RECIPES.reduce((a,r) => { a[r.author]=(a[r.author]||0)+1; return a; }, {});
+
+    el.innerHTML = Object.keys(counts).sort().map(a => `
+      <a href="author.html?name=${encodeURIComponent(a)}"
+         class="author-filter ${a === authorName ? 'is-active' : ''}">
+        <div>
+          <span class="author-filter-name">${escHtml(a)}</span>
+          <span class="author-filter-book">${escHtml(RECIPES.find(r=>r.author===a)?.book||'')}</span>
+        </div>
+        <span class="badge">${counts[a]}</span>
+      </a>`).join('');
+  }
+
+  // ── INGREDIENT LIST ───────────────────────────────
+  function renderIngList(filter = '') {
+    const el       = document.getElementById('ing-list');
+    const filtered = getFiltered();
+
+    const relevant = new Set();
+    filtered.forEach(r => r.ingredients.forEach(i => {
+      const n = normalizeIng(i); if (n) relevant.add(n);
+    }));
+
+    const ings   = ALL_INGREDIENTS.filter(i => relevant.has(i) && i.includes(filter.toLowerCase()));
+    const groups = groupByLetter(ings);
+
+    el.innerHTML = Object.keys(groups).sort().map(letter => `
+      <div class="ing-group">
+        <div class="ing-letter">${letter}</div>
+        ${groups[letter].map(ing => `
+          <button class="ing-btn ${activeIng===ing?'is-active':''}" data-ing="${ing}">
+            <span>${escHtml(INDEX[ing].display)}</span>
+            <span class="badge">${filtered.filter(r=>r.ingredients.some(i=>normalizeIng(i)===ing)).length}</span>
+          </button>`).join('')}
+      </div>`).join('');
+
+    el.querySelectorAll('[data-ing]').forEach(btn => btn.addEventListener('click', () => {
+      activeIng = activeIng === btn.dataset.ing ? null : btn.dataset.ing;
+      renderIngList(document.getElementById('ing-search').value);
+      renderMain();
+      if (window.innerWidth <= 768) { mobSheetOpen = false; syncMob(); }
+    }));
+  }
+
+  // ── MAIN CONTENT ──────────────────────────────────
+  function renderMain() {
+    const main     = document.getElementById('page-main');
+    const filtered = getFiltered();
+    const hasFilter = showFavs || activeIng;
+
+    // Toolbar
+    const pills = [];
+    if (showFavs)  pills.push(`<span class="filter-pill">❤️ Favourites <button class="pill-remove" data-remove="favs">×</button></span>`);
+    if (activeIng) pills.push(`<span class="filter-pill">${escHtml(INDEX[activeIng]?.display||activeIng)} <button class="pill-remove" data-remove="ing">×</button></span>`);
+
+    // Category jump chips (built from filtered set)
+    const cats = [...new Set(filtered.map(r => r.category))].sort();
+    const jumpChips = cats.map(c =>
+      `<a href="#sec_${safeid(c)}" class="jump-chip">${escHtml(c)} <span style="opacity:.55">${filtered.filter(r=>r.category===c).length}</span></a>`
+    ).join('');
+
+    // Recipe sections grouped by category
+    const sections = cats.map(cat => {
+      const catRecs = filtered.filter(r => r.category === cat);
+      return `
+        <div class="recipe-sec" id="sec_${safeid(cat)}">
+          <div class="recipe-sec-header">
+            <h3 class="recipe-sec-title">
+              <a href="category.html?name=${encodeURIComponent(cat)}"
+                 style="text-decoration:none;color:inherit;">${escHtml(cat)}</a>
+            </h3>
+            <span class="recipe-sec-count">${catRecs.length} recipe${catRecs.length!==1?'s':''}</span>
+          </div>
+          <div class="recipe-grid">${catRecs.map(r => recipeCardHtml(r, favIds)).join('')}</div>
+        </div>`;
+    }).join('');
+
+    main.innerHTML = `
+      <div class="browser-toolbar">
+        <div style="flex:1;min-width:0;">
+          <div class="browser-heading">
+            ${hasFilter ? 'Filtered <em>Recipes</em>' : `${escHtml(authorName).split(' ').pop()}'s <em>Recipes</em>`}
+          </div>
+          <div class="browser-count">${hasFilter ? filtered.length + ' recipe' + (filtered.length!==1?'s':'') : ''}</div>
+          <div class="active-filters" id="active-filters">${pills.join('')}</div>
+        </div>
+        ${hasFilter ? '<button class="clear-btn" id="clear-btn">Clear</button>' : ''}
+      </div>
+
+      ${cats.length ? `
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:24px;">
+          <span class="jump-label">Jump to</span>${jumpChips}
+        </div>` : ''}
+
+      ${filtered.length ? sections :
+        '<div class="empty"><div class="empty-icon">🔍</div><p>No recipes match this filter.</p></div>'}
+    `;
+
+    attachFavListeners(main, favIds);
+
+    // Pill remove handlers
+    main.querySelectorAll('[data-remove]').forEach(btn => btn.addEventListener('click', () => {
+      if (btn.dataset.remove === 'favs') { showFavs = false; renderFavToggle(); }
+      if (btn.dataset.remove === 'ing')  activeIng = null;
+      renderIngList(); renderMain();
+    }));
+
+    // Clear all
+    const clearBtn = document.getElementById('clear-btn');
+    if (clearBtn) clearBtn.addEventListener('click', () => {
+      activeIng = null; showFavs = false;
+      renderFavToggle(); renderIngList(); renderMain();
+    });
+
+    // Mobile summary
+    const parts = [];
+    if (showFavs)  parts.push('Favourites');
+    if (activeIng) parts.push(INDEX[activeIng]?.display || '');
+    document.getElementById('mob-summary').textContent = parts.length ? parts.join(' · ') : authorName.split(' ').pop();
+  }
+
+  // ── SEARCH ────────────────────────────────────────
+  document.getElementById('ing-search').addEventListener('input', e => renderIngList(e.target.value));
+
+  // ── MOBILE SHEET ──────────────────────────────────
+  let mobSheetOpen = false;
+  function syncMob() {
+    document.getElementById('sidebar').classList.toggle('is-open', mobSheetOpen);
+    document.getElementById('mob-backdrop').classList.toggle('is-show', mobSheetOpen);
+  }
+  document.getElementById('mob-trigger').addEventListener('click',  () => { mobSheetOpen = !mobSheetOpen; syncMob(); });
+  document.getElementById('mob-backdrop').addEventListener('click', () => { mobSheetOpen = false; syncMob(); });
+
+  // ── INIT ──────────────────────────────────────────
+  renderFavToggle();
+  renderAuthors();
+  renderIngList();
+  renderMain();
+}
+</script>
+<script>
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  document.getElementById('nav-links').classList.toggle('is-open');
+});
+</script>
+</body>
+</html>

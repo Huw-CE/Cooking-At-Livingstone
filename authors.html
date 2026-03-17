@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authors — Cooking at Livingstone</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+
+</head>
+<body><nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-brand">Cooking at <em>Livingstone</em></a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="browse.html" class="nav-link">Recipes</a></li>
+    <li><a href="authors.html" class="nav-link is-active">Authors</a></li>
+    <li><a href="categories.html" class="nav-link">Categories</a></li>
+    <li><a href="ingredient-index.html" class="nav-link">Ingredient Index</a></li>
+  </ul>
+</nav>
+<main>
+  <section class="subpage-hero">
+    <div class="hero-eyebrow">Browse by cook</div>
+    <h1>Our <em>Authors</em></h1>
+    <div class="subpage-meta"><span>11 cooks · 149 recipes</span></div>
+    <div class="hero-rule"></div>
+  </section>
+  <div class="page-body">
+    <div class="authors-grid" id="authors-grid"></div>
+  </div>
+</main>
+<footer><div class="footer-inner"><div><div class="footer-eyebrow">Kitchen Notes</div><div class="footer-title">Cook well, share often, <em>eat together</em></div></div><div class="footer-note">If you have any recipes to add, just ask.</div></div></footer><script src="data.js"></script>
+<script>
+const authors = [...new Set(RECIPES.map(r=>r.author))];
+const grid = document.getElementById('authors-grid');
+const authorData = authors.map(name => {
+    const recs=RECIPES.filter(r=>r.author===name);
+    const books=[...new Set(recs.map(r=>r.book))];
+    const cats=[...new Set(recs.map(r=>r.category))].sort();
+    const m=AUTHOR_META[name]||{initials:name.slice(0,2).toUpperCase(),color:'#C05A2C',bg:'rgba(192,90,44,0.1)'};
+    return {name,recs,books,cats,m};
+  }).sort((a,b)=>b.recs.length-a.recs.length);
+
+  grid.innerHTML = authorData.map(({name,recs,books,cats,m}) => `<a href="author.html?name=${encodeURIComponent(name)}" class="author-dir-card">
+      <div class="author-dir-img" style="background:${m.bg};color:${m.color}"><span>${m.initials}</span></div>
+      <div class="author-dir-body">
+        <div class="author-dir-name">${escHtml(name)}</div>
+        <div class="author-dir-book">${books.join(' · ')}</div>
+        <div class="author-dir-stats">
+          <div class="stat"><strong>${recs.length}</strong>recipes</div>
+          <div class="stat"><strong>${books.length}</strong>${books.length>1?'books':'book'}</div>
+          <div class="stat"><strong>${cats.length}</strong>categories</div>
+        </div>
+      </div>
+      <div class="author-dir-footer">
+        ${cats.slice(0,6).map(c=>`<span class="cat-chip">${escHtml(c)}</span>`).join('')}
+        ${cats.length>6?`<span class="cat-chip">+${cats.length-6}</span>`:''}
+      </div></a>`).join('');
+</script>
+<script>document.getElementById("nav-toggle").addEventListener("click",function(){document.getElementById("nav-links").classList.toggle("is-open");});</script></body></html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe — Cooking at Livingstone</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+
+/* ─── RECIPE IMAGE HERO ───────────────────────────── */
+.recipe-hero {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+  background: var(--border);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Per-recipe photo: add images/recipes/{id}.jpg to override the category image */
+
+/* Placeholder shown until a real photo is added */
+.recipe-hero-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.recipe-hero-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.055;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(26,20,16,0.3) 0px, rgba(26,20,16,0.3) 1px, transparent 1px, transparent 32px),
+    repeating-linear-gradient(90deg, rgba(26,20,16,0.3) 0px, rgba(26,20,16,0.3) 1px, transparent 1px, transparent 32px);
+}
+.recipe-hero-icon {
+  font-size: 72px;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+}
+.recipe-hero-hint {
+  position: relative;
+  z-index: 1;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  opacity: 0.45;
+  color: var(--ink);
+}
+
+/* Overlay elements on top of the hero image */
+.recipe-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 28px;
+  background: linear-gradient(
+    180deg,
+    rgba(26,20,16,0.35) 0%,
+    transparent 35%,
+    transparent 60%,
+    rgba(26,20,16,0.55) 100%
+  );
+  pointer-events: none;
+}
+.recipe-hero-overlay-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  pointer-events: auto;
+}
+.recipe-hero-overlay-bottom {
+  display: flex;
+  align-items: flex-end;
+  pointer-events: auto;
+}
+.recipe-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(26,20,16,0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: rgba(255,255,255,0.85);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+.recipe-back:hover { background: rgba(26,20,16,0.7); color: white; }
+
+.recipe-hero-fav {
+  background: rgba(26,20,16,0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  width: 40px; height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; cursor: pointer; transition: all 0.2s;
+  color: rgba(255,255,255,0.8);
+}
+.recipe-hero-fav:hover { background: rgba(26,20,16,0.75); color: white; transform: scale(1.05); }
+.recipe-hero-fav.is-on { color: #ff6b6b; }
+
+.recipe-cat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(26,20,16,0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--gold);
+  border: 1px solid rgba(212,168,71,0.3);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.recipe-cat-badge:hover { background: rgba(26,20,16,0.8); }
+
+/* ─── RECIPE BODY ─────────────────────────────────── */
+.recipe-body {
+  background: var(--cream);
+  padding-bottom: 80px;
+}
+
+/* Title card floats up over the hero */
+.recipe-title-card {
+  background: var(--card);
+  border-radius: 16px 16px 0 0;
+  margin: -36px 40px 0;
+  position: relative;
+  z-index: 10;
+  padding: 36px 44px 32px;
+  box-shadow: 0 -4px 0 0 var(--rust), 0 -8px 32px rgba(26,20,16,0.12);
+}
+
+.recipe-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 4vw, 44px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.recipe-byline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--muted);
+}
+.recipe-byline-author {
+  font-weight: 500;
+  color: var(--rust);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.recipe-byline-author:hover { color: var(--brown); }
+.recipe-byline-sep { color: var(--border); }
+.recipe-byline-book {
+  font-style: italic;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+/* ─── META STRIP ──────────────────────────────────── */
+.recipe-meta-strip {
+  background: var(--warm-white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin: 0 40px;
+  display: flex;
+  align-items: stretch;
+}
+.recipe-meta-item {
+  flex: 1;
+  padding: 22px 24px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.recipe-meta-item:last-child { border-right: none; }
+.recipe-meta-label {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.recipe-meta-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .recipe-meta-strip { margin: 0; }
+  .recipe-meta-item { padding: 20px 12px; }
+  .recipe-meta-value { font-size: 17px; }
+  .recipe-meta-label { font-size: 8px; letter-spacing: 1.5px; }
+}
+
+/* ─── RECIPE CONTENT ──────────────────────────────── */
+.recipe-content-wrap {
+  margin: 0 40px;
+  padding-top: 36px;
+}
+
+.recipe-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ─── MOBILE TAB TOGGLE ───────────────────────────── */
+.recipe-tab-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .recipe-content-wrap { margin: 0; padding-top: 0; }
+
+  .recipe-tab-toggle {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    background: var(--warm-white);
+    position: sticky;
+    top: var(--nav-h);
+    z-index: 50;
+  }
+  .recipe-tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 14px 16px 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    cursor: pointer;
+    position: relative;
+    transition: color 0.18s;
+  }
+  .recipe-tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--rust);
+    transform: scaleX(0);
+    transition: transform 0.18s;
+  }
+  .recipe-tab-btn.is-active { color: var(--rust); }
+  .recipe-tab-btn.is-active::after { transform: scaleX(1); }
+
+  .recipe-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .ingredients-panel {
+    position: static;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 24px 20px;
+    display: none;
+  }
+  .ingredients-panel.is-active { display: block; }
+  .method-panel {
+    padding: 24px 20px;
+    display: none;
+  }
+  .method-panel.is-active { display: block; }
+}
+
+/* Ingredients column */
+.ingredients-panel {
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  position: sticky;
+  top: calc(var(--nav-h) + 20px);
+}
+.ingredients-panel h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ingredients-panel h2 em {
+  font-style: italic;
+  color: var(--rust);
+}
+.ingredients-list {
+  list-style: none;
+}
+.ingredients-list li {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--brown);
+  padding: 7px 0;
+  border-bottom: 1px dashed var(--border);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.ingredients-list li:last-child { border-bottom: none; padding-bottom: 0; }
+.ingredients-list li::before {
+  content: '—';
+  color: var(--gold);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.ingredient-count-note {
+  margin-top: 16px;
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+  font-style: italic;
+}
+
+/* Method column */
+.method-panel {}
+.method-panel h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.method-panel h2 em { font-style: italic; color: var(--rust); }
+.method-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #444;
+  white-space: pre-line;
+}
+.method-text p {
+  margin-bottom: 18px;
+}
+
+/* ─── RELATED RECIPES ─────────────────────────────── */
+.related-section {
+  margin: 52px 40px 0;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.related-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.related-section h2 em { font-style: italic; color: var(--rust); }
+
+</style>
+</head>
+<body>
+
+<nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-brand">Cooking at <em>Livingstone</em></a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="browse.html" class="nav-link">Recipes</a></li>
+    <li><a href="authors.html" class="nav-link">Authors</a></li>
+    <li><a href="categories.html" class="nav-link">Categories</a></li>
+    <li><a href="ingredient-index.html" class="nav-link">Ingredient Index</a></li>
+  </ul>
+</nav>
+
+<main id="page-main">
+  <div id="page-content">
+    <div class="empty"><div class="empty-icon">⏳</div><p>Loading recipe…</p></div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-eyebrow">Kitchen Notes</div>
+      <div class="footer-title">Cook well, share often, <em>eat together</em></div>
+    </div>
+    <div class="footer-note">If you have any recipes to add, just ask.</div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+
+const favIds = loadFavs();
+const params = new URLSearchParams(location.search);
+const recipeId = parseInt(params.get('id') || '0');
+const recipe = RECIPES.find(r => r.id === recipeId);
+
+if (!recipe) {
+  document.title = 'Recipe not found — Cooking at Livingstone';
+  document.getElementById('page-content').innerHTML = `
+    <div class="empty">
+      <div class="empty-icon">🔍</div>
+      <p>Recipe not found. <a href="browse.html" style="color:var(--rust)">Browse all recipes →</a></p>
+    </div>`;
+} else {
+  const isFav     = favIds.has(recipe.id);
+  const catMeta   = CAT_META[recipe.category] || { icon:'🍽️', bg:'rgba(192,90,44,0.08)', grad:'linear-gradient(135deg,#C05A2C,#D4A847)' };
+  const authorMeta= AUTHOR_META[recipe.author] || { initials:'?', color:'#C05A2C', bg:'rgba(192,90,44,0.1)' };
+
+  document.title = recipe.title + ' — Cooking at Livingstone';
+
+  // Related recipes: same author, excluding this one (up to 3)
+  const related = RECIPES.filter(r => r.author === recipe.author && r.id !== recipe.id).slice(0, 3);
+
+  document.getElementById('page-content').innerHTML = `
+
+    <!-- IMAGE HERO -->
+    <div class="recipe-hero" id="recipe-hero" style="${catMeta.img ? `background-image:url('${catMeta.img}');background-size:cover;background-position:center;` : `background:${catMeta.bg};`}">
+      ${!catMeta.img ? `<div class="recipe-hero-placeholder"><div class="recipe-hero-icon">${catMeta.icon}</div><div class="recipe-hero-hint">Photo coming soon</div></div>` : ''}
+      <!-- Per-recipe photo: when ready, add an img element here with src="images/recipes/${recipe.id}.jpg" to override the category image -->
+
+      <div class="recipe-hero-overlay">
+        <div class="recipe-hero-overlay-top">
+          <a href="javascript:history.back()" class="recipe-back">← Back</a>
+          <button class="recipe-hero-fav ${isFav?'is-on':''}" id="hero-fav" aria-label="Favourite">${isFav?'❤️':'♡'}</button>
+        </div>
+        <div class="recipe-hero-overlay-bottom">
+          <a href="category.html?name=${encodeURIComponent(recipe.category)}" class="recipe-cat-badge">
+            ${catMeta.icon} ${escHtml(recipe.category)}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- TITLE CARD -->
+    <div class="recipe-body">
+      <div class="recipe-title-card">
+        <h1 class="recipe-title">${escHtml(recipe.title)}</h1>
+        <div class="recipe-byline">
+          <span>by</span>
+          <a href="author.html?name=${encodeURIComponent(recipe.author)}" class="recipe-byline-author">${escHtml(recipe.author)}</a>
+          <span class="recipe-byline-sep">·</span>
+          <span class="recipe-byline-book">${escHtml(recipe.book)}</span>
+        </div>
+      </div>
+
+      <!-- META STRIP -->
+      <div class="recipe-meta-strip">
+        <div class="recipe-meta-item">
+          <span class="recipe-meta-label">Time</span>
+          <span class="recipe-meta-value">${escHtml(recipe.time)}</span>
+        </div>
+        <div class="recipe-meta-item">
+          <span class="recipe-meta-label">Serves</span>
+          <span class="recipe-meta-value">${escHtml(recipe.serves)}</span>
+        </div>
+        <div class="recipe-meta-item">
+          <span class="recipe-meta-label">Source</span>
+          <span class="recipe-meta-value" style="font-size:14px;font-family:'DM Sans',sans-serif;font-weight:400;">${escHtml(recipe.book)}</span>
+        </div>
+      </div>
+
+      <!-- MOBILE TAB TOGGLE (hidden on desktop via CSS) -->
+      <div class="recipe-tab-toggle" id="recipe-tab-toggle">
+        <button class="recipe-tab-btn is-active" data-rtab="ingredients">Ingredients</button>
+        <button class="recipe-tab-btn" data-rtab="method">Method</button>
+      </div>
+
+      <!-- CONTENT: INGREDIENTS + METHOD -->
+      <div class="recipe-content-wrap">
+        <div class="recipe-content">
+
+          <!-- INGREDIENTS -->
+          <div class="ingredients-panel is-active" id="panel-ingredients">
+            <h2><em>Ingredients</em></h2>
+            <ul class="ingredients-list">
+              ${recipe.ingredients.map(i => `<li>${escHtml(i)}</li>`).join('')}
+            </ul>
+            ${recipe.ingredients.length ? `<p class="ingredient-count-note">${recipe.ingredients.length} ingredient${recipe.ingredients.length!==1?'s':''}</p>` : ''}
+          </div>
+
+          <!-- METHOD -->
+          <div class="method-panel" id="panel-method">
+            <h2><em>Method</em></h2>
+            <div class="method-text">${escHtml(recipe.method)}</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RELATED RECIPES -->
+      ${related.length ? `
+      <div class="related-section">
+        <h2>More from <em>${escHtml(recipe.author)}</em></h2>
+        <div class="recipe-grid">
+          ${related.map(r => recipeCardHtml(r, favIds)).join('')}
+        </div>
+      </div>` : ''}
+
+    </div>
+  `;
+
+  // Fav button wiring
+  const heroFav = document.getElementById('hero-fav');
+  if (heroFav) {
+    heroFav.addEventListener('click', () => {
+      if (favIds.has(recipe.id)) favIds.delete(recipe.id);
+      else favIds.add(recipe.id);
+      saveFavs(favIds);
+      heroFav.textContent = favIds.has(recipe.id) ? '❤️' : '♡';
+      heroFav.classList.toggle('is-on', favIds.has(recipe.id));
+    });
+  }
+
+  // Related fav buttons
+  attachFavListeners(document.getElementById('page-content'), favIds);
+
+  // Mobile tab toggle — only active on narrow screens but wired regardless
+  document.querySelectorAll('[data-rtab]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.rtab;
+      document.querySelectorAll('[data-rtab]').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      document.getElementById('panel-ingredients').classList.toggle('is-active', target === 'ingredients');
+      document.getElementById('panel-method').classList.toggle('is-active', target === 'method');
+    });
+  });
+}
+</script>
+
+<script>
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  document.getElementById('nav-links').classList.toggle('is-open');
+});
+</script>
+
+</body>
+</html>

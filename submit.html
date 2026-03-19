@@ -184,48 +184,7 @@ textarea {
 }
 textarea.method-textarea { min-height: 180px; }
 
-/* File input */
-.file-drop {
-  border: 2px dashed var(--border);
-  border-radius: 8px;
-  padding: 28px 20px;
-  text-align: center;
-  background: var(--cream);
-  cursor: pointer;
-  transition: all 0.18s;
-  position: relative;
-}
-.file-drop:hover, .file-drop.is-over {
-  border-color: var(--rust);
-  background: rgba(192,90,44,0.03);
-}
-.file-drop input[type="file"] {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  border: none;
-  background: none;
-}
-.file-drop-icon { font-size: 28px; margin-bottom: 8px; line-height: 1; }
-.file-drop-label {
-  font-size: 13px;
-  color: var(--brown);
-  font-weight: 500;
-  display: block;
-  margin-bottom: 4px;
-}
-.file-drop-hint { font-size: 11px; color: var(--muted); }
-.file-name {
-  display: none;
-  margin-top: 10px;
-  font-size: 12px;
-  color: var(--rust);
-  font-weight: 500;
-}
+
 
 /* Divider between field groups */
 .field-divider {
@@ -446,56 +405,38 @@ textarea.method-textarea { min-height: 180px; }
 
     <!-- ══════════ PANEL 2: PHOTO ══════════ -->
     <div class="form-panel" id="panel-photo">
-      <form action="https://formspree.io/f/xpqybzoj" method="POST"
-            enctype="multipart/form-data" id="form-photo">
-        <input type="hidden" name="_subject" value="New recipe submission — Photo">
-        <input type="hidden" name="submission_type" value="photo">
-
-        <div class="form-card">
-          <div class="form-card-header">
-            <div class="form-card-title">Upload a <em>Photo</em></div>
-            <div class="form-card-desc">A photo of the recipe — from a book, magazine, handwritten card, or screen. We'll transcribe it from there.</div>
-          </div>
-          <div class="form-body">
+      <div class="form-card">
+        <div class="form-card-header">
+          <div class="form-card-title">Upload a <em>Photo</em></div>
+          <div class="form-card-desc">Fill in what you know, then click the button — your email app will open with everything pre-filled. Just attach the photo and hit send.</div>
+        </div>
+        <div class="form-body">
+          <div class="field-row">
             <div class="field">
-              <label>Photo <span class="required">*</span></label>
-              <div class="file-drop" id="photo-drop">
-                <input type="file" name="photo" accept="image/*" id="photo-input" required>
-                <div class="file-drop-icon">📷</div>
-                <span class="file-drop-label">Tap to choose a photo</span>
-                <span class="file-drop-hint">JPG, PNG or HEIC · up to 20MB</span>
-                <div class="file-name" id="photo-file-name"></div>
-              </div>
-            </div>
-            <div class="field-row">
-              <div class="field">
-                <label for="photo-title">Recipe title <span class="optional">(optional)</span></label>
-                <input type="text" id="photo-title" name="title" placeholder="If you know it">
-              </div>
-              <div class="field">
-                <label for="photo-source">Source <span class="optional">(optional)</span></label>
-                <input type="text" id="photo-source" name="source"
-                       placeholder="e.g. Nana's recipe card">
-              </div>
+              <label for="photo-title">Recipe title <span class="optional">(optional)</span></label>
+              <input type="text" id="photo-title" placeholder="e.g. Nana's Lasagne">
             </div>
             <div class="field">
-              <label for="photo-notes">Notes <span class="optional">(optional)</span></label>
-              <textarea id="photo-notes" name="notes" rows="3"
-                        placeholder="Anything else we should know?"></textarea>
-            </div>
-            <div class="field">
-              <label for="photo-from">Your name <span class="optional">(optional)</span></label>
-              <input type="text" id="photo-from" name="submitted_by" placeholder="e.g. Grandma Jean">
+              <label for="photo-source">Source <span class="optional">(optional)</span></label>
+              <input type="text" id="photo-source" placeholder="e.g. Nana's recipe card">
             </div>
           </div>
-          <div class="form-footer">
-            <div class="form-note">
-              Submissions are reviewed before being added to the collection.
-            </div>
-            <button type="submit" class="submit-btn">Send recipe →</button>
+          <div class="field">
+            <label for="photo-notes">Notes <span class="optional">(optional)</span></label>
+            <textarea id="photo-notes" rows="3" placeholder="Anything else we should know?"></textarea>
+          </div>
+          <div class="field">
+            <label for="photo-from">Your name <span class="optional">(optional)</span></label>
+            <input type="text" id="photo-from" placeholder="e.g. Grandma Jean">
           </div>
         </div>
-      </form>
+        <div class="form-footer">
+          <div class="form-note">
+            Your email app will open with everything pre-filled — just attach the photo and send.
+          </div>
+          <button type="button" class="submit-btn" id="photo-mailto-btn">Open email to send →</button>
+        </div>
+      </div>
     </div>
 
     <!-- ══════════ PANEL 3: MANUAL ══════════ -->
@@ -653,19 +594,34 @@ document.querySelectorAll('[data-method]').forEach(btn => {
   });
 });
 
-// ── FILE INPUT LABEL ──────────────────────────────────
-const photoInput = document.getElementById('photo-input');
-if (photoInput) {
-  photoInput.addEventListener('change', () => {
-    const nameEl = document.getElementById('photo-file-name');
-    if (photoInput.files.length) {
-      nameEl.textContent = photoInput.files[0].name;
-      nameEl.style.display = 'block';
-    }
-  });
-}
 
-// ── FORM SUBMISSIONS (AJAX for smooth UX) ─────────────
+
+// ── PHOTO PANEL — mailto button ───────────────────────
+document.getElementById('photo-mailto-btn').addEventListener('click', () => {
+  const title  = document.getElementById('photo-title').value.trim();
+  const source = document.getElementById('photo-source').value.trim();
+  const notes  = document.getElementById('photo-notes').value.trim();
+  const from   = document.getElementById('photo-from').value.trim();
+
+  const subject = encodeURIComponent('Recipe submission — Photo' + (title ? ': ' + title : ''));
+
+  const bodyLines = [
+    'Hi,',
+    '',
+    "I'd like to add a recipe to the collection. Please find the photo attached.",
+    '',
+  ];
+  if (title)  bodyLines.push('Title:  ' + title);
+  if (source) bodyLines.push('Source: ' + source);
+  if (from)   bodyLines.push('From:   ' + from);
+  if (notes)  bodyLines.push('', 'Notes: ' + notes);
+  bodyLines.push('', '— Please attach your photo to this email before sending —');
+
+  const body = encodeURIComponent(bodyLines.join('\n'));
+  window.location.href = `mailto:huw.cushing@gmail.com?subject=${subject}&body=${body}`;
+});
+
+// ── FORMSPREE FORMS (url + manual) — AJAX for smooth UX ─
 document.querySelectorAll('form').forEach(form => {
   form.addEventListener('submit', async e => {
     e.preventDefault();

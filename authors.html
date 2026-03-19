@@ -30,7 +30,7 @@
     <div class="authors-grid" id="authors-grid"></div>
   </div>
 </main>
-<footer><div class="footer-inner"><div><div class="footer-eyebrow">Kitchen Notes</div><div class="footer-title">Cook well, share often, <em>eat together</em></div></div><div class="footer-note">If you have any recipes to add, just ask.</div></div></footer><script src="data.js"></script>
+<footer><div class="footer-inner"><div><div class="footer-eyebrow">Kitchen Notes</div><div class="footer-title">Cook well, share often, <em>eat together</em></div></div><div class="footer-note"><a href="submit.html" class="footer-submit-btn">Add a recipe →</a></div></div></footer><script src="data.js"></script>
 <script>
 const authors = [...new Set(RECIPES.map(r=>r.author))];
 const grid = document.getElementById('authors-grid');

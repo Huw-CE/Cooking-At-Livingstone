@@ -137,6 +137,13 @@
   display: flex;
   flex-direction: column;
   gap: 1px;
+  min-width: 80px;
+}
+.rotd-meta-label {
+  min-height: 14px;
+}
+.rotd-meta-value {
+  min-height: 22px;
 }
 .rotd-meta-label {
   font-size: 8px;
@@ -189,8 +196,76 @@
 }
 
 /* ══════════════════════════════════════════
-   MENU IDEAS
+   FRESH RECIPES
 ══════════════════════════════════════════ */
+.fresh-section {
+  padding: 44px 40px 0;
+}
+.fresh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.fresh-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 22px 18px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.fresh-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--rust), var(--gold));
+}
+.fresh-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(26,20,16,0.1);
+}
+.fresh-card-cat {
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 2px;
+}
+.fresh-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+}
+.fresh-card-meta {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.fresh-card-author {
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .fresh-section { padding: 28px 20px 0; }
+  .fresh-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+}
+
+
 .menu-section {
   padding: 44px 40px 64px;
 }
@@ -440,6 +515,17 @@
 
   <div class="divider"></div>
 
+  <!-- ══════════ FRESH RECIPES ══════════ -->
+  <section class="fresh-section">
+    <div class="section-header">
+      <h2 class="section-title">Fresh <em>Additions</em></h2>
+      <a href="browse.html" class="section-link">Browse all →</a>
+    </div>
+    <div class="fresh-grid" id="fresh-grid"></div>
+  </section>
+
+  <div class="divider"></div>
+
   <!-- ══════════ AUTHOR CAROUSEL ══════════ -->
   <section style="padding: 44px 40px 0;">
     <div class="section-header">
@@ -570,9 +656,24 @@ document.getElementById('rotd-ings').textContent    = rotd.ingredients.length + 
 document.getElementById('rotd-author').textContent  = rotd.author;
 document.getElementById('rotd-book').textContent    = rotd.book;
 
+// ── FRESH RECIPES ─────────────────────────────────────
+const FRESH_IDS = [162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173];
+const freshGrid = document.getElementById('fresh-grid');
+freshGrid.innerHTML = FRESH_IDS.map(id => {
+  const r = RECIPES.find(x => x.id === id);
+  if (!r) return '';
+  const m = CAT_META[r.category] || { icon:'🍽️' };
+  return `<a href="recipe.html?id=${r.id}" class="fresh-card">
+    <div class="fresh-card-cat">${m.icon} ${escHtml(r.category)}</div>
+    <div class="fresh-card-title">${escHtml(r.title)}</div>
+    <div class="fresh-card-meta">⏱ ${escHtml(r.time)} · 👤 ${normaliseServes(r.serves)}</div>
+    <div class="fresh-card-author">by ${escHtml(r.author)}</div>
+  </a>`;
+}).join('');
+
 // ── AUTHOR CAROUSEL ───────────────────────────────────
 const authorTrack = document.getElementById('author-track');
-const authors = [...new Set(RECIPES.map(r => r.author))];
+const authors = [...new Set(RECIPES.map(r => r.author))].sort((a,b) => a.localeCompare(b));
 authorTrack.innerHTML = authors
   .map(name => {
     const recs = RECIPES.filter(r => r.author === name);
@@ -728,6 +829,7 @@ function initCarousel(prevId, nextId, trackId, itemW) {
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="supabase.js"></script>
 <script src="auth.js"></script>
+
 <script>
 document.getElementById('nav-toggle').addEventListener('click', function() {
   document.getElementById('nav-links').classList.toggle('is-open');

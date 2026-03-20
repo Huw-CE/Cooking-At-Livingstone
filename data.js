@@ -5375,8 +5375,448 @@ Fillet the fish by using a fork to remove the top fillets from the three fillets
 9. Use the paper overhang to lift the pie out of the tin and transfer to a wire rack to cool completely. Cut into 20 squares.
 
 10. While the pie is cooling, make the salsa verde. Put all the herbs, olives, garlic, anchovies, olive oil, vinegar and plenty of pepper into a food processor. Blitz until you have a rough, saucy consistency. Serve the pie squares with the salsa verde alongside.`
+  }  ,
+  {
+    id: 174,
+    title: "Slow-Cooked Lamb Shoulder with Fig and Pistachio Salsa",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "6-8",
+    time: "Prep 25 mins + Cook 6 hrs",
+    category: "Lamb",
+    ingredients: [
+      "3 onions (540g), peeled, 1 roughly chopped and the other 2 each cut into 6 wedges",
+      "6 garlic cloves, peeled and roughly chopped",
+      "30g fresh ginger, peeled and roughly chopped",
+      "2 tsp ground coriander",
+      "1½ tsp ground cinnamon",
+      "1 tsp ground turmeric",
+      "10g parsley, roughly chopped",
+      "10g dill, roughly chopped",
+      "45ml olive oil",
+      "2 tbsp apple cider vinegar",
+      "2kg lamb shoulder, bone in",
+      "3 cinnamon sticks",
+      "12 cardamom pods, roughly bashed open with a pestle and mortar",
+      "100g soft dried figs, chopped",
+      "750ml chicken stock",
+      "salt and black pepper",
+      "1 lemon, cut into 6 wedges, to serve",
+      "Fig and Pistachio Salsa:",
+      "50g soft dried figs, chopped",
+      "40g pistachios, very lightly toasted and roughly chopped",
+      "5g dill, leaves picked",
+      "5g parsley, leaves picked",
+      "1½ tbsp lemon juice"
+    ],
+    method: `1. Preheat the oven to 180°C fan.
+
+2. Put the chopped onions, garlic, ginger, spices and herbs into a food processor and blitz until finely minced. Add the oil, ¾ teaspoon of salt and a generous grind of pepper and blitz into a coarse paste.
+
+3. Pat dry the lamb and pierce the flesh all over using a small, sharp knife (about 10–12 times). Coat the lamb well with all the paste. You can cook it right away or leave it to marinate, refrigerated, for 3 hours to overnight.
+
+4. Put the onion wedges, cinnamon sticks, cardamom pods and figs into a large, ovenproof cast-iron saucepan (28cm in diameter) for which you have a lid. Alternatively, use a large, high-sided roasting tin and some foil to cover. Top with the lamb, fatty side up, then pour the chicken stock into the pan (but not over the lamb) and bake uncovered for 45 minutes. Lower the heat to 140°C fan, baste the lamb with the juices, then cover with the lid or foil and roast for 4½ hours, basting 3–4 times throughout. The lamb should be quite tender at this point. Turn the heat back up to 180°C fan.
+
+5. Gently remove the lamb to a large, shallow platter or dish that has a slight lip. Pour the contents of the saucepan into a large, shallow saucepan. Check it at the 20-minute mark. Remove the lid (or foil) and cook for 30 minutes more, or until the lamb is well browned and the sauce has reduced slightly.
+
+6. Make the fig and pistachio salsa. Combine the chopped figs with the pistachios, lemon juice and the herbs. Spoon this all over the lamb and serve with the lemon wedges alongside.`
+  },
+  {
+    id: 175,
+    title: "Root Vegetables and Harissa Chickpeas with Dukkah",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "4",
+    time: "Prep 30 mins + Cook 1 hr",
+    category: "Vegetarian",
+    ingredients: [
+      "½ celeriac (400g), peeled and cut into 6 wedges (350g)",
+      "2 baking potatoes, scrubbed, skin on, each cut into 8 wedges (500g)",
+      "2 small kabocha or crown prince pumpkin, skin on, deseeded and cut into 6 wedges (500g)",
+      "2 tbsp olive oil",
+      "2 tbsp tomato paste",
+      "500ml chicken or vegetable stock",
+      "1 tin of chickpeas (400g), drained and rinsed (240g)",
+      "1½ tbsp rose harissa, store-bought or homemade",
+      "1 lemon",
+      "10g dill leaves, roughly chopped",
+      "3 tbsp dukkah, store-bought or homemade",
+      "75g Greek-style yoghurt",
+      "115g tahini",
+      "2½ tbsp lemon juice",
+      "2 garlic cloves, peeled and crushed",
+      "salt and black pepper",
+      "Dukkah (optional):",
+      "30g blanched hazelnuts, well toasted",
+      "30g pine nuts, well toasted",
+      "2 tbsp cumin seeds, toasted",
+      "1 tsp coriander seeds, toasted",
+      "1½ tbsp black and white sesame seeds, toasted",
+      "1 tsp dried oregano",
+      "½ tsp paprika"
+    ],
+    method: `1. Preheat the oven to 200°C fan.
+
+2. Put the vegetables, tomato paste, 2 tablespoons of the oil, 1 teaspoon of salt and a good grind of pepper into a large roasting tin roughly 38cm in size and toss to combine. Pour in the stock, then bake for 30 minutes. Meanwhile, in a medium bowl toss together the chickpeas, harissa, 2 tablespoons of oil and ¼ teaspoon of salt and set aside.
+
+3. When ready, spoon the chickpea mixture all over the baked vegetables and turn the oven temperature up to 220°C fan. Return to the oven and bake for another 20 minutes, or until everything is nicely coloured and the vegetables are well cooked. Set aside to cool slightly, about 10–15 minutes.
+
+4. Meanwhile, top and tail the lemon and use a small, sharp knife to cut away the skin and white pith. Cut between the membranes to release the segments. Roughly chop them into 3–4 pieces. Transfer to a bowl along with the dill and any juices collected, and the remaining tablespoon of oil.
+
+5. Separately whisk together the tahini, yoghurt, lemon juice, garlic and 55ml of water with ¼ teaspoon of salt until smooth and pourable.
+
+6. Make the dukkah by putting all the ingredients plus ¼ teaspoon of salt into a food processor and pulsing a few times until the nuts are roughly chopped.
+
+7. To serve, spoon a good amount of the tahini yoghurt over the vegetables, followed by all of the lemon and dill mixture. Lastly, sprinkle over 3 tablespoons of dukkah and serve the remaining dukkah alongside.`
+  },
+  {
+    id: 176,
+    title: "Coconut Broth Prawns with Fried Aromatics",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "4",
+    time: "Prep 25 mins + Cook 45 mins",
+    category: "Seafood",
+    ingredients: [
+      "750g large tiger prawns, shells and heads on",
+      "2½ tbsp olive oil",
+      "2 tbsp tomato paste",
+      "6 garlic cloves, peeled and bashed with the side of a knife",
+      "40g fresh ginger, peeled and thinly sliced",
+      "50g lemongrass stalks (about 4), roughly sliced",
+      "8 large makrut lime leaves",
+      "3 red chillies, roughly sliced, seeds and all (45g)",
+      "1 tin of full-fat coconut milk (400g)",
+      "60ml double cream, plus 2 tbsp extra to serve",
+      "250g datterini or cherry tomatoes",
+      "1 lime, cut into 4 wedges",
+      "salt",
+      "Fried Aromatics:",
+      "105ml olive oil",
+      "6 garlic cloves, peeled and thinly sliced",
+      "2 red chillies, thinly sliced at a slight angle, seeds and all",
+      "30g fresh ginger, peeled and julienned",
+      "15g coconut flakes (aka coconut chips)",
+      "15g picked basil leaves"
+    ],
+    method: `1. Peel the prawns — remove the heads and shells and set these aside. Devein the peeled prawns and refrigerate until needed.
+
+2. Heat the oil in a large sauté pan, for which you have a lid, over a medium-high heat. Add the tomato paste and prawn heads and shells and cook, stirring occasionally, for 3 minutes or until deeply red. Add the garlic, ginger, lemongrass, lime leaves and chillies, and cook for a minute more, until fragrant. Add the coconut milk, cream, 450ml of water and 1 teaspoon of salt, bring to a simmer, then turn the heat down to medium-low, cover with the lid and leave to cook for 25 minutes. Strain through a sieve set over a large bowl, pressing down on the solids to extract as much flavour as possible (discard the solids, or save them for another use). Rinse out the sauté pan; you will use it again later.
+
+3. Meanwhile, make the fried aromatics. Put the oil, garlic, chillies and ginger into a large frying pan over a medium heat. Cook for 8 minutes, stirring occasionally, then add the coconut flakes and a tiny pinch of salt and cook for 4 minutes more, or until the garlic and coconut are golden and the chillies transparent. Use a slotted spoon to transfer the solids to a plate lined with kitchen paper. Add the basil leaves to the frying pan and cook for 2–3 minutes more, or until deeply green and translucent. Drain them in a sieve set over a bowl, reserving the aromatic oil. Transfer the basil to the plate of fried aromatics. Wipe out the frying pan; you will use it for the prawns.
+
+4. Add a tablespoon of the aromatic oil to the large sauté pan and place over a medium-high heat. Once hot, add the tomatoes and cook for 6–7 minutes, or until charred and starting to burst. Add the strained broth and bring to a simmer. Simmer for 3 minutes, then keep on a low heat while you fry the prawns.
+
+5. Lastly, heat the large frying pan on a medium-high heat. Toss the prawns with ⅓ teaspoon of salt and 2½ tablespoons of the aromatic oil. Once the pan is very hot, fry the prawns for 60–90 seconds per side. If you are overcrowding the pan, do this in two batches.
+
+6. Divide the broth between four shallow bowls and top with the fried prawns. Squeeze a lime wedge over each bowl and drizzle each with ½ tablespoon of the extra cream and a teaspoon of the aromatic oil. Top with the fried aromatics.`
+  },
+  {
+    id: 177,
+    title: "Kalbi Butter Noodles",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "4",
+    time: "Prep 10 mins + Cook 35 mins",
+    category: "Soup & Noodles",
+    ingredients: [
+      "4 dried ramen noodle nests, cooked according to packet instructions (240g)",
+      "1¼ tbsp sesame seeds, toasted, to serve",
+      "Kalbi Butter:",
+      "90ml soy sauce",
+      "40g dark soft brown sugar",
+      "1¼ tsp Aleppo chilli",
+      "1½ tsp dark sesame oil",
+      "4 garlic cloves, peeled",
+      "140g spring onions: 60g sliced thinly into rounds, the rest roughly chopped",
+      "20g fresh ginger, peeled and roughly chopped",
+      "2½ tsp sesame seeds, toasted",
+      "3 mild red chillies, roughly chopped into thirds, seeds and all (30g)",
+      "250g unsalted butter, softened at room temperature and cut into 6 pieces"
+    ],
+    method: `1. Make the kalbi butter base by first putting the soy sauce, sugar and Aleppo chilli into a small saucepan. Cook for 7–9 minutes on medium-high heat, stirring often, until thick and syrupy. Off the heat, stir in the sesame oil and set aside to cool for 5 minutes.
+
+2. To the bowl of a large food processor add the garlic cloves, roughly chopped spring onions, red chillies, ginger and sesame seeds and blitz until almost smooth. Add the cooled soy mixture, the butter and pulse until well mixed. Scrape the mixture into a small bowl.
+
+3. Weigh out 300g of the kalbi butter (reserving the rest for another use) and put it into a medium-large sauté pan on a medium-high heat, cooking until melted and gently bubbling. Add the cooked ramen noodles and the thinly sliced spring onions and gently toss until the noodles are well coated in the butter.
+
+4. Divide the noodles between four bowls, sprinkle over the sesame seeds and 1½ tablespoons of sesame seeds and serve warm.`
+  },
+  {
+    id: 178,
+    title: "Tuna, Harissa and Cheddar Croquettes with Egg Remoulade",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "4-6",
+    time: "Prep 30 mins + Cook 45 mins",
+    category: "Snacks",
+    ingredients: [
+      "600g King Edward potatoes, peeled and cut into 4cm chunks",
+      "3 tbsp olive oil",
+      "1 onion, peeled and finely chopped (180g)",
+      "5 garlic cloves, peeled and crushed",
+      "1½ tsp cumin seeds, roughly crushed with a pestle and mortar",
+      "2 tbsp rose harissa, store-bought or homemade",
+      "2 tins of good-quality tuna in olive oil (320g), drained",
+      "3 spring onions, trimmed and thinly sliced (45g)",
+      "100g mature Cheddar, roughly grated",
+      "10g parsley, roughly chopped",
+      "50g plain flour",
+      "2 large eggs plus 2 large yolks, beaten together well",
+      "150g fine dried breadcrumbs (we use Panko)",
+      "700ml sunflower oil, for deep-frying",
+      "1 lime, cut into 4 wedges",
+      "salt and black pepper",
+      "Egg Remoulade:",
+      "150g Greek-style yoghurt",
+      "50g mayonnaise",
+      "2 eggs, hard-boiled and finely chopped",
+      "5g gherkins, finely sliced",
+      "5g parsley, finely chopped",
+      "5g dill, leaves picked"
+    ],
+    method: `1. Put the potatoes into a medium saucepan with 1 tablespoon of salt and enough water to cover by about 3cm. Bring to a simmer, then lower the heat to medium-low, cover with the lid and simmer for 12–15 minutes, or until well cooked through. Drain well and transfer to a bowl, using a potato masher to coarsely mash the potatoes.
+
+2. Meanwhile, put the oil into a medium large frying pan over a medium-high heat. Once hot, add the onion and cook for about 7 minutes, stirring occasionally, until softened and browned. Add the garlic and cumin and cook for about 1 minute more, until fragrant. Add the harissa and the tuna and cook for just a minute, breaking the tuna apart into small flakes with a spoon. Transfer to the potato bowl along with the spring onions, parsley and Cheddar, season with 1 teaspoon of salt and a good grind of pepper, and mix everything together until combined.
+
+3. To make the egg remoulade, mix all the ingredients together in a bowl, along with ⅛ teaspoon of salt and plenty of black pepper. Refrigerate until ready to serve.
+
+4. Set up your breading station. Put the flour on a plate, the eggs into a bowl and the breadcrumbs into another shallow bowl. Use a sharp knife to cut the potato mixture into 6–7cm cylinders. Dip each one into the flour, shaking off the excess, followed by the egg, and lastly the breadcrumbs. Transfer to a separate, lined baking tray and continue with the rest (you should make about 20 in total). Refrigerate to firm up for 30 minutes, or longer if you are getting ahead.
+
+5. Heat the oil in a medium saucepan or high-sided sauté pan over a medium-high heat. Test that it is hot enough by sprinkling in a few breadcrumbs (they should sizzle immediately but not burn). Fry 5–6 croquettes at a time, about 4–5 minutes per batch, until golden. Use a slotted spoon to transfer them to a baking tray lined with kitchen paper while you continue with the rest.
+
+6. Transfer the croquettes to a large plate and serve them warm, with the egg remoulade and lime wedges to squeeze alongside.`
+  },
+  {
+    id: 179,
+    title: "Rose Harissa",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "Makes 375g",
+    time: "Prep 10 mins + Cook 20 mins + 30 mins rehydration",
+    category: "Basics",
+    ingredients: [
+      "4 garlic cloves, peeled",
+      "40g dried Kashmiri chillies (or another dried mild red chilli), stems and seeds removed",
+      "25g dried ancho chillies, stems and seeds removed",
+      "2 tsp coriander seeds, roughly crushed with a pestle and mortar",
+      "1¼ tsp caraway seeds, roughly crushed with a pestle and mortar",
+      "1¼ tsp Kashmiri chilli powder or paprika",
+      "1 tbsp tomato paste",
+      "1½ tsp flaked sea salt, plus extra",
+      "120ml olive oil, plus extra",
+      "1 tbsp dried rose petals",
+      "1 tbsp caster sugar",
+      "1 tbsp lemon juice",
+      "1 tbsp apple cider vinegar",
+      "2 tsp rose water"
+    ],
+    method: `1. Ventilate your kitchen well. Place a large frying pan on a high heat and, once very hot, add the garlic and cook for 3 minutes, or until charred on the outside. Transfer to a chopping board and roughly chop. To the same pan, still on a high heat, add the chillies and toast until fragrant, about a minute, then transfer to a heatproof bowl. Pour enough boiling water over the chillies to cover and weigh them down with a saucer to rehydrate. Leave for 30 minutes to soften and rehydrate, then strain through a sieve (saving the chilli water for another use). Set the pan aside to cool slightly.
+
+2. Return the pan to a medium-high heat, add the coriander and caraway seeds, the Kashmiri chilli powder, tomato paste and 2 tablespoons of the oil and cook, stirring all the while, until deeply red, about 2–3 minutes. Transfer the mixture to a food processor along with the drained chillies, charred garlic, rose petals, sugar, rose water, lemon juice, vinegar, the remaining oil and ½ teaspoon of salt and pulse until you have a coarse paste, scraping down the sides of the bowl a couple of times throughout.
+
+3. Transfer the mixture to a sterilised jar and refrigerate if not using right away. Top the harissa with more oil to seal (this will help it keep for longer).`
+  },
+  {
+    id: 180,
+    title: "Butternut Squash, Sage and Feta Filo Pie",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "6-8",
+    time: "Prep 30 mins + Cook 1 hr 45 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "10 sheets of good-quality filo pastry (250g packet)",
+      "100g unsalted butter, melted",
+      "30g caster sugar",
+      "2 tsp icing sugar, for dusting",
+      "Filling:",
+      "60ml olive oil, plus extra for greasing",
+      "2 onions, peeled, halved and cut into ½cm-thick slices (300g)",
+      "5g sage leaves, finely chopped",
+      "10g parsley, roughly chopped",
+      "150g Greek feta, roughly crumbled",
+      "2 tsp finely grated lemon zest",
+      "½ butternut squash, peeled, halved lengthways, deseeded, then cut into 1½cm-thick half-moons (650g)",
+      "1 tsp ground cinnamon",
+      "salt and black pepper",
+      "Pickled Chillies:",
+      "2 mild red chillies, thinly sliced into rounds, seeds and all",
+      "3 tbsp apple cider vinegar"
+    ],
+    method: `1. Preheat the oven to 200°C fan. Grease and line the base and sides of a 23cm springform cake tin.
+
+2. First, make the filling. Heat 2 tablespoons of the oil in a large sauté pan on a medium-high heat. Add the onions and ¼ teaspoon of salt, then turn the heat down to medium and cook, stirring occasionally, until nicely caramelised, about 45–50 minutes. Remove from the heat and stir in the herbs, feta, lemon zest, ⅛ teaspoon of salt and a good grind of pepper.
+
+3. Meanwhile, line a large baking tray with baking parchment. Add the butternut squash, cinnamon, the remaining 2 tablespoons of oil, ½ teaspoon of salt and a good grind of pepper and toss everything together. Bake for 30 minutes, flipping over the butternut pieces halfway through, or until cooked through and lightly coloured. Turn the oven temperature down to 170°C fan.
+
+4. Put the filo sheets under a slightly damp, clean tea towel. Brush one sheet with some of the melted butter and sprinkle with ½ teaspoon of the caster sugar. Transfer to the prepared cake tin, pressing the sheet into the base and letting any excess hang over the sides. Repeat this process with four more sheets of filo (five in total), rotating them slightly when you press them into the tin, so the excess hangs over at a different angle.
+
+5. Put the squash pieces in the base of the pie, overlapping them slightly. Top with the onion mixture, pushing down to compress.
+
+6. Take another sheet of filo, brush with melted butter and sprinkle with ½ teaspoon of caster sugar. Roughly scrunch it up like a tissue, then arrange on top of the exposed filling. Repeat with the remaining four sheets of filo, to cover the filling completely. Fold in the overhang, scrunching it up in the same way, and brush with any remaining butter. Place the tin on a flat baking tray and bake for 50 minutes.
+
+7. Meanwhile, make the pickled chillies. Put the chillies, vinegar and a tiny pinch of salt into a bowl and mix to combine. Set aside to pickle lightly.
+
+8. Remove the pie from the oven and use a tea towel to help release the tin, removing the outer ring and baking parchment (leaving the pie on the base). Bake for another 25 minutes, or until browned and caramelised all over. Remove from the oven and leave to cool slightly, about 15 minutes, before transferring to a plate or board. Dust with the icing sugar just before serving and serve the pickled chillies alongside.`
+  },
+  {
+    id: 181,
+    title: "Spicy Rotisserie Chicken Bake with Blue Cheese Dressing",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "4",
+    time: "Prep 35 mins + Cook 1 hr 10 mins",
+    category: "Poultry",
+    ingredients: [
+      "15g dried cascabel chillies, stems and seeds removed",
+      "15g dried chipotle chillies, stems and seeds removed",
+      "3 limes: 2 tbsp juice and 1 cut into 4 wedges to serve",
+      "150g celery, trimmed, peeled to remove the stringy bits and very thinly sliced (100g)",
+      "1 fresh red chilli, roughly chopped, seeds and all (15g)",
+      "6 garlic cloves, peeled and roughly chopped",
+      "400g plum tomatoes (about 4), quartered",
+      "3 tbsp olive oil",
+      "2 onions, peeled, halved and thinly sliced (360g)",
+      "450g cooked rotisserie chicken (about 1 small chicken), skin off, roughly shredded into large pieces",
+      "20g fresh coriander, roughly chopped",
+      "5 spring onions (75g), trimmed and thinly sliced",
+      "150g buffalo mozzarella, roughly torn",
+      "salt",
+      "Blue Cheese Dressing:",
+      "150g soured cream",
+      "100g cream cheese",
+      "100g Roquefort, or Gorgonzola for a milder version, finely crumbled",
+      "1 tbsp whole milk"
+    ],
+    method: `1. Put all the dried chillies into a small heatproof bowl and pour over enough boiling water to cover. Weigh them down with a saucer and leave to rehydrate for 20 minutes.
+
+2. Put the lime juice, celery and a pinch of salt into a small bowl, mix well to combine, and set aside to lightly pickle while you continue with the rest.
+
+3. Drain the rehydrated chillies (discarding or saving the liquid for another use) and then roughly chop them. Add them to a food processor along with the fresh chilli, garlic and tomatoes then blitz until smooth.
+
+4. Preheat the oven to 240°C fan, or as high as your oven will go.
+
+5. Put the oil into a large, ovenproof, cast-iron frying pan and place it over a medium-high heat. Once hot, add the onions and cook for 12 minutes, stirring occasionally, until softened and deeply browned (turn the heat down if necessary). Add the blitzed chilli mixture, 100ml of water and 1½ teaspoons of salt. Bring to a simmer, then turn the heat down to medium and cook for 10 minutes, stirring occasionally, until nicely thickened. Add the chicken and another 100ml of water and simmer for 10 minutes more, stirring occasionally, until nicely coated in the sauce. Off the heat, stir in the coriander and two-thirds of the spring onions.
+
+6. In a medium bowl, combine all the ingredients for the blue cheese dressing along with ⅛ teaspoon of salt and mix until combined. Reserve half of this mixture to serve, and dollop spoonfuls of the remainder on top of the chicken mixture. Top evenly with the mozzarella and bake for 15 minutes, until nicely browned and bubbly. Leave to settle for 5 minutes.
+
+7. Stir the remaining third of the spring onions into the celery and spoon half of this over the bake. Serve the remaining pickled celery, blue cheese dressing and lime wedges alongside.`
+  },
+  {
+    id: 182,
+    title: "Beets with Charred Spring Onions, Za'atar and Feta Cream",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "4",
+    time: "Prep 15 mins + Cook 1 hr 35 mins",
+    category: "Salads",
+    ingredients: [
+      "5–6 small/medium raw beetroots (500g), scrubbed clean",
+      "150g spring onions (about 8–10), trimmed, washed well and dried",
+      "3½ tbsp olive oil",
+      "2 tsp za'atar",
+      "10g parsley, picked leaves and soft stems",
+      "5g picked mint leaves",
+      "salt and black pepper",
+      "Feta Cream:",
+      "½ lemon, cut into 5 x ¼cm-thick slices, pips removed",
+      "120g Greek feta, roughly crumbled",
+      "100g crème fraîche",
+      "1 garlic clove, peeled and crushed"
+    ],
+    method: `1. Preheat the oven to 200°C fan.
+
+2. Put the beets into a 30cm × 20cm baking dish with 200ml of water and cover tightly with foil. Bake for 70 minutes, or until a small knife is easily inserted through the centre of one beet. Remove the foil and set aside for about 5 minutes, then, with gloved hands, gently rub away at the skins while the beetroots are still warm (they should easily come off). Cut the peeled beetroot into four wedges each, or six if they are larger. Transfer to a large mixing bowl and set aside.
+
+3. Meanwhile, place a large frying pan over a high heat and ventilate your kitchen well. Toss the spring onions with 1 tablespoon of the oil in a large bowl and, once very hot, add to the pan and weigh them down with a saucepan of similar dimensions. Cook for 3 minutes, until nicely charred on one side, then remove the top pan and use a pair of tongs to flip them over. Weigh them down again and cook for another 3 minutes. Transfer to a board, then add the lemon slices to the frying pan, still on a high heat. Cook for 90 seconds per side (without weighing down) until nicely charred. Transfer to the board. Roughly chop the spring onions and finely chop the lemon slices and set each aside, separately.
+
+4. To make the feta cream, first put the feta and crème fraîche into the small bowl of a food processor and blitz until smooth. Transfer to a bowl and stir in the garlic, charred lemon and a good grind of pepper.
+
+5. In a small bowl, combine the za'atar with 1½ tablespoons of oil.
+
+6. To the beetroot bowl, add the herbs, the remaining tablespoon of oil, a tiny pinch of salt and a generous grind of pepper.
+
+7. Spread the feta mixture on a plate and sprinkle all over with the charred spring onion. Pile the beetroot mixture on top and spoon the za'atar oil all over.`
+  },
+  {
+    id: 183,
+    title: "Sweetcorn Nuggets with Hot Sauce",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "Makes 15 nuggets",
+    time: "Prep 15 mins + Freeze 1–1.5 hrs + Cook 1 hr 20 mins",
+    category: "Snacks",
+    ingredients: [
+      "40g plain flour",
+      "½ tsp baking powder",
+      "80g coarse polenta (aka coarse yellow cornmeal)",
+      "50g cream cheese",
+      "80g Lancashire cheese, finely grated",
+      "40g pecorino romano, finely grated",
+      "2 garlic cloves, peeled and crushed",
+      "1 large egg",
+      "15g fresh coriander, roughly chopped",
+      "300g frozen sweetcorn kernels, defrosted",
+      "1 litre sunflower oil, for deep frying, plus extra for oiling",
+      "salt and black pepper",
+      "Hot Sauce:",
+      "100g mild red chillies, roughly chopped into 2cm lengths (deseeded if you like less heat)",
+      "2 garlic cloves, peeled",
+      "90ml apple cider vinegar",
+      "1 tbsp caster sugar",
+      "1 tbsp olive oil"
+    ],
+    method: `1. Add the flour, baking powder, 20g of the polenta, ½ teaspoon of salt and a good grind of pepper to a large bowl and whisk to combine. To a separate medium bowl add the cream cheese, Lancashire cheese, pecorino, garlic and egg then mix to combine. Stir in the coriander and a generous grind of pepper.
+
+2. Squeeze as much moisture from the sweetcorn as possible. Transfer to a cutting board and roughly chop the kernels, then add the sweetcorn and the cheese mixture to the flour bowl and mix to combine. Set aside for 15 minutes to settle.
+
+3. Using lightly oiled hands, roll the mixture into 35–40g balls to make 15 in total (they will be slightly sticky). Place the remaining 60g of polenta into a separate bowl and roll each ball in it, using your hands to evenly shape each ball and make sure it is nicely coated. Transfer to a parchment-lined baking tray or plate and freeze for 1–1½ hours, until semi-firm but not completely frozen through the middle.
+
+4. Meanwhile, make the hot sauce. Put the chillies, garlic, vinegar, sugar and ½ teaspoon of salt into a small saucepan and place it on a medium-high heat. Bring to a simmer and cook for 3 minutes, then remove from the heat and leave to cool completely. Transfer to a food processor along with the olive oil and 2 tablespoons of water and blitz until completely smooth, scraping down the sides of the bowl as needed. Strain through a sieve set over a bowl, discarding the solids.
+
+5. When ready to fry, heat the sunflower oil in a medium saucepan on a medium-high heat. Test if the oil is hot enough by sprinkling in some polenta — it should sizzle immediately. Fry the nuggets in batches of five, for about 5 minutes per batch, until browned and heated through the centre. Turn down the heat if the nuggets colour too quickly. When ready, use a slotted spoon to transfer to a baking tray lined with kitchen paper.
+
+6. Serve the nuggets warm, with the hot sauce in a bowl alongside.`
+  },
+  {
+    id: 184,
+    title: "Cheesy Curried Butter Beans on Toast with Pickled Onion",
+    author: "Yotam Ottolenghi",
+    book: "OTK: Extra Good Things",
+    serves: "2",
+    time: "Prep 10 mins + Cook 15 mins",
+    category: "Snacks",
+    ingredients: [
+      "2½ tbsp olive oil",
+      "25g fresh ginger, peeled and finely grated",
+      "4 garlic cloves, peeled and crushed",
+      "½ tsp cumin seeds",
+      "1 tsp mild curry powder",
+      "¼ tsp chilli flakes",
+      "200g jarred butter beans (or tinned butter beans), drained weight",
+      "5g fresh coriander, roughly chopped",
+      "60ml double cream",
+      "100g mature Cheddar, roughly grated",
+      "2 large slices of sourdough (or 3 small ones), cut 1½cm thick",
+      "salt and black pepper",
+      "Pickled Onion:",
+      "1 green chilli, thinly sliced into rounds, seeds and all (10g)",
+      "½ red onion, peeled and thinly sliced into rounds (60g)",
+      "1 tbsp apple cider vinegar"
+    ],
+    method: `1. Preheat the oven to a high grill setting.
+
+2. Make the pickled onion. Put the green chilli, onion, vinegar and a tiny pinch of salt into a small bowl and mix to combine. Set aside to soften and pickle while you continue with the rest.
+
+3. Heat 1½ tablespoons of the oil in a medium sauté pan on a medium-high heat. Cook the ginger and garlic until lightly golden and fragrant, stirring often, about 2–3 minutes. Add the spices and cook for 30 seconds before stirring in the butter beans, ¼ teaspoon of salt and plenty of black pepper. Remove from the heat and set aside to cool slightly, about 5–10 minutes. Once cool, stir through the coriander, cream and cheese.
+
+4. Place the bread on a small baking tray and grill for 2 minutes. Remove from the oven, flip over and drizzle the untoasted sides with the remaining tablespoon of oil. Top each with the butter bean mixture and return to the oven for 4–5 minutes, or until golden and bubbly.
+
+5. To serve, spoon over half the pickled onion mixture, serving the rest in a bowl alongside.`
   }
 ];
+
 
 const RECIPE_SUMMARIES = {
   1: "Steamed salmon with green beans, jammy eggs and olive yoghurt dressing for a bright, elegant, fast Nicoise-style plate.",

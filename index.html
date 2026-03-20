@@ -526,24 +526,6 @@
 
   <div class="divider"></div>
 
-
-  <!-- ══════════ MY FAVOURITES ══════════ -->
-  <section style="padding: 44px 40px 0; display:none;" id="fav-home-section">
-    <div class="section-header">
-      <h2 class="section-title">My <em>Favourites</em></h2>
-      <a href="favourites.html" class="section-link">View all →</a>
-    </div>
-    <div class="carousel-wrap">
-      <button class="carousel-arrow prev" id="fav-prev">‹</button>
-      <div class="carousel-outer">
-        <div class="carousel-track" id="fav-track"></div>
-      </div>
-      <button class="carousel-arrow next" id="fav-next">›</button>
-    </div>
-  </section>
-
-  <div class="divider" id="fav-home-divider" style="display:none;"></div>
-
   <!-- ══════════ AUTHOR CAROUSEL ══════════ -->
   <section style="padding: 44px 40px 0;">
     <div class="section-header">
@@ -675,7 +657,7 @@ document.getElementById('rotd-author').textContent  = rotd.author;
 document.getElementById('rotd-book').textContent    = rotd.book;
 
 // ── FRESH RECIPES ─────────────────────────────────────
-const FRESH_IDS = [162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173];
+const FRESH_IDS = [174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184];
 const freshGrid = document.getElementById('fresh-grid');
 freshGrid.innerHTML = FRESH_IDS.map(id => {
   const r = RECIPES.find(x => x.id === id);
@@ -705,51 +687,6 @@ authorTrack.innerHTML = authors
         <div class="author-tile-count">${recs.length} recipes</div>
       </div></a>`;
   }).join('');
-
-// ── MY FAVOURITES (home page carousel) ───────────────
-let favCarouselInit = false;
-
-function renderHomeFavs(favIds) {
-  const section = document.getElementById('fav-home-section');
-  const divider = document.getElementById('fav-home-divider');
-  const track   = document.getElementById('fav-track');
-  if (!favIds || favIds.size === 0) {
-    section.style.display = 'none';
-    divider.style.display = 'none';
-    return;
-  }
-  const favRecs = [...favIds]
-    .map(id => RECIPES.find(r => r.id === id))
-    .filter(Boolean);
-  if (!favRecs.length) {
-    section.style.display = 'none';
-    divider.style.display = 'none';
-    return;
-  }
-  track.innerHTML = favRecs.map(r => {
-    const m = CAT_META[r.category] || { icon:'🍽️' };
-    return `<a href="recipe.html?id=${r.id}" class="fresh-card" style="width:220px;flex-shrink:0;">
-      <div class="fresh-card-cat">${m.icon} ${escHtml(r.category)}</div>
-      <div class="fresh-card-title">${escHtml(r.title)}</div>
-      <div class="fresh-card-meta">⏱ ${escHtml(r.time)} · 👤 ${escHtml(r.serves)}</div>
-      <div class="fresh-card-author">by ${escHtml(r.author)}</div>
-    </a>`;
-  }).join('');
-  section.style.display = '';
-  divider.style.display = '';
-  // Init carousel once; reset position on subsequent syncs
-  if (!favCarouselInit) {
-    initCarousel('fav-prev', 'fav-next', 'fav-track', 220 + 16);
-    favCarouselInit = true;
-  }
-}
-
-// Initial render from localStorage
-renderHomeFavs(loadFavs());
-
-// Re-render when auth syncs cloud favs
-window.addEventListener('lv:favssynced', e => renderHomeFavs(e.detail.favIds));
-
 initCarousel('a-prev', 'a-next', 'author-track', 210 + 16);
 
 // ── CATEGORY CAROUSEL ─────────────────────────────────
@@ -889,10 +826,10 @@ function initCarousel(prevId, nextId, trackId, itemW) {
 }
 
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="supabase.js"></script>
 <script src="auth.js"></script>
+
 <script>
 document.getElementById('nav-toggle').addEventListener('click', function() {
   document.getElementById('nav-links').classList.toggle('is-open');

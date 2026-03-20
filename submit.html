@@ -368,18 +368,6 @@ textarea.method-textarea { min-height: 180px; }
       <p>Got a recipe to share? Send it through one of three ways — link to it online, upload a photo, or type it out in full. Everything arrives by email for review before being added to the collection.</p>
     </div>
 
-    <!-- ── SETUP NOTICE (remove once Formspree is wired up) ── -->
-    <div class="setup-notice" id="setup-notice">
-      <span class="setup-notice-icon">⚙️</span>
-      <div>
-        <strong>To activate this form:</strong> create a free account at
-        <a href="https://formspree.io" target="_blank" rel="noopener">formspree.io</a>,
-        create a new form, copy your endpoint URL, and replace
-        <code>xpqybzoj</code> in the three form <code>action</code> attributes
-        in this file's HTML. That's it — submissions will arrive in your inbox.
-      </div>
-    </div>
-
     <!-- ── METHOD SELECTOR ── -->
     <div class="method-selector">
       <button class="method-btn is-active" data-method="url">
@@ -728,13 +716,7 @@ document.querySelectorAll('form').forEach(form => {
   });
 });
 
-// ── HIDE SETUP NOTICE if Formspree is wired ───────────
-// (Checks if the action still contains the placeholder)
-document.querySelectorAll('form').forEach(form => {
-  if (!form.action.includes('xpqybzoj')) {
-    document.getElementById('setup-notice')?.classList.add('is-hidden');
-  }
-});
+
 
 </script>
 <script>

@@ -528,12 +528,18 @@
 
 
   <!-- ══════════ MY FAVOURITES ══════════ -->
-  <section class="fav-home-section" id="fav-home-section" style="display:none;">
+  <section style="padding: 44px 40px 0; display:none;" id="fav-home-section">
     <div class="section-header">
       <h2 class="section-title">My <em>Favourites</em></h2>
       <a href="favourites.html" class="section-link">View all →</a>
     </div>
-    <div class="fresh-grid" id="fav-home-grid"></div>
+    <div class="carousel-wrap">
+      <button class="carousel-arrow prev" id="fav-prev">‹</button>
+      <div class="carousel-outer">
+        <div class="carousel-track" id="fav-track"></div>
+      </div>
+      <button class="carousel-arrow next" id="fav-next">›</button>
+    </div>
   </section>
 
   <div class="divider" id="fav-home-divider" style="display:none;"></div>
@@ -700,11 +706,13 @@ authorTrack.innerHTML = authors
       </div></a>`;
   }).join('');
 
-// ── MY FAVOURITES (home page section) ────────────────
+// ── MY FAVOURITES (home page carousel) ───────────────
+let favCarouselInit = false;
+
 function renderHomeFavs(favIds) {
-  const section  = document.getElementById('fav-home-section');
-  const divider  = document.getElementById('fav-home-divider');
-  const grid     = document.getElementById('fav-home-grid');
+  const section = document.getElementById('fav-home-section');
+  const divider = document.getElementById('fav-home-divider');
+  const track   = document.getElementById('fav-track');
   if (!favIds || favIds.size === 0) {
     section.style.display = 'none';
     divider.style.display = 'none';
@@ -718,9 +726,9 @@ function renderHomeFavs(favIds) {
     divider.style.display = 'none';
     return;
   }
-  grid.innerHTML = favRecs.slice(0, 8).map(r => {
+  track.innerHTML = favRecs.map(r => {
     const m = CAT_META[r.category] || { icon:'🍽️' };
-    return `<a href="recipe.html?id=${r.id}" class="fresh-card">
+    return `<a href="recipe.html?id=${r.id}" class="fresh-card" style="width:220px;flex-shrink:0;">
       <div class="fresh-card-cat">${m.icon} ${escHtml(r.category)}</div>
       <div class="fresh-card-title">${escHtml(r.title)}</div>
       <div class="fresh-card-meta">⏱ ${escHtml(r.time)} · 👤 ${escHtml(r.serves)}</div>
@@ -729,6 +737,11 @@ function renderHomeFavs(favIds) {
   }).join('');
   section.style.display = '';
   divider.style.display = '';
+  // Init carousel once; reset position on subsequent syncs
+  if (!favCarouselInit) {
+    initCarousel('fav-prev', 'fav-next', 'fav-track', 220 + 16);
+    favCarouselInit = true;
+  }
 }
 
 // Initial render from localStorage

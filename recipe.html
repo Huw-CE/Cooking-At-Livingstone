@@ -446,7 +446,7 @@
       <div class="footer-eyebrow">Kitchen Notes</div>
       <div class="footer-title">Cook well, share often, <em>eat together</em></div>
     </div>
-    <div class="footer-note"><a href="submit.html" class="footer-submit-btn">Add a recipe →</a></div>
+    <div class="footer-note">If you have any recipes to add, just ask.</div>
   </div>
 </footer>
 
@@ -454,6 +454,7 @@
 <script>
 
 const favIds = loadFavs();
+window.lvFavIds = favIds; // auth.js uses this to sync UI after sign-in
 const params = new URLSearchParams(location.search);
 const recipeId = parseInt(params.get('id') || '0');
 const recipe = RECIPES.find(r => r.id === recipeId);
@@ -566,15 +567,19 @@ if (!recipe) {
     </div>
   `;
 
+  // Expose current recipe id for auth.js post-signin sync
+  window.lvCurrentRecipeId = recipe.id;
+
   // Fav button wiring
   const heroFav = document.getElementById('hero-fav');
   if (heroFav) {
     heroFav.addEventListener('click', () => {
-      if (favIds.has(recipe.id)) favIds.delete(recipe.id);
-      else favIds.add(recipe.id);
+      const adding = !favIds.has(recipe.id);
+      if (adding) favIds.add(recipe.id); else favIds.delete(recipe.id);
       saveFavs(favIds);
       heroFav.textContent = favIds.has(recipe.id) ? '❤️' : '♡';
       heroFav.classList.toggle('is-on', favIds.has(recipe.id));
+      if (window.sbSyncFav) window.sbSyncFav(recipe.id, adding);
     });
   }
 
@@ -594,6 +599,9 @@ if (!recipe) {
 }
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="supabase.js"></script>
+<script src="auth.js"></script>
 <script>
 document.getElementById('nav-toggle').addEventListener('click', function() {
   document.getElementById('nav-links').classList.toggle('is-open');

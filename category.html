@@ -86,7 +86,7 @@
       <div class="footer-eyebrow">Kitchen Notes</div>
       <div class="footer-title">Cook well, share often, <em>eat together</em></div>
     </div>
-    <div class="footer-note"><a href="submit.html" class="footer-submit-btn">Add a recipe →</a></div>
+    <div class="footer-note">If you have any recipes to add, just ask.</div>
   </div>
 </footer>
 
@@ -94,6 +94,7 @@
 <script>
 
 const favIds  = loadFavs();
+window.lvFavIds = favIds; // auth.js uses this to sync UI after sign-in
 const params  = new URLSearchParams(location.search);
 const catName = params.get('name') || '';
 
@@ -297,6 +298,9 @@ if (!catName || !baseRecs.length) {
   renderMain();
 }
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="supabase.js"></script>
+<script src="auth.js"></script>
 <script>
 document.getElementById('nav-toggle').addEventListener('click', function() {
   document.getElementById('nav-links').classList.toggle('is-open');

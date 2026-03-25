@@ -11,15 +11,15 @@
 
   // ── INJECT NAV BUTTON ──────────────────────────────
   function injectNavButton() {
-    const nav = document.getElementById('main-nav');
-    if (!nav) return;
-    const wrap = document.createElement('div');
-    wrap.className = 'nav-account-wrap';
-    wrap.innerHTML = `
+    const navLinks = document.getElementById('nav-links');
+    if (!navLinks) return;
+    const li = document.createElement('li');
+    li.className = 'nav-account-li';
+    li.innerHTML = `
       <button class="nav-account-btn" id="nav-account-btn" aria-label="Account">
         <span id="nav-account-label">Sign In</span>
       </button>`;
-    nav.appendChild(wrap);
+    navLinks.appendChild(li);
     document.getElementById('nav-account-btn').addEventListener('click', openModal);
   }
 

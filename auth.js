@@ -11,15 +11,15 @@
 
   // ── INJECT NAV BUTTON ──────────────────────────────
   function injectNavButton() {
-    const navLinks = document.getElementById('nav-links');
-    if (!navLinks) return;
-    const li = document.createElement('li');
-    li.className = 'nav-account-li';
-    li.innerHTML = `
+    const nav = document.getElementById('main-nav');
+    if (!nav) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'nav-account-wrap';
+    wrap.innerHTML = `
       <button class="nav-account-btn" id="nav-account-btn" aria-label="Account">
         <span id="nav-account-label">Sign In</span>
       </button>`;
-    navLinks.appendChild(li);
+    nav.appendChild(wrap);
     document.getElementById('nav-account-btn').addEventListener('click', openModal);
   }
 
@@ -96,10 +96,10 @@
           <div class="auth-avatar-lg" id="auth-avatar-lg"></div>
           <div class="auth-user-name" id="auth-user-name" style="display:none;"></div>
           <div class="auth-user-email" id="auth-user-email"></div>
-          <a href="favourites.html" class="auth-fav-summary" id="auth-fav-link">
+          <div class="auth-fav-summary">
             <span class="auth-fav-heart">❤️</span>
             <span id="auth-fav-count">0</span> recipes saved to favourites
-          </a>
+          </div>
           <button class="auth-signout" id="auth-signout">Sign Out</button>
         </div>
       </div>`;

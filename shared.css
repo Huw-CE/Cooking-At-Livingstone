@@ -700,12 +700,13 @@ footer::after { content: ''; position: absolute; bottom: -60px; left: -60px; wid
 /* ══════════════════════════════════════════
    AUTH — NAV ACCOUNT BUTTON
 ══════════════════════════════════════════ */
-.nav-account-li {
+.nav-account-wrap {
   display: flex;
   align-items: center;
   margin-left: 8px;
   padding-left: 12px;
   border-left: 1px solid rgba(255,255,255,0.1);
+  flex-shrink: 0;
 }
 
 .nav-account-btn {
@@ -739,25 +740,13 @@ footer::after { content: ''; position: absolute; bottom: -60px; left: -60px; wid
 }
 
 @media (max-width: 768px) {
-  .nav-account-li {
-    border-left: none;
-    padding-left: 0;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    padding-top: 4px;
-    margin-left: 0;
+  .nav-account-wrap {
+    padding-left: 8px;
+    margin-left: 4px;
   }
   .nav-account-btn {
-    width: 100%;
-    justify-content: flex-start;
-    border-radius: 8px;
-    padding: 10px 0;
-    background: transparent;
-    border: none;
-    font-size: 12px;
-  }
-  .nav-account-btn.is-signed-in {
-    background: transparent;
-    border: none;
+    padding: 5px 10px;
+    font-size: 10px;
   }
 }
 
@@ -946,21 +935,12 @@ footer::after { content: ''; position: absolute; bottom: -60px; left: -60px; wid
   margin-bottom: 18px;
 }
 .auth-fav-summary {
-  display: block;
   text-align: center;
-  text-decoration: none;
   background: rgba(192,90,44,0.07);
   border: 1px solid rgba(192,90,44,0.15);
   border-radius: 10px; padding: 13px 16px;
   font-size: 14px; color: var(--brown);
   margin-bottom: 22px;
-  transition: background 0.18s, border-color 0.18s;
-  cursor: pointer;
-}
-.auth-fav-summary:hover {
-  background: rgba(192,90,44,0.13);
-  border-color: rgba(192,90,44,0.35);
-  color: var(--rust);
 }
 .auth-fav-heart { margin-right: 4px; }
 .auth-signout {

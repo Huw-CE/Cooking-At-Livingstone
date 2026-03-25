@@ -5818,6 +5818,22 @@ Fillet the fish by using a fork to remove the top fillets from the three fillets
 ];
 
 
+const CUISINE_META = {
+  "Jamie Oliver":        { cuisine: "British",            flag: "🇬🇧" },
+  "Donna Hay":           { cuisine: "Australian",         flag: "🇦🇺" },
+  "Danielle Alvarez":    { cuisine: "Californian",        flag: "🇺🇸" },
+  "Yotam Ottolenghi":    { cuisine: "Middle Eastern",     flag: "🫒"  },
+  "Adam Liaw":           { cuisine: "Japanese",           flag: "🇯🇵" },
+  "Joseph Abboud":       { cuisine: "Lebanese",           flag: "🇱🇧" },
+  "Andrew McConnell":    { cuisine: "Modern Australian",  flag: "🇦🇺" },
+  "Andreas Papadakis":   { cuisine: "Greek",              flag: "🇬🇷" },
+  "Molly Baz":           { cuisine: "American",           flag: "🇺🇸" },
+  "Benny Roff":          { cuisine: "Modern Australian",  flag: "🇦🇺" },
+  "Nino Zoccali":        { cuisine: "Italian",            flag: "🇮🇹" },
+  "Christine Mansfield": { cuisine: "Indian",             flag: "🇮🇳" },
+  "Emelia Jackson":      { cuisine: "Australian",         flag: "🇦🇺" }
+};
+
 const RECIPE_SUMMARIES = {
   1: "Steamed salmon with green beans, jammy eggs and olive yoghurt dressing for a bright, elegant, fast Nicoise-style plate.",
   2: "Broad beans, charred peppers, almonds and Manchego tossed with parsley and vinegar for a fresh, punchy Mediterranean salad.",

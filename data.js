@@ -5983,17 +5983,55 @@ const RECIPE_SUMMARIES = {
   151: "A simple pistachio cake served with pistachio gelato, built for pure nut flavour and soft, light texture.",
   152: "Carrot, hazelnut and spelt cake with glossy chocolate icing and a matching hazelnut gelato.",
   153: "Rum-and-citrus Venetian carnival fritters studded with sultanas and rolled in caster sugar while warm.",
-  154: "Roasted stuffed duck with prunes, pistachios and pork mince, paired with a layered potato-zucchini torta."
+  154: "Roasted stuffed duck with prunes, pistachios and pork mince, paired with a layered potato-zucchini torta.",
+  155: "A rich, silky vanilla caramel flan made with evaporated and condensed milk, served with poached sour cherries.",
+  156: "Dense dark chocolate torte made with separated eggs, served alongside baked plums and lightly whipped cream.",
+  157: "Custard apple pulp and cream infused with kaffir lime leaves, churned into a fragrant tropical ice cream.",
+  158: "Vanilla-almond custard base enriched with egg yolks and cream, churned with cherries for a rich ice cream.",
+  159: "Silky smooth chicken liver parfait layered with smoked bacon and a Madeira reduction, rich and deeply savoury.",
+  160: "Brick-pressed chicken cooked until deeply crisp, served over white bean purée with brown butter, lemon and capers.",
+  161: "Scored pork rack roasted until crackling-crisp, paired with caramelised apples and a sharp wholegrain mustard sauce.",
+  162: "A buttery shortcrust tart filled with slow-cooked onions, ripe tomatoes and sharp cheddar in a custard base.",
+  163: "Hand-rolled pici pasta tossed through a slow-cooked chicken and liver ragù, lifted with Marsala and herbs.",
+  164: "Linguine tossed with steamed mussels, spicy nduja, white wine and garlic in a bold, briny, flavour-packed sauce.",
+  165: "Whole John Dory roasted on nori oil with brown butter, capers and lemon for a rich, elegant seafood centrepiece.",
+  166: "A light sponge roulade filled with honey-cinnamon baked apples and cream, rolled and served at room temperature.",
+  167: "Icy coconut granita paired with chilli-lime marinated pineapple and crispy coconut flakes for a refreshing dessert.",
+  168: "Whipped coffee cream mousse served alongside a square of tahini fudge for a bitter-sweet, textured dessert.",
+  169: "Set lemon posset on labneh, topped with crisp meringue and charred lemon for a tart, creamy, elegant dessert.",
+  170: "A dark, moist cocoa layer cake frosted with hazelnut praline buttercream for a rich, deeply indulgent centrepiece.",
+  171: "Yeasted focaccia dimpled with ground black limes and sesame seeds, drizzled with smoky chipotle-infused oil.",
+  172: "Crisp chickpea flour pancake baked with fennel, rosemary and thyme, topped with slowly caramelised jammy onions.",
+  173: "Puff pastry slab loaded with gruyère, feta, spring onions and thinly sliced potato, served with herb salsa verde.",
+  174: "Spice-rubbed lamb shoulder braised until completely tender, served with a bright fig and pistachio salsa.",
+  175: "Roasted celeriac, potato and pumpkin paired with harissa-glazed chickpeas and finished with nutty dukkah.",
+  176: "Tiger prawns poached in a prawn-shell coconut broth, finished with fried ginger, lemongrass and crisp aromatics.",
+  177: "Ramen noodles tossed in a rich kalbi butter of soy and brown sugar, finished with toasted sesame seeds.",
+  178: "Crisp potato croquettes stuffed with tuna, rose harissa and cheddar, served alongside a sharp egg remoulade.",
+  179: "A deeply fragrant homemade rose harissa blended from Kashmiri and ancho chillies with caraway and coriander.",
+  180: "Layered filo pie filled with roasted butternut squash, sage and feta, baked until golden and shatteringly crisp.",
+  181: "Chipotle-glazed rotisserie chicken baked until sticky and charred, served with cool, tangy blue cheese dressing.",
+  182: "Roasted beetroot with charred spring onions, za'atar and a creamy whipped feta dressing for a bold, earthy salad.",
+  183: "Crisp cornmeal nuggets made with cream cheese and Lancashire cheese, served with a fiery homemade hot sauce.",
+  184: "Spiced butter beans grilled under melted cheese on sourdough toast, topped with quick-pickled chilli onion."
 };
 
 // Build ingredient → recipe map
 function normalizeIngredientForIndex(ingredient) {
   const raw = ingredient.toLowerCase().trim();
+
+  // Section headers e.g. "Dough:", "Filling:", "Apples:"
+  if (raw.endsWith(':')) return null;
+
   if (/\bcurry leaves?\b|\bfried curry leaves?\b/.test(raw)) return "curry leaves";
+
   const cleaned = raw
     .replace(/\(.*?\)/g, "")
     .replace(/^[-–]\s*/, "")
     .replace(/^plus\s+/, "")
+    // Unicode fractions at start
+    .replace(/^[½¼¾⅓⅔⅛⅜⅝⅞]\s*(?:a\s+)?/, "")
+    // Standard numeric prefixes
     .replace(/^\d+\s*[-–]\s*\d+\s+/, "")
     .replace(/^\d+\s*[x×]\s*/, "")
     .replace(/^\d+(?:\.\d+)?\s+/, "")
@@ -6004,8 +6042,8 @@ function normalizeIngredientForIndex(ingredient) {
     .replace(/^g\s+/, "")
     .replace(/^(?:oz|ounces?|lb|lbs|pounds?)\s+/, "")
     .replace(/^(?:tablespoons?|teaspoons?|tbsp|tsp|cups?|cup)\s+(?:of\s+)?/, "")
-    .replace(/^\d+(?:\.\d+)?\s*(?:heaped\s+)?(?:tablespoons?|teaspoons?|tbsp|tsp|cloves?|sprigs?|slices?|shots?|scoops?|cups?)\s+(?:of\s+)?/, "")
-    .replace(/^\d+(?:\.\d+)?\s*(?:packages?|packets?|cans?|jars?|bottles?)\s+(?:of\s+)?/, "")
+    .replace(/^\d+(?:\.\d+)?\s*(?:heaped\s+)?(?:tablespoons?|teaspoons?|tbsp|tsp|cloves?|sprigs?|slices?|shots?|scoops?|cups?|nests?)\s+(?:of\s+)?/, "")
+    .replace(/^\d+(?:\.\d+)?\s*(?:packages?|packets?|cans?|jars?|bottles?|tins?)\s+(?:of\s+)?/, "")
     .replace(/^(?:half|quarter)\s+(?:a\s+)?/, "")
     .replace(/^1\/2\s+(?:a\s+)?/, "")
     .replace(/^1\/4\s+(?:a\s+)?/, "")
@@ -6015,8 +6053,9 @@ function normalizeIngredientForIndex(ingredient) {
     .replace(/^\d+\s+(?:a\s+)?bunch(?:es)?\s+(?:of\s+)?/, "")
     .replace(/^1\/2\s+(?:a\s+)?bunch of\s+/, "")
     .replace(/^bunch of\s+/, "")
-    .replace(/^(?:can|cans|package|packages|packet|packets|jar|jars|bottle|bottles)\s+(?:of\s+)?/, "")
+    .replace(/^(?:can|cans|package|packages|packet|packets|jar|jars|bottle|bottles|tin|tins)\s+(?:of\s+)?/, "")
     .replace(/^(?:small|medium|large)\s+/, "")
+    .replace(/^small\/medium\s+/, "")
     .replace(/^baby\s+/, "")
     .replace(/^(?:sticks?|stalks?)\s+of\s+/, "")
     .replace(/^(?:head|heads)\s+of\s+/, "")
@@ -6026,6 +6065,7 @@ function normalizeIngredientForIndex(ingredient) {
     .replace(/^tin of\s+/, "")
     .replace(/^jar of\s+/, "")
     .replace(/^extra\s+/, "")
+    .replace(/^dry-cured\s+/, "")
     .replace(/^dry\s+/, "")
     .replace(/^whole-?wheat\s+/, "")
     .replace(/^(?:coarse|finely|thinly|lightly)\s+/, "")
@@ -6060,10 +6100,15 @@ function normalizeIngredientForIndex(ingredient) {
     .trim();
 
   if (!cleaned) return null;
-  if (cleaned === "baking") return null;
-  if (cleaned === "00" || cleaned === "'00'" || cleaned === "all purpose" || cleaned === "all-purpose" || cleaned === "vegetable" || cleaned === "peeled") return null;
+
+  // Single-word / short junk
+  const junkWords = ["baking","00","'00'","all purpose","all-purpose","vegetable","peeled",
+    "boneless","clarified","gram","juicy","roasted","wholemeal","white spelt",
+    "whitespelt","raw","quantity fresh pici or use store-bought"];
+  if (junkWords.includes(cleaned)) return null;
+
   if (/\bsweetened condensed milk\b/.test(cleaned)) return "sweetened condensed milk";
-  if (/\bwhole milk yoghurt\b/.test(cleaned)) return "yoghurt";
+  if (/\bwhole milk yoghurt\b|\bwhole-milk yogurt\b/.test(cleaned)) return "yoghurt";
   if (/\bdark beer\b|\bstout\b|\bbeer\b/.test(cleaned)) return null;
   if (/\bmalted milk\b/.test(cleaned)) return null;
   if (/\bdextrose\b/.test(cleaned)) return null;
@@ -6164,18 +6209,52 @@ function normalizeIngredientForIndex(ingredient) {
     /\bcookie dough\b/,
     /\bsweet bread dough\b/,
     /\bcreme patissiere\b/,
-    /\bchantilly cream\b/
+    /\bchantilly cream\b/,
+    /\bhoney\b/,
+    /\bmilk\b/,
+    /\bcocoa\b/,
+    /\bcacao\b/,
+    /\bmayonnaise\b/,
+    /\bworcestershire\b/,
+    /\bmirin\b/,
+    /\boyster sauce\b/,
+    /\bsake\b/,
+    /\brum\b/,
+    /\bwhisky\b/,
+    /\bmadeira\b/,
+    /\bamaretto\b/,
+    /\bkirsch\b/,
+    /\brose water\b/,
+    /\brose petals?\b/,
+    /\bstar anise\b/,
+    /\bbaharat\b/,
+    /\bras el hanout\b/,
+    /\bza'atar\b/,
+    /\bsriracha\b/,
+    /\bpomegranate dressing\b/,
+    /\bevaporated milk\b/,
+    /\bvanilla bean\b/,
+    /\bvanilla pod\b/,
+    /\bpuff pastry\b/,
+    /\bfilo pastry\b/,
+    /\bsourdough\b/,
+    /\bflatbreads?\b/,
+    /\bkecap\b/,
+    /\bmiso\b/,
+    /\bsea herbs\b/,
+    /\btoum\b/,
+    /\bgochujang\b/,
   ];
   if (spiceOrDetailPatterns.some((re) => re.test(cleaned))) return null;
 
   const aliasPatterns = [
-    { re: /\bspaghetti\b|\blinguine\b|\bpasta\b/, value: "pasta" },
+    { re: /\bspaghetti\b|\blinguine\b|\bpasta\b|\bpici\b/, value: "pasta" },
     { re: /\bshin of beef\b|\bbeef\b|\bveal\b/, value: "beef" },
     { re: /\bporridge oats?\b|\boats?\b/, value: "oats" },
     { re: /\bbaby beets?\b|\bbeets?\b|\bbeetroot\b/, value: "beetroots" },
     { re: /\bespresso\b|\bcoffee\b/, value: "coffee" },
     { re: /\bcoriander\b|\bcilantro\b/, value: "coriander" },
-    { re: /\bparsley\b|\btarragon\b|\bsage\b|\bthyme\b|\bbasil\b/, value: "herbs" },
+    { re: /\bparsley\b|\btarragon\b|\bsage\b|\bthyme\b|\bbasil\b|\bchervil\b|\bchives?\b/, value: "herbs" },
     { re: /\bdill\b/, value: "dill" },
     { re: /\bmint\b/, value: "mint" },
     { re: /\brosemary\b/, value: "rosemary" },
@@ -6200,7 +6279,7 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\bleeks?\b/, value: "leeks" },
     { re: /\bonions?\b|spring onions?/, value: "onions" },
     { re: /\bcelery(?: stick| sticks| stalk| stalks)?\b/, value: "celery" },
-    { re: /\bguanciale\b|\bpork\b|\bsmoked pork belly\b|\bpolish smoked ring sausage\b|\bwiejska kielbasa\b|\bkaiserfleisch\b|\bsausage meat\b/, value: "pork" },
+    { re: /\bguanciale\b|\bpork\b|\bsmoked pork belly\b|\bpolish smoked ring sausage\b|\bwiejska kielbasa\b|\bkaiserfleisch\b|\bsausage meat\b|\bnduja\b|\bbacon\b/, value: "pork" },
     { re: /\bduck\b/, value: "duck" },
     { re: /\bchicken\b/, value: "chicken" },
     { re: /\blamb\b/, value: "lamb" },
@@ -6208,17 +6287,17 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\btuna\b/, value: "tuna" },
     { re: /\blobster\b/, value: "lobster" },
     { re: /\bsalmon fillets?\b|\bsalmon\b/, value: "salmon" },
-    { re: /\brainbow trout\b|\btrout\b|\bwhite fish\b|\bhaddock\b|\bbarramundi\b|\bmahi mahi\b|\bbass groper\b|\bsnapper\b|\bfish\b/, value: "fish" },
+    { re: /\brainbow trout\b|\btrout\b|\bwhite fish\b|\bhaddock\b|\bbarramundi\b|\bmahi mahi\b|\bbass groper\b|\bsnapper\b|\bjohn dory\b|\bfish\b/, value: "fish" },
     { re: /\bmussels?\b|\bclams?\b|\bvongole\b/, value: "shellfish" },
-    { re: /\bking prawns?\b|\bprawns?\b|\bshrimp\b/, value: "prawns" },
+    { re: /\bking prawns?\b|\btiger prawns?\b|\bprawns?\b|\bshrimp\b/, value: "prawns" },
     { re: /\bchipolatas?\b|\bsausage(s)?\b/, value: "sausages" },
-    { re: /\bbroad beans?\b|\bsoya beans?\b|\bwhite beans?\b/, value: "beans" },
+    { re: /\bbroad beans?\b|\bsoya beans?\b|\bwhite beans?\b|\bbutter beans?\b|\bcannellini\b|\bborlotti\b/, value: "beans" },
     { re: /\blentils?\b/, value: "lentils" },
     { re: /\bchickpeas?\b/, value: "chickpeas" },
     { re: /\bmung bean sprouts?\b|\bsprouts?\b/, value: "sprouts" },
     { re: /\bchia\b|\blinseeds?\b|\bflaxseeds?\b|\bsunflower seeds?\b|\bpepitas\b|\bpumpkin seeds?\b|\bsesame seeds?\b|\bpoppyseeds?\b|\bpoppy seeds?\b|\bpomegranate seeds?\b|\bseeds?\b/, value: "seeds" },
     { re: /\bcornmeal\b|\bsemolina\b|\bpolenta\b/, value: "polenta" },
-    { re: /\bamaranth\b|\bsorghum\b|\bvialone nano rice\b|\bfreekeh\b|\bmixed wild rice\b|\brice\b|\bcouscous\b|\bquinoa\b|\bgrains?\b/, value: "grains" },
+    { re: /\bamaranth\b|\bsorghum\b|\bvialone nano rice\b|\bfreekeh\b|\bmixed wild rice\b|\brice\b|\bcouscous\b|\bquinoa\b|\bspelt\b|\bbuckwheat\b|\bgrains?\b/, value: "grains" },
     { re: /\bwalnuts?\b|\balmonds?\b|\bcashews?\b|\bhazelnuts?\b|\bpistachios?\b|\bpeanuts?\b|\bnuts?\b/, value: "nuts" },
     { re: /\bcherry tomatoes?\b|\bnapoli tomato sauce\b|\btomato sauce\b|\bpassata\b|\btomatoes?\b/, value: "tomatoes" },
     { re: /\bradicchio\b/, value: "radicchio" },
@@ -6230,8 +6309,8 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\bfield mushrooms?\b|\bbutton mushrooms?\b|\bmushrooms?\b|\bporcini\b/, value: "mushrooms" },
     { re: /\banchov(?:y|ies)\b/, value: "anchovy" },
     { re: /\bdark chocolate\b|\bchocolate\b/, value: "chocolate" },
-    { re: /\bparmigiano reggiano\b|\bparm\b|\bparmesan\b|\bmanchego\b|\bfeta\b|\bred leicester\b|\bricotta\b|\bpecorino\b|\bstracciatella\b|\bgruy[eè]re\b|\bemmenthaler\b|\bfontina\b|\bmozzarella\b|\bcheddar\b|\bblue cheese\b|\bcheese\b/, value: "cheese" },
-    { re: /\byoghurt\b|creme fraiche|crème fraîche|buttermilk/, value: "yoghurt" },
+    { re: /\bparmigiano reggiano\b|\bparm\b|\bparmesan\b|\bmanchego\b|\bfeta\b|\bred leicester\b|\bricotta\b|\bpecorino\b|\bstracciatella\b|\bgruy[eè]re\b|\bemmenthaler\b|\bfontina\b|\bmozzarella\b|\bcheddar\b|\bblue cheese\b|\broquefort\b|\bgorgonzola\b|\blancashire\b|\bmascarpone\b|\bcheeses?\b|\bcheese\b/, value: "cheese" },
+    { re: /\byoghurt\b|\byogurt\b|creme fraiche|crème fraîche|buttermilk|\bkefir\b|\blabneh?\b/, value: "yoghurt" },
     { re: /\blivers?\b/, value: "liver" },
     { re: /\bspinach\b/, value: "spinach" },
     { re: /\bice cream\b/, value: "ice cream" },
@@ -6241,14 +6320,14 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\bcarrots?\b/, value: "carrot" },
     { re: /\bcoconut\b/, value: "coconut" },
     { re: /\bdry white wine\b|\bwhite wine\b|\bvermouth\b|\bwine\b/, value: "wine" },
-    { re: /\bwhole ?wheat japanese noodles\b|\bnoodles\b/, value: "noodles" },
+    { re: /\bwhole ?wheat japanese noodles\b|\bramen noodles?\b|\bnoodles\b/, value: "noodles" },
     { re: /\bpotatoes?\b/, value: "potato" },
     { re: /\bsauerkraut\b|\bcabbage\b/, value: "cabbage" },
     { re: /\bwatercress\b|\bcress\b/, value: "watercress" },
-    { re: /\blettuce\b|\bcos lettuce\b|\biceberg lettuce\b/, value: "lettuce" },
+    { re: /\blettuce\b|\bcos lettuces?\b|\biceberg lettuces?\b/, value: "lettuce" },
     { re: /\barugula\b|\brocket\b/, value: "rocket" },
     { re: /\bcucumbers?\b|\bpersian cucumbers?\b/, value: "cucumber" },
-    { re: /\bcorn\b/, value: "corn" },
+    { re: /\bcorn\b|\bsweetcorn\b/, value: "corn" },
     { re: /\bpears?\b/, value: "pear" },
     { re: /\bgelatine\b|\bgelatin\b/, value: "gelatine" },
     { re: /\bkombu\b/, value: "kombu" },
@@ -6257,10 +6336,24 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\bhalva\b/, value: "halva" },
     { re: /\bsweetened condensed milk\b/, value: "sweetened condensed milk" },
     { re: /\blemons?\b/, value: "lemon" },
-    { re: /\blimes?\b/, value: "limes" },
+    { re: /\blimes?\b|\bkaffir lime\b|\bmakrut lime\b/, value: "limes" },
     { re: /\boranges?\b/, value: "orange" },
     { re: /\bmandarins?\b/, value: "mandarin" },
-    { re: /\bbresaola\b|\bprosciutto\b/, value: "cured meat" }
+    { re: /\bbresaola\b|\bprosciutto\b/, value: "cured meat" },
+    { re: /\bpineapple\b/, value: "pineapple" },
+    { re: /\bplums?\b/, value: "plums" },
+    { re: /\bfigs?\b/, value: "figs" },
+    { re: /\bpeas\b/, value: "peas" },
+    { re: /\bpumpkin\b|\bbutternut squash\b|\bbutternut\b|\bkabocha\b|\bcrown prince pumpkin\b/, value: "pumpkin" },
+    { re: /\blemongrass\b/, value: "lemongrass" },
+    { re: /\bceleriac\b/, value: "celeriac" },
+    { re: /\bkohlrabi\b/, value: "kohlrabi" },
+    { re: /\bsumac\b/, value: "sumac" },
+    { re: /\bdukkah\b/, value: "dukkah" },
+    { re: /\btahini\b/, value: "tahini" },
+    { re: /\bpomegranate\b/, value: "pomegranate" },
+    { re: /\bavocado\b/, value: "avocado" },
+    { re: /\bradish(?:es)?\b/, value: "radishes" },
   ];
 
   for (const alias of aliasPatterns) {

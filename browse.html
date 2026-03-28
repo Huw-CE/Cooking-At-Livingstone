@@ -92,54 +92,92 @@
    PLANNER FILTER BAR
 ══════════════════════════════════════════ */
 .planner-filter-bar {
-  padding: 14px 40px;
+  padding: 20px 40px;
   border-bottom: 1px solid var(--border);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
   background: var(--cream);
+}
+/* Row 1: Search + Dropdowns */
+.pf-row {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  margin-bottom: 14px;
 }
 .planner-filter-search {
   flex: 1;
-  min-width: 160px;
-  max-width: 260px;
+  min-width: 0;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 8px 14px;
+  border-radius: 10px;
+  padding: 10px 16px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--ink);
   outline: none;
   transition: border-color 0.18s;
 }
 .planner-filter-search:focus { border-color: var(--rust); }
 .planner-filter-search::placeholder { color: var(--muted); }
-.pf-group {
+
+/* Dropdown selects for Cuisine & Category */
+.pf-select-wrap {
+  position: relative;
+  min-width: 170px;
+}
+.pf-select-wrap::after {
+  content: '▾';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: var(--muted);
+  pointer-events: none;
+}
+.pf-select {
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 32px 10px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.18s;
+}
+.pf-select:focus { border-color: var(--rust); }
+.pf-select.has-value { color: var(--rust); border-color: var(--rust); }
+
+/* Row 2: Time toggles + Clear */
+.pf-time-row {
   display: flex;
   align-items: center;
   gap: 6px;
-  flex-wrap: wrap;
 }
-.pf-label {
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 2px;
+.pf-time-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--muted);
-  margin-right: 4px;
+  margin-right: 6px;
 }
-.pf-chip {
+.pf-time-btn {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 5px 12px;
+  border-radius: 8px;
+  padding: 7px 14px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--brown);
   cursor: pointer;
@@ -147,22 +185,54 @@
   white-space: nowrap;
   user-select: none;
 }
-.pf-chip:hover { border-color: var(--rust); color: var(--rust); }
-.pf-chip.active { background: var(--ink); border-color: var(--ink); color: var(--warm-white); }
-.pf-clear {
+.pf-time-btn:hover { border-color: var(--rust); color: var(--rust); }
+.pf-time-btn.active { background: var(--ink); border-color: var(--ink); color: var(--warm-white); }
+.pf-active-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-left: auto;
+}
+.pf-active-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--rust);
+  color: var(--warm-white);
+  border-radius: 8px;
+  padding: 6px 10px 6px 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.pf-active-pill button {
+  background: none;
+  border: none;
+  color: var(--warm-white);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 0 0 4px;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.pf-active-pill button:hover { opacity: 1; }
+.pf-clear {
   background: none;
   border: none;
   font-family: 'DM Sans', sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   color: var(--muted);
   cursor: pointer;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 6px 10px;
+  border-radius: 6px;
   transition: color 0.15s;
 }
 .pf-clear:hover { color: var(--rust); }
+
+/* Hide legacy chip classes (no longer used, kept for safety) */
+.pf-group, .pf-label, .pf-chip { display: none; }
 
 /* ══════════════════════════════════════════
    PLANNER LAYOUT
@@ -430,7 +500,7 @@
     padding: 24px 20px 120px;
   }
   .planner-sidebar { position: static; }
-  .planner-filter-bar { padding: 12px 20px; }
+  .planner-filter-bar { padding: 14px 20px; }
   .page-tabs { padding: 0 20px; }
 }
 
@@ -438,10 +508,11 @@
   .page-tabs { padding: 0 16px; }
   .page-tab { padding: 12px 16px; font-size: 11px; letter-spacing: 1.5px; }
 
-  .planner-filter-bar { padding: 10px 16px; gap: 8px; }
-  .planner-filter-search { max-width: 100%; min-width: 100%; }
-  .pf-group { width: 100%; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
-  .pf-group::-webkit-scrollbar { display: none; }
+  .planner-filter-bar { padding: 12px 16px; }
+  .pf-row { flex-direction: column; gap: 8px; }
+  .pf-select-wrap { min-width: 0; width: 100%; }
+  .pf-time-row { flex-wrap: wrap; }
+  .pf-active-filters { margin-left: 0; margin-top: 4px; width: 100%; flex-wrap: wrap; }
 
   .planner-layout { padding: 16px 16px 140px; gap: 20px; }
 
@@ -522,8 +593,8 @@
     <li><a href="browse.html" class="nav-link is-active">Recipes</a></li>
     <li><a href="authors.html" class="nav-link">Authors</a></li>
     <li><a href="categories.html" class="nav-link">Categories</a></li>
-    <li><a href="ingredient-index.html" class="nav-link">Ingredient Index</a></li>
     <li><a href="browse.html?tab=planner" class="nav-link">Meal Planner</a></li>
+    <li><a href="ingredient-index.html" class="nav-link">Ingredient Index</a></li>
   </ul>
 </nav>
 
@@ -608,17 +679,28 @@
 
     <!-- Filter bar -->
     <div class="planner-filter-bar" id="planner-filter-bar">
-      <input type="search" class="planner-filter-search" id="p-search" placeholder="Search recipes…" autocomplete="off">
-      <div class="pf-group">
-        <span class="pf-label">Time</span>
-        <button class="pf-chip active" data-pf="time" data-val="all">All</button>
-        <button class="pf-chip" data-pf="time" data-val="quick">⚡ ≤30m</button>
-        <button class="pf-chip" data-pf="time" data-val="weeknight">🍳 ≤1hr</button>
-        <button class="pf-chip" data-pf="time" data-val="weekend">🥘 Weekend</button>
+      <div class="pf-row">
+        <input type="search" class="planner-filter-search" id="p-search" placeholder="Search recipes…" autocomplete="off">
+        <div class="pf-select-wrap">
+          <select class="pf-select" id="p-cuisine-select">
+            <option value="">All Cuisines</option>
+          </select>
+        </div>
+        <div class="pf-select-wrap">
+          <select class="pf-select" id="p-category-select">
+            <option value="">All Categories</option>
+          </select>
+        </div>
       </div>
-      <div class="pf-group" id="p-cuisine-chips"></div>
-      <div class="pf-group" id="p-category-chips"></div>
-      <button class="pf-clear" id="p-clear-filters">Clear filters</button>
+      <div class="pf-time-row">
+        <span class="pf-time-label">Time</span>
+        <button class="pf-time-btn active" data-pf="time" data-val="all">All</button>
+        <button class="pf-time-btn" data-pf="time" data-val="quick">⚡ ≤30m</button>
+        <button class="pf-time-btn" data-pf="time" data-val="weeknight">🍳 ≤1hr</button>
+        <button class="pf-time-btn" data-pf="time" data-val="weekend">🥘 Weekend</button>
+        <div class="pf-active-filters" id="pf-active-filters"></div>
+        <button class="pf-clear" id="p-clear-filters" style="display:none;">Clear filters</button>
+      </div>
     </div>
 
     <!-- Main layout -->
@@ -1008,14 +1090,36 @@ function pPassesFilters(r) {
   return true;
 }
 
-// ── Planner filter chips ──────────────────────────────────────────────────
+// ── Planner filter dropdowns ──────────────────────────────────────────────
 function renderPlannerChips() {
-  document.getElementById('p-cuisine-chips').innerHTML =
-    '<span class="pf-label">Cuisine</span>' +
-    ALL_CUISINES.map(c => `<button class="pf-chip${pFilters.cuisine===c?' active':''}" data-pf="cuisine" data-val="${escHtml(c)}">${escHtml(c)}</button>`).join('');
-  document.getElementById('p-category-chips').innerHTML =
-    '<span class="pf-label">Category</span>' +
-    ALL_CATEGORIES.map(c => `<button class="pf-chip${pFilters.category===c?' active':''}" data-pf="category" data-val="${escHtml(c)}">${escHtml(c)}</button>`).join('');
+  // Populate cuisine select
+  const cuisineSel = document.getElementById('p-cuisine-select');
+  cuisineSel.innerHTML = '<option value="">All Cuisines</option>' +
+    ALL_CUISINES.map(c => `<option value="${escHtml(c)}"${pFilters.cuisine===c?' selected':''}>${escHtml(c)}</option>`).join('');
+  cuisineSel.classList.toggle('has-value', !!pFilters.cuisine);
+
+  // Populate category select
+  const catSel = document.getElementById('p-category-select');
+  catSel.innerHTML = '<option value="">All Categories</option>' +
+    ALL_CATEGORIES.map(c => `<option value="${escHtml(c)}"${pFilters.category===c?' selected':''}>${escHtml(c)}</option>`).join('');
+  catSel.classList.toggle('has-value', !!pFilters.category);
+
+  // Render active filter pills
+  renderActiveFilterPills();
+}
+
+function renderActiveFilterPills() {
+  const el = document.getElementById('pf-active-filters');
+  const pills = [];
+  if (pFilters.cuisine) pills.push(`<span class="pf-active-pill">${escHtml(pFilters.cuisine)} <button data-clear="cuisine">×</button></span>`);
+  if (pFilters.category) pills.push(`<span class="pf-active-pill">${escHtml(pFilters.category)} <button data-clear="category">×</button></span>`);
+  if (pFilters.time && pFilters.time !== 'all') {
+    const labels = { quick: '⚡ ≤30m', weeknight: '🍳 ≤1hr', weekend: '🥘 Weekend' };
+    pills.push(`<span class="pf-active-pill">${labels[pFilters.time]} <button data-clear="time">×</button></span>`);
+  }
+  el.innerHTML = pills.join('');
+  document.getElementById('p-clear-filters').style.display =
+    (pFilters.cuisine || pFilters.category || pFilters.search || (pFilters.time && pFilters.time !== 'all')) ? '' : 'none';
 }
 
 // ── Planner recipe grid with chunked rendering ────────────────────────────
@@ -1237,21 +1341,46 @@ function showShoppingSection() {
 }
 
 // ── Planner event wiring ──────────────────────────────────────────────────
-// Filter chips
+// Time toggle buttons
 document.getElementById('planner-filter-bar').addEventListener('click', e => {
-  const chip = e.target.closest('[data-pf]');
-  if (!chip) return;
-  const { pf, val } = chip.dataset;
-  if (pf === 'time') {
-    pFilters.time = val;
+  const timeBtn = e.target.closest('[data-pf="time"]');
+  if (timeBtn) {
+    pFilters.time = timeBtn.dataset.val;
     document.querySelectorAll('[data-pf="time"]').forEach(c => c.classList.remove('active'));
-    chip.classList.add('active');
-  } else if (pf === 'cuisine') {
-    pFilters.cuisine = pFilters.cuisine === val ? null : val;
-  } else if (pf === 'category') {
-    pFilters.category = pFilters.category === val ? null : val;
+    timeBtn.classList.add('active');
+    renderActiveFilterPills();
+    renderPlannerGrid();
+    return;
   }
-  renderPlannerChips();
+  // Clear individual active filter pills
+  const clearBtn = e.target.closest('[data-clear]');
+  if (clearBtn) {
+    const field = clearBtn.dataset.clear;
+    if (field === 'cuisine') { pFilters.cuisine = null; }
+    if (field === 'category') { pFilters.category = null; }
+    if (field === 'time') {
+      pFilters.time = 'all';
+      document.querySelectorAll('[data-pf="time"]').forEach(c => c.classList.remove('active'));
+      document.querySelector('[data-pf="time"][data-val="all"]').classList.add('active');
+    }
+    renderPlannerChips();
+    renderPlannerGrid();
+  }
+});
+
+// Cuisine dropdown
+document.getElementById('p-cuisine-select').addEventListener('change', e => {
+  pFilters.cuisine = e.target.value || null;
+  e.target.classList.toggle('has-value', !!pFilters.cuisine);
+  renderActiveFilterPills();
+  renderPlannerGrid();
+});
+
+// Category dropdown
+document.getElementById('p-category-select').addEventListener('change', e => {
+  pFilters.category = e.target.value || null;
+  e.target.classList.toggle('has-value', !!pFilters.category);
+  renderActiveFilterPills();
   renderPlannerGrid();
 });
 
@@ -1270,6 +1399,10 @@ document.getElementById('p-clear-filters').addEventListener('click', () => {
   document.getElementById('p-search').value = '';
   document.querySelectorAll('[data-pf="time"]').forEach(c => c.classList.remove('active'));
   document.querySelector('[data-pf="time"][data-val="all"]').classList.add('active');
+  document.getElementById('p-cuisine-select').value = '';
+  document.getElementById('p-cuisine-select').classList.remove('has-value');
+  document.getElementById('p-category-select').value = '';
+  document.getElementById('p-category-select').classList.remove('has-value');
   renderPlannerChips();
   renderPlannerGrid();
 });

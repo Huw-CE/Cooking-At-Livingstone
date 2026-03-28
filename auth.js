@@ -13,6 +13,20 @@
   function injectNavButton() {
     const navLinks = document.getElementById('nav-links');
     if (!navLinks) return;
+
+    // Search button — injected just before account button
+    const searchLi = document.createElement('li');
+    searchLi.className = 'nav-search-li';
+    searchLi.innerHTML = `
+      <button class="nav-search-btn" id="nav-search-btn" aria-label="Search recipes">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>`;
+    navLinks.appendChild(searchLi);
+    document.getElementById('nav-search-btn').addEventListener('click', openSearch);
+
+    // Account button
     const li = document.createElement('li');
     li.className = 'nav-account-li';
     li.innerHTML = `
@@ -21,6 +35,102 @@
       </button>`;
     navLinks.appendChild(li);
     document.getElementById('nav-account-btn').addEventListener('click', openModal);
+  }
+
+  // ── INJECT SEARCH OVERLAY ──────────────────────────
+  function injectSearch() {
+    const wrap = document.createElement('div');
+    wrap.innerHTML = `
+      <div class="search-overlay" id="search-overlay">
+        <div class="search-overlay-inner">
+          <div class="search-bar-wrap">
+            <svg class="search-bar-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input type="search" class="search-bar-input" id="search-bar-input" placeholder="Search recipes, authors, categories…" autocomplete="off" spellcheck="false">
+            <button class="search-bar-close" id="search-bar-close" aria-label="Close search">×</button>
+          </div>
+          <div class="search-results" id="search-results"></div>
+        </div>
+      </div>`;
+    document.body.appendChild(wrap);
+
+    document.getElementById('search-bar-input').addEventListener('input', handleSearch);
+    document.getElementById('search-bar-close').addEventListener('click', closeSearch);
+    document.getElementById('search-overlay').addEventListener('click', e => {
+      if (e.target === document.getElementById('search-overlay')) closeSearch();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeSearch();
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+    });
+  }
+
+  function openSearch() {
+    const overlay = document.getElementById('search-overlay');
+    if (!overlay) return;
+    overlay.classList.add('is-open');
+    setTimeout(() => document.getElementById('search-bar-input').focus(), 60);
+  }
+
+  function closeSearch() {
+    const overlay = document.getElementById('search-overlay');
+    if (!overlay) return;
+    overlay.classList.remove('is-open');
+    document.getElementById('search-bar-input').value = '';
+    document.getElementById('search-results').innerHTML = '';
+  }
+
+  function handleSearch(e) {
+    const q = e.target.value.trim().toLowerCase();
+    const resultsEl = document.getElementById('search-results');
+    if (!q || q.length < 2) { resultsEl.innerHTML = ''; return; }
+
+    const recipes = window.RECIPES;
+    if (!recipes) {
+      resultsEl.innerHTML = '<div class="search-no-results">Recipes not loaded yet.</div>';
+      return;
+    }
+
+    const matches = recipes.filter(r =>
+      r.title.toLowerCase().includes(q) ||
+      r.author.toLowerCase().includes(q) ||
+      r.category.toLowerCase().includes(q) ||
+      (r.book || '').toLowerCase().includes(q) ||
+      r.ingredients.some(i => i.toLowerCase().includes(q))
+    ).slice(0, 24);
+
+    if (!matches.length) {
+      resultsEl.innerHTML = `<div class="search-no-results">No recipes found for "<em>${q}</em>".</div>`;
+      return;
+    }
+
+    // Group by category
+    const grouped = matches.reduce((a, r) => { (a[r.category] || (a[r.category] = [])).push(r); return a; }, {});
+
+    resultsEl.innerHTML = Object.keys(grouped).sort().map(cat =>
+      `<div class="search-group">
+        <div class="search-group-label">${cat}</div>
+        ${grouped[cat].map(r =>
+          `<a href="recipe.html?id=${r.id}" class="search-result-item" onclick="document.getElementById('search-overlay').classList.remove('is-open')">
+            <div class="search-result-title">${highlight(r.title, q)}</div>
+            <div class="search-result-meta">${r.author} · ${r.time || '—'}</div>
+          </a>`
+        ).join('')}
+      </div>`
+    ).join('');
+  }
+
+  function highlight(text, q) {
+    const idx = text.toLowerCase().indexOf(q);
+    if (idx === -1) return escapeHtml(text);
+    return escapeHtml(text.slice(0, idx)) +
+      `<mark>${escapeHtml(text.slice(idx, idx + q.length))}</mark>` +
+      escapeHtml(text.slice(idx + q.length));
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
 
   // ── INJECT MODAL ────────────────────────────────────
@@ -97,8 +207,11 @@
           <div class="auth-user-name" id="auth-user-name" style="display:none;"></div>
           <div class="auth-user-email" id="auth-user-email"></div>
           <div class="auth-fav-summary">
-            <span class="auth-fav-heart">❤️</span>
-            <span id="auth-fav-count">0</span> recipes saved to favourites
+            <a href="browse.html?favs=1" class="auth-fav-link">
+              <span class="auth-fav-heart">❤️</span>
+              <span id="auth-fav-count">0</span> recipes saved to favourites
+              <span class="auth-fav-arrow">→</span>
+            </a>
           </div>
           <button class="auth-signout" id="auth-signout">Sign Out</button>
         </div>
@@ -280,6 +393,7 @@
   async function init() {
     injectNavButton();
     injectModal();
+    injectSearch();
 
     const sb = window._sb;
     if (!sb) return;

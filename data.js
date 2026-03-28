@@ -6421,3 +6421,6 @@ function attachFavListeners(container, favIds) {
     });
   });
 }
+
+// Expose globals for auth.js search (IIFE can't see const from other scripts)
+window.RECIPES = RECIPES;

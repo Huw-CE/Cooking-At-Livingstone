@@ -414,9 +414,41 @@
   font-size: 24px;
   font-weight: 400;
   color: var(--ink);
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
 .related-section h2 em { font-style: italic; color: var(--rust); }
+.related-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px; color: var(--muted); margin-bottom: 18px;
+}
+.related-section + .related-section {
+  margin-top: 40px;
+}
+
+/* Shared ingredient tags under recipe cards */
+.r-card-shared {
+  display: flex; flex-wrap: wrap; gap: 4px;
+  margin-top: 8px; padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+.shared-tag {
+  display: inline-block;
+  background: rgba(192,90,44,0.09);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px; font-weight: 500;
+  color: var(--rust);
+}
+.r-card-shared-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px; font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-bottom: 2px;
+}
 
 </style>
 </head>
@@ -475,6 +507,45 @@ if (!recipe) {
 
   // Related recipes: same author, excluding this one (up to 3)
   const related = RECIPES.filter(r => r.author === recipe.author && r.id !== recipe.id).slice(0, 3);
+
+  // ── Ingredient crossover: find recipes sharing the most ingredients ────
+  const myIngs = new Set();
+  recipe.ingredients.forEach(i => { const n = normalizeIng(i); if (n) myIngs.add(n); });
+
+  const crossoverResults = [];
+  RECIPES.forEach(r => {
+    if (r.id === recipe.id) return;
+    const sharedSet = new Set();
+    r.ingredients.forEach(i => { const n = normalizeIng(i); if (n && myIngs.has(n)) sharedSet.add(n); });
+    const shared = [...sharedSet];
+    if (shared.length >= 2) crossoverResults.push({ recipe: r, shared, score: shared.length });
+  });
+  crossoverResults.sort((a, b) => b.score - a.score);
+  const topCrossover = crossoverResults.slice(0, 3);
+
+  // ── Pairings: same cuisine, different category, no overlap with crossover
+  const myCuisine = (CUISINE_META[recipe.author] || {}).cuisine || 'International';
+  const crossoverIds = new Set(topCrossover.map(x => x.recipe.id));
+  const relatedIds = new Set(related.map(r => r.id));
+  const pairings = RECIPES.filter(r => {
+    if (r.id === recipe.id || crossoverIds.has(r.id) || relatedIds.has(r.id)) return false;
+    const rCuisine = (CUISINE_META[r.author] || {}).cuisine || 'International';
+    return rCuisine === myCuisine && r.category !== recipe.category;
+  });
+  // Shuffle and pick 3
+  for (let i = pairings.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pairings[i], pairings[j]] = [pairings[j], pairings[i]];
+  }
+  const topPairings = pairings.slice(0, 3);
+
+  // Helper: card with shared ingredient tags
+  function crossoverCardHtml(entry) {
+    const html = recipeCardHtml(entry.recipe, favIds);
+    const tags = entry.shared.map(n => `<span class="shared-tag">${escHtml(INDEX[n]?.display || n)}</span>`).join('');
+    // Inject shared tags before closing </a> of the card
+    return html.replace(/<\/a>\s*$/, `<div class="r-card-shared"><span class="r-card-shared-label">Shared</span>${tags}</div></a>`);
+  }
 
   document.getElementById('page-content').innerHTML = `
 
@@ -555,7 +626,27 @@ if (!recipe) {
         </div>
       </div>
 
-      <!-- RELATED RECIPES -->
+      <!-- PAIRINGS — same cuisine, different category -->
+      ${topPairings.length ? `
+      <div class="related-section">
+        <h2>Pairs well <em>with</em></h2>
+        <p class="related-subtitle">${escHtml(myCuisine)} recipes that complement this ${escHtml(recipe.category.toLowerCase())}</p>
+        <div class="recipe-grid">
+          ${topPairings.map(r => recipeCardHtml(r, favIds)).join('')}
+        </div>
+      </div>` : ''}
+
+      <!-- INGREDIENT CROSSOVER — most shared ingredients -->
+      ${topCrossover.length ? `
+      <div class="related-section">
+        <h2>Shared <em>Ingredients</em></h2>
+        <p class="related-subtitle">Recipes that use many of the same ingredients — great for optimising your shop</p>
+        <div class="recipe-grid">
+          ${topCrossover.map(entry => crossoverCardHtml(entry)).join('')}
+        </div>
+      </div>` : ''}
+
+      <!-- MORE FROM AUTHOR -->
       ${related.length ? `
       <div class="related-section">
         <h2>More from <em>${escHtml(recipe.author)}</em></h2>

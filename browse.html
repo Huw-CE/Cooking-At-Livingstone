@@ -234,6 +234,40 @@
 /* Hide legacy chip classes (no longer used, kept for safety) */
 .pf-group, .pf-label, .pf-chip { display: none; }
 
+/* Smart Match button */
+.pf-smart-match {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: var(--card); border: 1.5px solid var(--border);
+  border-radius: 8px; padding: 7px 14px;
+  font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500;
+  color: var(--brown); cursor: pointer; transition: all 0.15s;
+  white-space: nowrap; user-select: none; margin-left: 12px;
+}
+.pf-smart-match:hover { border-color: var(--rust); color: var(--rust); }
+.pf-smart-match.active {
+  background: linear-gradient(135deg, var(--rust), #D4A847);
+  border-color: transparent; color: var(--warm-white);
+}
+.pf-smart-match.disabled {
+  opacity: 0.35; pointer-events: none;
+}
+
+/* Crossover badge on planner cards */
+.crossover-badge {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px;
+  font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500;
+  color: var(--rust); margin-bottom: 6px; line-height: 1.4;
+}
+.crossover-ing {
+  display: inline-block; background: rgba(192,90,44,0.1);
+  border-radius: 4px; padding: 2px 7px; font-size: 10px;
+  color: var(--rust); font-weight: 500;
+}
+.r-card.has-crossover {
+  border-color: var(--rust);
+  box-shadow: 0 0 0 1px rgba(192,90,44,0.15), 0 2px 8px rgba(192,90,44,0.08);
+}
+
 /* ══════════════════════════════════════════
    PLANNER LAYOUT
 ══════════════════════════════════════════ */
@@ -536,6 +570,96 @@
 }
 .shop-empty-icon { font-size: 48px; margin-bottom: 16px; }
 
+/* ── Pantry integration in combined list ── */
+.combined-item.in-pantry {
+  opacity: 0.4; text-decoration: line-through;
+}
+.combined-item.in-pantry .combined-from { display: none; }
+.pantry-toggle {
+  flex-shrink: 0; background: none; border: none;
+  font-size: 14px; cursor: pointer; padding: 0 2px;
+  opacity: 0.35; transition: opacity 0.15s;
+  line-height: 1; title: 'Toggle pantry';
+}
+.pantry-toggle:hover { opacity: 1; }
+.pantry-toggle.is-in { opacity: 0.7; }
+.combined-item.in-pantry .pantry-badge {
+  display: inline-block; font-size: 9px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--gold); text-decoration: none; margin-left: auto;
+}
+.combined-item:not(.in-pantry) .pantry-badge { display: none; }
+
+/* ── Pantry management tab ── */
+.pantry-content { padding: 0; }
+.pantry-section {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(250,246,239,0.08);
+}
+.pantry-section:last-child { border-bottom: none; }
+.pantry-section-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 12px;
+}
+.pantry-items {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.pantry-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: rgba(250,246,239,0.1); border: 1px solid rgba(250,246,239,0.15);
+  border-radius: 6px; padding: 6px 10px;
+  font-family: 'DM Sans', sans-serif; font-size: 12px;
+  color: rgba(250,246,239,0.8); transition: all 0.15s;
+}
+.pantry-chip .pantry-chip-remove {
+  background: none; border: none; color: rgba(250,246,239,0.4);
+  font-size: 13px; cursor: pointer; padding: 0; line-height: 1;
+  transition: color 0.15s;
+}
+.pantry-chip .pantry-chip-remove:hover { color: var(--rust); }
+
+.pantry-add-chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: none; border: 1px dashed rgba(250,246,239,0.2);
+  border-radius: 6px; padding: 6px 10px;
+  font-family: 'DM Sans', sans-serif; font-size: 12px;
+  color: rgba(250,246,239,0.4); cursor: pointer;
+  transition: all 0.15s;
+}
+.pantry-add-chip:hover { border-color: var(--gold); color: var(--gold); }
+.pantry-add-chip.is-added {
+  background: rgba(212,168,71,0.12); border-style: solid;
+  border-color: rgba(212,168,71,0.3); color: var(--gold);
+}
+
+.pantry-count-badge {
+  font-size: 9px; background: rgba(212,168,71,0.25); color: var(--gold);
+  padding: 1px 5px; border-radius: 8px; margin-left: 4px;
+  min-width: 14px; text-align: center; font-weight: 600;
+}
+
+.pantry-search-row {
+  display: flex; gap: 8px; margin-bottom: 14px;
+}
+.pantry-search-input {
+  flex: 1; background: rgba(250,246,239,0.08); border: 1px solid rgba(250,246,239,0.15);
+  border-radius: 8px; padding: 8px 12px; font-family: 'DM Sans', sans-serif;
+  font-size: 13px; color: var(--warm-white); outline: none;
+  transition: border-color 0.18s;
+}
+.pantry-search-input:focus { border-color: var(--gold); }
+.pantry-search-input::placeholder { color: rgba(250,246,239,0.3); }
+.pantry-add-btn {
+  background: var(--gold); border: none; border-radius: 8px;
+  padding: 8px 14px; font-family: 'DM Sans', sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--ink); cursor: pointer;
+  transition: background 0.15s; white-space: nowrap;
+}
+.pantry-add-btn:hover { background: #c9a33c; }
+
 /* ══════════════════════════════════════════
    MOBILE: PLANNER BOTTOM TOOLBAR
 ══════════════════════════════════════════ */
@@ -750,6 +874,7 @@
         <button class="pf-time-btn" data-pf="time" data-val="quick">⚡ ≤30m</button>
         <button class="pf-time-btn" data-pf="time" data-val="weeknight">🍳 ≤1hr</button>
         <button class="pf-time-btn" data-pf="time" data-val="weekend">🥘 Weekend</button>
+        <button class="pf-smart-match" id="p-smart-match">🔗 Smart Match</button>
         <div class="pf-active-filters" id="pf-active-filters"></div>
         <button class="pf-clear" id="p-clear-filters" style="display:none;">Clear filters</button>
       </div>
@@ -812,7 +937,8 @@
       </div>
       <div class="shopping-tabs">
         <button class="shop-tab-btn active" data-stab="recipe">By Recipe</button>
-        <button class="shop-tab-btn" data-stab="combined">Combined &amp; Checkable</button>
+        <button class="shop-tab-btn" data-stab="combined">Combined</button>
+        <button class="shop-tab-btn" data-stab="pantry">Pantry <span class="pantry-count-badge" id="pantry-tab-count">0</span></button>
       </div>
       <div class="shopping-content" id="shopping-content"></div>
     </div>
@@ -1116,8 +1242,53 @@ const STORAGE_KEY = 'cal_plan_v1';
 
 let plan = loadPlan();
 let pendingRecipeId = null;
-let pFilters = { time: 'all', cuisine: null, category: null, search: '' };
+let pFilters = { time: 'all', cuisine: null, category: null, search: '', smartMatch: false };
 let shoppingTab = 'recipe';
+
+// ── Pantry ───────────────────────────────────────────────────────────────
+const PANTRY_KEY = 'pantry_v1';
+let pantry = loadPantry();
+
+function loadPantry() {
+  try { const raw = localStorage.getItem(PANTRY_KEY); if (raw) return new Set(JSON.parse(raw)); } catch(e) {}
+  return new Set();
+}
+function savePantry() {
+  localStorage.setItem(PANTRY_KEY, JSON.stringify([...pantry]));
+  updatePantryBadge();
+}
+function updatePantryBadge() {
+  const el = document.getElementById('pantry-tab-count');
+  if (el) el.textContent = pantry.size;
+}
+
+// Common pantry staples for quick-add suggestions
+const PANTRY_STAPLES = [
+  'salt','pepper','olive oil','butter','garlic','onions','eggs',
+  'flour','sugar','milk','vegetable oil','soy sauce','vinegar',
+  'rice','pasta','stock','lemons','honey','mustard','tomato paste'
+];
+
+window.togglePantryFromList = function(normKey) {
+  if (pantry.has(normKey)) pantry.delete(normKey);
+  else pantry.add(normKey);
+  savePantry();
+  renderShoppingList();
+};
+
+window.removePantryItem = function(normKey) {
+  pantry.delete(normKey);
+  savePantry();
+  renderShoppingList();
+};
+
+window.addPantryStaple = function(name) {
+  // Find the INDEX key matching this staple name
+  const key = Object.keys(INDEX).find(k => INDEX[k].display.toLowerCase() === name.toLowerCase()) || name.toLowerCase();
+  if (pantry.has(key)) { pantry.delete(key); } else { pantry.add(key); }
+  savePantry();
+  renderShoppingList();
+};
 
 // Cached Set of planned ids for O(1) lookup instead of rebuilding array each time
 let plannedIdSet = new Set();
@@ -1148,6 +1319,29 @@ function pPassesFilters(r) {
   return true;
 }
 
+// ── Ingredient crossover scoring ─────────────────────────────────────────
+// Build a Set of all normalised ingredients across planned recipes
+function getPlannedIngredientSet() {
+  const ings = new Set();
+  plannedIdSet.forEach(id => {
+    const meta = RECIPE_META[id];
+    if (meta) meta.normIngs.forEach(n => ings.add(n));
+  });
+  return ings;
+}
+
+// Score a recipe by how many of its ingredients overlap with planned recipes
+function crossoverScore(recipeId, plannedIngs) {
+  const meta = RECIPE_META[recipeId];
+  if (!meta || !meta.normIngs.size) return { score: 0, shared: [] };
+  const shared = [];
+  meta.normIngs.forEach(n => { if (plannedIngs.has(n)) shared.push(n); });
+  return { score: shared.length, shared };
+}
+
+// Cache for current smart-match scores (rebuilt each render)
+let smartMatchScores = Object.create(null);
+
 // ── Planner filter dropdowns ──────────────────────────────────────────────
 function renderPlannerChips() {
   // Populate cuisine select
@@ -1175,9 +1369,10 @@ function renderActiveFilterPills() {
     const labels = { quick: '⚡ ≤30m', weeknight: '🍳 ≤1hr', weekend: '🥘 Weekend' };
     pills.push(`<span class="pf-active-pill">${labels[pFilters.time]} <button data-clear="time">×</button></span>`);
   }
+  if (pFilters.smartMatch) pills.push(`<span class="pf-active-pill">🔗 Smart Match <button data-clear="smartMatch">×</button></span>`);
   el.innerHTML = pills.join('');
   document.getElementById('p-clear-filters').style.display =
-    (pFilters.cuisine || pFilters.category || pFilters.search || (pFilters.time && pFilters.time !== 'all')) ? '' : 'none';
+    (pFilters.cuisine || pFilters.category || pFilters.search || pFilters.smartMatch || (pFilters.time && pFilters.time !== 'all')) ? '' : 'none';
 }
 
 // ── Planner recipe grid with chunked rendering ────────────────────────────
@@ -1188,6 +1383,19 @@ let plannerScrollObserver = null;
 
 function renderPlannerGrid() {
   const filtered = RECIPES.filter(pPassesFilters);
+
+  // Smart Match: score & sort by ingredient crossover with plan
+  smartMatchScores = Object.create(null);
+  if (pFilters.smartMatch && plannedIdSet.size) {
+    const plannedIngs = getPlannedIngredientSet();
+    filtered.forEach(r => { smartMatchScores[r.id] = crossoverScore(r.id, plannedIngs); });
+    filtered.sort((a, b) => {
+      const sa = smartMatchScores[a.id]?.score || 0;
+      const sb = smartMatchScores[b.id]?.score || 0;
+      return sb - sa; // highest overlap first
+    });
+  }
+
   plannerFilteredCache = filtered;
   plannerRenderedCount = 0;
 
@@ -1207,7 +1415,9 @@ function renderPlannerGrid() {
 function buildPlannerCardHtml(r) {
   const summary = RECIPE_SUMMARIES[r.id] || '';
   const inPlan  = plannedIdSet.has(r.id);
-  return `<div class="r-card planner-card">
+  const sm = smartMatchScores[r.id];
+  const hasMatch = sm && sm.score > 0 && !inPlan;
+  return `<div class="r-card planner-card${hasMatch ? ' has-crossover' : ''}">
     <div class="r-cat">${escHtml(r.category)} · ${escHtml(r.author)}</div>
     <div class="r-title">${escHtml(r.title)}</div>
     <div class="r-meta">
@@ -1215,6 +1425,7 @@ function buildPlannerCardHtml(r) {
       <span>👤 Serves ${escHtml(r.serves)}</span>
       ${r.ingredients.length ? `<span>🥕 ${r.ingredients.length} ingredients</span>` : ''}
     </div>
+    ${hasMatch ? `<div class="crossover-badge">${sm.score} shared ingredient${sm.score!==1?'s':''}: ${sm.shared.map(s => `<span class="crossover-ing">${escHtml(INDEX[s]?.display || s)}</span>`).join('')}</div>` : ''}
     <p class="r-summary">${summary}</p>
     <div class="r-card-footer">
       <button class="plan-btn${inPlan?' in-plan':''}" data-plan-id="${r.id}">${inPlan ? '✓ In Plan' : '+ Add to Plan'}</button>
@@ -1307,6 +1518,7 @@ function renderPlannerSidebar() {
     document.getElementById('browse-hero-count').textContent =
       total ? total + ' recipe' + (total !== 1 ? 's' : '') + ' in your plan' : 'Select recipes, build your week, export your shopping list';
   }
+  syncSmartMatchBtn();
 }
 
 // ── Modal ─────────────────────────────────────────────────────────────────
@@ -1467,9 +1679,25 @@ function fmtCombinedLine(g) {
 }
 
 // ── Shopping list renderer ───────────────────────────────────────────────
+function findNormKeyForGroup(g) {
+  // Try to find an INDEX key matching this combined group's name
+  const nameLower = g.name.toLowerCase().replace(/,\s+.*$/, '').replace(/\s*\(.*?\)/g, '').trim();
+  return Object.keys(INDEX).find(k => {
+    const disp = INDEX[k].display.toLowerCase();
+    return nameLower.includes(disp) || disp.includes(nameLower);
+  }) || null;
+}
+
 function renderShoppingList() {
   const ids = getAllPlannedIds();
   const el  = document.getElementById('shopping-content');
+  updatePantryBadge();
+
+  if (shoppingTab === 'pantry') {
+    renderPantryTab(el);
+    return;
+  }
+
   if (!ids.length) {
     el.innerHTML = `<div class="shop-empty"><div class="shop-empty-icon">🛒</div><p>Add recipes to your plan to see the shopping list.</p></div>`;
     return;
@@ -1490,18 +1718,98 @@ function renderShoppingList() {
       </div>`;
     }).join('');
   } else {
+    // Combined view with pantry integration
     const combined = buildCombinedList(ids);
+    // Sort: non-pantry items first, then pantry items at bottom
+    const sorted = [...combined].sort((a, b) => {
+      const aPantry = findNormKeyForGroup(a) && pantry.has(findNormKeyForGroup(a)) ? 1 : 0;
+      const bPantry = findNormKeyForGroup(b) && pantry.has(findNormKeyForGroup(b)) ? 1 : 0;
+      if (aPantry !== bPantry) return aPantry - bPantry;
+      return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+    });
+    const pantryCount = sorted.filter(g => { const k = findNormKeyForGroup(g); return k && pantry.has(k); }).length;
+
     el.innerHTML = `<div class="combined-grid">` +
-      combined.map((g, i) => {
-        const line   = fmtCombinedLine(g);
-        const multi  = g.sources.length > 1;
-        const srcTxt = multi ? g.sources.length + ' recipes' : g.sources[0];
-        return `<label class="combined-item${multi ? ' is-multi' : ''}" id="ci-${i}">
-          <input type="checkbox" onchange="toggleCheck(${i})">
+      sorted.map((g, i) => {
+        const line    = fmtCombinedLine(g);
+        const multi   = g.sources.length > 1;
+        const srcTxt  = multi ? g.sources.length + ' recipes' : g.sources[0];
+        const normKey = findNormKeyForGroup(g);
+        const inPantry = normKey && pantry.has(normKey);
+
+        return `<label class="combined-item${multi ? ' is-multi' : ''}${inPantry ? ' in-pantry' : ''}" id="ci-${i}">
+          <input type="checkbox" ${inPantry ? 'checked' : ''} onchange="toggleCheck(${i})">
           <span>${escHtml(line)}</span>
-          <span class="combined-from">${escHtml(srcTxt)}</span>
+          ${inPantry ? `<span class="pantry-badge">In Pantry</span>` : `<span class="combined-from">${escHtml(srcTxt)}</span>`}
+          ${normKey ? `<button class="pantry-toggle${inPantry ? ' is-in' : ''}" onclick="event.preventDefault();togglePantryFromList('${escHtml(normKey)}')" title="${inPantry ? 'Remove from pantry' : 'Add to pantry'}">${inPantry ? '✕' : '🏠'}</button>` : ''}
         </label>`;
-      }).join('') + `</div>`;
+      }).join('') +
+      (pantryCount > 0 ? `<div style="text-align:center;padding:12px;color:rgba(250,246,239,0.3);font-size:11px;font-style:italic;">${pantryCount} item${pantryCount!==1?'s':''} already in your pantry</div>` : '') +
+      `</div>`;
+  }
+}
+
+function renderPantryTab(el) {
+  const pantryKeys = [...pantry].sort((a, b) => {
+    const da = INDEX[a]?.display || a;
+    const db = INDEX[b]?.display || b;
+    return da.localeCompare(db);
+  });
+
+  // Find which staples are already in pantry
+  const stapleStatuses = PANTRY_STAPLES.map(name => {
+    const key = Object.keys(INDEX).find(k => INDEX[k].display.toLowerCase() === name.toLowerCase()) || name.toLowerCase();
+    return { name, key, inPantry: pantry.has(key) };
+  });
+
+  el.innerHTML = `
+    <div class="pantry-content">
+      <div class="pantry-section">
+        <div class="pantry-section-title">Your Pantry (${pantryKeys.length} item${pantryKeys.length!==1?'s':''})</div>
+        ${pantryKeys.length ? `<div class="pantry-items">
+          ${pantryKeys.map(k => {
+            const disp = INDEX[k]?.display || k;
+            return `<span class="pantry-chip">
+              ${escHtml(disp)}
+              <button class="pantry-chip-remove" onclick="removePantryItem('${escHtml(k)}')" title="Remove">×</button>
+            </span>`;
+          }).join('')}
+        </div>` : `<p style="color:rgba(250,246,239,0.35);font-size:13px;font-style:italic;">No items in your pantry yet. Add staples below or use the 🏠 button in the combined list.</p>`}
+      </div>
+
+      <div class="pantry-section">
+        <div class="pantry-section-title">Add Custom Item</div>
+        <div class="pantry-search-row">
+          <input type="text" class="pantry-search-input" id="pantry-custom-input" placeholder="e.g. coconut oil, chilli flakes…" autocomplete="off">
+          <button class="pantry-add-btn" id="pantry-custom-add">Add</button>
+        </div>
+      </div>
+
+      <div class="pantry-section">
+        <div class="pantry-section-title">Common Staples — tap to toggle</div>
+        <div class="pantry-items">
+          ${stapleStatuses.map(s =>
+            `<button class="pantry-add-chip${s.inPantry ? ' is-added' : ''}" onclick="addPantryStaple('${escHtml(s.name)}')">${s.inPantry ? '✓ ' : '+ '}${escHtml(s.name.charAt(0).toUpperCase() + s.name.slice(1))}</button>`
+          ).join('')}
+        </div>
+      </div>
+    </div>`;
+
+  // Wire up custom add
+  const input = document.getElementById('pantry-custom-input');
+  const addBtn = document.getElementById('pantry-custom-add');
+  if (input && addBtn) {
+    const doAdd = () => {
+      const val = input.value.trim();
+      if (!val) return;
+      const key = Object.keys(INDEX).find(k => INDEX[k].display.toLowerCase() === val.toLowerCase()) || val.toLowerCase();
+      pantry.add(key);
+      savePantry();
+      input.value = '';
+      renderShoppingList();
+    };
+    addBtn.addEventListener('click', doAdd);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') doAdd(); });
   }
 }
 
@@ -1545,6 +1853,10 @@ document.getElementById('planner-filter-bar').addEventListener('click', e => {
       document.querySelectorAll('[data-pf="time"]').forEach(c => c.classList.remove('active'));
       document.querySelector('[data-pf="time"][data-val="all"]').classList.add('active');
     }
+    if (field === 'smartMatch') {
+      pFilters.smartMatch = false;
+      document.getElementById('p-smart-match').classList.remove('active');
+    }
     renderPlannerChips();
     renderPlannerGrid();
   }
@@ -1577,7 +1889,7 @@ document.getElementById('p-search').addEventListener('input', e => {
 });
 
 document.getElementById('p-clear-filters').addEventListener('click', () => {
-  pFilters = { time: 'all', cuisine: null, category: null, search: '' };
+  pFilters = { time: 'all', cuisine: null, category: null, search: '', smartMatch: false };
   document.getElementById('p-search').value = '';
   document.querySelectorAll('[data-pf="time"]').forEach(c => c.classList.remove('active'));
   document.querySelector('[data-pf="time"][data-val="all"]').classList.add('active');
@@ -1585,9 +1897,27 @@ document.getElementById('p-clear-filters').addEventListener('click', () => {
   document.getElementById('p-cuisine-select').classList.remove('has-value');
   document.getElementById('p-category-select').value = '';
   document.getElementById('p-category-select').classList.remove('has-value');
+  document.getElementById('p-smart-match').classList.remove('active');
   renderPlannerChips();
   renderPlannerGrid();
 });
+
+// Smart Match toggle
+document.getElementById('p-smart-match').addEventListener('click', () => {
+  pFilters.smartMatch = !pFilters.smartMatch;
+  document.getElementById('p-smart-match').classList.toggle('active', pFilters.smartMatch);
+  renderPlannerGrid();
+});
+
+// Update smart match button state when plan changes
+function syncSmartMatchBtn() {
+  const btn = document.getElementById('p-smart-match');
+  btn.classList.toggle('disabled', !plannedIdSet.size);
+  if (!plannedIdSet.size && pFilters.smartMatch) {
+    pFilters.smartMatch = false;
+    btn.classList.remove('active');
+  }
+}
 
 // Add to plan / remove from plan — uses targeted DOM update for removals
 document.getElementById('p-recipe-grid').addEventListener('click', e => {

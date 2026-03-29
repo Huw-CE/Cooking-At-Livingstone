@@ -522,6 +522,13 @@
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   max-width: 140px; flex-shrink: 0; margin-left: auto;
 }
+.combined-item.is-multi {
+  background: rgba(212,168,71,0.08);
+  border-radius: 4px; padding-left: 6px; padding-right: 6px;
+}
+.combined-item.is-multi .combined-from {
+  color: var(--gold); font-weight: 500; font-style: normal;
+}
 
 .shop-empty {
   text-align: center; padding: 60px 20px;
@@ -1339,10 +1346,134 @@ function buildShoppingText() {
   return out;
 }
 
+// ── Ingredient parser & combiner ──────────────────────────────────────────
+function parseIngQty(raw) {
+  let text = raw.trim();
+  // Remove parenthetical weight hints like "(15g)", "(30g)"
+  const clean = text.replace(/\s*\(\d+\s*g\)/gi, '').trim();
+
+  // Match leading quantity: 2, 1.5, 1/2, then optional "x 120"
+  const qm = clean.match(/^(\d+(?:\.\d+)?)\s*(?:\/(\d+))?\s*(?:x\s+(\d+(?:\.\d+)?))?\s*(.*)/i);
+  if (!qm || !qm[4]) return { qty: null, unit: '', name: text, key: text.toLowerCase().replace(/\s+/g,' ').trim() };
+
+  let num = parseFloat(qm[1]);
+  if (qm[2]) num /= parseFloat(qm[2]);          // fraction: 1/2 → 0.5
+  const xMult = qm[3] ? parseFloat(qm[3]) : null;
+  let rest = qm[4].trim();
+
+  // Strip leading articles before unit matching ("1/2 a bunch" → "bunch …")
+  rest = rest.replace(/^(?:a\s+|the\s+)+/i, '').trim();
+
+  // Try to match a unit at the start of the remaining text
+  const unitRe = /^(g|kg|ml|l|litres?|tablespoons?|tbsp|teaspoons?|tsp|heaped\s+tablespoons?|heaped\s+teaspoons?|bunch(?:es)?|cloves?|slices?|pinch(?:es)?|cm|sprigs?|rashers?|tins?|jars?|cans?|cups?|handfuls?|heads?|sticks?|sheets?|knobs?)\b\s*(?:of\s+)?/i;
+  const um = rest.match(unitRe);
+
+  let unit = '';
+  if (um) {
+    unit = um[1].toLowerCase();
+    rest = rest.slice(um[0].length).trim();
+
+    // "N x Munit container …" — e.g. "1 x 480g jar of …" → unit = jar, qty = 1
+    // "N x Munit name …"      — e.g. "2 x 120g salmon"  → unit = g,   qty = 240
+    if (xMult && /^(g|kg|ml|l)$/.test(unit)) {
+      const containerRe = /^(jars?|tins?|cans?|bottles?|packets?|bags?|boxes?|cartons?|pots?|tubs?)\s*(?:of\s+)?/i;
+      const cm = rest.match(containerRe);
+      if (cm) {
+        // Container pattern: keep the leading count, use container as unit
+        unit = cm[1].toLowerCase().replace(/s$/, '');
+        rest = rest.slice(cm[0].length).trim();
+        // num stays as the original count (e.g. 1)
+      } else {
+        num *= xMult;  // pure weight multiplication
+      }
+    }
+
+    // Normalise unit to singular canonical form
+    unit = unit
+      .replace(/^tablespoons?$/, 'tbsp').replace(/^teaspoons?$/, 'tsp')
+      .replace(/^litres?$/, 'l')
+      .replace(/^bunches$/, 'bunch').replace(/^cloves$/, 'clove')
+      .replace(/^slices$/, 'slice').replace(/^sprigs$/, 'sprig')
+      .replace(/^rashers$/, 'rasher').replace(/^pinches$/, 'pinch')
+      .replace(/^tins$/, 'tin').replace(/^jars$/, 'jar')
+      .replace(/^cans$/, 'can').replace(/^cups$/, 'cup')
+      .replace(/^handfuls$/, 'handful').replace(/^heads$/, 'head')
+      .replace(/^sticks$/, 'stick').replace(/^sheets$/, 'sheet')
+      .replace(/^knobs$/, 'knob');
+    unit = unit.replace(/heaped\s+tablespoons?/, 'heaped tbsp')
+               .replace(/heaped\s+teaspoons?/, 'heaped tsp');
+  }
+
+  // Build a grouping key: lowercase name, strip parentheticals & trailing modifiers
+  const keyName = rest.toLowerCase()
+    .replace(/\s*\(.*?\)/g, '')      // remove (skin on, ...) etc.
+    .replace(/,\s+.*$/, '')           // remove ", ideally with leaves" etc.
+    .replace(/\s+/g, ' ').trim();
+
+  return { qty: num, unit, name: rest || text, key: unit + '|' + keyName };
+}
+
+function fmtQty(n) {
+  if (n === 0)    return '0';
+  const whole = Math.floor(n);
+  const frac  = n - whole;
+  const fracs = [[0.25,'¼'],[0.33,'⅓'],[0.5,'½'],[0.67,'⅔'],[0.75,'¾']];
+  let fracStr = '';
+  for (const [v,s] of fracs) { if (Math.abs(frac - v) < 0.04) { fracStr = s; break; } }
+  if (frac < 0.01)   return whole.toString();
+  if (fracStr)        return whole > 0 ? whole + fracStr : fracStr;
+  return n % 1 === 0 ? n.toString() : n.toFixed(1);
+}
+
+function buildCombinedList(ids) {
+  const groups = new Map();
+  ids.forEach(id => {
+    const r = RECIPE_BY_ID[id];
+    if (!r) return;
+    r.ingredients.forEach(raw => {
+      if (isHeaderIngredient(raw) || !raw.trim()) return;
+      const p = parseIngQty(raw);
+      if (!groups.has(p.key)) {
+        groups.set(p.key, { totalQty: 0, unit: p.unit, name: p.name, sources: [], hasQty: p.qty !== null });
+      }
+      const g = groups.get(p.key);
+      g.sources.push(r.title);
+      if (p.qty !== null) g.totalQty += p.qty;
+    });
+  });
+
+  // Convert to sorted array
+  return [...groups.values()].sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+}
+
+function fmtCombinedLine(g) {
+  if (!g.hasQty) return g.name;
+  let q = g.totalQty, u = g.unit;
+  // Auto-convert: 1000g→1kg, 1000ml→1l
+  if (u === 'g'  && q >= 1000) { q /= 1000; u = 'kg'; }
+  if (u === 'ml' && q >= 1000) { q /= 1000; u = 'l'; }
+  const qs = fmtQty(q);
+  if (['g','kg','ml','l','cm'].includes(u)) return `${qs}${u} ${g.name}`;
+  if (u) {
+    // Pluralise unit when qty > 1
+    let uDisp = u;
+    if (q > 1 && !/^heaped/.test(u)) {
+      const irregulars = { bunch:'bunches', pinch:'pinches' };
+      uDisp = irregulars[u] || u + 's';
+    }
+    return `${qs} ${uDisp} ${g.name}`;
+  }
+  return `${qs} × ${g.name}`;
+}
+
+// ── Shopping list renderer ───────────────────────────────────────────────
 function renderShoppingList() {
   const ids = getAllPlannedIds();
   const el  = document.getElementById('shopping-content');
-  if (!ids.length) { el.innerHTML = ''; return; }
+  if (!ids.length) {
+    el.innerHTML = `<div class="shop-empty"><div class="shop-empty-icon">🛒</div><p>Add recipes to your plan to see the shopping list.</p></div>`;
+    return;
+  }
 
   if (shoppingTab === 'recipe') {
     el.innerHTML = ids.map(id => {
@@ -1359,23 +1490,18 @@ function renderShoppingList() {
       </div>`;
     }).join('');
   } else {
-    const all = [];
-    ids.forEach(id => {
-      const r = RECIPE_BY_ID[id];
-      if (!r) return;
-      r.ingredients.forEach(ing => {
-        if (!isHeaderIngredient(ing) && ing.trim()) all.push({ text: ing.trim(), from: r.title });
-      });
-    });
-    all.sort((a,b) => a.text.localeCompare(b.text));
+    const combined = buildCombinedList(ids);
     el.innerHTML = `<div class="combined-grid">` +
-      all.map((item, i) =>
-        `<label class="combined-item" id="ci-${i}">
+      combined.map((g, i) => {
+        const line   = fmtCombinedLine(g);
+        const multi  = g.sources.length > 1;
+        const srcTxt = multi ? g.sources.length + ' recipes' : g.sources[0];
+        return `<label class="combined-item${multi ? ' is-multi' : ''}" id="ci-${i}">
           <input type="checkbox" onchange="toggleCheck(${i})">
-          <span>${escHtml(item.text)}</span>
-          <span class="combined-from">${escHtml(item.from)}</span>
-        </label>`
-      ).join('') + `</div>`;
+          <span>${escHtml(line)}</span>
+          <span class="combined-from">${escHtml(srcTxt)}</span>
+        </label>`;
+      }).join('') + `</div>`;
   }
 }
 

@@ -369,6 +369,17 @@
 .view-list-btn:hover { background: var(--rust); }
 .view-list-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 .view-list-btn:disabled:hover { background: var(--ink); }
+.account-link-btn {
+  display: block; width: 100%; margin-top: 8px;
+  background: none; border: 1px solid var(--border);
+  border-radius: 8px; padding: 11px;
+  font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--brown); text-align: center; text-decoration: none;
+  cursor: pointer; transition: border-color 0.18s, color 0.18s;
+  box-sizing: border-box;
+}
+.account-link-btn:hover { border-color: var(--rust); color: var(--rust); }
 
 /* ══════════════════════════════════════════
    DAY PICKER MODAL
@@ -907,7 +918,7 @@
           <div class="planner-footer">
             <div class="plan-count" id="plan-count">No recipes planned yet</div>
             <button class="view-list-btn" id="view-list-btn" disabled>View Shopping List →</button>
-            <a href="account.html#plan-section" class="view-list-btn" style="display:block;margin-top:8px;background:none;border:1px solid var(--border);color:var(--brown);text-align:center;text-decoration:none;padding:11px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:all 0.18s;" onmouseover="this.style.borderColor='var(--rust)';this.style.color='var(--rust)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--brown)'">My Account →</a>
+            <a href="account.html#plan-section" class="account-link-btn">My Account →</a>
           </div>
         </div>
       </aside>
@@ -1457,7 +1468,6 @@ function buildPlannerCardHtml(r) {
       <a href="recipe.html?id=${r.id}" class="view-btn" target="_blank">View →</a>
     </div>
   </div>`;
-}
 }
 
 // ── Planner sidebar ───────────────────────────────────────────────────────

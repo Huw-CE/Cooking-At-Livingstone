@@ -281,6 +281,12 @@
 
   // ── HELPERS ─────────────────────────────────────────
   function openModal()  {
+    // If already signed in, go to the account page instead of opening the modal
+    const btn = document.getElementById('nav-account-btn');
+    if (btn && btn.classList.contains('is-signed-in')) {
+      window.location.href = 'account.html';
+      return;
+    }
     document.getElementById('auth-modal').classList.add('is-open');
     document.getElementById('auth-backdrop').classList.add('is-open');
   }

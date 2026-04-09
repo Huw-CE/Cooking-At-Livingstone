@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account — Cooking at Livingstone</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+
+/* ══════════════════════════════════════════
+   ACCOUNT HERO
+══════════════════════════════════════════ */
+.account-hero {
+  background: var(--ink);
+  padding: 44px 40px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.account-hero::before {
+  content: '';
+  position: absolute; top: -80px; right: -80px;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(212,168,71,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.account-hero::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--rust), var(--gold), var(--sage));
+}
+
+.account-profile-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.account-avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: rgba(212,168,71,0.15);
+  border: 2px solid rgba(212,168,71,0.4);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 400;
+  color: var(--gold);
+  flex-shrink: 0;
+  position: relative; overflow: hidden;
+}
+.account-avatar::before {
+  content: '';
+  position: absolute; inset: 0; opacity: 0.07;
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.5) 0px, rgba(255,255,255,0.5) 1px, transparent 1px, transparent 8px);
+}
+.account-avatar span { position: relative; z-index: 1; }
+
+.account-profile-info {
+  flex: 1;
+}
+.account-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px; font-weight: 400;
+  color: var(--warm-white);
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+.account-name em { color: var(--gold); font-style: italic; }
+.account-email {
+  font-size: 13px;
+  color: rgba(250,246,239,0.45);
+  margin-bottom: 16px;
+}
+.account-stats {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.account-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.account-stat-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 400;
+  color: var(--warm-white);
+  line-height: 1;
+}
+.account-stat-label {
+  font-size: 9px; font-weight: 500;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(250,246,239,0.4);
+  margin-top: 2px;
+}
+
+.account-actions {
+  position: relative; z-index: 1;
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(250,246,239,0.1);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.account-action-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(250,246,239,0.08);
+  border: 1px solid rgba(250,246,239,0.15);
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 1px; text-transform: uppercase;
+  color: rgba(250,246,239,0.65);
+  cursor: pointer;
+  transition: all 0.18s;
+  text-decoration: none;
+}
+.account-action-btn:hover {
+  background: rgba(250,246,239,0.14);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.account-action-btn.danger:hover {
+  border-color: var(--rust);
+  color: rgba(250,246,239,0.8);
+  background: rgba(192,90,44,0.15);
+}
+.account-action-btn.primary {
+  background: var(--rust);
+  border-color: var(--rust);
+  color: var(--warm-white);
+}
+.account-action-btn.primary:hover {
+  background: #a04a22;
+  border-color: #a04a22;
+}
+
+/* Signed-out state */
+.signin-prompt {
+  padding: 64px 40px;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.signin-prompt-icon { font-size: 48px; margin-bottom: 20px; }
+.signin-prompt h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px; font-weight: 400;
+  color: var(--ink); margin-bottom: 10px;
+}
+.signin-prompt h2 em { color: var(--rust); font-style: italic; }
+.signin-prompt p {
+  font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 24px;
+}
+.signin-prompt-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--ink); color: var(--warm-white);
+  border: none; border-radius: 8px;
+  padding: 12px 28px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  cursor: pointer; transition: background 0.18s;
+  text-decoration: none;
+}
+.signin-prompt-btn:hover { background: var(--rust); }
+
+/* ══════════════════════════════════════════
+   ACCOUNT SECTIONS
+══════════════════════════════════════════ */
+.account-section {
+  padding: 44px 40px 0;
+}
+.account-section-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--border);
+}
+.account-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px; font-weight: 400;
+  color: var(--ink);
+}
+.account-section-title em { color: var(--rust); font-style: italic; }
+.account-section-link {
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--muted); text-decoration: none;
+  transition: color 0.15s;
+}
+.account-section-link:hover { color: var(--rust); }
+
+.account-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--muted);
+}
+.account-empty-icon { font-size: 36px; margin-bottom: 12px; }
+.account-empty p { font-size: 14px; font-style: italic; }
+.account-empty a { color: var(--rust); }
+
+/* ══════════════════════════════════════════
+   FAVOURITES — collapsible category groups
+══════════════════════════════════════════ */
+#fav-recipe-grid .group-header {
+  margin-top: 20px;
+}
+#fav-recipe-grid .group-header:first-child {
+  margin-top: 0;
+}
+
+/* ══════════════════════════════════════════
+   FAVOURITE AUTHORS
+══════════════════════════════════════════ */
+.authors-note {
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.account-authors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* ══════════════════════════════════════════
+   MEAL PLAN SECTION
+══════════════════════════════════════════ */
+.plan-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.plan-column-title {
+  font-size: 10px; font-weight: 500;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.plan-day-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(232,221,208,0.5);
+}
+.plan-day-row:last-child { border-bottom: none; }
+.plan-day-label {
+  font-size: 9px; font-weight: 500;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--muted);
+  width: 30px; flex-shrink: 0;
+}
+.plan-day-recipe {
+  flex: 1; min-width: 0;
+  font-size: 13px; font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  transition: color 0.15s;
+}
+.plan-day-recipe:hover { color: var(--rust); }
+.plan-day-empty {
+  flex: 1;
+  font-size: 12px;
+  color: rgba(156,139,122,0.5);
+  font-style: italic;
+}
+.plan-day-meta {
+  font-size: 10px; color: var(--muted);
+  flex-shrink: 0; white-space: nowrap;
+}
+
+.plan-dessert-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(232,221,208,0.5);
+}
+.plan-dessert-row:last-child { border-bottom: none; }
+.plan-dessert-num {
+  font-size: 9px; font-weight: 500;
+  letter-spacing: 1.5px; color: var(--muted);
+  width: 14px; flex-shrink: 0;
+}
+
+.plan-actions-row {
+  display: flex; gap: 12px; align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.plan-action-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--ink); color: var(--warm-white);
+  border-radius: 8px; padding: 10px 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 1px; text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.18s;
+}
+.plan-action-link:hover { background: var(--rust); }
+.plan-action-link.secondary {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--brown);
+}
+.plan-action-link.secondary:hover { border-color: var(--rust); color: var(--rust); background: none; }
+
+/* ══════════════════════════════════════════
+   SHOPPING LIST & PANTRY — dark section
+══════════════════════════════════════════ */
+.shop-section {
+  background: var(--ink);
+  padding: 44px 40px 56px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 44px;
+}
+.shop-section::before {
+  content: '';
+  position: absolute; top: -80px; right: -80px;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(212,168,71,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.shop-section-header {
+  display: flex; align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  position: relative; z-index: 1;
+}
+.shop-section-header .section-title {
+  color: var(--warm-white);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 400;
+  margin: 0;
+}
+.shop-section-header .section-title em { color: var(--gold); }
+
+.shop-export-row {
+  display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  margin-bottom: 20px;
+  position: relative; z-index: 1;
+}
+.shop-export-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(250,246,239,0.1);
+  border: 1px solid rgba(250,246,239,0.2);
+  border-radius: 8px; padding: 9px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px; font-weight: 500;
+  color: var(--warm-white);
+  cursor: pointer; transition: all 0.18s;
+  letter-spacing: 0.5px; text-decoration: none;
+}
+.shop-export-btn:hover { background: rgba(250,246,239,0.18); border-color: var(--gold); }
+.shop-export-btn.primary { background: var(--rust); border-color: var(--rust); }
+.shop-export-btn.primary:hover { background: #a04a22; }
+
+.shop-tabs {
+  display: flex; gap: 0;
+  border-bottom: 1px solid rgba(250,246,239,0.15);
+  margin-bottom: 28px;
+  position: relative; z-index: 1;
+}
+.shop-tab-btn {
+  background: none; border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(250,246,239,0.45);
+  cursor: pointer; transition: all 0.18s;
+  margin-bottom: -1px;
+}
+.shop-tab-btn:hover { color: var(--warm-white); }
+.shop-tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+.shop-content { position: relative; z-index: 1; }
+
+.shopping-recipe-block { margin-bottom: 36px; }
+.shopping-recipe-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; font-weight: 700;
+  color: var(--warm-white); margin-bottom: 4px;
+}
+.shopping-recipe-meta {
+  font-size: 11px; color: rgba(250,246,239,0.4);
+  font-style: italic; margin-bottom: 12px;
+}
+.shopping-ing-list {
+  list-style: none; display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 4px 24px;
+}
+.shopping-ing-item {
+  font-size: 13px; color: rgba(250,246,239,0.8);
+  padding: 5px 0 5px 18px; position: relative;
+  border-bottom: 1px solid rgba(250,246,239,0.06); line-height: 1.45;
+}
+.shopping-ing-item::before {
+  content: '—'; position: absolute; left: 0;
+  color: var(--gold); font-size: 10px; top: 7px;
+}
+.shopping-ing-item.is-header {
+  font-size: 9px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); padding-left: 0; border-bottom: none;
+  margin-top: 10px; grid-column: 1/-1;
+}
+.shopping-ing-item.is-header::before { display: none; }
+
+.combined-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 4px 32px; }
+.combined-item {
+  display: flex; align-items: baseline; gap: 8px;
+  padding: 6px 0; border-bottom: 1px solid rgba(250,246,239,0.07);
+  font-size: 13px; color: rgba(250,246,239,0.8); line-height: 1.4;
+}
+.combined-item input[type=checkbox] {
+  flex-shrink: 0; width: 14px; height: 14px;
+  cursor: pointer; accent-color: var(--gold);
+}
+.combined-item.checked { text-decoration: line-through; opacity: 0.4; }
+.combined-from {
+  font-size: 10px; color: rgba(250,246,239,0.3); font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  max-width: 100px; flex-shrink: 0;
+}
+.combined-item.is-multi { background: rgba(212,168,71,0.08); border-radius: 4px; padding-left: 6px; padding-right: 6px; }
+.combined-item.is-multi .combined-from { color: var(--gold); font-weight: 500; font-style: normal; }
+.combined-item.in-pantry { opacity: 0.4; text-decoration: line-through; }
+.combined-item.in-pantry .combined-from { display: none; }
+.pantry-toggle {
+  flex-shrink: 0; background: none; border: none;
+  font-size: 14px; cursor: pointer; padding: 0 2px;
+  opacity: 0.35; transition: opacity 0.15s; line-height: 1;
+}
+.pantry-toggle:hover { opacity: 1; }
+.pantry-toggle.is-in { opacity: 0.7; }
+.combined-item.in-pantry .pantry-badge {
+  display: inline-block; font-size: 9px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--gold); text-decoration: none; margin-left: auto;
+}
+.combined-item:not(.in-pantry) .pantry-badge { display: none; }
+
+.shop-empty { text-align: center; padding: 60px 20px; color: rgba(250,246,239,0.4); font-size: 14px; }
+.shop-empty-icon { font-size: 48px; margin-bottom: 16px; }
+
+/* Pantry tab */
+.pantry-content { padding: 0; }
+.pantry-section { padding: 20px 0; border-bottom: 1px solid rgba(250,246,239,0.08); }
+.pantry-section:last-child { border-bottom: none; }
+.pantry-section-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 12px;
+}
+.pantry-items { display: flex; flex-wrap: wrap; gap: 6px; }
+.pantry-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: rgba(250,246,239,0.1); border: 1px solid rgba(250,246,239,0.15);
+  border-radius: 6px; padding: 6px 10px;
+  font-family: 'DM Sans', sans-serif; font-size: 12px;
+  color: rgba(250,246,239,0.8); transition: all 0.15s;
+}
+.pantry-chip .pantry-chip-remove {
+  background: none; border: none; color: rgba(250,246,239,0.4);
+  font-size: 13px; cursor: pointer; padding: 0; line-height: 1; transition: color 0.15s;
+}
+.pantry-chip .pantry-chip-remove:hover { color: var(--rust); }
+.pantry-add-chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: none; border: 1px dashed rgba(250,246,239,0.2);
+  border-radius: 6px; padding: 6px 10px;
+  font-family: 'DM Sans', sans-serif; font-size: 12px;
+  color: rgba(250,246,239,0.4); cursor: pointer; transition: all 0.15s;
+}
+.pantry-add-chip:hover { border-color: var(--gold); color: var(--gold); }
+.pantry-add-chip.is-added { background: rgba(212,168,71,0.12); border-style: solid; border-color: rgba(212,168,71,0.3); color: var(--gold); }
+.pantry-count-badge {
+  font-size: 9px; background: rgba(212,168,71,0.25); color: var(--gold);
+  padding: 1px 5px; border-radius: 8px; margin-left: 4px;
+  min-width: 14px; text-align: center; font-weight: 600;
+}
+.pantry-search-row { display: flex; gap: 8px; margin-bottom: 14px; }
+.pantry-search-input {
+  flex: 1; background: rgba(250,246,239,0.08); border: 1px solid rgba(250,246,239,0.15);
+  border-radius: 8px; padding: 8px 12px;
+  font-family: 'DM Sans', sans-serif; font-size: 13px;
+  color: var(--warm-white); outline: none; transition: border-color 0.18s;
+}
+.pantry-search-input:focus { border-color: var(--gold); }
+.pantry-search-input::placeholder { color: rgba(250,246,239,0.3); }
+.pantry-add-btn {
+  background: var(--gold); border: none; border-radius: 8px;
+  padding: 8px 14px; font-family: 'DM Sans', sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+  color: var(--ink); cursor: pointer; transition: background 0.15s; white-space: nowrap;
+}
+.pantry-add-btn:hover { background: #c9a33c; }
+
+/* ══════════════════════════════════════════
+   AUTHOR CARD (account page version)
+══════════════════════════════════════════ */
+.acc-author-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.22s;
+}
+.acc-author-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(26,20,16,0.1);
+  border-color: transparent;
+}
+.acc-author-img {
+  height: 90px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px; position: relative; overflow: hidden;
+}
+.acc-author-img::before {
+  content: ''; position: absolute; inset: 0; opacity: 0.07;
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.5) 0px, rgba(255,255,255,0.5) 1px, transparent 1px, transparent 10px);
+}
+.acc-author-img span { position: relative; z-index: 1; }
+.acc-author-body { padding: 14px 16px 16px; flex: 1; }
+.acc-author-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px; font-weight: 700;
+  color: var(--ink); margin-bottom: 2px;
+}
+.acc-author-book {
+  font-size: 11px; font-style: italic; color: var(--muted);
+  margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.acc-author-fav-count {
+  font-size: 11px; color: var(--rust); font-weight: 500;
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .plan-overview { grid-template-columns: 1fr; }
+  .account-authors-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+}
+
+@media (max-width: 768px) {
+  .account-hero { padding: 28px 20px 32px; }
+  .account-section { padding: 28px 20px 0; }
+  .shop-section { padding: 32px 20px 48px; margin-top: 32px; }
+  .account-name { font-size: 22px; }
+  .account-stats { gap: 16px; }
+  .plan-actions-row { flex-direction: column; align-items: flex-start; }
+  .shopping-ing-list { grid-template-columns: 1fr; }
+  .combined-grid { grid-template-columns: 1fr; }
+  .account-profile-row { gap: 14px; }
+  .account-avatar { width: 52px; height: 52px; font-size: 20px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-brand">Cooking at <em>Livingstone</em></a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="browse.html" class="nav-link">Recipes &amp; Planner</a></li>
+    <li><a href="authors.html" class="nav-link">Authors</a></li>
+    <li><a href="categories.html" class="nav-link">Categories</a></li>
+    <li><a href="ingredient-index.html" class="nav-link">Ingredient Index</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- ══════════ PROFILE HERO ══════════ -->
+  <div id="account-signed-out" style="display:none;">
+    <div class="signin-prompt">
+      <div class="signin-prompt-icon">👤</div>
+      <h2>Your <em>Account</em></h2>
+      <p>Sign in to sync your favourites across devices. Your locally saved favourites and meal plan are shown below even without signing in.</p>
+      <button class="signin-prompt-btn" id="prompt-signin-btn">Sign In</button>
+    </div>
+  </div>
+
+  <div id="account-signed-in" style="display:none;">
+    <div class="account-hero">
+      <div class="account-profile-row">
+        <div class="account-avatar" id="acc-avatar"><span id="acc-initials">?</span></div>
+        <div class="account-profile-info">
+          <div class="account-name" id="acc-name">Your <em>Account</em></div>
+          <div class="account-email" id="acc-email"></div>
+          <div class="account-stats">
+            <div class="account-stat">
+              <span class="account-stat-value" id="acc-fav-count">0</span>
+              <span class="account-stat-label">Favourites</span>
+            </div>
+            <div class="account-stat">
+              <span class="account-stat-value" id="acc-plan-count">0</span>
+              <span class="account-stat-label">In Planner</span>
+            </div>
+            <div class="account-stat">
+              <span class="account-stat-value" id="acc-pantry-count">0</span>
+              <span class="account-stat-label">Pantry Items</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="account-actions">
+        <a href="browse.html" class="account-action-btn">Recipes &amp; Planner →</a>
+        <button class="account-action-btn" id="acc-shop-link">🛒 Shopping List</button>
+        <button class="account-action-btn danger" id="acc-signout-btn">Sign Out</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shown regardless of sign-in state (local data always present) -->
+  <div id="account-local">
+
+    <!-- ══════════ FAVOURITE RECIPES ══════════ -->
+    <section class="account-section">
+      <div class="account-section-header">
+        <h2 class="account-section-title">Favourite <em>Recipes</em></h2>
+        <a href="browse.html?favs=1" class="account-section-link">Browse all →</a>
+      </div>
+      <div id="fav-recipe-grid">
+        <div class="account-empty">
+          <div class="account-empty-icon">♡</div>
+          <p>No favourites saved yet. <a href="browse.html">Browse recipes</a> and tap ♡ to save them here.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════ FAVOURITE AUTHORS ══════════ -->
+    <section class="account-section">
+      <div class="account-section-header">
+        <h2 class="account-section-title">Your <em>Authors</em></h2>
+        <a href="authors.html" class="account-section-link">All authors →</a>
+      </div>
+      <p class="authors-note">Based on your saved favourite recipes.</p>
+      <div class="account-authors-grid" id="fav-authors-grid">
+        <div class="account-empty">
+          <div class="account-empty-icon">📚</div>
+          <p>Save some favourite recipes to see your top authors here.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════ MEAL PLAN ══════════ -->
+    <section class="account-section" id="plan-section">
+      <div class="account-section-header">
+        <h2 class="account-section-title">Meal <em>Planner</em></h2>
+        <a href="browse.html?tab=planner" class="account-section-link">Edit plan →</a>
+      </div>
+      <div id="plan-overview-container">
+        <div class="account-empty">
+          <div class="account-empty-icon">📋</div>
+          <p>No recipes in your plan yet. <a href="browse.html?tab=planner">Open the Meal Planner</a> to get started.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SHOPPING LIST & PANTRY ══════════ -->
+    <section class="shop-section" id="shop-anchor">
+      <div class="shop-section-header">
+        <h2 class="section-title">Shopping <em>List</em> &amp; Pantry</h2>
+      </div>
+      <div class="shop-export-row" id="shop-export-row">
+        <button class="shop-export-btn" id="acc-copy-btn">📋 Copy List</button>
+        <button class="shop-export-btn" id="acc-download-btn">⬇ Download</button>
+        <button class="shop-export-btn primary" id="acc-email-btn">✉ Email</button>
+      </div>
+      <div class="shop-tabs">
+        <button class="shop-tab-btn active" data-stab="recipe">By Recipe</button>
+        <button class="shop-tab-btn" data-stab="combined">Combined</button>
+        <button class="shop-tab-btn" data-stab="pantry">Pantry <span class="pantry-count-badge" id="acc-pantry-badge">0</span></button>
+      </div>
+      <div class="shop-content" id="acc-shop-content"></div>
+    </section>
+
+  </div><!-- /#account-local -->
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-eyebrow">Kitchen Notes</div>
+      <div class="footer-title">Cook well, share often, <em>eat together</em></div>
+    </div>
+    <div class="footer-note"><a href="submit.html" class="footer-submit-btn">Add a recipe →</a></div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+'use strict';
+
+// ── Shared storage helpers ────────────────────────────────────────────────
+const STORAGE_KEY  = 'cal_plan_v1';
+const PANTRY_KEY   = 'pantry_v1';
+const DAYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+
+function loadPlan() {
+  try { const r = localStorage.getItem(STORAGE_KEY); if (r) return JSON.parse(r); } catch(e) {}
+  return { days: Array(7).fill(null), desserts: Array(3).fill(null) };
+}
+
+function loadPantry() {
+  try { const r = localStorage.getItem(PANTRY_KEY); if (r) return new Set(JSON.parse(r)); } catch(e) {}
+  return new Set();
+}
+function savePantry() {
+  localStorage.setItem(PANTRY_KEY, JSON.stringify([...pantry]));
+  updatePantryBadge();
+}
+
+let pantry     = loadPantry();
+let plan       = loadPlan();
+let shopTab    = 'recipe';
+let favIds     = loadFavs();
+window.lvFavIds = favIds;
+
+// Build O(1) recipe lookup
+const RECIPE_BY_ID = Object.create(null);
+RECIPES.forEach(r => { RECIPE_BY_ID[r.id] = r; });
+
+// Build pre-computed normalised ingredient sets (reuse normalizeIng from data.js)
+const RECIPE_META_ACC = Object.create(null);
+RECIPES.forEach(r => {
+  const normIngs = new Set();
+  r.ingredients.forEach(i => { const n = normalizeIng(i); if (n) normIngs.add(n); });
+  RECIPE_META_ACC[r.id] = { normIngs };
+});
+
+// Planned id set
+function getPlannedIds() {
+  return [...plan.days, ...plan.desserts].filter(Boolean).map(x => x.id);
+}
+const plannedIdSet = new Set(getPlannedIds());
+
+// ── Pantry badge ────────────────────────────────────────────────────────────
+function updatePantryBadge() {
+  const el = document.getElementById('acc-pantry-badge');
+  if (el) el.textContent = pantry.size;
+  const stat = document.getElementById('acc-pantry-count');
+  if (stat) stat.textContent = pantry.size;
+}
+updatePantryBadge();
+
+// ── Update stats in profile ──────────────────────────────────────────────
+function updateStats() {
+  const fcount = document.getElementById('acc-fav-count');
+  const pcount = document.getElementById('acc-plan-count');
+  if (fcount) fcount.textContent = favIds.size;
+  if (pcount) pcount.textContent = plannedIdSet.size;
+  updatePantryBadge();
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+//  FAVOURITE RECIPES — collapsible by category
+// ══════════════════════════════════════════════════════════════════════════
+const favCollapsed = new Set();
+
+function renderFavRecipes() {
+  const grid = document.getElementById('fav-recipe-grid');
+  const favList = RECIPES.filter(r => favIds.has(r.id));
+
+  if (!favList.length) {
+    grid.innerHTML = `<div class="account-empty">
+      <div class="account-empty-icon">♡</div>
+      <p>No favourites saved yet. <a href="browse.html">Browse recipes</a> and tap ♡ to save them here.</p>
+    </div>`;
+    return;
+  }
+
+  // Group by category, sort alphabetically within
+  const grouped = favList.reduce((a, r) => { (a[r.category] || (a[r.category] = [])).push(r); return a; }, {});
+  Object.values(grouped).forEach(arr => arr.sort((a, b) => a.title.localeCompare(b.title)));
+
+  grid.innerHTML = Object.keys(grouped).sort().map(cat => {
+    const hide = favCollapsed.has(cat);
+    const count = grouped[cat].length;
+    return `
+      <div class="group-header" id="fgh_${safeid(cat)}">
+        <span class="group-title">${escHtml(cat)}</span>
+        <span class="group-count">${count}</span>
+        <button class="group-toggle" data-favcol="${escHtml(cat)}">${hide ? 'Show' : 'Hide'}</button>
+      </div>
+      <div class="recipe-grid" id="frg_${safeid(cat)}" style="display:${hide ? 'none' : 'grid'};margin-bottom:8px;">
+        ${grouped[cat].map(r => recipeCardHtml(r, favIds)).join('')}
+      </div>`;
+  }).join('');
+
+  attachFavListeners(grid, favIds);
+  updateStats();
+}
+
+// Collapse toggle
+document.getElementById('fav-recipe-grid').addEventListener('click', e => {
+  const colBtn = e.target.closest('[data-favcol]');
+  if (colBtn) {
+    const c = colBtn.dataset.favcol;
+    favCollapsed.has(c) ? favCollapsed.delete(c) : favCollapsed.add(c);
+    renderFavRecipes();
+  }
+});
+
+// ══════════════════════════════════════════════════════════════════════════
+//  FAVOURITE AUTHORS — derived from favourited recipes
+// ══════════════════════════════════════════════════════════════════════════
+function renderFavAuthors() {
+  const grid = document.getElementById('fav-authors-grid');
+  const favList = RECIPES.filter(r => favIds.has(r.id));
+
+  if (!favList.length) {
+    grid.innerHTML = `<div class="account-empty" style="text-align:left;padding:20px 0;">
+      <div class="account-empty-icon">📚</div>
+      <p>Save some favourite recipes to see your top authors here.</p>
+    </div>`;
+    return;
+  }
+
+  // Count favourites per author
+  const authorCounts = Object.create(null);
+  favList.forEach(r => { authorCounts[r.author] = (authorCounts[r.author] || 0) + 1; });
+
+  // Sort by fav count descending, then alphabetically
+  const authors = Object.keys(authorCounts).sort((a, b) => {
+    const diff = authorCounts[b] - authorCounts[a];
+    if (diff !== 0) return diff;
+    return a.localeCompare(b);
+  });
+
+  grid.innerHTML = authors.map(name => {
+    const m = AUTHOR_META[name] || { initials: name.slice(0, 2).toUpperCase(), color: '#C05A2C', bg: 'rgba(192,90,44,0.1)' };
+    const totalRecipes = RECIPES.filter(r => r.author === name).length;
+    const book = [...new Set(RECIPES.filter(r => r.author === name).map(r => r.book))][0] || '';
+    const favCount = authorCounts[name];
+    return `<a href="author.html?name=${encodeURIComponent(name)}" class="acc-author-card">
+      <div class="acc-author-img" style="background:${m.bg};color:${m.color}"><span>${m.initials}</span></div>
+      <div class="acc-author-body">
+        <div class="acc-author-name">${escHtml(name)}</div>
+        <div class="acc-author-book">${escHtml(book)}</div>
+        <div class="acc-author-fav-count">❤️ ${favCount} favourite${favCount !== 1 ? 's' : ''} · ${totalRecipes} total</div>
+      </div>
+    </a>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+//  MEAL PLAN OVERVIEW
+// ══════════════════════════════════════════════════════════════════════════
+function renderPlanOverview() {
+  const container = document.getElementById('plan-overview-container');
+  const allPlanned = getPlannedIds();
+
+  if (!allPlanned.length) {
+    container.innerHTML = `<div class="account-empty">
+      <div class="account-empty-icon">📋</div>
+      <p>No recipes in your plan yet. <a href="browse.html?tab=planner">Open the Meal Planner</a> to get started.</p>
+    </div>`;
+    return;
+  }
+
+  const dinnerItems = DAYS.map((day, i) => {
+    const slot = plan.days[i];
+    const r = slot ? RECIPE_BY_ID[slot.id] : null;
+    return `<div class="plan-day-row">
+      <span class="plan-day-label">${day}</span>
+      ${r
+        ? `<a href="recipe.html?id=${r.id}" class="plan-day-recipe" title="${escHtml(r.title)}">${escHtml(r.title)}</a>
+           <span class="plan-day-meta">⏱ ${escHtml(r.time)}</span>`
+        : `<span class="plan-day-empty">Empty</span>`}
+    </div>`;
+  }).join('');
+
+  const dessertItems = [0, 1, 2].map(i => {
+    const slot = plan.desserts[i];
+    const r = slot ? RECIPE_BY_ID[slot.id] : null;
+    return `<div class="plan-dessert-row">
+      <span class="plan-dessert-num">${i + 1}</span>
+      ${r
+        ? `<a href="recipe.html?id=${r.id}" class="plan-day-recipe" title="${escHtml(r.title)}">${escHtml(r.title)}</a>
+           <span class="plan-day-meta">⏱ ${escHtml(r.time)}</span>`
+        : `<span class="plan-day-empty">Empty</span>`}
+    </div>`;
+  }).join('');
+
+  const hasDinner  = plan.days.some(Boolean);
+  const hasDessert = plan.desserts.some(Boolean);
+
+  container.innerHTML = `
+    <div class="plan-overview">
+      <div>
+        <div class="plan-column-title">🍽️ Dinners</div>
+        ${dinnerItems}
+      </div>
+      <div>
+        <div class="plan-column-title">🍮 Desserts</div>
+        ${dessertItems}
+      </div>
+    </div>
+    <div class="plan-actions-row">
+      <a href="browse.html?tab=planner" class="plan-action-link">Edit Plan →</a>
+      <button class="plan-action-link secondary" id="plan-view-shop-btn">View Shopping List</button>
+    </div>`;
+
+  document.getElementById('plan-view-shop-btn')?.addEventListener('click', () => {
+    document.getElementById('shop-anchor').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  updateStats();
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+//  SHOPPING LIST HELPERS  (ported from browse.html)
+// ══════════════════════════════════════════════════════════════════════════
+function isHeaderIngredient(s) {
+  const t = s.trim();
+  return t.endsWith(':') || (t === t.toUpperCase() && t.length < 30 && !/\d/.test(t));
+}
+
+function parseIngQty(raw) {
+  let text = raw.trim();
+  const clean = text.replace(/\s*\(\d+\s*g\)/gi, '').trim();
+  const qm = clean.match(/^(\d+(?:\.\d+)?)\s*(?:\/(\d+))?\s*(?:x\s+(\d+(?:\.\d+)?))?\s*(.*)/i);
+  if (!qm || !qm[4]) return { qty: null, unit: '', name: text, key: text.toLowerCase().replace(/\s+/g, ' ').trim() };
+  let num = parseFloat(qm[1]);
+  if (qm[2]) num /= parseFloat(qm[2]);
+  const xMult = qm[3] ? parseFloat(qm[3]) : null;
+  let rest = qm[4].trim().replace(/^(?:a\s+|the\s+)+/i, '').trim();
+  const unitRe = /^(g|kg|ml|l|litres?|tablespoons?|tbsp|teaspoons?|tsp|heaped\s+tablespoons?|heaped\s+teaspoons?|bunch(?:es)?|cloves?|slices?|pinch(?:es)?|cm|sprigs?|rashers?|tins?|jars?|cans?|cups?|handfuls?|heads?|sticks?|sheets?|knobs?)\b\s*(?:of\s+)?/i;
+  const um = rest.match(unitRe);
+  let unit = '';
+  if (um) {
+    unit = um[1].toLowerCase();
+    rest = rest.slice(um[0].length).trim();
+    if (xMult && /^(g|kg|ml|l)$/.test(unit)) {
+      const containerRe = /^(jars?|tins?|cans?|bottles?|packets?|bags?|boxes?|cartons?|pots?|tubs?)\s*(?:of\s+)?/i;
+      const cm2 = rest.match(containerRe);
+      if (cm2) { unit = cm2[1].toLowerCase().replace(/s$/, ''); rest = rest.slice(cm2[0].length).trim(); }
+      else num *= xMult;
+    }
+    unit = unit.replace(/^tablespoons?$/, 'tbsp').replace(/^teaspoons?$/, 'tsp')
+              .replace(/^litres?$/, 'l').replace(/^bunches$/, 'bunch')
+              .replace(/^cloves$/, 'clove').replace(/^slices$/, 'slice')
+              .replace(/^sprigs$/, 'sprig').replace(/^rashers$/, 'rasher')
+              .replace(/^pinches$/, 'pinch').replace(/^tins$/, 'tin')
+              .replace(/^jars$/, 'jar').replace(/^cans$/, 'can')
+              .replace(/^cups$/, 'cup').replace(/^handfuls$/, 'handful')
+              .replace(/^heads$/, 'head').replace(/^sticks$/, 'stick')
+              .replace(/^sheets$/, 'sheet').replace(/^knobs$/, 'knob')
+              .replace(/heaped\s+tablespoons?/, 'heaped tbsp')
+              .replace(/heaped\s+teaspoons?/, 'heaped tsp');
+  }
+  const keyName = rest.toLowerCase().replace(/\s*\(.*?\)/g, '').replace(/,\s+.*$/, '').replace(/\s+/g, ' ').trim();
+  return { qty: num, unit, name: rest || text, key: unit + '|' + keyName };
+}
+
+function fmtQty(n) {
+  if (n === 0) return '0';
+  const whole = Math.floor(n);
+  const frac  = n - whole;
+  const fracs = [[0.25,'¼'],[0.33,'⅓'],[0.5,'½'],[0.67,'⅔'],[0.75,'¾']];
+  let fracStr = '';
+  for (const [v, s] of fracs) { if (Math.abs(frac - v) < 0.04) { fracStr = s; break; } }
+  if (frac < 0.01)  return whole.toString();
+  if (fracStr)      return whole > 0 ? whole + fracStr : fracStr;
+  return n % 1 === 0 ? n.toString() : n.toFixed(1);
+}
+
+function fmtCombinedLine(g) {
+  if (!g.hasQty) return g.name;
+  let q = g.totalQty, u = g.unit;
+  if (u === 'g'  && q >= 1000) { q /= 1000; u = 'kg'; }
+  if (u === 'ml' && q >= 1000) { q /= 1000; u = 'l'; }
+  const qs = fmtQty(q);
+  if (['g','kg','ml','l','cm'].includes(u)) return `${qs}${u} ${g.name}`;
+  if (u) {
+    let uDisp = u;
+    if (q > 1 && !/^heaped/.test(u)) {
+      const irr = { bunch:'bunches', pinch:'pinches' };
+      uDisp = irr[u] || u + 's';
+    }
+    return `${qs} ${uDisp} ${g.name}`;
+  }
+  return `${qs} × ${g.name}`;
+}
+
+function buildCombinedList(ids) {
+  const groups = new Map();
+  ids.forEach(id => {
+    const r = RECIPE_BY_ID[id];
+    if (!r) return;
+    r.ingredients.forEach(raw => {
+      if (isHeaderIngredient(raw) || !raw.trim()) return;
+      const p = parseIngQty(raw);
+      if (!groups.has(p.key)) groups.set(p.key, { totalQty: 0, unit: p.unit, name: p.name, sources: [], hasQty: p.qty !== null });
+      const g = groups.get(p.key);
+      g.sources.push(r.title);
+      if (p.qty !== null) g.totalQty += p.qty;
+    });
+  });
+  return [...groups.values()].sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+}
+
+function findNormKeyForGroup(g) {
+  const nameLower = g.name.toLowerCase().replace(/,\s+.*$/, '').replace(/\s*\(.*?\)/g, '').trim();
+  return Object.keys(INDEX).find(k => {
+    const disp = INDEX[k].display.toLowerCase();
+    return nameLower.includes(disp) || disp.includes(nameLower);
+  }) || null;
+}
+
+function buildShoppingText() {
+  const ids = getPlannedIds();
+  if (!ids.length) return '';
+  let out = 'SHOPPING LIST — Cooking at Livingstone\n' + '═'.repeat(42) + '\n\n';
+  ids.forEach(id => {
+    const r = RECIPE_BY_ID[id];
+    if (!r) return;
+    out += `${r.title.toUpperCase()}\n(${r.author} · ${r.book || ''} · Serves ${r.serves || '?'} · ${r.time || '?'})\n`;
+    r.ingredients.forEach(ing => { out += `  – ${ing}\n`; });
+    out += '\n';
+  });
+  return out;
+}
+
+window.toggleCheck = function(i) {
+  const el = document.getElementById(`aci-${i}`);
+  if (el) el.classList.toggle('checked', el.querySelector('input').checked);
+};
+
+window.togglePantryFromList = function(normKey) {
+  if (pantry.has(normKey)) pantry.delete(normKey);
+  else pantry.add(normKey);
+  savePantry();
+  renderShoppingSection();
+};
+
+window.removePantryItem = function(normKey) {
+  pantry.delete(normKey);
+  savePantry();
+  renderShoppingSection();
+};
+
+const PANTRY_STAPLES = [
+  'salt','pepper','olive oil','butter','garlic','onions','eggs',
+  'flour','sugar','milk','vegetable oil','soy sauce','vinegar',
+  'rice','pasta','stock','lemons','honey','mustard','tomato paste'
+];
+
+window.addPantryStaple = function(name) {
+  const key = Object.keys(INDEX).find(k => INDEX[k].display.toLowerCase() === name.toLowerCase()) || name.toLowerCase();
+  if (pantry.has(key)) pantry.delete(key); else pantry.add(key);
+  savePantry();
+  renderShoppingSection();
+};
+
+// ══════════════════════════════════════════════════════════════════════════
+//  SHOPPING SECTION RENDERER
+// ══════════════════════════════════════════════════════════════════════════
+function renderShoppingSection() {
+  const el = document.getElementById('acc-shop-content');
+  const ids = getPlannedIds();
+  updatePantryBadge();
+
+  if (shopTab === 'pantry') {
+    renderPantryView(el);
+    return;
+  }
+
+  if (!ids.length) {
+    el.innerHTML = `<div class="shop-empty"><div class="shop-empty-icon">🛒</div><p>Add recipes to your <a href="browse.html?tab=planner" style="color:var(--gold);">Meal Planner</a> to see the shopping list.</p></div>`;
+    return;
+  }
+
+  if (shopTab === 'recipe') {
+    el.innerHTML = ids.map(id => {
+      const r = RECIPE_BY_ID[id];
+      if (!r) return '';
+      const ings = r.ingredients.map(ing => {
+        if (isHeaderIngredient(ing)) return `<li class="shopping-ing-item is-header">${escHtml(ing.replace(/:$/, ''))}</li>`;
+        return `<li class="shopping-ing-item">${escHtml(ing)}</li>`;
+      }).join('');
+      return `<div class="shopping-recipe-block">
+        <div class="shopping-recipe-title">${escHtml(r.title)}</div>
+        <div class="shopping-recipe-meta">${escHtml(r.author)} · ${escHtml(r.book || '')} · Serves ${escHtml(r.serves || '?')} · ${escHtml(r.time || '?')}</div>
+        <ul class="shopping-ing-list">${ings}</ul>
+      </div>`;
+    }).join('');
+  } else {
+    // Combined
+    const combined = buildCombinedList(ids);
+    const sorted   = [...combined].sort((a, b) => {
+      const aP = findNormKeyForGroup(a) && pantry.has(findNormKeyForGroup(a)) ? 1 : 0;
+      const bP = findNormKeyForGroup(b) && pantry.has(findNormKeyForGroup(b)) ? 1 : 0;
+      if (aP !== bP) return aP - bP;
+      return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+    });
+    const pantryCount = sorted.filter(g => { const k = findNormKeyForGroup(g); return k && pantry.has(k); }).length;
+
+    el.innerHTML = `<div class="combined-grid">` +
+      sorted.map((g, i) => {
+        const line     = fmtCombinedLine(g);
+        const multi    = g.sources.length > 1;
+        const srcTxt   = multi ? g.sources.length + ' recipes' : g.sources[0];
+        const normKey  = findNormKeyForGroup(g);
+        const inPantry = normKey && pantry.has(normKey);
+        return `<label class="combined-item${multi ? ' is-multi' : ''}${inPantry ? ' in-pantry' : ''}" id="aci-${i}">
+          <input type="checkbox" ${inPantry ? 'checked' : ''} onchange="toggleCheck(${i})">
+          <span>${escHtml(line)}</span>
+          ${inPantry ? `<span class="pantry-badge">In Pantry</span>` : `<span class="combined-from">${escHtml(srcTxt)}</span>`}
+          ${normKey ? `<button class="pantry-toggle${inPantry ? ' is-in' : ''}" onclick="event.preventDefault();togglePantryFromList('${escHtml(normKey)}')" title="${inPantry ? 'Remove from pantry' : 'Add to pantry'}">${inPantry ? '✕' : '🏠'}</button>` : ''}
+        </label>`;
+      }).join('') +
+      (pantryCount > 0 ? `<div style="text-align:center;padding:12px;color:rgba(250,246,239,0.3);font-size:11px;font-style:italic;">${pantryCount} item${pantryCount !== 1 ? 's' : ''} already in your pantry</div>` : '') +
+      `</div>`;
+  }
+}
+
+function renderPantryView(el) {
+  const pantryKeys = [...pantry].sort((a, b) => {
+    const da = INDEX[a]?.display || a;
+    const db = INDEX[b]?.display || b;
+    return da.localeCompare(db);
+  });
+  const stapleStatuses = PANTRY_STAPLES.map(name => {
+    const key = Object.keys(INDEX).find(k => INDEX[k].display.toLowerCase() === name.toLowerCase()) || name.toLowerCase();
+    return { name, key, inPantry: pantry.has(key) };
+  });
+
+  el.innerHTML = `
+    <div class="pantry-content">
+      <div class="pantry-section">
+        <div class="pantry-section-title">Your Pantry (${pantryKeys.length} item${pantryKeys.length !== 1 ? 's' : ''})</div>
+        ${pantryKeys.length
+          ? `<div class="pantry-items">
+              ${pantryKeys.map(k => {
+                const disp = INDEX[k]?.display || k;
+                return `<span class="pantry-chip">${escHtml(disp)}<button class="pantry-chip-remove" onclick="removePantryItem('${escHtml(k)}')" title="Remove">×</button></span>`;
+              }).join('')}
+             </div>`
+          : `<p style="color:rgba(250,246,239,0.35);font-size:13px;font-style:italic;">No items in your pantry yet. Add staples below or use the 🏠 button in the combined list.</p>`}
+      </div>
+      <div class="pantry-section">
+        <div class="pantry-section-title">Add Custom Item</div>
+        <div class="pantry-search-row">
+          <input type="text" class="pantry-search-input" id="acc-pantry-input" placeholder="e.g. coconut oil, chilli flakes…" autocomplete="off">
+          <button class="pantry-add-btn" id="acc-pantry-add">Add</button>
+        </div>
+      </div>
+      <div class="pantry-section">
+        <div class="pantry-section-title">Common Staples — tap to toggle</div>
+        <div class="pantry-items">
+          ${stapleStatuses.map(s =>
+            `<button class="pantry-add-chip${s.inPantry ? ' is-added' : ''}" onclick="addPantryStaple('${escHtml(s.name)}')">${s.inPantry ? '✓ ' : '+ '}${escHtml(s.name.charAt(0).toUpperCase() + s.name.slice(1))}</button>`
+          ).join('')}
+        </div>
+      </div>
+    </div>`;
+
+  // Wire up custom add
+  const input  = document.getElementById('acc-pantry-input');
+  const addBtn = document.getElementById('acc-pantry-add');
+  if (input && addBtn) {
+    const doAdd = () => {
+      const val = input.value.trim();
+      if (!val) return;
+      const key = Object.keys(INDEX).find(k => INDEX[k].display.toLowerCase() === val.toLowerCase()) || val.toLowerCase();
+      pantry.add(key);
+      savePantry();
+      input.value = '';
+      renderShoppingSection();
+    };
+    addBtn.addEventListener('click', doAdd);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') doAdd(); });
+  }
+}
+
+// ── Shopping tab switching ─────────────────────────────────────────────────
+document.querySelectorAll('.shop-tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    shopTab = btn.dataset.stab;
+    document.querySelectorAll('.shop-tab-btn').forEach(b => b.classList.toggle('active', b === btn));
+    renderShoppingSection();
+  });
+});
+
+// ── Export buttons ─────────────────────────────────────────────────────────
+document.getElementById('acc-copy-btn').addEventListener('click', () => {
+  const text = buildShoppingText();
+  if (!text) { alert('Add recipes to your plan first.'); return; }
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('acc-copy-btn');
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => { btn.textContent = '📋 Copy List'; }, 2000);
+  }).catch(() => alert('Copy failed — please use the Download button instead.'));
+});
+
+document.getElementById('acc-download-btn').addEventListener('click', () => {
+  const text = buildShoppingText();
+  if (!text) { alert('Add recipes to your plan first.'); return; }
+  const blob = new Blob([text], { type: 'text/plain' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'shopping-list.txt';
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+
+document.getElementById('acc-email-btn').addEventListener('click', () => {
+  const text = buildShoppingText();
+  if (!text) { alert('Add recipes to your plan first.'); return; }
+  window.location.href = 'mailto:?subject=Shopping List — Cooking at Livingstone&body=' + encodeURIComponent(text);
+});
+
+// ── "Shopping List" scroll shortcut in hero ─────────────────────────────────
+document.getElementById('acc-shop-link')?.addEventListener('click', () => {
+  document.getElementById('shop-anchor').scrollIntoView({ behavior: 'smooth' });
+});
+
+// ══════════════════════════════════════════════════════════════════════════
+//  AUTH STATE — set profile hero, redirect sign-in button
+// ══════════════════════════════════════════════════════════════════════════
+function userInitials(user) {
+  const fullName = user.user_metadata?.full_name;
+  if (fullName) return fullName.split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  const local = (user.email || '??').split('@')[0];
+  const parts  = local.split(/[.\-_]+/).filter(Boolean);
+  if (parts.length >= 2) return (parts[0][0] + parts[1][0]).toUpperCase();
+  return local.slice(0, 2).toUpperCase();
+}
+
+function showSignedIn(user) {
+  document.getElementById('account-signed-out').style.display = 'none';
+  document.getElementById('account-signed-in').style.display  = '';
+  const initials = userInitials(user);
+  document.getElementById('acc-initials').textContent = initials;
+  document.getElementById('acc-avatar').title = user.email;
+  const dispName = user.user_metadata?.full_name || user.user_metadata?.display_name || '';
+  if (dispName) {
+    document.getElementById('acc-name').innerHTML = `${escHtml(dispName)}`;
+  }
+  document.getElementById('acc-email').textContent = user.email;
+}
+
+function showSignedOut() {
+  document.getElementById('account-signed-out').style.display = '';
+  document.getElementById('account-signed-in').style.display  = 'none';
+}
+
+// Sign out
+document.getElementById('acc-signout-btn')?.addEventListener('click', async () => {
+  const sb = window._sb;
+  if (sb) await sb.auth.signOut();
+  showSignedOut();
+});
+
+// Sign in prompt button — open auth modal
+document.getElementById('prompt-signin-btn')?.addEventListener('click', () => {
+  // auth.js injects the modal; trigger it if available
+  const btn = document.getElementById('nav-account-btn');
+  if (btn) btn.click();
+});
+
+// ══════════════════════════════════════════════════════════════════════════
+//  INITIAL RENDER
+// ══════════════════════════════════════════════════════════════════════════
+renderFavRecipes();
+renderFavAuthors();
+renderPlanOverview();
+renderShoppingSection();
+updateStats();
+
+// Re-render when favs sync from cloud (auth.js fires this event)
+window.addEventListener('lv:favssynced', e => {
+  const merged = e.detail.favIds;
+  if (merged) {
+    favIds.clear();
+    for (const id of merged) favIds.add(id);
+  }
+  renderFavRecipes();
+  renderFavAuthors();
+  updateStats();
+});
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="supabase.js"></script>
+<script src="auth.js"></script>
+<script>
+// ── Auth state wiring for this page ─────────────────────────────────────
+document.addEventListener('DOMContentLoaded', async () => {
+  const sb = window._sb;
+  if (!sb) { showSignedOut(); return; }
+
+  const { data: { session } } = await sb.auth.getSession();
+  if (session?.user) {
+    showSignedIn(session.user);
+  } else {
+    showSignedOut();
+  }
+
+  sb.auth.onAuthStateChange((event, session) => {
+    if (event === 'SIGNED_IN' && session?.user) showSignedIn(session.user);
+    else if (event === 'SIGNED_OUT') showSignedOut();
+  });
+});
+
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  document.getElementById('nav-links').classList.toggle('is-open');
+});
+</script>
+</body>
+</html>

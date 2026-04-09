@@ -693,7 +693,7 @@ initCarousel('a-prev', 'a-next', 'author-track', 210 + 16);
 const catTrack  = document.getElementById('cat-track');
 const catCounts = RECIPES.reduce((a,r) => { a[r.category]=(a[r.category]||0)+1; return a; }, {});
 catTrack.innerHTML = Object.entries(catCounts)
-  .sort((a,b) => b[1]-a[1])
+  .sort((a,b) => a[0].localeCompare(b[0]))
   .map(([name, count]) => {
     const m = CAT_META[name] || { icon:'🍽️', bg:'rgba(192,90,44,0.08)' };
     const bgStyle = m.img

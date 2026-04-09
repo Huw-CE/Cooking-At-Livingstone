@@ -593,6 +593,10 @@ button.jump-chip { font-family: 'DM Sans', sans-serif; }
 .group-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 400; }
 .group-toggle { background: none; border: 1px solid var(--border); border-radius: 999px; padding: 4px 10px; font-family: 'DM Sans', sans-serif; font-size: 11px; color: var(--brown); cursor: pointer; }
 .group-toggle:hover { border-color: var(--rust); color: var(--rust); }
+.group-count {
+  font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 500;
+  color: var(--muted); margin-left: 8px; margin-right: auto;
+}
 
 /* Full index */
 .full-index { columns: 3; column-gap: 28px; }

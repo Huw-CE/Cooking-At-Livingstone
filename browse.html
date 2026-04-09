@@ -1206,6 +1206,8 @@ function renderGrid() {
   if (!filtered.length) { grid.style.display = 'none'; empty.style.display = 'block'; return; }
   grid.style.display = ''; empty.style.display = 'none';
   const grouped = filtered.reduce((a,r) => { (a[r.category] || (a[r.category]=[])).push(r); return a; }, {});
+  // Sort recipes alphabetically within each category
+  Object.values(grouped).forEach(arr => arr.sort((a,b) => a.title.localeCompare(b.title)));
   grid.innerHTML = Object.keys(grouped).sort().map(cat => {
     const hide = collapsed.has(cat);
     return `
@@ -1381,35 +1383,57 @@ let plannerFilteredCache = [];
 let plannerRenderedCount = 0;
 let plannerScrollObserver = null;
 
+let pCollapsed = new Set(); // collapsed categories in planner
+
 function renderPlannerGrid() {
   const filtered = RECIPES.filter(pPassesFilters);
 
   // Smart Match: score & sort by ingredient crossover with plan
   smartMatchScores = Object.create(null);
-  if (pFilters.smartMatch && plannedIdSet.size) {
+  const useSmartMatch = pFilters.smartMatch && plannedIdSet.size;
+  if (useSmartMatch) {
     const plannedIngs = getPlannedIngredientSet();
     filtered.forEach(r => { smartMatchScores[r.id] = crossoverScore(r.id, plannedIngs); });
     filtered.sort((a, b) => {
       const sa = smartMatchScores[a.id]?.score || 0;
       const sb = smartMatchScores[b.id]?.score || 0;
-      return sb - sa; // highest overlap first
+      if (sb !== sa) return sb - sa;
+      return a.title.localeCompare(b.title);
     });
+  } else {
+    // Sort alphabetically by title
+    filtered.sort((a, b) => a.title.localeCompare(b.title));
   }
 
   plannerFilteredCache = filtered;
   plannerRenderedCount = 0;
 
-  const grid  = document.getElementById('p-recipe-grid');
+  const gridContainer = document.getElementById('p-recipe-grid');
   const empty = document.getElementById('p-empty');
   document.getElementById('p-count').textContent = `${filtered.length} recipe${filtered.length!==1?'s':''}`;
 
-  if (!filtered.length) { grid.style.display = 'none'; empty.style.display = 'block'; return; }
-  grid.style.display = ''; empty.style.display = 'none';
+  if (!filtered.length) { gridContainer.style.display = 'none'; empty.style.display = 'block'; return; }
+  gridContainer.style.display = ''; empty.style.display = 'none';
 
-  // Render first batch immediately
-  grid.innerHTML = '';
-  appendPlannerBatch(grid);
-  setupPlannerScrollObserver(grid);
+  if (useSmartMatch) {
+    // Smart Match: flat list sorted by score (no category grouping)
+    gridContainer.innerHTML = `<div class="recipe-grid">${filtered.map(r => buildPlannerCardHtml(r)).join('')}</div>`;
+  } else {
+    // Group by category with collapsible headers, recipes alphabetical within
+    const grouped = filtered.reduce((a,r) => { (a[r.category] || (a[r.category]=[])).push(r); return a; }, {});
+    gridContainer.innerHTML = Object.keys(grouped).sort().map(cat => {
+      const hide = pCollapsed.has(cat);
+      return `
+        <div class="group-header" id="pgh_${safeid(cat)}">
+          <span class="group-title">${escHtml(cat)}</span>
+          <span class="group-count">${grouped[cat].length}</span>
+          <button class="group-toggle" data-pcol="${escHtml(cat)}">${hide ? 'Show' : 'Hide'}</button>
+        </div>
+        <div class="recipe-grid" id="prg_${safeid(cat)}" style="display:${hide?'none':'grid'};margin-bottom:8px;">
+          ${grouped[cat].map(r => buildPlannerCardHtml(r)).join('')}
+        </div>`;
+    }).join('');
+  }
 }
 
 function buildPlannerCardHtml(r) {
@@ -1433,44 +1457,6 @@ function buildPlannerCardHtml(r) {
     </div>
   </div>`;
 }
-
-function appendPlannerBatch(grid) {
-  const end = Math.min(plannerRenderedCount + PLANNER_PAGE_SIZE, plannerFilteredCache.length);
-  if (plannerRenderedCount >= end) return;
-
-  const html = [];
-  for (let i = plannerRenderedCount; i < end; i++) {
-    html.push(buildPlannerCardHtml(plannerFilteredCache[i]));
-  }
-  // Use insertAdjacentHTML to append without destroying existing content
-  grid.insertAdjacentHTML('beforeend', html.join(''));
-  plannerRenderedCount = end;
-}
-
-function setupPlannerScrollObserver(grid) {
-  // Clean up previous observer
-  if (plannerScrollObserver) plannerScrollObserver.disconnect();
-  if (plannerRenderedCount >= plannerFilteredCache.length) return;
-
-  // Create a sentinel element at the bottom
-  let sentinel = document.getElementById('planner-sentinel');
-  if (!sentinel) {
-    sentinel = document.createElement('div');
-    sentinel.id = 'planner-sentinel';
-    sentinel.style.height = '1px';
-  }
-  grid.after(sentinel);
-
-  plannerScrollObserver = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting && plannerRenderedCount < plannerFilteredCache.length) {
-      appendPlannerBatch(grid);
-      if (plannerRenderedCount >= plannerFilteredCache.length) {
-        plannerScrollObserver.disconnect();
-        sentinel.remove();
-      }
-    }
-  }, { rootMargin: '400px' });
-  plannerScrollObserver.observe(sentinel);
 }
 
 // ── Planner sidebar ───────────────────────────────────────────────────────
@@ -1921,6 +1907,14 @@ function syncSmartMatchBtn() {
 
 // Add to plan / remove from plan — uses targeted DOM update for removals
 document.getElementById('p-recipe-grid').addEventListener('click', e => {
+  // Category collapse toggle
+  const colBtn = e.target.closest('[data-pcol]');
+  if (colBtn) {
+    const c = colBtn.dataset.pcol;
+    pCollapsed.has(c) ? pCollapsed.delete(c) : pCollapsed.add(c);
+    renderPlannerGrid();
+    return;
+  }
   const btn = e.target.closest('.plan-btn');
   if (!btn) return;
   const id = parseInt(btn.dataset.planId);

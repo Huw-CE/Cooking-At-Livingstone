@@ -5814,6 +5814,1092 @@ Fillet the fish by using a fork to remove the top fillets from the three fillets
 4. Place the bread on a small baking tray and grill for 2 minutes. Remove from the oven, flip over and drizzle the untoasted sides with the remaining tablespoon of oil. Top each with the butter bean mixture and return to the oven for 4–5 minutes, or until golden and bubbly.
 
 5. To serve, spoon over half the pickled onion mixture, serving the rest in a bowl alongside.`
+  },
+
+  {
+    id: 185,
+    title: "Roasted Strawberry Victoria Sponge",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "8–10",
+    time: "Prep 45 mins + Bake 30 mins + Cool 1 hr 15 mins",
+    category: "Cakes",
+    ingredients: [
+      "Roasted strawberries:",
+      "200g strawberries",
+      "20g caster sugar",
+      "5g flaky sea salt (about 1¼ tsp)",
+      "Cake:",
+      "245g butter, softened",
+      "65g double cream",
+      "160g caster sugar",
+      "90g whole eggs (about 2)",
+      "35g egg yolks (about 3)",
+      "1–2 tsp good quality vanilla extract",
+      "17g baking powder (about 4 tsp)",
+      "245g plain flour",
+      "25g whole milk",
+      "Whipped cream:",
+      "200g double cream",
+      "40g crème fraîche",
+      "15–20g caster sugar (optional)",
+      "Plus:",
+      "Icing sugar, to decorate (optional)"
+    ],
+    method: `1. Preheat the oven to 170°C/150°C fan. Line the tins with baking paper.
+
+2. To make the roasted strawberries, wash the strawberries briefly and halve. If they're small, just leave them whole. Toss with the sugar on a baking tray. Roast for 30–40 minutes until soft, syrupy and slightly shrunken. The strawberries will go a deeper shade of red. You can keep cooking them for up to an hour. Let them cool and move into a container with all the syrup. You can store them in the fridge for 3–5 days.
+
+3. Preheat the oven to 190°C/170°C fan and line the tins. Set aside.
+
+4. To make the cake, cream the soft butter with the salt and sugar for 2 minutes on a medium speed using a stand mixer. This is enough for the butter and sugar to aerate slightly and become a little paler, but not so much that it is whipped. It is better to err on the side of caution — we don't want too much air at this stage!
+
+5. Mix together the cream, whole eggs, egg yolks, vanilla extract and milk. Set aside.
+
+6. Starting with the liquid, alternate adding the liquid and dry ingredients into the creamed butter and sugar, in around three batches, scraping down as necessary. Sprinkle one cake with the 25g sugar. This will be your tin top.
+
+7. Divide the mixture between the two tins, around 475–500g per cake.
+
+8. Bake for 25 minutes, then check if the sponge is golden and bouncy and pulling away from the sides slightly. Bake for an additional 5 minutes if it doesn't look or feel ready. Leave to cool in the tin for 10 minutes, then remove and cool completely on a rack.
+
+9. To make the filling, whip the cream with the unsugared sponge, leaving a 2–3cm border so it doesn't splurge too much, followed by generous dollops of the roasted strawberries and their syrup. You may not need to use it all. As a splurging insurance policy, you can pop your assembled cake in the fridge or freezer to firm up the cream a bit.
+
+10. Spread the cream filling over the unsugared sponge, leaving a 2–3cm border so it doesn't splurge too much, followed by generous dollops of the roasted strawberries and their syrup.
+
+11. Place the sugared sponge on top. Sprinkle with icing sugar, if desired. Serve with any extra roasted strawberry syrup.`
+  },
+
+  {
+    id: 186,
+    title: "Chamomile and Toasted Flour Chiffon Cake",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "6",
+    time: "Prep 30 mins + Infuse & Bake 1 hr 10 mins + Cool 1 hr 30 mins",
+    category: "Cakes",
+    ingredients: [
+      "60g whole milk",
+      "1 chamomile teabag",
+      "20g plain flour, to toast",
+      "40g plain flour",
+      "160g whole eggs (about 3)",
+      "30g vegetable oil",
+      "1g flaky sea salt (about ¼ tsp)",
+      "20g honey",
+      "1 tsp good quality vanilla bean paste or ½ vanilla pod, scraped",
+      "40g caster sugar",
+      "Dusting:",
+      "50g caster sugar",
+      "1 chamomile teabag",
+      "Honey cream:",
+      "200g double cream",
+      "25g honey",
+      "1g flaky sea salt (about ¼ tsp)",
+      "Plus:",
+      "Chamomile flowers, to decorate (optional)"
+    ],
+    method: `1. Preheat the oven to 180°C/160°C fan.
+
+2. Heat the milk until boiling, then add the teabag. Leave to cool completely. Press the teabag to extract as much chamomile flavour as possible. Reweigh the milk and make it up to 60g.
+
+3. Add the 20g of flour into a frying pan and toast over a medium heat. Once it starts colouring, turn the heat down and keep it moving. Cook until dark golden in colour. It will take about 7–8 minutes. Leave to cool completely, then pass the toasted flour through a sieve into a bowl with the remaining flour.
+
+4. Separate the eggs. Whisk the oil into the flour, followed by the chamomile milk. Then add the egg yolks, salt, honey and vanilla.
+
+5. Whisk the egg whites and sugar to a French meringue with medium peaks according to the instructions on page 118. Add 2–3 tablespoons of meringue into the yolk/flour mixture and whisk until combined. Then fold the rest of the meringue into the mixture in thirds, trying not to deflate the mixture too much.
+
+6. Pour the batter into the cake tin, tapping the tin a few times on the counter to burst any large bubbles and to level the batter, and bake for 50–55 minutes — it will be risen and springy. Turn the cake upside down as soon as it comes out of the oven to cool. You may need to balance it on some tins to give it some height!
+
+7. Leave to cool for at least an hour. To demould, carefully run a sharp knife or palette knife around the edge of the tin. Gently push the cake out or lift the tin off.
+
+8. For the dusting, whizz the caster sugar up with the chamomile tea from the teabag, then dust this over the cake. Finish with chamomile flowers, if using.
+
+9. For the honey cream, whip the cream until it is as thick as the honey. Add the honey and salt, then whip until thickened and smooth — don't over-whip it! It should just be 'soft'. Serve dolloping tablespoons, about 30g, with slices of the cake. Leftover cake will last at room temperature in an airtight container for up to 3 days.`
+  },
+
+  {
+    id: 187,
+    title: "Upside-Down Sticky Pear and Walnut Cake",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "6–8",
+    time: "Prep 35 mins + Bake 50 mins + Cool 10 mins",
+    category: "Cakes",
+    ingredients: [
+      "Walnuts:",
+      "60g walnuts",
+      "Goo:",
+      "240g soft light brown sugar",
+      "80g butter",
+      "120g double cream",
+      "3g flaky sea salt (about 1 tsp)",
+      "Cake:",
+      "400g pears (about 2)",
+      "100g butter, softened",
+      "100g soft dark brown sugar",
+      "25g caster sugar",
+      "100g whole eggs",
+      "90g plain flour",
+      "15g buckwheat flour",
+      "8g baking powder (about 2 tsp)",
+      "½ tsp ground cinnamon",
+      "1–2g flaky sea salt (about ½ tsp)",
+      "20g toasted walnuts (from above)",
+      "45g whole milk",
+      "35g double cream",
+      "Plus:",
+      "Ice cream or pouring cream, to serve"
+    ],
+    method: `1. Toast the walnuts in a frying pan over a medium heat for 5–8 minutes or for 15–20 minutes in a 200°C/180°C fan oven until toasty and golden. Set 40g aside and roughly chop — you want a mixture of sizes with some halves and larger pieces.
+
+2. To make the goo, in a saucepan combine the sugar and butter. Bring to the boil and bubble for 1–2 minutes until darkened. Whisk in the cream and salt and bubble for 1 more minute until thickened. Reserve half for serving.
+
+3. Line the base of the springform tin with baking paper that extends about 2–3cm up the sides of the tin. This will prevent the liquid from seeping out.
+
+4. Pour the other half of the goo mixture into the tin. Sprinkle over half of the chopped toasted walnuts.
+
+5. Peel, halve and core the pears, then slice them into 0.5cm pieces. Arrange the pears in concentric circles, slightly overlapping, in the tin. Tuck the remaining roughly chopped walnuts into any gaps.
+
+6. Preheat the oven to 190°C/170°C fan.
+
+7. To make the cake in a stand mixer or by hand, cream together the butter and sugars. Add in the eggs, one by one, scraping down the sides of the bowl as you go. Sift together the dry ingredients and beat into the butter with the paddle attachment. Grind the remaining toasted walnuts and stir in. Finally, stir through the milk and double cream.
+
+OR
+
+To mix in the food processor, blitz the walnuts with the caster sugar until finely ground, then add the dark brown sugar and butter and blend until aerated and smooth. Add in the eggs, one by one, scraping down the bowl as you go. Sift together the flours, baking powder, cinnamon and salt, then add to the bowl. Finally, add the milk and double cream.
+
+8. Spread the cake batter evenly over the pears. Bake for 45–50 minutes or until a skewer comes out clean. Leave to cool in the tin for 5–10 minutes. Place a plate underneath, then flip the cake over. Carefully remove the tin and paper. Serve warm with the reserved goo and ice cream or pouring cream. Leftovers should always be reheated!`
+  },
+
+  {
+    id: 188,
+    title: "Steamed Plum Buttermilk Sponge",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "3–4",
+    time: "Prep 15 mins + Cook plums 15 mins + Steam 1 hr",
+    category: "Desserts",
+    ingredients: [
+      "Stewed plums:",
+      "170g plums",
+      "1 bay leaf",
+      "1 cinnamon stick",
+      "40g caster sugar",
+      "10g lemon juice",
+      "25g water",
+      "Pudding:",
+      "Butter, for greasing",
+      "Demerara sugar, to dust",
+      "60g butter, softened",
+      "80g caster sugar",
+      "3g flaky sea salt (about 1 tsp)",
+      "50g whole eggs (about 1)",
+      "110g plain flour",
+      "1–2g bicarbonate of soda (about ½ tsp)",
+      "3g baking powder (about ¾ tsp)",
+      "110g buttermilk",
+      "1 tsp good quality vanilla extract",
+      "Plus:",
+      "Vanilla crème anglaise, to serve"
+    ],
+    method: `1. For the plums, cut the plums into six, removing the stones. In a small saucepan, combine the bay leaf, cinnamon stick, caster sugar, lemon juice and water. Heat over a medium heat, occasionally stirring until the sugar has dissolved to make a syrup. Add the plums to the saucepan and stir gently to coat them.
+
+2. Bring the mixture to a gentle simmer, reduce the heat to low and cover the saucepan with a lid. Steam for 4–5 minutes. If the plums are still firm, cook for a further 2 minutes. You want the plums to be tender but to hold their shape. Remove the saucepan from the heat and let the plums cool in the syrup for a few minutes.
+
+3. For the pudding, grease the pudding basin with butter and dust with demerara sugar. Strain the plums and put 100g in the base of the basin with 2 tablespoons of the syrup. Save the rest for serving.
+
+4. In a mixing bowl, cream together the butter, sugar and salt until light and fluffy.
+
+5. Beat in the egg. Sift in the flour, bicarbonate of soda and baking powder and fold until just combined. Stir in the buttermilk and vanilla extract until the mixture is smooth.
+
+6. Pour the mixture into the pudding basin, over the plums, cover it with a layer of baking paper and foil and secure with string.
+
+7. Place the pudding basin into a large pot, raised on a trivet (e.g. a tart ring) so it isn't sitting directly on the bottom. Fill with enough water to reach halfway up the sides of the basin. Cover the pot with a lid and bring the water to the boil.
+
+8. Reduce the heat to low and let the pudding steam for 1 hour or until it is firm and cooked through — check it has reached a 97°C internal temperature (just stab a probe thermometer through the foil).
+
+9. Carefully remove the pudding basin from the pot and let it rest for a few minutes before removing the baking paper and foil.
+
+10. Turn out onto a plate. Serve with the additional plums, syrup and some custard.
+
+11. The pudding is best enjoyed immediately. Store leftovers in the fridge for 2–3 days and reheat before eating.`
+  },
+
+  {
+    id: 189,
+    title: "Choconut Tart",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "8",
+    time: "Prep 45 mins + Chill 4 hrs + Finish 15 mins",
+    category: "Desserts",
+    ingredients: [
+      "Crust:",
+      "130g dark chocolate, chopped",
+      "130g toasted coconut flakes",
+      "1–2g flaky sea salt (about ¼–½ tsp)",
+      "Chocolate crémeux:",
+      "100g whole milk",
+      "190g double cream",
+      "55g egg yolks (about 3)",
+      "50g malt syrup",
+      "190g milk chocolate, finely chopped",
+      "30g butter",
+      "1g flaky sea salt (about ¼ tsp)",
+      "Plus:",
+      "Very dark chocolate (85%+), to grate on top"
+    ],
+    method: `1. For the crust, melt the chocolate over a bain-marie. Slightly crush the coconut flakes (you need to be able to press them into a tart case without leaving gaps), then stir into the chocolate, followed by the salt. Mix well, then taste, adding salt if required.
+
+2. Put a circle of baking paper on the base of the tart tin to help easily remove the tart later. Press the crust into the tart tin, trying to make sure there are no holes. There should be a fairly robust 2cm-thick crust on the edges.
+
+3. Chill completely in the fridge or freezer. Before proceeding to the next step, check for gaps and fill in with extra melted chocolate, if required.
+
+4. To make the crémeux, first make a crème anglaise. Heat together the milk and cream in a saucepan until simmering. Meanwhile, whisk the egg yolks with the malt syrup. Carefully pour one-third of the milk/cream over the egg yolks whilst whisking to temper the eggs. Pour this back into the saucepan and stir over a low heat until it thickens; it should read around 82°C on a probe thermometer and should coat the back of a spoon or spatula when it is lifted out of the mixture.
+
+5. Pour the custard through a sieve over the finely chopped milk chocolate, butter and salt. Leave for 1 minute and then whisk until smooth. Pour this into the prepared tart case.
+
+6. Leave to chill completely, at least 4–6 hours.
+
+7. To finish, grate very dark chocolate on top using a fine grater. Store in the fridge and serve in thick slices. This will keep well in the fridge for 3 days, if it lasts that long.`
+  },
+
+  {
+    id: 190,
+    title: "Leek and Mustard Tart",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "6",
+    time: "Prep 20 mins + Rest 1 hr 20 mins + Blind bake 1 hr + Fill & Bake 40 mins + Cool 1 hr",
+    category: "Mains",
+    ingredients: [
+      "Tart case:",
+      "½ x recipe rough puff pastry (or savoury shortcrust pastry)",
+      "Egg wash",
+      "Savoury custard:",
+      "65g double cream",
+      "65g crème fraîche",
+      "65g whole milk",
+      "110g whole eggs (about 2)",
+      "2 tbsp Dijon mustard",
+      "Filling:",
+      "600g leeks",
+      "3 garlic cloves",
+      "40g butter",
+      "2 bay leaves",
+      "Parmesan rind (optional)",
+      "½ vegetable stock cube or 1 tsp vegetable stock paste",
+      "A grating of nutmeg",
+      "50g grated hard cheese, such as Gruyere or Cheddar"
+    ],
+    method: `1. For the tart case, roll out the pastry using firm strokes of the rolling pin, turning it a quarter turn between each roll to keep it in an even shape. Roll it to about 2–3mm.
+
+2. Line your tart tin. Roll the pastry up onto the rolling pin and drape over the case. Tuck carefully into the corners and press into the sides. Go over it several times with floured fingers if you need to — it's got to be super-tight to the tin. Trim the overhang with scissors so it only has 2cm left. Dock with a fork all over — sides and all. Chill in the fridge for 1 hour or the freezer for 30 minutes.
+
+3. To blind bake, preheat the oven to 200°C/180°C fan. Press foil into the tart, ensuring it is tight to the edges (foil gets into the edges best, but please note foil does not work for sweet pastry, it will stick, but it works fabulously for flaky pastry). Pack with raw rice or baking beans. Bake the case for 30 minutes until it looks very dry when you peek inside. Remove the rice/beans and bake for another 20–30 minutes until golden brown and fully baked. Brush the baked case with egg wash (fill in all the docked holes!) and return to the oven until magnificent looking — about 10 minutes.
+
+4. For the savoury custard, blitz all the ingredients together and pass through a sieve. Season with black pepper and salt. If you like it more tangy, add more mustard.
+
+5. For the filling, wash the leeks and cut the thick green part off. Slice into thin rounds and reweigh — you should have around 400g. Slice the garlic thinly or grate finely. Heat the butter in a pan until foaming, then add the leeks, garlic, bay leaves and Parmesan rind, if using. Sauté over a medium heat for 15 minutes until wilted. Add the crumbled stock cube or paste and nutmeg. Taste and check if it needs salt — add as required.
+
+6. To assemble the tart, put all of the leeks into the tart case, removing the rind, if using, and bay leaves, then pour in the custard. Sprinkle the cheese on top.
+
+7. Bake at 190°C/170°C fan oven until the internal temperature reaches 73°C. Start checking around 20 minutes in, but it could take up to 40 minutes. Check in a few spots — it's OK if the middle is still a bit gooey or not quite up to temperature as carryover cooking will take care of that, trust me.
+
+8. Wait for 1 hour before cutting or chill overnight, then reheat the slices before serving — 10 minutes in a 180°C/160°C fan oven should do it. If desired, trim the crust with a sharp knife. Any leftovers can be kept in the fridge for 3 days and reheated.`
+  },
+
+  {
+    id: 191,
+    title: "Festive Buns",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "9 buns",
+    time: "Prep 30 mins + Bulk ferment 1 hr 30 mins + Shape & Proof 2 hrs + Bake 20 mins",
+    category: "Breads",
+    ingredients: [
+      "Tangzhong:",
+      "20g plain flour",
+      "100g water",
+      "Dough:",
+      "85g golden raisins",
+      "100g white chocolate",
+      "25g whole milk",
+      "20g honey",
+      "50g whole eggs (about 1)",
+      "200g strong bread flour",
+      "4g dry yeast (about 1½ tsp)",
+      "4g fine salt (about ¾ tsp)",
+      "10g caster sugar",
+      "1 vanilla pod, scraped, or 2 tsp good quality vanilla extract",
+      "Zest of 1 orange",
+      "60g butter, softened",
+      "Egg wash",
+      "Glaze:",
+      "60g orange juice",
+      "60g caster sugar",
+      "Plus:",
+      "Ground pistachios, to decorate"
+    ],
+    method: `1. To make the tangzhong, off the heat, whisk the flour and water together.
+
+2. Cook over a medium heat, whisking/stirring all the time, until it thickens. It will be very thick. Take off the heat and move it into the bowl of a stand mixer, leaving it to cool slightly. Too hot and you risk harming the yeast, so if you can comfortably touch it, that is good.
+
+3. Soak the raisins by covering in boiling water for 10 minutes, then drain before using. Chop the chocolate into 1cm pieces.
+
+4. In the bowl of a stand mixer, add the milk, honey and egg on top of the warm tangzhong, followed by the dry ingredients, vanilla seeds and zest. Mix according to the instructions on page 123.
+
+5. Once full gluten development is reached (this is when you can pull a thin, almost translucent layer with the dough), add the raisins and chocolate and mix for 1–2 minutes until well combined.
+
+6. Remove from the bowl and 'round' it a few times on the benchtop so it has a smooth surface, then transfer to a clean bowl. Leave to rest/rise in a bowl, covered, for 1 hour or until puffy and doubled.
+
+7. Divide into 9 x 70g pieces and shape into rounds with the curve of your hand — this can be tricky because there is so much filling, but just persevere! Nestle into the tin. Cover and proof for 1–1½ hours or until very puffy.
+
+8. Preheat the oven to 195°C/175°C fan. Gently brush the buns with egg wash and then bake for 16–20 minutes or until golden and the internal dough temperature reading around 90°C.
+
+9. Whilst the buns are baking, prepare the glaze. Heat the orange juice and sugar together until bubbling and then leave to cool.
+
+10. Brush the warm buns with the glaze and sprinkle the ground pistachios on top. The buns can be stored in an airtight container at room temperature for 3 days.`
+  },
+
+  {
+    id: 192,
+    title: "Earl Grey Scones",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "5–6 scones",
+    time: "Prep 10 mins + Cut & Rest 30 mins + Bake 15 mins + Cool 20 mins",
+    category: "Breads",
+    ingredients: [
+      "220g plain flour",
+      "6g Earl Grey, finely ground (about 2 teabags)",
+      "30g caster sugar",
+      "16g baking powder (about 4 tsp)",
+      "2g fine salt (about ½ tsp)",
+      "75g butter, cold",
+      "130g crème fraîche",
+      "Egg wash",
+      "Plus:",
+      "Crème fraîche",
+      "Raspberry rhubarb jam",
+      "Stewed plums"
+    ],
+    method: `1. Line a baking tray with baking paper.
+
+2. In a large mixing bowl, whisk together the plain flour, Earl Grey, caster sugar, baking powder and salt until well combined.
+
+3. Cut the cold butter into small, 1–2cm pieces, then rub into the flour mixture using your fingertips until it resembles coarse breadcrumbs, about 5 minutes.
+
+4. Add the crème fraîche to the mixture and stir until just combined. You can use a round-bladed knife to cut through the dough to stir it together.
+
+5. Lightly dust a clean surface with flour and transfer the dough onto it. Knead the dough gently by folding it over on itself several times until it is smooth and no dry bits remain, about 1 minute or so. Then, using a rolling pin or your palms, flatten it into a 2.5cm thick dough. You want to make sure the dough is evenly combined and there are no dry bits or areas where the dough isn't in one piece, otherwise it will split open during baking.
+
+6. Using a 6.5cm round or fluted cutter, cut out scones decisively from the dough and place them upside down on the prepared baking tray. You can re-roll the scraps. They often turn out a bit oddly shaped but are still very delicious.
+
+7. Rest the scones for about 20 minutes whilst you preheat the oven to 220°C/200°C fan.
+
+8. Brush the tops of the scones with a little egg wash and bake in the preheated oven for 12–14 minutes or until they are golden brown. They should be towering.
+
+9. Once baked, remove the scones from the oven and transfer them onto a wire rack to cool. Serve with crème fraîche, jam and plums.
+
+10. Store for 2 days in an airtight container, though you will lose crispness.`
+  },
+
+  {
+    id: 193,
+    title: "Flaky Cheese and Pickle Scones",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "6 large scones",
+    time: "Prep 20 mins + Rest 15–45 mins + Bake 25 mins + Cool 20 mins",
+    category: "Breads",
+    ingredients: [
+      "210g plain flour",
+      "30g dark rye flour",
+      "10g baking powder (about 2½ tsp)",
+      "4g flaky sea salt (about 1⅛ tsp)",
+      "2g black pepper (about 1 tsp)",
+      "100g mature Cheddar cheese, grated",
+      "110g butter, very cold",
+      "75g pickled gherkins, drained and chopped",
+      "120g buttermilk",
+      "Egg wash"
+    ],
+    method: `1. Get everything cold. And I mean cold. If you have time, put your dry ingredients in the freezer for 20 minutes before mixing. Your butter must be fridge-cold and firm to the touch.
+
+2. Add all the dry ingredients into a bowl, plus half the grated Cheddar cheese.
+
+3. Cut the butter into 2cm cubes. Using the paddle attachment or your fingertips, work the cold butter into the dry ingredients, along with the chopped gherkins for about 30 seconds. Only go so far that the butter is in irregular-sized pieces. You need some larger bits of butter to get the layers later.
+
+4. Now, add the buttermilk in a steady stream and mix until it is looking just hydrated — there can still be dry bits.
+
+5. Tip onto a clean surface and push together, scraping all the dry bits into the middle.
+
+6. Roll to approximately 40cm long, sprinkle over half of the leftover cheese and perform a single fold — that's when you bring the top down two-thirds and then the bottom over the middle third, like a business letter!
+
+7. Turn 90 degrees and roll to 40cm long, then sprinkle over the rest of the cheese and perform another single fold. Use a knife or a bench scraper to cut the folded edge — this will give you the best layers possible.
+
+8. Pat the dough into a rectangle around 2.5–3cm high. Trim the edges (you can bake these as snack scraps!) and pat down slightly to get the dough back into proportion. Cut into six large squares. Place on a baking tray lined with baking paper and put into the freezer for 15 minutes or the fridge for 45 minutes.
+
+9. Preheat the oven to 220°C/200°C fan.
+
+10. Gently brush the tops of the scones with egg wash, if desired. Bake for 12–15 minutes (watch the colour), then turn the oven down to 190°C/170°C fan and continue cooking for 5–10 minutes until the scones are golden and well baked. Transfer to a cooling rack to cool, then serve warm.`
+  },
+
+  {
+    id: 194,
+    title: "Miso Walnut Double-Thick Chocolate-Chip Cookies",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "8 large cookies",
+    time: "Prep 30 mins + Bake 20 mins + Cool 20 mins",
+    category: "Cookies",
+    ingredients: [
+      "Miso walnuts:",
+      "50g mirin rice wine",
+      "40g caster sugar",
+      "50g white miso",
+      "100g walnuts, toasted",
+      "Cookies:",
+      "90g butter, softened",
+      "80g soft light brown sugar",
+      "80g caster sugar",
+      "50g whole eggs (about 1)",
+      "220g plain flour",
+      "3g bicarbonate of soda (about ½ tsp)",
+      "4g flaky sea salt (about 1⅛ tsp), plus a sprinkle on top",
+      "260g dark chocolate, chopped"
+    ],
+    method: `1. To make the miso walnuts, heat together the rice wine, caster sugar and white miso over a medium heat. When boiling, add the toasted walnuts and mix together, cooking for 2 minutes more over a low heat until thickened. Remove from the pan and leave to cool completely before using.
+
+2. To make the cookies, cream the butter with the sugars until well combined but not aerated — it should look a little fluffy.
+
+3. Add in the egg, scraping down as needed to make sure it's evenly combined. Sift the dry ingredients together, then fold through the emulsified butter/egg mixture. Add the walnuts and stir through to break them up a bit before mixing in the chocolate.
+
+4. Form into loose 180g balls, keeping them looking and feeling airy!
+
+5. At this stage you can chill the dough overnight if you like, or you can bake right away. I didn't notice a super significant difference.
+
+6. Preheat the oven to 190°C/170°C fan. Line a large, flat baking tray with baking paper.
+
+7. Spread the balls of dough on the baking tray. Bake for 18 minutes (though you could do 16 minutes or up to 20 minutes to suit your taste!). Sprinkle a little extra salt on top, if desired, then leave to cool completely on a cooling rack. Ideally enjoy whilst still a little bit warm, but they are just as good completely cooled! The texture will change from gooey to more firm.`
+  },
+
+  {
+    id: 195,
+    title: "Caramel Poached Oranges with Sabayon and Langues de Chat",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "4",
+    time: "Prep 30 mins + Make langues de chat 20 mins + Make sabayon 15 mins + Assemble 10 mins",
+    category: "Desserts",
+    ingredients: [
+      "Caramel poached oranges:",
+      "500g oranges or mandarins",
+      "200g caster sugar",
+      "110g water",
+      "75g sweet wine aperitif or sweet wine (such as Lillet)",
+      "Langues de chat:",
+      "40g butter, softened",
+      "55g icing sugar",
+      "Zest of ½ orange (optional)",
+      "30g egg whites (about 1)",
+      "45g plain flour",
+      "10g cornflour",
+      "Pinch of flaky sea salt",
+      "Sabayon:",
+      "45–50g egg yolks (about 3)",
+      "30g caster sugar",
+      "75g sweet wine aperitif or sweet wine (such as Lillet)",
+      "Pinch of fine salt",
+      "Plus:",
+      "Toasted almonds, to decorate"
+    ],
+    method: `1. To prepare the oranges, remove the skin and pith and slice into 1cm rounds. Set aside.
+
+2. To make the poaching syrup, put the sugar in a pan with 60g of the water and stir until it is all dissolved. If the sugar grains are on the pan's edge, use a pastry brush dipped in water to remove them or it can cause the mixture to crystallise when heating. Alternatively, place a lid on the pan for the first 3 minutes of heating. Heat the sugar/water over a high heat until you get a dark caramel, about 5–8 minutes.
+
+3. Once the mixture is a dark golden, turn off the heat and add the remaining 50g water and the sweet wine, bit by bit — it will splutter, split and seize! Just add little bits at a time and, if it doesn't all dissolve, heat gently whilst whisking. Bring the liquid back to the boil, then add your fruit. Simmer for 1 minute, then pour into a heatproof container to cool completely. The oranges can be made 3 days in advance, kept in the fridge.
+
+4. For the langues de chat, by hand or in a stand mixer, mix the butter and icing sugar together until well combined, as well as the zest, if using. Add the egg white, little by little — it can be a bit hard to combine, so do it slowly. If you add too much and it splits apart, you can warm up the bowl slightly, then beat it until it comes together. Finally, stir through the dry ingredients.
+
+5. Preheat the oven to 190°C/170°C fan. Pipe long thin biscuits onto baking paper, then bake for 5–7 minutes or until just turning golden at the edges. Leave to cool on the tray. The biscuits can be made in advance and kept in an airtight container for 3 days.
+
+6. For the sabayon, whisk the egg yolks with the sugar over a bain-marie over a medium-high heat until frothy. Once a foam begins to form, whisk in the sweet wine and salt and keep whisking until it is thick and can hold its own shape, about 10 minutes. As soon as it is ready, remove from the heat so it does not overcook. The sabayon should be used immediately whilst warm.
+
+7. To serve, spoon the caramel oranges into individual bowls/dishes — a coupe shape works well — with a spoonful of caramel syrup. Spoon the sabayon on top. If desired, prepare the dessert in heatproof bowls, then grill for 30 seconds–1 minute until the sabayon is browned in spots. Decorate with toasted flaked almonds. Serve with the langues de chat. This dessert can also be chilled and served cold — the sabayon will set into a very light mousse.`
+  },
+
+  {
+    id: 196,
+    title: "Blonde Rice Pudding with Pears and Hazelnuts",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "4",
+    time: "Prep 1 hr (toast choc & roast hazelnuts) + Poach pears 45 mins + Cook rice pudding 30 mins",
+    category: "Desserts",
+    ingredients: [
+      "Blonde white chocolate:",
+      "200g white chocolate",
+      "Poached pears:",
+      "200g caster sugar",
+      "400g water, white wine or brewed chamomile tea, or a mixture",
+      "Lemon peels, pink peppercorns, green cardamom pods, vanilla pods (flavourings of choice)",
+      "2 Cornice pears",
+      "20g lemon juice",
+      "Rice pudding:",
+      "700g whole milk",
+      "100g double cream",
+      "80g caster sugar",
+      "1 vanilla pod, scraped",
+      "120g pudding rice",
+      "Pinch of flaky sea salt",
+      "30g egg yolks (about 2)",
+      "100g blonde white chocolate (from above)",
+      "Plus:",
+      "75g blanched hazelnuts, to serve"
+    ],
+    method: `1. To make the blonde white chocolate, preheat the oven to 140°C/120°C fan.
+
+2. Break up the chocolate and put in a baking dish. Bake, stirring every 10 minutes, until golden. It will seem lumpy at first but persevere! It will take around 1 hour of regular stirring. Once it reaches a pale golden, remove it from the oven and leave to cool completely on the tray. You can break it up into pieces and store in an airtight container for 2 weeks.
+
+3. Turn the oven temperature up to 220°C/200°C fan, then roast the hazelnuts for about 10 minutes, or until well toasted and dark brown. Roughly chop, once cool.
+
+4. To make the poached pears, first prepare your poaching liquid. Heat the sugar, your chosen liquid and your flavourings of choice in a pan large enough to immerse the pears fully. Bring to a simmer.
+
+5. Peel your pears and add to the poaching liquid with the lemon juice. Ensure the liquid stays at a very gentle simmer — if the pears are bobbing around, you can put some baking paper on top (a cartouche) to keep them immersed fully. Poach for around 45 minutes — check after this point and see if you can easily pierce the pear with the tip of a knife. If not, keep poaching. Try not to let the pears get mushy.
+
+6. Take off the heat and leave to cool in the syrup. If you are poaching and the pears accidentally get a bit too soft, remove from the syrup to cool separately. Store the poached pears for up to a week in the fridge.
+
+7. To make the rice pudding, heat the milk, double cream, sugar and scraped vanilla seeds together gently — bring to a gentle simmer to begin infusing.
+
+8. Meanwhile, bring a pan of water to the boil. When rapidly boiling, add the rice and cook for 2 minutes (up to 3 minutes for an extra tender final pudding), boiling hard. Drain the rice and add to the simmering milk and stir.
+
+9. One way to follow the progress of your rice pudding is to monitor the reduction in weight. To do this, note down the weight of the rice/milk mixture, then multiply by 0.8 to get the desired final weight.
+
+10. Bring to the boil whilst whisking and then lower to simmering — 93–94°C. Cook for 30 minutes, whisking vigorously every 10 minutes to help it cook evenly and release the starch. Try not to let it boil.
+
+11. After 30 minutes have passed, check how tender the rice is — it should be very tender and perfectly cooked, if not, cook for another few minutes. When you are satisfied with the texture, turn off the heat and whisk for about 1 minute to help release the starch.
+
+12. Check the weight of the mixture — it should have reduced by about 20% and approximately match the desired weight you noted down earlier. It should still look quite loose and 'wave' when you shake the pan. Check the temperature of the rice — it should be about 72–75°C after whisking.
+
+13. Add a pinch of salt and the yolks then whisk until totally incorporated and slightly thickened. Cut the blonde white chocolate into small pieces and stir through. Check the seasoning, adjusting as needed. Serve with the sliced and cored poached pears and toasted hazelnuts.`
+  },
+
+  {
+    id: 197,
+    title: "Jam Ripple Parfait",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "6",
+    time: "Prep 25 mins + Freeze 3 hrs",
+    category: "Desserts",
+    ingredients: [
+      "1–2 vanilla pods, scraped, or 1 tbsp good quality vanilla bean paste",
+      "90g egg yolks (about 6)",
+      "50g caster sugar",
+      "25g honey",
+      "15g water",
+      "265g double cream",
+      "150g good quality jam, or homemade (e.g. raspberry rhubarb jam)"
+    ],
+    method: `1. Split your vanilla pods, if using, scrape out the seeds and set aside.
+
+2. To make the parfait, whisk your egg yolks on a high speed until they are very fluffy — at least 5–8 minutes. They should be pale and voluminous. You can't overmix.
+
+3. Add the sugar, honey and water to a saucepan along with the scraped vanilla pods. Stir to make sure all the sugar is dissolved.
+
+4. Heat the sugar syrup until it reaches 118°C. To avoid crystallisation, for the first 1–2 minutes as it's heating up, I like to add a lid. This means any random sugar crystals will be dissolved in the steamy environment.
+
+5. Change the mixer speed to low. In a steady, thin stream, pour the sugar syrup down the edge of the bowl, avoiding the whisk so it doesn't splash. Also, be careful the vanilla pods don't fall in. You need to do this step quite slowly so as not to accidentally pool the syrup at the bottom of the bowl.
+
+6. Turn the mixer back to high speed and whisk until cool — the mixture should be thick and fluffy. Around 10 minutes should be plenty.
+
+7. Meanwhile, whip the cream and scraped vanilla seeds or vanilla paste until very soft peaks are reached.
+
+8. Fold together the two mixtures — you should start by adding a third of the pâté à bombe into the cream and ensuring it's fully combined before adding the rest in.
+
+9. Now it's time to build your ice cream! Start by putting around 100g of parfait into the loaf tin followed by a drizzle of the jam. Continue layering it up until you reach the top. Finish with a few spoonfuls of jam and stir slightly.
+
+10. Freeze until totally firm, at least 3 hours. Let it stand for 5–10 minutes out of the freezer before scooping with a hot ice cream scoop. Parfait lasts in the freezer for 3 months, covered.`
+  },
+
+  {
+    id: 198,
+    title: "Ultimate Chocolate Cake",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "8",
+    time: "Prep 20 mins + Bake 30 mins + Cool 30 mins + Buttercream & assemble 1 hr + Chill 30 mins + Decorate 30 mins",
+    category: "Cakes",
+    ingredients: [
+      "Cake:",
+      "90g butter, melted",
+      "90g vegetable oil",
+      "105g soft light brown sugar",
+      "165g caster sugar",
+      "90g whole eggs (about 1½)",
+      "75g strong brewed coffee (warm or room temperature)",
+      "3g flaky sea salt (about 1 tsp)",
+      "210g plain flour",
+      "50g cocoa powder",
+      "3g bicarbonate of soda (about ½ tsp)",
+      "6g baking powder (about 1½ tsp)",
+      "210g sour cream, yoghurt or crème fraîche",
+      "Chocolate buttercream:",
+      "90g soft light brown sugar",
+      "300g double cream",
+      "300g dark chocolate",
+      "350g butter, softened",
+      "60g cocoa powder",
+      "6g flaky sea salt (about 1¾ tsp, optional)",
+      "Plus:",
+      "180g dark chocolate bar, for shavings or curls"
+    ],
+    method: `1. Preheat the oven to 190°C/170°C fan and line the three tins with baking paper.
+
+2. For the cake, whisk together the melted butter and oil. Whisk in the sugars followed by the eggs, coffee and salt. Sift in the flour, cocoa powder and raising agents and finally whisk in the sour cream (or whatever you are using) until combined and no streaks remain.
+
+3. Divide amongst the cake tins, about 350g per tin, and smooth out slightly. Bake for 20–25 minutes. Check to see if the cakes are baked — they should be risen and firm with no wobble, but still tender. You can prod with a toothpick — there shouldn't be liquid but a few crumbs are fine, good, even! If not, bake for another 5 minutes and check. Overbaked chocolate cake is a tragedy so be careful to check this and err on the side of 'just' baked.
+
+4. Leave to cool for 10 minutes in the tins, then turn out and cool completely on a cooling rack. Wrap and transfer to either the fridge overnight or the freezer. It is essential the sponges are very cold or they won't cut well.
+
+5. Make the chocolate buttercream according to the marble cake with chocolate frosting instructions on page 144.
+
+6. To assemble, slice each cake into three layers. Remember, they must be chilled! Semi-frozen, even. A large serrated knife is your friend here.
+
+7. Start by placing one layer of chocolate sponge on a cake stand or serving platter. Spread a layer of chocolate buttercream on top of the sponge. Repeat this process, alternating between layers of sponge and buttercream, until you have used all nine layers.
+
+8. Wrap the assembled cake with acetate or baking paper and chill it in the freezer for about 30 minutes. This will help to firm up the cake and make it easier to handle.
+
+9. Remove the cake from the freezer and carefully remove the acetate or baking paper. Using a spatula or offset knife, coat the outside of the cake with a layer of chocolate buttercream. Because the cake is cold, it may set quickly.
+
+10. Make chocolate curls or shavings by dragging a knife along a thick chocolate bar. Be careful! And go slow!
+
+11. Once the cake is coated in buttercream, finish with the additional chocolate shavings. The cake can be made 1–2 days in advance and leftovers keep well for 5 days in the fridge.`
+  },
+
+  {
+    id: 199,
+    title: "Salted Vanilla and Pistachio Layer Cake with Lemon Syrup",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "12",
+    time: "Make sponge 1 hr + Fillings & syrup 1 hr 30 mins + Assemble 30 mins + Chill overnight + Buttercream & decorate 1 hr",
+    category: "Cakes",
+    ingredients: [
+      "1 x deep 20cm genoise sponge (see page 131)",
+      "Vanilla custard:",
+      "260g whole milk",
+      "1 vanilla pod, scraped, or 2 tsp good quality vanilla bean paste",
+      "50g caster sugar",
+      "60g egg yolks (about 3) or whole egg (about 1)",
+      "20g cornflour",
+      "20g butter, cold",
+      "150g double cream, whipped",
+      "Pistachio mousseline cream:",
+      "100g whole milk",
+      "30g caster sugar",
+      "55g whole egg (about 1)",
+      "75g pistachio paste",
+      "15g cornflour",
+      "140g butter, softened",
+      "Crystallised pistachios (makes more than needed):",
+      "20g water",
+      "75g caster sugar",
+      "100g shelled pistachios",
+      "Vanilla and lemon syrup:",
+      "Zest of 2 lemons, in strips",
+      "2 spent vanilla pods",
+      "75g water",
+      "75g caster sugar",
+      "Salted vanilla buttercream:",
+      "90g egg whites",
+      "1 tbsp good quality vanilla extract",
+      "120g caster sugar",
+      "250g butter, softened",
+      "4g flaky sea salt (about 1⅛ tsp — start with less if nervous)"
+    ],
+    method: `1. For the vanilla custard, make according to the instructions for the pastry cream on page 338. Once cool, whisk on a medium speed for 1–2 minutes to loosen until smooth. In a separate bowl, whip the cream till thick and can hold a peak (but not stiff!), then fold the mixtures together in two to three additions.
+
+2. For the pistachio mousseline cream, heat the milk and half the sugar on the stovetop until simmering. Whisk the egg with the pistachio paste, cornflour and the rest of the sugar. Once the milk mixture is bubbling, pour a little over the paste mix to temper then add in the rest and return the whole mixture to the stovetop. Cook — whisking all the time — until the mixture is very thick. Pour into a clean container, cover and chill completely.
+
+3. Once cool, whisk on a medium speed for 1–2 minutes to loosen. Once it is smooth, start adding the softened butter. Whisk on a low-medium speed until ultra-lush and smooth, around 1–2 minutes. If it splits, warm using a blow torch or warm briefly over a bain-marie and whisk.
+
+4. For the crystallised pistachios, mix together the water and sugar in a small saucepan. Cover with a lid and heat until boiling (this helps prevent early crystallisation), then remove the lid and cook until 145°C — the syrup will be very thick and viscous. Turn off the heat and add in your pistachios. Stir vigorously. At first, it will just look sticky, but eventually, as you keep stirring, the sugar crystals will form on the nuts. Keep stirring until all the sugar has crystallised. Pour into a clean, heatproof container and cool. Store for 1 month in an airtight container.
+
+5. For the syrup, heat all the ingredients together until boiling, then leave to cool.
+
+6. To assemble, line the cake tin with acetate and baking paper at the base. Cut the genoise sponge into three equal layers. Place one sponge into the base of the tin and douse with syrup, about 2–3 tablespoons, using a pastry brush. Spread half the pistachio mousseline on top, going all the way to the edges. Follow with half of the custard. Repeat with the next sponge layer.
+
+7. To finish, soak the final sponge with syrup, then flip over and place on top. Leave the cake to chill overnight and allow the flavours to meld together.
+
+8. To make the buttercream, whisk the egg whites, vanilla and sugar together in the bowl of your stand mixer. Heat over a bain-marie until you can no longer feel the grittiness from the sugar and it has reached around 70°C. Whisk on a high speed until the mixture has made a thick, fluffy meringue and is cool to the touch, about 10 minutes. Add the butter in, bit by bit, until smooth, about 2–3 minutes. It will split. Don't panic. Keep going. If the mixture still looks split, see All About Fat on page 64.
+
+9. When it's smooth, finally add salt to taste. I add the salt at the end because I want there to be crunchy salt crystals in the buttercream. For extra smooth buttercream, change to the paddle attachment and beat on a low speed for 10 minutes. Buttercream can be made in advance and kept at room temperature for 24 hours or for 1 week, well-wrapped, in the fridge. It needs to be rewhipped for 5–10 minutes before using.
+
+10. Remove the tin, baking paper and acetate from the cake. Flip it upside down (the bottom is always flatter!), then coat the cake with a thin layer of buttercream, using an offset spatula to smooth it out. As the cake is cold, it might set slightly. Apply a second, thicker layer to get a smooth finish. You can also use a flat dough scraper to smooth out the sides. Finish with crystallised pistachios.
+
+11. The cake can be made 1–2 days in advance and lasts well for 3–4 days in the fridge.`
+  },
+
+  {
+    id: 200,
+    title: "Fancy Rhubarb Tart",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "6–8",
+    time: "Day 1: Poach rhubarb overnight 12 hrs. Day 2: Make compote 20 mins + Make & bake pastry case 1 hr 40 mins + Mix frangipane 15 mins + Make & bake 1 hr + Decorate 20 mins",
+    category: "Desserts",
+    ingredients: [
+      "Tart:",
+      "1 x recipe tart pastry or rich tart pastry (see page 119)",
+      "Fancy rhubarb strips:",
+      "200g pink rhubarb, cleaned but left whole (cut the ends off)",
+      "30g caster sugar",
+      "Enough water to cover",
+      "Rhubarb compote:",
+      "200g pink rhubarb, cut into chunks",
+      "50g caster sugar",
+      "30g water",
+      "Frangipane:",
+      "90g butter, chilled",
+      "90g caster sugar",
+      "100g whole eggs (about 2)",
+      "55g ground pistachios",
+      "20g plain flour",
+      "3g fine salt (about ½ tsp)",
+      "Plus:",
+      "Melted apricot jam or a little simple syrup, to glaze (optional)"
+    ],
+    method: `1. To make the fancy rhubarb strips, preheat the oven to 180°C/160°C fan.
+
+2. Add the rhubarb and sugar into a long baking dish. You want to keep the rhubarb in long pieces so you can cut long, elegant strips later. Pour over just enough water to submerge the rhubarb. Cover with foil to avoid colouring in the oven.
+
+3. Bake the rhubarb for 15 minutes, then check every 2–3 minutes until you can just pierce it with a sharp knife. We need to be able to cut this into strips later, so it is imperative that you don't overcook it.
+
+4. Remove from the oven and leave overnight in the fridge to cool. The pinker the rhubarb, the pinker it will be after a night in the fridge as the colours are dispersed.
+
+5. To make the rhubarb compote, heat all the ingredients in a pan over a low heat until the rhubarb is totally broken down. Check for sweetness — if it's too sweet for you, add some lemon juice! If it isn't sweet enough, add a little more sugar and ensure it's dissolved. No exact science here, I'm afraid.
+
+6. To make the frangipane, follow the instructions on page 339.
+
+7. Preheat the oven to 190°C/170°C fan.
+
+8. To line the tart, roll out the soft tart pastry in between two sheets of baking paper until it's around 3mm thick. Line and blind bake according to the instructions on page 121 until dry and light golden, about 25 minutes. Leave to cool.
+
+9. Reduce the oven temperature to 180°C/160°C fan. Once cool, spread half the frangipane in the tart case, then spoon over the rhubarb compote, followed by the rest of the frangipane. Smooth the top. Bake for 40–50 minutes until golden. Leave to cool.
+
+10. To finish, take your fancy rhubarb and cut lengthways into thin strips. You can follow the natural ridges of the rhubarb. Use a sharp knife! A small knife works better than a big one. Lay the strips out on a chopping board and, using a pastry cutter (measure against your tart), cut to the perfect size.
+
+11. Carefully lay the strips over your finished tart. If desired, glaze with melted apricot jam or a little simple syrup.
+
+12. Store leftovers well-wrapped in the fridge for 2–3 days. Bring to room temperature before enjoying.`
+  },
+
+  {
+    id: 201,
+    title: "Sorbets: Hibiscus and Watermelon / Pear, White Wine and Ginger",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "900g each sorbet",
+    time: "Make base 30 mins + Freeze 4 hrs",
+    category: "Desserts",
+    ingredients: [
+      "Hibiscus and watermelon sorbet:",
+      "12g dried hibiscus flowers",
+      "200g water",
+      "200g watermelon flesh",
+      "1g caster sugar",
+      "35g lemon or lime juice",
+      "1g flaky sea salt (about ¼ tsp)",
+      "Pear, white wine and ginger sorbet:",
+      "240g dry white wine",
+      "100g caster sugar",
+      "100g fresh ginger, peeled and grated",
+      "40g lemon juice",
+      "1g flaky sea salt (about ¼ tsp)",
+      "Pears — weight after removing skin and core"
+    ],
+    method: `Hibiscus and watermelon sorbet:
+1. Boil the water and add the hibiscus flowers. Leave to infuse for 15 minutes. Pass through a sieve, then blend with the watermelon, caster sugar, citrus juice and salt until smooth. Pass through a sieve. Pour into a clean container, cover and leave to freeze for at least 4 hours or overnight. The next day, break up the sorbet base and blend in a food processor until smooth. Serve immediately in scoops. You may need to re-blend after 24–36 hours for the best texture.
+
+Pear, white wine and ginger sorbet:
+2. Chop the pears into 3–4cm chunks, then simmer in the wine and sugar until soft, about 15 minutes. Use a lid to prevent excess evaporation. Add in the grated ginger, lemon juice and salt. Leave to cool completely, then blend until smooth and pass through a sieve. Pour into a clean container, cover and leave to freeze for at least 4 hours or overnight. The next day, break up the sorbet base and blend in a food processor until smooth. Serve immediately in scoops. You may need to re-blend after 24–36 hours for the best texture.
+
+Keep in a covered container in the freezer for up to 3 months.`
+  },
+
+  {
+    id: 202,
+    title: "3-Day Focaccia",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "1 large or 2 small loaves",
+    time: "Day 1: 5 mins. Day 2: 13 hrs. Day 3: 3 hrs",
+    category: "Breads",
+    ingredients: [
+      "Poolish:",
+      "110g strong bread flour",
+      "Pinch of dry yeast",
+      "110g water",
+      "Dough part I:",
+      "550g strong bread flour",
+      "385g water",
+      "2g dry yeast (about ⅔ tsp)",
+      "Dough part II:",
+      "13g fine salt (about 2 tsp)",
+      "50g water",
+      "100–150g olive oil",
+      "Slow-roast tomatoes:",
+      "350g cherry tomatoes",
+      "1–2 tbsp olive oil",
+      "Plus:",
+      "Olive oil",
+      "Few sprigs of rosemary",
+      "Flaky sea salt"
+    ],
+    method: `Day 1
+1. Mix the flour, yeast and water together to make a poolish. Cover and leave the poolish for 12 hours.
+
+2. After 12 hours, it should be bubbly and 'ripe', aka ready to use. You can check it's well aerated by seeing if it floats in water.
+
+Day 2
+1. Mix the poolish, flour, water and yeast together until it forms a rough dough. It will look shaggy and ugly. Cover and leave to autolyse for 30 minutes.
+
+2. Dissolve the salt in the water and then mix this into the dough — squeeze it in with your hands until combined. Rest for 30 minutes, keeping it covered. Now add 1–2 tablespoons of the olive oil, coat your hands and stretch and fold the dough — pick the dough up from the middle, stretching it, then folding it over itself gently. Repeat this four to five times until smooth. Cover and leave for 1 hour.
+
+3. Add 1–2 tablespoons of olive oil and stretch and fold the dough — it should be quite puffy at this stage. I call it a puppy's belly!
+
+4. Cover and leave for 1 hour — it should be getting puffy and big each time you leave it.
+
+5. Check the gluten development. It should be stronger but may not be fully developed (e.g. the dough tears). If needed, add more olive oil and stretch the dough.
+
+6. After 30 minutes, check the gluten development again — you should be able to make a thin stretchy windowpane. If it is well developed, you can move it into an oiled tub and put into the fridge. Keep it covered so it doesn't dry out.
+
+7. After an hour, check and de-gas the dough by pressing it down. If it is bubbling up too much in the fridge (it probably will), check later to see it's in check.
+
+8. Cover and leave for at least 8 hours, ideally overnight.
+
+9. Make the slow-roast tomatoes. Preheat the oven to 160°C/140°C fan. Cut the cherry tomatoes in half, toss with the olive oil and lay on a baking sheet. Season with salt and black pepper. Bake for 1 hour or until wrinkled but not coloured. Cool, then move into a container and keep in the fridge.
+
+Day 3
+1. With oiled hands, move the dough onto an oiled baking tray, balling it in your hands slightly to help give it a smooth surface. Spread the dough out slightly, then cover with olive oil so it doesn't form a crust. Leave for 1–1½ hours until it relaxes.
+
+2. Oil your hands, then dimple the top of the dough and redistribute the air bubbles. You can also lift up the edges and sides of the focaccia, which can help reveal hidden side bubbles! Leave for 30 minutes.
+
+3. Preheat the oven to 250°C/230°C fan.
+
+4. Dimple the dough again and press the roasted cherry tomatoes into the dough. Remember to poke them quite deep into the dough. Toss sprigs of rosemary with a little olive oil so they are lightly covered then press into the dough, followed by a little flaky salt.
+
+5. Bake for 10 minutes, then turn the oven down to 220°C/200°C fan and bake for a further 10–15 minutes until golden. Remove from the tray and cool on a rack.
+
+6. Focaccia is best enjoyed the day it is made, but you can store it in the fridge for 3 days and reheat in the oven.
+
+Other toppings:
+Classic salt and rosemary — toss 3–4 sprigs of rosemary with olive oil, press deeply into the dough, sprinkle flaky salt on top.
+Fig and chocolate — chop 75g dark chocolate into 1–2cm pieces, slice 3 fresh figs into 5–6 pieces each, toss in olive oil, press the chocolate and figs deeply into the dough with small sprigs of rosemary, salt generously.
+Crispy potato and olive — thinly slice potatoes on a mandolin (1–2mm thick), toss in olive oil and flaky salt, press black olives into the dough and scatter the potatoes on top.
+Plum and rocket — stone and halve ripe plums, press deeply into the dough, drizzle with olive oil and sprinkle with flaky salt, serve along with rosemary sprigs or sage leaves and rocket on top.`
+  },
+
+  {
+    id: 203,
+    title: "Meringues",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "300g meringue",
+    time: "10–20 mins",
+    category: "Baking",
+    ingredients: [
+      "100g egg whites (about 3–4)",
+      "200g caster sugar"
+    ],
+    method: `French meringue:
+1. Whisk the whites on high speed until generously foamy, then turn the mixer down to medium speed (to avoid sugar explosions!) and add your sugar, bit by bit. Turn the speed back up, then whip to stiff peaks, about 2–3 minutes. Use as directed in recipe.
+
+Swiss meringue:
+1. In the bowl you are going to make the meringue in, whisk the egg whites and sugar. Place the bowl over a simmering saucepan of water and whisk until the mixture is about 68–70°C — it will be lovely and warm to the touch and there won't be any crystals of sugar if you rub a bit of the mixture between your fingers. Remove from the heat and whisk on high speed until cool and thick stiff peaks have formed, about 10 minutes. Use as directed in recipe.
+
+Swiss-franc meringue:
+1. Preheat the oven to 200°C/180°C fan.
+
+2. Place the sugar on a low, wide baking tray and heat it in the oven for 7–10 minutes. Remove from the oven and set aside.
+
+3. Whisk the egg whites on high speed until generously foamy, then start adding the warmed sugar bit by bit. Continue whipping for 8–10 minutes until very stiff and the meringue is cool. Use as directed in recipe.
+
+Italian meringue:
+1. In a saucepan, dissolve the sugar in a third of its weight of water to make a syrup. Make sure there aren't any sugar crystals on the edge of the pan otherwise it can create crystallisation issues later on. Alternatively, cover the pan with a lid for the first 3 minutes of cooking.
+
+2. Heat on high and bring the syrup up to 118°C. Whilst the syrup is heating, whisk the egg whites on high speed until somewhat foamy. Turn the speed down and drizzle the hot syrup into the egg whites. Turn up the speed and whip on high until stiff, shiny and cool, about 10 minutes. Use as directed in recipe.`
+  },
+
+  {
+    id: 204,
+    title: "Milk Bread",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "1 loaf or 8 buns",
+    time: "Make tangzhong 10 mins + Mix dough 20 mins + Proof 1 hr + Shape & proof 1 hr + Bake 20 mins",
+    category: "Breads",
+    ingredients: [
+      "Tangzhong:",
+      "50g whole milk",
+      "50g water",
+      "20g strong bread flour",
+      "Dough:",
+      "145g whole milk",
+      "55g whole eggs (about 1)",
+      "270g strong bread flour",
+      "4g dry yeast (about 1½ tsp)",
+      "5g fine salt (about 1 tsp)",
+      "40g caster sugar",
+      "70g butter, softened",
+      "Egg wash (see page 343)"
+    ],
+    method: `1. To make the tangzhong, off the heat whisk the milk, flour and water together.
+
+2. Cook over a medium heat, whisking/stirring all the time, until it thickens. It will be very thick. Take off the heat and move it into the bowl of a stand mixer, leaving it to cool slightly. Too hot and you risk harming the yeast, so if you can comfortably touch it, that is good.
+
+3. In the stand mixer, first add the liquids on top of the warm tangzhong, followed by the dry ingredients. Mix on a medium speed for about 6–8 minutes until medium gluten development is reached. This is when you can pull on the dough and it stays together but it is still quite fragile. You can take it further than this, but this is the minimum requirement before adding the butter.
+
+4. Add in the soft butter a teaspoon at a time with the mixer running. Mix until very smooth — another 6–8 minutes — and full gluten development is reached. This is when you can pull a thin, almost translucent layer with the dough. If you have not reached it by this stage, rest the dough for 5 minutes, then mix for another 5 minutes. Continue until full gluten development.
+
+5. Remove from the bowl and use your hands or a bench scraper to form it into a round shape. Use the benchtop to help create some surface tension so it has a smooth surface. At this point, you can press it down and put it into the fridge to cold proof and shape the next day. Otherwise, move into a clean bowl, then leave to rest and rise for 1 hour, covered, or until puffy and doubled.
+
+6. To make buns, divide your dough into 60g pieces and shape them into smooth balls. For a loaf, divide the dough into 3 x 170g pieces and roll into even rectangle shapes, around 1–2cm thick. Roll each piece of dough up into a sausage, then nestle into the loaf tin. Loosely cover and proof at room temperature until puffy, around 1 hour.
+
+7. Meanwhile, preheat the oven to 220°C/200°C fan.
+
+8. When proofed, brush gently with egg wash. This is your opportunity to add any desired toppings (a mix of black and white sesame seeds is good for buns). Immediately turn the oven down to 195°C/175°C fan and bake the buns for 12–14 minutes until golden or 18–22 minutes for the loaf.`
+  },
+
+  {
+    id: 205,
+    title: "Bun Dough",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "600g dough (about 10 buns)",
+    time: "Make tangzhong 10 mins + Mix dough 20 mins + Proof 1 hr + Shape & proof 1 hr + Bake 20 mins",
+    category: "Breads",
+    ingredients: [
+      "Tangzhong:",
+      "25g whole milk",
+      "120g water",
+      "25g strong bread flour",
+      "Dough:",
+      "38g whole milk",
+      "50g whole eggs (about 1)",
+      "245g strong bread flour",
+      "4g dry yeast (about 1½ tsp)",
+      "5g fine salt (about 1¼ tsp)",
+      "55g caster sugar",
+      "40g butter, softened"
+    ],
+    method: `Tangzhong bun dough:
+1. Follow the directions below, omitting the tangzhong.
+
+1. To make the tangzhong, off the heat whisk the water and flour together.
+
+2. Cook over a medium heat, whisking/stirring all the time, until it thickens. It will be very thick. Take off the heat and move it into the bowl of a stand mixer, leaving it to cool slightly. Too hot and you risk harming the yeast, so if you can comfortably touch it, that is good.
+
+3. In the stand mixer, first add the liquids on top of the warm tangzhong, if using. Mix on a medium speed for about 8–10 minutes until medium gluten development is reached — this is when you can pull a thin, almost translucent layer with the dough. If you have not reached it by this stage, rest the dough for 5 minutes, then mix for another 5 minutes. Continue until full gluten development is reached.
+
+4. Add in the soft butter a teaspoon at a time with the mixer running, Mix until very smooth — another 6–8 minutes — and full gluten development is reached. You can pull a thin, almost translucent layer with the dough. If you have not reached it by this stage, rest the dough for 5 minutes, then mix for another 5 minutes. Continue until full gluten development is reached.
+
+5. Remove from the bowl and 'round' it a few times on the benchtop so it has a smooth surface, then press it down and put it into the fridge to cold proof and shape the next day. Otherwise, move into a clean bowl, then leave to rest and rise for 1 hour, covered, or until puffy and doubled. Shape the dough as directed in the recipes.`
+  },
+
+  {
+    id: 206,
+    title: "Rough Puff Pastry",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "500g pastry (enough for 2 x 20cm x 3.5cm tarts)",
+    time: "Mix pastry & perform folds 20 mins + Chill 1 hr",
+    category: "Baking",
+    ingredients: [
+      "95g water, ice-cold",
+      "75g white wine vinegar",
+      "160g butter, cold",
+      "160g plain flour",
+      "160g strong bread flour",
+      "5g flaky sea salt (about 1¾ tsp)"
+    ],
+    method: `1. Weigh out the water and vinegar, chop the butter into 2cm cubes and put them all into the freezer for 20 minutes or the fridge for 1 hour, at least, along with the weighed-out flours.
+
+2. Put the flours and salt into the bowl of a stand mixer and mix with the paddle attachment until all is combined.
+
+3. Add in the cubed butter and mix on a low speed until the butter is in irregular-sized pieces. You want some to be breadcrumb style and some to still be large — around 1.5cm.
+
+4. Immediately add in your cold water/vinegar and mix until it looks hydrated, about 20 seconds. You will still have dry bits at the bottom of the bowl.
+
+5. Move the pastry onto a clean surface and add flour if you need to underneath.
+
+6. Roll the pastry out to be 40cm long and perform a double fold. This is when you fold both edges into the middle and then fold it over itself again.
+
+7. Roll the pastry out to be 40cm long again and perform two more double folds immediately, adding flour when you need to.
+
+8. Chill in the fridge for 1 hour before using. Pastry will keep for 3 days well-wrapped in the fridge or 30 days in the freezer.`
+  },
+
+  {
+    id: 207,
+    title: "Pie Dough",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "640g dough (enough for a deep 23cm double-crusted pie)",
+    time: "Mix pastry & perform folds 20 mins + Chill 1 hr 30 mins",
+    category: "Baking",
+    ingredients: [
+      "60g water",
+      "60g crème fraîche",
+      "2g flaky sea salt (about 1¼ tsp)",
+      "2g caster sugar",
+      "210g plain flour",
+      "butter, very cold"
+    ],
+    method: `1. Whisk the water and crème fraîche together and set aside in the fridge or freezer to chill.
+
+2. Mix together the plain flour, salt and sugar and whisk to distribute everything evenly.
+
+3. Cut the butter into small cubes/rectangles, add to the flour and toss to coat. Coating the butter in flour will help protect it from the warmth of your hands and getting melty, which can negatively impact the flake-factor of your pie dough.
+
+4. Squish the butter into flat pieces, one by one.
+
+5. Now it's time to add the liquid. Pour in half and toss the dry ingredients around the bowl until you can't see the liquid anymore. Now add the rest and squish together. Tip the dough onto your benchtop.
+
+6. Squash everything together as best you can and then, adding flour if you need to, roll out the dough and perform a single turn. You'll see chunks of butter turn into long, thin pieces — it's quite satisfying!
+
+7. Press the dough back together — adding more flour if you need — then perform two more single turns until the dough is evenly combined but you can still see big, lovely marble-y streaks of butter.
+
+8. Divide the dough into 300g pieces (perfect for top and bottom crusts for a deep 23cm pie!), then wrap. Put into the fridge for at least 1½ hours for it to firm back up. The pie dough can be kept frozen, well-wrapped, for 30 days.
+
+9. To roll the pastry out, flour your surface enough to stop any sticking, then roll the pie dough out to 2–3mm thickness. This is way thinner than you think is going to work. Trust me! I've made a lot of pie doughs that are too thick because I simply haven't trusted the process, but you do want to go quite thin here. You'll still get a fantastic chubby edge as you fold the dough in on itself anyway during lining, so don't worry about losing any drama. Pastry will keep for 3 days well-wrapped in the fridge or 30 days in the freezer.`
+  },
+
+  {
+    id: 208,
+    title: "Suet Pie Dough",
+    author: "Nicola Lamb",
+    book: "Sift",
+    serves: "450g dough (enough for 1 x double-crust lattice pie in a 30cm rectangular pie dish)",
+    time: "Mix pastry & perform folds 20 mins + Chill 1 hr",
+    category: "Baking",
+    ingredients: [
+      "160g plain flour",
+      "80g plain wholemeal flour",
+      "30g butter, cold",
+      "4g flaky sea salt (about 1⅛ tsp)",
+      "80g shredded suet (I like Atora vegetable) or butter, very cold",
+      "80g water",
+      "¼ tsp white wine vinegar"
+    ],
+    method: `1. Mix the flours and salt together, then add the cold butter, cut into approx. 2–3cm pieces, and press each piece between your fingers to make fine crumbs before adding the larger pieces and flattening into flat strips.
+
+2. Add the suet and briefly mix before adding the water and vinegar, bit by bit, and forming a rough dough.
+
+3. Turn the dough out onto your benchtop and roll out to be about 1.5cm thick. Fold into three like a letter to add layers of flakiness and then wrap. Chill for an hour before rolling out. The pastry will keep for 3 days well-wrapped in the fridge or 30 days in the freezer.`
   }
 ];
 
@@ -5831,7 +6917,8 @@ const CUISINE_META = {
   "Benny Roff":          { cuisine: "Modern Australian",  flag: "🇦🇺" },
   "Nino Zoccali":        { cuisine: "Italian",            flag: "🇮🇹" },
   "Christine Mansfield": { cuisine: "Indian",             flag: "🇮🇳" },
-  "Emelia Jackson":      { cuisine: "Australian",         flag: "🇦🇺" }
+  "Emelia Jackson":      { cuisine: "Australian",         flag: "🇦🇺" },
+  "Nicola Lamb":         { cuisine: "British",            flag: "🇬🇧" }
 };
 
 const RECIPE_SUMMARIES = {
@@ -6013,7 +7100,31 @@ const RECIPE_SUMMARIES = {
   181: "Chipotle-glazed rotisserie chicken baked until sticky and charred, served with cool, tangy blue cheese dressing.",
   182: "Roasted beetroot with charred spring onions, za'atar and a creamy whipped feta dressing for a bold, earthy salad.",
   183: "Crisp cornmeal nuggets made with cream cheese and Lancashire cheese, served with a fiery homemade hot sauce.",
-  184: "Spiced butter beans grilled under melted cheese on sourdough toast, topped with quick-pickled chilli onion."
+  184: "Spiced butter beans grilled under melted cheese on sourdough toast, topped with quick-pickled chilli onion.",
+  185: "A classic Victoria sponge lifted by slow-roasted strawberries and their syrup, layered with lightly whipped crème fraîche cream.",
+  186: "A featherlight chiffon cake perfumed with chamomile-infused milk and toasted flour, finished with chamomile sugar and honey cream.",
+  187: "Caramel-drenched pears and toasted walnuts top a buckwheat and brown sugar sponge, served warm with sticky goo and cream.",
+  188: "A no-fuss steamed buttermilk sponge with bay-and-cinnamon stewed plums hidden beneath, turned out with a dramatic reveal.",
+  189: "A no-bake dark chocolate and toasted coconut shell holds a silky malt syrup milk chocolate crémeux, topped with bitter chocolate shavings.",
+  190: "Crisp flaky pastry encases buttery wilted leeks and a sharp mustard custard, finished with a crown of golden gruyere.",
+  191: "Orange zest, golden raisins, white chocolate and pistachios packed into a honey tangzhong bun, glazed and fragrant from the oven.",
+  192: "Earl Grey tea ground into the dough gives these tall, crème fraîche scones a floral bitterness that pairs beautifully with rhubarb jam.",
+  193: "Layered with rye flour and gherkin chunks, these laminated Cheddar scones have a flaky, deli-sandwich character unlike any other.",
+  194: "Unashamedly thick miso walnut cookies with a high ratio of dark chocolate, gooey-centred and crisp-edged straight from the oven.",
+  195: "Caramelised orange rounds poached in sweet wine sit beneath a warm grilled sabayon with crisp langues de chat for dipping.",
+  196: "Pudding rice cooked low and slow in vanilla milk, enriched with egg yolks and blonde white chocolate, topped with poached pears and hazelnuts.",
+  197: "A no-churn frozen parfait made silky with pâté à bombe and whipped cream, layered with swirls of rhubarb or raspberry jam.",
+  198: "An eighteen-layer showstopper of rich coffee-spiked chocolate sponge and dark chocolate buttercream, finished with hand-shaved chocolate curls.",
+  199: "A genoise drenched in lemon-vanilla syrup, layered with pistachio mousseline and vanilla custard, coated in salted Swiss meringue buttercream.",
+  200: "Forced rhubarb strips arranged over a pistachio frangipane and rhubarb compote tart, their colour deepened overnight for a jewel-bright finish.",
+  201: "Two vivid sorbets — hibiscus and watermelon, and pear with white wine and ginger — each blended smooth and frozen without a machine.",
+  202: "A three-day slow-fermented focaccia with a poolish base, dimpled with slow-roast tomatoes, rosemary and flaky salt for extraordinary depth.",
+  203: "A foundational guide to four meringue styles — French, Swiss, Swiss-franc and Italian — each suited to different textures and applications.",
+  204: "A soft, pillowy milk bread made with a tangzhong paste for extraordinary tenderness, shaped as a loaf or glazed pull-apart buns.",
+  205: "A versatile enriched bun dough at 75% hydration, built with a tangzhong for a fluffier, longer-lasting crumb across all enriched bun recipes.",
+  206: "A fast rough puff pastry using ice-cold butter and white wine vinegar for pronounced flakiness with a fraction of the fuss.",
+  207: "A crème fraîche pie dough with visible butter streaks laminated through for a flaky, tender double-crust suitable for sweet or savoury pies.",
+  208: "A wholemeal and plain flour suet crust with a distinctive crumbly, layered texture — ideal for hearty double-crust and lattice pies."
 };
 
 // Build ingredient → recipe map

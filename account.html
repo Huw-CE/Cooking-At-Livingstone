@@ -205,16 +205,6 @@
 .account-empty a { color: var(--rust); }
 
 /* ══════════════════════════════════════════
-   FAVOURITES — collapsible category groups
-══════════════════════════════════════════ */
-#fav-recipe-grid .group-header {
-  margin-top: 20px;
-}
-#fav-recipe-grid .group-header:first-child {
-  margin-top: 0;
-}
-
-/* ══════════════════════════════════════════
    FAVOURITE AUTHORS
 ══════════════════════════════════════════ */
 .authors-note {
@@ -787,10 +777,8 @@ function updateStats() {
 }
 
 // ══════════════════════════════════════════════════════════════════════════
-//  FAVOURITE RECIPES — collapsible by category
+//  FAVOURITE RECIPES — flat grid, sorted alphabetically
 // ══════════════════════════════════════════════════════════════════════════
-const favCollapsed = new Set();
-
 function renderFavRecipes() {
   const grid = document.getElementById('fav-recipe-grid');
   const favList = RECIPES.filter(r => favIds.has(r.id));
@@ -803,37 +791,13 @@ function renderFavRecipes() {
     return;
   }
 
-  // Group by category, sort alphabetically within
-  const grouped = favList.reduce((a, r) => { (a[r.category] || (a[r.category] = [])).push(r); return a; }, {});
-  Object.values(grouped).forEach(arr => arr.sort((a, b) => a.title.localeCompare(b.title)));
+  favList.sort((a, b) => a.title.localeCompare(b.title));
 
-  grid.innerHTML = Object.keys(grouped).sort().map(cat => {
-    const hide = favCollapsed.has(cat);
-    const count = grouped[cat].length;
-    return `
-      <div class="group-header" id="fgh_${safeid(cat)}">
-        <span class="group-title">${escHtml(cat)}</span>
-        <span class="group-count">${count}</span>
-        <button class="group-toggle" data-favcol="${escHtml(cat)}">${hide ? 'Show' : 'Hide'}</button>
-      </div>
-      <div class="recipe-grid" id="frg_${safeid(cat)}" style="display:${hide ? 'none' : 'grid'};margin-bottom:8px;">
-        ${grouped[cat].map(r => recipeCardHtml(r, favIds)).join('')}
-      </div>`;
-  }).join('');
+  grid.innerHTML = `<div class="recipe-grid">${favList.map(r => recipeCardHtml(r, favIds)).join('')}</div>`;
 
   attachFavListeners(grid, favIds);
   updateStats();
 }
-
-// Collapse toggle
-document.getElementById('fav-recipe-grid').addEventListener('click', e => {
-  const colBtn = e.target.closest('[data-favcol]');
-  if (colBtn) {
-    const c = colBtn.dataset.favcol;
-    favCollapsed.has(c) ? favCollapsed.delete(c) : favCollapsed.add(c);
-    renderFavRecipes();
-  }
-});
 
 // ══════════════════════════════════════════════════════════════════════════
 //  FAVOURITE AUTHORS — derived from favourited recipes
@@ -1302,6 +1266,18 @@ renderFavAuthors();
 renderPlanOverview();
 renderShoppingSection();
 updateStats();
+
+// Re-render when plan syncs from cloud (auth.js fires this event)
+window.addEventListener('lv:plansynced', e => {
+  const newPlan = e.detail.plan;
+  plan.days     = newPlan.days;
+  plan.desserts = newPlan.desserts;
+  plannedIdSet.clear();
+  getPlannedIds().forEach(id => plannedIdSet.add(id));
+  renderPlanOverview();
+  renderShoppingSection();
+  updateStats();
+});
 
 // Re-render when favs sync from cloud (auth.js fires this event)
 window.addEventListener('lv:favssynced', e => {

@@ -1331,7 +1331,11 @@ function loadPlan() {
   try { const raw = localStorage.getItem(STORAGE_KEY); if (raw) return JSON.parse(raw); } catch(e) {}
   return { days: Array(7).fill(null), desserts: Array(3).fill(null) };
 }
-function savePlan() { localStorage.setItem(STORAGE_KEY, JSON.stringify(plan)); rebuildPlannedSet(); }
+function savePlan() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(plan));
+  rebuildPlannedSet();
+  if (window.sbSyncPlan) window.sbSyncPlan(plan);
+}
 function getAllPlannedIds() { return [...plannedIdSet]; }
 function isInPlan(id) { return plannedIdSet.has(id); }
 function getRecipeById(id) { return RECIPE_BY_ID[id]; }
@@ -2099,6 +2103,22 @@ document.addEventListener('click', e => {
       !e.target.closest('#mob-show-plan') &&
       !e.target.closest('.modal-overlay')) {
     closeMobPlannerPanels();
+  }
+});
+
+// ══════════════════════════════════════════════════════════════════════════════
+//  CLOUD PLAN SYNC — update local plan when auth.js merges from cloud
+// ══════════════════════════════════════════════════════════════════════════════
+window.addEventListener('lv:plansynced', e => {
+  const newPlan = e.detail.plan;
+  plan.days     = newPlan.days;
+  plan.desserts = newPlan.desserts;
+  rebuildPlannedSet();
+  // Re-render the planner tab if it's currently active
+  const plannerContent = document.getElementById('planner-content');
+  if (plannerContent && plannerContent.style.display !== 'none') {
+    renderPlannerGrid();
+    renderPlannerSidebar();
   }
 });
 

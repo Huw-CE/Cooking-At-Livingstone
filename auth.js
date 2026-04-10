@@ -359,6 +359,18 @@
     document.getElementById('auth-in').style.display  = 'none';
   }
 
+  // ── DISPATCH PLAN SYNCED ─────────────────────────────
+  // Fires lv:plansynced so browse.html / account.html can
+  // update their local plan object and re-render.
+  function dispatchPlanSync(plan) {
+    let activePlan = plan;
+    if (!activePlan) {
+      try { const r = localStorage.getItem('cal_plan_v1'); activePlan = r ? JSON.parse(r) : null; } catch {}
+    }
+    if (!activePlan) activePlan = { days: Array(7).fill(null), desserts: Array(3).fill(null) };
+    window.dispatchEvent(new CustomEvent('lv:plansynced', { detail: { plan: activePlan } }));
+  }
+
   // ── DISPATCH FAVS SYNCED ─────────────────────────────
   // Updates the page's favIds Set in-place (if it exposed
   // itself as window.lvFavIds), then updates all fav UI.
@@ -409,8 +421,10 @@
     if (session?.user) {
       setNavUser(session.user);
       const merged = await sbMergeAndLoadFavs(session.user.id);
+      const mergedPlan = await sbMergeAndLoadPlan(session.user.id);
       setModalSignedIn(session.user, merged.size);
       dispatchFavsSync(merged);
+      dispatchPlanSync(mergedPlan);
     }
 
     // React to future auth state changes (sign in / sign out / token refresh)
@@ -418,12 +432,15 @@
       if (event === 'SIGNED_IN' && session?.user) {
         setNavUser(session.user);
         const merged = await sbMergeAndLoadFavs(session.user.id);
+        const mergedPlan = await sbMergeAndLoadPlan(session.user.id);
         setModalSignedIn(session.user, merged.size);
         dispatchFavsSync(merged);
+        dispatchPlanSync(mergedPlan);
       } else if (event === 'SIGNED_OUT') {
         setNavUser(null);
         setModalSignedOut();
         dispatchFavsSync(loadFavs()); // fall back to localStorage
+        dispatchPlanSync(null);       // fall back to localStorage
       }
     });
   }

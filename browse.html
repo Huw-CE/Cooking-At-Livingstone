@@ -89,6 +89,18 @@
 }
 
 /* ══════════════════════════════════════════
+   PLANNER RECIPE GRID
+   Group headers and per-category grids must
+   span all columns of the outer recipe-grid
+   container so recipes display in a full-
+   width multi-column layout.
+══════════════════════════════════════════ */
+#p-recipe-grid > .group-header,
+#p-recipe-grid > .recipe-grid {
+  grid-column: 1 / -1;
+}
+
+/* ══════════════════════════════════════════
    PLANNER FILTER BAR
 ══════════════════════════════════════════ */
 .planner-filter-bar {

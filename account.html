@@ -567,6 +567,8 @@
   .shopping-ing-list { grid-template-columns: 1fr; }
   .combined-grid { grid-template-columns: 1fr; }
   .account-profile-row { gap: 14px; }
+  /* Hide time metadata in meal plan rows — too wide on narrow screens */
+  .plan-day-meta { display: none; }
   .account-avatar { width: 52px; height: 52px; font-size: 20px; }
 }
 
@@ -1009,6 +1011,27 @@ function findNormKeyForGroup(g) {
 function buildShoppingText() {
   const ids = getPlannedIds();
   if (!ids.length) return '';
+
+  if (shopTab === 'combined') {
+    const combined = buildCombinedList(ids);
+    const sorted = [...combined].sort((a, b) => {
+      const ak = findNormKeyForGroup(a), bk = findNormKeyForGroup(b);
+      const aPantry = ak && pantry.has(ak) ? 1 : 0;
+      const bPantry = bk && pantry.has(bk) ? 1 : 0;
+      if (aPantry !== bPantry) return aPantry - bPantry;
+      return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+    });
+    let out = 'SHOPPING LIST — Cooking at Livingstone (Combined)\n' + '═'.repeat(42) + '\n\n';
+    sorted.forEach(g => {
+      const k = findNormKeyForGroup(g);
+      const tick = k && pantry.has(k) ? '[✓] ' : '';
+      const src  = g.sources.length > 1 ? `(${g.sources.length} recipes)` : `(${g.sources[0]})`;
+      out += `  ${tick}${fmtCombinedLine(g)}  ${src}\n`;
+    });
+    return out;
+  }
+
+  // By recipe (default, and fallback for pantry tab)
   let out = 'SHOPPING LIST — Cooking at Livingstone\n' + '═'.repeat(42) + '\n\n';
   ids.forEach(id => {
     const r = RECIPE_BY_ID[id];

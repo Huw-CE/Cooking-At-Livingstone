@@ -1660,7 +1660,7 @@ To make the cacao topping, place the cacao, oil and rice malt syrup in a heatpro
     book: "Balanced",
     serves: "15",
     time: "1 hr",
-    category: "Dessert",
+    category: "Cakes",
     ingredients: [
       "1 1/2 cups (390g) mashed banana (about 4 bananas)",
       "1/3 cup (40g) oat bran",
@@ -1688,7 +1688,7 @@ Sift in both the flours and the baking powder and mix to combine. Pour into the 
     book: "Balanced",
     serves: "12",
     time: "1 hr 25 mins",
-    category: "Dessert",
+    category: "Cakes",
     ingredients: [
       "1/4 cup (50g) black chia seeds",
       "1/2 cup (125ml) milk",
@@ -2522,7 +2522,7 @@ To serve, pile the dacquoise high with the chantilly cream, berries, mango and p
     title: "Whisky, orange and chocolate cheesecake",
     author: "Emelia Jackson",
     book: "First Cream the Butter & The Sugar",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Makes a 23 cm (9 inch) cake",
     time: "",
     ingredients: [
@@ -2585,7 +2585,7 @@ Slice each bun across the top without cutting through to the base. Fill the slit
     title: "Chocolate cupcakes with cherry jam and whipped ganache",
     author: "Emelia Jackson",
     book: "First Cream the Butter & The Sugar",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Makes 16",
     time: "",
     ingredients: [
@@ -2628,7 +2628,7 @@ Transfer the whipped ganache to a piping bag fitted with a round nozzle. Pipe a 
     title: "Coconut syrup cake",
     author: "Emelia Jackson",
     book: "First Cream the Butter & The Sugar",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Makes a 20 cm (8 inch) two-layer cake",
     time: "",
     ingredients: [
@@ -2703,7 +2703,7 @@ Remove the chilled brownie from the tin and trim the edges. Use a wet knife to c
     title: "Lumberjack cake with caramel coconut topping",
     author: "Emelia Jackson",
     book: "First Cream the Butter & The Sugar",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Makes a 23 cm (9 inch) cake",
     time: "",
     ingredients: [
@@ -2742,7 +2742,7 @@ Gently pour the topping over the cake and spread it in an even layer. Return the
     title: "Sour cream blueberry cake with vanilla mascarpone icing",
     author: "Emelia Jackson",
     book: "First Cream the Butter & The Sugar",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Makes an 18 cm (7 inch) two-layer cake",
     time: "",
     ingredients: [
@@ -2858,7 +2858,7 @@ Cereal chocolate-chip cookies: keep the dark chocolate chips in the base dough a
     title: "My go-to chocolate fudge cake with malted buttercream",
     author: "Emelia Jackson",
     book: "First Cream the Butter & The Sugar",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Makes a 20 cm (8 inch) two-layer cake",
     time: "",
     ingredients: [
@@ -2897,7 +2897,7 @@ Fill and cover the cake with the malted buttercream and top it with chocolate sh
     title: "Coffee and walnut streusel cake",
     author: "Emelia Jackson",
     book: "Cakes, Glorious Cakes",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Makes an 18 cm (7 inch) two-layer cake",
     time: "",
     ingredients: [
@@ -4481,7 +4481,7 @@ Serve the lamb on a platter with the sauce, olive oil potato mash and baby leeks
     title: "Rab Island Almond and Maraschino Liqueur Cake",
     author: "Nino Zoccali",
     book: "Venetian Republic",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Serves 8",
     time: "Prep Time 30 minutes, plus 1 hour for resting the dough; Cooking Time 50 minutes",
     ingredients: [
@@ -4521,7 +4521,7 @@ Bake for 50 minutes, or until the outside crust is firm. Just before serving, du
     title: "Osteria Alle Testiere Pistachio Cake with Pistachio Gelato",
     author: "Nino Zoccali",
     book: "Venetian Republic",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Serves 8",
     time: "Prep Time 15 minutes, plus overnight gelato cooling, churning and freezing; Cooking Time 1 hour 30 minutes",
     ingredients: [
@@ -4563,7 +4563,7 @@ Once completely cool, dust the cake with icing sugar, slice and serve with a sco
     title: "Carrot, Hazelnut and Spelt Cake with Hazelnut Gelato",
     author: "Nino Zoccali",
     book: "Venetian Republic",
-    category: "Dessert",
+    category: "Cakes",
     serves: "Serves 8",
     time: "Prep Time 20 minutes, plus resting the icing, and churning and freezing the gelato; Cooking Time 45 minutes",
     ingredients: [
@@ -4730,7 +4730,7 @@ To unmould, cut around the sides of the custard and invert onto a flat plate. Cu
     book: "Always Add Lemon",
     serves: "8-10",
     time: "1 hr",
-    category: "Dessert",
+    category: "Cakes",
     ingredients: [
       "225 g (8 oz) 70 per cent or higher dark chocolate",
       "220 g (8 oz) butter, plus extra for greasing",
@@ -5053,7 +5053,7 @@ Fillet the fish by using a fork to remove the top fillets from the three fillets
     book: "OTK: Extra Good Things",
     serves: "8-10",
     time: "2 hrs",
-    category: "Dessert",
+    category: "Cakes",
     ingredients: [
       "Apples:",
       "150g runny honey",
@@ -5978,7 +5978,7 @@ To mix in the food processor, blitz the walnuts with the caster sugar until fine
     book: "Sift",
     serves: "3–4",
     time: "Prep 15 mins + Cook plums 15 mins + Steam 1 hr",
-    category: "Desserts",
+    category: "Dessert",
     ingredients: [
       "Stewed plums:",
       "170g plums",
@@ -6032,7 +6032,7 @@ To mix in the food processor, blitz the walnuts with the caster sugar until fine
     book: "Sift",
     serves: "8",
     time: "Prep 45 mins + Chill 4 hrs + Finish 15 mins",
-    category: "Desserts",
+    category: "Dessert",
     ingredients: [
       "Crust:",
       "130g dark chocolate, chopped",
@@ -6292,7 +6292,7 @@ To mix in the food processor, blitz the walnuts with the caster sugar until fine
     book: "Sift",
     serves: "4",
     time: "Prep 30 mins + Make langues de chat 20 mins + Make sabayon 15 mins + Assemble 10 mins",
-    category: "Desserts",
+    category: "Dessert",
     ingredients: [
       "Caramel poached oranges:",
       "500g oranges or mandarins",
@@ -6337,7 +6337,7 @@ To mix in the food processor, blitz the walnuts with the caster sugar until fine
     book: "Sift",
     serves: "4",
     time: "Prep 1 hr (toast choc & roast hazelnuts) + Poach pears 45 mins + Cook rice pudding 30 mins",
-    category: "Desserts",
+    category: "Dessert",
     ingredients: [
       "Blonde white chocolate:",
       "200g white chocolate",
@@ -6393,7 +6393,7 @@ To mix in the food processor, blitz the walnuts with the caster sugar until fine
     book: "Sift",
     serves: "6",
     time: "Prep 25 mins + Freeze 3 hrs",
-    category: "Desserts",
+    category: "Dessert",
     ingredients: [
       "1–2 vanilla pods, scraped, or 1 tbsp good quality vanilla bean paste",
       "90g egg yolks (about 6)",
@@ -6550,7 +6550,7 @@ To mix in the food processor, blitz the walnuts with the caster sugar until fine
     book: "Sift",
     serves: "6–8",
     time: "Day 1: Poach rhubarb overnight 12 hrs. Day 2: Make compote 20 mins + Make & bake pastry case 1 hr 40 mins + Mix frangipane 15 mins + Make & bake 1 hr + Decorate 20 mins",
-    category: "Desserts",
+    category: "Dessert",
     ingredients: [
       "Tart:",
       "1 x recipe tart pastry or rich tart pastry (see page 119)",
@@ -6604,7 +6604,7 @@ To mix in the food processor, blitz the walnuts with the caster sugar until fine
     book: "Sift",
     serves: "900g each sorbet",
     time: "Make base 30 mins + Freeze 4 hrs",
-    category: "Desserts",
+    category: "Dessert",
     ingredients: [
       "Hibiscus and watermelon sorbet:",
       "12g dried hibiscus flowers",
@@ -7543,6 +7543,8 @@ const CAT_META = {
   "Seafood":            { icon:"🦐", bg:"rgba(44,107,138,0.09)",  grad:"linear-gradient(135deg,#2C6B8A,#7A8C6E)", img:"images/categories/seafood.webp" },
   "Salads":             { icon:"🥗", bg:"rgba(122,140,110,0.09)", grad:"linear-gradient(135deg,#7A8C6E,#D4A847)", img:"images/categories/salads.webp" },
   "Baking":             { icon:"🎂", bg:"rgba(212,168,71,0.09)",  grad:"linear-gradient(135deg,#D4A847,#C05A2C)", img:"images/categories/baking.webp" },
+  "Cakes":              { icon:"🍰", bg:"rgba(192,90,44,0.08)",   grad:"linear-gradient(135deg,#C05A2C,#D4A847)", img:"images/categories/cakes.webp" },
+  "Breads":             { icon:"🍞", bg:"rgba(192,136,44,0.08)",  grad:"linear-gradient(135deg,#C0882C,#D4A847)", img:"images/categories/breads.webp" },
   "Breakfast":          { icon:"🍳", bg:"rgba(192,90,44,0.08)",   grad:"linear-gradient(135deg,#C05A2C,#D4A847)", img:"images/categories/breakfast.webp" },
   "Beef":               { icon:"🥩", bg:"rgba(138,44,44,0.08)",   grad:"linear-gradient(135deg,#8A2C2C,#C05A2C)", img:"images/categories/beef.webp" },
   "Pork":               { icon:"🥓", bg:"rgba(192,90,44,0.08)",   grad:"linear-gradient(135deg,#C05A2C,#8A2C2C)", img:"images/categories/pork.webp" },

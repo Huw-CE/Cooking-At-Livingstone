@@ -657,7 +657,7 @@ document.getElementById('rotd-author').textContent  = rotd.author;
 document.getElementById('rotd-book').textContent    = rotd.book;
 
 // ── FRESH RECIPES ─────────────────────────────────────
-const FRESH_IDS = [174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184];
+const FRESH_IDS = RECIPES.slice(-10).map(r => r.id);
 const freshGrid = document.getElementById('fresh-grid');
 freshGrid.innerHTML = FRESH_IDS.map(id => {
   const r = RECIPES.find(x => x.id === id);

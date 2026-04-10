@@ -6071,7 +6071,7 @@ To mix in the food processor, blitz the walnuts with the caster sugar until fine
     book: "Sift",
     serves: "6",
     time: "Prep 20 mins + Rest 1 hr 20 mins + Blind bake 1 hr + Fill & Bake 40 mins + Cool 1 hr",
-    category: "Mains",
+    category: "Baking",
     ingredients: [
       "Tart case:",
       "½ x recipe rough puff pastry (or savoury shortcrust pastry)",
@@ -6253,7 +6253,7 @@ To mix in the food processor, blitz the walnuts with the caster sugar until fine
     book: "Sift",
     serves: "8 large cookies",
     time: "Prep 30 mins + Bake 20 mins + Cool 20 mins",
-    category: "Cookies",
+    category: "Baking",
     ingredients: [
       "Miso walnuts:",
       "50g mirin rice wine",
@@ -6781,7 +6781,7 @@ Italian meringue:
     book: "Sift",
     serves: "600g dough (about 10 buns)",
     time: "Make tangzhong 10 mins + Mix dough 20 mins + Proof 1 hr + Shape & proof 1 hr + Bake 20 mins",
-    category: "Breads",
+    category: "Basics",
     ingredients: [
       "Tangzhong:",
       "25g whole milk",
@@ -6817,7 +6817,7 @@ Italian meringue:
     book: "Sift",
     serves: "500g pastry (enough for 2 x 20cm x 3.5cm tarts)",
     time: "Mix pastry & perform folds 20 mins + Chill 1 hr",
-    category: "Baking",
+    category: "Basics",
     ingredients: [
       "95g water, ice-cold",
       "75g white wine vinegar",
@@ -6850,7 +6850,7 @@ Italian meringue:
     book: "Sift",
     serves: "640g dough (enough for a deep 23cm double-crusted pie)",
     time: "Mix pastry & perform folds 20 mins + Chill 1 hr 30 mins",
-    category: "Baking",
+    category: "Basics",
     ingredients: [
       "60g water",
       "60g crème fraîche",
@@ -6885,7 +6885,7 @@ Italian meringue:
     book: "Sift",
     serves: "450g dough (enough for 1 x double-crust lattice pie in a 30cm rectangular pie dish)",
     time: "Mix pastry & perform folds 20 mins + Chill 1 hr",
-    category: "Baking",
+    category: "Basics",
     ingredients: [
       "160g plain flour",
       "80g plain wholemeal flour",
@@ -7529,7 +7529,8 @@ const AUTHOR_META = {
   "Molly Baz":          { initials:"MB", color:"#2C8A5A", bg:"rgba(44,138,90,0.12)",   desc:"Bold, confident and endlessly useful. Molly's Cook This Book teaches you to think like a cook, with recipes designed to build real kitchen instincts." },
   "Benny Roff":         { initials:"BR", color:"#6B4C35", bg:"rgba(107,76,53,0.12)",   desc:"The warmth and wit of Eastern European food told through a distinctly Melbourne lens. Benny's Borscht, Vodka & Tears is food with history and heart." },
   "Nino Zoccali":       { initials:"NZ", color:"#C0882C", bg:"rgba(192,136,44,0.12)",  desc:"Celebrating the food of Venice and the northern Italian kitchen. Nino's Venetian Republic is a love letter to lagoon cooking and the pleasures of the table." },
-  "Adam Liaw":          { initials:"AL", color:"#2C6B6B", bg:"rgba(44,107,107,0.12)",  desc:"Clear-eyed, accessible weeknight cooking from MasterChef Australia winner and food journalist Adam Liaw. Tonight's Dinner is dinner, sorted." }
+  "Adam Liaw":          { initials:"AL", color:"#2C6B6B", bg:"rgba(44,107,107,0.12)",  desc:"Clear-eyed, accessible weeknight cooking from MasterChef Australia winner and food journalist Adam Liaw. Tonight's Dinner is dinner, sorted." },
+  "Nicola Lamb":        { initials:"NL", color:"#8A5C2C", bg:"rgba(138,92,44,0.12)",   desc:"A technically precise and endlessly inspiring baking book from Nicola Lamb. Sift demystifies the science behind pastry, bread and patisserie with warmth and clarity." }
 };
 
 // ══════════════════════════════════════════════════════

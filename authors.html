@@ -23,7 +23,7 @@
   <section class="subpage-hero">
     <div class="hero-eyebrow">Browse by cook</div>
     <h1>Our <em>Authors</em></h1>
-    <div class="subpage-meta"><span>13 cooks · 184 recipes</span></div>
+    <div class="subpage-meta"><span id="authors-meta">— cooks · — recipes</span></div>
     <div class="hero-rule"></div>
   </section>
   <div class="page-body">
@@ -34,6 +34,8 @@
 <script>
 const authors = [...new Set(RECIPES.map(r=>r.author))];
 const grid = document.getElementById('authors-grid');
+document.getElementById('authors-meta').textContent =
+  authors.length + ' cooks · ' + RECIPES.length + ' recipes';
 const authorData = authors.map(name => {
     const recs=RECIPES.filter(r=>r.author===name);
     const books=[...new Set(recs.map(r=>r.book))];

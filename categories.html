@@ -23,7 +23,7 @@
   <section class="subpage-hero">
     <div class="hero-eyebrow">Browse by type</div>
     <h1>Recipe <em>Categories</em></h1>
-    <div class="subpage-meta"><span>20 categories · 149 recipes</span></div>
+    <div class="subpage-meta"><span id="cats-meta">— categories · — recipes</span></div>
     <div class="hero-rule"></div>
   </section>
   <div class="page-body">
@@ -33,6 +33,8 @@
 <footer><div class="footer-inner"><div><div class="footer-eyebrow">Kitchen Notes</div><div class="footer-title">Cook well, share often, <em>eat together</em></div></div><div class="footer-note"><a href="submit.html" class="footer-submit-btn">Add a recipe →</a></div></div></footer><script src="data.js"></script>
 <script>
 const counts = RECIPES.reduce((a,r)=>{a[r.category]=(a[r.category]||0)+1;return a;},{});
+document.getElementById('cats-meta').textContent =
+  Object.keys(counts).length + ' categories · ' + RECIPES.length + ' recipes';
 document.getElementById('cats-grid').innerHTML = Object.entries(counts)
   .sort((a,b)=>a[0].localeCompare(b[0]))
   .map(([name,count]) => {

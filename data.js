@@ -179,7 +179,7 @@ Sit the chicken flat on top of the veg, skin side up, and roast it all for 50 mi
     book: "5 Ingredients",
     serves: "4",
     time: "14 mins",
-    category: "Seafood",
+    category: "Curries",
     ingredients: [
       "500g ripe mixed-colour cherry tomatoes",
       "500g white fish fillets, such as haddock, skin off, pin-boned",
@@ -299,7 +299,7 @@ Roast for 45 minutes, or until everything is golden, bubbling and delicious.`
     book: "5 Ingredients",
     serves: "4",
     time: "1 hr 10 mins",
-    category: "Lamb",
+    category: "Curries",
     ingredients: [
       "400g lamb shoulder, bone out",
       "2 large onions",
@@ -491,7 +491,7 @@ Heat the oil in a heavy-based frying pan over medium-low heat. Add the ground sp
     book: "Indian Cooking Masterclass",
     serves: "6",
     time: "2 hrs 10 mins",
-    category: "Pork",
+    category: "Curries",
     ingredients: [
       "1.2 kg pork neck",
       "2 teaspoons ground chilli",
@@ -532,7 +532,7 @@ Slice the meat into 2 cm-thick slices, arrange on plates and spoon over the sauc
     book: "Indian Cooking Masterclass",
     serves: "4",
     time: "2 hrs 30 mins",
-    category: "Poultry",
+    category: "Curries",
     ingredients: [
       "1 tablespoon ginger garlic paste, see recipe page 436",
       "1 teaspoon sea salt flakes",
@@ -589,7 +589,7 @@ Heat the mustard oil in a large frying pan over medium heat. Add the mustard, fe
     book: "Indian Cooking Masterclass",
     serves: "4",
     time: "1 hr 20 mins",
-    category: "Poultry",
+    category: "Curries",
     ingredients: [
       "100 ml vegetable oil",
       "1/2 teaspoon cumin seeds",
@@ -617,7 +617,7 @@ Heat the mustard oil in a large frying pan over medium heat. Add the mustard, fe
     book: "Indian Cooking Masterclass",
     serves: "8",
     time: "1 hr 10 mins",
-    category: "Seafood",
+    category: "Curries",
     ingredients: [
       "1 dried kokum, see Glossary",
       "1/2 cup (90 g) rice flour",
@@ -2944,7 +2944,7 @@ Place one of the cakes on a serving plate. Pipe rosettes of buttercream around t
     author: "Andrew McConnell",
     book: "Supernormal",
     category: "Dessert",
-    serves: "Serves 10",
+    serves: "10",
     time: "",
     ingredients: [
       "190 g (6 1/2 oz) caster (superfine) sugar",
@@ -3108,7 +3108,7 @@ Once firm, slice the dough into 5 mm (1/4 in) discs. Place the cookies on the li
     author: "Andrew McConnell",
     book: "Supernormal",
     category: "Lamb",
-    serves: "Serves 4",
+    serves: "4",
     time: "",
     ingredients: [
       "2 tablespoons light soy sauce",
@@ -3172,7 +3172,7 @@ Place the lamb in a deep dish and pour the Sichuan sauce over the top. Finish th
     author: "Andrew McConnell",
     book: "Supernormal",
     category: "Poultry",
-    serves: "Serves 2-4",
+    serves: "2-4",
     time: "",
     ingredients: [
       "4 chicken leg quarters (marylands), each cut into 4 pieces",
@@ -3253,7 +3253,7 @@ Spread 1 teaspoon of the mayonnaise onto each half of the brioche. Place a table
     author: "Andrew McConnell",
     book: "Supernormal",
     category: "Vegetarian",
-    serves: "Serves 6",
+    serves: "6",
     time: "",
     ingredients: [
       "1 tablespoon Chinese black vinegar",
@@ -3339,7 +3339,7 @@ Serve with small bowls of Chinese black vinegar for dipping.`
     author: "Andrew McConnell",
     book: "Supernormal",
     category: "Soup & Noodles",
-    serves: "Serves 4",
+    serves: "4",
     time: "",
     ingredients: [
       "2 tablespoons grapeseed oil",
@@ -3452,7 +3452,7 @@ Cook the dumplings in batches for 4 minutes in a large saucepan of boiling water
     author: "Andrew McConnell",
     book: "Supernormal",
     category: "Seafood",
-    serves: "Serves 4",
+    serves: "4",
     time: "",
     ingredients: [
       "1 1/2 tablespoons sugar",
@@ -3474,7 +3474,7 @@ Bring a large saucepan of salted water to a simmer over medium heat. Plunge the 
     author: "Andrew McConnell",
     book: "Supernormal",
     category: "Beef",
-    serves: "Serves 6",
+    serves: "6",
     time: "",
     ingredients: [
       "1 kg (2 lb 3 oz) beef intercostals",
@@ -3514,7 +3514,7 @@ Remove the beef from the heat and season with salt. Arrange on a plate with the 
     author: "Andrew McConnell",
     book: "Supernormal",
     category: "Snacks",
-    serves: "Serves 6",
+    serves: "6",
     time: "",
     ingredients: [
       "500 g (1 lb 2 oz) Korean rice cakes",
@@ -3541,7 +3541,7 @@ When all the rice cakes are crunchy, place them in a bowl with the Korean sweet 
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Seafood",
-    serves: "Serves 4-6",
+    serves: "4-6",
     time: "",
     ingredients: [
       "500 g (1 lb 2 oz) white fish fillets, such as snapper or trevally",
@@ -3569,7 +3569,7 @@ If using the flaked almonds, you could simply sprinkle them on top or get pretty
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Salads",
-    serves: "Serves 4-6",
+    serves: "4-6",
     time: "",
     ingredients: [
       "50 g (1 3/4 oz) dried chickpeas, soaked overnight",
@@ -3601,7 +3601,7 @@ To serve, season the yoghurt with a pinch of salt and the toum, and spoon over t
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Poultry",
-    serves: "Serves 4-6",
+    serves: "4-6",
     time: "",
     ingredients: [
       "2 skinless chicken breasts",
@@ -3622,7 +3622,7 @@ When it is cool enough to handle, shred the chicken and place in a bowl. Add the
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Salads",
-    serves: "Serves 8",
+    serves: "8",
     time: "",
     ingredients: [
       "1 large head of broccoli",
@@ -3647,7 +3647,7 @@ I would suggest leaving it for 5 minutes after mixing then coming back to it wit
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Salads",
-    serves: "Serves 4-6",
+    serves: "4-6",
     time: "",
     ingredients: [
       "40 g (1/4 cup) peas (podded weight)",
@@ -3683,7 +3683,7 @@ Place all the ingredients in a bowl, adding the dressings last, and mix well. Se
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Poultry",
-    serves: "Serves 4-8",
+    serves: "4-8",
     time: "",
     ingredients: [
       "1 x free-range chicken",
@@ -3710,7 +3710,7 @@ Take the bird apart by removing the legs and cutting them into thighs and drumst
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Salads",
-    serves: "Serves 4-6",
+    serves: "4-6",
     time: "",
     ingredients: [
       "2 large tomatoes, cored and cut into 5 cm (2 in) chunks",
@@ -3731,7 +3731,7 @@ Take the bird apart by removing the legs and cutting them into thighs and drumst
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Salads",
-    serves: "Serves 6-8",
+    serves: "6-8",
     time: "",
     ingredients: [
       "250 g (9 oz) cracked freekeh",
@@ -3753,7 +3753,7 @@ Strain the freekeh, then place in a bowl and let it cool to room temperature. Ad
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Salads",
-    serves: "Serves 4-6",
+    serves: "4-6",
     time: "",
     ingredients: [
       "50 g (1 3/4 oz) dried chickpeas, soaked overnight",
@@ -3783,7 +3783,7 @@ Serve on a serving platter or in a salad bowl. Sprinkle with a little extra suma
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Poultry",
-    serves: "Serves 4",
+    serves: "4",
     time: "",
     ingredients: [
       "200 g (7 oz) chicken livers, connective tissue removed",
@@ -3836,7 +3836,7 @@ If using sesame seeds, dip the top of the stuffed date into the sesame seeds bef
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Vegetarian",
-    serves: "Serves 6-8",
+    serves: "6-8",
     time: "",
     ingredients: [
       "100 ml (3 1/2 fl oz) vegetable oil",
@@ -3865,7 +3865,7 @@ Remove from the oil and drain on some paper towel. Season with salt and pepper, 
     author: "Joseph Abboud",
     book: "Rumi",
     category: "Dessert",
-    serves: "Serves 12",
+    serves: "12",
     time: "",
     ingredients: [
       "4 eggs, separated",
@@ -3892,7 +3892,7 @@ Serve dusted generously with the cocoa powder and finish with chopped pistachios
     author: "Molly Baz",
     book: "Cook This Book",
     category: "Dessert",
-    serves: "Serves 8",
+    serves: "8",
     time: "",
     ingredients: [
       "5 large ripe bananas",
@@ -3957,7 +3957,7 @@ While still warm, sprinkle the cookies with flaky sea salt. Once cool enough to 
     author: "Molly Baz",
     book: "Cook This Book",
     category: "Vegetarian",
-    serves: "Serves 8",
+    serves: "8",
     time: "",
     ingredients: [
       "10 garlic cloves",
@@ -3991,7 +3991,7 @@ Finish the mac: Remove the baking dish from the oven, scatter the bread crumbs e
     author: "Molly Baz",
     book: "Cook This Book",
     category: "Dessert",
-    serves: "Serves 8",
+    serves: "8",
     time: "",
     ingredients: [
       "3 cups heavy cream",
@@ -4059,7 +4059,7 @@ Cook the burgers and build 'em: Raise the heat to medium-high. Add 1 tablespoon 
     author: "Molly Baz",
     book: "Cook This Book",
     category: "Vegetarian",
-    serves: "Serves 6 to 8",
+    serves: "6 to 8",
     time: "",
     ingredients: [
       "2 medium white or yellow onions",
@@ -4097,7 +4097,7 @@ Top with puff and bake: If your puff pastry comes in 2 sheets, on a lightly flou
     author: "Molly Baz",
     book: "Cook This Book",
     category: "Salads",
-    serves: "Serves 4 to 6",
+    serves: "4 to 6",
     time: "",
     ingredients: [
       "1 large bunch dill",
@@ -4123,7 +4123,7 @@ Make the salty yog and assemble: In a small bowl, season 2/3 cup plain whole-mil
     author: "Molly Baz",
     book: "Cook This Book",
     category: "Poultry",
-    serves: "Serves 4 to 6",
+    serves: "4 to 6",
     time: "",
     ingredients: [
       "1 1/2 cups packed cilantro leaves and tender stems",
@@ -4153,7 +4153,7 @@ Toss the wings: Transfer the cooked wings to a large bowl. Pour the hot coconut 
     author: "Molly Baz",
     book: "Cook This Book",
     category: "Poultry",
-    serves: "Serves 4",
+    serves: "4",
     time: "",
     ingredients: [
       "3 large shallots",
@@ -4186,7 +4186,7 @@ Cut 2 lemons in half. Divide the chicken among plates, top with the pan sauce, a
     author: "Molly Baz",
     book: "Cook This Book",
     category: "Baking",
-    serves: "Serves 6 to 8",
+    serves: "6 to 8",
     time: "",
     ingredients: [
       "1 large white or yellow onion",
@@ -4225,8 +4225,8 @@ Top and bake: Drizzle the top of the dough generously with olive oil, sprinkle w
     author: "Adam Liaw",
     book: "Tonight's Dinner",
     category: "Poultry",
-    serves: "Serves 6",
-    time: "Preparation time 20 minutes; Marinating time 30 minutes; Cooking time 1 hour",
+    serves: "6",
+    time: "1 hr 20 mins plus marinating",
     ingredients: [
       "6 chicken marylands (leg quarters)",
       "2 teaspoons turmeric",
@@ -4261,8 +4261,8 @@ Add the cassia or cinnamon, star anise and lemongrass and fry for 1-2 minutes, t
     author: "Adam Liaw",
     book: "Tonight's Dinner",
     category: "Soup & Noodles",
-    serves: "Serves 4",
-    time: "Preparation time 10 minutes; Cooking time 15 minutes",
+    serves: "4",
+    time: "25 mins",
     ingredients: [
       "250 g dried rice vermicelli",
       "300 g skinless barramundi fillets",
@@ -4294,9 +4294,9 @@ Place the noodles in a serving bowl and ladle over the soup. Serve with the cori
     title: "Lamb Rendang",
     author: "Adam Liaw",
     book: "Tonight's Dinner",
-    category: "Lamb",
-    serves: "Serves 10",
-    time: "Preparation time 30 minutes; Cooking time 4 hours",
+    category: "Curries",
+    serves: "10",
+    time: "4 hrs 30 mins",
     ingredients: [
       "1/4 cup vegetable oil",
       "1 cinnamon stick",
@@ -4332,9 +4332,9 @@ After the rendang has cooked for 2 1/2 hours, remove the lid and stir through th
     title: "Quick Barramundi Curry with Pol Sambol",
     author: "Adam Liaw",
     book: "Tonight's Dinner",
-    category: "Seafood",
-    serves: "Serves 4",
-    time: "Preparation time 20 minutes; Cooking time 20 minutes",
+    category: "Curries",
+    serves: "4",
+    time: "40 mins",
     ingredients: [
       "1/4 cup vegetable oil",
       "1 tablespoon yellow mustard seeds",
@@ -4377,8 +4377,8 @@ Serve with rice, the pol sambol and extra lime.`
     author: "Nino Zoccali",
     book: "Venetian Republic",
     category: "Seafood",
-    serves: "Serves 4",
-    time: "Prep Time 10 minutes; Cooking Time 1 hour 10 minutes",
+    serves: "4",
+    time: "1 hr 20 mins",
     ingredients: [
       "250 ml extra virgin olive oil, plus extra for drizzling",
       "1 onion, finely diced",
@@ -4405,8 +4405,8 @@ Add the calamari and potatoes and cook over low heat for 30-60 minutes, or until
     author: "Nino Zoccali",
     book: "Venetian Republic",
     category: "Dessert",
-    serves: "Serves 8",
-    time: "Prep Time 15 minutes; Cooking Time 50 minutes",
+    serves: "8",
+    time: "1 hr 5 mins",
     ingredients: [
       "150 g plain flour",
       "1/3 teaspoon baking powder",
@@ -4440,8 +4440,8 @@ Allow to cool a little, then dust with icing sugar. This is beautiful with vanil
     author: "Nino Zoccali",
     book: "Venetian Republic",
     category: "Lamb",
-    serves: "Serves 4",
-    time: "Prep Time 10 minutes; Cooking Time 4 hours 15 minutes",
+    serves: "4",
+    time: "4 hrs 25 mins",
     ingredients: [
       "1.2 kg whole shankless lamb shoulder",
       "2 tablespoons olive oil",
@@ -4482,8 +4482,8 @@ Serve the lamb on a platter with the sauce, olive oil potato mash and baby leeks
     author: "Nino Zoccali",
     book: "Venetian Republic",
     category: "Cakes",
-    serves: "Serves 8",
-    time: "Prep Time 30 minutes, plus 1 hour for resting the dough; Cooking Time 50 minutes",
+    serves: "8",
+    time: "1 hr 20 mins plus resting",
     ingredients: [
       "130 g 00 flour",
       "1 egg, beaten",
@@ -4522,8 +4522,8 @@ Bake for 50 minutes, or until the outside crust is firm. Just before serving, du
     author: "Nino Zoccali",
     book: "Venetian Republic",
     category: "Cakes",
-    serves: "Serves 8",
-    time: "Prep Time 15 minutes, plus overnight gelato cooling, churning and freezing; Cooking Time 1 hour 30 minutes",
+    serves: "8",
+    time: "1 hr 45 mins plus overnight freezing",
     ingredients: [
       "300 g pistachio nuts, skin on",
       "6 eggs",
@@ -4564,8 +4564,8 @@ Once completely cool, dust the cake with icing sugar, slice and serve with a sco
     author: "Nino Zoccali",
     book: "Venetian Republic",
     category: "Cakes",
-    serves: "Serves 8",
-    time: "Prep Time 20 minutes, plus resting the icing, and churning and freezing the gelato; Cooking Time 45 minutes",
+    serves: "8",
+    time: "1 hr 5 mins plus freezing",
     ingredients: [
       "670 ml milk",
       "145 g caster sugar",
@@ -4612,8 +4612,8 @@ Remove from the cake tin and cool on a cake rack. Using a spatula, spread the ch
     author: "Nino Zoccali",
     book: "Venetian Republic",
     category: "Dessert",
-    serves: "Serves 8",
-    time: "Prep Time 10 minutes, plus 1 hour soaking; Cooking Time 10 minutes",
+    serves: "8",
+    time: "20 mins plus soaking",
     ingredients: [
       "250 g sultanas",
       "4 egg yolks",
@@ -4646,8 +4646,8 @@ Remove the fritters from the oil and roll in the remaining caster sugar to serve
     author: "Nino Zoccali",
     book: "Venetian Republic",
     category: "Poultry",
-    serves: "Serves 6",
-    time: "Prep Time 25 minutes, plus 2 hours for prunes to steep; Cooking Time 1 hour 30 minutes",
+    serves: "6",
+    time: "1 hr 55 mins plus steeping",
     ingredients: [
       "100 g pistachio nuts",
       "1 deboned whole duck, skin on but excess fat removed",
@@ -6900,8 +6900,2160 @@ Italian meringue:
 2. Add the suet and briefly mix before adding the water and vinegar, bit by bit, and forming a rough dough.
 
 3. Turn the dough out onto your benchtop and roll out to be about 1.5cm thick. Fold into three like a letter to add layers of flakiness and then wrap. Chill for an hour before rolling out. The pastry will keep for 3 days well-wrapped in the fridge or 30 days in the freezer.`
-  }
-];
+  },
+  {
+    id: 209,
+    title: "New York Cookies",
+    author: "Brooke Bellamy",
+    book: "Bake with Brooki",
+    serves: "8–10 large cookies",
+    time: "50 mins plus chilling",
+    category: "Baking",
+    ingredients: [
+      "185 g (6½ oz) unsalted butter, cubed and cold",
+      "130 g (4½ oz) caster sugar",
+      "130 g (4½ oz) light brown sugar",
+      "2 large eggs, room temperature",
+      "160 g (5½ oz) self-raising flour",
+      "240 g (8½ oz) plain flour",
+      "¼ teaspoon of bicarbonate of soda",
+      "1½ teaspoon of baking powder",
+      "pinch of salt",
+      "320 g (11¼ oz) dark chocolate chips",
+      "80 g (2¾ oz) walnuts, roughly chopped"
+    ],
+    method: `1. In the bowl of a stand mixer with the paddle attachment, beat the butter for 2 minutes on medium speed. Add the sugars and beat for a further 2–3 minutes. Scrape down the sides of the bowl to ensure all of the butter is fully incorporated.
+
+2. Add the eggs one at a time on low speed until just incorporated.
+
+3. Add the dry ingredients and beat until fully incorporated.
+
+4. On low speed, add the chocolate chips and walnuts.
+
+5. Weigh each cookie dough ball to 150 g (5¼ oz). Chill in the fridge for at least 3 hours before baking.
+
+6. When ready to bake, preheat the oven to 180°C (400°F) and line a baking tray with baking paper. Place cookie dough balls onto the tray at least 2 cm (¾") apart and bake for 16–18 minutes until golden on top.
+
+7. Allow to cool for 10–15 minutes before enjoying. (Try not to be impatient; the cookies need this time to continue cooking at room temperature!)`
+  },
+  {
+    id: 210,
+    title: "Tangelo Custard Creams",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "8 filled buttons",
+    time: "1 hr 15 mins plus chilling",
+    category: "Baking",
+    ingredients: [
+      "Tangelo cookies:",
+      "150 g (5½ oz) unsalted butter, cool and pliable",
+      "30 g (1 oz) icing (confectioners') sugar",
+      "finely grated zest of 2 medium tangelos (reserve juice for filling, below)",
+      "150 g (5½ oz) plain (all-purpose) flour",
+      "75 g (2¾ oz) custard powder",
+      "2 g (1/16 oz/¼ teaspoon) fine sea salt",
+      "cooking oil spray",
+      "Tangelo frosting filling:",
+      "juice from 2 tangelos, reserved from cookies (above)",
+      "150 g (5½ oz) icing (confectioners') sugar",
+      "60 g (2 oz) unsalted butter, very soft and squidgy"
+    ],
+    method: `1. Don't get the base pale and fluffy as the cookie will crumble like powder when baked. Put the butter, sugar and finely grated tangelo zest in the bowl of an electric stand mixer. Using the paddle attachment, beat on speed 4 (below medium) for about 10 minutes until the mixture forms a creamy orange paste. Scrape down the side of the bowl twice during mixing.
+
+2. Lightly combine the dry ingredients and add to the creamed butter. Mix on speed 1 (low) for 30 seconds, until cohesive and no flour or butter streaks are visible.
+
+3. Scrape the dough out onto a lightly floured work surface. If the dough feels cool and 'easy', divide it into two portions and start rolling straight away; otherwise, form the dough into two fat discs, cover in plastic wrap and chill for 15 minutes. The dough should be around 15°C (60°F) and feel like playdough.
+
+4. Preheat the oven to 140°C (285°F). Lightly spray two flat baking trays with cooking oil and line with baking paper.
+
+5. On a lightly floured work surface, roll out half the dough to an even 4 mm (⅛ in) thickness. Keep moving the dough and flouring underneath as you roll. If the dough cracks, it doesn't matter – just collect it up and re-knead it lightly. If the cookies or dough stick to the work surface, shimmy an offset spatula underneath to loosen them.
+
+6. It's a good tip to use square wooden dowel runners to help maintain an even thickness in the dough (see Top tips, page 32). Place the dowel alongside the dough after the first few rolls and keep rolling until the pin hits the top of the dowel. Use a 7 cm (2¾ in) round cutter to stamp out the cookies. Immediately lift them onto the lined baking tray. Collect up the scraps and roll again. Repeat the process with the remaining portion of dough.
+
+7. The high ratio of butter keeps the dough tender enough to endure multiple (up to three or four) re-rolls. The re-rolled cookies may bake with a little doming, but all will be well when filled.
+
+8. Before baking, prick three rows of marks in the centre of each cookie with a fork, so they look like deep-set buttons. Bake for 20–30 minutes until set (when you can easily lift one up) – they should be fully cooked and dry looking, but not brown. Remove from the oven and place the trays on a wire rack to cool for 20–30 minutes before filling. If you have browned the cookies, they are still fill-able and edible. They aren't the best cookie to turn into a cheesecake crumb so just call them Toasted Tangelo Custard Creams. Chin up, baker!
+
+9. The cookies aren't super sweet but the frosting will bring the saccharine! While the cookies bake, juice the tangelos (don't strain) to give you around 120 g/ml (4½ oz) of juice. Reduce this in the microwave (preferred method) or on the stovetop to give 30 g/ml (1 oz). See Reduce the juice (page 21).
+
+10. Place the reduced juice into the bowl of a stand mixer and add the remaining frosting filling ingredients. Beat with the paddle attachment on speed 4 (below medium) for 8 minutes, until the frosting is fluffy, ultra-creamy and pale pastel orange. It should hold its shape and not be melty or slack. If the frosting does slump, take the bowl and paddle off the mixer and chill for 30 minutes. Return to the mixer and keep beating until cool and fluffy.
+
+11. Lay half the cooled cookies, bottom side up, on a clean tea towel (dish towel) and pipe (or spoon) a blob of frosting on each one. So the filling doesn't form a crust, quickly sandwich with the top cookie and lightly press (with a little swirly wiggle) to bring the filling out to the sides, just flush with the cookie. Chill for 10 minutes. (My top tip for piping is to put the nozzle very close and perpendicular to the bottom cookie. When you squeeze the filling out, it will form a neat, rounded blob. The blob should be about 2.5 cm (1 in) in diameter and 3–4 teaspoons in volume.)`
+  },
+  {
+    id: 211,
+    title: "Salty Sweet Lime Crisp Sandwiches",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "10 filled sandwiches",
+    time: "1 hr 30 mins plus overnight",
+    category: "Baking",
+    ingredients: [
+      "Lime cookies:",
+      "100 g (3½ oz) unsalted butter",
+      "30 g/ml (1 oz) good extra-virgin olive oil",
+      "zest of 1 lime (reserve juice for filling, below)",
+      "200 g (7 oz) plain (all-purpose) flour",
+      "2 g (1/16 oz/¼ teaspoon) fine sea salt",
+      "3 g (1/10 oz/½ teaspoon) baking powder",
+      "50 g (1¾ oz) egg (approx. 1 egg)",
+      "80 g (2¾ oz) caster (superfine) sugar",
+      "cooking oil spray",
+      "Sweet salty sprinkle:",
+      "30 g (1 oz) caster (superfine) sugar",
+      "1 g (1/32 oz/¼ teaspoon) sea salt flakes, lightly crushed",
+      "Lime frosting filling:",
+      "zest and juice of 1 lime, plus juice from lime used in dough (see above)",
+      "240 g (8½ oz) icing (confectioners') sugar",
+      "60 g (2 oz) unsalted butter, very soft and squidgy",
+      "15 g/ml (½ oz) good extra-virgin olive oil",
+      "1 g (1/32 oz/¼ teaspoon) sea salt flakes"
+    ],
+    method: `1. Start the dough: melt the butter (microwave or stovetop), then add the oil and cool completely – warm butter will make a greasy, seized dough. Add the lime zest, then set aside.
+
+2. Weigh the flour, salt and baking powder together into a small bowl. Stir with a whisk to combine, then set aside.
+
+3. In a large bowl, hand whisk the egg and sugar energetically for around 30 seconds until it just turns a shade paler yellow. No need to whip in lots of air. Whisk in the cool butter/oil/zest. Switch to a stiff plastic spatula and stir in the dry ingredients until the mixture forms a thick, mashed potato-like paste and the bowl has clean sides. Scrape into a piece of plastic wrap and chill for a minimum of 3 hours, or ideally overnight, before rolling out.
+
+4. Preheat the oven to 130°C (265°F). Line a shallow baking tray with cooking oil spray and baking paper. Give the dough, still wrapped, a few firm pushes against the work surface to encourage it to yield to the rolling pin. Unwrap the dough and place onto a flour-dusted surface, then dust the top of the dough with flour. (This dough gets pliable quickly so roll from fridge cold, keeping the work surface well dusted, and do short hard rolls, rotating often until the dough starts to really grow.)
+
+5. Roll to around 30 cm × 30 cm (12 in × 12 in) – around 3 mm (⅛ in) thick. Stamp out as many cookies as you can with a 7 cm (2¾ in) fluted square cutter, making sure you stamp hard to cut through any zesty bits lurking along the cut lines. Lift the cut cookies onto the baking tray, only slightly apart, as they won't spread at all. Collect the scraps, squeeze together lightly and roll again. Try to avoid rolling a third time, but if you have to in order to get all twenty, do it.
+
+6. No need to chill again – these can go straight in the oven to bake for about 40–50 minutes until firmly set (when you can easily lift one up). They should look dry, not gummy, and the colour will be a honey gold hue. Remove from the oven, make the sweet salty sprinkle by mixing the sugar and salt in a small bowl and dust over the cookie tops while they are hot. Place the trays on a wire rack to cool completely for 10–15 minutes before filling, or cool in the oven overnight. (If the oven temperature is any higher or you dust the raw dough with the sprinkle pre-bake, the cookies will start to contract and dome, making them a bit funny looking, and tricky to fill without overloading the curved space with excess frosting. If they are still warm, flatten with a heavy tray on top. The edges may crack a little.)
+
+7. Make the lime frosting filling while the cookies are baking and cooling. Zest the second lime and set aside. Reduce the lime juice in the microwave (preferred method) or on the stovetop to give 30 g/ml (1 oz). See Reduce the juice (page 21).
+
+8. Place the reduced lime juice into the bowl of a stand mixer and add the zest and remaining ingredients on top. Beat with the paddle attachment on speed 4 (below medium) for 10 minutes until the frosting is fluffy, pale and ultra-creamy. Scrape the bowl sides down twice. The frosting should hold its shape and not be melty or slack. (If the frosting does slump, take the bowl and paddle off the mixer and chill for 30 minutes. Return to the mixer and keep beating until cool and fluffy.)
+
+9. To fill the cookies, swipe a heaped teaspoonful of frosting on one cookie, smooth out evenly with an offset spatula, then swipe the spatula against the edges of the cookie to make a sharp finish. Sandwich the top on and give it a tiny squeeze together. Run your pinky finger around the sides to neaten up any oozy bits. (For cakeshop pro filling, scrape the frosting into a piping (icing) bag with a small sized tip (#3). Lay half the cookies, top side down, on a clean tea towel (dish towel) to prevent slipping. Pipe an outline of frosting, then fill it in. Sandwich the top cookie on.)`
+  },
+  {
+    id: 212,
+    title: "Macadamia and White Chocolate Chonky Chip Cookies",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "9 huge cookies",
+    time: "1 hr 30 mins plus chilling",
+    category: "Baking",
+    ingredients: [
+      "330 g (11½ oz) raw whole macadamia nuts",
+      "160 g (5½ oz) unsalted butter, cold (5°C/41°F) and diced",
+      "120 g (4½ oz) light muscovado (or brown) sugar",
+      "120 g (4½ oz) demerara (or raw) sugar",
+      "15 g (½ oz) vanilla paste",
+      "325 g (11½ oz) plain (all-purpose) flour",
+      "7 g (⅛ oz/1 slightly heaped teaspoon) baking powder",
+      "6 g (⅛ oz/1 teaspoon) bicarbonate of soda (baking soda)",
+      "6 g (⅛ oz/1 teaspoon) fine sea salt",
+      "330 g (11½ oz) good small white chocolate chips or chopped white chocolate",
+      "100 g (3½ oz) egg (approx. 2 eggs), fridge cold",
+      "cooking oil spray",
+      "sea salt flakes, for sprinkling"
+    ],
+    method: `1. Heat the oven to 130°C (265°F). Chop each macadamia in half. (If you bought macadamia halves, skip to the toasting.) Place on a shallow baking tray and toast in the oven for around 30–40 minutes until the colour of pale honey. Cool the nuts quickly in the fridge. (Low and slow toasting is imperative with macadamias, given their high oil content. I like the toasted nuts to match the dough colour for maximum cookie aesthetic.)
+
+2. Place the cold butter, sugars and vanilla in the bowl of an electric stand mixer. Using the paddle attachment, beat on speed 2 (above low) for about 5 minutes, until the mix looks like sugary mash – no need to go to pale and fluffy. Scrape the sides down once during this process. (I keep this base mix cold and mashed rather than warmer and fluffier so my cookie dough texture is closed and dense rather than porous with air. They will also spread less when baked.)
+
+3. Sift the flour, baking powder, bicarbonate of soda and salt into a small bowl and set aside. Weigh the white chocolate chips with the cooled chopped nuts and set aside.
+
+4. Keeping on speed 2 (above low), add the egg to the butter mix in one go and beat for 5 minutes, scraping once or twice during this stage. The butter/sugar/egg mix will be brown with a wet porridge consistency.
+
+5. Reduce to speed 1 (low), then add the dry ingredients and mix just until no flour is visible. Tip the chocolate and nuts in and mix until only just incorporated. Take the bowl off the mixer, scrape the dough off the paddle and tip the dough onto your work surface. Give the dough a thorough mix so any buttery seams from the bottom can be mixed in well. (Buttery seams can cause funny spreadin' cookies. Good to eat, just not a nice round cookie.)
+
+6. Lightly grease a baking tray with cooking oil spray. Weigh nine balls of dough to 165 g (6 oz) each, or a slightly heaped half-cup measure. (This is NOT A TYPO! It is a huge cookie.) (If the size perplexes or horrifies you, that's cool, just make the balls smaller and bake for less time. You'll just have to do a little test bake to get the timing right.)
+
+7. Roll each ball gently but don't compact the dough – it should be a lumpy sphere. Place closely together on the tray. I like to cover and chill for a minimum of 12 hours, but you can also bake these straight away. (The overnight hydrate/rest makes a better textured (a little less spread, more hump and no external greasy feel post-bake) cookie, but you can bake these straight away, too. If you do, they'll only need 18–20 minutes and will be a smidge flatter.)
+
+8. When you are ready to bake the cookies, preheat the oven to 160°C (320°F). Spray a flat baking tray with cooking oil and line with baking paper. Arrange the dough balls on the tray, spacing them a roomy 5–7 cm (2–2¾ in) apart, then sprinkle the tops with salt (totally optional). Bake for 25–30 minutes until the cookies have settled with a mild dome, have a crisp butterscotch-coloured upper crust and soft sides, but are squidgy just under the top crust. Because they are big'uns, and you may be nervous, take an internal temperature: 75°C (167°F) will give you doughy interior perfection.
+
+9. Cool the baked cookies on the tray for 10–15 minutes for optimum eating – the warmest, stickiest, softest cookie dough joy! When the cookie cools completely it is also good, just not GOOD good.`
+  },
+  {
+    id: 213,
+    title: "The Brownie (That Is My Favourite)",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "10 bars or 9 large squares",
+    time: "1 hr 5 mins plus cooling",
+    category: "Baking",
+    ingredients: [
+      "cooking oil spray",
+      "200 g (7 oz) egg (approx. 4 eggs)",
+      "300 g (10½ oz) raw caster (superfine) sugar",
+      "110 g (4 oz) good bittersweet chocolate (around 50–60% cocoa)",
+      "240 g (8½ oz) unsalted butter",
+      "90 g (3 oz) plain (all-purpose) flour",
+      "60 g (2 oz) Dutch (unsweetened) cocoa powder",
+      "5 g (⅛ oz/heaped ½ teaspoon) sea salt flakes",
+      "180 g (6½ oz) good extra-dark chocolate (around 70% cocoa)",
+      "110 g (4 oz) full-fat cream cheese, softened to room temperature"
+    ],
+    method: `1. Heat the oven to 150°C (300°F). Lightly spray a 23 cm (9 in) square, 5 cm (2 in) deep cake tin with cooking oil and line the base and sides with baking paper. Ensure any flappy paper edges are trimmed flush with the tin.
+
+2. Combine the egg and sugar in the bowl of an electric stand mixer. Using the paddle attachment, beat on speed 4 (below medium) for 8 minutes until you have a thick and pale foam.
+
+3. While the mix beats, weigh the bittersweet chocolate into a small heatproof bowl. Heat the butter to bubbly hot (stovetop or microwave) and pour it over. Stir until the chocolate has melted and is smooth. (Don't worry about a small lump of chocolate or two, but any more and you should set up a double boiler and continue to heat the chocolate/butter a little further until properly melted.)
+
+4. Scrape the warm chocolate/butter mix into the egg mix and beat for 5 minutes on speed 5 (medium) – it will look like a fluffy and flowy chocolate mousse. While it mixes, weigh the flour and cocoa together and sift into a small bowl. Weigh the salt flakes on top. Chop the extra-dark chocolate into fine shards and add 130 g (4½ oz) to a separate bowl. Tear up the cream cheese into small hazelnut-sized chunks to sit on top of the chocolate. Set aside.
+
+5. Stop the mixer and tip in the sieved dry ingredients. Beat on speed 2 (above low) for 1 minute until the flour is absorbed. Take the bowl off the mixer and stir in the chocolate and cream cheese. Some cream cheese lumps will remain and some will smear through, lightening the batter slightly – all of this is good. Scrape the batter into the prepared tin and smooth the top with an offset spatula. Scatter the remaining extra-dark chocolate on top. (If you find a few too-large nuggets of cream cheese when scraping and smoothing, massage them into the ideal size with the tip of your offset spatula.)
+
+6. Bake for 25–30 minutes until the top of the brownie is slightly puffed, has a noticeable cracked border about 2 cm (¾ in) from the edge and fine fissures further across the surface. My PST (Perfect Squidge Temperature) hits at 95°C (205°F), with sticky clumps of mottled paste (not liquid chocolate). Bake for 5–10 minutes longer if you want a more cakey brownie (internal temperature 100°C/210°F). If you want super-gooey filling, cook it for 5–10 minutes less, but you will definitely have to chill before cutting. Internal temperature taking is genius for brownies – no matter the batter, recipe or oven, you can always get the squidge right.
+
+7. Cool at room temperature for around 30 minutes before cutting with a hot, damp knife, or chill it for a creamy fudge texture. Cut the square in half and then cut each half into five equal rectangles (get the ruler out for portioning precision). The first warm bar, with still-molten chocolate chunks, is one of the greatest kitchen gifts bestowed upon a home baker.`
+  },
+  {
+    id: 214,
+    title: "Brisee Butter Crust",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "370g pastry (one 23–24cm tart case)",
+    time: "20 mins plus overnight chilling",
+    category: "Basics",
+    ingredients: [
+      "175 g (6 oz) plain (all-purpose) flour",
+      "130 g (4½ oz) unsalted butter, cold and sliced into small tiles 2 cm (¾ in) square and 5 mm (¼ in) thick",
+      "3 g (1/10 oz/heaped ¼ teaspoon) fine sea salt",
+      "60 g/ml (2 oz) iced water"
+    ],
+    method: `1. Lightly toss the flour, butter tiles and salt together in a wide mixing bowl and chill for 30 minutes. Then break and flake the butter pieces between your fingers while tossing with the flour until the butter pieces are the size of a thick thumbnail. The flour will have taken on just the faintest yellow hue. Scatter the water over the flour/butter mix and lightly toss through – it won't look like anything has changed with the mix but the smear (fraisage) will really bring the dough together.
+
+2. Tip the crumbly dry flour/butter mix onto your work surface and make a pile which we will call pile A. Imagine pile A is sitting at 4 o'clock on a clock face. Using the taut heel of your palm, smear the dough 20 cm (8 in) away from the pile, across the bench to 11 o'clock to form pile B. The smearing will start to cohere the dough. Employ your non-smearing hand to stop the back end of the dough from scattering back away from the starting pile.
+
+3. Drag all of pile B back to 4 o'clock and smear it again. Do this four to eight times (kitchen temperature dependent – it will take far less time in a warm kitchen) until the dough does two things: 1. The VERY dry shaggy patches disappear, and 2. The dough forms an almost cohesive mass when softly squeezed together. It's okay if a few dry, shaggy bits remain.
+
+4. Wrap loosely in plastic wrap and firmly squeeze into a flat, fat disc – this will be the final step in bringing the dough together, and the dough will feel like quite stiff playdough. Chill the dough overnight to hydrate fully.
+
+5. To roll, bring the dough to cool and pliable temperature (around 15–30 minutes at room temperature) and place it on a lightly floured surface. Press the dough out a little with the palm of your hand to ease it into the start of rolling. This helps to prevent large cracks. Give the dough one or two short pressured rolls with the pin before lifting and moving the dough 90 degrees, making the rolls longer as the dough circle widens. Dust underneath the dough at regular intervals to prevent sticking.
+
+6. For a 24 cm (9½ in) round × 4 cm (1½ in) tart tin, roll out the dough to a 35 cm (13¾ in) circle, about 4 mm (⅛ in) thick. Trim, then gently lift and flop the dough into the tin.
+
+7. If you're making smaller tarts and need to re-roll, stack the offcuts and press together. Rest for 10 minutes and re-roll once only. The shrinkage gets worse with each re-roll.
+
+8. Working in sections, tuck the dough right into the corner and against the side of the tart tin to prevent air pockets, then use your fingers to push the excess dough off the top. For individual tins, cut circles slightly larger than the tins and line in the same way, cutting off the excess.
+
+9. If lining a classic pie dish, loosely position the side dough on the lip, then press the excess off. Take a wooden skewer and deeply press lines along the lip at around 1 cm (½ in) intervals, radiating out.
+
+10. Freeze for at least 1 hour before blind baking.
+
+11. To blind bake, preheat the oven to 200°C (390°F). Cover the frozen dough with a large piece of aluminium foil (dull side down), tucking it snugly into the corner of the tin. Fill the foil liner with approximately 750 g (1 lb 11 oz) caster (superfine) sugar, then place the tart shell on a heavy baking tray. Reduce the heat to 170°C (340°F) and bake for 1 hour until the crust base is a fully realised tan brown colour. If the base crust is still a little pale, remove the foil and return to the oven for 5 minutes – watching closely until the crust base reaches peak crisp and brown. ---`
+  },
+  {
+    id: 215,
+    title: "Yoghurt Rough Puff Pastry",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "750g pastry (enough for 6 hand pies)",
+    time: "2 hrs",
+    category: "Basics",
+    ingredients: [
+      "225 g (8 oz) unsalted butter, cold and in a block",
+      "300 g (10½ oz) plain (all-purpose) flour",
+      "5 g (⅛ oz/heaped ½ teaspoon) fine sea salt",
+      "3 g (1/10 oz/½ teaspoon) baking powder",
+      "170 g/ml (6 oz) full-fat yoghurt, natural or Greek style, cold"
+    ],
+    method: `1. Grate the butter on the coarse side of a box grater. Line a shallow tray with baking paper and loosely distribute the butter over the surface – tease it out if it is clumping. Freeze for at least 30 minutes. (Grate chilled not frozen butter. I lost the skin off my knuckles too often when using frozen butter. Baking should not be a blood sport!)
+
+2. While the butter freezes, swizzle the flour, salt and baking powder together in a large mixing bowl.
+
+3. Add the grated butter to the flour. Rub it in lightly with your fingertips until the grated butter flakes are half their starting size. The flour will just start becoming pale yellow. Don't take it to breadcrumb consistency.
+
+4. Stir the yoghurt before weighing so it's not just whey. Add to the mix and toss to distribute the yoghurt through. Then start squeezing/pressing with firm intent until the dough is one rough, yet cohesive pat of firm playdough. The dough will seem resistant to come together, but keep pressing, and don't add extra yoghurt. (A dry dough gives fine flake – too wet and the 'leaves' will be doughy. Sometimes there will be a few straggly dry patches that can be brought into the mix by pressing them against a moister part of the dough.)
+
+5. Form the dough into a flat and fat rectangle 20 cm × 15 cm (8 in × 6 in), then wrap loosely in plastic wrap and rest (countertop in a cool kitchen, fridge in a warm kitchen) for 15 minutes before the first roll. The dough should still be cool to the touch.
+
+6. Place the dough on a lightly floured surface. Press the dough out a little with the palm of your hand to ease it into rolling submission. Start rolling the dough into a large rectangle 15 cm × 45 cm (6 in × 17½ in). Dust underneath and the top at regular intervals to prevent sticking.
+
+7. Fold the dough into thirds like a buttery business letter: with the short end of the dough closest and facing you, imagine the rectangle has three equal sections. Fold the top dough third down over the middle section and press lightly. Lift the bottom third up and fold it over the top section and press lightly. Smooth the cracked edges with a smooshy massage – they will also get neater after each roll. Wrap lightly in plastic and chill for 30 minutes. Repeat the roll and fold steps twice more with a 30-minute chill in between.
+
+8. Chill the dough, wrapped, for a minimum of 1 hour (or up to 3 days) before the final roll for your baking undertakings. (Re-rollability: if you have offcuts, stack them and press together. Rest for 10 minutes and re-roll only once.)`
+  },
+  {
+    id: 216,
+    title: "Super Flaky Buckwheat Crust (Not Gluten Free)",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "700g pastry (one double-crusted 24cm pie)",
+    time: "20 mins plus 1 hr chilling",
+    category: "Basics",
+    ingredients: [
+      "225 g (8 oz) plain (all-purpose) flour",
+      "135 g (5 oz) buckwheat flour",
+      "2 g (1/16 oz/¼ teaspoon) fine sea salt",
+      "225 g (8 oz) unsalted butter, cold and sliced into small tiles 2 cm (¾ in) square and 5 mm (¼ in) thick",
+      "110 g/ml (4 oz) iced water",
+      "20 g (¾ oz) egg yolk (from approx. 1 egg)"
+    ],
+    method: `1. Put the flours and salt in a wide mixing bowl. Using your fingertips, rub the butter into the dry ingredients just until the butter lumps are the size of whole almonds and the surrounding flour feels like silky almond meal with buttery lumps throughout. (These large butter lumps are going to melt during baking, creating steam, which will flake the pastry apart unbelievably!)
+
+2. Combine the iced water and egg yolk together and then add to the buttery flour. Keep mixing with your hands, lightly squeezing the dough together, until it looks like crumbly/shaggy playdough. Wrap the dough lightly in plastic, then flatten, by squeezing, into a 2 cm (¾ in) thick round disc with smooth sides. If you are making this for a double-crusted pie, halve the batch into two 350 g (12½ oz) pats to make rolling easier.
+
+3. Chill this dough for a minimum of 1 hour or up to 2 days – just ensure that the pastry is nicely pliable before rolling.
+
+4. For a 23 cm (9 in) tart or pie dish, roll out the dough to 35 cm (13¾ in) circle, about 3–4 mm (⅛ in) thick. Trim to a smooth-edged 32 cm (12½ in) circle, then gently lift and flop the dough into the tin.
+
+5. Trim cracked edges before lifting the circle. The movement can exacerbate the cracks.
+
+6. Working in sections, tuck the dough right into the corner and against the side of the tart tin to prevent air pockets, then use your fingers or rolling pin to push/trim the excess dough off the top. Freeze for at least 1 hour before blind baking. (Hold a little of the excess dough to patch any cracks after blind baking. With the remaining offcuts, stack and press together. They can be re-rolled twice.)
+
+7. To blind bake, preheat the oven to 200°C (390°F). Cover the frozen dough with a piece of aluminium foil (dull side down), tucking it snugly into the corner of the tin. Fill the lined tin with approximately 750 g (1 lb 11 oz) caster (superfine) sugar. Place in the oven, then reduce the heat to 165°C (330°F) and bake for 50–60 minutes. Remove the foil and bake for another 5–10 minutes so the base crust is a biscuity brown colour. ---`
+  },
+  {
+    id: 217,
+    title: "Chocolate Rum Maple Pecan Pie",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "6–10",
+    time: "1 hr 30 mins plus cooling",
+    category: "Dessert",
+    ingredients: [
+      "1 × batch Brisee butter crust (page 71) or ½ batch Super flaky buckwheat crust (page 76), rolled into a 25 cm (10 in) pie dish or a 23 cm (9 in) round × 5 cm (2 in) deep tart tin and blind baked to golden brown",
+      "Filling:",
+      "180 g (6½ oz) whole pecans",
+      "280 g/ml (10 oz) pure maple syrup",
+      "160 g (5½ oz) demerara sugar",
+      "150 g (5½ oz) egg (approx. 3 eggs)",
+      "20 g (¾ oz) egg yolk (from approx. 1 egg, reserving the egg white to seal the tart shell)",
+      "100 g (3½ oz) unsalted butter, super soft",
+      "60 g/ml (2 oz) cream (35% milkfat)",
+      "20 g/ml (¾ oz) dark rum (or extra maple syrup for booze-free)",
+      "15 g (½ oz) Dutch (unsweetened) cocoa powder",
+      "5 g (⅛ oz/½ teaspoon) vanilla paste",
+      "4 g (⅛ oz/1 teaspoon) sea salt flakes",
+      "To finish:",
+      "200 g/ml (7 oz) thick cream (45% milkfat)",
+      "10 g/ml (¼ oz) dark rum (optional)",
+      "3 g (1/10 oz/¼ teaspoon) vanilla paste",
+      "teeny pinch of sea salt flakes"
+    ],
+    method: `1. Heat your oven to 130°C (265°F) and scatter the pecans onto a shallow baking tray. Bake for 25–30 minutes until they're just starting to darken on the outside and are the palest brown inside – cut or snap one open to assess. Set 20 g (¾ oz) aside for the end decoration and use the rest for the filling. Keep the oven on 130°C (265°F) and set a rack on a low shelf and remove the upper racks.
+
+2. Set up a double boiler: heat 5 cm (2 in) deep water in a 20 cm (8 in) saucepan to a low simmer and choose a heatproof bowl large enough that the base won't touch the water when resting on top of the saucepan.
+
+3. Weigh all the remaining ingredients, except the pecans, into the bowl and whisk together thoroughly. The butter and cocoa will be lumpy but all will melt and combine together as it heats.
+
+4. Set the bowl over the double boiler and whisk occasionally until the mix thickens and the chocolate and butter melt. This should take around 10 minutes. The mix will read 55–60°C (131–140°F) on a digital thermometer, and will look like a lustrous brown milkshake. Take care it doesn't overcook and get chunky/curdled at any stage. Scrape the filling into a jug. (If the mix does start cooking firm at the edge, act fast. Take the bowl off the double boiler and whisk vigorously to release the steam and regulate the temperature. If the mix gets very overcooked, strain out the cooked egg chunks and whisk the drained filling into a fresh whole egg. Continue!)
+
+5. Place the blind-baked crust, still in the tin, on a shallow baking tray. If there are any large cracks or dipped sides, soften some leftover dough and gently patch any large fissures – taking care not to press hard and break the crust. Meticulously brush a light layer of the egg white on the inside of the tart to seal any fine cracks, then bake for 3 minutes to seal the egg white. See Don't leak: How to win at liquid-filling tart life (page 94). The pie police may imprison me for this but I declare that desperate dessert times call for desperate dessert measures. So, if you break the crust pre-fill, pop to the shop and buy a ready-baked pastry case/crust and continue your pie project. This filling will glorify any Plan B crust.
+
+6. Bring the tart crust back out and crush the toasted pecans with force in your hands while letting them fall onto the base of the crust. (Par-crushed pecans give the top a nougatty texture and make cutting the tart easier than whole pecans.)
+
+7. Return the crust to the oven. Keeping your eye on where the crust edge is lowest, carefully pour the filling into the crust, being careful not to overfill. Tease the pecans back up to float on the surface with your finger or a spoon, ensuring there are no pecan-less gaps on the top.
+
+8. Bake for 50–60 minutes. The wobble check is different for this pie because of the crusty nut raft: touch the top of the pie to feel how cooked it is below. If liquid and jiggly, bake longer. Gently peel off a pecan from the centre to check underneath – it will look like a stable yet soft cream. There should be gooey residue on an inserted skewer (85°C/185°F internal).
+
+9. Cool at room temperature for a least an hour (2 is good) or chill for a chewier bite. To finish, whip the cream with the rum, vanilla and salt and pile onto the centre of the cooled pie. With an offset spatula, gently spread the cream over the pie, leaving a 6 cm (2½ in) border all around so you can see the pie goodness underneath. Hold a handful of the reserved toasted pecans in your fist and crush them as you let them fall onto the cream (just like the filling). To serve, saw gently through the cream, pecan top and side crust with a fine serrated knife, clean the knife, then cut through fully along the slice line to chomp through to the base.`
+  },
+  {
+    id: 218,
+    title: "Vanilla Malted Milk Custard Tart",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "6–8",
+    time: "1 hr plus chilling",
+    category: "Dessert",
+    ingredients: [
+      "1 × batch Vanilla malt crème anglaise (page 262)",
+      "1 × batch Crème fraîche shortbread crust (page 68) or Brisee butter crust (page 71) rolled into a 23 cm (9 in) round × 5 cm (2 in) deep fluted tart tin and blind baked (deeper tins are best to get that classic thick custard layer)",
+      "30 g (1 oz) egg white (from approx. 1 egg), lightly whisked",
+      "½ to 1 whole nutmeg, depending on your nutmeg love level"
+    ],
+    method: `1. Cook and strain the crème anglaise as per the recipe. This can be done just before baking the tart or the day before and slowly re-warmed. If the filling is cool, the tart will take longer to bake. Remove the vanilla pod. (Pre-cooking the filling makes a creamier baked custard.)
+
+2. Preheat your oven to 120°C (250°F) and adjust the oven racks – set one in the lower part of the oven, then remove all the ones above so there's space to manoeuvre a jug in easily to pour the filling in later. (See Don't leak: how to win at liquid-filling tart life, page 94.)
+
+3. Place the blind-baked crust, still in the tin, on a shallow baking tray. If there are any large cracks or dipped sides, massage a little leftover dough to a soft paste consistency and gently patch any large fissures – taking care not to press hard and break the crust. Then meticulously brush the inside of the tart with enough whisked egg white to lightly coat. I have given you a little extra mix in case you need it (slightly larger tin, super tall sides with no blind-baking shrinkage – you genius!). Save any excess for a personal serve of crème anglaise.
+
+4. Return the baking tray and crust to the oven and bake for 3 minutes to seal the crust before filling. With the tart in place, and your eye on where the crust edge is lowest, carefully and slowly pour the custard into the crust to fill as far as you can. If your jug, when tilted, is too big for the oven, switch to a smaller cup to scoop out the last of the mix. Don't overfill, or the filling will cascade between the crust and tin.
+
+5. Hover your microplane over the custard top and grate the nutmeg over, blanketing the top with a fine spiced snowdrift. (Hold tight to your nutmeg – if you lose control and it plonks into the custard, carefully fish it out and grate more nutmeg over the part where the nutmeg fell in. If you have an under-counter oven, a deep squat will be required. It's leg day! Phew!)
+
+6. Set the timer for 40 minutes and then do the first wobble check. If it's still liquid, bake an extra 5 minutes and check again. Keep checking every 5 minutes until there is a 7 cm (2¾ in) diameter centre of quivering eggy (not milkshakey) wobble to the custard (78–80°C/172–176°F internal temperature). Keep in mind that the tart will continue cooking after the heat is turned off (like a steak does after grilling).
+
+7. Turn the oven off and keep the door closed and leave for 5 minutes. The wobbly centre should have set firm and feel like a delicately bouncy custard trampoline when touched lightly with your fingertips. Leave it 5 minutes longer if it's not quite set.
+
+8. Remove from the oven and allow to cool at room temperature for at least 2 hours, then chill for another hour to reach the optimal eating moment. If you have chilled your tart overnight, allow it to come to room temperature before eating. To slice, very gently slide your knife through the top custard skin and then push through the middle to crunch-cut the base. Grate extra nutmeg over the top, cut and eat your first wobbly slice. The inner tart sides left behind will bulge slightly, threatening to collapse. You have achieved tart nirvana. It is perfect. You are perfect. If the crust has broken, turn the filling into crème caramel. Pour a chestnut-coloured caramel made from boiling 150 g (5½ oz) caster (superfine) sugar and 50 g/ml (1¾ oz) water into a leakproof small loaf tin or 20 cm (8 in) shallow round tin. When the caramel has set but is still warm (a push mark from a spoon leaves a dent), pour the custard in. Bake at 140°C (285°F) in a water bath, covered tightly with foil (poke a few holes in the foil) for 80 minutes, until the custard has a viscous wobble (use the jiggle clues for the tart above). Cool in the water bath to room temperature and then chill for a minimum of 3 hours before unmoulding.`
+  },
+  {
+    id: 219,
+    title: "Jammy Crumble Crostata",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "6–8",
+    time: "1 hr 30 mins plus freezing",
+    category: "Dessert",
+    ingredients: [
+      "240 g (8½ oz) plain (all-purpose) flour",
+      "80 g (2¾ oz) fine polenta",
+      "50 g (1¾ oz) flaked almonds",
+      "70 g (2½ oz) demerara (or other coarse) sugar",
+      "2 g (1/16 oz/¼ teaspoon) fine sea salt",
+      "2 g (1/16 oz/¼ teaspoon) baking powder",
+      "170 g (6 oz) unsalted butter, cool and pliable",
+      "60 g (2 oz) egg yolk (from approx. 3 eggs)",
+      "finely grated zest of 1 lemon, orange or mandarin",
+      "cooking oil spray",
+      "300 g (10½ oz) jam",
+      "sea salt flakes"
+    ],
+    method: `1. Make the dough by mixing all the dry ingredients, then rub the butter in until you have a breadcrumby texture. Loosen the egg yolk with a fork and stir in the zest. Add to the bowl with the dry ingredients and butter, massaging to a stiff dough. Divide the dough into two equal portions of 360 g (12½ oz) each, form each into a rough log and wrap in plastic wrap. Freeze for a minimum of 1 hour, or overnight.
+
+2. When ready to assemble, preheat the oven to 180°C (360°F) and place a heavy baking tray in the oven to heat up too. Lightly spray a 24 cm (9½ in) round × 4 cm (1½ in) deep loose-bottomed tart tin OR 23 cm (9 in) square tin with cooking oil.
+
+3. Start grating the first log of dough on the coarse side of a grater onto the work surface, then pile into the tart tin. Break any end nuggets up between your fingers – no bloody knuckles please. Level out the grated dough pile, then start to press down firmly. Push the dough a little higher on the sides to form a shallow dish for the jam. Re-spray the sides with cooking oil. (The slight shallow will hold the jam, preventing it from touching the sides and fusing to the tin during baking.)
+
+4. Scrape the jam onto the base dough and smooth, leaving a clear 1 cm (½ in) border so the jam stays hidden (a hidden filling is my preferred aesthetic, but this also prevents side stickage).
+
+5. Grate the second dough log on the coarse side of a grater for flossy flakes. When the inside of the box grater is two-thirds full, lift the grater off and start a new pile so the flakes don't get compacted. Pick up handfuls and, starting around the edges first, place gently and evenly on the top. Let it fall from your hands and remain fluffy. Even out the grated dough with light fingers, but don't compress – it will settle when baking. Place on the preheated tray in the oven.
+
+6. Bake for 45–50 minutes until the top is toasted sandy brown. Cool for 30 minutes before unmoulding. Sprinkle a few salt flakes on top. Always perfect with ice cream. ---`
+  },
+  {
+    id: 220,
+    title: "Lemon Cream Tart",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "6–8",
+    time: "1 hr plus resting",
+    category: "Dessert",
+    ingredients: [
+      "1 × Brisee butter crust (page 71) rolled into a 24 cm (9½ in) round × 4 cm deep (1½ in) tart tin and blind baked to medium golden brown",
+      "Lemon custard filling:",
+      "300 g (10½ oz) egg (approx. 6 eggs)",
+      "20 g (¾ oz) egg yolk (from approx. 1 egg, reserving the white to seal the tart shell)",
+      "4 best lemons",
+      "240 g (8½ oz) caster (superfine) sugar",
+      "300 g/ml (10½ oz) cream (35% milkfat)",
+      "1 g (1/32 oz/¼ teaspoon) sea salt flakes"
+    ],
+    method: `1. Fill a 25 cm (10 in) wide saucepan with 5 cm (2 in) of water, place on the stovetop and bring to a low simmer. Choose a stainless-steel bowl to sit on top that is slightly wider than the pan so the bottom of the bowl won't touch the water.
+
+2. Into that bowl (before placing it over the saucepan), place the 300 g of egg and the yolk. Place the egg white in a separate small bowl and lightly whisk to break it up – you'll use this to seal the tart shell later.
+
+3. Finely grate the zest of 1 lemon, then juice all the lemons, strain and weigh 180 g/ml (6½ oz) of juice. Add the zest into the juice and set aside. (For the next step, have all the components separate and ready to build the filling fast. This will stop the sugar and lemon juice reacting with the egg yolk and little hard orange lumps forming.)
+
+4. Add the sugar into the egg bowl and hand whisk together until combined, but not frothy. Whisk in the lemon juice/zest, then whisk in the cream and salt until fully combined. Place the bowl on the double boiler, gently whisking often until the mix reaches 60°C (140°F) – around 10–12 minutes. The custard will get a little thicker, the foam will dissipate and the custard will turn a more sunshiny yellow.
+
+5. If the filling cooks fast and gets chunky and set at the edges of the bowl, just give the mix a vigorous whisk off the stove to redistribute the heat. Pre-cooking the filling gives you a creamier mouthfeel and means the custard won't separate into layers during baking.
+
+6. Remove the bowl from the heat and pour the filling through a fine sieve into a measuring jug. Discard the zest. If you have a little froth on the top you can spoon this off, but it's not vital. Set the filling aside at room temperature while you prepare the crust.
+
+7. Preheat your oven to 120°C (250°F) and adjust the oven racks – set one in the lower part of the oven and remove all the ones above it, allowing space to manoeuvre a jug in easily to pour the filling in later. (See Don't leak: how to win at liquid-filling tart life, page 94.)
+
+8. Place the blind-baked crust, still in the tin, on a shallow baking tray. If there are any large cracks or dipped sides, massage a little leftover dough to a soft paste consistency and gently patch any large fissures – taking care not to press hard and break the crust. Then meticulously brush the inside of the tart with the whisked egg white.
+
+9. Return the baking tray and crust to the oven and bake for 3 minutes to seal the crust before filling. With the tart still in the oven, and your eye on where the crust edge is lowest, carefully and slowly pour the custard into the crust to fill as far as you can. If your jug, when tilted, is too big for the oven, switch to a smaller cup to scoop in the last of the mix. Don't overfill, or the filling will cascade between the crust and tin. (I have given you a little extra filling in case you need it (slightly larger tin, super tall crust sides with no blind-baking shrinkage – you genius!). You can cook the leftover on the double boiler to 80°C (175°F), then chill to set in a wee dish. Eat with cream.)
+
+10. Bake for 40–50 minutes (I always check after 40, and then check in 5-minute increments) until there is a 7 cm (2¾ in) diameter centre of quivering, thickshakey filling in the middle of the tart. This wobbly centre will continue to cook and set firmer upon cooling. Turn the oven off, keep the door closed and leave for 5 minutes. The wobbly centre should have set firm and feel like the most delicate bouncy custard trampoline when touched lightly with your fingertips. Leave another 5 minutes if you think it's still a bit too wobbly. (I try to avoid breaking the surface with a probe thermometer but if you need the assurance, the read should be 70°C (160°F) internal before you turn the oven off to rest the tart.)
+
+11. Remove from the oven and allow to cool at room temperature for at least 1 hour (longer for deeper tarts) before cutting the first slice. You can also chill to hasten the setting (and eating). (Cracks along the crustline will appear if overcooked or over time, if you keep the tart for a few days. To repair, a little smear across the crack towards the crust with a small palette knife will cover it up.)
+
+12. Tart-eating temperature: Cool to room temperature for 1 hour, then chill for 30 minutes (unchilled is a little too tremulous). Or chill further for creamier, stable slices.
+
+13. Dust with icing sugar and brûlée (see Burn it, page 93) or leave it pure sunshiny yellow. Overcooked? Slightly browned overcooked lemon tarts can be salvaged! Get the tart into the fridge as soon and as carefully as possible. When it is chilled to just cold, spread the top with billowy whipped cream and a fresh grating of lemon zest. Hello, lemon cream pie! Or follow the brûlée steps (see Burn it, page 93). The filling will be a little cottage cheesy curd-like at the side, but the centre should still be silky smooth and lemon delicious.`
+  },
+  {
+    id: 221,
+    title: "Cocoa Sour Cream Layer Cake",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "8–16",
+    time: "2 hrs plus overnight",
+    category: "Cakes",
+    ingredients: [
+      "cooking oil spray",
+      "250 g/ml (9 oz/1 cup) water",
+      "20 g (¾ oz) Dutch (unsweetened) cocoa powder, plus extra for dusting",
+      "90 g (3 oz) good bittersweet chocolate – chopped or buttons",
+      "5 g (⅛ oz/½ teaspoon) vanilla paste",
+      "350 g (12½ oz) caster (superfine) sugar",
+      "170 g (6 oz) unsalted butter, squidgy soft",
+      "20 g/ml (¾ oz) vegetable oil",
+      "300 g (10½ oz) soft plain (all-purpose) flour",
+      "10 g (¼ oz/2 teaspoons) baking powder",
+      "4 g (⅛ oz/heaped ½ teaspoon) bicarbonate of soda (baking soda)",
+      "5 g (⅛ oz/heaped ½ teaspoon) fine sea salt",
+      "150 g (5½ oz) egg (approx. 3 eggs), room temperature (or warm the uncracked eggs in warm water)",
+      "240 g (8½ oz) full-fat sour cream, room temperature",
+      "1 × batch German brown butter buttercream – Dark chocolate Adaptrix (page 251)",
+      "125 g (4½ oz) fresh raspberries OR 30–40 g (1–1½ oz) extra freeze-dried raspberries",
+      "20 g (¾ oz) freeze-dried raspberries",
+      "extra cocoa for dust"
+    ],
+    method: `1. Preheat the oven to 160°C (320°F). Lightly spray the sides of two 20 cm (8 in) round × 5 cm (2 in) deep cake tins with cooking oil. Line the sides with baking paper strips, then line the base with a circle of baking paper.
+
+2. Bring the water to the boil on the stove. Weigh the Dutch cocoa and chocolate together in a medium bowl, then weigh in 130 g/ml (4½ oz) boiling water. Let it sit for 30 seconds, then whisk until smooth. Add the vanilla paste. Chill the mix, stirring occasionally while you build the batter. (Boiling water awakens cocoa to be its most chocolatey self. Weigh the water after it boils for liquid precision – evaporation causes water weight loss.)
+
+3. Put the sugar, butter and oil in the bowl of an electric stand mixer. Using the paddle attachment, cream the ingredients on speed 4 (below medium) for about 8 minutes until the mix is super pale and fluffy. Stop and scrape the bowl sides down twice during this process.
+
+4. Swizzle the flour, baking powder, bicarb soda and salt in a bowl and set aside with a sieve ready. Still on speed 4 (below medium), add the egg in three batches, beating well between each addition and scraping down occasionally. (Adding eggs in batches keeps the base fluffy and not looking like curdled soup. So, add some egg, and don't add the next batch until the mix has re-fluffed.)
+
+5. Remove the bowl from the mixer and transfer the mix into a large and wide mixing bowl. Sift over half the flour mix and start folding with a sturdy plastic spatula. When it is almost fully mixed in, fold in half the sour cream. Repeat with the remaining flour mix then sour cream. Finally, mix in the cooled cocoa/chocolate mix and ensure the final mix is uniformly brown with no streaks.
+
+6. Divide the batter equally between the two prepared cake tins – about 700 g (1 lb 9 oz) in each – and lightly smooth the tops with an offset spatula. Transfer to the oven and bake for 45–55 minutes until the cake has risen proudly and cracked a little (this will settle to flat), and has a crisp, thin crust. A skewer inserted into the centre comes out clean (internal temperature is 95°C/203°F).
+
+7. The cakes are VERY fragile. Cool the cakes in their tins on a wire rack for 8 minutes. Place a second wire rack or baking tray over the cakes and carefully flip them upside down. Remove the tins and paper carefully, then gently re-invert onto the wire rack so they are top side up again. Leave to cool for a few hours (up to overnight, ideally) before assembling. Chill them if you need extra layering security. While the cakes cool, make the buttercream.
+
+8. To assemble, follow Lovely layer cake-ing (see page 144). Push fresh raspberries into the buttercream layer. Pile the buttercream on for the top coat, keeping the top thick. Push a deep swirl into the top. Run your offset spatula around the sides to expose a little of the cake. Dust extra cocoa powder across the top and strew a relaxed coronet of freeze-dried raspberries around the swirl edge – some left whole and some crushed into a ruby crumb. Post-strew, press the raspberries in lightly for a secure attachment to the buttercream. Serve at room temperature so the cake and buttercream textures are at their best! #### Layering structure: Top: Dutch cocoa dusting + fresh or freeze-dried raspberry crown Layer 4 (top): Cake layer + chocolate buttercream Layer 3: Cake layer + chocolate buttercream + fresh raspberries Layer 2: Cake layer + chocolate buttercream + fresh raspberries Layer 1 (base): Cake layer + chocolate buttercream + fresh raspberries`
+  },
+  {
+    id: 222,
+    title: "Flourless Chocolate Cake",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "6–10",
+    time: "1 hr 30 mins plus cooling",
+    category: "Cakes",
+    ingredients: [
+      "cooking oil spray",
+      "150 g (5½ oz) unsalted butter",
+      "140 g (5 oz) good bittersweet chocolate (50–60% cocoa)",
+      "140 g (5 oz) good milk chocolate (30%-plus cocoa)",
+      "140 g (5 oz) egg yolks (from approx. 7 eggs) + 210 g (7½ oz) egg whites (from approx. 7 eggs)",
+      "100 g (3½ oz) dark brown sugar",
+      "2 g (1/16 oz/½ teaspoon) sea salt flakes",
+      "70 g (2½ oz) Dutch (unsweetened) cocoa powder, plus extra for dusting",
+      "90 g (3 oz) crème fraîche",
+      "3 g (1/10 oz/heaped ¼ teaspoon) cream of tartar",
+      "140 g (5 oz) caster (superfine) sugar"
+    ],
+    method: `1. Preheat the oven to 160°C (320°F). Spray the base and side of a 20 cm × 7.5 cm (8 in × 3 in) round cake tin with cooking oil spray. Place 10 cm (4 in) tall baking paper strips along the tin wall, using cooking oil spray to seal the strips where they overlap. Place a snug paper circle on the base.
+
+2. Make a double boiler by filling a saucepan with 5 cm (2 in) of water and bring to a low simmer on the stove. Chop up the butter and place with the chocolates in a 35 cm (13¾ in) heatproof bowl, then place over the pan. Heat until the chocolate and butter have just melted, stirring occasionally with a balloon whisk. Keep the mix warm – I usually turn the double boiler off but leave the bowl on top until I'm ready for the next step. (The temperature of the batter components is crucial: overheat the chocolate base and it will look like thick, oily lumps. You can keep using it – the cake will just bake flatter and denser. If the chocolate base is too cool, it will firm up by the time the whites are folded in, requiring more vigorous (air-killing) folding – 70°C (160°F) is ideal!)
+
+3. While the chocolate melts, start the egg yolk foam. Whip the egg yolks, dark brown sugar and salt in the bowl of an electric stand mixer with the whisk attachment on speed 8 (under high) for 5 minutes until pale brown and thick. If you are a one-bowl house (like me), scrape the foam out into a small mixing bowl and set aside. (Egg yolk and sugar foams are sturdy and can hold more than egg white-based ones.)
+
+4. Weigh the cocoa into a small bowl and set aside with a sieve for later. Weigh the crème fraîche into a container to heat it in (stovetop or microwave) and set aside for later.
+
+5. Clean the stand mixer bowl well and put the egg whites and cream of tartar in. Using the whisk attachment, whip on speed 8 (under high) until the whites have changed from foamy to stiff and white – around 2–3 minutes.
+
+6. Start adding the caster sugar to the whites – VERY gradually – about a heaped tablespoon every 30 seconds, so the whole process takes around 3–4 minutes. It is imperative to the success of the cake that the meringue is very stiff and shiny. Reduce to speed 1 (low) for 1 minute at the end to even out the air bubbles.
+
+7. While the final sugar is being added to the meringue, return to building the chocolate base. Check your chocolate/butter mix is quite warm, then fold in the egg yolk foam. Sift over the cocoa powder and fold in. Heat the crème fraîche until melty/steamy (it doesn't matter if it looks curdled) and fold that in too. Finally, fold in one-third of the whipped meringue. When the first addition is almost completely incorporated (still streaky), fold in the remaining meringue until very few streaks remain. Do a final fold with a clean flexible plastic spatula to eradicate any final streaks. The mix should look fluffy, like chocolate mousse. Scrape the batter carefully into the lined tin. Smooth the top with an offset spatula. (Adding the second portion of whites/meringue before it's completely incorporated maintains more air overall. Concentrate on making the batter streak-free after the final whites addition.)
+
+8. Bake for 45–55 minutes. The cake is cooked when there are puffed cracks at the edges, the top is matt dark brown and a poke of the tin produces a firm-set wobble (internal temperature 80–85°C/176–185°F). (If you are using a skewer to test the cake, there will be batter on the skewer but it will look gooey, not liquid.)
+
+9. Remove from the oven and cool for a minimum of 2 hours (warm and fragile) or overnight (more set) before gently inverting the cake onto a cooling rack and then re-inverting it onto a cake stand. Dust with the extra Dutch cocoa. If leaving overnight to cool, drape a clean, dry tea towel (dish towel) over the top and leave at room temperature. (I love this cake the most when it has matured overnight. A cute little waist may form on the side of the cake if the cake is removed from the tin while too warm – totally natural as it is totally flourless. Allow the cake to cool in the tin overnight for a reduced waist. Overcooked cake will still be servable – just send to the table with some extra cream and juicy berries. Undercooked cake should have a sturdy wall around its too gooey centre. Serve as a molten chocolate pudding cake!)`
+  },
+  {
+    id: 223,
+    title: "Ban-Almond Double Crunch Cheesecake with Tropical Fruits",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "10–12",
+    time: "2 hrs plus overnight",
+    category: "Cakes",
+    ingredients: [
+      "cooking oil spray",
+      "Toasted almond crumb:",
+      "80 g (2¾ oz) raw (natural) almonds, skin on",
+      "100 g (3½ oz) unsalted butter, roughly chopped",
+      "80 g (2¾ oz) light brown sugar",
+      "120 g (4½ oz) plain (all-purpose) flour",
+      "2 g (1/16 oz/¼ teaspoon) fine sea salt",
+      "Cheesecake filling:",
+      "300 g (10½ oz) ripe banana (approx. 2–3 large), roughly torn",
+      "120 g (4½ oz) caster (superfine) sugar",
+      "20 g/ml (¾ oz) lemon juice",
+      "1 g (1/32 oz/⅛ teaspoon) fine sea salt",
+      "500 g (1 lb 2 oz) full-fat cream cheese, room temperature",
+      "200 g (7 oz) egg (approx. 4 eggs)",
+      "50 g (1¾ oz) crème fraîche",
+      "1 tonka bean",
+      "Tropical fruit topping:",
+      "2 limes",
+      "40 g (1½ oz) caster (superfine) sugar",
+      "tropical fruits – passionfruit, pineapple, mango"
+    ],
+    method: `1. Preheat the oven to 140°C (285°F). Line a shallow baking tray with baking paper.
+
+2. Start the crumb base by chopping the almonds finely by hand. Melt the butter (stovetop or microwave), then combine with the almonds and the remaining crumb ingredients in a wide mixing bowl. Mix together with your hands to very damp clumps. (Double-crust cheesecakes work best with a more buttery, moist crumb that are sturdier and prevent a too-dry, crumbly top crust.)
+
+3. Scatter the mix onto the tray and bake for 15 minutes. Take the tray out and, using a metal spoon, stir and break up the mix to help the crumb brown evenly (it can darken faster on the base). Return to the oven and continue to bake for another 15 minutes, then cool.
+
+4. Reduce the oven to 130°C (265°F). While the crumb cools, start the cheesecake mix by putting the banana flesh, sugar, lemon juice and salt into the bowl of a food processor. Whiz to a smooth liquid. Sometimes a chunk of banana will refuse to break down. Don't stress, it will yield when the cream cheese is added. (Adding the lemon juice with the banana will stop the flesh from oxidising.)
+
+5. Add the softened cream cheese through the feed tube, breaking it into chunks as you add it. The goal is silky smooth, so stop the processor and scrape a few times or break up large chunks that aren't processing. (If you have a tiny processor (like me at home), process the banana/sugar with the cream cheese, then scrape the mix out into a bowl and whisk the rest of the ingredients in by hand.)
+
+6. Weigh the egg and crème fraîche and finely grate the tonka bean on top. Add this in one addition and process until the mixture forms a smooth, homogenous mix. Hand whisk or strain any obstinate lumps out at the end if needed. This mix is deliriously good – like the most extra, extra banana smoothie. Transfer to a bowl and set aside. Clean the food processor bowl.
+
+7. When the crumb has cooled, whiz in a food processor to a coarse damp sand consistency – a few small pea-sized almond pieces are fine to remain, and will give lovely texture. (Don't over-process or you'll end up with a buttery cookie paste!)
+
+8. Lightly spray a 20 cm (8 in) round × 7.5 cm (3 in) deep cake tin with cooking oil and line the base and side with baking paper. Set up a high-sided roasting tin for the water bath and place a piece of paper towel in the base to stop the cheesecake tin slipping. (If you choose a tin where the base is welded to the side (or a springform tin), you will need to wrap the outside of the tin with a triple layer of extra-wide foil so water won't breach the tin. If you use a tin made from a single piece of metal, you won't need to do this – this is the type of tin that I prefer to use.)
+
+9. Fill the base of the tin with half the crumb – approximately 160 g (5½ oz). Pack it down lightly – the weight and moisture of the cheesecake mix will do the rest of the work, and you don't want a base you have to really crunch through when eating. Reserve the remaining crumb for the top.
+
+10. Pour the filling into the prepared cake tin, then place the cake tin in the roasting tin. Gently scatter the reserved crumb evenly over the top, being careful not to make any sudden movements that could slosh the filling and crumb together. With an angel's touch, smooth out the crumb top with an offset spatula. (Mythbuster: there is no need to re-bake the crumb base before filling. The base will hold together fine with the extra moisture from the filling.)
+
+11. Pour enough hot tap water into the roasting tin to just reach the first joint on your index finger. (The finger depth gauge works better than trying to see how far the water is up the side of the dish, because water distorts depth perception.)
+
+12. Carefully lift the roasting tray into the oven. Bake for 60–70 minutes until the cheesecake, when jiggled, barely wobbles. The internal temperature will be 70°C (158°F) – it can be hard to tell with a top crust, so internal temperature is the best way to achieve cheesecake confidence. (With its crunchy top crust, I bake this cheesecake a bit further. If the cheesecake is cooking too fast or far, the filling will puff and cause the crumb to crack on top. If this happens, lower the heat and continue to bake to doneness. The puffing will subside a little upon cooling. The best thing about water-bath baking is that it is super hard to fully overcook the cheesecake.)
+
+13. When ready, turn the oven off and leave the door ajar for 30 minutes before removing the cheesecake. If you are using foil around the tin and you can see some water has breached the foil, lift the cheesecake tin out immediately and remove the foil so the base doesn't become sodden, then leave to cool to room temperature. Lightly cover with plastic wrap and refrigerate overnight until set.
+
+14. The next day, juice the limes and simmer to a syrup with the caster sugar. Cut the tropical fruits into thin slices and lay on a plate. Cool the lime syrup, then pour it over the fruit. Set aside.
+
+15. Immerse the tin in a shallow roasting tray of hot water for 20 seconds to warm the butter in the crust and loosen the cheesecake from the tin. Place a flat plate or board (the base from a tart tin works well here) on top of the cake in its tin. Flip over confidently and place the plate on the work surface. Lift a side of the tin and gently tease out the baking paper. This will loosen the cheesecake and, with a wiggle and a shake and a push on the base, it should release. Peel the paper off the crumb crust and re-invert. (If the cheesecake is stubborn and won't come out, warm the tin further by giving it a quick flash with a brûlée torch. Warming the butter in the base will help it release.)
+
+16. Decorate the top with pretty and relaxedly strewn peeled slices of tropical fruits. Serve chilled.`
+  },
+  {
+    id: 224,
+    title: "Lemon (Make It Meyer If You Can) Buttermilk Chiffon Cake",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "10–16",
+    time: "1 hr 20 mins plus cooling",
+    category: "Cakes",
+    ingredients: [
+      "300 g (10½ oz) caster (superfine) sugar",
+      "200 g (7 oz) soft plain (all-purpose) flour",
+      "40 g (1½ oz) cornflour (cornstarch)",
+      "15 g (½ oz/3 teaspoons) baking powder",
+      "2 g (1/16 oz/¼ teaspoon) fine sea salt",
+      "300 g (10½ oz) egg white (from approx. 10 eggs) + 140 g (5 oz) egg yolk (from approx. 7 eggs)",
+      "4 g (⅛ oz/½ teaspoon) cream of tartar",
+      "190 g/ml (6½ oz) buttermilk",
+      "110 g/ml (4 oz) neutral vegetable oil",
+      "finely grated zest and juice of 3 golfball-sized Meyer lemons",
+      "½ × batch Citrus crisps (page 288) made with a Meyer lemon",
+      "1 × batch Fluffy yoghurt frosting (page 259)"
+    ],
+    method: `1. Preheat the oven to 150°C (300°F). You will need a 25 cm (10 in) two-part angel food cake tin, preferably aluminium (NOT dark metal or non-stick). Do not grease the tin. (Contrary to everything else you know about cakes, this one needs an ungreased tin. The cake MUST stick to the side of the tin, especially when it is inverted, so it stays in the tin to cool. The sound of a chiffon cake falling out of the tin is heartbreaking and I never want that to happen to you. Set up a bottle to place the chiffon tin on. Check that the bottle is the right size for the hole in the tin. It is best not to face this question when you have a hot cake, quickly deflating, in your oven mitt. Found one that works? Great! Resume the bake.)
+
+2. Weigh the sugar into a small bowl and then take out 2 tablespoons and set aside to add to the egg whites later on. Weigh the flours, baking powder and salt into a bowl and sift into a second bowl. Sift back into the original bowl, then set aside with a sieve on top. (Cornflour lightens the crumb colour to snowy white. The multiple siftings will merge the flours (which absorb moisture differently) so they enter the batter as equal starches.)
+
+3. Put the egg white and cream of tartar in the bowl of an electric stand mixer. Using the whisk attachment, whip on speed 8 (under high) until the whites have changed from foamy to stiff and white. Just after you have started the whites, put the buttermilk, oil, egg yolks and finely grated lemon zest in a wide bowl and combine with a whisk.
+
+4. Start adding the reserved sugar to the whipped whites in four additions. It is imperative to the success of the cake that the meringue forms very stiff-medium peaks. Reduce to speed 1 (low) for 1 minute to even out the air bubbles.
+
+5. Sift the dry ingredients over the buttermilk/yolk/oil mix and whisk in by hand to form a loose batter, then gently and thoroughly fold in one-third of the meringue. Gently fold in the remaining meringue until no white streaks remain. Pour the mix into the ungreased angel food cake tin. The batter should come up to about 5 cm (2 in) from the top of the tin. (If the batter sits higher, it may bake and soufflé a little over the sides. To avoid this, give the batter a swizzle with a small knife in the tin.)
+
+6. Wipe any batter smears that are around the side of the tin or on the centre tube, as they can impede the rise.
+
+7. Bake for 55–60 minutes until golden and puffed. The cake around the inner tube should have a dry appearance. Remove from the oven and immediately invert the centre tube onto a bottle – carefully and with courage! Let it hang for 2–3 hours, until the base of the tin is completely cool to the touch.
+
+8. While the cake bakes, start the citrus crisps so you can get them in the oven when the chiffon comes out.
+
+9. Make the frosting. Strain and weigh the lemon juice, then reduce (see Reduce the juice, page 21) to a quarter of its original volume and stir into the softened Fluffy yoghurt frosting before topping the cake.
+
+10. To release the cake, run a thin knife or metal offset spatula around the edge of the tin. This may take a little practice. Start where one of the legs is soldered on and shimmy the knife down alongside the rivet (if it's easier, lay the tin on its side to do this). Make sure the knife is super close to the tin and then, with a slight angle, drag the knife around the side of the tin to the next leg point. Repeat this action at each leg point. Do not run a knife around the centre tube – it will naturally release when cut from the base. Turn the chiffon cake out onto a serving plate and cut it from the base plate.
+
+11. If there is a delay between unmoulding and frosting, wrap the cake in plastic wrap to prevent it drying out. The cooled cake can be removed from the tin and kept wide-side up and lightly wrapped for up to 2 days.
+
+12. Spoon three blobs of the frosting on top and smooth to cover and just reach the edge. Angle your offset spatula to swipe the top frosting edge, making it sharp and neat. Don't worry about any errant smears underneath the frosting edge. Place the citrus crisps on top and serve at room temperature. The cake was hanging upside down and then fell out! This is because it was underbaked or the meringue wasn't folded into the base thoroughly. Discard it. I am so sorry it can't be saved, but the scraps are yours for snacking! If it didn't come out of the tin cleanly and looks messily hacked, make double the frosting and ice the top and sides like the Gingerspice angel food cake (see page 172). Press finely crushed white chocolate or Crisp rye streusel (page 274) on the sides. Pop the lemon slices on the top. Brava!`
+  },
+  {
+    id: 225,
+    title: "Chicory Caramel Mascarpone Layer Cake",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "8–16",
+    time: "2 hrs plus overnight",
+    category: "Cakes",
+    ingredients: [
+      "cooking oil spray",
+      "330 g (11½ oz) unsalted butter, squidgy soft",
+      "200 g (7 oz) dark brown sugar",
+      "75 g (2¾ oz) caster (superfine) sugar",
+      "100 g (3½ oz) vegetable oil",
+      "320 g (11½ oz) soft plain (all-purpose) flour",
+      "15 g (½ oz/3 teaspoons) baking powder",
+      "2 g (1/16 oz/¼ teaspoon) bicarbonate of soda (baking soda)",
+      "3 g (1/10 oz/heaped ¼ teaspoon) fine sea salt",
+      "150 g (5½ oz) full-cream (whole) milk",
+      "15 g (½ oz) chicory powder",
+      "5 g (⅛ oz/½ teaspoon) vanilla paste",
+      "250 g (9 oz) egg (approx. 5 eggs), room temperature (or warm the uncracked eggs in warm water)",
+      "Dark caramel ganache:",
+      "500 g (1 lb 2 oz) good white chocolate",
+      "5 g (⅛ oz/½ teaspoon) vanilla paste",
+      "6 g (⅛ oz/heaped ½ teaspoon) fine sea salt",
+      "200 g (7 oz) caster (superfine) sugar",
+      "50 g (1¾ oz) water",
+      "400 g/ml (14 oz) cream (35% milkfat)",
+      "50 g (1¾ oz) unsalted butter, soft and cubed",
+      "Mascarpone whip:",
+      "250 g (9 oz) mascarpone",
+      "150 g/ml (5½ oz) cream (35% milkfat)"
+    ],
+    method: `1. Heat the oven to 135°C (275°F). Lightly spray the sides of two 20 cm (8 in) round × 5 cm (2 in) deep cake tins with cooking oil. Line the sides with baking paper strips, then line the base with a circle of baking paper.
+
+2. Put the butter, sugars and oil in the bowl of an electric stand mixer. Using the paddle attachment, cream the ingredients on speed 4 (below medium) for about 4 minutes until the mix is pale malty brown and fluffy. Stop and scrape the bowl side down twice during this process.
+
+3. Swizzle the flour, baking powder, bicarb soda and salt in a bowl and set to the side with a sieve ready. Lightly whisk the milk, chicory and vanilla together and set aside. Still on speed 4 (below medium), add the eggs in three batches, beating well between each addition and scraping down occasionally. (Adding eggs in batches keeps the base fluffy and not looking like curdled soup. So, add some egg, and don't add the next batch until the mix has re-fluffed.)
+
+4. Remove the bowl from the mixer and push the mix off the paddle into a large and wide mixing bowl. Scrape out the remaining mix, sift over half the flour mix and start folding with a sturdy plastic spatula. When it is almost fully incorporated, fold in half the chicory milk. Repeat with the remaining flour mix then the remaining chicory milk.
+
+5. Divide the batter equally between the two prepared cake tins – about 700 g (1 lb 9 oz) in each – and lightly smooth the tops with an offset spatula. Transfer to the oven and bake for 45–50 minutes until the cakes have risen proudly. A skewer inserted into the centre should come out clean (internal temperature is 95°C/203°F).
+
+6. While the cakes bake, start the ganache so it has plenty of time to thicken. Weigh the chocolate, vanilla and salt into a large bowl and set aside. Read Caramel control (page 268): boil the sugar and water over a high heat until pale golden. Drop the heat and cook until dark brown and pluming with wisps of caramel smoke (190°C/375°F). Remove the saucepan from the heat and add the cream carefully, protecting yourself from spatters. Return the mixture to the heat to melt any hardened caramel. Pour the hot caramel cream over the chocolate and whisk slowly to melt. Cool for 5 minutes, whisking occasionally, then add the butter cubes one by one until dissolved. Set aside at room temperature to thicken slowly – 2 hours (or accelerate in the fridge), stirring every so often until it reaches a softly spreadable consistency – around 18°C (65°F). (If re-warming the ganache, it can appear oily on top. No stress, just completely melt to hot then re-cool, whisking often.)
+
+7. Cool the cakes in their tins on wire racks for 8 minutes, then place a second wire rack or baking tray over the cakes and carefully flip them upside down. Remove the tins and paper carefully, then gently re-invert onto the wire rack so they are top-side up again. Leave to cool for a few hours (up to overnight, ideally) before assembling. Chill them if you need extra layering security. While the cakes cool, make the mascarpone whip by gently mixing the cream and mascarpone together until it holds its form – medium peak. Give it a vigorous whip if it is runny.
+
+8. Follow Lovely layer cake-ing (page 144). On the base cake layer, smooth one-third of the mascarpone and drizzle on around 80 g (2¾ oz) of the ganache. Repeat this for the next layers, then place the top layer on. Smooth enough ganache (you will have spare) thickly over the sides and top, and use the tip of your offset spatula to kick up a little texture on the sides, leaving the top smooth. ---`
+  },
+  {
+    id: 226,
+    title: "Sumac Blackberry Shortcakes with Kefir Cream",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "6 shortcakes",
+    time: "1 hr 10 mins",
+    category: "Dessert",
+    ingredients: [
+      "1 × batch Sumac blackberries (page 279)",
+      "cooking oil spray",
+      "Shortcake:",
+      "300 g (10½ oz) self-raising flour",
+      "5 g (⅛ oz/heaped ½ teaspoon) fine sea salt",
+      "3 g (1/10 oz/heaped ¼ teaspoon) bicarbonate of soda (baking soda)",
+      "120 g (4½ oz) unsalted butter, cool and smooshable, sliced into small tiles",
+      "2 large eggs, in shell",
+      "200 g/ml (7 oz) kefir, cold",
+      "Kefir cream filling:",
+      "300 g/ml (10½ oz) cream (45% milkfat)",
+      "100 g (3½ oz) kefir",
+      "5 g (⅛ oz/½ teaspoon) vanilla paste"
+    ],
+    method: `1. Make the Sumac blackberries first, for a sumptuous soak.
+
+2. In a wide mixing bowl, swizzle the flour, salt and bicarb soda together. Add the butter and smoosh between your fingers into thumbnail-sized flakes. The surrounding flour will just start to turn a pale yellow. Chill while you prepare the egg yolks.
+
+3. Bring a small saucepan of water to just under a high-heat boil. Lower the eggs in on a slotted spoon and simmer for 9 minutes to hard-boiled. Cool immediately under cold water, then peel off the shell. Break the cooked white open and pluck out the yolky orbs. Set aside in a small fine sieve. (The expendable cooked egg whites can be chopped up into a herb mayo for a sandwich. Or a treat for your pet. Hi pups!)
+
+4. Push the cooked egg yolks through the sieve with your fingers, then scrape the underside of the sieve to release the egg yolk threads. Toss lightly through the flour mix and chill while you get the tray ready. This dough has to be cold.
+
+5. Line a 30 cm × 40 cm (12 in × 15¾ in) shallow baking tray with cooking oil spray and a piece of baking paper. Preheat your oven to 210°C (410°F).
+
+6. Add the kefir to the flour mix and toss together with gentle intent to make a shaggy/clumpy dough. Don't overmix – you'll get tough biscuits. Add a sprinkle of extra kefir if it needs – kefir can vary in viscosity (and therefore) moistening power.
+
+7. Place the clumpy dough mass on a lightly floured surface, clean your fingers and then press the dough into a rectangle around 25 cm × 10 cm (10 in × 4 in). Push a bench scraper against the sides to keep the edges neat. Fold into thirds like a doughy business letter, then pat out again to 25 cm × 10 cm (10 in × 4 in). (Feel free to roll with a pin if that feels more comfortable.)
+
+8. Trim 1–2 mm (1/16 in) off all the edges to allow for an unimpeded edge crust rise. Cut into six even bars and space 2 cm (¾ in) apart in a row on the baking tray. You can freeze them at this point and bake them later/the next day. (Freezing is a helpful prep step and gives the baked shortcake more defined edges.)
+
+9. Bake for 12–15 minutes, until the shortcakes are deep honey golden (internal temperature 90°C/195°F). The probe may look gummy with dough but the biscuit will continue to cook as it rests post-bake. Cool completely for 30 minutes before filling.
+
+10. While they cool, hand whip (my preferred method, but beaters are fine) the kefir cream filling ingredients together to billowy soft peaks and keep chilled.
+
+11. To fill, split each shortcake with small serrated knife. Spoon a generous spoonful of the macerating blackberry syrup on each exposed crumb side. Divide the berries between the bars and top with a luxurious scoop of the kefir whip.`
+  },
+  {
+    id: 227,
+    title: "Cold-Start Thick Custard",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "320g (small batch)",
+    time: "15 mins plus 1 hr cooling",
+    category: "Basics",
+    ingredients: [
+      "Small batch:",
+      "50 g (1¾ oz) caster (superfine) sugar",
+      "20 g (¾ oz) cornflour (cornstarch)",
+      "1 g (1/32 oz/⅛ teaspoon) fine sea salt",
+      "40 g/ml (1½ oz) cream (35% milkfat)",
+      "40 g (1½ oz) egg yolk (from approx. 2 eggs)",
+      "200 g/ml (7 oz) full-cream (whole) milk",
+      "4 g (⅛ oz/½ teaspoon) vanilla paste, or ½ vanilla bean"
+    ],
+    method: `1. In a medium bowl, weigh the sugar, cornflour, salt and cream. Add the egg yolks last and hand whisk to make a creamy paste. Stream the milk in then the vanilla (paste or scraped pod and seeds) and whisk well. Scrape the mix into a 20 cm (8 in) saucepan. (Adding the egg yolks last helps stop them forming little hard orange 'cooked' granules at the start.)
+
+2. Place the saucepan on a medium-high heat and hand whisk at a slow pace to allow the heat to suffuse through the mix. Work the small balloon whisk into the corners of the saucepan (where the custard thickens first). After around 3 minutes of whisking, the custard will start to look like a creamy liquid.
+
+3. Speed up the whisking now – the custard will thicken fast. It will look lumpy but just whisk quickly and it will all come together into an evenly thick paste in another 1 minute.
+
+4. Don't give up at the lumpy stage. It is NOT failure – just the custard cooking at different rates. Keep whisking to achieve silky, evenly thick success.
+
+5. As soon as it looks smooth and thick, slow down the whisking and wait for a few burp-like bubbles to pop over the surface. It's a super thick custard and your whisk should leave obvious furrows as it moves through the mix. (Letting the custard visibly boil means the starches are fully cooked, making a thick, stable custard.)
+
+6. Take the pan off the heat and remove the vanilla pod (if using). Scrape the custard into a bowl and press a piece of plastic wrap on the surface of the custard to prevent a rubbery skin forming. Chill for at least 1 hour. If you haven't been moving the custard well enough as it cooks, you will notice brown flecks of overcooked custard starting to show. To fix this, use a spatula to push the custard through a sieve into a clean bowl at the end of cooking. If, after chilling, the custard appears gloopy then it's undercooked. Simply return it to a saucepan over a low heat and VERY slowly bring it to the boil again. ---`
+  },
+  {
+    id: 228,
+    title: "German Brown Butter Buttercream (or GBBBC)",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "550g buttercream",
+    time: "1 hr",
+    category: "Basics",
+    ingredients: [
+      "1 × small batch Cold-start thick custard (page 247)",
+      "240 g (8½ oz) unsalted butter, squidgy (at approx. 20°C/70°F)",
+      "40 g (1½ oz) crème fraîche (at approx. 20°C/70°F)"
+    ],
+    method: `1. When the custard is cooked, cool to approximately 20–30°C (70–85°F) – it will take about 30 minutes at ambient temperature – stirring regularly to prevent a skin forming. The custard can be cooked the day before and gently warmed back to target temperature in the microwave or over a double boiler.
+
+2. When the custard is cooled, place it in a stand mixer bowl with 160 g (5½ oz) of the butter and the crème fraîche. Attach the whisk and whip on speed 5 (medium) for 3–4 minutes. Stop and scrape down the sides a few times.
+
+3. Don't panic! At this stage, the mix will look lumpy and sometimes a broken/split mess, but the hot brown butter will elevate the temperature and bring it back to smooth and creamy. If the buttercream still looks broken after adding the brown butter, elevate the temperature again by scooping out a heaped spoonful, warming it to melty hot, then streaming it back in. Keep warming and whipping, and never ever give up on a buttercream!
+
+4. While the mix whips, cook the remaining 80 g (2¾ oz) butter over a medium-high heat until it's a light toasted brown and bubbling hot. Immediately slow the mixer to low speed and stream the butter slowly into the custard mix while the mixer is still whipping. Stop and scrape the sides, then increase to speed 8 (under high) and whip for another 5–6 minutes to smooth fluffiness.
+
+5. See Buttercream top tips (page 252) for extra info.`
+  },
+  {
+    id: 229,
+    title: "Vanilla Malt Crème Anglaise (Thin Custard)",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "960g custard",
+    time: "30 mins",
+    category: "Basics",
+    ingredients: [
+      "180 g (6½ oz) egg yolk (from approx. 9 eggs)",
+      "90 g (3 oz) sweetened condensed milk",
+      "40 g (1½ oz) barley malt extract/syrup (Barley malt syrup is readily available in supermarkets – look near the honey. Don't use the powder.)",
+      "1 g (1/32 oz/¼ teaspoon) sea salt flakes",
+      "1 vanilla bean, split and scraped OR 10 g (¼ oz) vanilla paste",
+      "250 g/ml (9 oz) full-cream (whole) milk",
+      "400 g/ml (14 oz) cream (35% milkfat)"
+    ],
+    method: `1. Set up a double boiler by filling a 25 cm (10 in) wide saucepan with 5 cm (2 in) of water. Place it on the stovetop and bring to a low simmer. Choose a stainless-steel bowl to sit on top that is slightly wider than the pan. Don't let the bottom of the bowl touch the water. (Just a thing before we start: the custard needs to cook to a spot-on 80°C (175°F). Past that, you'll find yourself in the Valley of Broken Custard (it will look split, curdled or separated). Hover the thermometer tip into the custard, making sure it doesn't touch the side. If the thermometer tip hits the bowl, the temperature read will be higher and your custard won't actually be cooked enough.)
+
+2. Put the egg yolk, condensed milk, malt syrup, salt and vanilla seeds or paste in the stainless-steel bowl and hand whisk until the mixture forms a creamy paste – it doesn't have to be pale and fluffy. Whisk in the milk and cream and add in the scraped-out vanilla bean pod (if using). Place the bowl on the double boiler. Using the hand whisk, whisk the custard occasionally until the mix comes up to 70°C (160°F).
+
+3. Sometimes, as you are whisking, you may notice the custard has set at the bottom or side of the bowl. Don't panic! Just give it a brisk whisk and take the temperature again – as long as you are still under 80°C (175°F) the whole mix isn't overcooked. Continue!
+
+4. After the custard reaches 70°C (160°F), it's time to switch the whisk for the spatula and become a full-time custard carer. Constantly and gently stir/scrape the custard until it reaches the 80°C (175°F) target. If you don't have a thermometer, use visual clues – the custard will be thicker and glossier. The foam will have dissipated and the custard will be buff coloured, like a manila folder. It will have a soft custardy quiver when you lightly tap the surface with your spatula.
+
+5. Remove the bowl from the pan, strain through a fine sieve into a fresh bowl, then use a whisk to stir often (not briskly) at room temperature for about 10 minutes to keep releasing the heat. Return the scraped vanilla bean to the anglaise so it can keep on releasing its floral goodness for as long as the custard is around.
+
+6. Cool to lukewarm, then chill in a bottle or jar. If storing in a bowl or tub, press a piece of plastic wrap onto the surface to prevent a skin forming. Pour with abandon or take sneaky sips while it graces your fridge. If it does start to look split, there are three fixes. Use one or multiple: 1. Immediately scrape the mix into a fresh bowl (this stops the heat) and whisk furiously to reduce the temperature. 2. Add a good slurp of cold cream to quickly cool it down. 3. Pour the custard into a food processor or blender and whiz until smooth. The custard may retain a little graininess but will still be pourable. If it is too grainy (feels textured on your palate), it's R.I.P. custard.`
+  },
+  {
+    id: 230,
+    title: "Sumac Blackberries",
+    author: "Natalie Paull",
+    book: "Beatrix Bakes: Another Slice",
+    serves: "400g macerated berries",
+    time: "10 mins plus macerating",
+    category: "Basics",
+    ingredients: [
+      "400 g (14 oz) blackberries",
+      "80 g (2¾ oz) sugar",
+      "40 g/ml (1½ oz) lemon juice",
+      "1 g (1/32 oz/¼ teaspoon) sea salt flakes",
+      "10 g (¼ oz) sumac"
+    ],
+    method: `1. Start with the blackberries so they get a long, luxurious maceration by picking through your bowl (non-reactive, please) of blackberries and halving roughly a quarter of them. (Be mindful of the starting size of your fruit pieces, as macerating shrinks pieces to around ¾ of their original size.)
+
+2. Toss gently with the sugar, lemon juice, salt flakes and sumac. Cover and leave at room temperature for up to 3 hours. Chill if you need to hold onto them longer.`
+  },
+  {
+    id: 231,
+    title: "Prawn, okra & mango juice stew",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "4",
+    time: "20 mins",
+    category: "Seafood",
+    ingredients: [
+      "400g peeled and deveined king prawns (800g if starting with shell-on prawns)",
+      "200g okra, halved diagonally",
+      "2 bird's-eye chillies, thinly sliced into rounds, plus extra to serve",
+      "3 tbsp olive oil, plus extra for cooking",
+      "1 tsp fine sea salt",
+      "1½ tsp ground cumin",
+      "¼ tsp ground turmeric",
+      "¼ tsp ground cinnamon",
+      "15 saffron threads",
+      "60 twists of freshly cracked pepper",
+      "flaked sea salt",
+      "1 lime, halved",
+      "Broth:",
+      "300g mango juice (see note)",
+      "50g water",
+      "35g tomato purée/paste",
+      "1½ tbsp ginger–garlic mix (page 26, or 1 large garlic clove + 10g peeled fresh ginger + ⅛ tsp fine sea salt, very finely minced together)"
+    ],
+    method: `1. Put the prawns, okra and chillies into a large bowl with the oil, salt, spices, saffron and pepper. Mix and leave to marinate for 10 minutes.
+
+2. In a separate bowl, whisk together the mango juice, water, tomato paste and ginger–garlic mix.
+
+3. Lightly grease a 30cm sauté pan and place on a high heat. Once hot, add the prawns, okra and marinade, spread out as much as possible and fry undisturbed for 2 minutes, then stir-fry for another 30 seconds to 1 minute, or until the prawns are all pink. Pour over the broth, cover with a lid and cook until the broth is just hot, 2–3 minutes. Don't overcook – you want the okra to remain vibrant and crunchy, and the prawns juicy.
+
+4. Squeeze over plenty of fresh lime and serve. Note: Make sure you're using juice with no added sugar or fake flavourings. If you can't get pure mango juice, mango and apple juice would also work well, and pineapple juice would be a good alternative. ---`
+  },
+  {
+    id: 232,
+    title: "Coconut & cassava fried fish",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "4 as a snack",
+    time: "20 mins plus marinating",
+    category: "Seafood",
+    ingredients: [
+      "400g firm, skinless fish (such as sea bass, sea bream, tilapia)",
+      "200g full-fat coconut milk (from a tin, not carton; mix well before measuring)",
+      "2 tsp lime juice",
+      "10g fine sea salt",
+      "500g mild/light olive oil, for shallow-frying",
+      "5g mix of fresh coriander and small basil leaves",
+      "flaked sea salt",
+      "1 lime and 1 tangerine, to serve",
+      "Coating:",
+      "100g desiccated coconut",
+      "100g farinha de mandioca or polenta (see intro)",
+      "30g cornflour",
+      "½ tsp medium curry powder, plus extra to serve",
+      "½ tsp fine sea salt",
+      "plenty of freshly cracked pepper"
+    ],
+    method: `1. Cut the fish into diagonal strips weighing around 25g each.
+
+2. Put the coconut milk, lime juice and salt into a medium container, mix well, then add the fish and gently stir to coat. Marinate for up to 2 hours at room temp, but preferably overnight, refrigerated (in which case remove from the fridge 1½ hours before frying).
+
+3. Thoroughly mix all the coating ingredients together in a medium container.
+
+4. A few strips at a time, remove the fish from the marinade – you want the strips to be covered in the coconut milk but not dripping – and place in the container of coating ingredients. Turn to thoroughly coat each piece, squeezing to help the coating adhere to the fish. Place the coated fillets on a tray and continue with the rest.
+
+5. Line a flat tray with kitchen paper.
+
+6. Put the oil into a medium pan and place on a medium heat. Once the oil is hot (180°C, if you have a temperature probe), carefully lower the fish pieces into the oil (it should sizzle if the oil is hot enough) and fry, turning every now and then, until crisp and golden brown all over (1½–2 minutes). Use a slotted spoon to transfer the fried fish to the lined tray, then continue frying the rest.
+
+7. Use the slotted spoon to remove all the bits from the oil. Very carefully add the herbs to the oil (stand back, as the oil may spit) and very quickly fry until crisp and bright green – this should only take about 10 seconds, so keep a close eye on it. Remove with a slotted spoon.
+
+8. Transfer the fish to a platter and top with the crispy herbs. Finish with flaked salt and curry powder, squeeze over some fresh lime and tangerine juice and serve. ---`
+  },
+  {
+    id: 233,
+    title: "Coconut chicken with charred okra",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "4",
+    time: "1 hr 20 mins",
+    category: "Poultry",
+    ingredients: [
+      "8 chicken drumsticks",
+      "1 Scotch bonnet chilli, whole (optional)",
+      "Sauce:",
+      "1 tbsp olive oil",
+      "1 tsp Urfa chilli",
+      "1 tsp ground coffee",
+      "1 tsp fine sea salt",
+      "½ tsp smoked paprika",
+      "about 20 twists of freshly cracked pepper",
+      "Marinade:",
+      "1 x 400g tin of full-fat coconut milk",
+      "150g sweet cherry tomatoes",
+      "1 red bell pepper, deseeded and quartered (170g)",
+      "3 small garlic cloves, peeled",
+      "5g fresh ginger, peeled",
+      "1 Scotch bonnet chilli, deseeded and finely chopped (or a milder chilli if you prefer)",
+      "2 tbsp runny honey (or maple/agave syrup)",
+      "1 tbsp red palm oil (see page 20) or coconut oil",
+      "1½ tsp fine sea salt",
+      "1 tsp rice vinegar",
+      "½ tsp medium curry powder",
+      "¼ tsp smoked paprika",
+      "¼ tsp ground turmeric",
+      "about 50 twists of freshly cracked pepper",
+      "To serve:",
+      "140g okra, halved at an angle",
+      "olive oil",
+      "15g picked fresh coriander leaves",
+      "15g spring onions, green ends thinly sliced",
+      "2 limes, halved",
+      "rice or flatbreads"
+    ],
+    method: `1. Put the chicken and all the marinade ingredients into a large bowl and mix very well to coat the chicken evenly.
+
+2. Put all the sauce ingredients into a blender and blitz until smooth.
+
+3. Heat a 26cm-wide high-sided pan, for which you have a lid, on a high heat. Once hot, add the chicken drumsticks, spaced apart as much as possible. Fry for about 8 minutes, turning every 2 minutes until browned all over.
+
+4. Pour the sauce into the pan and mix so all the chicken drumsticks are coated. Add the whole Scotch bonnet (if using), cover with a lid and cook on high for 5 minutes. Lower the heat all the way down and cook for another 40 minutes, until the chicken is very soft. Leave to rest for 10 minutes. Squeeze the Scotch bonnet into the sauce to release its flavour (if using).
+
+5. Meanwhile, heat a frying pan on a high heat. Toss the okra with a little oil and fine salt, then add to the hot pan. Cook for about 6 minutes, turning a few times until charred all over. In a separate bowl, toss the charred okra with the coriander and spring onions.
+
+6. Squeeze the juice of ½ a lime over the chicken, top with the okra and herbs and serve with rice or flatbreads and the rest of the limes. Note: The marinade will make the pan a bit smoky, so make sure to open windows and turn on the extraction. ---`
+  },
+  {
+    id: 234,
+    title: "Lamb with pineapple pimenta & toasted cassava",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "4",
+    time: "30 mins",
+    category: "Lamb",
+    ingredients: [
+      "1 extra ripe pineapple (1.2kg)",
+      "2 large yellow tomatoes (500g)",
+      "flaked sea salt",
+      "4 x 125g lamb neck fillets (500g)",
+      "5g mint leaves",
+      "1 lime, halved, to serve",
+      "Marinade:",
+      "20g ghee (from a jar, not a tin) or butter, softened",
+      "1 tbsp olive oil",
+      "2 tsp fine sea salt",
+      "1 tsp ground urucum (aka annatto/achiote, see page 23) or ¼ tsp sweet paprika and plenty of freshly cracked pepper",
+      "1 tsp Urfa or chipotle chilli flakes",
+      "Pickled shallots:",
+      "1 banana shallot, thinly sliced into rounds",
+      "3 tbsp lime juice",
+      "½ tsp fine sea salt",
+      "Toasted cassava:",
+      "2 tbsp farinha de mandioca or polenta (see intro)",
+      "1 tbsp black sesame seeds",
+      "1 tsp flaked sea salt",
+      "½ tsp medium curry powder",
+      "Dressing:",
+      "60g pineapple pimenta (page 30)",
+      "1½ tbsp lime juice",
+      "1 tbsp runny honey (or maple/agave syrup)",
+      "2 tsp rice vinegar"
+    ],
+    method: `1. Peel and core the pineapple. Halve lengthways, then use half to make the pineapple pimenta (page 30) or skip to the next step if you have some already made.
+
+2. Cut the other half of the pineapple into 4mm-thick slices. Slice the tomatoes into 4mm-thick rounds. Arrange on a platter, sprinkle with flaked sea salt and set aside.
+
+3. Mix all the marinade ingredients together in a bowl, add the lamb and mix to thoroughly coat the fillets. Set aside to marinate for 1 hour at room temperature.
+
+4. Put all the pickled shallot ingredients into a small bowl and mix. Set aside.
+
+5. Preheat the oven to 170°C fan/190°C. Prepare a baking tray to finish the lamb in the oven.
+
+6. Put all the toasted cassava ingredients into a medium frying pan and place on a high heat. Cook for about 5 minutes, tossing the pan until the cassava is golden brown and toasted. Transfer to a bowl and put the pan back on a high heat.
+
+7. Make sure the pan is very hot, then add the lamb, spaced apart. Fry for 3 minutes or until nicely browned. Flip and cook for another 3 minutes on the other side, or until browned. Flip to cook on the last two sides for about 1 minute each, or until browned.
+
+8. Transfer to the prepared baking tray and roast in the oven for 3 minutes, then flip the fillets and cook for another 3 minutes. Remove from the oven, transfer the lamb to a board or plate and set aside to rest for 15 minutes.
+
+9. Meanwhile, mix all the dressing ingredients together.
+
+10. Slice the lamb into ¾cm-thick slices and season generously with flaked sea salt. Arrange on top of the sliced tomatoes and pineapple, then spoon over plenty of the dressing.
+
+11. Finish with the pickled shallots, mint leaves and some of the toasted cassava and sesame mix, crushing it between your fingertips. Squeeze over some fresh lime juice and serve. ---`
+  },
+  {
+    id: 235,
+    title: "Charutos with spicy tomato broth & garlic oil",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "12 rolls",
+    time: "30 mins",
+    category: "Lamb",
+    ingredients: [
+      "250g rainbow chard or Swiss chard",
+      "1 tbsp olive oil",
+      "1 Scotch bonnet chilli",
+      "2 limes, halved",
+      "Filling:",
+      "400g lamb mince",
+      "40g tomato purée/paste",
+      "15g fresh coriander, finely chopped",
+      "½ a brown onion, peeled and grated (60g)",
+      "1 garlic clove, finely grated/crushed",
+      "½ tsp medium curry powder",
+      "½ tsp dried mint",
+      "1 tsp fine sea salt",
+      "¼ tsp ground allspice",
+      "about 50 twists of freshly cracked pepper",
+      "Broth:",
+      "15g tomato purée/paste",
+      "¼ tsp fine sea salt",
+      "Garlic oil:",
+      "1½ tbsp olive oil",
+      "20g salted butter",
+      "3 garlic cloves, very finely chopped",
+      "¼ tsp Urfa chilli flakes",
+      "⅛ tsp fine sea salt"
+    ],
+    method: `1. Put all the filling ingredients into a bowl, mix well and set aside.
+
+2. Fill your kettle to its max and boil. For the broth, whisk 200g of boiling water with the tomato purée and salt in a medium bowl. Set aside.
+
+3. To blanch the leaves, hold the bunch of chard by the stalk over a large pan (see photo overleaf). Pour the rest of the boiling water from the kettle all over the leaves, to soften them and make them easier to roll.
+
+4. Cut the stalks off the leaves (check the photo overleaf to see how much stalk to cut off). Chop 100g of the stalks as finely as possible and mix with the lamb filling. Use the rest of the stalks in another recipe.
+
+5. Clean your surface and lightly grease with olive oil. Lay the leaves flat, rib side up, taking care not to rip them. If the leaves are larger you'll need just one per roll; if they're smaller you may need to use two or three overlapping each other – as per the photo overleaf.
+
+6. Fill each leaf with about 50g of the lamb filling, then fold in the sides and roll them up tightly. You should make about 12 rolls. Place on a tray, seam-side down.
+
+7. Place a 28cm-wide pan, for which you have a lid, on a high heat. Add 1 tablespoon of olive oil and once hot, place the chard rolls in the pan, seam side down. Fry for 2½ minutes on each side, so both sides are nicely browned. Pour over the tomato broth and add the whole Scotch bonnet. Turn down the heat to low, cover with a lid and cook for 4 minutes.
+
+8. Meanwhile, put all the garlic oil ingredients into a small saucepan on a medium heat. Gently cook for 3 minutes, or until the garlic is soft, golden brown and fragrant (take care not to burn the garlic!).
+
+9. Squeeze the Scotch bonnet into the sauce to release its flavour. Drizzle the rolls with some of the garlic oil, serving the rest on the side. Squeeze over plenty of fresh lime juice, and serve. ---`
+  },
+  {
+    id: 236,
+    title: "Chicken in beetroot sauce",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "4",
+    time: "1 hr 45 mins",
+    category: "Poultry",
+    ingredients: [
+      "Marinade (tempero verde):",
+      "100g olive oil",
+      "50g spring onions (about 3), roughly chopped",
+      "25g fresh coriander",
+      "25g fresh parsley",
+      "15g garlic (about 3 cloves)",
+      "10g fresh ginger, peeled",
+      "1 mild green chilli, stalk removed",
+      "1 tsp fine sea salt",
+      "Chicken:",
+      "4 skin-on chicken drumsticks",
+      "4 skin-on, bone-in chicken thighs",
+      "1 tbsp rice vinegar",
+      "fine sea salt",
+      "olive oil",
+      "2 small brown onions, peeled and finely chopped (220g)",
+      "¾ tsp ground ginger",
+      "¾ tsp ground cumin",
+      "freshly cracked pepper",
+      "500g beetroot juice",
+      "2 lemons, halved"
+    ],
+    method: `1. Put all the ingredients for the marinade into a food processor and pulse to get a finely chopped paste.
+
+2. Put the chicken into a large bowl with 60g of the marinade, the rice vinegar and 1 teaspoon of fine sea salt. Mix well and leave to marinate for 20 minutes.
+
+3. Place a 30cm casserole pan (for which you have a lid) on a medium–high heat and brush with a little oil. Once hot, add the chicken and fry for 8–10 minutes, turning halfway until browned on both sides. Don't worry if the bottom starts to catch and burn – this is creating flavour and depth that you'll scrape into the sauce later. Transfer the chicken to a plate.
+
+4. Without cleaning the pan, add 1 tablespoon of olive oil, the onions, tomatoes, spices, ¾ teaspoon of fine sea salt and plenty of freshly cracked black pepper (about 100 twists of the grinder). Fry, stirring, until soft and deeply browned, 8–10 minutes. Again, don't worry that the mixture is catching.
+
+5. Pour over the beetroot juice and use a wooden spoon to get all that flavour off the bottom of the pan and into the sauce. Return the chicken to the pan, skin side down, then cover with a lid. Turn the heat all the way down and cook for 45 minutes.
+
+6. Remove the lid and turn the chicken skin side up. Increase the heat to medium and continue to cook, uncovered, for 12–15 minutes, stirring every now and then, until the sauce has thickened and reduced to the consistency in the picture.
+
+7. Leave to rest for 5 minutes, then skim away any excess fat. Mix 2 tablespoons of the marinade with the juice of a lemon and serve with the chicken, along with more lemon wedges. Note: You can use a whole chicken chopped into parts instead of the legs and thighs, if you prefer, in which case use the carcass to make a stock for another recipe (e.g. page 96). ---`
+  },
+  {
+    id: 237,
+    title: "Slow-cooked pineapple pork with green vinagrete",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "4",
+    time: "3 hrs 15 mins",
+    category: "Pork",
+    ingredients: [
+      "1kg pork collar or shoulder",
+      "180g soft, extra ripe pineapple, cut into 4cm pieces",
+      "1 lime, halved",
+      "Sauce:",
+      "1 litre pineapple juice",
+      "1 medium brown onion, peeled, halved and thinly sliced (120g)",
+      "4 garlic cloves, peeled",
+      "2 cinnamon sticks",
+      "1 Scotch bonnet chilli",
+      "½ tsp sweet paprika",
+      "1 tbsp ground urucum (aka annatto/achiote, see page 23) or add another ½ tsp sweet paprika",
+      "1 tsp smoked chilli flakes (such as Urfa, chipotle or ancho)",
+      "1 tbsp rice vinegar",
+      "½ tbsp fine sea salt",
+      "½ tbsp mixed peppercorns, crushed",
+      "Vinagrete:",
+      "15g fresh coriander",
+      "½ a brown onion, peeled",
+      "1 green chilli",
+      "4 tbsp olive oil",
+      "2 tsp rice vinegar",
+      "¼ tsp fine sea salt"
+    ],
+    method: `1. Preheat the oven to 150°C fan/170°C.
+
+2. Remove the skin from the pork and cut it into 7cm chunks. Put the pork and all the ingredients for the sauce into a 30cm Dutch oven or casserole pot with a lid. Mix well, then cover the pork with a circle of parchment paper and place the lid on the pot. Transfer to the oven for 2½ hours.
+
+3. After 2½ hours, increase the oven temperature to 190°C fan/210°C. Remove the pot from the oven and take off the lid and parchment. Add the pineapple pieces, stir gently and return to the oven for 20 minutes, uncovered, until the meat has browned on top and the fruit has softened. Remove the Scotch bonnet (squeeze it first to release its flavour into the sauce). Stir the pork together with the sauce and leave to rest for 15 minutes.
+
+4. For the vinagrete, very finely chop the coriander, onion and green chilli and mix with the oil, vinegar and salt.
+
+5. Squeeze the juice of a lime over the pork, spoon over the vinagrete and serve. ---`
+  },
+  {
+    id: 238,
+    title: "Picadinho & sweet potato bake",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "6",
+    time: "1 hr 10 mins",
+    category: "Beef",
+    ingredients: [
+      "1kg beef mince",
+      "2 red romano peppers, deseeded and finely chopped",
+      "900g sweet potatoes, peeled and roughly grated",
+      "3 tbsp olive oil",
+      "½ tsp fine sea salt",
+      "30g Parmesan, finely grated",
+      "100g yoghurt, to serve",
+      "1 lime, halved, to serve",
+      "Umami paste:",
+      "2 brown onions, peeled and roughly chopped (240g)",
+      "8 garlic cloves, peeled (25g)",
+      "4 mild red chillies, deseeded and roughly chopped",
+      "120g olive oil",
+      "160g tomato purée/paste",
+      "40g dried mixed/wild mushrooms",
+      "1 tbsp rice vinegar",
+      "1 tbsp Worcestershire sauce",
+      "2½ tsp fine sea salt",
+      "2 tsp ground cumin",
+      "½ tsp ground cinnamon",
+      "¼ tsp ground allspice",
+      "a good grating of nutmeg",
+      "about 100 twists of freshly cracked pepper"
+    ],
+    method: `1. Preheat the oven to 220°C fan/240°C.
+
+2. Put all the umami paste ingredients into a food processor and blitz until smooth, scraping down the sides as needed.
+
+3. Put the paste into a 30cm ovenproof casserole dish, for which you have a lid (or a similar-sized baking tray), along with the mince and chopped peppers. Mix very well, then bake for 20 minutes until browned and bubbling.
+
+4. Break up the mince, mix again and return to the oven for 10 minutes.
+
+5. In a large bowl, mix the grated sweet potato with 2 tablespoons of olive oil and ½ teaspoon of fine sea salt, then spread out over the mince. Cover with a lid (or foil) and bake for 20 minutes.
+
+6. Remove from the oven and turn the grill to the highest setting.
+
+7. Drizzle the surface evenly with the remaining tablespoon of olive oil, then scatter over the Parmesan.
+
+8. Place under the grill for 10 minutes, or until crisp and browned – use a blowtorch if your grill isn't particularly powerful.
+
+9. Drizzle with oil and serve with the yoghurt and fresh lime. ---`
+  },
+  {
+    id: 239,
+    title: "Chicken livers with urucum, paprika & coffee butter",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "4 as a starter",
+    time: "10 mins plus marinating",
+    category: "Poultry",
+    ingredients: [
+      "300g chicken livers, at room temperature",
+      "1 lemon, halved",
+      "1 lime, halved",
+      "1 tbsp maple syrup",
+      "flaked sea salt",
+      "a good pinch of Urfa chilli flakes",
+      "Marinade:",
+      "3 whole red bird's-eye chillies",
+      "2 tsp olive oil",
+      "¾ tsp fine sea salt",
+      "½ tsp ground urucum (aka annatto/achiote, see page 23 for alternatives)",
+      "½ tsp ground coffee",
+      "¼ tsp garlic powder",
+      "50 twists of freshly cracked pepper",
+      "Butter:",
+      "30g salted butter",
+      "2 tbsp olive oil",
+      "10g tomato purée/paste",
+      "1 garlic clove, peeled and very finely chopped",
+      "½ tsp sweet paprika (not smoked)",
+      "To serve:",
+      "5g fresh parsley, picked but with some stalks left on",
+      "5g fresh coriander, picked but with some stalks left on",
+      "½ a small brown onion, peeled and thinly sliced",
+      "chilli vinegar or hot sauce"
+    ],
+    method: `1. Rinse and drain the livers to remove any blood, then thoroughly pat them dry with kitchen paper. Remove any connective tissues. Put the livers into a bowl with all the marinade ingredients and mix well. Leave to marinate for 30 minutes to 1 hour at room temperature.
+
+2. Put all the butter ingredients into a small bowl and set aside.
+
+3. Place a non-stick frying pan on a high heat. Once the pan is very hot, add the livers and the chillies, spaced apart as much as possible. Fry until nicely charred on the bottom, about 2½ minutes. Turn the livers over and fry for another 1 minute on the other side.
+
+4. Turn the heat down to low, then add the butter ingredients and gently fry, swirling the pan until the ingredients meld together, about 1½ minutes. Squeeze over the juice of 1 lemon and ½ a lime and swirl to incorporate it into the sauce.
+
+5. Remove from the heat, add the maple syrup and swirl the pan again. Season with flaked salt, plenty of pepper and a sprinkle of Urfa chilli flakes.
+
+6. Transfer to a platter and top with the herbs, onion slices and a good squeeze of lime. I like to drizzle the livers with chilli vinegar or hot sauce. You can also chop up the chillies in the sauce for extra heat, if you like. ---`
+  },
+  {
+    id: 240,
+    title: "Passion fruit & white chocolate mousse with cacao-cinnamon crumble",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "6",
+    time: "35 mins plus overnight",
+    category: "Dessert",
+    ingredients: [
+      "4 large eggs, separated",
+      "300g double cream",
+      "½ tsp vanilla bean paste",
+      "300g good-quality white chocolate, finely chopped",
+      "60g passion fruit purée (or the strained pulp from 5–6 passion fruits)",
+      "zest of 2 tangerines",
+      "½ tsp chilli flakes",
+      "¼ tsp ground cinnamon",
+      "⅛ tsp fine sea salt",
+      "5g cocoa powder (100% cocoa solids), to dust",
+      "Crumble:",
+      "60g coconut oil",
+      "180g ginger nut biscuits, roughly broken",
+      "60g dark chocolate, broken into chunks",
+      "30g cocoa powder (100% cocoa solids)",
+      "¾ tsp ground cinnamon",
+      "¼ tsp fine salt"
+    ],
+    method: `1. Put the yolks into a large heatproof bowl with the cream and vanilla. Set the bowl over a pan of very gently simmering water on a low heat. Cook for about 15 minutes, stirring constantly until thickened to a pouring custard consistency. If the eggs start to scramble at all, remove from the heat for a minute to lower the temperature.
+
+2. Remove from the heat and add the chopped white chocolate to the warm custard. Let it sit for 5 minutes, then gently stir until the chocolate is fully incorporated and the mixture is smooth. Add the passion fruit, tangerine zest, chilli flakes, cinnamon and fine salt. Gently mix to combine, but don't overmix. Cover and refrigerate for at least 4 hours, or until completely chilled.
+
+3. After 4 hours or once very well chilled and set, whip the egg whites. Put them into the bowl of a stand mixer with the whisk attachment in place, and whip on a medium–high speed to get stiff peaks, about 2 minutes.
+
+4. Add a spoonful of the egg whites to the cooled custard and gently stir until incorporated. Fold in the remainder of the egg whites in stages until just incorporated – don't overmix or you'll knock out the air. Transfer to a 2-litre container and dust the surface liberally with cocoa powder. Refrigerate overnight.
+
+5. For the crumble, gently melt the coconut oil and let it cool. Put it into a food processor with the rest of the crumble ingredients and pulse to get a finely chopped mixture. Make sure you don't over-process – you want small chunks of biscuit and dark choc, not a powder. Tip into a container and refrigerate until cool and hardened. Once hard, break up into small chunks again.
+
+6. Serve the mousse with the crumble on top. Note: If you don't have a food processor, put the biscuits into a bag and bash with a rolling pin to get fine crumbs. Very finely chop the chocolate, then mix all the crumble ingredients together. ---`
+  },
+  {
+    id: 241,
+    title: "Roasted banana ice cream with choc fudge sauce",
+    author: "Ixta Belfrage",
+    book: "Fusão",
+    serves: "4",
+    time: "1 hr plus freezing",
+    category: "Dessert",
+    ingredients: [
+      "Ice cream:",
+      "5 extra ripe bananas, peeled and roughly chopped (540g)",
+      "150g maple syrup",
+      "200g coconut cream (you'll need another 200g for the sauce)",
+      "30g white miso paste",
+      "1 tsp vanilla bean paste",
+      "½ tsp instant coffee powder",
+      "50g dark chocolate, very finely chopped",
+      "Spiced caramelised nuts:",
+      "100g pistachio kernels, shelled",
+      "100g whole hazelnuts",
+      "25g soft light brown sugar",
+      "1½ tbsp maple syrup",
+      "2 tsp mild olive oil",
+      "½ tsp ground coffee",
+      "¼ tsp fine sea salt",
+      "freshly cracked pepper",
+      "Choc fudge sauce:",
+      "200g coconut cream",
+      "100g maple syrup",
+      "2 tbsp cocoa powder (100% cocoa solids)",
+      "1 tsp vanilla bean paste",
+      "1½ tsp white miso paste",
+      "½ tsp instant coffee powder (or coffee grounds)",
+      "¼ tsp ground cinnamon"
+    ],
+    method: `1. Preheat the oven to 190°C fan/210°C.
+
+2. Line a baking dish with parchment paper, then place the bananas and maple syrup in the dish. Mix and bake for 25–30 minutes, gently stirring halfway, until the bananas are soft and browned and the syrup has reduced a little. Leave to cool, then lift the parchment, along with the bananas and syrup, into a container and freeze overnight.
+
+3. Lower the heat to 160°C fan/180°C.
+
+4. Chop the nuts roughly into halves (you want nice chunks, so don't chop them too much). Line a flat baking tray with parchment. Put the nuts on the tray along with the sugar, maple syrup, oil, coffee, salt and pepper and mix well. Bake for about 17 minutes, stirring halfway, until well browned. Set aside to cool, break the clumps of nuts apart, then store in an airtight container.
+
+5. The next day, break up the frozen banana and solidified maple syrup and put into a food processor or blender with the coconut cream, miso, vanilla and coffee. Blitz until completely smooth, scraping down the sides as needed. Transfer to a container and freeze for 2 hours, or until set but still soft. At this point, fold in the chocolate, then return to the freezer until set but still scoopable – about another 4 hours.
+
+6. Put all the fudge sauce ingredients into a medium saucepan and whisk until smooth. Place on a medium heat and cook, stirring often, until thickened to a pourable fudge sauce consistency, about 7 minutes (it will thicken more as it cools).
+
+7. Serve the ice cream with the warm fudge sauce and the spiced nut crumble. Notes: The roasted banana will need to freeze overnight, and then you'll need another 4 hours to freeze the ice cream once it's been blitzed, so make sure to factor that in. Once the ice cream has frozen solid it will need about 40 minutes at room temperature to come back to scooping consistency before serving.`
+  },
+  {
+    id: 242,
+    title: "Malted & Salted Caramel Pudding",
+    author: "Claire Saffitz",
+    book: "What's for Dessert",
+    serves: "8",
+    time: "30 mins plus chilling",
+    category: "Dessert",
+    ingredients: [
+      "3 cups heavy cream (25.4 oz / 720g), chilled, divided",
+      "1¼ cups sugar (8.8 oz / 250g), divided",
+      "3 cups whole milk (25.4 oz / 720g), at room temperature",
+      "Seeds scraped from 1 vanilla bean (pod reserved) or 2 teaspoons vanilla paste or extract",
+      "¼ cup cornstarch (1.1 oz / 31g)",
+      "3 tablespoons malted milk powder",
+      "1½ teaspoons Diamond Crystal kosher salt or ¾ teaspoon Morton kosher salt, plus more to taste",
+      "4 large egg yolks (2.1 oz / 60g), at room temperature",
+      "2 large eggs (3.5 oz / 100g), at room temperature",
+      "1.8 ounces (50g) Biscoff or gingersnap cookies (about 6), lightly crushed, for serving"
+    ],
+    method: `1. Warm some of the cream: In a small saucepan, heat 2 cups (16.9 oz / 480g) of the cream over medium heat, whisking once or twice, just until it's steaming, then remove it from the heat. (Alternatively, microwave the cream in a heatproof liquid measuring cup in 30-second bursts until it's hot, then set aside.)
+
+2. Make the caramel: Fill a glass with water, place a pastry brush inside, and set it next to the stove. In a large saucepan, combine ¼ cup (2 oz / 57g) water and 1 cup (7 oz / 200g) of the sugar and stir gently with a heatproof flexible spatula over medium-high heat just until the sugar dissolves to form a clear syrup and the mixture comes to a boil, about 3 minutes. Cook the mixture to a deep amber caramel following steps 3 through 5 in Cooking a Wet Caramel (page 346), then immediately remove the saucepan from the heat and proceed to the next step.
+
+3. Stream in the cream: Slowly stream the warm cream into the caramel to halt the cooking, stirring gently with the spatula (take care, it will sputter at first). Once all the cream is added and you have a smooth, liquid caramel, pour in the milk, followed by the vanilla seeds and pod or vanilla paste (if using vanilla extract, set it aside to add later). Return the saucepan to medium heat and heat until the mixture is steaming and just starting to ripple beneath the surface, about 5 minutes. Remove the saucepan from the heat. Potential Pitfall: If your cream was cool, or if you added it a bit too quickly, the caramel may have hardened in places, which is okay. If this happens, whisk the mixture over the heat until the caramel dissolves.
+
+4. Blanch and temper the eggs: In a medium bowl, whisk the cornstarch, malted milk powder, salt, and remaining ¼ cup (1.8 oz / 50g) sugar until combined and lump-free. Add the yolks and whole eggs and whisk to combine, then whisk vigorously until the mixture is pale and thick, about 2 minutes. Whisking the egg mixture constantly, slowly pour or ladle about half of the hot caramel mixture into the egg mixture to temper it, then pour the warmed egg mixture into the saucepan (for more information, see Blanching and Tempering Eggs, page 348).
+
+5. Cook the pudding: Have a separate medium bowl at the ready for transferring the cooked pudding. Set the saucepan back over medium heat and cook, whisking constantly and scraping around the sides and bottom of the saucepan, until the pudding is thickened, the foam on the surface has subsided, and it holds the marks of the whisk, about 4 minutes. Stop whisking for a few seconds and check for slow bubbling beneath the surface, indicating the mixture is at a boil, then continue to whisk vigorously for another 15 seconds. Immediately remove the saucepan from the heat and pour the pudding into the reserved bowl. Potential Pitfall: Don't scrape the bottom of the saucepan where you might have a bit of curdling, since it will mar the smooth texture of the pudding.
+
+6. Chill the pudding: If using vanilla extract, whisk it in now. Press a piece of plastic wrap directly onto the surface of the pudding and refrigerate until the pudding is cold and set, at least 4 hours.
+
+7. Whip the cream: In a medium bowl, with a whisk or a hand mixer, whip the remaining 1 cup (8.5 oz / 240g) cream on low speed to start and gradually increase the speed to medium-high as it thickens, until you have a softly whipped cream that holds a droopy peak (see Whipping Cream, page 355).
+
+8. Serve: Whisk the cold pudding to even out the consistency, then taste it and add more salt if desired. Dividing evenly, spoon the pudding into serving bowls or glasses. Top with a dollop of the whipped cream and a sprinkling of the crumbled cookies.`
+  },
+  {
+    id: 243,
+    title: "Crystallized Meyer Lemon Bundt Cake",
+    author: "Claire Saffitz",
+    book: "What's for Dessert",
+    serves: "12",
+    time: "1 hr 45 mins plus cooling",
+    category: "Cakes",
+    ingredients: [
+      "Butter and flour for the pan",
+      "3 cups all-purpose flour (14.2 oz / 405g)",
+      "2½ teaspoons baking powder",
+      "1 teaspoon Diamond Crystal kosher salt or ½ teaspoon Morton kosher salt",
+      "½ teaspoon baking soda",
+      "1 cup whole milk (8.5 oz / 240g), at room temperature",
+      "2 teaspoons vanilla extract",
+      "¾ cup Meyer lemon juice (6 oz / 170g), divided",
+      "1 tablespoon finely grated Meyer lemon zest, from about 2 lemons",
+      "1¾ cups plus ⅔ cup sugar (17 oz / 483g)",
+      "4 large eggs (7 oz / 200g), at room temperature",
+      "1⅓ cups plus 2 tablespoons extra-virgin olive oil (11.5 oz / 327g)"
+    ],
+    method: `1. Preheat the oven and prepare the pan: Arrange an oven rack in the upper third of the oven and preheat the oven to 350°F. Brush the inside of a 12-cup metal Bundt pan with room temperature butter, making sure to coat every facet and crevice. Dust the inside with several pinches of flour, then shake and tilt the pan in all directions to coat the buttered surfaces completely. Tap out any excess flour and set the pan aside.
+
+2. Mix the dry ingredients: In a medium bowl, whisk together the flour, baking powder, salt, and baking soda to combine. Set aside.
+
+3. Mix the wet ingredients: In a separate medium bowl or 2-cup liquid measuring cup, stir together the milk, vanilla, and ¼ cup (2 oz / 57g) of the Meyer lemon juice. Set aside.
+
+4. Beat the eggs and sugar, then stream in the oil: In a large bowl, combine the lemon zest and 1¾ cups (12.3 oz / 350g) of the sugar and massage the mixture with your fingertips until it's fragrant and looks like wet sand. Add the eggs and beat with a hand mixer on medium-low speed until the eggs are broken up, then increase the speed to medium-high and beat until the mixture is light, thick, and mousse-y, about 3 minutes. Beating constantly, very gradually stream in 1⅓ cups (10.5 oz / 99g) of the olive oil and continue to beat just until the mixture is smooth, thick, and emulsified.
+
+5. Make the batter: Reduce the mixer speed to low and add about one-third of the dry ingredients, mixing just until the flour disappears, then stream in half of the milk mixture and mix until combined. Add the remaining dry ingredients in two additions, alternating with the remaining milk mixture, and mix just until you have a smooth, thick batter with no traces of flour. Switch to a flexible spatula and fold the batter several times, scraping the bottom and sides of the bowl, to make sure it's evenly mixed.
+
+6. Bake: Pour the batter into the prepared Bundt pan and bake until the top is risen, split, and golden brown, and a skewer or cake tester inserted into the tallest part of the cake comes out clean, 45 to 55 minutes. Set the cake aside to cool in the pan for 15 minutes.
+
+7. Meanwhile, make the glaze: In a small bowl, combine the remaining ½ cup (4 oz / 113g) Meyer lemon juice, ⅔ cup (4.7 oz / 133g) granulated sugar, and 2 tablespoons olive oil and stir vigorously with a fork or whisk to dissolve some of the sugar.
+
+8. Glaze the cake: While the cake is still hot inside the pan, use a toothpick to poke holes all over the surface, then generously brush some of the glaze over the top to soak it. Use a paring knife to cut down carefully between the cake and the pan all the way around and along the inner tube to loosen it. Invert the cake onto a wire rack, lift away the Bundt pan, and set the rack on a sheet pan to catch drips. Poke more holes across the entire surface and brush with the remaining glaze. It will seem like too much liquid, but keep applying it layer by layer until you've used it all, letting the cake absorb it gradually. Use the brush to pick up drips of glaze from the sheet pan and reapply to the cake. Let it cool completely.`
+  },
+  {
+    id: 244,
+    title: "Raspberry Almond Thumbprints",
+    author: "Claire Saffitz",
+    book: "What's for Dessert",
+    serves: "About 22 cookies",
+    time: "2 hrs 30 mins",
+    category: "Baking",
+    ingredients: [
+      "2¼ cups almond flour (7.6 oz / 216g)",
+      "1 teaspoon baking soda",
+      "½ teaspoon Diamond Crystal kosher salt or ¼ teaspoon Morton kosher salt",
+      "1 teaspoon finely grated lemon zest",
+      "1 teaspoon vanilla extract",
+      "½ teaspoon almond extract",
+      "3 tablespoons plus ½ cup raspberry jam (7.8 oz / 220g)",
+      "2 large egg whites (2.5 oz / 70g), at room temperature",
+      "⅓ cup granulated sugar (2.3 oz / 66g)",
+      "½ cup plus ⅓ cup confectioners' sugar (3.2 oz / 92g)",
+      "1 cup freeze-dried raspberries (1 oz / 28g)"
+    ],
+    method: `1. Mix the dry ingredients: In a medium bowl, whisk together the almond flour, baking soda, and salt to combine. Set aside.
+
+2. Mix the wet ingredients: In a small bowl, stir together the lemon zest, vanilla, almond extract, and 3 tablespoons of the raspberry jam until smooth. Set aside.
+
+3. Beat the egg whites and sugar: In a clean, large, nonplastic bowl, with a hand mixer, beat the egg whites on medium-low speed until they're broken up and frothy, about 20 seconds. Increase the speed to medium-high and continue to beat until the whites are foamy and opaque, about 30 seconds, then gradually add the granulated sugar in a slow, steady stream, beating constantly. Once all the sugar is added, continue to beat just until you have dense, glossy egg whites that hold stiff peaks (see page 339 for what this stage looks like). Set the bowl aside.
+
+4. Make and chill the dough: Use a large flexible spatula to gently fold the dry ingredients into the beaten egg whites until well combined, then scrape in the jam mixture and continue to fold until you have an evenly mixed, stiff, and tacky dough (for more on the proper technique, see Folding a Mixture, page 351). The baking soda will react with the acidity in the jam and turn the batter grayish, which is normal. Cover the bowl and refrigerate the dough for at least 1 hour to let it rest.
+
+5. Portion and freeze the dough: Scoop a rounded tablespoon of dough and roll it between your palms to form a smooth sphere, then transfer it to a plate. If the dough sticks to your palms, dampen your palms lightly with a drop or two of water. Repeat until you've rolled all of the dough into spheres and transferred them to the plate. You should have about 22 spheres. Transfer the plate to the freezer and chill uncovered until the spheres are cold and no longer tacky to the touch (but not frozen solid), 15 to 20 minutes.
+
+6. Preheat the oven and prepare the pan: Arrange an oven rack in the center position and preheat the oven to 325°F. Line a large sheet pan with parchment paper and set aside.
+
+7. Coat the cookies: Place ½ cup (1.9 oz / 55g) of the confectioners' sugar in a small bowl. Remove the plate from the freezer and, working one piece at a time, toss the spheres in the confectioners' sugar until generously coated all over, then place on the prepared sheet pan, spacing them about 2 inches apart. You should be able to fit all the spheres (they spread just a little during baking).
+
+8. Bake and form the thumbprints: Transfer the sheet pan to the oven and bake until the cookies have a crinkled surface and are golden brown around the edges, 12 to 15 minutes, rotating the pan front to back after 10 minutes. While the cookies are still hot from the oven, press the handle end of a wooden spoon straight down into the center of each cookie and wiggle slightly to make an impression, but don't press all the way through to the sheet pan. Allow the cookies to cool completely on the sheet pan, then carefully peel them away from the parchment paper one by one and transfer to a wire rack.
+
+9. Pulverize the raspberries: Place the freeze-dried raspberries in a resealable bag, press out the air, and seal. Use a rolling pin, mallet, or heavy-bottomed saucepan to crush the raspberries to a fine powder. Add the remaining ⅓ cup (1.3 oz / 36g) confectioners' sugar to the bag and seal again, then shake well to combine. Transfer the mixture to a fine-mesh sieve and shake it over the cookies to coat them completely in the pink sugar (sift any remaining sugar into a container and save for another use; discard any larger pieces trapped in the sieve).
+
+10. Fill the thumbprints: In a small saucepan, warm the remaining ½ cup (5.6 oz / 160g) jam over medium-low heat, whisking occasionally, just until it's fluid (or microwave it in a small bowl in 15-second bursts). Remove the saucepan from the heat and use a teaspoon to fill the impressions with the warm jam. Let the thumbprints sit uncovered until the jam is mostly set, 15 to 20 minutes.`
+  },
+  {
+    id: 245,
+    title: "Seedy Whole Wheat Chocolate Chip Skillet Cookie",
+    author: "Claire Saffitz",
+    book: "What's for Dessert",
+    serves: "One 12-inch cookie",
+    time: "45 mins plus cooling",
+    category: "Baking",
+    ingredients: [
+      "2 tablespoons pumpkin seeds",
+      "2 tablespoons sunflower seeds",
+      "1 tablespoon sesame seeds",
+      "2 tablespoons chia and/or poppy seeds, preferably a mix",
+      "1 stick plus ½ tablespoon unsalted butter (4.2 oz / 120g)",
+      "1 cup whole wheat flour (4.8 oz / 135g)",
+      "1 teaspoon Diamond Crystal kosher salt or ½ teaspoon Morton kosher salt",
+      "¼ teaspoon baking soda",
+      "½ cup packed light brown sugar (3.9 oz / 110g)",
+      "¼ cup granulated sugar (1.8 oz / 50g)",
+      "1 large egg (1.8 oz / 50g), beaten, at room temperature",
+      "1½ teaspoons vanilla extract",
+      "5 ounces (142g) semisweet chocolate, (64%–70% cacao) chopped",
+      "Flaky sea salt, for sprinkling (optional)"
+    ],
+    method: `1. Preheat the oven: Arrange an oven rack in the center position and preheat the oven to 350°F.
+
+2. Toast the seeds: In a 12-inch skillet, preferably cast-iron, toast the pumpkin, sunflower, and sesame seeds over medium heat, stirring constantly with a heatproof flexible spatula, until they're golden and fragrant, about 5 minutes. Transfer the seeds to a medium bowl and set the skillet aside. Add the chia and/or poppy seeds to the bowl and toss to combine. Set the seeds aside to cool.
+
+3. Brown the butter: Add 1 stick (4 oz / 113g) of the butter to the skillet and melt over medium heat, stirring with the spatula, until it comes to a boil and starts to sputter. Cook, stirring constantly and scraping the bottom and sides of the skillet, until the sputtering subsides and you see tiny golden brown specks floating in the butter, about 5 minutes (see Browning Butter, page 353). Remove the skillet from the heat and continue to stir until the specks turn a deep coppery brown, about 30 seconds. Add an ice cube and stir vigorously until the ice is melted (it will sputter). Set the skillet aside, stirring the browned butter occasionally, until the bottom of the skillet is warm to the touch but not hot, 10 to 15 minutes.
+
+4. Meanwhile, mix the dry ingredients: To the bowl with the seed mixture, add the whole wheat flour, kosher salt, and baking soda and whisk to combine. Set aside.
+
+5. Make the batter: To the skillet with the browned butter, add the brown sugar and granulated sugar and stir with the spatula until the mixture is well blended and smooth, about 1 minute. Add the beaten egg and vanilla and mix vigorously with the spatula until the mixture is smooth, very evenly mixed, and slightly thickened, about 1 minute. Add the dry ingredients (reserve the bowl) and stir with the spatula, scraping the bottom and sides thoroughly, until the batter is evenly mixed. Add the chocolate and stir until the pieces are distributed and some of it has melted and streaked through the batter.
+
+6. Form the cookie: Scrape the batter into the reserved bowl you used for the dry ingredients and set aside. Rinse and dry the skillet, then set over low heat and add the remaining ½ tablespoon butter and swirl until the butter is melted. Remove the skillet from the heat. Scrape the batter back into the skillet and press it into an even layer with the spatula, working it all the way to the sides. Lightly sprinkle flaky salt (if using) across the surface.
+
+7. Bake and cool: Transfer the skillet to the oven and bake until the cookie is golden brown across the surface and firm to the touch around the edge, 16 to 22 minutes. Transfer the skillet to a wire rack and let cool. Use a sharp knife or wheel cutter to slice the cookie into wedges, then use a small offset spatula to lift the wedges out of the skillet one at a time.`
+  },
+  {
+    id: 246,
+    title: "Coconut Seafood Cakes (Bánh Dừa Hải Sản)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "50 mins",
+    category: "Seafood",
+    ingredients: [
+      "100 g (3½ oz/⅔ cup) plain (all-purpose) flour",
+      "2 tablespoons rice flour",
+      "½ teaspoon baking powder",
+      "⅓ teaspoon salt",
+      "pinch of sugar",
+      "1 egg yolk",
+      "1 teaspoon rice vinegar",
+      "80 ml (2½ fl oz/⅓ cup) coconut milk",
+      "1 small squid",
+      "4 raw prawns (shrimp), peeled, deveined and chopped into 2 cm (¾ inch) pieces",
+      "50 g (1¾ oz) crabmeat",
+      "2 teaspoons fish sauce",
+      "¼ teaspoon freshly ground black pepper",
+      "1 pale-fleshed sweet potato",
+      "vegetable oil, for deep-frying",
+      "Vegetable pickle (see page 343), or Classic dipping sauce (see page 323) to serve"
+    ],
+    method: `1. Sift the flour and rice flour into a bowl. Add the baking powder, salt and sugar, then make a well in the centre. Add the egg yolk, vinegar, coconut milk and 125 ml (4 fl oz/½ cup) water to the well then mix to form a batter. Cover with a damp cloth and leave to rest for 15 minutes.
+
+2. Clean the squid by holding the body with one hand and the head with the other. Gently pull, taking care not to burst the ink sac; the head and tentacles will come away. Remove the clear cartilage, rinse the squid inside and out, then pat dry. Using a sharp knife, cut the head from the tentacles and discard the head.
+
+3. Cut the body open and rinse away any membranes from the surface. Lay the squid flat on a board, with the inside facing up. Cut the body and the tentacles into 2 cm (¾ inch) pieces.
+
+4. Marinate the squid, prawns and crabmeat in the fish sauce and pepper for 15 minutes.
+
+5. Peel the sweet potato and cut into thin strips about 4 cm (1½ inches) long.
+
+6. Mix the sweet potato and seafood into the batter.
+
+7. Heat about 12 cm (4¾ inches) of oil in a wok or deep saucepan. To test the oil, place the tip of a wooden chopstick into the oil — when bubbles slowly rise to the surface, the oil is hot enough to use.
+
+8. Gently place a mould or ladle into the hot oil to heat up; this will prevent the cakes sticking to the mould. Remove from the oil and place 2 generous tablespoons of the mixture into the mould. Lower into the hot oil. When the cake floats, turn it over and remove the mould from the oil. Cook for 3–4 minutes, until golden brown.
+
+9. Remove from the oil and drain on paper towel. Repeat with the remaining batter.
+
+10. Serve hot, with the pickle or dipping sauce. ---`
+  },
+  {
+    id: 247,
+    title: "Fried Rockling with Turmeric, Dill and Vermicelli (Chả Cá)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "40 mins plus marinating",
+    category: "Seafood",
+    ingredients: [
+      "800 g (1 lb 12 oz) rockling fillets, skin and bones removed, cut into 3 cm (1¼ inch) chunks",
+      "200 g (7 oz) dried rice vermicelli",
+      "vegetable oil, for pan-frying",
+      "2 large handfuls dill sprigs",
+      "12 spring onions (scallions), thickly sliced",
+      "80 g (2¾ oz/½ cup) roasted peanuts, chopped",
+      "1 small handful Thai basil",
+      "1 small handful coriander (cilantro) leaves",
+      "Classic dipping sauce (see page 323), to serve",
+      "Marinade:",
+      "3 cm (1¼ inch) knob fresh galangal, roughly chopped",
+      "1 long red chilli, seeded and roughly chopped",
+      "2 tablespoons ground turmeric",
+      "1 tablespoon sugar",
+      "60 ml (2 fl oz/¼ cup) mam tom (fermented shrimp paste) or fish sauce"
+    ],
+    method: `1. To make the marinade, pound the galangal, chilli, turmeric and sugar to a paste in a mortar. Add the mam tom and 2½ tablespoons water and stir until the sugar dissolves. Smear the marinade over the fish and marinate for about 2 hours.
+
+2. Heat a chargrill or barbecue to medium. Have a hot wok or frying pan ready for the second fish cooking stage.
+
+3. Meanwhile, soak the vermicelli in boiling water for 5 minutes. Gently stir to separate the noodles, then drain and refresh under cold water. Cut into easy-to-manage lengths.
+
+4. Thoroughly pat the fish dry with paper towel; excess liquid will make the fish stick to the grill. Chargrill for 2–3 minutes on each side, until charred areas appear, but remove before the fish is cooked all the way through.
+
+5. Heat about 2 cm (¾ inch) of oil in the hot wok or frying pan. Test if it is ready by dropping a small piece of bread into the pan: it should quickly turn lightly golden. Add one-third of the fish and cook for 3–4 minutes, turning once. Add one-third of the dill and spring onion and toss until wilted.
+
+6. Divide one-third of the noodles among six deep serving bowls. Top with the fish, then one-third of the peanuts.
+
+7. Cook the remaining fish and herbs; serve up the remaining ingredients, for diners to help themselves. ---`
+  },
+  {
+    id: 248,
+    title: "Baby Chicken Chargrilled with Kaffir Lime Leaves (Gà Lá Chanh)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "4",
+    time: "40 mins plus marinating",
+    category: "Poultry",
+    ingredients: [
+      "1 small chicken, weighing about 1 kg (2 lb 3 oz)",
+      "12 kaffir lime leaves",
+      "2 garlic cloves",
+      "½ long red chilli, seeded",
+      "2 cm (¾ inch) knob fresh galangal, peeled",
+      "1 lemongrass stem, white part only",
+      "2 red Asian shallots, peeled",
+      "¼ teaspoon five-spice",
+      "¼ teaspoon brown sugar",
+      "½ teaspoon freshly ground black pepper",
+      "1 tablespoon fish sauce",
+      "1 tablespoon vegetable oil",
+      "Lime and chilli dipping salt (see page 328), to serve"
+    ],
+    method: `1. To bone the chicken, remove the wing tips using a sharp knife. Then run your knife in a straight line down either side of the backbone. Take the backbone in one hand and hold the breast with the other. Pull the backbone towards you. If you have cut all the way through the skin and tendons, the bones should come away easily. Discard the wing tips and the backbone and lay the chicken on a plastic tray while preparing the marinade.
+
+2. Roughly chop the lime leaves, garlic, chilli, galangal, lemongrass and shallots. Place in a mortar or food processor. Add the five-spice, sugar, pepper, fish sauce and oil and work into a paste.
+
+3. Coat the chicken in the lime leaf paste. Cover and marinate in the fridge for 4 hours.
+
+4. When ready to cook, heat a chargrill or barbecue to medium. Place the chicken onto the hot grill, skin side down. When char lines appear, turn the bird over and continue cooking for a further 15 minutes, or until the juices run clear when a skewer is inserted into the thigh.
+
+5. Cut the chicken into eight pieces and arrange on a platter. Serve with the dipping salt. ---`
+  },
+  {
+    id: 249,
+    title: "Chicken Cooked in Rice Wine (Gà Hầm Rượu)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "1 hr",
+    category: "Poultry",
+    ingredients: [
+      "vegetable oil, for pan-frying",
+      "4 red Asian shallots, diced",
+      "3 cm (1¼ inch) knob fresh ginger, thinly sliced",
+      "2 teaspoons annatto oil (see page 320)",
+      "1 small chicken, about 1 kg (2 lb 3 oz), left on the bone and cut into bite-sized pieces",
+      "2 tablespoons rice wine",
+      "2 teaspoons chilli sauce (see page 322)",
+      "2 teaspoons oyster sauce",
+      "60 ml (2 fl oz/¼ cup) coconut milk",
+      "8 garlic cloves, peeled but left whole",
+      "1 tablespoon sugar",
+      "1 teaspoon salt",
+      "1 handful Thai basil",
+      "Boiled rice (see page 18), to serve"
+    ],
+    method: `1. Heat 2 tablespoons of vegetable oil in a large saucepan over medium heat. Add the shallot and fry until fragrant. Add the ginger and annatto oil and stir for 1 minute.
+
+2. Place the chicken pieces in the saucepan and continue cooking for 8–10 minutes, or until the chicken is evenly coloured, turning the pieces so they brown evenly.
+
+3. Pour in the rice wine, chilli sauce, oyster sauce, coconut milk and 125 ml (4 fl oz/½ cup) water. Add the garlic, sugar and salt. Bring to the boil, then reduce the heat and simmer for 15 minutes, or until the chicken is cooked through.
+
+4. Mix the basil through. Serve in bowls, with boiled rice. ---`
+  },
+  {
+    id: 250,
+    title: "Chicken Noodle Soup (Phở Gà)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "1 hr 30 mins",
+    category: "Soup & Noodles",
+    ingredients: [
+      "8 red Asian shallots, unpeeled",
+      "4 cm (1½ inch) knob fresh ginger, unpeeled and cut in half",
+      "1 × 1.6 kg (3½ lb) chicken",
+      "1 teaspoon salt",
+      "1 cinnamon stick",
+      "4 star anise",
+      "1 tablespoon sugar",
+      "1 tablespoon fish sauce, plus extra to serve",
+      "600 g (1 lb 5 oz) fresh pho noodles",
+      "½ white onion, thinly sliced",
+      "6 spring onions (scallions) — 3 sliced, the other 3 cut into strips",
+      "1 handful coriander (cilantro) leaves",
+      "4 kaffir lime leaves, cut into thin strips",
+      "1 lime, cut into wedges",
+      "1 long red chilli, sliced"
+    ],
+    method: `1. Chargrill the whole unpeeled shallots and ginger on a barbecue or gas burner over medium heat for 5 minutes, or until they are fragrant and the skin is lightly charred. Remove and cool slightly. Using your fingers, flake off the outer thin layer of skin.
+
+2. Wash the chicken under cold running water. Place in a large saucepan, cover with cold water and add the salt. Slowly bring to the boil, skimming off any froth that rises to the surface. Immediately reduce the heat, then add the shallots, ginger, cinnamon stick and star anise. Gently simmer for 1 hour, skimming the surface regularly. To ensure a clear broth and moist, tender meat, it is important not to boil the chicken.
+
+3. Remove the chicken from the broth. Test that it is cooked by inserting a skewer into the thigh — the juices should run clear. Set aside to rest while you finish preparing the broth.
+
+4. Strain the broth through a fine sieve and discard the aromatics. Return the broth to the saucepan and add the sugar and fish sauce. Now keep the broth at a gentle simmer over low heat.
+
+5. Cut the breasts and legs from the chicken. Remove all the meat from the bones and slice it into strips.
+
+6. Bring a saucepan of water to the boil. Drop the noodles into the boiling water and stir with a chopstick for about 20 seconds to separate the noodles. Drain thoroughly and divide among six deep bowls.
+
+7. Place the chicken on top of the noodles, then top with the onion, spring onion, coriander and lime leaves. Ladle in the hot broth.
+
+8. Serve with the lime wedges, chilli and some extra fish sauce for diners to adjust the flavour, if desired. ---`
+  },
+  {
+    id: 251,
+    title: "Chicken with Lemongrass and Chilli (Gà Xào Sả Ớt)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "25 mins plus marinating",
+    category: "Poultry",
+    ingredients: [
+      "5 boneless, skinless chicken thighs",
+      "2½ tablespoons fish sauce",
+      "1 teaspoon freshly ground black pepper",
+      "1 teaspoon sugar",
+      "2 lemongrass stems, white part only, finely chopped",
+      "1 long red chilli, cut into thin rings",
+      "2 garlic cloves, roughly chopped",
+      "vegetable oil, for pan-frying",
+      "10 spring onions (scallions), sliced",
+      "1 small handful coriander (cilantro) sprigs",
+      "Lime and chilli dipping salt (see page 328), to serve"
+    ],
+    method: `1. Cut the chicken into about six cubes per thigh. Marinate the pieces for 30 minutes in the fish sauce, pepper and sugar.
+
+2. Fry the lemongrass, chilli and garlic in a lightly oiled hot wok, keeping the wok moving so they don't burn or stick. Once fragrant, add the chicken pieces and keep tossing the wok over medium–high heat to cook them evenly.
+
+3. When the chicken is lightly coloured, add 80 ml (2½ fl oz/⅓ cup) water. Turn the heat up very high and finish cooking the chicken for another few minutes, until tender and just cooked through.
+
+4. Add the spring onion and coriander and give the dish a final toss. Serve with the dipping salt. ---`
+  },
+  {
+    id: 252,
+    title: "Crispy Chicken Wings with Fish Sauce (Cánh Gà Chiên Mắm)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "40 mins plus marinating",
+    category: "Poultry",
+    ingredients: [
+      "9 chicken wings",
+      "125 g (4½ oz/1 cup) cornflour (cornstarch)",
+      "vegetable oil, for deep-frying",
+      "2 garlic cloves, finely chopped",
+      "60 ml (2 fl oz/¼ cup) fish sauce",
+      "55 g (2 oz/¼ cup) sugar",
+      "1 long red chilli, cut into thin rings",
+      "1 handful coriander (cilantro)",
+      "1 handful mint",
+      "Marinade:",
+      "2 garlic cloves, finely chopped",
+      "2 tablespoons fish sauce",
+      "½ teaspoon freshly ground black pepper"
+    ],
+    method: `1. Cut each chicken wing through the joints into three pieces and place in a shallow tray. Mix together the marinade ingredients, pour over the chicken and toss to coat. Cover and place in the refrigerator for 1–2 hours to allow the flavours to develop.
+
+2. Remove the chicken from the marinade and dry thoroughly with paper towel. Place on a tray and dust liberally with the cornflour. Toss the wings through the cornflour and shake to remove any excess.
+
+3. Heat about 4 cm (1½ inches) of oil in a wok or frying pan over medium heat. Gently place the chicken pieces in the oil and fry for 8–10 minutes, until the skin is golden brown and crisp. Remove and drain on paper towel.
+
+4. Carefully empty the oil into a container for later use and wipe the wok clean.
+
+5. In a small bowl, mix together the garlic, fish sauce, sugar and 60 ml (2 fl oz/¼ cup) water, stirring to dissolve the sugar.
+
+6. Return the wok to the heat, add the fish sauce mixture and reduce over medium heat for 4–5 minutes, until syrupy. Add the chilli and the chicken wings and toss to coat the wings with the hot, salty sauce.
+
+7. Serve on a platter, scattered with the herbs. ---`
+  },
+  {
+    id: 253,
+    title: "Barbecued Lemongrass-Marinated Pork with Rice Vermicelli (Bún Thịt Nướng)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "45 mins plus marinating",
+    category: "Pork",
+    ingredients: [
+      "350 g (12½ oz) pork shoulder",
+      "4 garlic cloves, roughly chopped",
+      "3 lemongrass stems, white part only, roughly chopped",
+      "2 teaspoons sugar",
+      "½ teaspoon salt",
+      "1 teaspoon freshly ground black pepper",
+      "2 tablespoons fish sauce",
+      "1 tablespoon sesame seeds",
+      "Peanut sauce:",
+      "4 red Asian shallots, finely diced",
+      "2 garlic cloves, finely chopped",
+      "vegetable oil, for pan-frying",
+      "4 tablespoons unsalted peanuts, roasted",
+      "4 tablespoons sesame seeds, toasted",
+      "2 teaspoons peanut butter",
+      "1 teaspoon salt",
+      "1 teaspoon sugar",
+      "To serve:",
+      "600 g (1 lb 5 oz) dried rice vermicelli",
+      "1 small butter lettuce, thinly sliced",
+      "100 g (3½ oz) bean sprouts",
+      "1 small handful Thai basil",
+      "1 small handful mint"
+    ],
+    method: `1. Cut the pork into slices about 1 cm (½ inch) thick, so they are easy to pick up with chopsticks.
+
+2. Using a mortar and pestle or a food processor, form a paste out of the garlic, lemongrass, sugar, salt, pepper and fish sauce. Add the sesame seeds and slightly crush them. Rub the paste into the sliced pork and let it sit for about 1 hour for the flavours to develop.
+
+3. To make the peanut sauce, sauté the shallot and garlic in 1 tablespoon of oil until fragrant. Add 250 ml (8½ fl oz/1 cup) water and the remaining peanut sauce ingredients and stir until well combined. Slowly bring to the boil, then remove from the heat.
+
+4. Soak the vermicelli in boiling water for 4–5 minutes. Gently stir to separate the noodles, then drain and refresh under cold water. Use kitchen scissors to cut the vermicelli into easy-to-manage lengths, then divide among six bowls.
+
+5. Heat a chargrill or barbecue to medium–high. Chargrill the pork for approximately 1–2 minutes on each side.
+
+6. To serve, top the noodles with the lettuce, bean sprouts and herbs. Arrange the pork over the top and ladle the warm peanut sauce over each dish. ---`
+  },
+  {
+    id: 254,
+    title: "Goat Curry (Cà Ri Dê)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "1 hr 45 mins plus marinating",
+    category: "Curries",
+    ingredients: [
+      "1 kg (2 lb 3 oz) diced goat, preferably from the shoulder",
+      "vegetable oil, for pan-frying",
+      "2 onions, finely diced",
+      "¾ teaspoon salt",
+      "750 ml (25½ fl oz/3 cups) milk",
+      "800 ml (27 fl oz) coconut milk",
+      "5 lemongrass stems, white part only, cut in half lengthways",
+      "2 eggplants (aubergines)",
+      "150 g (5½ oz) butter",
+      "1 small handful coriander (cilantro) sprigs",
+      "Curry paste:",
+      "4 lemongrass stems, white part only, finely chopped",
+      "1 long red chilli, seeded and finely chopped",
+      "vegetable oil, for frying",
+      "35 g (1¼ oz/⅓ cup) curry powder",
+      "250 ml (8½ fl oz/1 cup) milk",
+      "2 tablespoons sugar"
+    ],
+    method: `1. To make the curry paste, fry the lemongrass and chilli in 1 tablespoon of oil over medium heat until fragrant. Add the curry powder and stir for 1 minute, ensuring the spices don't burn as they will become bitter. Add the milk and sugar and bring to the boil. Remove from the heat and allow to cool.
+
+2. Put the goat in a bowl, pour over the curry paste and toss to coat. Allow to marinate for 30 minutes.
+
+3. Heat 1 tablespoon of oil in a large saucepan and sauté the onion over medium heat for 3–4 minutes, until soft and translucent. Add the goat and sprinkle with the salt. Stirring regularly, cook for 4–5 minutes, until the meat has browned.
+
+4. Pour in 500 ml (17 fl oz/2 cups) of the milk, then add the coconut milk and lemongrass. Simmer for about 1 hour, or until the meat is tender.
+
+5. Meanwhile, cut the eggplants into 3 cm (1¼ inch) chunks. Place in a colander and sprinkle with extra salt. Leave to sit 30 minutes to remove the bitter tannin. Wash the salt from the eggplant and pat dry with paper towel.
+
+6. Heat 2 tablespoons of oil in a frying pan. Cook the eggplant in batches over medium heat until golden brown all over, adding more oil to the pan to cook each batch. Drain on paper towel to remove any excess oil.
+
+7. When the goat is tender, stir in the eggplant and the remaining milk and butter. After the butter has melted, transfer the curry to a serving bowl. Scatter with the coriander and serve. ---`
+  },
+  {
+    id: 255,
+    title: "Chilli Sauce (Sốt Ớt)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "750ml",
+    time: "30 mins",
+    category: "Basics",
+    ingredients: [
+      "1 kg (2 lb 3 oz) long red chillies",
+      "500 g (1 lb 2 oz) tomatoes",
+      "165 g (6 oz/¾ cup) sugar",
+      "3 garlic cloves, cut in half",
+      "2 teaspoons salt",
+      "2 teaspoons vinegar"
+    ],
+    method: `1. Cut the chillies in half lengthways. Remove the seeds, then place the seeds in a small saucepan. Put the chilli halves in a separate saucepan.
+
+2. Remove the seeds from the tomatoes by cutting the tomatoes in half, then scooping out the seeds with a teaspoon. Add the tomato seeds to the same pan as the chilli seeds. Roughly chop the tomatoes and place them in the same pan as the chilli halves.
+
+3. Add the sugar, garlic and 250 ml (8½ fl oz/1 cup) water to the pan containing the tomato seeds and chilli seeds. Bring to the boil, then reduce the heat and simmer for 2 minutes. Remove from the heat.
+
+4. Strain the seed liquid into the pan containing the chillies and tomatoes, discarding the seeds. Stir in the salt, vinegar and 310 ml (10½ fl oz/1¼ cups) cold water and slowly bring to the boil. Now reduce the heat and simmer for 8–10 minutes, until the chillies are soft.
+
+5. Remove from the heat and purée the mixture in a food processor. Strain the sauce through a fine sieve, into an airtight container, discarding the skins.
+
+6. The sauce will keep in an airtight container in the refrigerator for up to 1 month. ---`
+  },
+  {
+    id: 256,
+    title: "Chilli and Lemongrass Dipping Salt (Chấm Muối Ớt, Sả)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "5 mins",
+    category: "Basics",
+    ingredients: [
+      "1½ tablespoons sea salt",
+      "½ long red chilli, seeded and finely chopped",
+      "1 lemongrass stem, white part only, finely chopped"
+    ],
+    method: `1. Place the salt, chilli and lemongrass on a chopping board and chop for about 10 seconds to combine the flavours.
+
+2. Divide among six dipping bowls. ---`
+  },
+  {
+    id: 257,
+    title: "Classic Dipping Sauce (Nước Chấm Truyền Thống)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "5 mins",
+    category: "Basics",
+    ingredients: [
+      "100 ml (3½ fl oz) lime juice",
+      "1 teaspoon rice vinegar",
+      "110 g (4 oz/½ cup) sugar",
+      "60 ml (2 fl oz/¼ cup) fish sauce",
+      "2 garlic cloves, finely chopped",
+      "1 long red chilli, finely chopped"
+    ],
+    method: `1. Combine the lime juice, vinegar and sugar in a small bowl. Stir until the sugar has completely dissolved.
+
+2. Stir in the fish sauce, garlic and chilli and divide among six dipping bowls. ---`
+  },
+  {
+    id: 258,
+    title: "Fish Sauce and Coconut Dipping Sauce (Nước Chấm Dừa)",
+    author: "Tracey Lister & Andreas Pohl",
+    book: "Real Vietnamese Cooking",
+    serves: "6",
+    time: "5 mins",
+    category: "Basics",
+    ingredients: [
+      "80 ml (2½ fl oz/⅓ cup) coconut juice",
+      "80 ml (2½ fl oz/⅓ cup) rice vinegar",
+      "110 g (4 oz/½ cup) sugar",
+      "80 ml (2½ fl oz/⅓ cup) fish sauce",
+      "2 garlic cloves, finely chopped",
+      "1 long red chilli, seeded and finely chopped"
+    ],
+    method: `1. Put the coconut juice, vinegar and sugar in a bowl and whisk until the sugar has dissolved.
+
+2. Stir in the fish sauce, garlic and chilli and divide among six dipping bowls.`
+  },
+  {
+    id: 259,
+    title: "Gujarati potato and cabbage curry",
+    author: "Meera Sodha",
+    book: "Dinner",
+    serves: "4",
+    time: "50 mins",
+    category: "Curries",
+    ingredients: [
+      "800g Maris Piper potatoes, peeled and cut into 3cm cubes",
+      "salt and ground black pepper",
+      "3 tbsp rapeseed oil",
+      "a pinch of fenugreek seeds",
+      "½ tsp black mustard seeds",
+      "1 tsp cumin seeds",
+      "1 large onion, finely chopped",
+      "4 cloves of garlic, finely chopped",
+      "½ a tin (200g) of plum tomatoes in their juice",
+      "500g white cabbage (½ a large one), shredded",
+      "1 tsp ground coriander",
+      "⅓ tsp ground turmeric",
+      "1½ tsp Kashmiri chilli powder",
+      "To serve:",
+      "shop-bought or home-made chapattis (p 307)",
+      "Greek or dairy-free yoghurt",
+      "a handful of fresh coriander, leaves chopped"
+    ],
+    method: `1. Put the potatoes into a pan, cover with cold water, add a teaspoon of salt and bring to a boil. Cook for 15 minutes, or until tender, then drain and leave to steam.
+
+2. While the potatoes are cooking, heat the oil over a medium heat in a large frying pan for which you have a lid. Once it's very hot, add the fenugreek, mustard and cumin seeds and, when they start to crackle, stir in the onion and fry for 6 minutes, until soft. Add the garlic, cook for 2 minutes, then add the tomatoes, tipping them in with one hand and crushing them with the other before they hit the pan. Cook until the tomatoes become concentrated and paste-like and the oil floats to the top – about 8 to 10 minutes.
+
+3. Turn up the heat, add the cabbage and stir until well coated in the tomato mixture, then cover the pan and leave to cook for about 10 minutes, stirring infrequently, so the cabbage caramelizes a little while it softens.
+
+4. When the cabbage is soft, fold in the potatoes, the ground spices and 1½ teaspoons of salt, and mix gently, so the potatoes don't break up too much. Add 250ml of lukewarm water bit by bit, stirring after each addition, and leave to cook down, lid off, for 5 minutes, until the liquid thickens into a sauce. Check and adjust the seasoning if need be, then take off the heat.
+
+5. Serve generous helpings of the curry with warmed chapattis, a large spoonful of yoghurt and a handful of fresh coriander. ---`
+  },
+  {
+    id: 260,
+    title: "Tandoori cauliflower with coriander and cashew sauce",
+    author: "Meera Sodha",
+    book: "Dinner",
+    serves: "4",
+    time: "1 hr 10 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "Pickles and sauce:",
+      "½ red onion, very finely sliced",
+      "4 tbsp lemon juice, from 2 lemons",
+      "salt",
+      "100g unsalted cashews",
+      "100g fresh coriander, roughly chopped",
+      "¾ tsp caster sugar",
+      "3 green finger chillies, chopped",
+      "2 tbsp rapeseed oil",
+      "Tandoori cauliflower:",
+      "450g Greek yoghurt",
+      "2 tbsp lemon juice, from 1 lemon",
+      "5 cloves of garlic, crushed",
+      "2cm x 2cm ginger, grated",
+      "¾ tsp ground turmeric",
+      "2 tsp Kashmiri chilli powder",
+      "2 tsp salt",
+      "1½ tsp garam masala",
+      "4 tbsp rapeseed oil",
+      "2 tsp Colman's English mustard",
+      "2 large cauliflowers (1.6kg), trimmed",
+      "To serve:",
+      "shop-bought or home-made hot, buttered naan (p 306), to serve"
+    ],
+    method: `1. Make the pickles: Place the onion in a small bowl, add 2 tablespoons of lemon juice and ½ teaspoon of salt, scrunch with your hands to wilt the onion a little and set aside.
+
+2. Make the sauce: Place the cashews in a small heatproof bowl, cover with 125ml of boiling water and leave to soak for 5 minutes, then put the cashews and their water into a blender. Add the coriander, sugar, chillies, ½ teaspoon of salt, the oil and 2 tablespoons of lemon juice, blend until smooth, then taste and adjust the salt, lemon or chilli as you wish.
+
+3. Line two large baking trays with baking paper and oil them lightly. Preheat the oven to 220°C fan/240°C/gas 9.
+
+4. Prepare the marinade & cauliflower: Place all the marinade ingredients except the cauliflowers in a large bowl and whisk to mix. Sit each cauliflower upright on your board and cut down its centre, then, starting from the cut side, slice vertically into 1½cm-thick 'steaks'. You should get two to four intact steaks from each cauliflower and a lot of smaller pieces alongside.
+
+5. Dip the larger steaks into the marinade to cover each nook and cranny, then shake off any extra and place on a baking tray. Pop the remaining florets into the bowl and mix with your hands to coat well, then lift out, shake off, and place on the second tray, leaving a couple of centimetres between each piece.
+
+6. Put the trays into the oven, near the top, and bake the florets for 20 minutes and the steaks for 25 minutes, rotating the trays after 10 minutes, until tender and blackening in spots.
+
+7. To serve: Spread a quarter of the cashew and coriander sauce on each plate with the back of a spoon. Top with a cauliflower steak or two and several small florets, and scatter over the pickled onions. Eat with hot fresh buttered naan. Note: You'll need a blender for this recipe and some naan and some pickles alongside. ---`
+  },
+  {
+    id: 261,
+    title: "Miso butter greens pasta",
+    author: "Meera Sodha",
+    book: "Dinner",
+    serves: "4",
+    time: "55 mins",
+    category: "Pasta",
+    ingredients: [
+      "60g unsalted butter, vegan or dairy",
+      "5 cloves of garlic, chopped",
+      "½ tsp fennel seeds",
+      "½ tsp chilli flakes",
+      "100g broccoli, chopped",
+      "400g cavolo nero, leaves stripped and sliced",
+      "¾ tsp salt",
+      "2½ tbsp white miso paste",
+      "3 tbsp extra virgin olive oil",
+      "500g orecchiette",
+      "chilli oil or extra virgin olive oil, to finish"
+    ],
+    method: `1. Melt the butter in a large pot on a medium heat. When it's bubbling, add the garlic, fennel seeds and chilli flakes, and fry, stirring, for 2 to 3 minutes, until the garlic smell changes from raw to cooked and a bit like garlic bread.
+
+2. Add the broccoli, cavolo nero, salt and 250ml of water, stir (this will be challenging, but believe in yourself), cover, turn down the heat to medium-low and cook, stirring every few minutes, for 8 to 10 minutes, until the greens have wilted and become tender.
+
+3. Scrape all the contents of the cavolo nero pan into a blender or food processor, add the miso and olive oil, and blend to a smooth sauce, scraping down the sides as necessary; add a little water, if needed, to create a silky-smooth sauce (I add about 4 tablespoons).
+
+4. Rinse out the greens pot, fill with water (do not salt it: miso is already quite salty, and you can always adjust the seasoning later) and bring to a boil. Cook the pasta according to the packet instructions and, when it's got a minute to go, gently lower a large mug into the water and scoop out a mugful of the starchy cooking water.
+
+5. Drain the pasta, return it to the pot, add the sauce and toss with around 6 to 8 tablespoons of the cooking water to get it to a consistency you like. Taste and add salt, if need be.
+
+6. Spoon out on to a serving platter and drizzle with chilli oil or extra virgin olive oil. Note: You'll need a blender and a very large pot (around 5 litres) with a lid. ---`
+  },
+  {
+    id: 262,
+    title: "Baked butter paneer",
+    author: "Meera Sodha",
+    book: "Dinner",
+    serves: "4",
+    time: "1 hr 25 mins",
+    category: "Curries",
+    ingredients: [
+      "Paneer:",
+      "rapeseed oil",
+      "500g hard paneer, cut into 2½cm cubes",
+      "6 cloves of garlic, crushed",
+      "2cm x 2cm ginger, finely grated",
+      "1 tsp Kashmiri chilli powder",
+      "½ tbsp lemon juice, from ½ lemon",
+      "¾ tsp salt",
+      "½ tsp ground turmeric",
+      "5 tbsp Greek yoghurt",
+      "Butter sauce:",
+      "1 tsp Kashmiri chilli powder",
+      "1 tsp garam masala",
+      "1 tsp ground cumin",
+      "½ tsp ground cardamom",
+      "¾ tsp salt",
+      "2 tbsp runny honey",
+      "2 x 400g tins of finely chopped tomatoes",
+      "150ml double cream",
+      "1½ tbsp kasoori methi",
+      "To serve:",
+      "naan (p 306)",
+      "optional: a slab of butter"
+    ],
+    method: `1. Preheat the oven to 200°C fan/220°C/gas 7 and line a deep baking tray or oven dish (roughly 20cm x 30cm) with non-stick baking paper. Brush the paper with a little oil.
+
+2. Put the paneer cubes into a mixing bowl and add half the garlic, half the ginger and then the chilli powder, lemon juice, salt, turmeric and yoghurt. Mix well, tip on to the baking tray and bake for 25 minutes, or until the paneer is crisp and starting to blacken ever so slightly at the edges.
+
+3. Take the baking tray out of the oven and very carefully remove the baking paper, leaving the paneer in the tray. Add 3 tablespoons of oil and the remaining ginger and garlic, stir to coat the paneer in the garlicky oil, then add the spices for the butter sauce, the salt and the honey. Stir to mix, then tip in the tomatoes, making sure the paneer is completely covered, and pop back in the oven for 30 minutes.
+
+4. Remove the tray, stir through the cream, crumble over the kasoori methi, then stir again and pop back in the oven for 10 minutes. Remove the tray once more, stir in the butter now if you'd like, then serve straight from the tray with hot naan. Note: I should address the awkward truth that I don't use butter here but cream instead. You could, if you're a stickler for tradition (and not a heretic like me), add a big slab of butter to the finished curry. Kasoori methi are dried fenugreek leaves, which you can find in South Asian supermarkets or online (p 310). This recipe goes really well with the asparagus and cashew thoran on p 268. ---`
+  },
+  {
+    id: 263,
+    title: "Rojak salad with avocado, tofu and tamarind",
+    author: "Meera Sodha",
+    book: "Dinner",
+    serves: "2 with leftovers",
+    time: "30 mins",
+    category: "Salads",
+    ingredients: [
+      "2 tbsp tamarind paste",
+      "1 tbsp sambal oelek, or to taste",
+      "1 tbsp rice or agave syrup",
+      "4 tbsp light soy sauce",
+      "rapeseed oil",
+      "1 x 450g pack of extra-firm tofu, drained",
+      "¼ white cabbage (150g), finely shredded",
+      "⅓ cucumber (150g), deseeded and thinly sliced",
+      "50g baby-leaf spinach",
+      "1 Braeburn apple, cut into 2mm slices",
+      "1 avocado, stoned and cut into wedges",
+      "a large handful of fresh mint leaves, torn",
+      "60g salted peanuts, very finely chopped",
+      "lime wedges, to serve"
+    ],
+    method: `1. Make the dressing: In a small bowl, whisk the tamarind paste, sambal oelek and rice or agave syrup with 3 tablespoons of soy sauce and a tablespoon of oil. Taste the dressing, making sure you're happy with the balance of heat, sour, sweet and salt, and adjust as required.
+
+2. Pat the tofu dry with kitchen paper and cut into 2½cm cubes. Put a tablespoon of oil into a non-stick frying pan over a medium heat and, when hot, fry the tofu cubes for 8 minutes, turning them with tongs or two forks, or until golden brown all over, then add the remaining tablespoon of soy sauce, take off the heat and tip into a serving bowl.
+
+3. Add the cabbage, cucumber, spinach, apple, avocado wedges, mint leaves and half the peanuts to the bowl, then toss with clean hands. Add the dressing and mix again. Garnish with the remaining peanuts and serve with lime wedges on the side. Note: Sambal oelek is a zingy chilli sauce used in many Indonesian and Malaysian dishes which you can buy from East Asian supermarkets and online (p 310). Once you have it, you can also make the chickpea and potato curry with quick paratha on p 190. ---`
+  },
+  {
+    id: 264,
+    title: "Pakistani-style aloo palak",
+    author: "Meera Sodha",
+    book: "Dinner",
+    serves: "4",
+    time: "1 hr 15 mins",
+    category: "Curries",
+    ingredients: [
+      "120ml rapeseed oil",
+      "1 tsp black mustard seeds",
+      "1 tsp cumin seeds",
+      "2 brown onions, finely chopped",
+      "6 cloves of garlic, crushed",
+      "3cm x 2cm ginger, grated",
+      "1–2 green finger chillies, finely chopped",
+      "200g tomatoes, chopped",
+      "1½ tsp ground cumin",
+      "2 tsp ground coriander",
+      "½ tsp ground turmeric",
+      "1 tsp Kashmiri chilli powder",
+      "2 tsp salt",
+      "450g Maris Piper potatoes (2 medium), peeled, halved and cut into 1½cm-thick slices",
+      "1kg frozen whole leaf spinach, defrosted",
+      "2–3 tsp lemon juice, from 1 lemon",
+      "cooked basmati rice (p 305), to serve"
+    ],
+    method: `1. Put the oil into a large, deep pan over a medium heat until very hot, then carefully tip in the mustard and cumin seeds, and leave to fizz and crackle for up to a minute. Add the onions, cook for 8 minutes, until soft and golden, then add the garlic, ginger and chillies and cook, stirring, for about 3 minutes, until the raw garlic smell disappears.
+
+2. Stir in the tomatoes, spices and salt, and cook for about 5 minutes, until you can see the oil separate from the tomato mixture. Add the potatoes, spinach and 200ml of just-boiled water, then pop the lid on the pan and leave to cook for about 15 minutes, stirring every 5 minutes or so. Take off the lid and cook for a final 15 to 20 minutes, until the liquid has been driven off and you are left with a lovely, thick curry with tender potatoes that don't resist a prodding from the tip of a knife.
+
+3. Stir through 2 teaspoons of lemon juice, mix, then taste. Add some more lemon to balance the sweet and spicy flavours if need be, then serve hot with basmati rice. Note: Frozen spinach works brilliantly here; either defrost overnight or run warm water over it, while still in the bag, until thawed.`
+  }];
 
 
 const CUISINE_META = {
@@ -6918,7 +9070,13 @@ const CUISINE_META = {
   "Nino Zoccali":        { cuisine: "Italian",            flag: "🇮🇹" },
   "Christine Mansfield": { cuisine: "Indian",             flag: "🇮🇳" },
   "Emelia Jackson":      { cuisine: "Australian",         flag: "🇦🇺" },
-  "Nicola Lamb":         { cuisine: "British",            flag: "🇬🇧" }
+  "Nicola Lamb":         { cuisine: "British",            flag: "🇬🇧" },
+  "Brooke Bellamy":      { cuisine: "Australian",         flag: "🇦🇺" },
+  "Natalie Paull":       { cuisine: "Australian",         flag: "🇦🇺" },
+  "Ixta Belfrage":       { cuisine: "Brazilian",          flag: "🇧🇷" },
+  "Claire Saffitz":      { cuisine: "American",           flag: "🇺🇸" },
+  "Tracey Lister & Andreas Pohl": { cuisine: "Vietnamese", flag: "🇻🇳" },
+  "Meera Sodha":         { cuisine: "Indian",             flag: "🇮🇳" }
 };
 
 const RECIPE_SUMMARIES = {
@@ -7124,7 +9282,63 @@ const RECIPE_SUMMARIES = {
   205: "A versatile enriched bun dough at 75% hydration, built with a tangzhong for a fluffier, longer-lasting crumb across all enriched bun recipes.",
   206: "A fast rough puff pastry using ice-cold butter and white wine vinegar for pronounced flakiness with a fraction of the fuss.",
   207: "A crème fraîche pie dough with visible butter streaks laminated through for a flaky, tender double-crust suitable for sweet or savoury pies.",
-  208: "A wholemeal and plain flour suet crust with a distinctive crumbly, layered texture — ideal for hearty double-crust and lattice pies."
+  208: "A wholemeal and plain flour suet crust with a distinctive crumbly, layered texture — ideal for hearty double-crust and lattice pies.",
+  209: "Brooki's bakery-famous cookie — cold butter, two sugars, dark chocolate chunks and walnuts baked into a crisp-edged, molten-centred 150g monster.",
+  210: "Buttery tangelo custard-powder shortbread buttons sandwiched with tangy reduced-tangelo frosting for a grown-up custard cream.",
+  211: "Olive oil and lime shortbread rounds, sugar-crusted and salted, filled with sharp lime frosting for a salty-sweet crisp sandwich.",
+  212: "Toasted macadamias and chunky white chocolate in a muscovado dough, rested overnight and baked into nine enormous chewy cookies.",
+  213: "A dense, fudgy bittersweet brownie with cream cheese and extra-dark chocolate, best chilled then softened back to room temperature.",
+  214: "A classic all-butter brisée tart pastry, chilled overnight for a tender, sturdy crust that blind bakes without shrinking.",
+  215: "A quick rough puff made with full-fat yoghurt, resting through several folds to build flaky layers for hand pies.",
+  216: "Buckwheat and plain flour with big flakes of butter for a nutty, shatteringly flaky pie and tart crust.",
+  217: "Maple, demerara and dark rum baked into a cocoa-rich pecan filling, poured into brisée or buckwheat pastry.",
+  218: "A deep tart shell filled with vanilla malt crème anglaise custard and grated nutmeg for silky, milky depth.",
+  219: "A polenta and flaked almond dough pressed and crumbled around jam, frozen then baked into a golden free-form crostata.",
+  220: "Whole eggs, lemon juice and cream cooked into a set lemon cream, baked in a blind-baked brisée shell.",
+  221: "Cocoa and bittersweet chocolate bloomed in hot water with sour cream for a deeply dark layer cake, rested overnight.",
+  222: "Bittersweet and milk chocolate with crème fraîche and whipped whites for a rich, truffly flourless cake.",
+  223: "A double almond crumb crunch under tonka-scented banana cheesecake, topped with tropical fruit.",
+  224: "A tall, airy buttermilk chiffon perfumed with Meyer lemon zest and juice, finished with fluffy yoghurt frosting and citrus crisps.",
+  225: "Chicory powder and caramel through the layers, iced with white chocolate mascarpone ganache for a bittersweet, coffee-adjacent cake.",
+  226: "Kefir-enriched shortcake biscuits split and piled with macerated sumac blackberries and softly whipped kefir cream.",
+  227: "Crème pâtissière started from cold — sugar, cornflour, cream, yolks and milk whisked over heat to a thick, boil-cooked custard.",
+  228: "Cold-start custard whipped with butter and crème fraîche into a silky German buttercream with a brown butter backbone.",
+  229: "A flour-free pouring custard of yolks, condensed milk and barley malt, gently cooked with vanilla for tarts and desserts.",
+  230: "Blackberries macerated with sugar, lemon juice, salt and lemony sumac for a crimson, citrus-spiked fruit compote.",
+  231: "King prawns and okra marinated in saffron and warm spices, then simmered in a brothy mango juice, tomato and ginger–garlic broth.",
+  232: "White fish marinated in coconut milk and lime, coated in desiccated coconut and coarse cassava flour, then fried until crunchy.",
+  233: "Drumsticks rubbed with Urfa chilli, coffee and smoked paprika, braised in coconut milk and served with charred okra.",
+  234: "Lamb neck seared in ghee with urucum, served over a pineapple and yellow tomato pimenta with toasted cassava.",
+  235: "Chard-wrapped lamb and rice charutos poached in a Scotch bonnet tomato broth, finished with garlic oil and lime.",
+  236: "Chicken drumsticks braised with deeply caramelised onions and beetroot juice for a rich, glossy, blood-free molho pardo.",
+  237: "Pork collar slow-cooked with pineapple juice, cinnamon and Scotch bonnet until falling apart, cut with a sharp green vinagrete.",
+  238: "Brazilian picadinho beef mince with romano peppers and dried mushrooms, baked under sweet potato and Parmesan.",
+  239: "Chicken livers marinated in urucum, paprika and ground coffee, flash-fried in salted butter with maple and citrus.",
+  240: "Passion fruit and tangerine folded through a white chocolate mousse, served with a bitter cocoa-cinnamon biscuit crumble.",
+  241: "Roasted bananas blitzed with coconut cream, miso and maple into a no-churn ice cream, with coffee choc fudge sauce and nuts.",
+  242: "A silky stovetop pudding built on deep amber caramel and malted milk powder, chilled and topped with whipped cream and gingersnaps.",
+  243: "An olive oil Meyer lemon Bundt finished with a lemon and olive oil glaze that crystallises into a crunchy shell.",
+  244: "Almond flour cookies rolled in sugar, thumbprinted with raspberry jam and dusted with freeze-dried raspberry.",
+  245: "A whole wheat chocolate chip cookie loaded with toasted seeds and baked in a cast-iron skillet, sliced into wedges.",
+  246: "Squid, prawns and crab folded through a coconut batter with sweet potato and deep-fried in moulds until golden.",
+  247: "Turmeric-marinated rockling grilled then fried with masses of dill and spring onion, served over rice vermicelli.",
+  248: "Baby chicken marinated in galangal, lemongrass and five-spice, chargrilled and showered with shredded kaffir lime leaves.",
+  249: "A whole small chicken braised in rice wine and coconut milk with annatto oil, ginger and Thai basil.",
+  250: "Chicken simmered with charred shallot, ginger, cinnamon and star anise into a clear pho broth, poured over fresh noodles.",
+  251: "Chicken stir-fried fast with bruised lemongrass, red chilli and garlic, finished with spring onion and coriander.",
+  252: "Cornflour-dusted wings fried crisp then tossed in a caramelised garlic, chilli and fish sauce glaze.",
+  253: "Pork shoulder marinated in lemongrass and garlic, barbecued and served over rice vermicelli with peanut sauce.",
+  254: "Diced goat marinated with curry powder and lemongrass, braised in milk and coconut milk with eggplant.",
+  255: "Long red chillies and tomatoes cooked down with garlic, sugar and vinegar into a keeping chilli sauce.",
+  256: "Sea salt pounded with fresh red chilli and lemongrass for a fragrant dry dipping salt.",
+  257: "The everyday nước chấm — lime, rice vinegar, sugar and fish sauce with garlic and chilli.",
+  258: "Coconut juice in place of water gives this nước chấm a rounder, sweeter edge alongside garlic and chilli.",
+  259: "Boiled potatoes folded through caramelised onion, tomato and shredded cabbage with mustard seeds, fenugreek and Kashmiri chilli.",
+  260: "Cauliflower roasted under a spiced yoghurt tandoori marinade, served on a bright coriander and cashew sauce.",
+  261: "Broccoli and cavolo nero cooked down with fennel seeds and chilli, blitzed with white miso butter into a green pasta sauce.",
+  262: "Paneer baked in a spiced yoghurt marinade then folded into a rich, buttery tomato sauce with garam masala.",
+  263: "Cabbage, cucumber, apple, avocado and tofu tossed in a tamarind and sambal oelek dressing with salted peanuts.",
+  264: "Potatoes and spinach cooked down with mustard seeds, ginger, green chilli and tomato into a soft, savoury aloo palak."
 };
 
 // Build ingredient → recipe map
@@ -7141,7 +9355,7 @@ function normalizeIngredientForIndex(ingredient) {
     .replace(/^[-–]\s*/, "")
     .replace(/^plus\s+/, "")
     // Unicode fractions at start
-    .replace(/^[½¼¾⅓⅔⅛⅜⅝⅞]\s*(?:a\s+)?/, "")
+    .replace(/^\d*[½¼¾⅓⅔⅛⅜⅝⅞]\s*(?:a\s+)?/, "")
     // Standard numeric prefixes
     .replace(/^\d+\s*[-–]\s*\d+\s+/, "")
     .replace(/^\d+\s*[x×]\s*/, "")
@@ -7200,7 +9414,7 @@ function normalizeIngredientForIndex(ingredient) {
     .replace(/^hot-smoked\s+/, "")
     .replace(/^freshly squeezed\s+/, "")
     .replace(/^(?:coarse|finely|thinly|lightly|roughly|softly|firmly)\s+/, "")
-    .replace(/^(?:grated|shredded|chopped|crushed|mashed|ground|flaked|rolled)\s+/, "")
+    .replace(/^(?:grated|shredded|chopped|crushed|mashed|ground|flaked|rolled|diced|cubed|sliced|minced)\s+/, "")
     .replace(/^(?:peeled|seeded|pitted)\s+/, "")
     .replace(/^(?:juice|zest)\s+of\s+/, "")
     .replace(/\s+(?:fillets?|portions?|pieces?|tails?|heads?|cloves?|sprigs?|leaves?|sticks?|stalks?|bulbs?|fronds?|tablespoons?|teaspoons?|tbsp|tsp|cups?|cup|ml|l|g|kg|mg)$/, "")
@@ -7215,7 +9429,8 @@ function normalizeIngredientForIndex(ingredient) {
   // Single-word / short junk
   const junkWords = ["baking","00","'00'","all purpose","all-purpose","vegetable","peeled",
     "boneless","clarified","gram","juicy","roasted","wholemeal","white spelt",
-    "whitespelt","raw","quantity fresh pici or use store-bought"];
+    "whitespelt","raw","quantity fresh pici or use store-bought",
+    "firm","soft","soft plain","skin-on"];
   if (junkWords.includes(cleaned)) return null;
 
   if (/\bsweetened condensed milk\b/.test(cleaned)) return "sweetened condensed milk";
@@ -7355,11 +9570,22 @@ function normalizeIngredientForIndex(ingredient) {
     /\bsea herbs\b/,
     /\btoum\b/,
     /\bgochujang\b/,
+    /\bkasoori methi\b/,
+    /\bcornstarch\b/,
+    /\bcustard\b/,
+    /\bcrème anglaise\b/,
+    /\bfive[- ]spice\b/,
+    /\bsambal\b/,
+    /\burucum\b|\bannatto\b|\bachiote\b/,
+    /\bnaan\b|\bchapat(?:t)?is?\b/,
+    /\bgingersnap\b|\bbiscoff\b/,
+    /\bdipping sauce\b/,
+    /\bhome-?made\b/,
   ];
   if (spiceOrDetailPatterns.some((re) => re.test(cleaned))) return null;
 
   const aliasPatterns = [
-    { re: /\bspaghetti\b|\blinguine\b|\bpasta\b|\bpici\b/, value: "pasta" },
+    { re: /\bspaghetti\b|\blinguine\b|\borecchiette\b|\btagliatelle\b|\bpasta\b|\bpici\b/, value: "pasta" },
     { re: /\bshin of beef\b|\bbeef\b|\bveal\b/, value: "beef" },
     { re: /\bporridge oats?\b|\boats?\b/, value: "oats" },
     { re: /\bbaby beets?\b|\bbeets?\b|\bbeetroot\b/, value: "beetroots" },
@@ -7370,7 +9596,7 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\bmint\b/, value: "mint" },
     { re: /\brosemary\b/, value: "rosemary" },
     { re: /\boregano\b/, value: "oregano" },
-    { re: /\bcauliflower\b/, value: "cauliflower" },
+    { re: /\bcauliflowers?\b/, value: "cauliflower" },
     { re: /\bmango(es)?\b/, value: "mango" },
     { re: /\bapples?\b/, value: "apple" },
     { re: /\bbananas?\b/, value: "banana" },
@@ -7398,7 +9624,7 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\btuna\b/, value: "tuna" },
     { re: /\blobster\b/, value: "lobster" },
     { re: /\bsalmon fillets?\b|\bsalmon\b/, value: "salmon" },
-    { re: /\brainbow trout\b|\btrout\b|\bwhite fish\b|\bhaddock\b|\bbarramundi\b|\bmahi mahi\b|\bbass groper\b|\bsnapper\b|\bjohn dory\b|\bfish\b/, value: "fish" },
+    { re: /\brainbow trout\b|\btrout\b|\bwhite fish\b|\bhaddock\b|\bbarramundi\b|\bmahi mahi\b|\bbass groper\b|\bsnapper\b|\bjohn dory\b|\brockling\b|\bfish\b/, value: "fish" },
     { re: /\bmussels?\b|\bclams?\b|\bvongole\b/, value: "shellfish" },
     { re: /\bking prawns?\b|\btiger prawns?\b|\bprawns?\b|\bshrimp\b/, value: "prawns" },
     { re: /\bchipolatas?\b|\bsausage(s)?\b/, value: "sausages" },
@@ -7409,8 +9635,8 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\bchia\b|\blinseeds?\b|\bflaxseeds?\b|\bsunflower seeds?\b|\bpepitas\b|\bpumpkin seeds?\b|\bsesame seeds?\b|\bpoppyseeds?\b|\bpoppy seeds?\b|\bpomegranate seeds?\b|\bseeds?\b/, value: "seeds" },
     { re: /\bcornmeal\b|\bsemolina\b|\bpolenta\b/, value: "polenta" },
     { re: /\bamaranth\b|\bsorghum\b|\bvialone nano rice\b|\bfreekeh\b|\bmixed wild rice\b|\brice\b|\bcouscous\b|\bquinoa\b|\bspelt\b|\bbuckwheat\b|\bgrains?\b/, value: "grains" },
-    { re: /\bwalnuts?\b|\balmonds?\b|\bcashews?\b|\bhazelnuts?\b|\bpistachios?\b|\bpeanuts?\b|\bnuts?\b/, value: "nuts" },
-    { re: /\bcherry tomatoes?\b|\bnapoli tomato sauce\b|\btomato sauce\b|\bpassata\b|\btomatoes?\b/, value: "tomatoes" },
+    { re: /\bwalnuts?\b|\balmonds?\b|\bcashews?\b|\bhazelnuts?\b|\bpistachios?\b|\bpeanuts?\b|\bpecans?\b|\bmacadamias?\b|\bnuts?\b/, value: "nuts" },
+    { re: /\bcherry tomato(?:es)?\b|\bnapoli tomato sauce\b|\btomato sauce\b|\bpassata\b|\btomato(?:es)?\b/, value: "tomatoes" },
     { re: /\bradicchio\b/, value: "radicchio" },
     { re: /\bcourgettes?\b|\bzucchini\b|\bzuchinni\b/, value: "zuchinni" },
     { re: /\baubergines?\b|\beggplants?\b|\bbrinjal\b/, value: "eggplant" },
@@ -7432,7 +9658,7 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\bcoconut\b/, value: "coconut" },
     { re: /\bdry white wine\b|\bwhite wine\b|\bvermouth\b|\bwine\b/, value: "wine" },
     { re: /\bwhole ?wheat japanese noodles\b|\bramen noodles?\b|\bnoodles\b/, value: "noodles" },
-    { re: /\bpotatoes?\b/, value: "potato" },
+    { re: /\bpotato(?:es)?\b/, value: "potato" },
     { re: /\bsauerkraut\b|\bcabbage\b/, value: "cabbage" },
     { re: /\bwatercress\b|\bcress\b/, value: "watercress" },
     { re: /\blettuce\b|\bcos lettuces?\b|\biceberg lettuces?\b/, value: "lettuce" },
@@ -7465,6 +9691,17 @@ function normalizeIngredientForIndex(ingredient) {
     { re: /\bpomegranate\b/, value: "pomegranate" },
     { re: /\bavocado\b/, value: "avocado" },
     { re: /\bradish(?:es)?\b/, value: "radishes" },
+    { re: /\btangelos?\b/, value: "tangelo" },
+    { re: /\btangerines?\b/, value: "tangerine" },
+    { re: /\bnutmeg\b/, value: "nutmeg" },
+    { re: /\bpaneer\b/, value: "paneer" },
+    { re: /\btofu\b/, value: "tofu" },
+    { re: /\bpassion ?fruits?\b/, value: "passionfruit" },
+    { re: /\bokra\b/, value: "okra" },
+    { re: /\bsquid\b|\bcalamari\b/, value: "squid" },
+    { re: /\bcrab(?:meat)?\b/, value: "crab" },
+    { re: /\bgoat\b/, value: "goat" },
+    { re: /\bjam\b/, value: "jam" },
   ];
 
   for (const alias of aliasPatterns) {
@@ -7530,7 +9767,13 @@ const AUTHOR_META = {
   "Benny Roff":         { initials:"BR", color:"#6B4C35", bg:"rgba(107,76,53,0.12)",   desc:"The warmth and wit of Eastern European food told through a distinctly Melbourne lens. Benny's Borscht, Vodka & Tears is food with history and heart." },
   "Nino Zoccali":       { initials:"NZ", color:"#C0882C", bg:"rgba(192,136,44,0.12)",  desc:"Celebrating the food of Venice and the northern Italian kitchen. Nino's Venetian Republic is a love letter to lagoon cooking and the pleasures of the table." },
   "Adam Liaw":          { initials:"AL", color:"#2C6B6B", bg:"rgba(44,107,107,0.12)",  desc:"Clear-eyed, accessible weeknight cooking from MasterChef Australia winner and food journalist Adam Liaw. Tonight's Dinner is dinner, sorted." },
-  "Nicola Lamb":        { initials:"NL", color:"#8A5C2C", bg:"rgba(138,92,44,0.12)",   desc:"A technically precise and endlessly inspiring baking book from Nicola Lamb. Sift demystifies the science behind pastry, bread and patisserie with warmth and clarity." }
+  "Nicola Lamb":        { initials:"NL", color:"#8A5C2C", bg:"rgba(138,92,44,0.12)",   desc:"A technically precise and endlessly inspiring baking book from Nicola Lamb. Sift demystifies the science behind pastry, bread and patisserie with warmth and clarity." },
+  "Brooke Bellamy":     { initials:"BB", color:"#D4A847", bg:"rgba(212,168,71,0.12)", desc:"The Brisbane baker behind Brooki Bakehouse, whose enormous New York-style cookies built a global following. Bake with Brooki brings the bakery's formulas home." },
+  "Natalie Paull":      { initials:"NP", color:"#9C6B4A", bg:"rgba(156,107,74,0.12)", desc:"Melbourne's most exacting baker, from the much-missed Beatrix. Another Slice is generous with technique, tolerances and the reasoning behind every gram." },
+  "Ixta Belfrage":      { initials:"IB", color:"#5A8A2C", bg:"rgba(90,138,44,0.12)",  desc:"Bold, layered flavour drawn from Brazil, Mexico and Italy. Fusão is a love letter to her mother's Brazil, built on chilli, coconut, cassava and urucum." },
+  "Claire Saffitz":     { initials:"CS", color:"#6B5CA5", bg:"rgba(107,92,165,0.12)", desc:"Meticulous, deeply tested American baking with the reasoning shown. What's for Dessert grades every recipe by difficulty and flags exactly where it can go wrong." },
+  "Tracey Lister & Andreas Pohl": { initials:"TL", color:"#1F7A6B", bg:"rgba(31,122,107,0.12)", desc:"Written from the Hanoi Cooking Centre, Real Vietnamese Cooking is a regional, street-level guide to the herbs, broths and dipping sauces of Vietnam." },
+  "Meera Sodha":        { initials:"MS", color:"#C74A3C", bg:"rgba(199,74,60,0.12)",  desc:"Gujarati heritage, a Lincolnshire childhood and a cook's eye for vegetables. Dinner is unfussy vegetarian and vegan food with real spice confidence." }
 };
 
 // ══════════════════════════════════════════════════════
@@ -7553,6 +9796,7 @@ const CAT_META = {
   "Pasta":              { icon:"🍝", bg:"rgba(192,136,44,0.09)",  grad:"linear-gradient(135deg,#C0882C,#C05A2C)", img:"images/categories/pasta.webp" },
   "Pickles & Chutneys": { icon:"🫙", bg:"rgba(122,140,110,0.09)", grad:"linear-gradient(135deg,#7A8C6E,#D4A847)", img:"images/categories/pickles.webp" },
   "Soup & Noodles":     { icon:"🍜", bg:"rgba(44,107,138,0.09)",  grad:"linear-gradient(135deg,#2C6B8A,#7A8C6E)", img:"images/categories/soup-and-noodles.webp" },
+  "Curries":            { icon:"🍛", bg:"rgba(192,136,44,0.09)", grad:"linear-gradient(135deg,#C0882C,#8A2C2C)", img:"images/categories/curries.webp" },
   "Dumplings":          { icon:"🥟", bg:"rgba(192,90,44,0.08)",   grad:"linear-gradient(135deg,#C05A2C,#D4A847)", img:"images/categories/dumplings.webp" },
   "Basics":             { icon:"🧂", bg:"rgba(107,76,53,0.08)",   grad:"linear-gradient(135deg,#6B4C35,#9C8B7A)", img:"images/categories/basics.webp" },
   "Risotto":            { icon:"🍚", bg:"rgba(192,136,44,0.09)",  grad:"linear-gradient(135deg,#C0882C,#D4A847)", img:"images/categories/risotto.webp" },

@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Local tooling
+.claude/
+.gstack/
+
+# Source transcriptions the recipes were entered from.
+# Not used by the site at runtime; the recipe data lives in data.js.
+# Remove this line if you want them tracked.
+transcriptions/

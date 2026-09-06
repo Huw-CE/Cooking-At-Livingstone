@@ -1477,7 +1477,7 @@ function buildPlannerCardHtml(r) {
     <div class="r-title">${escHtml(r.title)}</div>
     <div class="r-meta">
       <span>⏱ ${escHtml(r.time)}</span>
-      <span>👤 Serves ${escHtml(r.serves)}</span>
+      <span>👤 ${escHtml(servesLabel(r.serves))}</span>
       ${r.ingredients.length ? `<span>🥕 ${r.ingredients.length} ingredients</span>` : ''}
     </div>
     ${hasMatch ? `<div class="crossover-badge">${sm.score} shared ingredient${sm.score!==1?'s':''}: ${sm.shared.map(s => `<span class="crossover-ing">${escHtml(INDEX[s]?.display || s)}</span>`).join('')}</div>` : ''}
@@ -1588,7 +1588,7 @@ function buildShoppingText() {
   ids.forEach(id => {
     const r = RECIPE_BY_ID[id];
     if (!r) return;
-    out += `${r.title.toUpperCase()}\n(${r.author} · ${r.book||''} · Serves ${r.serves||'?'} · ${r.time||'?'})\n`;
+    out += `${r.title.toUpperCase()}\n(${r.author} · ${r.book||''} · ${servesLabel(r.serves)} · ${r.time||'?'})\n`;
     r.ingredients.forEach(ing => { out += `  – ${ing}\n`; });
     out += '\n';
   });
@@ -1750,7 +1750,7 @@ function renderShoppingList() {
       }).join('');
       return `<div class="shopping-recipe-block">
         <div class="shopping-recipe-title">${escHtml(r.title)}</div>
-        <div class="shopping-recipe-meta">${escHtml(r.author)} · ${escHtml(r.book||'')} · Serves ${escHtml(r.serves||'?')} · ${escHtml(r.time||'?')}</div>
+        <div class="shopping-recipe-meta">${escHtml(r.author)} · ${escHtml(r.book||'')} · ${escHtml(servesLabel(r.serves))} · ${escHtml(r.time||'?')}</div>
         <ul class="shopping-ing-list">${ings}</ul>
       </div>`;
     }).join('');

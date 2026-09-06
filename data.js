@@ -3570,7 +3570,7 @@ If using the flaked almonds, you could simply sprinkle them on top or get pretty
     book: "Rumi",
     category: "Salads",
     serves: "4-6",
-    time: "",
+    time: "1 hr 15 mins",
     ingredients: [
       "50 g (1 3/4 oz) dried chickpeas, soaked overnight",
       "1 teaspoon sea salt, plus extra to taste",
@@ -3602,7 +3602,7 @@ To serve, season the yoghurt with a pinch of salt and the toum, and spoon over t
     book: "Rumi",
     category: "Poultry",
     serves: "4-6",
-    time: "",
+    time: "35 mins",
     ingredients: [
       "2 skinless chicken breasts",
       "500 ml (2 cups) chicken stock, or salted water with 1 quartered onion",
@@ -3648,7 +3648,7 @@ I would suggest leaving it for 5 minutes after mixing then coming back to it wit
     book: "Rumi",
     category: "Salads",
     serves: "4-6",
-    time: "",
+    time: "35 mins",
     ingredients: [
       "40 g (1/4 cup) peas (podded weight)",
       "185 g (1 cup) broad beans (podded weight)",
@@ -3711,7 +3711,7 @@ Take the bird apart by removing the legs and cutting them into thighs and drumst
     book: "Rumi",
     category: "Salads",
     serves: "4-6",
-    time: "",
+    time: "15 mins",
     ingredients: [
       "2 large tomatoes, cored and cut into 5 cm (2 in) chunks",
       "1/2 ball of shanklish cheese, crumbled",
@@ -3732,7 +3732,7 @@ Take the bird apart by removing the legs and cutting them into thighs and drumst
     book: "Rumi",
     category: "Salads",
     serves: "6-8",
-    time: "",
+    time: "35 mins",
     ingredients: [
       "250 g (9 oz) cracked freekeh",
       "2 tablespoons salt",
@@ -3784,7 +3784,7 @@ Serve on a serving platter or in a salad bowl. Sprinkle with a little extra suma
     book: "Rumi",
     category: "Poultry",
     serves: "4",
-    time: "",
+    time: "15 mins",
     ingredients: [
       "200 g (7 oz) chicken livers, connective tissue removed",
       "1 teaspoon Baharat (page 24)",
@@ -3837,7 +3837,7 @@ If using sesame seeds, dip the top of the stuffed date into the sesame seeds bef
     book: "Rumi",
     category: "Vegetarian",
     serves: "6-8",
-    time: "",
+    time: "1 hr 5 mins",
     ingredients: [
       "100 ml (3 1/2 fl oz) vegetable oil",
       "2 teaspoons pine nuts",
@@ -3866,7 +3866,7 @@ Remove from the oil and drain on some paper towel. Season with salt and pepper, 
     book: "Rumi",
     category: "Dessert",
     serves: "12",
-    time: "",
+    time: "40 mins plus resting",
     ingredients: [
       "4 eggs, separated",
       "180 g (6 1/2 oz) caster (superfine) sugar",
@@ -9053,6 +9053,1976 @@ Italian meringue:
 2. Stir in the tomatoes, spices and salt, and cook for about 5 minutes, until you can see the oil separate from the tomato mixture. Add the potatoes, spinach and 200ml of just-boiled water, then pop the lid on the pan and leave to cook for about 15 minutes, stirring every 5 minutes or so. Take off the lid and cook for a final 15 to 20 minutes, until the liquid has been driven off and you are left with a lovely, thick curry with tender potatoes that don't resist a prodding from the tip of a knife.
 
 3. Stir through 2 teaspoons of lemon juice, mix, then taste. Add some more lemon to balance the sweet and spicy flavours if need be, then serve hot with basmati rice. Note: Frozen spinach works brilliantly here; either defrost overnight or run warm water over it, while still in the bag, until thawed.`
+  },
+  {
+    id: 265,
+    title: "Chicken Tikka",
+    author: "Shamil & Kavi Thakrar",
+    book: "Dishoom",
+    serves: "4 as a starter",
+    time: "15 mins plus marinating",
+    category: "Poultry",
+    ingredients: [
+      "500g boneless chicken thighs, with skin",
+      "Marinade:",
+      "30g fresh root ginger",
+      "10g garlic (2-3 cloves)",
+      "10g green chillies (2-3)",
+      "30ml rice vinegar",
+      "1 tsp deggi mirch chilli powder",
+      "1 tsp ground turmeric",
+      "1½ tsp fine sea salt",
+      "2 tsp granulated sugar",
+      "1 tbsp vegetable oil",
+      "To grill and serve:",
+      "25g unsalted butter, melted",
+      "Lime wedges"
+    ],
+    method: `1. Cut each chicken thigh into 3 pieces and pat dry with kitchen paper. Place in a large bowl.
+2. For the marinade, blitz the ingredients together in a blender or mini food processor to a smooth paste.
+3. Spoon the marinade over the chicken pieces and turn them to coat. Cover and leave to marinate in the fridge for 6-24 hours.
+4. Take the marinated chicken out of the fridge 20 minutes before cooking. (If you are using wooden skewers, soak them now.)
+5. Heat the grill to high. Thread the marinated chicken onto skewers, leaving enough space between the pieces for the heat to penetrate. Grill for 12-15 minutes, turning and basting regularly with the melted butter, until deep golden brown with some charring. Check that the chicken pieces are cooked through.
+6. Let the cooked chicken rest for 5 minutes before serving, with lime wedges for squeezing.`
+  },
+  {
+    id: 266,
+    title: "Prawn Koliwada",
+    author: "Shamil & Kavi Thakrar",
+    book: "Dishoom",
+    serves: "4 as a starter or snack",
+    time: "3 mins plus marinating",
+    category: "Seafood",
+    ingredients: [
+      "20g rice flour",
+      "20g chickpea (gram) flour",
+      "2½ tsp deggi mirch chilli powder",
+      "1½ tsp garam masala (page 356)",
+      "1½ tsp ground cumin",
+      "½ tsp ground turmeric",
+      "¾ tsp fine sea salt",
+      "7g ginger paste (page 353)",
+      "10g garlic paste (page 353)",
+      "2 tbsp fresh curry leaves, very finely chopped",
+      "40ml lime juice",
+      "300g raw king prawns",
+      "Vegetable oil for deep-frying",
+      "To serve:",
+      "Lime wedges",
+      "Tamarind chutney (page 377) and/or coriander-mint chutney (page 378)"
+    ],
+    method: `1. Mix the flours, spices and salt together in a bowl.
+2. Add the ginger and garlic pastes, chopped curry leaves and lime juice and mix to a smooth, thick paste.
+3. Pat the prawns as dry as you can using kitchen paper. Spread the spice paste over them and massage well to ensure they are evenly coated. Cover and leave to marinate in the fridge for 6-24 hours.
+4. Heat the oil in a deep-fryer or other suitable deep, heavy-based pan to 180°C. Deep-fry the prawns, in batches if necessary, for 2-3 minutes, until deep golden brown and cooked through.
+5. Serve with lime wedges for squeezing and tamarind and/or coriander-mint chutney for dipping.
+
+> The prawns can be cooked in a generous amount of oil in a frying pan rather than deep-fried if you prefer, though deep-frying gives a slightly better, more evenly cooked result.`
+  },
+  {
+    id: 267,
+    title: "Rajma",
+    author: "Shamil & Kavi Thakrar",
+    book: "Dishoom",
+    serves: "2-4",
+    time: "25 mins",
+    category: "Curries",
+    ingredients: [
+      "35ml vegetable oil",
+      "5g ginger paste (page 353)",
+      "5g garlic paste (page 353)",
+      "1 black cardamom pod",
+      "1 bay leaf",
+      "1 cinnamon stick",
+      "1 tsp ground cumin",
+      "¼ tsp deggi mirch chilli powder",
+      "15g tomato purée",
+      "1g fine sea salt",
+      "100g onion-tomato masala (page 354)",
+      "400g tin kidney beans",
+      "½ tsp garam masala (page 356)",
+      "50g tomatoes, chopped",
+      "A good handful of coriander leaves, chopped",
+      "3cm fresh root ginger, cut into matchsticks",
+      "25g butter",
+      "To serve:",
+      "Red onion, finely sliced",
+      "Ginger matchsticks",
+      "Coriander leaves, roughly torn",
+      "Lime wedges"
+    ],
+    method: `1. Warm the oil in a medium saucepan over a medium heat. When hot, add the ginger and garlic pastes and sauté for 3-4 minutes, stirring almost constantly, until the garlic loses its raw smell.
+2. Add the cardamom pod, bay leaf and cinnamon stick and cook for 1 minute. Add the ground cumin, chilli powder, tomato purée and salt, and cook for 3 minutes, or until you can see the oil start to separate around the edges.
+3. Add the onion-tomato masala and bring to a simmer, stirring, then add the kidney beans, along with their liquid. Simmer for about 15 minutes, until the liquor has reduced and thickened.
+4. Add the garam masala, tomatoes, chopped coriander and ginger matchsticks and simmer for 2-3 minutes. Stir in the butter.
+5. Serve garnished with the red onion, ginger matchsticks and torn coriander, with lime wedges for squeezing on the side.
+
+> To make this recipe vegan, leave out the butter at the end. You can swirl in a little oil from the onion-tomato masala instead, if you wish.`
+  },
+  {
+    id: 268,
+    title: "Salli Boti",
+    author: "Shamil & Kavi Thakrar",
+    book: "Dishoom",
+    serves: "4-6",
+    time: "2 hrs 15 mins",
+    category: "Curries",
+    ingredients: [
+      "150ml vegetable oil",
+      "1 cinnamon stick",
+      "2 bay leaves",
+      "500g red onions, diced",
+      "1kg boneless leg of lamb, cut into 3cm pieces",
+      "50g garlic paste (page 353)",
+      "35g ginger paste (page 353)",
+      "2 tsp deggi mirch chilli powder",
+      "1 tsp ground turmeric",
+      "2 tsp fine sea salt",
+      "400g tin chopped tomatoes",
+      "40ml distilled white vinegar (pickling vinegar)",
+      "35g jaggery",
+      "1 tsp garam masala (page 356)",
+      "To serve:",
+      "Salli (page 173)",
+      "Chapatis (page 368)",
+      "Kachumber (page 121)"
+    ],
+    method: `1. Warm a large saucepan or flameproof casserole dish over a medium-high heat and add the oil. Toss in the cinnamon stick and bay leaves and sauté for 1 minute; they should sizzle.
+2. Add the red onions and cook until well caramelised, but still soft. This will take around 25 minutes, and needs to be done over a reasonably high heat, stirring very regularly, rather than "low and slow".
+3. Add the lamb pieces and stir well. Turn the heat down a little and let them cook for 5 minutes, so the meat starts to release some moisture.
+4. Stir in the garlic and ginger pastes and sauté for 4-5 minutes, being careful not to let the garlic burn (add a little water if you need to). Add the chilli powder, turmeric and salt and cook for 2 minutes.
+5. Tip in the chopped tomatoes and cook until they have completely broken down and you see the oil separate from the sauce; this should take around 15 minutes. If the pan starts to become dry before the tomatoes have completely fallen apart, add a splash of water.
+6. Top up with 150-200ml water, so that the lamb is just covered, and turn the heat down low. Put the lid on, at a slight angle so there is a gap to let some heat escape, and simmer gently for 1½ hours, or until the lamb is very tender, stirring occasionally. Top up with a little water if the lamb becomes exposed above the level of the liquid, but don't add more than you need to, as this will dilute the flavour.
+7. Once the lamb is tender, add the vinegar, jaggery and garam masala and cook gently for a final 15 minutes. Serve garnished with a big handful of salli, with the bread and kachumber on the side.`
+  },
+  {
+    id: 269,
+    title: "Tacos Gobernador (Cheesy Prawn Tacos)",
+    author: "Rosa Cienfuegos",
+    book: "Comida Mexicana",
+    serves: "Makes 10 tacos",
+    time: "35 mins",
+    category: "Seafood",
+    ingredients: [
+      "1 tablespoon unsalted butter",
+      "½ white or brown onion, finely diced",
+      "2 garlic cloves, finely chopped",
+      "1 poblano chilli or banana chilli, cut into strips",
+      "500g (1 lb 2 oz) peeled raw king prawns (shrimp), roughly diced",
+      "1 teaspoon table salt",
+      "pinch of freshly ground black pepper",
+      "1 roma (plum) tomato, finely diced",
+      "2 tablespoons chipotle in adobo sauce",
+      "1 tablespoon whole egg mayonnaise",
+      "1 tablespoon sour cream",
+      "100g (3½ oz) tasty cheese, grated",
+      "10 Tortillas de maíz (see page 228)",
+      "vegetable oil spray",
+      "To serve:",
+      "Guacamole falso (see page 212)",
+      "lime wedges"
+    ],
+    method: `1. Melt the butter in a frying pan over medium heat, add the onion and garlic and cook, stirring, for 3-4 minutes, until the onion is soft. Add the poblano chilli strips and stir for 5 minutes until soft, then add the prawns, salt and pepper.
+2. Cook, stirring, until half the liquid in the pan has evaporated. Add the tomato, reduce the heat to low and add the chipotle in adobo sauce, mayonnaise and sour cream. Stir until all the ingredients are combined and heated through, then remove from the heat.
+3. Divide the cheese and the prawn mixture among the tortillas and fold in half like a quesadilla.
+4. Heat a comal or frying pan over medium heat and spray with vegetable oil. Add the folded tortillas and cook, turning occasionally, until the cheese melts.
+5. Serve the tacos hot with guacamole falso drizzled over the top and lime wedges on the side.`
+  },
+  {
+    id: 270,
+    title: "Cacahuate y Chile de Árbol (Peanut & Chile de Árbol Salsa)",
+    author: "Rosa Cienfuegos",
+    book: "Comida Mexicana",
+    serves: "Makes 250ml",
+    time: "25 mins",
+    category: "Basics",
+    ingredients: [
+      "125ml (½ cup) olive oil",
+      "4 garlic cloves",
+      "20 dried chiles de árbol",
+      "50g (1¾ oz) unsalted raw peanuts",
+      "1 teaspoon table salt",
+      "pinch of freshly ground black pepper"
+    ],
+    method: `1. Heat 60ml (¼ cup) of the oil in a saucepan over medium heat, add the garlic and fry, stirring, until browned on both sides (not burnt). Using a slotted spoon, scoop the garlic into a molcajete or blender.
+2. Add the chillies to the oil, reduce the heat to low and cook, stirring, for 3 minutes until dark red in colour (no more than that or they'll taste bitter). Transfer the chillies to the molcajete or blender.
+3. Add the remaining oil and the peanuts to the pan and fry, stirring constantly, for 6 minutes or until lightly browned. Add the peanuts to the garlic and chillies and set the oil aside to cool to room temperature.
+4. Add 125ml (½ cup) of water to the molcajete or blender, along with the salt and pepper, and pound or blend until smooth. Transfer the salsa to a serving bowl and stir through the cooled oil until completely incorporated.
+5. Store any leftover salsa in an airtight container in the pantry for up to 6 months.`
+  },
+  {
+    id: 271,
+    title: "Tacos de Papas con Chorizo (Potato & Chorizo Tacos)",
+    author: "Rosa Cienfuegos",
+    book: "Comida Mexicana",
+    serves: "Makes 8 tacos",
+    time: "50 mins plus overnight",
+    category: "Pork",
+    ingredients: [
+      "500g (1 lb 2 oz) potato, cut into 4mm (¼ in) dice",
+      "2 tablespoons pork lard",
+      "1 large white onion, diced",
+      "pinch of sweet paprika",
+      "Chorizo:",
+      "2 dried guajillo chillies",
+      "2 bay leaves",
+      "1 teaspoon table salt",
+      "½ teaspoon ground cumin",
+      "½ teaspoon dried Mexican oregano",
+      "½ teaspoon ground cloves",
+      "1 teaspoon crushed garlic",
+      "½ teaspoon ground coriander",
+      "1 teaspoon freshly ground black pepper",
+      "pinch of ground cinnamon",
+      "1¾ tablespoons white vinegar",
+      "3 teaspoons white tequila",
+      "350g (12½ oz) minced (ground) pork",
+      "50g (1¾ oz) pork lard",
+      "To serve:",
+      "8 Tortillas de maíz (see page 228)",
+      "Guacamole falso (see page 212)"
+    ],
+    method: `1. To make chorizo, place the guajillo chillies and bay leaves in a small saucepan, cover with cold water and bring to the boil over high heat. Simmer for 5 minutes or until the chilli is soft. Strain, reserving the cooking water, and allow the chillies to cool. Discard the bay leaves.
+2. Place the chillies, salt, cumin, oregano, cloves, garlic, coriander, pepper, cinnamon, vinegar, tequila and 2½ tablespoons of the chilli cooking water in a blender and blend until smooth.
+3. Place the pork and lard in a non-reactive bowl and add the chilli mixture, mixing it through the meat with your hands until well combined. Cover and leave to marinate overnight in the fridge.
+4. The next day, place the potato in a saucepan and cover with cold water. Bring to the boil over high heat, then reduce the heat to medium and simmer for 10 minutes or until just tender. Drain.
+5. Heat a comal or heavy-based frying pan over medium heat, add the marinated pork and cook, stirring occasionally, for 15-20 minutes, until tender and crisp.
+6. Heat the pork lard in a frying pan over medium heat, add the onion and cook for about 7 minutes or until slightly browned and crisp. Add the potato, chorizo and paprika and cook, stirring occasionally, for about 5 minutes or until heated through.
+7. Pile the potato and chorizo mixture onto tortillas and serve with the guacamole falso.`
+  },
+  {
+    id: 272,
+    title: "Camarones a la Diabla (Devilled Shrimp)",
+    author: "Rosa Cienfuegos",
+    book: "Comida Mexicana",
+    serves: "4",
+    time: "40 mins",
+    category: "Seafood",
+    ingredients: [
+      "1kg (2 lb 3 oz) raw prawns (shrimp), peeled and deveined, tails left intact and shells reserved",
+      "1 white onion, cut in half, half finely sliced",
+      "8 garlic cloves, crushed, plus 2 garlic cloves extra, peeled",
+      "1 teaspoon table salt",
+      "2 dried guajillo chillies",
+      "2 dried ancho chillies",
+      "5 dried chiles de árbol",
+      "3 chipotle chillies in adobo sauce",
+      "125ml (½ cup) vegetable oil",
+      "2 large roma (plum) tomatoes, cut into large chunks",
+      "180ml (¾ cup) tomato ketchup",
+      "freshly ground black pepper",
+      "50g (1¾ oz) unsalted butter",
+      "Arroz Mexicano, to serve (see page 237)"
+    ],
+    method: `1. Place the prawn shells, the unsliced onion half, one peeled garlic clove, the salt and 250ml (1 cup) of water in a saucepan and bring to the boil. Immediately remove from the heat and strain the stock into a bowl. Discard the solids.
+2. Remove the stalks from all the chillies and devein and deseed the guajillo and ancho chillies (the spiciness of the sauce comes from the árbol and chipotle chillies).
+3. Heat 2 tablespoons of the oil in a frying pan over medium heat, add the sliced onion and remaining peeled garlic clove and sauté for about 4 minutes until soft and golden. Add the tomato, stock and all the chillies, then cover and cook for 7 minutes or until the chillies are soft. Transfer the mixture to a blender and purée until smooth, then strain the sauce into a bowl. Discard any remaining solids.
+4. Heat the remaining oil in the frying pan over medium heat. Add the puréed tomato mixture and tomato ketchup, then reduce the heat to low and cook for 5 minutes or until the sauce darkens in colour and is reduced. Season with black pepper.
+5. Meanwhile, melt the butter in a frying pan over low heat, add the crushed garlic and stir for 2 minutes until fragrant, then add the prawns and cook for 2 minutes each side or until opaque and just cooked through. Add them to the sauce and stir to combine.
+6. Serve the camarones a la diabla with arroz Mexicano.`
+  },
+  {
+    id: 273,
+    title: "Mole de Cacahuate (Peanut Mole)",
+    author: "Rosa Cienfuegos",
+    book: "Comida Mexicana",
+    serves: "4-6",
+    time: "1 hr 30 mins",
+    category: "Pork",
+    ingredients: [
+      "500g (1 lb 2 oz) boneless pork shoulder, cut into 5cm (2 in) dice",
+      "1 white onion, cut in half",
+      "5 bay leaves",
+      "2 tablespoons table salt",
+      "250g (9 oz) roma (plum) tomatoes, roughly chopped",
+      "1 garlic clove",
+      "3 tablespoons vegetable oil",
+      "300g (10½ oz) unsalted raw peanuts",
+      "5 dried chiles de árbol, stems removed",
+      "35g (⅓ cup) dried breadcrumbs",
+      "pinch of sweet paprika",
+      "To serve:",
+      "chile de árbol flakes (optional)",
+      "Arroz Mexicano (see page 237)",
+      "Tortillas de maíz (see page 228)"
+    ],
+    method: `1. Place the pork, one onion half, the bay leaves and 1 tablespoon of the salt in a saucepan. Cover with about 2 litres (2 qts) of water, then bring to the boil over medium heat. Reduce the heat to medium-low and simmer for about 45 minutes, until the pork is tender. Strain the pork and reserve the stock. Discard the onion.
+2. Place a comal or heavy-based frying pan over medium-high heat and add the tomato, remaining onion half, garlic clove and 1 tablespoon of the oil. Cook for about 7 minutes, until the tomato is slightly reduced, then transfer the mixture to a blender, along with the remaining salt, the peanuts, chillies, breadcrumbs and paprika. Blitz for 1-2 minutes, until you have a mostly smooth sauce, adding a little of the reserved pork stock, if necessary, to get the mixture moving.
+3. Heat the remaining oil in a saucepan over medium heat, add the mole sauce and stir well, then add enough of the reserved pork stock (up to 1 litre / 34 fl oz) to make a thick sauce. Add the pork and cook, stirring occasionally, for 15 minutes for the flavours to develop.
+4. Sprinkle the mole with a few chile de árbol flakes, if desired, and serve with arroz Mexicano and tortillas.`
+  },
+  {
+    id: 274,
+    title: "Mixiotes (Steamed Lamb Pockets)",
+    author: "Rosa Cienfuegos",
+    book: "Comida Mexicana",
+    serves: "6",
+    time: "2 hrs 15 mins plus overnight",
+    category: "Lamb",
+    ingredients: [
+      "10 dried guajillo chillies, stems removed and deveined",
+      "2 dried ancho chillies, stems removed",
+      "2 dried morita chillies, stems removed",
+      "3 bay leaves",
+      "5 garlic cloves",
+      "1 tablespoon table salt",
+      "1 teaspoon dried Mexican oregano",
+      "1 teaspoon dried thyme",
+      "1 teaspoon ground cumin",
+      "1 teaspoon freshly ground black pepper",
+      "1 teaspoon ground cloves",
+      "1½ tablespoons white vinegar",
+      "400g (14 oz) boneless lamb shoulder, cut into 5cm (2 in) pieces, excess fat trimmed",
+      "400g (14 oz) boneless lamb leg, cut into 5cm (2 in) pieces, excess fat trimmed",
+      "Pickled red onion:",
+      "2 red onions, finely sliced",
+      "1 tablespoon white vinegar",
+      "1 teaspoon dried Mexican oregano",
+      "pinch of table salt",
+      "To serve:",
+      "12 Tortillas de maíz (see page 228)",
+      "lime wedges",
+      "Salsa de habanero con zanahoria (see page 220)"
+    ],
+    method: `1. To make the pickled red onion, bring 300ml (10 fl oz) of water to the boil in a small saucepan, add the onion and boil for 3 minutes. Drain and transfer the onion to a small bowl. Add the vinegar, oregano and salt. Stir well, then cover and place in the fridge for 3-4 hours to pickle.
+2. Heat the chillies, bay leaves and 500ml (2 cups) of water in a saucepan over medium heat, bring to the boil, then reduce the heat to a simmer and cook for 5 minutes. Remove the chillies using a slotted spoon and set aside to cool. Transfer the chillies to a blender with the garlic, salt, oregano, thyme, cumin, pepper, cloves, vinegar and 200ml (7 fl oz) of the chilli cooking water and blitz to a thick sauce.
+3. Place the lamb in a large non-reactive bowl and add the sauce. Toss to combine, then set aside in the fridge to marinate overnight.
+4. The next day, evenly divide the lamb and sauce among six 20cm (8 in) squares of foil. Bring the edges together to make small foil packets and secure with kitchen string. Transfer the foil packets to a large steamer set over a saucepan of simmering water. Cover the steamer with a large tea towel, seal with the lid and steam for 2 hours or until the lamb is tender. (Check the water level in the pan every 30 minutes and top it up when necessary.)
+5. Serve the mixiotes with the tortillas, pickled red onion, lime wedges and salsa de habanero con zanahoria. Enjoy.`
+  },
+  {
+    id: 275,
+    title: "Alitas de Pollo (Chicken Wings)",
+    author: "Rosa Cienfuegos",
+    book: "Comida Mexicana",
+    serves: "4",
+    time: "45 mins",
+    category: "Poultry",
+    ingredients: [
+      "20 chicken wings, drumettes and wingettes separated",
+      "35g (¼ cup) plain (all-purpose) flour",
+      "1 teaspoon sweet paprika",
+      "2 teaspoons table salt",
+      "500ml (2 cups) vegetable oil",
+      "1 x quantity Salsa de habanero con mango (see page 221)",
+      "2 teaspoons brown sugar",
+      "1½ tablespoons white vinegar",
+      "2 teaspoons olive oil"
+    ],
+    method: `1. Clean the chicken wings, then place them in a bowl and add the flour, paprika and half the salt. Cover the bowl with plastic wrap, then shake the bowl to fully coat the chicken in the flour mixture.
+2. Heat the vegetable oil in a very large heavy-based saucepan over high heat to 200°C (400°F) on a kitchen thermometer. Add half the wings to the hot oil and cook, turning occasionally, for 15 minutes or until they are dark golden and very crisp. Using a slotted spoon, remove the wings and transfer to a tray lined with paper towel to drain. Bring the oil back to temperature and cook the remaining chicken wings.
+3. Meanwhile, whisk the salsa, sugar, remaining salt, the vinegar and 1½ tablespoons of water in a bowl until combined. Heat the olive oil in a saucepan over medium heat, add the sauce and cook, stirring, for 2-3 minutes, until heated through.
+4. Place the wings in a large serving bowl, add most of the sauce and toss to combine. Serve immediately, with the remaining sauce drizzled over the top.`
+  },
+  {
+    id: 276,
+    title: "Silvana's Tortelli di Patate with Meat Sauce",
+    author: "Vicky Bennison",
+    book: "Pasta Grannies",
+    serves: "6-8",
+    time: "4 hrs",
+    category: "Pasta",
+    ingredients: [
+      "Pasta:",
+      "400g (14 oz / 3⅓ cups) 00 flour or plain (all-purpose) flour",
+      "4 eggs",
+      "1 tablespoon extra-virgin olive oil",
+      "Tomato sauce:",
+      "2 garlic cloves, minced",
+      "a handful of parsley, finely chopped",
+      "50ml (1¾ fl oz / 3 tablespoons) extra-virgin olive oil",
+      "250g (9 oz) passata (sieved tomatoes)",
+      "salt and pepper",
+      "Filling:",
+      "1.5kg (3 lb 5 oz) old floury potatoes (unpeeled weight)",
+      "3 tablespoons grated Parmigiano Reggiano",
+      "freshly grated nutmeg (to taste)",
+      "Meat sauce:",
+      "2 red onions, finely diced",
+      "1 small carrot, finely diced",
+      "1 celery stick, finely diced",
+      "1 tablespoon chopped parsley",
+      "3-4 tablespoons extra-virgin olive oil",
+      "500g (1 lb 2 oz) ground beef steak or ground wild boar",
+      "400g (14 oz) passata (sieved tomatoes)",
+      "salt and pepper"
+    ],
+    method: `1. Make the dough as described on page 18, adding the oil along with the eggs. Silvana says the absolute minimum her dough should rest is 30 minutes - it's okay to leave it for longer.
+2. For the tomato sauce, mix the garlic and parsley together. Heat the oil in a small saucepan and fry the mixture with a generous pinch of salt until the garlic is tender but not golden. Add the passata with a tablespoon of water and continue cooking for another 15 minutes or so, until the sauce has darkened and reduced. Adjust the seasoning with a little pepper and more salt if necessary. Set aside.
+3. Boil the potatoes until tender, then remove their skins while they are still warm. Use a potato ricer to mash them. Stir through the cheese and half the tomato sauce (about 250ml / 8 fl oz / 1 cup), turning the mash pink. Taste it; you should add enough tomato sauce to give it a savoury flavour. Add some more if necessary; any excess sauce can be added to the meat sauce. Season with some freshly grated nutmeg.
+4. For the meat sauce, mix the diced vegetables with the chopped parsley. Silvana starts frying this mixture for a good 10 minutes without any oil. Only when she thinks she has driven off most of the moisture in the vegetables does she add the olive oil and continues to sauté the mixture for another 15 minutes until everything is very soft. She was taught to make the soffritto this way by her mother. You may want to cook the soffritto in the usual way by softening it in oil in a casserole. Either way, the key is to cook it slowly for at least 25 minutes.
+5. Crumble the minced meat into the vegetable pan, give it a good stir and continue to fry for another 20 minutes or so, until the meat is properly browned and looks like a fine rubble. Add the passata, season generously with salt and pepper, and pour in 500ml (17 fl oz / 2 cups) water. Let this simmer away gently, covered, for 2 hours.
+6. Meanwhile, make the tortelli. With this amount of dough, you may want to roll it out in two batches. Cut the pasta sheet into strips 12cm (5 in) wide. Roll the mashed potato into walnut-sized balls and place them 5cm (2 in) apart along the middle of the pasta strips. Fold the pasta over the line of potato balls and press down around each ball to remove the air from within each tortello. Take a fluted pastry cutter and cut equidistant between each mound. Trim the cut edges with the cutter and then press down around the filling with the prongs of a fork to ensure the edges are properly sealed. Place on a tray or on the table. They can be left like this for a couple of hours before cooking.
+7. Once the ragù has cooked and reduced to a thick sauce, bring a large saucepan of salted water to the boil. Warm a serving platter. For this amount of tortelli you will need to cook them in batches. Add some of the tortelli and once the water has returned to the boil, cook for 4 minutes. Scoop them out with a slotted spoon or sieve and lay them on the warmed platter. Dress with some ragù and repeat until they are all cooked and anointed with meat sauce. Locals do not add cheese to the finished dish.`
+  },
+  {
+    id: 277,
+    title: "Angelina's Papparelle with Liver",
+    author: "Vicky Bennison",
+    book: "Pasta Grannies",
+    serves: "4-6",
+    time: "1 hr 15 mins",
+    category: "Pasta",
+    ingredients: [
+      "Pasta:",
+      "400g (14 oz / 3⅓ cups) 00 flour or plain (all-purpose) flour",
+      "4 eggs",
+      "Broth:",
+      "Meat stock (page 203)",
+      "6 juniper berries",
+      "3 cloves",
+      "Fegadini:",
+      "knob of butter",
+      "1 tablespoon extra-virgin olive oil",
+      "1 small white onion, finely diced",
+      "250g (9 oz) cleaned, chopped chicken livers (in a more rustic version you can also add chicken hearts)",
+      "½ glass of dry white wine (Luca says, the other half is for the chef)",
+      "1 bay leaf",
+      "½ tablespoon finely chopped rosemary",
+      "salt"
+    ],
+    method: `1. If you have an earthenware pot, add the butter, oil, onion and livers and place the pot over a very gentle heat. Once it is bubbling, add the wine and herbs. Season with salt and let it cook for 20 minutes.
+2. If you are using an ordinary sauté pan, then heat it over a gentle heat, melt the butter in the oil and add the onion. Let the onion turn pale gold without burning, then add the chicken livers. Turn up the heat a little and stir them about with a wooden spoon, giving them a bit of colour. Next pour in the wine and stir through the herbs. Cook for 20 minutes and check for seasoning. If you have added hearts, your stew is going to need to cook for another 15 minutes or so. Add a little of the broth to stop the meat from drying out.
+3. Make the pasta as described on page 18. Roll up your sfoglia like a carpet then cut across the pasta as thinly as possible to create very fine ribbons. Shake out the ribbons and keep them spread out while you cut the rest.
+4. Bring the stock to a simmer in a large saucepan and shovel in the papparelle. They will cook in about 1 minute. Angelina says, "How much broth you serve is up to you. Some people plate up the pasta without any broth at all. I like a little bit."
+5. Strain the livers of any juice and remove the bay leaf. Plate up the pasta and add the livers to the middle of each serving.
+
+> Another tip from Angelina is that if you have any leftover livers, keep the juices, add a little more butter and blitz them to make a pâté, which is excellent on crostini for Sunday supper.`
+  },
+  {
+    id: 278,
+    title: "Cornelia's Pansotti with Walnut Pesto",
+    author: "Vicky Bennison",
+    book: "Pasta Grannies",
+    serves: "4-5",
+    time: "1 hr 35 mins",
+    category: "Pasta",
+    ingredients: [
+      "Pasta:",
+      "400g (14 oz / 3⅓ cups) 00 flour or plain (all-purpose) flour",
+      "1 egg",
+      "1 tablespoon extra-virgin olive oil",
+      "about 150ml (5 fl oz / ⅔ cup) water",
+      "Filling:",
+      "500g (1 lb 2 oz) mixture of green leaves (see introduction)",
+      "3 teaspoons fresh marjoram leaves",
+      "1 garlic clove, crushed in a little salt",
+      "1 tablespoon extra-virgin olive oil",
+      "1 egg, beaten",
+      "50g (2 oz) Parmigiano Reggiano",
+      "Walnut pesto:",
+      "50g (2 oz) breadcrumbs (see page 47)",
+      "about 300ml (10 fl oz / 1¼ cups) milk",
+      "100g (3½ oz) walnuts",
+      "50g (2 oz) Italian pine nuts (see page 37)",
+      "1 garlic clove",
+      "3 teaspoons fresh marjoram leaves",
+      "salt and pepper"
+    ],
+    method: `1. Make the pasta dough as described on page 18. Leave it to rest while you make the filling.
+2. Blanch the greens in a large pan of boiling salted water for a few minutes. Drain and squeeze the mixture dry as soon as it is cool enough to handle. You should end up with around 270g (10 oz) of cooked leaves. Chop them up until it is nice and mushy. Mix with the remaining filling ingredients.
+3. To make the pansotti, roll out the dough to about 1mm thickness (i.e. quite thin). Cut a grid of 5-6cm (2 in) squares. Add a teaspoon of filling to each square and fold the square over to form a triangle. Press the edges firmly together, then bring the two small-angled corners together and press the points. They should point away from the other corner, and the pansotti should look bulbous; *pansotti* means belly in Ligurian.
+4. To make the walnut pesto, first soak the breadcrumbs in the milk and squeeze out any excess - keep the milk so you can add it when you blitz the ingredients. Preheat your oven to 140°C (275°F / gas ½) and spread the walnuts and pine nuts across two separate baking trays. Toast them for 10 minutes until golden and fragrant. One set of nuts may cook quicker than the other so keep an eye on them. Leave to cool, then blitz in a high-speed blender with the rest of the pesto ingredients, adding enough milk for it to reach a luscious and quite thick consistency, similar to a slightly runny hummus. Season to taste, adding more marjoram if you like.
+5. Bring a large pan of salted water to the boil and simmer the pansotti for 5 minutes. Drain them and then dress with the pesto. Any leftover pesto can be used as a dip or spooned over vegetables or poached chicken.`
+  },
+  {
+    id: 279,
+    title: "Rosa's 'Straw and Hay' Tagliatelle with Peas",
+    author: "Vicky Bennison",
+    book: "Pasta Grannies",
+    serves: "6",
+    time: "1 hr 20 mins",
+    category: "Pasta",
+    ingredients: [
+      "'straw' pasta:",
+      "300g (10½ oz / 2½ cups) 00 flour or plain (all-purpose) flour",
+      "3 eggs",
+      "'hay' pasta:",
+      "300g (10½ oz / 2½ cups) 00 flour or plain (all-purpose) flour",
+      "2 eggs",
+      "100g (3½ oz) fresh spinach",
+      "Pea dressing:",
+      "3 tablespoons extra-virgin olive oil",
+      "50g (2 oz) unsmoked pancetta, cubed",
+      "1 large onion, finely sliced",
+      "200g (7 oz) small peas (fresh or frozen, depending on the time of year)",
+      "250g (9 oz) passata (sieved tomatoes)",
+      "salt",
+      "To serve:",
+      "grated Parmigiano Reggiano"
+    ],
+    method: `1. Make the two types of pasta dough (straw and hay) as described on page 18. For the spinach dough, do as Rosa says and blend the spinach and eggs together before adding the mixture to the flour, then continue making the dough as normal. Roll out both pastas into large discs, about 2mm thick. While the sfoglias rest, make the pea dressing.
+2. Heat the olive oil in a sauté pan and add the pancetta. Fry it to release some of its fat, then add the sliced onion. Continue to sauté until the onion is soft, which will take around 7 minutes. Stir in the peas and passata and season with some salt. Add a cup of water and then let the sauce reduce until it is thick; so that when you push your spoon through it, you can see the base of the pan briefly.
+3. Roll up the yellow sfoglia as you would a carpet and cut across the pasta to create folded over ribbons about 7mm (¾ in) wide. Shake them out, then repeat with the spinach sfoglia. Rosa rolls up the sfoglias together, as shown in the photo, but it's much easier to do them separately. Mix up the ribbons by tossing them together with your fingers.
+4. Bring a large pan of salted water to the boil. Drop in the pasta ribbons and once the pan has returned to the boil, cook them for 2-3 minutes - test them for doneness.
+5. Keeping back a couple of ladles of pasta water just in case you want to loosen the pea mixture, drain the tagliatelle, and toss it with the peas - you want the two colours to be evenly coated with the sauce. Serve with plenty of grated Parmigiano Reggiano.`
+  },
+  {
+    id: 280,
+    title: "Rhubarb Crumble Cake",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "8-12",
+    time: "50 mins",
+    category: "Cakes",
+    ingredients: [
+      "220g (8 oz / 1 cup) sugar, plus 1 tablespoon extra",
+      "250g (9 oz / 1 cup) plain yoghurt",
+      "¼ teaspoon natural vanilla extract",
+      "3 eggs",
+      "300g (10½ oz / 2 cups) plain (all-purpose) flour",
+      "1 teaspoon baking powder",
+      "2 tablespoons sour cream",
+      "10 rhubarb stalks (approx. 550g / 1 lb 3 oz), trimmed and cut into 2cm (¾ in) cubes",
+      "1 teaspoon ground cinnamon",
+      "ice cream or whipped cream, to serve",
+      "Crumble:",
+      "125g (4½ oz) plain (all-purpose) flour",
+      "50g (1¾ oz) soft brown sugar",
+      "50g (1¾ oz) unsalted butter, at room temperature",
+      "½ teaspoon ground cinnamon"
+    ],
+    method: `1. Preheat the oven to 230°C (445°F) and line a 28 x 22cm (11 x 8¾ in) cake tin with baking paper.
+2. In a bowl, whisk the 220g (8 oz / 1 cup) sugar, yoghurt, vanilla extract and two of the eggs to a light, fluffy mass. Sift over the flour and baking powder and fold through to form a batter. Set aside.
+3. **To make the crumble:** Mix all the crumble ingredients in a separate bowl until the mixture resembles rough breadcrumbs.
+4. In another bowl, mix the remaining egg and the extra 1 tablespoon of sugar together with the sour cream.
+5. Pour the cake batter into the prepared tin and sprinkle over the rhubarb pieces and cinnamon, then spread over the beaten egg mixture and top with the crumble. Bake for 30 minutes, or until the tip of a skewer inserted into the centre of the cake comes out clean.
+6. Remove from the oven and leave to cool slightly, then remove from the tin and transfer to a wire rack to cool further. Serve warm or at room temperature, with ice cream or whipped cream, if you like.
+
+> The rhubarb here can be replaced with other fruit. Apples or pears are perfect, for example, but plums or other stone fruit would also work.`
+  },
+  {
+    id: 281,
+    title: "Pork & Cranberry Stuffed Cabbage Rolls",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "6",
+    time: "1 hr 30 mins",
+    category: "Pork",
+    ingredients: [
+      "1 savoy cabbage, approx. 1kg (2 lb 3 oz)",
+      "1 tablespoon cornflour (cornstarch)",
+      "50ml (1¾ fl oz) cold water",
+      "500ml (17 fl oz / 2 cups) chicken stock",
+      "Filling:",
+      "200g (7 oz / 1 cup) short-grain rice",
+      "400g (14 oz) minced (ground) pork",
+      "1 large egg",
+      "1 leek (approx. 120g / 4¼ oz), white part only, finely diced",
+      "1 celery stalk (approx. 60g / 2 oz), grated",
+      "1 teaspoon fennel seeds, crushed",
+      "2 tablespoons dried cranberries, roughly chopped",
+      "1½ teaspoons salt",
+      "½ teaspoon freshly ground black pepper"
+    ],
+    method: `1. **To make the filling:** Boil the rice for half the suggested cooking time. Drain and leave to cool, then add to a large bowl together with all the remaining filling ingredients and mix together well. Set aside.
+2. Preheat the oven to 180°C (350°F).
+3. Using a sharp knife, cut a triangle out of the base of the cabbage to remove some of the stem and central core.
+4. Bring a large stockpot or a very large saucepan filled with salted water to the boil. Reduce the heat to a simmer, carefully lower the whole cabbage into the water and cook for 8 minutes, or until the cabbage has softened enough that the tip of a sharp knife enters it easily. Drain the cabbage and leave until cool enough to handle, then carefully peel away 12 large leaves. Trim the thick central vein from each leaf so it rolls easily.
+5. Place a couple of tablespoons of the filling onto each cabbage leaf, fold in the sides and roll up tightly into parcels.
+6. Arrange the cabbage rolls snugly seam-side down in a baking dish. Pour over the chicken stock. Cover with foil and bake for 45 minutes.
+7. Mix the cornflour with the cold water until smooth. Pour the cooking juices from the baking dish into a small saucepan, bring to a simmer, whisk in the cornflour mixture and cook for 2 minutes until thickened into a glossy sauce. Pour back over the cabbage rolls and serve warm.`
+  },
+  {
+    id: 282,
+    title: "Kama Cream, Pears in Mead, Linseed Brittle",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "4",
+    time: "2 hrs 45 mins",
+    category: "Dessert",
+    ingredients: [
+      "4 firm pears, peeled, halved and cored",
+      "300ml (10 fl oz) mead (see page 197)",
+      "100g (3½ oz) honey",
+      "1 cinnamon quill",
+      "2 strips lemon peel",
+      "Kama cream:",
+      "250ml (8½ fl oz / 1 cup) thickened (whipping) cream",
+      "200g (7 oz) curd cheese or quark",
+      "50g (1¾ oz / ½ cup) kama flour (or substitute toasted rye/barley flour)",
+      "40g (1½ oz) icing (confectioners') sugar",
+      "1 teaspoon vanilla extract",
+      "Linseed brittle:",
+      "100g (3½ oz) sugar",
+      "50g (1¾ oz) linseeds (flaxseeds)",
+      "pinch of sea salt"
+    ],
+    method: `1. **For the pears:** Place the mead, honey, cinnamon quill, lemon peel and 200ml water in a saucepan over medium heat. Bring to a gentle simmer, add the pears, cover and poach gently for 20-25 minutes until tender. Remove from heat and allow the pears to cool in the syrup.
+2. **For the linseed brittle:** Line a baking tray with baking paper. Melt the sugar in a small heavy saucepan over medium heat until it turns a deep amber caramel. Stir in the linseeds and salt, then quickly pour onto the prepared tray and spread thin. Allow to cool completely and harden, then break into shards.
+3. **For the kama cream:** Whip the cream with the icing sugar and vanilla until soft peaks form. Whisk the curd cheese in a separate bowl until smooth, then fold into the cream along with the kama flour until well combined and light.
+4. **To serve:** Spoon the kama cream into bowls, place the mead-poached pears alongside, drizzle with a little reduced poaching syrup and top with shards of linseed brittle.`
+  },
+  {
+    id: 283,
+    title: "Blueberry & Sweet Curd Cheesecake",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "12",
+    time: "1 hr 30 mins",
+    category: "Cakes",
+    ingredients: [
+      "500g (1 lb 2 oz) curd cheese (or farmer's cheese / dry curd cottage cheese)",
+      "4 large eggs, separated",
+      "100g (3½ oz) sour cream",
+      "finely grated zest of 1 lemon",
+      "2 tablespoons cornflour (cornstarch)",
+      "150g (5½ oz) caster (superfine) sugar",
+      "200g (7 oz) fresh or frozen blueberries",
+      "Pastry crumble:",
+      "250g (9 oz) plain (all-purpose) flour",
+      "125g (4½ oz) cold unsalted butter, diced",
+      "80g (2¾ oz) sugar",
+      "1 egg yolk",
+      "pinch of salt"
+    ],
+    method: `1. Preheat the oven to 180°C (350°F). Line a 28 x 22cm (11 x 8¾ in) baking tin or a 25cm (10 in) round flan/tart tin with baking paper.
+2. **For the pastry crumble:** Put the flour, cold diced butter, sugar, egg yolk and salt in a bowl. Rub together with your fingertips until the mixture resembles coarse, uneven breadcrumbs.
+3. **For the filling:** Mix the curd cheese together with the egg yolks, sour cream and lemon zest in a bowl. In a separate bowl, mix the cornflour together with the sugar, then add them to the cheese mixture and stir until smooth.
+4. Whisk the egg whites in a clean bowl until firm peaks form, then gently fold them through the curd filling.
+5. Take two-thirds of the pastry crumble mixture and press it evenly into the base of your prepared tin. Pour over the cheese filling, scatter over the blueberries, and top evenly with the remaining pastry crumble.
+6. Bake in the oven for 1 hour, or until a cake tester inserted into the centre of the cake comes out clean.
+7. Remove from the oven and leave to cool to room temperature in the tin. Cut into squares and enjoy as a snack either on its own or with a cup of coffee.`
+  },
+  {
+    id: 284,
+    title: "Layered Rye Bread, Fresh Cheese & Berries",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "6",
+    time: "40 mins plus resting",
+    category: "Dessert",
+    ingredients: [
+      "approx. 200g (7 oz) dark rye bread, torn into chunks",
+      "1 teaspoon ground cinnamon",
+      "1 teaspoon ground cardamom",
+      "80g (2¾ oz / ⅓ cup) caster (superfine) sugar",
+      "350ml (12 fl oz) thickened (whipping) cream",
+      "250g (9 oz) mascarpone (or Latvian fresh curd cheese)",
+      "¼ teaspoon natural vanilla extract",
+      "250g (9 oz) frozen cranberries or other tart berries (such as currants or raspberries), defrosted and rinsed",
+      "icing (confectioners') sugar, to serve"
+    ],
+    method: `1. Add the bread to a food processor and blitz to rough crumbs. Transfer to a non-stick frying pan set over a medium-low heat together with the spices and 2 tablespoons of the sugar and toast for about 10 minutes, stirring every now and then, until the breadcrumbs are evenly brown and nutty. Remove the pan from the heat and leave to cool completely.
+2. Whip the cream in a bowl until firm peaks form, then whisk in another 2 tablespoons of the sugar briefly before folding through the mascarpone and vanilla. Set aside.
+3. Heat 200g (7 oz) of the berries over a low heat with the remaining sugar until the sugar is just melted. Remove from the heat and leave to cool.
+4. Layer the dessert in a large serving bowl or individual bowls or glasses as you would a tiramisu, starting with about a third of the breadcrumb mixture, then half of the cream mixture, then half the cranberries. Repeat these layers in the same order and quantities before, finally, topping with a layer of the remaining breadcrumbs.
+5. Transfer to the refrigerator and leave to chill and set for 4 hours.
+6. Serve garnished with the remaining cranberries and dusted with icing sugar.`
+  },
+  {
+    id: 285,
+    title: "Baltic Layered Honey Cake",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "18",
+    time: "1 hr 30 mins plus overnight",
+    category: "Cakes",
+    ingredients: [
+      "50g (1¾ oz) sugar",
+      "200g (7 oz) honey",
+      "115g (4 oz) unsalted butter",
+      "3 large eggs, whisked",
+      "1 teaspoon bicarbonate of soda (baking soda)",
+      "1 teaspoon ground allspice",
+      "1 teaspoon ground cinnamon",
+      "approx. 610g (1 lb 6 oz) plain (all-purpose) flour, plus extra for dusting",
+      "Icing (Frosting):",
+      "250ml (8½ fl oz / 1 cup) thickened (whipping) cream",
+      "750g (1 lb 11 oz / 3 cups) thick sour cream",
+      "220g (8 oz) icing (confectioners') sugar"
+    ],
+    method: `1. Add the sugar, honey and butter to a medium saucepan and melt over a medium-low heat, whisking occasionally, for 5-7 minutes, until the sugar has dissolved fully. Remove from the heat and leave until it has cooled to under 80°C (175°F) when measured with a sugar thermometer.
+2. Whisking vigorously, add the beaten egg in a slow, steady stream until incorporated. Whisk in the bicarbonate of soda and spices until no lumps remain, then use a spatula to fold in the flour 100g (3½ oz / ¾ cup) at a time until the dough is no longer sticky and has the consistency of clay.
+3. Preheat the oven to 180°C (350°F).
+4. Cut the dough into eight equal-sized pieces. Take one piece and roll it out on a well-floured surface into a 22.5cm (9 in) circle about 2.5mm (⅛ inch) thick, sprinkling the top with a little flour as you go to keep the dough from sticking to your rolling pin. Place a 22.5cm (9 in) circular plate or the base from a springform tin over your rolled dough and cut around it, reserving the scraps for later, then transfer the dough to a large sheet of baking paper and prick all over with a fork. Repeat with a second piece of dough, then bake the two circles for 4-5 minutes, or until golden. Transfer to a wire rack and leave to cool. Repeat with the remaining layers.
+5. Finally, arrange the scraps on a sheet of baking paper and bake until golden brown, about 5 minutes. Leave to cool and firm, then pulse in a food processor to fine crumbs. Set aside.
+6. **For the icing:** Beat the thickened cream in a bowl with an electric mixer for 1-2 minutes on high speed, or until fluffy and stiff peaks form. Whisk the sour cream and icing sugar in a separate bowl, then fold in the whipped cream. Refrigerate for at least 30 minutes, or until ready to use.
+7. To assemble, spread about 100ml (3½ fl oz) icing over one cake layer, then place a second layer on top. Repeat with the remaining layers, pressing them down gently as you go, until they have all been evenly sandwiched together with the icing. Spread the remaining icing over the top layer, then dust the top and sides with the crumbs, reserving 20g (¾ oz / ½ cup) for serving. Cover with plastic wrap and chill overnight.
+8. When ready to eat, sprinkle the remaining crumbs over the cake and give the bottom of the cake a wipe to tidy it up. Serve with coffee or tea. It will keep for up to 4 days in the refrigerator.`
+  },
+  {
+    id: 286,
+    title: "Potato Whistles with Chanterelles",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "6",
+    time: "1 hr 30 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "1kg (2 lb 3 oz) floury potatoes, peeled",
+      "2 eggs, beaten",
+      "150g (5½ oz / 1 cup) plain (all-purpose) flour, plus extra for dusting",
+      "50g (1¾ oz / ¼ cup) potato starch",
+      "1 teaspoon salt",
+      "2 tablespoons butter, melted",
+      "Chanterelle sauce:",
+      "300g (10½ oz) fresh chanterelles (or other wild mushrooms), cleaned and trimmed",
+      "50g (1¾ oz) butter",
+      "1 small onion, finely chopped",
+      "150ml (5 fl oz) sour cream",
+      "100ml (3½ fl oz) vegetable or chicken stock",
+      "salt and freshly cracked black pepper",
+      "fresh dill, chopped, to serve"
+    ],
+    method: `1. Boil the potatoes in salted water until tender, then drain and allow to steam dry. Mash thoroughly through a ricer while still hot, then spread out on a tray to cool.
+2. Preheat the oven to 200°C (400°F) and line two large baking trays with baking paper.
+3. Mix the cooled mashed potato with the eggs, plain flour, potato starch and salt until a soft dough forms. Do not over-knead.
+4. On a lightly floured surface, roll the dough into long ropes about 2cm (¾ in) thick. Cut diagonally into diamond-shaped pillows (whistles) about 3-4cm (1¼-1½ in) long.
+5. Place the whistles onto the prepared trays, brush lightly with melted butter, and bake for 20-25 minutes until golden and puffed.
+6. **For the sauce:** Melt the butter in a large frying pan over medium heat. Add the onion and cook until translucent. Add the chanterelles and sauté for 6-8 minutes until any liquid released evaporates and the mushrooms are golden. Pour in the stock and sour cream, bring to a gentle simmer, and season with salt and pepper.
+7. Toss the hot baked potato whistles into the chanterelle sauce to coat, scatter with plenty of fresh dill, and serve immediately.`
+  },
+  {
+    id: 287,
+    title: "Potato Pudding",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "6",
+    time: "1 hr 55 mins",
+    category: "Pork",
+    ingredients: [
+      "140g (5 oz) smoked bacon, diced",
+      "1 large onion, finely chopped",
+      "1.5kg (3 lb 5 oz) starchy potatoes, peeled",
+      "250ml (8½ fl oz / 1 cup) whole milk",
+      "3 large eggs, beaten",
+      "1 teaspoon salt",
+      "½ teaspoon freshly ground black pepper",
+      "1 tablespoon butter, for greasing",
+      "sour cream, to serve",
+      "extra crispy bacon or chopped dill, to serve"
+    ],
+    method: `1. Preheat the oven to 190°C (375°F). Grease a heavy baking dish (approx. 20 x 30cm / 8 x 12 in) with butter.
+2. In a frying pan over medium heat, fry the diced bacon until crisp. Add the chopped onion and cook in the bacon fat until soft and translucent. Remove from heat.
+3. Finely grate the potatoes using the finest star teeth of a box grater (or a specialized potato grating machine) into a large bowl.
+4. Heat the milk in a small saucepan until just boiling, then immediately pour the scalded hot milk over the grated potatoes (this stops the potatoes from oxidising and turning dark).
+5. Stir in the bacon and onion mixture (along with the rendered fat), beaten eggs, salt and black pepper. Mix thoroughly until evenly combined.
+6. Pour the potato mixture into the prepared baking dish.
+7. Bake uncovered for 1¼ to 1½ hours, until the top is deeply golden brown and crisp, and the pudding is set throughout.
+8. Slice into squares and serve hot with generous dollops of sour cream.`
+  },
+  {
+    id: 288,
+    title: "Spiced Honey Cake with Brown Butter Icing",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "18",
+    time: "1 hr 25 mins",
+    category: "Cakes",
+    ingredients: [
+      "400g (14 oz) honey",
+      "4 large eggs, separated",
+      "100g (3½ oz) sugar",
+      "100g (3½ oz) unsalted butter, melted and cooled",
+      "250g (8½ oz / 1 cup) light sour cream (about 12% fat solids)",
+      "1 teaspoon bicarbonate of soda (baking soda)",
+      "2 teaspoons mixed spice",
+      "500g (1 lb 2 oz / 3⅓ cups) plain (all-purpose) flour, sifted",
+      "Brown butter icing (frosting):",
+      "200g (7 oz) unsalted butter",
+      "225g (8 oz) icing (confectioners') sugar",
+      "250ml (8½ fl oz / 1 cup) thickened (whipping) cream"
+    ],
+    method: `1. Add the honey to a saucepan set over a low heat, bring to a simmer and cook for 5 minutes until it foams up, darkens and caramelises. Remove from the heat and leave to cool.
+2. Preheat the oven to 180°C (350°F). Line a 40 x 14cm (16 x 6¼ in) loaf/bar tin with baking paper.
+3. Whisk the egg yolks, sugar and cooled melted butter together in a bowl until pale and fluffy. Whisk in the sour cream, bicarbonate of soda, mixed spice and honey, then fold in the sifted flour to form a batter.
+4. Whisk the egg whites in a separate bowl until stiff peaks form. Fold the egg whites into the cake batter, then pour it into the prepared tin. Bake for 1 hour, or until a cake tester inserted into the centre of the cake comes out clean.
+5. **Meanwhile, make the icing:** Melt the butter in a saucepan over a medium-low heat for 3-4 minutes until it foams, develops some brown flecks and smells nutty. Pour it into a mixing bowl and leave to cool in the refrigerator for about 30 minutes.
+6. Once cool, beat the butter until creamy, pale and fluffed up. Beat the icing sugar into the butter until combined. In a separate bowl, whisk the cream until stiff peaks form, then fold the whipped cream through the butter mixture until it has been incorporated and you have a light, fluffy frosting.
+7. Remove the cake from the oven and turn it out on to a wire rack to cool completely.
+8. Using a bread knife, cut the cake in half horizontally. Spread half the icing over the cut side of the bottom half, then sandwich the cake back together. Spread the remaining icing over the top of the cake and cut it into 18 evenly-sized squares. Serve.
+
+> The decadent cake batter here can also be used to make individual honey cakes or cupcakes, which suit the cake's richness. To do so, divide it evenly between the holes of a regular muffin tin and bake as above; once a cake tester or skewer inserted into the centre comes out clean, they are ready.`
+  },
+  {
+    id: 289,
+    title: "Fish in Beetroot Sauce, Parsnip Purée, Brown Butter & Spruce",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "4",
+    time: "40 mins",
+    category: "Seafood",
+    ingredients: [
+      "100ml (3½ fl oz) white wine",
+      "500ml (17 fl oz / 2 cups) water",
+      "200g (7 oz) beetroot (beet), grated",
+      "1 small onion, sliced",
+      "1 small carrot, finely sliced",
+      "4 parsley stalks",
+      "4 x 150g (5½ oz) white fish fillets (such as cod, sea bass or sea bream)",
+      "20g (¾ oz) butter",
+      "1 tablespoon plain (all-purpose) flour",
+      "50g (1¾ oz) sour cream",
+      "dill sprigs, to serve",
+      "Purée:",
+      "300g (10½ oz) parsnips, finely sliced",
+      "250g (9 oz) potatoes, finely sliced",
+      "2 garlic cloves, finely sliced",
+      "30g (1 oz) unsalted butter",
+      "125ml (4 fl oz / ½ cup) pouring (single/light) cream",
+      "125ml (4 fl oz / ½ cup) full-cream (whole) milk",
+      "Spruce butter:",
+      "30g (1 oz) unsalted butter",
+      "2 tablespoons pickled spruce tips (see note) or capers, rinsed and patted dry"
+    ],
+    method: `1. **To make the purée:** Add the parsnips, potatoes, garlic and butter to a saucepan, pour over the cream and milk and bring to a simmer. Reduce the heat, cover with a lid and simmer for 10-15 minutes, or until the parsnips are very soft, stirring occasionally to ensure they don't stick to the bottom. Season with salt, transfer to a blender or food processor and purée very briefly until smooth. Set aside.
+2. Preheat the oven to 180°C (350°F).
+3. Add the white wine, water, beetroot, onion, carrot and parsley stalks to a saucepan, bring to a simmer and cook for 10 minutes, or until the beetroot and carrots are tender. Strain and set aside, reserving the liquid.
+4. Arrange the fish fillets in a small ovenproof saucepan or dish, ensuring that they are not overlapping. Pour over the broth, cover first with foil and then with a lid and cook in the oven for 10 minutes.
+5. Meanwhile, melt the butter in a separate saucepan over a medium heat. Add the flour and stir together with a wooden spoon to form a smooth paste (roux). Cook for 1 minute, stirring, then remove from the heat.
+6. Take the covered saucepan from the oven, remove the fish fillets and set the pan back on the stove top over a low heat. Add the roux to the pan and whisk until the sauce begins to thicken. Remove from the heat and whisk in the sour cream. Return the fish to the pan and turn it over once or twice in the sauce. Warm the purée through in a saucepan on the stove top.
+7. **For the spruce butter:** Melt the unsalted butter over a medium heat, add the spruce tips and cook until the butter browns slightly and smells nutty. Remove from the heat.
+8. Divide the purée among serving plates, top with the fish and sauce, spoon over the spruce butter and garnish with a little dill. Serve.
+
+> To make up a quick pickle for the spruce tips, bring 3 parts water, 2 parts white vinegar and 1 part sugar to a simmer. Add your chosen spices, leave to cool completely, then pour the liquid over the spruce tips. Refrigerate until needed and pickled to your liking.`
+  },
+  {
+    id: 290,
+    title: "Quince Syrup",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "Makes 400ml (13½ fl oz)",
+    time: "20 mins plus resting",
+    category: "Basics",
+    ingredients: [
+      "500g (1 lb 2 oz) Japanese quinces (or regular quinces), washed and dried",
+      "500g (1 lb 2 oz) caster (superfine) sugar"
+    ],
+    method: `1. Cut the quinces in half and use a small spoon or melon baller to remove the seeds and fibrous core. Slice the quince flesh into thin pieces (about 2-3mm thick).
+2. Layer the sliced quince and sugar alternately in a large, clean, sterilised glass jar, finishing with a layer of sugar on top.
+3. Seal the jar tightly and leave it at room temperature for 3-4 days, shaking or turning the jar upside down once or twice a day until the sugar has completely dissolved and a clear, fragrant, golden syrup has formed.
+4. Strain the syrup through a fine sieve into sterilised bottles. (The leftover candied quince slices can be dried in a low oven to make chewy fruit candies or added to herbal tea.)
+5. Store the sealed syrup in the refrigerator, where it will keep for up to 1 year.`
+  },
+  {
+    id: 291,
+    title: "Rhubarb Kissel",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "Makes 1.5 litres (51 fl oz / 6 cups)",
+    time: "30 mins",
+    category: "Drinks",
+    ingredients: [
+      "500g (1 lb 2 oz) rhubarb stalks, trimmed and chopped into 2cm pieces",
+      "1.2 litres (40 fl oz / 5 cups) water",
+      "120g (4¼ oz / ½ cup) sugar",
+      "2 tablespoons cornflour (cornstarch) or potato starch",
+      "60ml (¼ cup) cold water",
+      "caster sugar, for sprinkling"
+    ],
+    method: `1. Place the chopped rhubarb and water into a large saucepan over medium-high heat. Bring to the boil, then reduce the heat and simmer for 10-12 minutes until the rhubarb has completely softened and broken down.
+2. Strain the mixture through a fine sieve into a bowl, pressing gently on the pulp with a spoon to extract the juices. Return the strained liquid to the saucepan.
+3. Add the sugar to the liquid and simmer for 5 minutes, or until the sugar has completely dissolved.
+4. Mix the cornflour and cold water together in a small bowl until completely smooth and lump-free.
+5. Remove the saucepan from the heat and, whisking constantly to prevent lumps, pour the cornflour mixture into the hot liquid in a thin, steady stream.
+6. Return the pan to the stove top and heat gently until just beginning to simmer and thicken. Pour into a serving jug or divide among bowls.
+7. Sprinkle a light dusting of caster sugar on top to prevent a skin from forming, then transfer to the refrigerator to chill. Serve cold, optionally garnished with fresh rhubarb curls.
+
+> The rhubarb here can be substituted for the same quantity of sour berries, such as cranberries, redcurrants or raspberries. For a thicker kissel to serve with cream or ice cream, double the quantity of cornflour and water.`
+  },
+  {
+    id: 292,
+    title: "Mead",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "Makes 1.8 litres (61 fl oz / 7 cups)",
+    time: "30 mins plus fermenting",
+    category: "Drinks",
+    ingredients: [
+      "50ml (1¾ fl oz) orange juice",
+      "1 x 2.5g (1/12 oz) sachet wine yeast (see note)",
+      "500g (1 lb 2 oz) unpasteurised raw honey",
+      "approx. 1.8 litres (61 fl oz) spring water or pre-boiled tap water, at room temperature"
+    ],
+    method: `1. Sterilise a 2-litre (68 fl oz / 8 cup) glass fermentation bottle and a separate glass jar by washing them thoroughly in hot soapy water, rinsing well, then putting them on a baking tray in a low oven (120°C / 250°F) for 20 minutes. Leave to cool.
+2. Heat the orange juice in a small saucepan until it reaches 35°C (95°F) when measured with a sugar thermometer, then pour into the sterilised jar and add the yeast. Seal with a lid and shake well, then set aside.
+3. Add the honey to the sterilised fermentation bottle together with 500ml (17 fl oz / 2 cups) of the room-temperature water. Add the yeast mixture and shake again, then pour over the rest of the water to fill up the bottle, leaving around 5cm (2 in) of empty headspace at the top.
+4. Stretch a balloon over the top of the bottle neck and secure it tightly with a rubber band. Prick the tip of the balloon with a clean pin or needle.
+5. Set the bottle aside in a dark spot out of direct sunlight for 3 weeks. Check on the bottle during this time - the balloon should expand, showing fermentation in action.
+6. After 3 weeks, use a siphon to decant the clear liquid into clean sterilised bottles, separating out and discarding the yeast sediment at the bottom.
+7. Transfer to the refrigerator to chill for 3 weeks (this slows down initial fermentation), then store in a cellar or cool, dark cupboard. The longer you leave the mead, the clearer it will become and the better the flavours will mature - it will keep for 15-20 years and only improves with age!
+
+> Wine yeasts are special high-tolerance yeasts bred to live through to about 14% alcohol. They are widely available at homebrew shops or online retailers together with the bottling equipment needed here.`
+  },
+  {
+    id: 293,
+    title: "Porter Liqueur",
+    author: "Simon Bajada",
+    book: "Baltic",
+    serves: "Makes 1 x 800ml (27 fl oz) bottle",
+    time: "30 mins plus resting",
+    category: "Drinks",
+    ingredients: [
+      "300ml (10 fl oz) vodka",
+      "20g (¾ oz) prunes, diced",
+      "2 teaspoons ground coffee",
+      "1 litre (34 fl oz / 4 cups) Baltic porter (dark beer or stout)",
+      "1 tablespoon honey"
+    ],
+    method: `1. Sterilise a glass bottle by washing it thoroughly in hot soapy water, rinsing well, then putting it on a baking tray in a low oven (120°C / 250°F) for 20 minutes. Leave to cool.
+2. Add the vodka, prunes and coffee to the bottle. Seal with a cork or lid and leave to stand for 1 week in a cool, dark cupboard, shaking on occasion.
+3. After 1 week, strain the liquid through a paper coffee filter into a heavy-based saucepan, discarding the solids.
+4. Add the porter to the pan, bring to a simmer and cook for 8-10 minutes, until reduced by half.
+5. Stir in the honey, remove from the heat and leave to cool completely.
+6. Pour the cooled liqueur back into the bottle, seal and leave to stand for 1 more week before serving.`
+  },
+  {
+    id: 294,
+    title: "Milk Toffee",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "Makes 52 squares",
+    time: "55 mins",
+    category: "Dessert",
+    ingredients: [
+      "200g (7 oz) cashews",
+      "2 x 395g (14 oz) tins condensed milk",
+      "400g (14 oz) caster (superfine) sugar",
+      "220g (8 oz) butter, diced",
+      "5g (¼ oz) Sweet spice mix (see page 47)",
+      "salt flakes"
+    ],
+    method: `1. Preheat the oven to 150°C (300°F).
+2. Spread out the cashews on a baking tray and toast for 15-20 minutes until they are uniformly pale golden, giving them a jiggle every 5 minutes to ensure they are cooking evenly. Set aside to cool, then very roughly chop.
+3. Line a rectangular cake tin (approximately 28cm x 18cm / 11in x 7in) with baking paper.
+4. Place the cashews, condensed milk, sugar, butter and spice mix in a wide-based saucepan and stir over a high heat until melted and combined. A wooden spoon is fine but a heatproof spatula is better.
+5. Reduce the heat to low and keep stirring, gently and evenly, as it can catch very easily. It will take about 20 minutes to cook. It's ready when it darkens and you start to see patches that look a little foamy.
+6. Carefully turn out the mix into the prepared tin and spread it out evenly with your spatula, gently pressing it down as you go. Tap the tin firmly on a hard surface a few times to compress the mixture a little and make it easier to cut. Finish with a nice sprinkle of salt flakes and gently press them down with the spatula.
+7. Allow to cool to room temperature, then turn out the toffee slab and cut it into 3cm (1¼ in) squares. A ruler is a helpful tool here if you want to be precise. You may find that bits crumble off but that's OK. If it's too hard and crumbly it can be a sign that you have cooked it a little too much; if it doesn't set to firm, the mix is slightly undercooked.
+8. Milk toffee can be stored at room temperature for up to a month, although I find it rarely lasts that long.`
+  },
+  {
+    id: 295,
+    title: "Eggplant Pahi",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "4",
+    time: "1 hr 15 mins",
+    category: "Curries",
+    ingredients: [
+      "700g (1 lb 9 oz) eggplants (aubergines)",
+      "13g (¼ oz) turmeric powder",
+      "4g (⅛ oz) cooking salt",
+      "25g (1 oz) coconut oil",
+      "8g (¼ oz) coriander seeds",
+      "8g (¼ oz) mustard seeds",
+      "5g (⅛ oz) curry leaves",
+      "300g (10½ oz) finely sliced red onion",
+      "50g (1¾ oz) finely chopped garlic",
+      "30g (1 oz) finely chopped ginger",
+      "2 long red chillies, sliced into thin rounds",
+      "salt flakes and freshly ground black pepper",
+      "30g (1 oz) jaggery, finely chopped",
+      "350g (12½ oz) ripe tomatoes, quartered or chopped into 4cm (1½ in) dice",
+      "7g (¼ oz) chilli flakes",
+      "14g (½ oz) tamarind concentrate",
+      "vegetable oil, for deep-frying"
+    ],
+    method: `1. Cut the tops off your eggplants, slice them down the middle and then cut each half into angular chunks about 8-10cm (3¼-4 in) long and 3cm (1¼ in) at the widest point, making sure each piece has some skin on it. Don't get too caught up in exact measurements; the pieces just need to be big enough to retain their shape and hold up in the sauce. I suggest angular pieces because when fried, the pointy bits add to the overall texture of the dish.
+2. Place the eggplant chunks in a mixing bowl and sprinkle over the turmeric and cooking salt. Put on a pair of prep gloves to prevent staining, then give it all a good mix to make sure all the eggplant pieces are evenly coated. (My mum's trick is to combine the salt and turmeric in a plastic bag and add a few eggplant pieces at a time, shaking every batch.) Once coated, place the eggplant pieces in a colander and set aside for at least 30 minutes.
+3. While the eggplants are soaking up the spice, start your sauce. Melt the coconut oil in a wide-based saucepan over a medium heat, add the coriander seeds and mustard seeds and cook, stirring, for a minute until they start to pop. Add the curry leaves and cook briefly to crisp up.
+4. Add the onion, garlic, ginger and chilli, season with salt and pepper and cook, stirring occasionally, for 8-10 minutes until the onion has softened. Add the jaggery, increase the heat a little and cook, stirring occasionally, for 5-6 minutes until melted and slightly caramelised. Add the tomato, chilli flakes and tamarind and stir well, then reduce the heat to medium and simmer gently for 5 minutes until the tomato pieces just start to break down. Add 180ml (6 fl oz) water and cook for another 5 minutes until the sauce is rich and thick. Taste and check your seasoning.
+5. In a large heavy saucepan or deep-fryer, heat vegetable oil to 180°C (350°F). Deep-fry the eggplant chunks in batches for 4-5 minutes until golden brown and tender. Drain on kitchen paper.
+6. Gently fold the fried eggplant into the warm sauce and simmer together for 2-3 minutes so the flavours meld. Serve warm.`
+  },
+  {
+    id: 296,
+    title: "Pineapple Chutney",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "8-10",
+    time: "1 hr 5 mins",
+    category: "Pickles & Chutneys",
+    ingredients: [
+      "1 small sweet pineapple (approximately 750g / 1 lb 11 oz)",
+      "30g (1 oz) ghee or coconut oil",
+      "10g (⅓ oz) mustard seeds",
+      "5g (⅛ oz) curry leaves",
+      "150g (5½ oz) red onion, finely chopped",
+      "30g (1 oz) ginger, finely grated",
+      "20g (¾ oz) garlic, finely grated",
+      "2 long red chillies, finely chopped",
+      "1 cinnamon quill",
+      "200g (7 oz) jaggery or brown sugar",
+      "60ml (¼ cup) apple cider vinegar",
+      "1 teaspoon salt flakes",
+      "1 teaspoon chilli powder"
+    ],
+    method: `1. Peel the pineapple, remove the eyes and core, and cut the flesh into small 1cm (½ in) dice.
+2. Heat the ghee or coconut oil in a heavy-based saucepan over medium heat. Add the mustard seeds and curry leaves and fry for 1 minute until the seeds begin to pop and crackle.
+3. Add the onion, ginger, garlic and chillies, and cook for 6-8 minutes until soft and translucent.
+4. Add the diced pineapple, cinnamon quill, jaggery, vinegar, salt flakes and chilli powder. Stir well to dissolve the jaggery.
+5. Bring to a gentle boil, then reduce the heat to low and simmer uncovered for 35-40 minutes, stirring occasionally, until the pineapple is tender, translucent and the syrup has reduced to a thick, glossy jam-like consistency.
+6. Remove from heat and discard the cinnamon quill. Allow to cool completely before transferring to sterilised jars.`
+  },
+  {
+    id: 297,
+    title: "Malay Pickle / Acharu (Lata Pata)",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "8-10",
+    time: "45 mins plus resting",
+    category: "Pickles & Chutneys",
+    ingredients: [
+      "250g (9 oz) red eschalots, peeled (see note)",
+      "200g (7 oz) long green beans, trimmed and cut into 4cm lengths",
+      "200g (7 oz) small green chillies, left whole with stems trimmed",
+      "200g (7 oz) carrots, cut into 4cm batons",
+      "200ml (7 fl oz) white vinegar or coconut vinegar",
+      "100g (3½ oz) sugar",
+      "1½ tablespoons salt flakes",
+      "30g (1 oz) black mustard seeds, freshly ground into a coarse paste with 2 tbsp vinegar",
+      "15g (½ oz) fresh ginger, grated",
+      "15g (½ oz) garlic cloves, crushed",
+      "1 teaspoon turmeric powder",
+      "1 teaspoon chilli powder"
+    ],
+    method: `1. Bring a large pot of water to a rolling boil. Blanch the beans and carrots separately for 1 minute each, removing with a slotted spoon and plunging immediately into ice water to retain their crispness. Drain and pat completely dry with paper towels.
+2. In a large saucepan, combine the vinegar, sugar, salt flakes, turmeric, ground mustard seed paste, grated ginger and crushed garlic. Bring to a gentle simmer over medium heat until the sugar dissolves completely.
+3. Add the peeled whole eschalots, green chillies, blanched carrots and green beans to the hot pickling liquor. Stir well to coat, simmer for 1-2 minutes, then immediately remove from the heat.
+4. Transfer the pickle and all its liquid to sterilised glass jars. Seal tightly and leave at room temperature for 2 days before eating to allow the flavours to penetrate and mature.
+
+> Use small whole pickling eschalots or pearl onions so they retain a crunchy bite.`
+  },
+  {
+    id: 298,
+    title: "Wattalappam",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "10",
+    time: "1 hr 5 mins",
+    category: "Dessert",
+    ingredients: [
+      "360g (12¾ oz) jaggery, grated",
+      "400ml (13½ fl oz) coconut cream",
+      "6 eggs",
+      "½ teaspoon ground cardamom",
+      "¼ teaspoon freshly grated nutmeg",
+      "¼ teaspoon ground cloves",
+      "pinch of fine salt",
+      "30g (1 oz) cashew nuts, toasted and roughly chopped, to serve"
+    ],
+    method: `1. Preheat the oven to 150°C (300°F). Lightly grease a 20cm (8 in) baking dish or 10 individual ramekins.
+2. In a small saucepan over low heat, gently warm the grated jaggery with 60ml water, stirring until completely melted and smooth. Strain through a fine sieve to remove any impurities and leave to cool slightly.
+3. In a large mixing bowl, gently whisk the eggs with the ground cardamom, nutmeg, cloves and salt. Do not beat too vigorously or create excess froth.
+4. Stir the coconut cream into the eggs, then slowly pour in the warm jaggery syrup while stirring constantly until thoroughly incorporated.
+5. Strain the custard mixture through a fine sieve into the prepared baking dish or ramekins.
+6. Place the baking dish into a large roasting pan and pour boiling water into the pan until it reaches halfway up the sides of the dish (a water bath / bain-marie).
+7. Bake for 40-45 minutes (or 25-30 minutes for individual ramekins), until the custard is just set with a slight gentle wobble in the centre.
+8. Remove from the water bath and allow to cool to room temperature, then chill in the refrigerator for at least 2 hours. Serve scattered with toasted chopped cashews.`
+  },
+  {
+    id: 299,
+    title: "Snake Bean Curry",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "4",
+    time: "35 mins",
+    category: "Curries",
+    ingredients: [
+      "80g (2¾ oz) ghee",
+      "300g (10½ oz) sliced brown onion",
+      "10g (⅓ oz) cumin seeds",
+      "10g (⅓ oz) mustard seeds",
+      "5g (⅛ oz) curry leaves",
+      "15g (½ oz) Maldive fish flakes, pounded",
+      "500g (1 lb 2 oz) snake beans, trimmed and cut into 5cm (2 in) lengths",
+      "1 teaspoon turmeric powder",
+      "1 teaspoon unroasted curry powder",
+      "250ml (8½ fl oz / 1 cup) thin coconut milk",
+      "150ml (5 fl oz) thick coconut cream",
+      "2 green chillies, sliced",
+      "salt flakes, to taste"
+    ],
+    method: `1. Melt the ghee in a wide saucepan over medium heat. Add the cumin seeds and mustard seeds and cook for 1 minute until popping. Add the sliced onion and curry leaves and cook for 6-8 minutes until golden.
+2. Stir in the pounded Maldive fish flakes and green chillies, cooking for another minute until fragrant.
+3. Add the snake beans, turmeric and curry powder. Season with salt flakes and toss well to coat the beans in the spiced ghee.
+4. Pour in the thin coconut milk, bring to a gentle simmer, cover and cook for 8-10 minutes until the beans are tender but still have slight bite.
+5. Pour in the thick coconut cream, reduce heat to low and simmer uncovered for 3-4 minutes until the sauce is creamy and coats the beans. Taste and adjust seasoning before serving.`
+  },
+  {
+    id: 300,
+    title: "Pineapple Curry",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "6-8",
+    time: "50 mins",
+    category: "Curries",
+    ingredients: [
+      "1 small pineapple (approximately 750g / 1 lb 11 oz; see note)",
+      "45g (1½ oz) coconut oil",
+      "10g (⅓ oz) black mustard seeds",
+      "5g (⅛ oz) curry leaves",
+      "150g (5½ oz) red onion, finely chopped",
+      "20g (¾ oz) garlic, minced",
+      "20g (¾ oz) ginger, finely grated",
+      "1 stick cinnamon",
+      "1 teaspoon turmeric powder",
+      "1½ teaspoons unroasted curry powder",
+      "1 teaspoon chilli powder",
+      "2 tablespoons sugar or jaggery",
+      "250ml (1 cup) water or thin coconut milk",
+      "150ml (5 fl oz) thick coconut milk",
+      "salt flakes, to taste"
+    ],
+    method: `1. Peel the pineapple, remove the eyes and core, and cut into 3cm (1¼ in) triangular chunks.
+2. Heat the coconut oil in a saucepan over medium heat. Add the mustard seeds and curry leaves and cook until the seeds start to crackle.
+3. Add the onion, garlic, ginger and cinnamon stick and sauté for 6-8 minutes until soft and golden.
+4. Add the turmeric, curry powder, chilli powder and salt. Stir for 1 minute until fragrant.
+5. Add the pineapple chunks and sugar, tossing well to coat in the spices.
+6. Pour in the water or thin coconut milk, bring to a simmer, cover and cook gently for 15 minutes until the pineapple has softened and absorbed the flavours.
+7. Pour in the thick coconut milk and simmer gently uncovered for 5 minutes until the curry sauce is luscious and slightly thickened. Serve warm with rice.
+
+> Use a ripe but firm pineapple so the chunks hold their shape during cooking.`
+  },
+  {
+    id: 301,
+    title: "Water Spinach (Kangkung)",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "2-4",
+    time: "20 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "30g (1 oz) ghee",
+      "80g (2¾ oz) red onion, cut in half and then across the grain into thin slices",
+      "3 garlic cloves, thinly sliced",
+      "2 green chillies, sliced into rounds",
+      "1 tablespoon Maldive fish flakes",
+      "1 bunch water spinach (kangkung), washed, thick lower stems trimmed and remaining stems and leaves chopped into 5cm lengths",
+      "½ teaspoon turmeric powder",
+      "salt flakes, to taste",
+      "juice of ½ lime"
+    ],
+    method: `1. Melt the ghee in a wok or wide frying pan over medium-high heat.
+2. Add the sliced red onion, garlic, green chillies and Maldive fish flakes. Sauté for 3-4 minutes until the onion is soft and fragrant.
+3. Add the water spinach stems first and toss for 1 minute, then add the leaves, turmeric powder and salt flakes.
+4. Stir-fry vigorously over high heat for 2-3 minutes until the leaves have completely wilted and the stems are tender-crisp.
+5. Remove from heat, squeeze over the fresh lime juice, toss once more and serve immediately.`
+  },
+  {
+    id: 302,
+    title: "Goat Curry",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "4-6",
+    time: "2 hrs 20 mins plus marinating",
+    category: "Curries",
+    ingredients: [
+      "500g (1 lb 2 oz) goat shoulder, cut into 2cm (¾ in) dice, at room temperature",
+      "2 tablespoons Black curry powder (see page 52)",
+      "1 teaspoon turmeric powder",
+      "1 teaspoon salt flakes",
+      "60g (2 oz) ghee or coconut oil",
+      "200g (7 oz) red onion, finely chopped",
+      "30g (1 oz) garlic, finely grated",
+      "30g (1 oz) ginger, finely grated",
+      "2 lemongrass stalks, bruised and tied in a knot",
+      "5g (⅛ oz) curry leaves",
+      "2 pandan leaf pieces (5cm lengths)",
+      "2 long green chillies, sliced",
+      "1 tablespoon vinegar",
+      "250ml (1 cup) water"
+    ],
+    method: `1. Place the diced goat in a bowl with the black curry powder, turmeric and salt. Rub the spices thoroughly into the meat and leave to marinate for at least 30 minutes.
+2. Heat the ghee in a heavy flameproof casserole or deep saucepan over medium-high heat. Add the onion, garlic, ginger, lemongrass, curry leaves, pandan and chillies. Fry for 8-10 minutes until the aromatics are golden brown and fragrant.
+3. Add the marinated goat meat to the pan and sear over high heat for 6-8 minutes, stirring frequently, until well browned on all sides.
+4. Add the vinegar and water, bring to a simmer, then reduce the heat to very low. Cover tightly with a lid and simmer gently for 1½ to 2 hours, stirring occasionally, until the goat meat is meltingly tender and the liquid has reduced to an intensely dark, glossy spice coating clinging to the meat.
+5. Discard the lemongrass and pandan, taste for seasoning and serve hot with rice or rotti.`
+  },
+  {
+    id: 303,
+    title: "Pork Belly Curry",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "6-8",
+    time: "2 hrs 55 mins",
+    category: "Curries",
+    ingredients: [
+      "1kg (2 lb 3 oz) piece pork belly, skin on, chilled",
+      "2 tablespoons coconut oil or lard",
+      "250g (9 oz) red onion, sliced",
+      "40g (1½ oz) garlic, crushed",
+      "40g (1½ oz) ginger, grated",
+      "5g (⅛ oz) curry leaves",
+      "2 tablespoons roasted black curry powder",
+      "1 teaspoon turmeric powder",
+      "1 teaspoon crushed black pepper",
+      "1 teaspoon chilli powder",
+      "2 tablespoons dark roasted curry powder",
+      "2 tablespoons tamarind water or vinegar",
+      "1 tablespoon jaggery",
+      "2 teaspoons salt flakes",
+      "250ml (1 cup) water"
+    ],
+    method: `1. Preheat the oven to 160°C (320°F).
+2. Cut the chilled pork belly into 3cm (1¼ in) chunks.
+3. In a large ovenproof casserole dish (such as a Spanish cazuela or Dutch oven), heat the coconut oil over medium-high heat. Add the pork pieces in batches and sear until browned on all sides, then remove and set aside.
+4. In the rendered fat in the casserole, add the sliced onion, garlic, ginger and curry leaves. Sauté for 8-10 minutes until soft and caramelised.
+5. Return the pork to the dish. Add the black curry powder, turmeric, black pepper, chilli powder, tamarind, jaggery, salt flakes and water. Stir well to coat all the pork pieces.
+6. Cover the casserole tightly with a lid (or double layer of foil) and transfer to the oven. Bake for 2 to 2½ hours, stirring once or twice, until the pork belly is unctuous, spoon-tender, and the curry sauce has reduced to a dark, rich glaze.
+7. Skim off any excess floating oil from the surface if desired, taste for seasoning, and serve with rice and a fresh mallung.`
+  },
+  {
+    id: 304,
+    title: "Fried Egg Curry",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "6-8",
+    time: "55 mins",
+    category: "Curries",
+    ingredients: [
+      "12 eggs, at room temperature",
+      "100g (3½ oz) plain (all-purpose) flour",
+      "10g (⅓ oz) turmeric powder",
+      "1 teaspoon salt",
+      "oil, for deep-frying",
+      "40g (1½ oz) coconut oil or ghee",
+      "200g (7 oz) red onion, finely chopped",
+      "30g (1 oz) garlic, minced",
+      "20g (¾ oz) ginger, grated",
+      "5g (⅛ oz) curry leaves",
+      "2 green chillies, sliced",
+      "1 tablespoon roasted curry powder",
+      "1 teaspoon chilli powder",
+      "400g (14 oz) ripe tomatoes, chopped",
+      "250ml (1 cup) thin coconut milk",
+      "150ml (5 fl oz) thick coconut cream",
+      "salt flakes, to taste"
+    ],
+    method: `1. Place the eggs in a large saucepan of boiling water and cook for 8 minutes for hard-boiled eggs. Plunge immediately into cold water, peel and pat dry.
+2. In a shallow bowl, mix the flour, turmeric powder and 1 teaspoon salt. Roll each peeled egg in the flour mixture to coat evenly.
+3. Heat oil in a deep saucepan or deep-fryer to 190°C (375°F). Carefully drop in the coated eggs and fry for 2-3 minutes, turning, until the outside forms a blistered, golden-yellow, chewy crust. Drain on paper towels.
+4. Heat the coconut oil in a wide saucepan over medium heat. Add the onion, garlic, ginger, curry leaves and green chillies and cook for 8 minutes until softened.
+5. Add the roasted curry powder, chilli powder and tomatoes. Cook, stirring, for 6-8 minutes until the tomatoes break down into a thick sauce.
+6. Pour in the thin coconut milk and simmer for 5 minutes.
+7. Cut the fried eggs in half lengthways or leave whole, and gently nestle them into the sauce. Pour over the thick coconut cream and simmer gently for 3-4 minutes until hot. Season to taste and serve with rice.`
+  },
+  {
+    id: 305,
+    title: "Mallungs (Green Papaya Mallung & Cabbage Mallung)",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "4 per mallung",
+    time: "25 mins",
+    category: "Salads",
+    ingredients: [
+      "Cabbage Mallung:",
+      "30g (1 oz) ghee",
+      "14g (½ oz) black mustard seeds",
+      "6g (⅕ oz) curry leaves",
+      "300g (10½ oz) white cabbage, finely sliced",
+      "salt flakes and freshly ground black pepper",
+      "4g (⅛ oz) turmeric powder",
+      "50g (1¾ oz) grated coconut",
+      "Green Papaya Mallung:",
+      "260g (9 oz) green papaya, julienned and washed under cold water",
+      "75g (2¾ oz) eschalot, finely sliced",
+      "2 long green chillies, finely chopped",
+      "3g (1/10 oz) freshly ground black pepper",
+      "3g (1/10 oz) turmeric powder",
+      "130g (4½ oz) grated coconut",
+      "salt flakes",
+      "juice of 1-2 limes"
+    ],
+    method: `CABBAGE MALLUNG
+
+1. Melt the ghee in a wok or wide-based frying pan over a high heat, add the mustard seeds and curry leaves and cook for a minute or so until the seeds start to pop and the leaves are fried.
+2. Add the cabbage, season generously with salt and pepper and give everything a good mix. Cook, stirring, for 1-2 minutes, then add the turmeric and cook for another minute. While you need to keep the cabbage moving in the high heat of the wok, allow for some moments of stillness to encourage a little char.
+3. Add the coconut and taste again for seasoning, then cook for another 2-3 minutes until the cabbage has wilted but still has a little crunch. This dish will be dry, the flavour a little buttery with hints of smoky char, rounded out by the soft sweetness of the coconut. Serve hot or at room temperature.
+
+GREEN PAPAYA MALLUNG
+
+1. Combine the papaya, eschalot, chilli, pepper, turmeric and 70ml (2¼ fl oz) water in a medium wide-based saucepan over a medium heat and cook, stirring occasionally, for 2-3 minutes until the papaya has started to soften.
+2. Stir in the coconut, season to taste with salt and cook for another minute or so until the papaya is soft but still has a little crunch to it.
+3. Remove from the heat and squeeze in some lime juice. The mix should be quite dry with a distinct heat from the chilli and pepper. Serve at room temperature.`
+  },
+  {
+    id: 306,
+    title: "Beetroot Curry",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "6-8",
+    time: "45 mins",
+    category: "Curries",
+    ingredients: [
+      "50g (1¾ oz) ghee",
+      "8g (¼ oz) curry leaves",
+      "6g (⅕ oz) mustard seeds",
+      "200g (7 oz) sliced red onion",
+      "25g (1 oz) chopped garlic",
+      "20g (¾ oz) chopped ginger",
+      "2 green chillies, sliced",
+      "1kg (2 lb 3 oz) beetroot, peeled and cut into 1cm batons",
+      "1 teaspoon turmeric powder",
+      "1½ teaspoons unroasted curry powder",
+      "1 teaspoon chilli powder",
+      "1 teaspoon salt flakes",
+      "250ml (1 cup) thin coconut milk",
+      "150ml (5 fl oz) thick coconut cream"
+    ],
+    method: `1. Melt the ghee in a wide saucepan over medium heat. Add the curry leaves and mustard seeds and cook until the seeds pop.
+2. Add the red onion, garlic, ginger and green chillies and sauté for 6-8 minutes until soft.
+3. Add the beetroot batons, turmeric, unroasted curry powder, chilli powder and salt flakes. Stir well to coat the beetroot in the spices.
+4. Pour in the thin coconut milk, bring to a simmer, cover with a lid and cook for 15-20 minutes until the beetroot is tender when pierced with a fork.
+5. Stir in the thick coconut cream and simmer uncovered for 5 minutes until the curry is thick, vibrant purple-red and aromatic. Serve warm.`
+  },
+  {
+    id: 307,
+    title: "Red Curry Powder & Black Curry Powder",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "Makes 130g (4½ oz)",
+    time: "35 mins",
+    category: "Basics",
+    ingredients: [
+      "Red Curry Powder:",
+      "5g (⅛ oz) curry leaves",
+      "24g (⅞ oz) sweet paprika",
+      "20g (¾ oz) chilli powder",
+      "20g (¾ oz) coriander seeds",
+      "15g (½ oz) white peppercorns",
+      "13g (½ oz) chilli flakes",
+      "12g (½ oz) cumin seeds",
+      "10g (⅓ oz) cardamom seeds",
+      "8g (¼ oz) fennel seeds",
+      "8g (¼ oz) cinnamon quill, roughly crushed",
+      "7g (¼ oz) turmeric powder",
+      "5g (⅛ oz) fenugreek seeds",
+      "3g (1/10 oz) cloves",
+      "3g (1/10 oz) star anise",
+      "Black Curry Powder:",
+      "16g (½ oz) coriander seeds",
+      "16g (½ oz) cumin seeds",
+      "16g (½ oz) nigella seeds",
+      "8g (¼ oz) fennel seeds",
+      "16g (½ oz) black peppercorns",
+      "20g (¾ oz) mustard seeds",
+      "8g (¼ oz) curry leaves",
+      "1g (1/32 oz) pandan leaf, cut into 5mm pieces",
+      "5g (⅛ oz) cardamom seeds",
+      "5g (⅕ oz) cloves",
+      "3g (1/10 oz) cinnamon quill, roughly crushed",
+      "16g (½ oz) chilli powder",
+      "16g (½ oz) chilli flakes",
+      "1g (1/32 oz) freshly grated nutmeg"
+    ],
+    method: `RED CURRY POWDER
+
+1. Place the curry leaves in a frying pan over a medium-high heat and cook gently for about 2 minutes. Reduce the heat a little and cook for another 1-2 minutes until they are dry and toasted, but not browned.
+2. Allow the leaves to cool completely, then combine them with the remaining spices and grind in a spice grinder to a fine powder. Store in an airtight container.
+
+BLACK CURRY POWDER
+
+1. Place a wide shallow frying pan over a medium-high heat, add the coriander, cumin, nigella and fennel seeds and toast gently, tossing regularly for even cooking. After about 2 minutes the spices will start popping and releasing their aromas. Reduce the heat and keep toasting for another 6-7 minutes until the spices start to darken and the aroma becomes stronger and sweeter. Tip them into a bowl.
+2. Add the peppercorns, mustard seeds, curry leaves and pandan to the pan and toast over a medium-high heat for 2 minutes. Reduce the heat and toast for another 4-5 minutes until the pepper smell is pronounced, the mustard seeds are popping and grey in colour and the fresh leaves are dark and dry. Tip them into the bowl with the seed mix.
+3. Next, toast the cardamom seeds, cloves and cinnamon over a medium-low heat for 4-5 minutes, then add to the bowl with the other spices.
+4. Reduce the heat to low, add the chilli powder to the pan and stir constantly with a wooden spoon to keep the powder moving as it will burn very quickly. Toast for 4-5 minutes until the powder is dark with a strong chilli aroma. Add to the bowl of spices.
+5. Toast the chilli flakes in the same way, though they will take a little longer, 8-9 minutes. They are ready when they release an acrid aroma and the flakes are so dark they are almost black. Add to the bowl of spices and allow to cool completely.
+6. Grind the spices in a spice grinder to a fine powder, then mix through the grated nutmeg. Store in an airtight container.`
+  },
+  {
+    id: 308,
+    title: "Pumpkin Curry",
+    author: "Tama Carey",
+    book: "Lanka Food",
+    serves: "4-6",
+    time: "40 mins",
+    category: "Curries",
+    ingredients: [
+      "12g (½ oz) rice (any variety)",
+      "40g (1½ oz) grated coconut",
+      "50g (1¾ oz) ghee",
+      "15g (½ oz) Maldive fish flakes",
+      "8g (¼ oz) curry leaves",
+      "6g (⅕ oz) mustard seeds",
+      "150g (5½ oz) sliced red onion",
+      "25g (1 oz) chopped garlic",
+      "20g (¾ oz) chopped ginger",
+      "2 green chillies, sliced",
+      "1kg (2 lb 3 oz) Jap or butternut pumpkin, peeled, seeded and cut into 3cm (1¼ in) chunks",
+      "1 teaspoon turmeric powder",
+      "1½ teaspoons unroasted curry powder",
+      "1 teaspoon salt flakes",
+      "250ml (1 cup) thin coconut milk",
+      "150ml (5 fl oz) thick coconut cream"
+    ],
+    method: `1. In a dry frying pan over medium heat, toast the raw rice and grated coconut together, stirring constantly, until golden brown and aromatic. Tip into a spice grinder and grind to a coarse powder. Set aside.
+2. Melt the ghee in a wide saucepan over medium heat. Add the curry leaves and mustard seeds and cook until the seeds pop.
+3. Add the Maldive fish flakes, red onion, garlic, ginger and green chillies and cook for 6-8 minutes until soft and fragrant.
+4. Add the pumpkin chunks, turmeric, unroasted curry powder and salt flakes, stirring to coat the pumpkin.
+5. Add the thin coconut milk, bring to a simmer, cover and cook for 12-15 minutes until the pumpkin is tender but still holding its shape.
+6. Stir in the thick coconut cream and the toasted rice-coconut mixture. Simmer gently uncovered for 4-5 minutes until the curry is thick, rich and creamy. Serve warm.`
+  },
+  {
+    id: 309,
+    title: "Lamb Pies (Empanadas de Cordero)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "Makes 8 individual pies",
+    time: "1 hr 30 mins",
+    category: "Baking",
+    ingredients: [
+      "Pastry:",
+      "500g (1 lb 2 oz) plain (all-purpose) flour",
+      "100g (3½ oz) pork lard, melted",
+      "100ml (3½ fl oz) warm water",
+      "100ml (3½ fl oz) freshly squeezed orange juice",
+      "1 egg yolk",
+      "1 teaspoon fine sea salt",
+      "Filling:",
+      "500g (1 lb 2 oz) boneless leg of lamb, cut into 1cm (½ in) dice",
+      "100g (3½ oz) pancetta or sobrassada, diced",
+      "3 garlic cloves, minced",
+      "1 tablespoon sweet pimentón (Spanish paprika)",
+      "1 teaspoon dried oregano",
+      "salt flakes and freshly cracked black pepper",
+      "2 tablespoons extra virgin olive oil"
+    ],
+    method: `1. **To make the pastry:** Sift the flour and salt into a large bowl. Make a well in the centre and pour in the melted lard, warm water, orange juice and egg yolk. Stir with a fork until the dough begins to come together, then turn out onto a lightly floured surface and knead for 5 minutes until smooth and pliable. Shape into a disc, wrap in plastic wrap and leave to rest at room temperature for 30 minutes.
+2. **To make the filling:** In a bowl, toss the diced lamb and pancetta or sobrassada with the garlic, sweet pimentón, oregano, salt flakes, black pepper and olive oil. Mix well and set aside.
+3. Preheat the oven to 180°C (350°F) fan-forced and line a baking tray with baking paper.
+4. Divide the pastry into 8 equal portions. From each portion, pinch off about a quarter to use for the pie lid.
+5. Roll the larger portions into balls, then hollow out the centre with your thumbs to form a cup shape with walls about 5mm (¼ in) thick and 5cm (2 in) high.
+6. Fill each pastry case generously with the lamb mixture.
+7. Roll out the reserved small balls of pastry into circles for the lids. Place a lid over each pie, then pinch and crimp the edges together with your fingers to seal tightly.
+8. Prick the top of each pie with a fork once or twice to let steam escape.
+9. Bake for 40-45 minutes, until the pastry is golden brown and crisp and the meat is tender. Allow to cool for 10 minutes before serving.`
+  },
+  {
+    id: 310,
+    title: "Chateau Salad (Xatonada)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "20 mins",
+    category: "Salads",
+    ingredients: [
+      "150g (5½ oz) bacalao (salt cod) fillets",
+      "1 frisée (curly endive), washed, dark green leaves discarded",
+      "150g (5½ oz) tuna chunks in olive oil",
+      "4 salted anchovy fillets",
+      "2 tablespoons Arbequina olives or green manzanilla olives",
+      "280g (1 cup) Salsa romesco (see page 261)"
+    ],
+    method: `1. To prepare the bacalao, submerge the fish in cold water for 4-8 hours (depending on the thickness of the fish), changing the water every 2 hours. Tear the flesh away from any skin, bones and fins and taste for texture and saltiness. It should be soft with a hint of salt. If the bacalao is still too salty or dry, return it to fresh, clean water and change the water regularly until you've reached the desired texture and flavour.
+2. Roughly tear any large frisée leaves, then remove any excess water with a clean tea towel and place the leaves on a large serving platter.
+3. Place the shredded bacalao, drained tuna chunks, anchovy fillets and olives on top of the frisée.
+4. Finish with generous dollops of salsa romesco. Serve immediately with crusty bread.`
+  },
+  {
+    id: 311,
+    title: "Roast Chicken with Chorizo Stuffing (Pollo Relleno)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "2 hrs",
+    category: "Poultry",
+    ingredients: [
+      "1 x 1.8kg (4 lb) free-range chicken, rinsed",
+      "100ml (3½ fl oz) grape juice (mosto) or verjuice",
+      "100ml (3½ fl oz) sherry vinegar",
+      "100ml (3½ fl oz) vi ranci or port",
+      "2 teaspoons chopped marjoram or oregano leaves",
+      "salt flakes and freshly cracked black pepper",
+      "2 tablespoons extra virgin olive oil",
+      "1 large onion, finely diced",
+      "4 garlic cloves, minced",
+      "1 fresh bay leaf",
+      "1 fresh chorizo sausage, de-cased",
+      "200g (7 oz) pork and fennel sausages, de-cased",
+      "30g (¼ cup) raisins",
+      "90g (3 oz) black grapes, quartered",
+      "50g (1¾ oz) freshly blitzed breadcrumbs",
+      "20g (¾ oz) slivered almonds, toasted",
+      "½ teaspoon ground cinnamon",
+      "1 tablespoon chopped tarragon",
+      "30g (1 oz) pork lard or butter"
+    ],
+    method: `1. Pat the chicken dry, then transfer to a wire rack, breast side up, set over a roasting tin and set aside in the fridge.
+2. Make a basting dressing in a bowl with the grape juice, vinegar, vi ranci or port and marjoram or oregano. Season with salt and pepper and set aside.
+3. **To make the stuffing:** Heat the oil in a frying pan over medium heat. Add the onion, garlic and bay leaf and cook for 12-15 minutes, until the onion is golden. Increase the heat to high and add the chorizo, then stir through the sausage meat and cook, stirring, for 3-4 minutes. Transfer to a large bowl, add the raisins, grapes, breadcrumbs, almonds, cinnamon and tarragon and season with salt and pepper. Discard the bay leaf.
+4. Preheat the oven to 180°C (350°F) fan-forced. Remove the chicken from the fridge.
+5. Tightly roll three-quarters of the stuffing into three large balls, then pack each ball into the chicken cavity. Wrap the remaining stuffing in baking paper and a layer of foil.
+6. Rub the lard all over the chicken and pour half the basting dressing into the roasting tin with 250ml (1 cup) water. Roast for 45 minutes, then remove the tin and turn over the chicken. Give the liquid in the tin a stir and puncture a few holes into the chicken with a kitchen skewer. Baste the top of the chicken with 2 tablespoons of the dressing, then return to the oven with the wrapped remaining stuffing and roast for another 30 minutes.
+7. Increase the temperature to 220°C (430°F) and remove the tin again. Turn the chicken back over breast-side up and pierce a few more holes on each side of the spine. Baste with another 2 tablespoons of dressing and add a little more water to the tin if the liquid is drying out. Roast for another 8-10 minutes, until the skin is golden and crisp.
+8. Turn the oven off, open the door to let the heat out and leave the chicken to rest for 12-15 minutes before carving and serving.`
+  },
+  {
+    id: 312,
+    title: "Braised Pork & Broad Beans (Chuleta de Cerdo y Habas Rehogadas)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "1 hr",
+    category: "Pork",
+    ingredients: [
+      "4 pork chops (approx. 200g / 7 oz each)",
+      "3 tablespoons extra virgin olive oil",
+      "1 large onion, finely chopped",
+      "3 garlic cloves, finely sliced",
+      "100g (3½ oz) pancetta or butifarra negra / chorizo, diced",
+      "1 fresh bay leaf",
+      "1 sprig fresh rosemary",
+      "100ml (3½ fl oz) dry white wine",
+      "500g (1 lb 2 oz) broad beans (fresh podded or frozen)",
+      "250ml (1 cup) chicken stock",
+      "a handful of fresh mint leaves, torn",
+      "salt flakes and freshly cracked black pepper"
+    ],
+    method: `1. Season the pork chops generously with salt flakes and cracked black pepper.
+2. Heat 2 tablespoons of the olive oil in a large flameproof casserole or deep frying pan over medium-high heat. Add the pork chops and sear for 3-4 minutes on each side until deeply golden. Transfer to a plate.
+3. In the same pan, add the remaining olive oil, chopped onion, garlic, diced pancetta, bay leaf and rosemary. Sauté over medium heat for 8-10 minutes until the onion is soft and golden.
+4. Pour in the white wine, scraping up any browned bits from the bottom of the pan, and simmer for 2 minutes until reduced by half.
+5. Add the broad beans and chicken stock. Return the pork chops and any rested juices to the pan, nestling them among the beans.
+6. Bring to a simmer, then reduce the heat to low, cover with a lid and braise gently for 20 minutes until the beans are tender and the pork is succulent.
+7. Uncover, remove from heat, stir through the fresh mint leaves, and serve hot with crusty bread.`
+  },
+  {
+    id: 313,
+    title: "Fideos / Pasta Paella (Fideuà)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "40 mins",
+    category: "Pasta",
+    ingredients: [
+      "350g (12 oz) fideos (short cut pasta noodles, or broken angel hair pasta)",
+      "4 tablespoons extra virgin olive oil",
+      "300g (10½ oz) squid or cuttlefish, cleaned and cut into bite-sized pieces",
+      "8 large raw prawns (shrimp), shells on",
+      "1 onion, finely diced",
+      "3 garlic cloves, minced",
+      "1 teaspoon sweet pimentón",
+      "2 ripe tomatoes, grated (skins discarded)",
+      "1 litre (4 cups) hot fish or shellfish stock, infused with a pinch of saffron threads",
+      "salt flakes",
+      "Alioli (garlic mayonnaise), to serve",
+      "lemon wedges, to serve"
+    ],
+    method: `1. Preheat the oven to 200°C (400°F).
+2. Heat 2 tablespoons of the olive oil in a 34-38cm paella pan over medium heat. Add the dry fideos and toast, stirring constantly, for 3-5 minutes until golden brown and toasted. Transfer to a bowl.
+3. Add the remaining oil to the pan over medium-high heat. Sear the prawns for 1-2 minutes on each side until pink, then remove to a plate.
+4. Add the squid to the pan and cook for 2 minutes, then add the diced onion and garlic and cook for 5 minutes until soft. Stir in the sweet pimentón and grated tomato, cooking for 3-4 minutes until thick and jammy (*sofrito*).
+5. Add the toasted fideos back to the pan and stir well to coat in the sofrito.
+6. Pour over the hot saffron fish stock, season with salt, and bring to a vigorous boil. Cook undisturbed on the stove top for 6 minutes.
+7. Arrange the prawns over the top of the pasta, then transfer the pan to the oven and bake for 6-8 minutes, until all the liquid has been absorbed and the top noodles curl up and become delightfully crisp.
+8. Rest for 5 minutes, then serve directly from the pan with dollops of alioli and fresh lemon wedges.`
+  },
+  {
+    id: 314,
+    title: "Baked Fish with Vegetables (Cazuela de Pescado)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "6",
+    time: "1 hr 10 mins",
+    category: "Seafood",
+    ingredients: [
+      "400g (14 oz) English spinach, washed and stems trimmed",
+      "1½ teaspoons fine sea salt",
+      "4 tablespoons extra virgin olive oil",
+      "500g (1 lb 2 oz) waxy potatoes, peeled and sliced into 3mm rounds",
+      "1 large onion, finely sliced",
+      "2 garlic cloves, finely sliced",
+      "3 ripe tomatoes, sliced into rounds",
+      "4 x 180g (6 oz) firm white fish fillets (such as snapper, sea bass, or cod)",
+      "100ml (3½ fl oz) dry white wine",
+      "freshly cracked black pepper",
+      "fresh parsley, chopped, to serve"
+    ],
+    method: `1. Preheat the oven to 180°C (350°F) fan-forced.
+2. Place the spinach in a large colander over a bowl, toss with 1 teaspoon of the salt and set aside for 20 minutes to wilt. Squeeze out excess liquid thoroughly with your hands.
+3. Pour 2 tablespoons of the olive oil into a large round earthenware dish or baking dish and layer the potato slices on the bottom. Sprinkle with ½ teaspoon of the remaining salt and freshly cracked black pepper.
+4. Scatter over the sliced onion, garlic and the wilted spinach, then arrange the tomato slices over the top.
+5. Drizzle with 1 tablespoon of olive oil and pour in the white wine. Cover the dish with foil and bake for 25 minutes, until the potatoes are tender when pierced.
+6. Remove the foil, season the fish fillets with salt and pepper and nestle them on top of the vegetables. Drizzle the fish with the remaining tablespoon of olive oil.
+7. Return uncovered to the oven and bake for another 12-15 minutes until the fish is opaque, moist and flakes easily with a fork.
+8. Scatter with chopped fresh parsley and serve hot.`
+  },
+  {
+    id: 315,
+    title: "Roasted Vegetable Salad (Tumbet de Verduras)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "1 hr 15 mins",
+    category: "Vegetarian",
+    ingredients: [
+      "1kg (2 lb 3 oz) ripe roma (plum) tomatoes, grated, skins discarded",
+      "salt flakes and freshly cracked black pepper",
+      "2 teaspoons dried oregano",
+      "3 fresh bay leaves",
+      "½ teaspoon caster (superfine) sugar",
+      "2 eggplants (aubergines), sliced into 2cm (¾ in) thick rounds",
+      "2 teaspoons fine sea salt",
+      "250ml (1 cup) extra virgin olive oil",
+      "400g (14 oz) potatoes, peeled and sliced into 1.5cm (½ in) thick rounds",
+      "1 large zucchini (courgette), sliced into 2cm (¾ in) thick rounds",
+      "1 red capsicum (bell pepper), sliced into 2cm (¾ in) thick rings",
+      "1 green capsicum (bell pepper), sliced into 2cm (¾ in) thick rings",
+      "1 red onion, sliced into 2cm (¾ in) thick rings",
+      "3 garlic cloves, thinly sliced",
+      "90g (¼ cup) honey",
+      "80g (2¾ oz) walnuts, chopped"
+    ],
+    method: `1. Place the grated tomato in a fine sieve over a bowl to drain off some of the liquid. Transfer to a bowl, season with salt and pepper and mix through the oregano, bay leaves and sugar.
+2. Place the eggplant in a large colander with a bowl underneath and sprinkle over the fine sea salt. Set aside for 6-8 minutes to draw out the eggplant's bitter juices. Rinse off the salt and squeeze the slices dry with a clean tea towel, removing as much moisture as possible.
+3. Heat the olive oil in a large heavy-based frying pan over medium heat. Add the potato and cook each side for 8-12 minutes, until golden and cooked through. Transfer to a large plate lined with paper towel to absorb excess oil.
+4. Repeat this process for each vegetable, cooking the eggplant and zucchini for 5-7 minutes each side and the capsicum and onion for 3-5 minutes each side.
+5. In the same pan, fry the grated tomato for 6-8 minutes, until starting to darken in colour.
+6. Preheat the oven to 180°C (350°F) fan-forced.
+7. Spoon a layer of the tomato sauce in the base of a large earthenware baking dish and top with half the garlic. Cover with a layer of potato, followed by the zucchini, capsicum, onion and finally the eggplant, seasoning with salt and pepper between each layer. Spoon over the remaining tomato sauce and garlic and tuck the bay leaves in between the vegetables. Drizzle over the honey.
+8. Transfer the dish to the oven and roast for 30 minutes or until you see the juices starting to bubble. Throw the walnuts on top and return to the oven for 10 minutes to toast them slightly.
+9. Serve the vegetables on their own or as part of a spread to accompany whatever you like. This dish goes particularly well with fish, lamb or even big spoonfuls of fresh ricotta.`
+  },
+  {
+    id: 316,
+    title: "Spanish Potatoes (Patatas Bravas)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "45 mins",
+    category: "Snacks",
+    ingredients: [
+      "Brava Sauce:",
+      "60ml (¼ cup) extra virgin olive oil",
+      "½ onion, finely diced or grated",
+      "2 small red chillies, chopped",
+      "pinch of salt flakes",
+      "1 tablespoon sweet pimentón",
+      "1 teaspoon spicy pimentón (hot smoked paprika)",
+      "pinch of cayenne pepper",
+      "1 tablespoon plain (all-purpose) flour",
+      "1 tablespoon sherry vinegar",
+      "200ml (7 fl oz) chicken or vegetable stock",
+      "Potatoes & Alioli:",
+      "1kg (2 lb 3 oz) floury potatoes (such as Sebago or Russet), peeled and cut into 3cm (1¼ in) irregular chunks",
+      "vegetable oil or olive oil, for deep-frying",
+      "sea salt flakes",
+      "100g (3½ oz) Alioli (garlic mayonnaise)"
+    ],
+    method: `1. **To make the brava sauce:** Heat the olive oil in a frying pan over medium heat, add the onion, chilli and salt, then reduce the heat to low and slowly sweat the onion for 5-7 minutes, until translucent. Add both pimentóns and the cayenne and stir well. Add the flour and cook, stirring, for 1 minute or until you have a roux consistency. Add the sherry vinegar, then gradually pour in the stock, whisking constantly to prevent lumps. Simmer for 5-10 minutes until thickened into a smooth, glossy red sauce. Blitz with a stick blender if desired.
+2. Place the potato chunks in a large saucepan of cold salted water. Bring to the boil and simmer for 5 minutes until parboiled. Drain and shake vigorously in the colander to rough up the edges, then leave to steam dry.
+3. Heat the oil in a deep-fryer or deep heavy saucepan to 160°C (320°F). Fry the potatoes in batches for 5 minutes until pale and cooked through. Remove with a slotted spoon and drain on paper towels.
+4. Increase the oil heat to 190°C (375°F). Fry the potatoes a second time for 3-4 minutes until deeply golden brown and crunchy.
+5. Drain, toss with sea salt flakes, pile onto serving plates, and top with generous dollops of alioli and warm brava sauce.`
+  },
+  {
+    id: 317,
+    title: "Mackerel Escabeche (Escabeche de Caballa)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "35 mins plus resting",
+    category: "Seafood",
+    ingredients: [
+      "4 x 200g (7 oz) small mackerel, filleted (you can also use sardines or an 800g whole fish)",
+      "4 tablespoons extra virgin olive oil, plus 1 tablespoon extra for searing",
+      "salt flakes and freshly ground black pepper",
+      "1 large onion, sliced into rings",
+      "1 carrot, thinly sliced into rounds",
+      "6 garlic cloves, unpeeled and lightly crushed",
+      "2 fresh bay leaves",
+      "1 sprig fresh thyme",
+      "1 teaspoon black peppercorns",
+      "1 teaspoon sweet pimentón",
+      "150ml (5 fl oz) white wine vinegar or sherry vinegar",
+      "100ml (3½ fl oz) dry white wine"
+    ],
+    method: `1. Heat a non-stick frying pan over high heat. Drizzle the mackerel with 1 tablespoon of the oil, sprinkle with a little salt, then add to the pan skin-side down and sear for 1 minute on each side until lightly browned. Transfer the mackerel to a heatproof ceramic or glass dish.
+2. Heat 60ml (¼ cup) of the oil in a saucepan over medium heat. Add the onion, carrot, garlic, bay leaves, thyme and peppercorns. Cook for 8-10 minutes until the vegetables are softened.
+3. Stir in the sweet pimentón and immediately pour in the vinegar and white wine to stop the paprika from burning. Bring to a simmer and cook for 3-4 minutes.
+4. Carefully pour the hot aromatic vinegar marinade over the seared mackerel fillets, ensuring they are submerged.
+5. Allow to cool completely to room temperature, then cover and refrigerate for at least 4 hours (or up to 3 days). Serve at room temperature with crusty baguette.`
+  },
+  {
+    id: 318,
+    title: "Baked Eggs from Sóller (Huevos al Horno de Sóller)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "40 mins",
+    category: "Breakfast",
+    ingredients: [
+      "1 tablespoon extra virgin olive oil",
+      "1 garlic clove, smashed",
+      "1 carrot, finely diced",
+      "1 celery stalk, finely diced",
+      "1 small leek, washed and finely sliced",
+      "100g (3½ oz) sobrassada or cured chorizo, cut into small pieces",
+      "60ml (¼ cup) dry white wine",
+      "150ml (5 fl oz) chicken or vegetable stock",
+      "100g (3½ oz) fresh or frozen peas",
+      "4 large free-range eggs",
+      "salt flakes and freshly ground black pepper",
+      "crusty bread, to serve"
+    ],
+    method: `1. Preheat the oven to 200°C (400°F) fan-forced.
+2. Heat the olive oil and garlic in a frying pan over medium heat. Add the carrot, celery and leek and cook for 10 minutes or until the vegetables are just beginning to colour and soften.
+3. Add the sobrassada pieces and cook for 2 minutes to release their fragrant red oil.
+4. Splash the wine into the pan and simmer until the liquid evaporates, then pour in the stock and bring to the boil. Reduce the heat, stir in the peas, and simmer for 3 minutes. Season with salt and pepper.
+5. Divide the vegetable mixture among four individual earthenware dishes (cazuelitas) or spread into one medium baking dish.
+6. Make an indentation in the vegetables for each egg and crack an egg into each well.
+7. Bake for 8-10 minutes, until the egg whites are just opaque and set, but the yolks remain soft and runny.
+8. Serve immediately with warm crusty bread for dipping into the yolks.`
+  },
+  {
+    id: 319,
+    title: "Red Pepper Sauces: Salsa Salvitxada & Salsa Romesco",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "Makes approx. 750ml (3 cups)",
+    time: "40 mins",
+    category: "Basics",
+    ingredients: [
+      "Salsa Salvitxada:",
+      "2-3 dried ñora peppers (see page 8)",
+      "4 ripe tomatoes",
+      "100g (3½ oz) blanched almonds, toasted",
+      "50g (1¾ oz) hazelnuts, toasted and skinned",
+      "4 garlic cloves, roasted in their skins",
+      "1 slice crusty bread, fried in olive oil",
+      "150ml (5 fl oz) extra virgin olive oil",
+      "40ml (2½ tbsp) sherry vinegar",
+      "1 teaspoon sweet pimentón",
+      "salt flakes and black pepper",
+      "Salsa Romesco:",
+      "2 dried ñora peppers",
+      "1 whole head of garlic",
+      "3 ripe roma tomatoes",
+      "80g (2¾ oz) blanched almonds, toasted",
+      "60g (2 oz) toasted hazelnuts",
+      "1 small dried chilli or pinch of cayenne",
+      "1 slice stale sourdough bread, fried in olive oil",
+      "160ml (⅔ cup) extra virgin olive oil",
+      "3 tablespoons sherry vinegar",
+      "salt flakes"
+    ],
+    method: `SALSA SALVITXADA
+
+1. Rehydrate the dried ñora peppers in hot water for 20 minutes until soft, then drain, slice open and scrape the flesh from the skins into a bowl. Discard skins and seeds.
+2. Heat a barbecue grill plate or frying pan to high. Blister the tomatoes until the skins peel away, then peel and discard the skins.
+3. In a food processor, blitz the almonds, hazelnuts, fried bread, roasted garlic (squeezed from skins) and ñora pulp until finely ground.
+4. Add the peeled tomatoes, sherry vinegar and sweet pimentón, pulsing until combined.
+5. With the motor running on low, slowly drizzle in the olive oil in a steady stream until emulsified into a thick, rustic sauce. Season with salt flakes and pepper.
+
+SALSA ROMESCO
+
+1. Preheat the oven to 200°C (400°F). Roast the whole garlic head and tomatoes for 25-30 minutes until charred and softened.
+2. Rehydrate the ñora peppers in boiling water for 20 minutes, then scrape the pulp from the skins.
+3. Squeeze the soft garlic cloves from their papery skins into a food processor. Add the roasted tomatoes, nuts, fried bread, ñora pulp and cayenne.
+4. Process until a thick paste forms, then gradually stream in the olive oil and sherry vinegar until rich, creamy and textured. Season with salt flakes.`
+  },
+  {
+    id: 320,
+    title: "Spanish Tomato Sauce (Sofrit)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "Makes 850ml (3½ cups)",
+    time: "1 hr 35 mins",
+    category: "Basics",
+    ingredients: [
+      "300ml (10 fl oz) extra virgin olive oil",
+      "4 large brown onions, finely diced",
+      "8 garlic cloves, minced",
+      "2kg (4 lb 8 oz) ripe roma (plum) tomatoes, halved and coarsely grated (skins discarded)",
+      "1 teaspoon sugar",
+      "2 teaspoons fine sea salt",
+      "1 teaspoon freshly ground black pepper"
+    ],
+    method: `1. Heat the olive oil in a large heavy-based saucepan or paella pan over medium heat. Add the onion and stir through the oil. Bring to a gentle simmer, then reduce the heat to medium-low and cook, stirring often, for about 25-30 minutes until the onions are completely soft, melting and pale golden.
+2. Add the garlic and cook for another 3-4 minutes until fragrant.
+3. Add the grated tomato, sugar, salt and black pepper and increase the heat to medium until it bubbles.
+4. Reduce the heat to low and cook gently, stirring frequently, for 45-50 minutes until the water has completely evaporated, the oil begins to separate, and the sofrito has reduced to a thick, dark, sweet, jam-like consistency.
+5. Set aside to cool completely. Store in an airtight container in the fridge for up to 1 week, or freeze in portions for up to 6 months.`
+  },
+  {
+    id: 321,
+    title: "Orange Custard Caramel (Flan de Naranja)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4-6",
+    time: "1 hr 5 mins plus overnight",
+    category: "Dessert",
+    ingredients: [
+      "zest of 4 oranges (reserve 1 zested orange to serve)",
+      "juice of ½ orange",
+      "220g (8 oz) caster (superfine) sugar",
+      "500ml (2 cups) full-cream (whole) milk",
+      "4 large eggs plus 2 egg yolks",
+      "1 teaspoon vanilla extract",
+      "orange segments and mint leaves, to serve"
+    ],
+    method: `1. Preheat the oven to 160°C (320°F) fan-forced. Place a 23cm (9 in) oval baking dish (or 6 individual ramekins) in a large deep roasting tin.
+2. Combine the orange zest and juice in a small bowl and set aside for 5-10 minutes.
+3. **To make the caramel:** Heat half the caster sugar (110g) and 60ml (¼ cup) of water in a small saucepan over medium-high heat and gently swirl the pan (do not stir) until the sugar dissolves and turns a deep golden caramel colour. Immediately pour the caramel into the baking dish, tilting quickly to coat the base evenly. Set aside to harden.
+4. In a saucepan, warm the milk and orange zest over low heat until steaming, then remove and leave to infuse for 10 minutes.
+5. In a mixing bowl, gently whisk the eggs, yolks, remaining sugar and vanilla until smooth and combined.
+6. Strain the warm infused milk into the egg mixture, whisking gently to combine without creating excess air bubbles.
+7. Pour the custard through a fine sieve over the caramel in the prepared dish.
+8. Pour boiling water into the roasting tin until it reaches halfway up the sides of the dish.
+9. Bake for 40-45 minutes until the flan is set around the edges but retains a slight jiggle in the centre.
+10. Remove from the water bath and allow to cool completely, then refrigerate for at least 6 hours, or preferably overnight.
+11. Run a thin knife around the edge of the dish and invert onto a lipped serving platter, letting the amber caramel pool around the flan. Garnish with orange segments and mint.`
+  },
+  {
+    id: 322,
+    title: "Cherry Sangria (Sangría de Cereza)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "8",
+    time: "10 mins plus resting",
+    category: "Drinks",
+    ingredients: [
+      "180g (6½ oz) fresh or frozen cherries, pitted and halved",
+      "1 x 750ml (25½ fl oz) bottle dry Spanish red wine (such as Tempranillo or Garnacha)",
+      "200-250ml (7-8½ fl oz) cherry liqueur (such as Kirsch or Maraschino)",
+      "150ml (5 fl oz) freshly squeezed orange juice",
+      "1 orange, thinly sliced into rounds",
+      "1 lime, thinly sliced into rounds",
+      "2 tablespoons caster sugar (optional, to taste)",
+      "500ml (2 cups) club soda or lemonade, chilled",
+      "lots of ice cubes"
+    ],
+    method: `1. Combine the pitted cherries, red wine, cherry liqueur, orange juice, sugar (if using), and half the orange and lime slices in a large glass pitcher or jug.
+2. Stir well with a wooden spoon to dissolve any sugar, then refrigerate for at least 2 hours (or overnight) to allow the fruit flavours to infuse the wine.
+3. Just before serving, pour in the chilled club soda or lemonade and fill the pitcher with plenty of ice.
+4. Stir gently, divide among ice-filled glasses, top with the remaining fresh orange and lime slices, and serve immediately.`
+  },
+  {
+    id: 323,
+    title: "Spanish Pesto (Picada)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "Makes 250ml (1 cup)",
+    time: "18 mins",
+    category: "Basics",
+    ingredients: [
+      "2 tablespoons extra virgin olive oil, plus extra for drizzling",
+      "3 garlic cloves, finely chopped",
+      "1 slice day-old crusty white bread, torn into pieces",
+      "50g (1¾ oz) blanched almonds, toasted",
+      "30g (1 oz) hazelnuts, toasted and skinned",
+      "½ teaspoon pimentón or pinch of chilli powder (optional)",
+      "a handful of fresh flat-leaf parsley leaves",
+      "pinch of coarse sea salt"
+    ],
+    method: `1. Heat the olive oil in a frying pan over medium heat, add the chopped garlic and bread pieces and sauté for 6-8 minutes until golden and crisp. Remove from heat and allow to cool.
+2. Place the toasted almonds, hazelnuts, fried bread and garlic into a mortar and pestle (or small food processor). Add the parsley leaves and salt.
+3. Pound or pulse into a coarse, textured paste. With the motor running or while grinding, drizzle in a little extra virgin olive oil until a thick, moist paste forms.
+4. Stir a couple of spoonfuls of the picada into stews, fish cazuelas, or braises during the last 5 minutes of cooking to thicken the sauce and impart a wonderful nutty aroma.
+5. The picada will keep in an airtight container in the fridge for up to 1 week.`
+  },
+  {
+    id: 324,
+    title: "Braised Pork Cheeks (Carrilleras de Cerdo)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "2 hrs 50 mins",
+    category: "Pork",
+    ingredients: [
+      "80ml (⅓ cup) extra virgin olive oil",
+      "4 x 300g (10½ oz) pork cheeks, jowls attached (or 8 smaller trimmed cheeks)",
+      "1 garlic bulb, halved crossways",
+      "1 large leek, white and pale green parts, washed and sliced",
+      "100g (3½ oz) smoked bacon or pancetta, diced",
+      "4 fresh thyme sprigs",
+      "2 fresh bay leaves",
+      "2 tablespoons plain (all-purpose) flour",
+      "350ml (12 fl oz) full-bodied Spanish red wine (such as Rioja)",
+      "400ml (14 fl oz) beef or chicken stock",
+      "1 tablespoon dark honey",
+      "salt flakes and freshly ground black pepper"
+    ],
+    method: `1. Preheat the oven to 180°C (350°F) fan-forced.
+2. Heat 2 tablespoons of the olive oil in a large flameproof casserole dish over high heat and sear the pork cheeks for 5-6 minutes on each side until deeply golden brown. Remove the cheeks from the dish and set aside on a plate.
+3. Add the remaining oil to the dish, reduce the heat to medium, and add the halved garlic bulb, leek, bacon, thyme and bay leaves. Cook for 10 minutes until the vegetables are softened and fragrant.
+4. Sprinkle over the flour and stir well for 1 minute to coat.
+5. Pour in the red wine and bring to a boil, scraping up the caramelized bits from the base of the dish. Simmer for 3-4 minutes until reduced by half.
+6. Pour in the stock and honey, and season with salt and black pepper.
+7. Return the pork cheeks and any resting juices to the dish, immersing them in the liquid.
+8. Cover tightly with a lid and bake in the oven for 2 to 2½ hours, turning the cheeks once or twice, until meltingly tender and easily pierced with a spoon.
+9. Skim off any excess fat from the sauce, adjust seasoning, and serve hot with mashed potatoes or crusty bread.`
+  },
+  {
+    id: 325,
+    title: "Beef Fricassee (Fricandó de Ternera)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "1 hr 35 mins",
+    category: "Beef",
+    ingredients: [
+      "4 dried porcini mushrooms (or dried moixernons)",
+      "600g (1 lb 5 oz) thinly sliced topside or chuck steak, lightly pounded",
+      "110g (¾ cup) plain (all-purpose) flour",
+      "sea salt and freshly cracked black pepper",
+      "60ml (¼ cup) extra virgin olive oil",
+      "1 large onion, finely chopped",
+      "2 ripe tomatoes, grated (skins discarded)",
+      "125ml (½ cup) dry white wine",
+      "500ml (2 cups) beef stock",
+      "2 tablespoons Picada (see page 258)"
+    ],
+    method: `1. Rehydrate the dried mushrooms in a small bowl of boiling water for 15 minutes. Drain, strain and reserve the mushroom soaking liquid, and roughly chop the mushrooms.
+2. Season the flour with salt and black pepper. Lightly dredge the beef slices in the flour, shaking off any excess.
+3. Heat half the olive oil in a large frying pan over medium-high heat and sear the beef slices for 1 minute on each side until browned. Transfer to a plate.
+4. Add the remaining oil and the onion to the pan and cook over medium heat for 10 minutes until soft and caramelised. Add the grated tomato and cook for 5 minutes until reduced and thick.
+5. Pour in the white wine and boil for 2 minutes to cook off the alcohol.
+6. Return the beef and any juices to the pan, along with the chopped mushrooms, the reserved mushroom soaking liquid and the beef stock.
+7. Cover and simmer gently over low heat for 50 minutes until the beef is very tender.
+8. Stir through the picada and cook uncovered for a final 5 minutes until the gravy is rich, fragrant and glossy. Serve hot.`
+  },
+  {
+    id: 326,
+    title: "Duck with Roasted Cherries (Magret de Pato con Cerezas al Horno)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "35 mins",
+    category: "Poultry",
+    ingredients: [
+      "1 tablespoon extra virgin olive oil",
+      "4 duck breasts (approx. 200g each), skin scored in a criss-cross pattern",
+      "500g (1 lb 2 oz) fresh or frozen sweet cherries, pitted",
+      "2 tablespoons balsamic vinegar or Pedro Ximénez sherry",
+      "1 tablespoon brown sugar",
+      "2 fresh rosemary sprigs",
+      "salt flakes and freshly cracked black pepper"
+    ],
+    method: `1. Preheat the oven to 200°C (400°F) fan-forced.
+2. Season the duck breasts on both sides with salt flakes and black pepper.
+3. Place the duck breasts skin-side down in a cold, dry heavy-based ovenproof frying pan. Place over medium-low heat and cook undisturbed for 8-10 minutes, allowing the duck fat to render and the skin to become deeply golden and crisp.
+4. Turn the breasts over and cook on the flesh side for 2 minutes. Transfer the duck to a plate and pour off all but 1 tablespoon of duck fat from the pan.
+5. In a baking dish or in the same pan, toss the pitted cherries with the balsamic vinegar, brown sugar, rosemary sprigs, salt and pepper.
+6. Place the duck breasts on top of the cherries, skin-side up.
+7. Transfer to the oven and roast for 8-10 minutes for medium-rare (or 12 minutes for medium).
+8. Remove the duck to a warm plate, cover loosely with foil, and rest for 5 minutes.
+9. Place the roasting dish on the stove top over medium heat and simmer the cherries and pan juices for 2-3 minutes until syrupy.
+10. Thickly slice the duck breasts across the grain and serve draped over the roasted cherries with spoonfuls of the pan sauce.`
+  },
+  {
+    id: 327,
+    title: "Charcoal Sardines (Sardinas a la Parrilla)",
+    author: "Emma Warren",
+    book: "Spanish at Home",
+    serves: "4",
+    time: "21 mins",
+    category: "Seafood",
+    ingredients: [
+      "12-16 whole fresh sardines, gutted and rinsed, patted dry with paper towels",
+      "10-12 fresh fig leaves (washed and patted dry) or vine leaves",
+      "3 tablespoons extra virgin olive oil",
+      "2 tablespoons sea salt flakes",
+      "2 lemons, halved, to serve"
+    ],
+    method: `1. Fire up a charcoal or wood-fired barbecue 40-60 minutes before you want to start grilling. You want to get it to a point where the coals have stopped smoking and you can't hold your palm 15cm (6 in) above the coals for more than 4 seconds without really feeling a sting.
+2. Drizzle the sardines with olive oil and season generously with sea salt flakes.
+3. Place a layer of fresh fig leaves directly onto the clean barbecue grill grate. Arrange the sardines on top of the fig leaves and cover with another layer of fig leaves.
+4. Grill over the hot coals for 3 minutes, then carefully flip the leaves and sardines together and cook for another 2-3 minutes until the fish is cooked through and aromatic.
+5. Transfer the sardines to a platter, discard the charred fig leaves, drizzle with extra virgin olive oil, and serve hot with charred lemon halves for squeezing.`
   }];
 
 
@@ -9076,7 +11046,13 @@ const CUISINE_META = {
   "Ixta Belfrage":       { cuisine: "Brazilian",          flag: "🇧🇷" },
   "Claire Saffitz":      { cuisine: "American",           flag: "🇺🇸" },
   "Tracey Lister & Andreas Pohl": { cuisine: "Vietnamese", flag: "🇻🇳" },
-  "Meera Sodha":         { cuisine: "Indian",             flag: "🇮🇳" }
+  "Meera Sodha":         { cuisine: "Indian",             flag: "🇮🇳" },
+  "Shamil & Kavi Thakrar": { cuisine: "Indian",           flag: "🇮🇳" },
+  "Rosa Cienfuegos":     { cuisine: "Mexican",            flag: "🇲🇽" },
+  "Vicky Bennison":      { cuisine: "Italian",            flag: "🇮🇹" },
+  "Simon Bajada":        { cuisine: "Baltic",             flag: "🌲" },
+  "Tama Carey":          { cuisine: "Sri Lankan",         flag: "🇱🇰" },
+  "Emma Warren":         { cuisine: "Spanish",            flag: "🇪🇸" }
 };
 
 const RECIPE_SUMMARIES = {
@@ -9338,7 +11314,70 @@ const RECIPE_SUMMARIES = {
   261: "Broccoli and cavolo nero cooked down with fennel seeds and chilli, blitzed with white miso butter into a green pasta sauce.",
   262: "Paneer baked in a spiced yoghurt marinade then folded into a rich, buttery tomato sauce with garam masala.",
   263: "Cabbage, cucumber, apple, avocado and tofu tossed in a tamarind and sambal oelek dressing with salted peanuts.",
-  264: "Potatoes and spinach cooked down with mustard seeds, ginger, green chilli and tomato into a soft, savoury aloo palak."
+  264: "Potatoes and spinach cooked down with mustard seeds, ginger, green chilli and tomato into a soft, savoury aloo palak.",
+  265: "Chicken thighs marinated in a sweet vinegar and spice paste, then grilled over high heat until charred and buttery.",
+  266: "Prawns marinated in ginger, garlic and chilli, then deep-fried in a spiced gram flour batter until crisp and golden.",
+  267: "Red kidney beans simmered with tomato, ginger and warm spices into a thick, comforting Punjabi tiffin curry.",
+  268: "A Parsi lamb curry sweetened with apricots and jaggery, sharpened with vinegar and crowned with crisp potato straws.",
+  269: "Sinaloan prawn and poblano tacos bound with chipotle, mayonnaise and sour cream, then griddled until the cheese melts.",
+  270: "A fiery Mexican table salsa of fried peanuts and chiles de árbol blended to a nutty, smoky, deeply savoury paste.",
+  271: "Home-made chorizo fried with potato and folded into corn tortillas for a rich, spiced, satisfying taco filling.",
+  272: "Prawns bathed in a chilli-and-tomato devil sauce built from guajillo and chipotle for punchy, garlicky heat.",
+  273: "Tender simmered pork shoulder in a toasted peanut and chile de árbol mole, thickened with breadcrumbs and its own stock.",
+  274: "Lamb marinated overnight in a dried chilli adobo, wrapped into parcels and steamed slowly until falling apart.",
+  275: "Mexican-style chicken wings glazed in a tangy chipotle and butter sauce for sticky, spicy, crowd-pleasing antojitos.",
+  276: "Tuscan potato-filled tortelli under a slow-cooked meat sauce, built on a soffritto cooked dry before the oil goes in.",
+  277: "Hand-rolled papparelle dressed with a rustic chicken liver sauce, rich, iron-deep and traditionally Umbrian.",
+  278: "Ligurian herb-and-ricotta pansotti served under a creamy walnut pesto loosened with milk-soaked bread.",
+  279: "Egg and spinach tagliatelle tangled together with peas, pancetta and cream for an Emilian classic of contrasts.",
+  280: "A yoghurt-batter sheet cake scattered with rhubarb and cinnamon under a buttery crumble, baked fast in a hot oven.",
+  281: "Lithuanian balandeliai: cabbage leaves rolled around pork and rice, braised in a sweet-sour cranberry tomato sauce.",
+  282: "Estonian toasted grain kama whipped into cream, served with mead-poached pears and shards of linseed brittle.",
+  283: "A Latvian baked cheesecake of fresh curd and blueberries, lighter and tangier than its cream cheese cousins.",
+  284: "Rupjmaizes kartojums: toasted sweetened rye crumbs layered with whipped fresh cheese and berries, chilled until set.",
+  285: "Medaus tortas: thin honey-dough discs stacked with sour cream frosting and left overnight to soften into one tender cake.",
+  286: "Svilpikai, Lithuanian ridged potato dumplings, pan-fried and tossed with chanterelles in sour cream.",
+  287: "Kugelis: finely grated potato bound with egg, milk, bacon and onion, baked until set with a dark, crisp crust.",
+  288: "A dark, spiced Lithuanian honey cake finished with a nutty brown butter icing that sets to a soft fudge.",
+  289: "White fish plated on silky parsnip purée with a vivid beetroot sauce, brown butter and a hit of spruce.",
+  290: "Latvian cidoniju sirups: raw quince layered with sugar and left for days to draw out a fragrant, honeyed syrup.",
+  291: "A Baltic rhubarb kissel thickened lightly with potato starch, drunk cold or spooned warm over cream.",
+  292: "Midus: honey, water and yeast fermented for three weeks into a gently sparkling, floral Baltic mead.",
+  293: "Dark porter steeped with sugar and spirit for a fortnight into a bittersweet, malty Lithuanian liqueur.",
+  294: "Sri Lankan condensed milk toffee studded with toasted cashews and sweet spice, stirred to a fudgy set and cut into squares.",
+  295: "Fried eggplant slow-cooked in a sweet-sour tamarind and chilli pahi until dark, oily and intensely savoury.",
+  296: "Pineapple cooked down with vinegar, chilli and spice into a glossy, sweet-hot Sri Lankan chutney.",
+  297: "Sri Lankan Malay-style acharu: crunchy vegetables in a mustard, chilli and vinegar pickle left two days to mature.",
+  298: "A Sri Lankan steamed coconut and jaggery custard, fragrant with cardamom and set to a wobbling, caramel-dark cream.",
+  299: "Snake beans tempered with mustard seed and curry leaf, then simmered in coconut milk with roasted curry powder.",
+  300: "Sweet pineapple simmered in a spiced coconut gravy, balancing sugar, chilli and tang in one Sri Lankan dish.",
+  301: "Water spinach flashed through a hot wok with garlic, chilli and Maldive fish for a fast, punchy green side.",
+  302: "Goat marinated in black curry powder and slow-simmered for two hours into a dark, aromatic Sri Lankan curry.",
+  303: "Pork belly braised gently in black roasted spices and vinegar until the fat renders and the sauce turns treacle-dark.",
+  304: "Whole eggs fried until blistered, then dropped into a coconut and chilli gravy that clings to the crinkled whites.",
+  305: "Two Sri Lankan mallungs: cabbage charred fast in a wok, and green papaya barely cooked, both finished with grated coconut.",
+  306: "Beetroot cooked in coconut milk with curry leaf and chilli into a sweet, magenta curry with a gentle bite.",
+  307: "The two foundational Sri Lankan spice blends: bright unroasted red, and dark-roasted black for meat curries.",
+  308: "Pumpkin simmered in coconut milk with roasted rice and coconut for a thick, mellow, faintly nutty curry.",
+  309: "Balearic empanadas with a lard and orange juice pastry, hand-sculpted around spiced lamb and sobrassada.",
+  310: "The Catalan xatonada: salt cod, escarole, olives and tuna dressed in romesco for a bracing winter salad.",
+  311: "A whole chicken stuffed with chorizo, pine nuts and dried fruit, roasted until the skin crackles and the juices run rich.",
+  312: "Pork chops braised over broad beans stewed with pancetta, mint and sweet paprika for a Mallorcan spring plate.",
+  313: "The Valencian pasta paella: short noodles toasted then cooked in seafood stock until the base catches and crisps.",
+  314: "Whole fish baked in an earthenware cazuela over potatoes, peppers and tomato until everything is soft and sauced.",
+  315: "Mallorcan tumbet: fried layers of potato, eggplant and pepper baked under tomato sauce and served at room temperature.",
+  316: "Twice-cooked potatoes under a smoky pimentón brava sauce and garlic aioli, the definitive Spanish tapa.",
+  317: "Mackerel fried then steeped in a warm vinegar, bay and pimentón escabeche, better on the second day.",
+  318: "Eggs baked over sobrassada and a sweet pea and onion sofrit, a Mallorcan brunch dish from the Sóller valley.",
+  319: "The two Catalan pepper sauces side by side: salvitxada for calçots, romesco for everything else.",
+  320: "The slow-cooked onion, garlic and tomato base that underpins most Spanish cooking, reduced for over an hour.",
+  321: "A Spanish flan set with orange juice and zest, baked in a bain-marie and turned out under its own caramel.",
+  322: "Red wine steeped with fresh cherries, brandy and citrus, chilled for a couple of hours before serving over ice.",
+  323: "The Catalan picada: fried bread, nuts, garlic and parsley pounded to a paste that thickens and lifts a finished stew.",
+  324: "Pork cheeks braised for hours in red wine and sofrit until they collapse into a glossy, deeply savoury sauce.",
+  325: "The Catalan fricando: thin veal or beef slices braised with wild mushrooms and finished with a picada.",
+  326: "Duck breast rendered to a crisp skin and served pink with roasted cherries and their sharp, syrupy pan juices.",
+  327: "Whole sardines salted and grilled hard over charcoal, served with nothing more than lemon and good olive oil.",
 };
 
 // Build ingredient → recipe map
@@ -9773,7 +11812,13 @@ const AUTHOR_META = {
   "Ixta Belfrage":      { initials:"IB", color:"#5A8A2C", bg:"rgba(90,138,44,0.12)",  desc:"Bold, layered flavour drawn from Brazil, Mexico and Italy. Fusão is a love letter to her mother's Brazil, built on chilli, coconut, cassava and urucum." },
   "Claire Saffitz":     { initials:"CS", color:"#6B5CA5", bg:"rgba(107,92,165,0.12)", desc:"Meticulous, deeply tested American baking with the reasoning shown. What's for Dessert grades every recipe by difficulty and flags exactly where it can go wrong." },
   "Tracey Lister & Andreas Pohl": { initials:"TL", color:"#1F7A6B", bg:"rgba(31,122,107,0.12)", desc:"Written from the Hanoi Cooking Centre, Real Vietnamese Cooking is a regional, street-level guide to the herbs, broths and dipping sauces of Vietnam." },
-  "Meera Sodha":        { initials:"MS", color:"#C74A3C", bg:"rgba(199,74,60,0.12)",  desc:"Gujarati heritage, a Lincolnshire childhood and a cook's eye for vegetables. Dinner is unfussy vegetarian and vegan food with real spice confidence." }
+  "Meera Sodha":        { initials:"MS", color:"#C74A3C", bg:"rgba(199,74,60,0.12)",  desc:"Gujarati heritage, a Lincolnshire childhood and a cook's eye for vegetables. Dinner is unfussy vegetarian and vegan food with real spice confidence." },
+  "Shamil & Kavi Thakrar": { initials:"ST", color:"#A8452C", bg:"rgba(168,69,44,0.12)", desc:"The cousins behind Dishoom, written with executive chef Naved Nasir. From Bombay with Love recreates the Irani cafes of old Bombay, from the first-day-of-the-week bacon naan to the black daal." },
+  "Rosa Cienfuegos":    { initials:"RC", color:"#2E7D5B", bg:"rgba(46,125,91,0.12)",  desc:"The Sydney tamaleria owner who cooks the Mexico City food she grew up with. Comida Mexicana is street food, salsas and antojitos, unapologetically home-style." },
+  "Vicky Bennison":     { initials:"VB", color:"#A0803A", bg:"rgba(160,128,58,0.12)", desc:"The filmmaker behind the Pasta Grannies films, recording Italian women in their eighties and nineties making pasta by hand before the knowledge goes." },
+  "Simon Bajada":       { initials:"SB", color:"#4A6B8A", bg:"rgba(74,107,138,0.12)", desc:"An Australian food writer and photographer living in Stockholm. Baltic maps the rye, dairy, forest and preserving traditions of Estonia, Latvia and Lithuania." },
+  "Tama Carey":         { initials:"TC", color:"#CC7A22", bg:"rgba(204,122,34,0.12)", desc:"Chef at Sydney's Lankan Filling Station. Lanka Food is Sri Lankan cooking taken seriously: two curry powders, coconut everywhere, and heat that is built rather than added." },
+  "Emma Warren":        { initials:"EW", color:"#A63A3A", bg:"rgba(166,58,58,0.12)",  desc:"Spanish home cooking from a cook who learned it in Catalan and Balearic kitchens. Spanish at Home is sofrit, picada and long braises, the foundations rather than the flourishes." }
 };
 
 // ══════════════════════════════════════════════════════
@@ -9800,7 +11845,8 @@ const CAT_META = {
   "Dumplings":          { icon:"🥟", bg:"rgba(192,90,44,0.08)",   grad:"linear-gradient(135deg,#C05A2C,#D4A847)", img:"images/categories/dumplings.webp" },
   "Basics":             { icon:"🧂", bg:"rgba(107,76,53,0.08)",   grad:"linear-gradient(135deg,#6B4C35,#9C8B7A)", img:"images/categories/basics.webp" },
   "Risotto":            { icon:"🍚", bg:"rgba(192,136,44,0.09)",  grad:"linear-gradient(135deg,#C0882C,#D4A847)", img:"images/categories/risotto.webp" },
-  "Game":               { icon:"🦌", bg:"rgba(107,76,53,0.08)",   grad:"linear-gradient(135deg,#6B4C35,#8A2C2C)", img:"images/categories/game.webp" }
+  "Game":               { icon:"🦌", bg:"rgba(107,76,53,0.08)",   grad:"linear-gradient(135deg,#6B4C35,#8A2C2C)", img:"images/categories/game.webp" },
+  "Drinks":             { icon:"🍹", bg:"rgba(138,44,44,0.08)",   grad:"linear-gradient(135deg,#8A2C2C,#C0882C)" }
 };
 
 // ══════════════════════════════════════════════════════
@@ -9821,6 +11867,19 @@ function normalizeIng(ingredient) {
 }
 
 function safeid(str) { return String(str).replace(/[^a-z0-9]/gi,'_'); }
+
+// Some recipes store a yield ("Makes 12 buns") rather than a serving count, so
+// the "Serves" prefix has to be dropped or swapped out - not doubled up into
+// "Serves Makes 12 buns".
+function servesParts(serves) {
+  const v = String(serves || '?').trim();
+  const m = v.match(/^makes\s+(.*)$/i);
+  return m ? { label: 'Makes', value: m[1] } : { label: 'Serves', value: v };
+}
+function servesLabel(serves) {
+  const p = servesParts(serves);
+  return p.label + ' ' + p.value;
+}
 
 function escHtml(str) {
   if (str == null) return '';
@@ -9851,7 +11910,7 @@ function recipeCardHtml(r, favIds) {
       <div class="r-title">${escHtml(r.title)}</div>
       <div class="r-meta">
         <span>⏱ ${escHtml(r.time)}</span>
-        <span>👤 Serves ${escHtml(r.serves)}</span>
+        <span>👤 ${escHtml(servesLabel(r.serves))}</span>
         ${r.ingredients.length ? `<span>🥕 ${r.ingredients.length} ingredients</span>` : ''}
       </div>
       <p class="r-summary">${summary}</p>

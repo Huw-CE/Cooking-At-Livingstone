@@ -589,8 +589,8 @@ if (!recipe) {
           <span class="recipe-meta-value">${escHtml(recipe.time)}</span>
         </div>
         <div class="recipe-meta-item">
-          <span class="recipe-meta-label">Serves</span>
-          <span class="recipe-meta-value">${escHtml(recipe.serves)}</span>
+          <span class="recipe-meta-label">${servesParts(recipe.serves).label}</span>
+          <span class="recipe-meta-value">${escHtml(servesParts(recipe.serves).value)}</span>
         </div>
         <div class="recipe-meta-item">
           <span class="recipe-meta-label">Source</span>

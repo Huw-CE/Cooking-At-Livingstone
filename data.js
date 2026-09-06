@@ -10883,7 +10883,7 @@ SALSA ROMESCO
       "1 lime, thinly sliced into rounds",
       "2 tablespoons caster sugar (optional, to taste)",
       "500ml (2 cups) club soda or lemonade, chilled",
-      "lots of ice cubes"
+      "ice cubes, plenty"
     ],
     method: `1. Combine the pitted cherries, red wine, cherry liqueur, orange juice, sugar (if using), and half the orange and lime slices in a large glass pitcher or jug.
 2. Stir well with a wooden spoon to dissolve any sugar, then refrigerate for at least 2 hours (or overnight) to allow the fruit flavours to infuse the wine.
@@ -11846,7 +11846,7 @@ const CAT_META = {
   "Basics":             { icon:"🧂", bg:"rgba(107,76,53,0.08)",   grad:"linear-gradient(135deg,#6B4C35,#9C8B7A)", img:"images/categories/basics.webp" },
   "Risotto":            { icon:"🍚", bg:"rgba(192,136,44,0.09)",  grad:"linear-gradient(135deg,#C0882C,#D4A847)", img:"images/categories/risotto.webp" },
   "Game":               { icon:"🦌", bg:"rgba(107,76,53,0.08)",   grad:"linear-gradient(135deg,#6B4C35,#8A2C2C)", img:"images/categories/game.webp" },
-  "Drinks":             { icon:"🍹", bg:"rgba(138,44,44,0.08)",   grad:"linear-gradient(135deg,#8A2C2C,#C0882C)" }
+  "Drinks":             { icon:"🍹", bg:"rgba(138,44,44,0.08)",   grad:"linear-gradient(135deg,#8A2C2C,#C0882C)", img:"images/categories/drinks.webp" }
 };
 
 // ══════════════════════════════════════════════════════
